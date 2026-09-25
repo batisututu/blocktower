@@ -27,6 +27,6 @@ python tools/backup_phase4_db.py --source C:/DEV/BlocktowerPrivate/phase4.sqlite
 
 ## Android 상태
 
-versionCode 10 QA APK 빌드·별도 패키지 설치는 성공했다. 연결된 SM-N981N은 잠금 상태라 플레이 화면과 대기 조각 배경, 기기에서의 새 저장·도전 제출을 아직 확인하지 못했다. 본 앱 `com.blocktower.game` version 8과 개인 데이터는 변경하지 않았다. 원격 TLS, 계정 복구, 다중 기기 충돌의 사용자 해결 흐름과 백업 복원 훈련은 여전히 Phase 4 운영 과제다.
+versionCode 10 QA APK 빌드·별도 패키지 설치는 성공했다. 처음에는 SM-N981N이 잠겨 확인이 보류됐으나, 잠금 해제 후 [실기기 화면](version13_evidence_2026-09-25/personal_tray.png)에서 대기 조각 배경이 보이지 않는 것을 확인했다. 새 개인 저장의 공급 해시가 `reduced_single`과 일치했고, 별도 주간 도전에서 조각 배치·서버 제출 1회를 확인했다. 개인 저장은 0회차로 유지됐다. 계정 복구와 충돌 선택의 후속 구현·실기기 확인은 [Phase 4 후속 기록](Phase4_Recovery_Conflict_2026-09-25.md)을 따른다. 본 앱 `com.blocktower.game` version 8과 개인 데이터는 변경하지 않았다.
 
 재실행 시에는 고정 Godot 4.7.2에서 `game/tests/integration/supply_profile_probe.gd`와 `game/tests/integration/capture_puzzle_screen.gd`를 사용한다. 후자는 새 격리 저장 폴더와 PNG 출력 경로를 인수로 받는다. 실행 중 서버의 DB 백업은 저장소 밖의 비공개 경로에 둔다.

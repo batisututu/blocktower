@@ -2,6 +2,7 @@ extends Control
 ## 개인 퍼즐과 분리된 주간 도전·검증 순위 화면.
 signal start_requested(challenge: Dictionary)
 signal submit_requested
+signal use_server_requested
 signal exit_requested
 const FONT = preload("res://assets/fonts/NotoSansKR.ttf")
 const BACKGROUND = preload("res://assets/visual_bible/backgrounds/architecture_b.png")
@@ -11,9 +12,11 @@ var art := Art.new()
 var client: Node
 var challenge_active := false
 var _server_input: LineEdit
+var _recovery_input: LineEdit
 var _status: Label
 var _entries: VBoxContainer
 var _detail: VBoxContainer
+var _conflict_button: Button
 var _busy := false
 
 func _ready() -> void:
@@ -59,16 +62,33 @@ func _ready() -> void:
     field_style.set_corner_radius_all(8)
     for side in [SIDE_LEFT,SIDE_TOP,SIDE_RIGHT,SIDE_BOTTOM]: field_style.set_content_margin(side,8)
     _server_input.add_theme_stylebox_override("normal",field_style)
+    _server_input.add_theme_stylebox_override("read_only",field_style)
     _server_input.add_theme_color_override("font_color",Color("f3e4ca"))
+    _server_input.add_theme_color_override("font_uneditable_color",Color("f3e4ca"))
     _server_input.add_theme_font_override("font",FONT)
     _server_input.add_theme_font_size_override("font_size",14)
     server_row.add_child(_server_input)
     _button(server_row,"서버 적용",_set_server)
+    _label(column,"복구 코드는 앱 밖에 보관하세요. 복구하면 이전 기기의 온라인 접속이 해제됩니다.",12)
+    _recovery_input = LineEdit.new()
+    _recovery_input.placeholder_text = "보관한 복구 코드 입력"
+    _recovery_input.custom_minimum_size = Vector2(0,48)
+    _recovery_input.add_theme_stylebox_override("normal",field_style)
+    _recovery_input.add_theme_color_override("font_color",Color("f3e4ca"))
+    _recovery_input.add_theme_font_override("font",FONT)
+    _recovery_input.add_theme_font_size_override("font_size",14)
+    column.add_child(_recovery_input)
+    var recovery_actions := HBoxContainer.new()
+    column.add_child(recovery_actions)
+    _button(recovery_actions,"복구 코드 발급",_issue_code)
+    _button(recovery_actions,"계정 복구",_recover_account)
     var actions := HBoxContainer.new()
     column.add_child(actions)
     _button(actions,"순위 새로고침",_refresh)
     _button(actions,"도전 시작/이어가기",_start)
     if challenge_active: _button(column,"현재 도전 제출",func(): submit_requested.emit())
+    _conflict_button = _button(column,"서버 기록으로 이어가기",_confirm_server_choice)
+    _conflict_button.hide()
     _button(column,"개인 탑으로" if challenge_active else "닫기",func(): exit_requested.emit())
     _status = _label(column,"서버 연결 전",14)
     _entries = VBoxContainer.new()
@@ -107,6 +127,22 @@ func _button(parent: Node, value: String, callback: Callable) -> Button:
 func show_status(value: String) -> void:
     if is_instance_valid(_status): _status.text = value
 
+func offer_conflict() -> void:
+    _conflict_button.show()
+    show_status("서버와 기기 도전 기록이 갈라졌습니다. 자동으로 합칠 수 없습니다. 서버 기록을 선택하면 기기 기록을 별도로 보관합니다.")
+
+func _confirm_server_choice() -> void:
+    var dialog := ConfirmationDialog.new()
+    dialog.title = "주간 도전 기록 선택"
+    dialog.dialog_text = "서버 제출 기록으로 이어갈까요?\n기기의 다른 도전 기록은 보관합니다.\n두 기록은 순위에 합칠 수 없습니다."
+    dialog.ok_button_text = "기록 보관 후 전환"
+    dialog.cancel_button_text = "취소"
+    dialog.confirmed.connect(func(): use_server_requested.emit())
+    dialog.visibility_changed.connect(func():
+        if not dialog.visible: dialog.queue_free())
+    add_child(dialog)
+    dialog.popup_centered()
+
 func error_text(code: String) -> String:
     var messages := {
         "NETWORK_UNAVAILABLE":"서버에 연결할 수 없습니다.",
@@ -116,7 +152,9 @@ func error_text(code: String) -> String:
         "CHALLENGE_NOT_FOUND":"도전 정보를 찾을 수 없습니다.",
         "TRACE_NOT_EXTENSION":"이미 제출된 기록과 달라 자동으로 합칠 수 없습니다.",
         "VERIFIER_UNAVAILABLE":"서버 검증을 잠시 사용할 수 없습니다.",
-        "TRACE_TOO_LARGE":"도전 기록이 너무 커서 제출할 수 없습니다."
+        "TRACE_TOO_LARGE":"도전 기록이 너무 커서 제출할 수 없습니다.",
+        "RECOVERY_CODE_INVALID":"복구 코드가 올바르지 않습니다.",
+        "ACCOUNT_ALREADY_PRESENT":"현재 온라인 계정이 유효합니다. 다른 계정으로 전환할 수 없습니다."
     }
     return messages.get(code,"요청을 완료하지 못했습니다. ("+code+")")
 
@@ -126,6 +164,32 @@ func _set_server() -> void:
         return
     var result: Dictionary = client.configure_server(_server_input.text)
     show_status("서버 주소를 적용했습니다." if result.ok else "HTTPS 주소 또는 로컬 개발 서버만 사용할 수 있습니다.")
+
+func _issue_code() -> void:
+    if _busy: return
+    _busy = true
+    show_status("복구 코드를 발급하는 중…")
+    var result: Dictionary = await client.issue_recovery_code()
+    if not is_inside_tree(): return
+    _busy = false
+    if not result.ok:
+        show_status(error_text(str(result.error)))
+        return
+    _recovery_input.text = str(result.recovery_code)
+    show_status("새 복구 코드를 안전한 곳에 복사해 보관하세요. 이전 코드는 더 이상 사용할 수 없습니다.")
+
+func _recover_account() -> void:
+    if _busy: return
+    _busy = true
+    show_status("계정을 복구하는 중…")
+    var result: Dictionary = await client.recover_account(_recovery_input.text)
+    if not is_inside_tree(): return
+    _busy = false
+    if not result.ok:
+        show_status(error_text(str(result.error)))
+        return
+    _recovery_input.text = ""
+    show_status("계정을 복구했습니다. 도전 시작/이어가기를 누르면 서버에 제출한 기록을 가져옵니다.")
 
 func _start() -> void:
     if _busy: return

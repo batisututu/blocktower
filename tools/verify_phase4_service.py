@@ -79,6 +79,9 @@ def main() -> None:
     status, extended = call(base, "/v1/submissions", body, token)
     require(status == 200 and not extended["duplicate"], "trace extension")
     checks.append("valid trace extension")
+    status, accepted = call(base, "/v1/challenges/current", {}, token)
+    require(status == 200 and accepted["accepted_actions"] == [action], "accepted trace available to account")
+    checks.append("authenticated accepted trace for device restore")
     status, branch = call(base, "/v1/submissions", {"challenge_id": challenge_id, "actions": []}, token)
     require(status == 409 and branch["error"] == "TRACE_NOT_EXTENSION", "branch rejected")
     checks.append("shortened trace rejected")
@@ -98,6 +101,32 @@ def main() -> None:
     status, leaderboard = call(base, "/v1/leaderboard/current")
     require(status == 200 and any(row["account_id"] == account["account_id"] for row in leaderboard["entries"]), "public leaderboard")
     checks.append("verified public leaderboard")
+
+    status, invalid_code = call(base, "/v1/accounts/recover", {"recovery_code": "0000"})
+    require(status == 401 and invalid_code["error"] == "RECOVERY_CODE_INVALID", "invalid recovery code")
+    checks.append("invalid recovery code rejected")
+    status, issued = call(base, "/v1/accounts/recovery-code", {}, token)
+    require(status == 200 and len(issued["recovery_code"].replace("-", "")) == 32, "recovery code issue")
+    status, restored = call(base, "/v1/accounts/recover", {"recovery_code": issued["recovery_code"]})
+    require(status == 200 and restored["account_id"] == account["account_id"], "account recovered")
+    status, revoked = call(base, "/v1/me", token=token)
+    require(status == 401 and revoked["error"] == "UNAUTHORIZED", "old device token revoked")
+    token = restored["token"]
+    status, retried = call(base, "/v1/accounts/recover", {"recovery_code": issued["recovery_code"]})
+    require(status == 200 and retried["account_id"] == account["account_id"] and retried["token"] != token,
+            "lost response can retry recovery")
+    status, revoked_again = call(base, "/v1/me", token=token)
+    require(status == 401 and revoked_again["error"] == "UNAUTHORIZED", "prior recovery token revoked")
+    token = retried["token"]
+    status, resumed = call(base, "/v1/challenges/current", {}, token)
+    require(status == 200 and resumed["challenge_id"] == challenge_id and resumed["accepted_actions"] == [action],
+            "recovered challenge continues from accepted trace")
+    checks.append("recovery rotates token and restores accepted trace")
+    status, replaced = call(base, "/v1/accounts/recovery-code", {}, token)
+    require(status == 200 and replaced["recovery_code"] != issued["recovery_code"], "recovery code rotation")
+    status, invalid_old = call(base, "/v1/accounts/recover", {"recovery_code": issued["recovery_code"]})
+    require(status == 401 and invalid_old["error"] == "RECOVERY_CODE_INVALID", "old recovery code revoked")
+    checks.append("new recovery code revokes old code")
 
     report = {"ok": True, "checks": checks, "week": challenge["week"], "challenge_id": challenge_id,
               "account_id": account["account_id"], "entry_count": len(leaderboard["entries"])}

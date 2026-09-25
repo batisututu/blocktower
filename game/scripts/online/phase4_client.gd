@@ -73,3 +73,15 @@ func ensure_account() -> Dictionary:
     var account: Dictionary = await call_api(HTTPClient.METHOD_POST,"/v1/accounts/guest",{})
     if not account.ok: return account
     return _save_account(account)
+
+func issue_recovery_code() -> Dictionary:
+    return await call_api(HTTPClient.METHOD_POST,"/v1/accounts/recovery-code",{},true)
+
+func recover_account(code: String) -> Dictionary:
+    if not token.is_empty():
+        var current: Dictionary = await call_api(HTTPClient.METHOD_GET,"/v1/me",{},true)
+        if current.ok: return {"ok": false, "error": "ACCOUNT_ALREADY_PRESENT"}
+        if current.error != "UNAUTHORIZED": return current
+    var account: Dictionary = await call_api(HTTPClient.METHOD_POST,"/v1/accounts/recover",{"recovery_code":code.strip_edges()})
+    if not account.ok: return account
+    return _save_account(account)

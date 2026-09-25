@@ -105,6 +105,7 @@ func _open_online() -> void:
     online_screen.challenge_active = online_mode
     online_screen.start_requested.connect(_start_challenge)
     online_screen.submit_requested.connect(_submit_challenge)
+    online_screen.use_server_requested.connect(_adopt_server_challenge)
     online_screen.exit_requested.connect(_close_online)
     add_child(online_screen)
 
@@ -127,6 +128,17 @@ func _start_challenge(challenge: Dictionary) -> void:
     if not loaded.ok:
         if is_instance_valid(online_screen): online_screen.show_status("도전 기록을 읽지 못했습니다: "+str(loaded.error))
         return
+    var aligned: Dictionary = repository.align_accepted_actions(challenge.get("accepted_actions",[]))
+    if not aligned.ok:
+        if is_instance_valid(online_screen):
+            if aligned.error == "TRACE_NOT_EXTENSION": online_screen.offer_conflict()
+            else: online_screen.show_status("서버 기록을 복원하지 못했습니다: "+str(aligned.error))
+        return
+    if aligned.imported:
+        loaded = repository.load_snapshot()
+        if not loaded.ok:
+            if is_instance_valid(online_screen): online_screen.show_status("서버 기록을 저장했지만 다시 읽지 못했습니다: "+str(loaded.error))
+            return
     var result: Dictionary = Session.resume(repository,repository.supply_config()) if loaded.found else Session.start(repository,challenge.session_id,challenge.seed,repository.supply_config())
     if not result.ok:
         if is_instance_valid(online_screen): online_screen.show_status("도전을 시작하지 못했습니다: "+str(result.error))
@@ -141,6 +153,29 @@ func _start_challenge(challenge: Dictionary) -> void:
         online_screen.queue_free()
         online_screen = null
 
+func _adopt_server_challenge() -> void:
+    if not is_instance_valid(online_screen): return
+    online_screen.show_status("서버의 최신 제출 기록을 확인하는 중…")
+    var current: Dictionary = await online_client.call_api(HTTPClient.METHOD_POST,"/v1/challenges/current",{},true)
+    if not is_instance_valid(online_screen): return
+    if not current.ok:
+        online_screen.show_status(online_screen.error_text(str(current.error)))
+        return
+    var opened: Dictionary = ChallengeRepository.open(current)
+    if not opened.ok:
+        online_screen.show_status("도전 저장을 열지 못했습니다: "+str(opened.error))
+        return
+    var repository: RefCounted = opened.repository
+    var loaded: Dictionary = repository.load_snapshot()
+    if not loaded.ok:
+        online_screen.show_status("기기 기록을 읽지 못했습니다: "+str(loaded.error))
+        return
+    var adopted: Dictionary = repository.adopt_accepted_actions(current.get("accepted_actions",[]))
+    if not adopted.ok:
+        online_screen.show_status("기기 기록을 보관하지 못했습니다: "+str(adopted.error))
+        return
+    _start_challenge(current)
+
 func _submit_challenge() -> void:
     if not online_mode or online_repository == null or not is_instance_valid(online_screen): return
     online_screen.show_status("행동 기록을 서버에서 재생 확인하는 중…")
@@ -153,7 +188,10 @@ func _submit_challenge() -> void:
         if is_instance_valid(completed_panel) and completed_panel == online_screen:
             completed_panel.show_status("제출 완료 · 검증된 주간 증축 %d층" % int(response.get("floor_count",online_session.snapshot().growth.total_floors)))
     else:
-        online_screen.show_status(online_screen.error_text(str(response.error)))
+        if response.error == "TRACE_NOT_EXTENSION":
+            online_screen.offer_conflict()
+        else:
+            online_screen.show_status(online_screen.error_text(str(response.error)))
 
 func _refresh_notice(expected: CanvasLayer, epoch: int) -> void:
     if not is_inside_tree() or not _application_blockers.is_empty(): return

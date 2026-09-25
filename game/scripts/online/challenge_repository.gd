@@ -93,31 +93,92 @@ func load_snapshot() -> Dictionary:
         return {"ok": false, "error": "TRACE_CORRUPT"} if damaged else {"ok": true, "found": false}
     candidates.sort_custom(func(a,b): return a.revision > b.revision)
     for candidate in candidates:
-        var started := Session.start(MemoryRepository.new(), _challenge_id, _seed, supply_config())
-        if not started.ok: return started
-        var replay: RefCounted = started.session
-        var valid := true
-        for item in candidate.actions:
-            if typeof(item) != TYPE_DICTIONARY:
-                valid = false
-                break
-            var action: Dictionary = item.duplicate(true)
-            for key in FIELDS:
-                if not action.has(key): continue
-                if typeof(action[key]) != TYPE_STRING or not action[key].is_valid_int():
-                    valid = false
-                    break
-                action[key] = action[key].to_int()
-            if not valid: break
-            var result: Dictionary = replay.dispatch(action)
-            if not result.ok:
-                valid = false
-                break
-        if valid:
+        var checked := _replay_actions(candidate.actions)
+        if checked.ok:
             _actions = candidate.actions.duplicate(true)
-            return {"ok": true, "found": true, "snapshot": replay.snapshot(), "recovered": damaged}
+            return {"ok": true, "found": true, "snapshot": checked.snapshot, "recovered": damaged}
         damaged = true
     return {"ok": false, "error": "TRACE_CORRUPT"}
+
+func _replay_actions(items: Array) -> Dictionary:
+    var started := Session.start(MemoryRepository.new(), _challenge_id, _seed, supply_config())
+    if not started.ok: return started
+    var replay: RefCounted = started.session
+    for item in items:
+        if typeof(item) != TYPE_DICTIONARY: return {"ok": false, "error": "TRACE_CORRUPT"}
+        var action: Dictionary = item.duplicate(true)
+        for key in FIELDS:
+            if not action.has(key): continue
+            if typeof(action[key]) != TYPE_STRING or not action[key].is_valid_int():
+                return {"ok": false, "error": "TRACE_CORRUPT"}
+            action[key] = action[key].to_int()
+        var result: Dictionary = replay.dispatch(action)
+        if not result.ok: return {"ok": false, "error": "TRACE_CORRUPT"}
+    return {"ok": true, "snapshot": replay.snapshot()}
+
+func align_accepted_actions(remote: Variant) -> Dictionary:
+    if typeof(remote) != TYPE_ARRAY or remote.size() > 20000:
+        return {"ok": false, "error": "INVALID_SERVER_TRACE"}
+    if remote.size() <= _actions.size():
+        if _actions.slice(0,remote.size()) != remote:
+            return {"ok": false, "error": "TRACE_NOT_EXTENSION"}
+        return {"ok": true, "imported": false}
+    if remote.slice(0,_actions.size()) != _actions:
+        return {"ok": false, "error": "TRACE_NOT_EXTENSION"}
+    var checked := _replay_actions(remote)
+    if not checked.ok or int(checked.snapshot.revision) != remote.size():
+        return {"ok": false, "error": "INVALID_SERVER_TRACE"}
+    var saved := _write_actions(remote)
+    if not saved.ok: return saved
+    return {"ok": true, "imported": true}
+
+func adopt_accepted_actions(remote: Variant) -> Dictionary:
+    if typeof(remote) != TYPE_ARRAY or remote.size() > 20000:
+        return {"ok": false, "error": "INVALID_SERVER_TRACE"}
+    var checked := _replay_actions(remote)
+    if not checked.ok or int(checked.snapshot.revision) != remote.size():
+        return {"ok": false, "error": "INVALID_SERVER_TRACE"}
+    var archive := _root.path_join("conflicts").path_join(str(Time.get_unix_time_from_system())+"_"+Crypto.new().generate_random_bytes(4).hex_encode())
+    if DirAccess.make_dir_recursive_absolute(archive) != OK:
+        return {"ok": false, "error": "SAVE_DIRECTORY_FAILED"}
+    var copied := 0
+    for name in ["trace_a.json", "trace_b.json"]:
+        var source := _root.path_join(name)
+        if not FileAccess.file_exists(source): continue
+        var input := FileAccess.open(source,FileAccess.READ)
+        if input == null: return {"ok": false, "error": "SAVE_READ_FAILED"}
+        var bytes := input.get_buffer(input.get_length())
+        input.close()
+        var output := FileAccess.open(archive.path_join(name),FileAccess.WRITE)
+        if output == null: return {"ok": false, "error": "SAVE_FAILED"}
+        output.store_buffer(bytes)
+        output.flush()
+        var error := output.get_error()
+        output.close()
+        if error != OK: return {"ok": false, "error": "SAVE_FAILED"}
+        copied += 1
+    if copied == 0: return {"ok": false, "error": "TRACE_CORRUPT"}
+    var saved := _write_actions(remote,true)
+    if not saved.ok: return saved
+    return {"ok": true, "archived": true}
+
+func _write_actions(next_actions: Array, both_slots: bool = false) -> Dictionary:
+    var payload := JSON.stringify({"challenge_id":_challenge_id,"seed":_seed,"revision":str(next_actions.size()),"actions":next_actions},"",true)
+    var text := JSON.stringify({"format":"bt_online_trace_v1","payload":payload,"checksum":payload.sha256_text()},"",true)
+    if text.to_utf8_buffer().size() > MAX_TRACE_BYTES: return {"ok": false, "error": "TRACE_TOO_LARGE"}
+    var slots := [_slot(next_actions.size())]
+    if both_slots: slots.append(_slot(next_actions.size()+1))
+    for slot in slots:
+        var file := FileAccess.open(slot,FileAccess.WRITE)
+        if file == null: return {"ok": false, "error": "SAVE_FAILED"}
+        file.store_string(text)
+        file.flush()
+        var error := file.get_error()
+        file.close()
+        if error != OK: return {"ok": false, "error": "SAVE_FAILED"}
+    _actions = next_actions.duplicate(true)
+    _staged = {}
+    return {"ok": true}
 
 func commit(candidate: Dictionary, expected_revision: int) -> Dictionary:
     if candidate.get("session_id", "") != _challenge_id or (expected_revision == -1 and not _actions.is_empty()) or (expected_revision >= 0 and expected_revision != _actions.size()):
@@ -128,16 +189,4 @@ func commit(candidate: Dictionary, expected_revision: int) -> Dictionary:
             return {"ok": false, "error": "ACTION_NOT_STAGED"}
         next_actions.append(_staged.duplicate(true))
     if candidate.revision != next_actions.size(): return {"ok": false, "error": "SAVE_CONFLICT"}
-    var payload := JSON.stringify({"challenge_id":_challenge_id,"seed":_seed,"revision":str(candidate.revision),"actions":next_actions},"",true)
-    var text := JSON.stringify({"format":"bt_online_trace_v1","payload":payload,"checksum":payload.sha256_text()},"",true)
-    if text.to_utf8_buffer().size() > MAX_TRACE_BYTES: return {"ok": false, "error": "TRACE_TOO_LARGE"}
-    var file := FileAccess.open(_slot(candidate.revision),FileAccess.WRITE)
-    if file == null: return {"ok": false, "error": "SAVE_FAILED"}
-    file.store_string(text)
-    file.flush()
-    var error := file.get_error()
-    file.close()
-    if error != OK: return {"ok": false, "error": "SAVE_FAILED"}
-    _actions = next_actions
-    _staged = {}
-    return {"ok": true}
+    return _write_actions(next_actions)

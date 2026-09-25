@@ -11,6 +11,15 @@ func before_each() -> void:
     _root = ProjectSettings.globalize_path("user://phase4_challenges/"+id)
 
 func after_each() -> void:
+    var conflicts := _root.path_join("conflicts")
+    if DirAccess.dir_exists_absolute(conflicts):
+        for folder in DirAccess.get_directories_at(conflicts):
+            var archive := conflicts.path_join(folder)
+            for name in ["trace_a.json","trace_b.json"]:
+                var archived := archive.path_join(name)
+                if FileAccess.file_exists(archived): DirAccess.remove_absolute(archived)
+            DirAccess.remove_absolute(archive)
+        DirAccess.remove_absolute(conflicts)
     for name in ["trace_a.json","trace_b.json"]:
         var path := _root.path_join(name)
         if FileAccess.file_exists(path): DirAccess.remove_absolute(path)
@@ -88,3 +97,58 @@ func test_reduced_single_challenge_reopens_with_issued_profile() -> void:
     if resumed.ok:
         assert_eq(resumed.session.snapshot().checkpoint.config_hash,expected_hash)
         assert_eq(resumed.session.snapshot(),made.session.snapshot())
+
+func test_accepted_server_trace_restores_fresh_challenge() -> void:
+    var opened: Dictionary = ChallengeRepository.open(_challenge)
+    assert_true(opened.ok)
+    if not opened.ok: return
+    var repository: RefCounted = opened.repository
+    var action := {"type":"SET_AUTO","session_id":_challenge.session_id,"event_id":"1","enabled":true,"confirmed":true}
+    var aligned: Dictionary = repository.align_accepted_actions([action])
+    assert_true(aligned.ok)
+    if not aligned.ok: return
+    assert_true(aligned.imported)
+    var reopened: Dictionary = ChallengeRepository.open(_challenge)
+    assert_true(reopened.ok)
+    if not reopened.ok: return
+    var loaded: Dictionary = reopened.repository.load_snapshot()
+    assert_true(loaded.ok)
+    if loaded.ok:
+        assert_eq(loaded.snapshot.revision,1)
+        assert_true(loaded.snapshot.auto_clear)
+
+func test_local_extension_is_kept_and_divergence_is_rejected() -> void:
+    var made := _session()
+    if not made.ok: return
+    var action := {"type":"SET_AUTO","session_id":_challenge.session_id,"event_id":1,"enabled":true,"confirmed":true}
+    assert_true(made.session.dispatch(action).ok)
+    var local: Array = made.repository.actions()
+    var old_server: Dictionary = made.repository.align_accepted_actions([])
+    assert_true(old_server.ok)
+    if old_server.ok: assert_false(old_server.imported)
+    var branch: Array = [{"type":"SET_AUTO","session_id":_challenge.session_id,"event_id":"1","enabled":false,"confirmed":true}]
+    var conflict: Dictionary = made.repository.align_accepted_actions(branch)
+    assert_false(conflict.ok)
+    assert_eq(conflict.error,"TRACE_NOT_EXTENSION")
+    assert_eq(made.repository.actions(),local)
+
+func test_explicit_server_choice_archives_local_journal() -> void:
+    var made := _session()
+    if not made.ok: return
+    var action := {"type":"SET_AUTO","session_id":_challenge.session_id,"event_id":1,"enabled":true,"confirmed":true}
+    assert_true(made.session.dispatch(action).ok)
+    var adopted: Dictionary = made.repository.adopt_accepted_actions([])
+    assert_true(adopted.ok)
+    if not adopted.ok: return
+    var conflicts := _root.path_join("conflicts")
+    var folders := DirAccess.get_directories_at(conflicts)
+    assert_eq(folders.size(),1)
+    if folders.size() != 1: return
+    var archived := conflicts.path_join(folders[0]).path_join("trace_b.json")
+    assert_true(FileAccess.file_exists(archived))
+    var reopened: Dictionary = ChallengeRepository.open(_challenge)
+    assert_true(reopened.ok)
+    if not reopened.ok: return
+    var loaded: Dictionary = reopened.repository.load_snapshot()
+    assert_true(loaded.ok)
+    if loaded.ok: assert_eq(loaded.snapshot.revision,0)

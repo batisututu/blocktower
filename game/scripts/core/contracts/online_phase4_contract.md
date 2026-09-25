@@ -17,7 +17,8 @@
 
 ## Identity, conflict, and visibility
 
-- The guest token identifies one online account. The MVP does not recover the token after app deletion, merge personal saves, or synchronize the personal tower across devices. Copying a token to another device is outside the supported UI; if it happens, both devices still submit to one server challenge and the strict trace-prefix rule prevents summing divergent histories.
+- The guest token identifies one online account. An authenticated account may issue a 128-bit recovery code; only its hash is stored by the server and issuing a new code invalidates the old code. The code is shown once for the player to keep outside the app. Recovery rotates the bearer token, invalidating the previous device's token, while the recovery code remains usable if a response is lost. The client accepts recovery when it has no token or the server rejects its stored token; it does not replace a still-valid account. A lost token without a saved recovery code cannot be recovered.
+- An authenticated challenge response includes its already accepted action trace. On challenge open, the client replays and commits that trace only when its local trace is an exact prefix. If the local trace is longer, it keeps the local suffix for submission. Divergent traces return `TRACE_NOT_EXTENSION` without replacing either journal. The player may explicitly choose the server's accepted trace; before replacement the client copies both local journal generations to a distinct private conflict archive. A failed archive leaves the current journal untouched. The personal save and personal tower never synchronize across devices.
 - Rank is descending verified floors, then the first server verification time at which that floor count was reached, then account ID. No ranking reward, prize, or paid entitlement depends on it. A correction can change a public rank; no reward clawback is required in this MVP.
 - A public entry contains a random alias, verified floor count, and a representative 10-floor style derived from the replayed state. It contains no raw action trace, seed, account token, personal save, or free-form profile text.
 - The server's receipt time cannot prove when an offline move was performed. The fixed challenge week and hard submission cutoff prevent a prior week's trace from being assigned to a later week, while in-week replay is still a competition prototype rather than a bot-proof tournament.
@@ -31,6 +32,7 @@
 | `INVALID_ACTION`, reducer error, `REVISION_MISMATCH` | verifier | Trace is not a valid deterministic GameSession history. No public score changes. |
 | `TRACE_NOT_EXTENSION` | server | Another device/history already committed a different prefix. Manual merge is unsupported. |
 | `TRACE_CORRUPT`, `SAVE_FAILED` | client repository | A local generation is damaged or could not be committed. Never clear the personal save. |
+| `RECOVERY_CODE_INVALID` | server | Unknown or malformed recovery code; do not disclose whether an account exists. |
 | `VERIFIER_UNAVAILABLE` | server | The pinned engine cannot run; do not trust a client floor count as fallback. |
 
 The server must run the same pinned engine, rules, generator catalog, and assets for every live challenge. It currently selects one of two pinned weight profiles per challenge. Deployments that change deterministic rules or assets still need a versioned verifier retained through the current week; the MVP server is not yet set up for rolling verifier binaries.

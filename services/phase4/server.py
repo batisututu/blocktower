@@ -48,7 +48,8 @@ def database(path: Path, initialize: bool = False) -> sqlite3.Connection:
         db.executescript("""
         CREATE TABLE IF NOT EXISTS accounts (
             id TEXT PRIMARY KEY, token_hash TEXT UNIQUE NOT NULL,
-            alias TEXT NOT NULL, created_at INTEGER NOT NULL
+            alias TEXT NOT NULL, created_at INTEGER NOT NULL,
+            recovery_hash TEXT UNIQUE
         );
         CREATE TABLE IF NOT EXISTS challenges (
             id TEXT PRIMARY KEY, account_id TEXT NOT NULL REFERENCES accounts(id),
@@ -68,6 +69,8 @@ def database(path: Path, initialize: bool = False) -> sqlite3.Connection:
         """)
         if "supply_profile" not in {row[1] for row in db.execute("PRAGMA table_info(challenges)")}:
             db.execute("ALTER TABLE challenges ADD COLUMN supply_profile TEXT NOT NULL DEFAULT 'classic'")
+        if "recovery_hash" not in {row[1] for row in db.execute("PRAGMA table_info(accounts)")}:
+            db.execute("ALTER TABLE accounts ADD COLUMN recovery_hash TEXT")
     return db
 
 
@@ -106,9 +109,34 @@ class Api:
         alias = "건축가-" + account_id[:6].upper()
         now = int(datetime.now(UTC).timestamp())
         with connection(self.db_path) as db:
-            db.execute("INSERT INTO accounts VALUES (?, ?, ?, ?)",
+            db.execute("INSERT INTO accounts (id, token_hash, alias, created_at) VALUES (?, ?, ?, ?)",
                        (account_id, hashlib.sha256(token.encode()).hexdigest(), alias, now))
         return {"account_id": account_id, "alias": alias, "token": token}
+
+    def issue_recovery_code(self, account: sqlite3.Row) -> dict:
+        raw = secrets.token_hex(16).upper()
+        code = "-".join(raw[index:index + 4] for index in range(0, 32, 4))
+        digest = hashlib.sha256(raw.encode("ascii")).hexdigest()
+        with connection(self.db_path) as db:
+            db.execute("UPDATE accounts SET recovery_hash=? WHERE id=?", (digest, account["id"]))
+        return {"recovery_code": code}
+
+    def recover_account(self, body: object) -> dict:
+        if not isinstance(body, dict) or set(body) != {"recovery_code"} or not isinstance(body["recovery_code"], str):
+            raise ApiError(400, "INVALID_REQUEST")
+        raw = body["recovery_code"].replace("-", "").strip().upper()
+        if len(raw) != 32 or any(char not in "0123456789ABCDEF" for char in raw):
+            raise ApiError(401, "RECOVERY_CODE_INVALID")
+        digest = hashlib.sha256(raw.encode("ascii")).hexdigest()
+        token = secrets.token_hex(32)
+        with connection(self.db_path) as db:
+            db.execute("BEGIN IMMEDIATE")
+            account = db.execute("SELECT id, alias FROM accounts WHERE recovery_hash=?", (digest,)).fetchone()
+            if account is None:
+                raise ApiError(401, "RECOVERY_CODE_INVALID")
+            db.execute("UPDATE accounts SET token_hash=? WHERE id=?",
+                       (hashlib.sha256(token.encode()).hexdigest(), account["id"]))
+        return {"account_id": account["id"], "alias": account["alias"], "token": token}
 
     def challenge(self, account: sqlite3.Row) -> dict:
         now = datetime.now(UTC)
@@ -125,10 +153,12 @@ class Api:
                     VALUES (?, ?, ?, ?, ?, ?, ?)""",
                     (challenge_id, account["id"], week, seed, int(now.timestamp()), week_end, profile))
                 row = db.execute("SELECT * FROM challenges WHERE id=?", (challenge_id,)).fetchone()
+            accepted = db.execute("SELECT actions_json FROM submissions WHERE challenge_id=?", (row["id"],)).fetchone()
         return {"challenge_id": row["id"], "session_id": row["id"], "seed": row["seed"],
                 "week": row["week"], "issued_at": row["issued_at"], "week_end": row["week_end"],
                 "submit_until": row["week_end"] + LATE_SECONDS, "rule_version": "bt_rules_v1",
-                "supply_profile": row["supply_profile"]}
+                "supply_profile": row["supply_profile"],
+                "accepted_actions": json.loads(accepted["actions_json"]) if accepted else []}
 
     def replay(self, challenge_id: str, seed: str, supply_profile: str, actions: list) -> dict:
         with tempfile.TemporaryDirectory(prefix="blocktower_replay_") as folder:
@@ -265,6 +295,12 @@ class Handler(BaseHTTPRequestHandler):
                 if body != {}:
                     raise ApiError(400, "INVALID_REQUEST")
                 self.reply(201, self.api.create_account())
+            elif path == "/v1/accounts/recovery-code":
+                if body != {}:
+                    raise ApiError(400, "INVALID_REQUEST")
+                self.reply(200, self.api.issue_recovery_code(self.authenticated()))
+            elif path == "/v1/accounts/recover":
+                self.reply(200, self.api.recover_account(body))
             elif path == "/v1/challenges/current":
                 if body != {}:
                     raise ApiError(400, "INVALID_REQUEST")

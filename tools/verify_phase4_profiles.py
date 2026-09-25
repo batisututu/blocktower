@@ -36,6 +36,9 @@ def main() -> None:
         with tempfile.TemporaryDirectory(prefix="blocktower_profiles_") as folder:
             db_path = Path(folder) / "legacy.sqlite3"
             with server.connection(db_path) as db:
+                db.execute("""CREATE TABLE accounts (
+                    id TEXT PRIMARY KEY, token_hash TEXT UNIQUE NOT NULL,
+                    alias TEXT NOT NULL, created_at INTEGER NOT NULL)""")
                 db.execute("""CREATE TABLE challenges (
                     id TEXT PRIMARY KEY, account_id TEXT NOT NULL REFERENCES accounts(id),
                     week TEXT NOT NULL, seed TEXT NOT NULL, issued_at INTEGER NOT NULL,
@@ -43,7 +46,8 @@ def main() -> None:
             api = server.Api(db_path, args.godot, project)
             with server.connection(db_path) as db:
                 columns = {row[1] for row in db.execute("PRAGMA table_info(challenges)")}
-            if "supply_profile" not in columns:
+                account_columns = {row[1] for row in db.execute("PRAGMA table_info(accounts)")}
+            if "supply_profile" not in columns or "recovery_hash" not in account_columns:
                 raise RuntimeError("legacy schema migration failed")
             result = []
             server.datetime = Friday
