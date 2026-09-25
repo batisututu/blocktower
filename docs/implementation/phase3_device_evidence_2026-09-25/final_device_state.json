@@ -1,0 +1,9 @@
+{
+  "main_version_code": 8,
+  "main_revision": "0",
+  "main_total_floors": "0",
+  "main_save_sha256": "26ee21a08e3dfe4856dcce15534c05692382ad3bb9bc08931bb296b7c501afaf",
+  "main_save_unchanged_after_qa": true,
+  "qa_package_removed": true,
+  "main_package_present": true
+}

@@ -1,0 +1,30 @@
+{
+  "floors": 3000,
+  "large_text": true,
+  "fixture_sha256": "c4e76c5def6143348377c4d1a2ae076491c70646bc477973921708387be8acba",
+  "launch": "Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] pkg=com.blocktower.game.qa }\r\nStatus: ok\r\nLaunchState: COLD\r\nActivity: com.blocktower.game.qa/com.godot.game.GodotApp\r\nTotalTime: 1237\r\nWaitTime: 1250\r\nComplete",
+  "screenshots": [
+    "puzzle_3000.png",
+    "detail_3000.png",
+    "focus_3000.png",
+    "focus_next_3000.png",
+    "overview_3000.png"
+  ],
+  "memory_overview": {
+    "total_pss_kib": 297534,
+    "graphics_pss_kib": 51956
+  },
+  "presented_frames_overview": {
+    "surface": "SurfaceView[com.blocktower.game.qa/com.godot.game.GodotAppLauncher]@0(BLAST)#68667",
+    "samples": 125,
+    "median_interval_ms": 16.62,
+    "p95_interval_ms": 16.71,
+    "max_interval_ms": 16.81,
+    "over_33ms": 0
+  },
+  "read_only_save_unchanged": true,
+  "memory_detail": {
+    "total_pss_kib": 302241,
+    "graphics_pss_kib": 51956
+  }
+}

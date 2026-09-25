@@ -1806,6 +1806,7 @@ func _show_segment_jump() -> void:
         if _ui_callback_allowed(input,epoch): _confirm_segment_jump())
     _fit_modal()
     segment_jump_input.grab_focus()
+    segment_jump_input.select_all()
 
 func _confirm_segment_jump() -> void:
     if screen_id not in ["tower","tower_overview"] or controller.phase != "modal" or not is_instance_valid(segment_jump_input): return
@@ -1815,6 +1816,7 @@ func _confirm_segment_jump() -> void:
         segment_jump_status.text = "1~%s번 사이의 구간 번호를 입력하세요." % format_int(maximum)
         segment_jump_status.add_theme_color_override("font_color",INVALID)
         segment_jump_input.grab_focus()
+        segment_jump_input.select_all()
         return
     var target := raw.to_int()
     _close_modal()
@@ -1880,6 +1882,7 @@ func _show_segment_copy() -> void:
     _refresh_segment_copy_preview()
     _fit_modal()
     segment_copy_input.grab_focus()
+    segment_copy_input.select_all()
 
 func _confirm_segment_copy() -> void:
     if screen_id != "tower" or controller.phase != "modal" or not is_instance_valid(segment_copy_input): return
@@ -1888,6 +1891,7 @@ func _confirm_segment_copy() -> void:
     if not raw.is_valid_int() or raw.length()>15 or raw.to_int()<1 or raw.to_int()>completed or raw.to_int()==selected_segment or _copy_target_matches(selected_segment,raw.to_int()):
         _refresh_segment_copy_preview()
         segment_copy_input.grab_focus()
+        segment_copy_input.select_all()
         return
     var target := raw.to_int()
     var result: Dictionary = controller.submit_modal("COPY_SEGMENT_APPEARANCE",{"source":selected_segment,"target":target,"confirmed":true})
@@ -2031,7 +2035,7 @@ func _overview_material_share(count: int, total: int) -> String:
 
 func _overview_plot_rect() -> Rect2:
     var insets := _safe_vertical()
-    var top := insets.x+216.0
+    var top := insets.x+236.0
     var bottom := size.y-insets.y-202.0
     return Rect2((size.x-150.0)/2.0,top,150.0,maxf(64.0,bottom-top))
 

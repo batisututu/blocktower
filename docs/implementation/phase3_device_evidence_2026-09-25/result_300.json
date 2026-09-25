@@ -1,0 +1,44 @@
+{
+  "floors": 300,
+  "fixture_sha256": "f56532d972d34be6358801241a8600899e217945af5ce8db941e4701fe3e27bf",
+  "launch": "Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] pkg=com.blocktower.game.qa }\r\nStatus: ok\r\nLaunchState: COLD\r\nActivity: com.blocktower.game.qa/com.godot.game.GodotApp\r\nTotalTime: 1452\r\nWaitTime: 1456\r\nComplete",
+  "screenshots": [
+    "puzzle_300.png",
+    "detail_300.png",
+    "focus_300.png",
+    "focus_next_300.png",
+    "overview_300.png",
+    "copy_sheet_brick_parts.png",
+    "copy_result_brick_parts.png"
+  ],
+  "memory_overview": {
+    "total_pss_kib": 322193,
+    "graphics_pss_kib": 62232
+  },
+  "presented_frames_overview": {
+    "surface": "SurfaceView[com.blocktower.game.qa/com.godot.game.GodotAppLauncher]@0(BLAST)#68295",
+    "samples": 125,
+    "median_interval_ms": 16.65,
+    "p95_interval_ms": 16.7,
+    "max_interval_ms": 16.74,
+    "over_33ms": 0
+  },
+  "read_only_save_unchanged": true,
+  "memory_detail": {
+    "total_pss_kib": 326830,
+    "graphics_pss_kib": 62232
+  },
+  "copy": {
+    "mode": "brick_parts",
+    "revision": "2",
+    "target_material": "brick",
+    "target_parts": [
+      "brick_arch_window",
+      "brick_cornice",
+      "brick_landmark",
+      "brick_terrace"
+    ],
+    "same_state_after_restart": true,
+    "same_save_bytes_after_restart": true
+  }
+}

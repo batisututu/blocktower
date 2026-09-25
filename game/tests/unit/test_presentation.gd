@@ -1484,10 +1484,12 @@ func test_phase3_overview_counts_sparse_facades_and_navigation_is_read_only():
     assert_true(screen.controls.get_children().any(func(child):return child is Label and child.text.contains("벽돌 0.3%")),"small nonzero facade share remains visible")
     screen._show_segment_jump()
     assert_eq(screen.controller.phase,"modal")
+    assert_eq(screen.segment_jump_input.get_selected_text(),"150","prefilled jump target is ready to replace")
     screen.segment_jump_input.text = "302"
     screen._confirm_segment_jump()
     assert_eq(screen.screen_id,"tower_overview")
     assert_true(screen.segment_jump_status.text.contains("1~301"))
+    assert_eq(screen.segment_jump_input.get_selected_text(),"302","invalid target is ready to correct")
     screen.segment_jump_input.text = "301"
     screen._confirm_segment_jump()
     assert_eq(screen.screen_id,"tower")
@@ -1523,10 +1525,12 @@ func test_phase3_copy_sheet_validates_target_and_selects_committed_copy():
     var before: Dictionary = session.snapshot()
     screen._show_segment_copy()
     assert_eq(screen.controller.phase,"modal")
+    assert_eq(screen.segment_copy_input.get_selected_text(),"2","prefilled copy target is ready to replace")
     assert_true(screen.segment_copy_preview.text.contains("대상 구간 2"))
     screen.segment_copy_input.text = "7"
     screen._confirm_segment_copy()
     assert_eq(screen.controller.phase,"modal")
+    assert_eq(screen.segment_copy_input.get_selected_text(),"7","invalid copy target is ready to correct")
     assert_eq(session.snapshot(),before,"partial target never commits")
     screen.segment_copy_input.text = "2"
     screen._refresh_segment_copy_preview()

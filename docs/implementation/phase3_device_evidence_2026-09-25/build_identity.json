@@ -1,0 +1,21 @@
+{
+  "device": {
+    "model": "SM-N981N",
+    "android": "13",
+    "screen": "Physical size: 1080x2400",
+    "physical_memory_kib": 7829728,
+    "display_hz": 60
+  },
+  "build": {
+    "version_code": 8,
+    "version_name": "0.1.0-phase3-8",
+    "main_apk_sha256": "9e139214eadb8d3fdab5ac236a47ce11483debeb683e8d9e15067747cc5009f5",
+    "qa_apk_sha256": "725fc8f3df91b97ae32258cab62de369cd56c14cd990be9eddff1c06232389aa",
+    "shared_resource_entries": 251,
+    "shared_resource_bytes_identical": true,
+    "ctex_entries": 82,
+    "ctex_uncompressed_bytes": 3386398,
+    "puzzle_screen_sha256": "8738ceaa358391b215c1c935a31e9f90e9de85cd294676e51e91aeec33453ef7",
+    "game_session_sha256": "07a8166fff848e968d2c6c041fa146001926d1985b63b38b1e7071caf3287dd7"
+  }
+}

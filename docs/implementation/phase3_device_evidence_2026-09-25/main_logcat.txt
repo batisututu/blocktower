@@ -1,0 +1,442 @@
+--------- beginning of main
+09-25 20:13:41.295 I/blocktower.game( 1653): Late-enabling -Xcheck:jni
+09-25 20:13:41.312 I/blocktower.game( 1653): Using generational CollectorTypeCC GC.
+09-25 20:13:41.319 D/nativeloader( 1653): Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+09-25 20:13:41.321 D/ActivityThread( 1653): setConscryptValidator
+09-25 20:13:41.321 D/ActivityThread( 1653): setConscryptValidator - put
+09-25 20:13:41.334 D/CompatibilityChangeReporter( 1653): Compat change id reported: 171979766; UID 10380; state: ENABLED
+09-25 20:13:41.390 D/nativeloader( 1653): Configuring clns-4 for other apk /data/app/~~rtELIOn-jcbsXuvkbLexlQ==/com.blocktower.game-k_r_kLUFg9jHLna2tx7_Rg==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~rtELIOn-jcbsXuvkbLexlQ==/com.blocktower.game-k_r_kLUFg9jHLna2tx7_Rg==/lib/arm64:/data/app/~~rtELIOn-jcbsXuvkbLexlQ==/com.blocktower.game-k_r_kLUFg9jHLna2tx7_Rg==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.blocktower.game
+09-25 20:13:41.404 D/nativeloader( 1653): Load libframework-connectivity-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity.jar: ok
+09-25 20:13:41.407 V/GraphicsEnvironment( 1653): ANGLE Developer option for 'com.blocktower.game' set to: 'default'
+09-25 20:13:41.408 V/GraphicsEnvironment( 1653): ANGLE GameManagerService for com.blocktower.game: false
+09-25 20:13:41.408 V/GraphicsEnvironment( 1653): App is not on the allowlist for updatable production driver.
+09-25 20:13:41.411 D/NetworkSecurityConfig( 1653): No Network Security Config specified, using platform default
+09-25 20:13:41.443 D/NetworkSecurityConfig( 1653): No Network Security Config specified, using platform default
+09-25 20:13:41.455 D/OpenGLRenderer( 1653): RenderThread::requireGlContext()
+09-25 20:13:41.455 I/AdrenoGLES-0( 1653): QUALCOMM build                   : db7e7066a2, I1fad33e957
+09-25 20:13:41.455 I/AdrenoGLES-0( 1653): Build Date                       : 05/11/25
+09-25 20:13:41.455 I/AdrenoGLES-0( 1653): OpenGL ES Shader Compiler Version: EV031.32.02.10
+09-25 20:13:41.455 I/AdrenoGLES-0( 1653): Local Branch                     :
+09-25 20:13:41.455 I/AdrenoGLES-0( 1653): Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.UM.9.12.11.00.00.582.697
+09-25 20:13:41.455 I/AdrenoGLES-0( 1653): Remote Branch                    : NONE
+09-25 20:13:41.455 I/AdrenoGLES-0( 1653): Reconstruct Branch               : NOTHING
+09-25 20:13:41.455 I/AdrenoGLES-0( 1653): Build Config                     : S P 10.0.7 AArch64
+09-25 20:13:41.455 I/AdrenoGLES-0( 1653): Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+09-25 20:13:41.459 I/AdrenoGLES-0( 1653): PFP: 0x016dd093, ME: 0x00000000
+09-25 20:13:41.469 D/OpenGLRenderer( 1653): RenderThread::setGrContext()
+09-25 20:13:41.495 I/DecorView( 1653): [INFO] isPopOver=false config=true
+09-25 20:13:41.495 I/DecorView( 1653): updateCaptionType: isFloating=false isApplication=true hasWindowDecorCaption=false this=DecorView@91e0363[]
+09-25 20:13:41.496 D/DecorView( 1653): setCaptionType = 0, this = DecorView@91e0363[]
+09-25 20:13:41.498 I/DecorView( 1653): getCurrentDensityDpi: from real metrics. densityDpi=450 msg=resources_loaded
+09-25 20:13:41.498 I/DecorView( 1653): setWindowBackground: isPopOver=false color=ff171717 d=android.graphics.drawable.GradientDrawable@9db0819
+09-25 20:13:41.502 D/PhoneWindow( 1653): forceLight changed to false [] from com.android.internal.policy.PhoneWindow.updateForceLightNavigationBar:4314 com.android.internal.policy.PhoneWindow.setNavigationBarColor:4033 androidx.activity.EdgeToEdgeApi29.setUp:290 androidx.activity.EdgeToEdge.enable:89 androidx.activity.EdgeToEdge.enable$default:71
+09-25 20:13:41.504 D/GodotActivity( 1653): Project command line parameters: [--xr_mode_regular, --xr-mode, off, --fullscreen, --background_color, #000000]
+09-25 20:13:41.505 D/GodotActivity( 1653): Launch intent Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 pkg=com.blocktower.game cmp=com.blocktower.game/com.godot.game.GodotAppLauncher } with parameters []
+09-25 20:13:41.515 V/GodotActivity( 1653): Creating new Godot fragment instance.
+09-25 20:13:41.536 V/Godot   ( 1653): Initializing Godot plugin registry
+09-25 20:13:41.543 I/GodotPluginRegistry( 1653): Registering runtime plugin AndroidRuntime
+09-25 20:13:41.543 V/Godot   ( 1653): InitEngine with params: [--xr_mode_regular, --xr-mode, off, --fullscreen, --background_color, #000000]
+09-25 20:13:41.545 I/DecorView( 1653): setWindowBackground: isPopOver=false color=ff000000 d=android.graphics.drawable.ColorDrawable@bbc9d8e
+09-25 20:13:41.552 D/nativeloader( 1653): Load /data/app/~~rtELIOn-jcbsXuvkbLexlQ==/com.blocktower.game-k_r_kLUFg9jHLna2tx7_Rg==/lib/arm64/libgodot_android.so using class loader ns clns-4 (caller=/data/app/~~rtELIOn-jcbsXuvkbLexlQ==/com.blocktower.game-k_r_kLUFg9jHLna2tx7_Rg==/base.apk!classes7.dex): ok
+09-25 20:13:41.553 V/Godot   ( 1653): Godot native layer initialization completed: true
+09-25 20:13:41.553 V/Godot   ( 1653): Setting up native layer with params: [--xr-mode, off, --fullscreen]
+09-25 20:13:41.575 V/Godot   ( 1653): Godot native layer setup completed
+09-25 20:13:41.576 V/Godot   ( 1653): OnInitRenderView: GodotFragment{12489af} (ecee050e-4f2e-4a0e-9ea9-ed9b3ebdc45b id=0x7f07002c)
+09-25 20:13:41.581 D/CompatibilityChangeReporter( 1653): Compat change id reported: 210923482; UID 10380; state: ENABLED
+09-25 20:13:41.589 D/Godot   ( 1653): Render view should be transparent: false
+09-25 20:13:41.590 D/Godot   ( 1653): renderingDevice: opengl3 (ProjectSettings)
+09-25 20:13:41.590 D/Godot   ( 1653): 			renderer: gl_compatibility (ProjectSettings)
+09-25 20:13:41.597 W/OnBackInvokedCallback( 1653): OnBackInvokedCallback is not enabled for the application.
+09-25 20:13:41.597 W/OnBackInvokedCallback( 1653): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+09-25 20:13:41.602 V/Godot   ( 1653): OnStart: GodotFragment{12489af} (ecee050e-4f2e-4a0e-9ea9-ed9b3ebdc45b id=0x7f07002c)
+09-25 20:13:41.605 V/Godot   ( 1653): OnResume: GodotFragment{12489af} (ecee050e-4f2e-4a0e-9ea9-ed9b3ebdc45b id=0x7f07002c)
+09-25 20:13:41.605 I/MSHandlerLifeCycle( 1653): check: return. pkg=com.blocktower.game parent=null callers=com.android.internal.policy.DecorView.setVisibility:4412 android.app.ActivityThread.handleResumeActivity:5476 android.app.servertransaction.ResumeActivityItem.execute:54 android.app.servertransaction.ActivityTransactionItem.execute:45 android.app.servertransaction.TransactionExecutor.executeLifecycleState:176
+09-25 20:13:41.605 I/MSHandlerLifeCycle( 1653): removeMultiSplitHandler: no exist. decor=DecorView@91e0363[]
+09-25 20:13:41.611 D/NativeCustomFrequencyManager( 1653): [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+09-25 20:13:41.614 D/InsetsSourceConsumer( 1653): setRequestedVisible: visible=false, type=23, host=com.blocktower.game/com.godot.game.GodotAppLauncher, from=android.view.InsetsSourceConsumer.hide:257 android.view.InsetsController.collectSourceControls:1310 android.view.InsetsController.controlAnimationUnchecked:1164 android.view.InsetsController.applyAnimation:1576 android.view.InsetsController.applyAnimation:1557 android.view.InsetsController.hide:1093 android.view.InsetsController.hide:1068 android.view.PendingInsetsController$HideRequest.replay:241 android.view.PendingInsetsController.replayAndAttach:172 android.view.ViewRootImpl.setView:1689
+09-25 20:13:41.614 D/InsetsSourceConsumer( 1653): setRequestedVisible: visible=false, type=22, host=com.blocktower.game/com.godot.game.GodotAppLauncher, from=android.view.InsetsSourceConsumer.hide:257 android.view.InsetsController.collectSourceControls:1310 android.view.InsetsController.controlAnimationUnchecked:1164 android.view.InsetsController.applyAnimation:1576 android.view.InsetsController.applyAnimation:1557 android.view.InsetsController.hide:1093 android.view.InsetsController.hide:1068 android.view.PendingInsetsController$HideRequest.replay:241 android.view.PendingInsetsController.replayAndAttach:172 android.view.ViewRootImpl.setView:1689
+09-25 20:13:41.614 D/InsetsSourceConsumer( 1653): setRequestedVisible: visible=false, type=21, host=com.blocktower.game/com.godot.game.GodotAppLauncher, from=android.view.InsetsSourceConsumer.hide:257 android.view.InsetsController.collectSourceControls:1310 android.view.InsetsController.controlAnimationUnchecked:1164 android.view.InsetsController.applyAnimation:1576 android.view.InsetsController.applyAnimation:1557 android.view.InsetsController.hide:1093 android.view.InsetsController.hide:1068 android.view.PendingInsetsController$HideRequest.replay:241 android.view.PendingInsetsController.replayAndAttach:172 android.view.ViewRootImpl.setView:1689
+09-25 20:13:41.614 D/InsetsSourceConsumer( 1653): setRequestedVisible: visible=false, type=20, host=com.blocktower.game/com.godot.game.GodotAppLauncher, from=android.view.InsetsSourceConsumer.hide:257 android.view.InsetsController.collectSourceControls:1310 android.view.InsetsController.controlAnimationUnchecked:1164 android.view.InsetsController.applyAnimation:1576 android.view.InsetsController.applyAnimation:1557 android.view.InsetsController.hide:1093 android.view.InsetsController.hide:1068 android.view.PendingInsetsController$HideRequest.replay:241 android.view.PendingInsetsController.replayAndAttach:172 android.view.ViewRootImpl.setView:1689
+09-25 20:13:41.615 D/InsetsSourceConsumer( 1653): setRequestedVisible: visible=false, type=2, host=com.blocktower.game/com.godot.game.GodotAppLauncher, from=android.view.InsetsSourceConsumer.hide:257 android.view.InsetsController.collectSourceControls:1310 android.view.InsetsController.controlAnimationUnchecked:1164 android.view.InsetsController.applyAnimation:1576 android.view.InsetsController.applyAnimation:1557 android.view.InsetsController.hide:1093 android.view.InsetsController.hide:1068 android.view.PendingInsetsController$HideRequest.replay:241 android.view.PendingInsetsController.replayAndAttach:172 android.view.ViewRootImpl.setView:1689
+09-25 20:13:41.615 D/InsetsSourceConsumer( 1653): setRequestedVisible: visible=false, type=1, host=com.blocktower.game/com.godot.game.GodotAppLauncher, from=android.view.InsetsSourceConsumer.hide:257 android.view.InsetsController.collectSourceControls:1310 android.view.InsetsController.controlAnimationUnchecked:1164 android.view.InsetsController.applyAnimation:1576 android.view.InsetsController.applyAnimation:1557 android.view.InsetsController.hide:1093 android.view.InsetsController.hide:1068 android.view.PendingInsetsController$HideRequest.replay:241 android.view.PendingInsetsController.replayAndAttach:172 android.view.ViewRootImpl.setView:1689
+09-25 20:13:41.615 D/InsetsSourceConsumer( 1653): setRequestedVisible: visible=false, type=0, host=com.blocktower.game/com.godot.game.GodotAppLauncher, from=android.view.InsetsSourceConsumer.hide:257 android.view.InsetsController.collectSourceControls:1310 android.view.InsetsController.controlAnimationUnchecked:1164 android.view.InsetsController.applyAnimation:1576 android.view.InsetsController.applyAnimation:1557 android.view.InsetsController.hide:1093 android.view.InsetsController.hide:1068 android.view.PendingInsetsController$HideRequest.replay:241 android.view.PendingInsetsController.replayAndAttach:172 android.view.ViewRootImpl.setView:1689
+09-25 20:13:41.620 D/InsetsController( 1653): onStateChanged: InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2400), mDisplayCutout=DisplayCutout{insets=Rect(0, 92 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(503, 0 - 577, 92), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2400 physicalDisplayWidth=1080 physicalDisplayHeight=2400 density={2.8125} cutoutSpec={M 0,0 H -13.15555555555556 V 32.71111111111111 H 13.15555555555556 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=25, center=Point(25, 25)}, RoundedCorner{position=TopRight, radius=25, center=Point(1055, 25)}, RoundedCorner{position=BottomRight, radius=25, center=Point(1055, 2375)}, RoundedCorner{position=BottomLeft, radius=25, center=Point(25, 2375)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2400), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 92) rotation=0}, mSources= { InsetsSource: {mType=ITYPE_STATUS_BAR, mFrame=[0,0][1080,92], mVisible=false, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_NAVIGATION_BAR, mFrame=[0,2265][1080,2400], mVisible=false, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_GESTURES, mFrame=[0,0][0,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_GESTURES, mFrame=[1080,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_MANDATORY_GESTURES, mFrame=[0,0][1080,126], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_MANDATORY_GESTURES, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_DISPLAY_CUTOUT, mFrame=[0,0][-100000,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_DISPLAY_CUTOUT, mFrame=[0,0][1080,92], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_DISPLAY_CUTOUT, mFrame=[100000,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_DISPLAY_CUTOUT, mFrame=[0,100000][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_TAPPABLE_ELEMENT, mFrame=[0,0][1080,92], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_TAPPABLE_ELEMENT, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_IME, mFrame=[0,0][0,0], mVisibleFrame=[0,1249][1080,2400], mVisible=false, mInsetsRoundedCornerFrame=false} } host=com.blocktower.game/com.godot.game.GodotAppLauncher from=android.view.ViewRootImpl.setView:1732
+09-25 20:13:41.621 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): setView = com.android.internal.policy.DecorView@91e0363 TM=true
+09-25 20:13:41.623 I/MSHandlerLifeCycle( 1653): removeMultiSplitHandler: no exist. decor=DecorView@91e0363[GodotAppLauncher]
+09-25 20:13:41.624 I/DecorView( 1653): notifyKeepScreenOnChanged: keepScreenOn=true
+09-25 20:13:41.628 I/SurfaceView@e3a4a6d( 1653): onWindowVisibilityChanged(0) true org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F....I. 0,0-0,0} of ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:13:41.628 D/SurfaceView@e3a4a6d( 1653): updateSurface: has no frame
+09-25 20:13:41.633 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): performTraversals params={(0,0)(fillxfill) sim={adjust=resize forwardNavigation} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION wanim=0x10302f4
+09-25 20:13:41.633 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   fl=81a10180
+09-25 20:13:41.633 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   pfl=1e020040
+09-25 20:13:41.633 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   bhv=SHOW_TRANSIENT_BARS_BY_SWIPE
+09-25 20:13:41.633 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   fitSides= naviIconColor=0}
+09-25 20:13:41.635 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): performTraversals mFirst=true windowShouldResize=true viewVisibilityChanged=false mForceNextWindowRelayout=false params={(0,0)(fillxfill) sim={adjust=resize forwardNavigation} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSLUCENT wanim=0x10302f4
+09-25 20:13:41.635 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   fl=81a10180
+09-25 20:13:41.635 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   pfl=1e020040
+09-25 20:13:41.635 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   bhv=SHOW_TRANSIENT_BARS_BY_SWIPE
+09-25 20:13:41.635 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   fitSides= naviIconColor=0}
+09-25 20:13:41.642 I/DecorView( 1653): onImmersiveModeChanged: isStatusBarHidden=true
+09-25 20:13:41.642 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): updateBlastSurfaceIfNeeded mBlastBufferQueue=null isSameSurfaceControl=false
+09-25 20:13:41.643 E/BufferQueueProducer( 1653): Unable to open libpenguin.so: dlopen failed: library "libpenguin.so" not found.
+09-25 20:13:41.643 I/BLASTBufferQueue( 1653): new BLASTBufferQueue, mName= ViewRootImpl@ce72b67[GodotAppLauncher] mNativeObject= 0xb400007d2366fbf0 sc.mNativeObject= 0xb400007cb36ff040 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 android.view.Choreographer.doCallbacks:923 android.view.Choreographer.doFrame:852 android.view.Choreographer$FrameDisplayEventReceiver.run:1283
+09-25 20:13:41.643 I/BLASTBufferQueue( 1653): update, w= 1080 h= 2400 mName = ViewRootImpl@ce72b67[GodotAppLauncher] mNativeObject= 0xb400007d2366fbf0 sc.mNativeObject= 0xb400007cb36ff040 format= -3 caller= android.graphics.BLASTBufferQueue.<init>:84 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885
+09-25 20:13:41.644 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=7 res=0x3 s={true 0xb400007db366fb60} ch=true seqId=0
+09-25 20:13:41.644 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): mThreadedRenderer.initialize() mSurface={isValid=true 0xb400007db366fb60} hwInitialized=true
+09-25 20:13:41.646 D/OpenGLRenderer( 1653): eglCreateWindowSurface
+09-25 20:13:41.647 D/SurfaceView@e3a4a6d( 1653): updateSurface: has no frame
+09-25 20:13:41.647 I/SurfaceView@e3a4a6d( 1653): windowStopped(false) true org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F....ID 0,0-1080,2400} of ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:13:41.647 D/SurfaceView@e3a4a6d( 1653): updateSurface: has no frame
+09-25 20:13:41.647 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): reportNextDraw android.view.ViewRootImpl.performTraversals:4438 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309
+09-25 20:13:41.648 I/SurfaceView@e3a4a6d( 1653): Changes: creating=true format=true size=true visible=true alpha=false hint=false mUseAlpha=false visible=true left=true top=true
+09-25 20:13:41.650 I/BLASTBufferQueue( 1653): update, w= 1080 h= 2400 mName = null mNativeObject= 0xb400007d2366b410 sc.mNativeObject= 0xb400007cb36ff7d0 format= 4 caller= android.view.SurfaceView.createBlastSurfaceControls:1383 android.view.SurfaceView.updateSurface:1079 android.view.SurfaceView.lambda$new$0$android-view-SurfaceView:200 android.view.SurfaceView$$ExternalSyntheticLambda5.onPreDraw:2 android.view.ViewTreeObserver.dispatchOnPreDraw:1121 android.view.ViewRootImpl.performTraversals:4442
+09-25 20:13:41.650 I/SurfaceView@e3a4a6d( 1653): 238701165 Cur surface: Surface(name=null)/@0x69a5c86
+09-25 20:13:41.650 I/SurfaceView@e3a4a6d( 1653): pST: sr = Rect(0, 0 - 1080, 2400) sw = 1080 sh = 2400
+09-25 20:13:41.651 D/SurfaceView@e3a4a6d( 1653): performSurfaceTransaction RenderWorker position = [0, 0, 1080, 2400] surfaceSize = 1080x2400
+09-25 20:13:41.651 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = false t = 0xb400007ce3680a90 android.view.SurfaceView.performSurfaceTransaction:959 android.view.SurfaceView.updateSurface:1105 android.view.SurfaceView.lambda$new$0$android-view-SurfaceView:200
+09-25 20:13:41.651 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): applyTransactionOnDraw: mRemoved = false isHardwareEnabled = true t = 0xb400007ce3680a90android.view.SurfaceView.applyTransactionOnVriDraw:2048 android.view.SurfaceView.performSurfaceTransaction:959 android.view.SurfaceView.updateSurface:1105 android.view.SurfaceView.lambda$new$0$android-view-SurfaceView:200 android.view.SurfaceView$$ExternalSyntheticLambda5.onPreDraw:2
+09-25 20:13:41.651 I/SurfaceView@e3a4a6d( 1653): updateSurface: mVisible = true mSurface.isValid() = true
+09-25 20:13:41.651 I/SurfaceView@e3a4a6d( 1653): updateSurface: mSurfaceCreated = false surfaceChanged = true visibleChanged = true
+09-25 20:13:41.651 I/SurfaceView@e3a4a6d( 1653): visibleChanged -- surfaceCreated
+09-25 20:13:41.651 I/SurfaceView@e3a4a6d( 1653): surfaceCreated 1 #8 org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F....ID 0,0-1080,2400}
+09-25 20:13:41.651 I/SurfaceView@e3a4a6d( 1653): surfaceChanged -- format=4 w=1080 h=2400
+09-25 20:13:41.651 I/SurfaceView@e3a4a6d( 1653): surfaceChanged (1080,2400) 1 #8 org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F....ID 0,0-1080,2400}
+09-25 20:13:41.651 I/SurfaceView@e3a4a6d( 1653): surfaceRedrawNeeded
+09-25 20:13:41.652 W/RegularContextFactory( 1653): creating OpenGL ES 3.0 context :
+09-25 20:13:41.653 V/SurfaceView@e3a4a6d( 1653): Layout: x=0 y=0 w=1080 h=2400, frame=Rect(0, 0 - 1080, 2400)
+09-25 20:13:41.653 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Setup new sync id=0
+09-25 20:13:41.653 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Setting syncFrameCallback
+09-25 20:13:41.654 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): registerCallbacksForSync syncBuffer=false
+09-25 20:13:41.654 I/godot   ( 1653): Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-25 20:13:41.656 D/SurfaceView@e3a4a6d( 1653): updateSurfacePosition RenderWorker, frameNr = 1, position = [0, 0, 1080, 2400] surfaceSize = 1080x2400
+09-25 20:13:41.656 I/SurfaceView@e3a4a6d( 1653): uSP: rtp = Rect(0, 0 - 1080, 2400) rtsw = 1080 rtsh = 2400
+09-25 20:13:41.656 I/SurfaceView@e3a4a6d( 1653): onSSPAndSRT: pl = 0 pt = 0 sx = 1.0 sy = 1.0
+09-25 20:13:41.657 I/SurfaceView@e3a4a6d( 1653): aOrMT: ViewRootImpl@ce72b67[GodotAppLauncher] t = android.view.SurfaceControl$Transaction@74a765e fN = 1 android.view.SurfaceView.-$$Nest$mapplyOrMergeTransaction:0 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionChanged:1537 android.graphics.RenderNode$CompositePositionUpdateListener.positionChanged:373
+09-25 20:13:41.657 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): mWNT: t=0xb400007ce3682e90 mBlastBufferQueue=0xb400007d2366fbf0 fn= 1 caller= android.view.SurfaceView.applyOrMergeTransaction:1455 android.view.SurfaceView.-$$Nest$mapplyOrMergeTransaction:0 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionChanged:1537
+09-25 20:13:41.657 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): mWNT: t=0xb400007ce3680a90 mBlastBufferQueue=0xb400007d2366fbf0 fn= 1 caller= android.view.ViewRootImpl.lambda$applyTransactionOnDraw$11$android-view-ViewRootImpl:12865 android.view.ViewRootImpl$$ExternalSyntheticLambda1.onFrameDraw:4 android.graphics.HardwareRenderer$FrameDrawingCallback.onFrameDraw:924
+09-25 20:13:41.657 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Received frameDrawingCallback syncResult=0 frameNum=1.
+09-25 20:13:41.657 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Setting up sync and frameCommitCallback
+09-25 20:13:41.663 I/BLASTBufferQueue( 1653): [ViewRootImpl@ce72b67[GodotAppLauncher]#0](f:0,a:0) onFrameAvailable the first frame is available
+09-25 20:13:41.663 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+09-25 20:13:41.664 D/OpenGLRenderer( 1653): CFMS:: SetUp Pid : 1653    Tid : 1740
+09-25 20:13:41.666 W/Parcel  ( 1653): Expecting binder but got null!
+09-25 20:13:41.730 I/godot   ( 1653): OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-25 20:13:41.734 D/blocktower.game( 1653): PlayerBase::PlayerBase()
+09-25 20:13:41.735 D/blocktower.game( 1653): TrackPlayerBase::TrackPlayerBase()
+09-25 20:13:41.735 I/libOpenSLES( 1653): Emulating old channel mask behavior (ignoring positional mask 0x3, using default mask 0x3 based on channel count of 2)
+09-25 20:13:41.740 I/AudioTrack( 1653): Need throttle time for OpenSLES player
+09-25 20:13:41.746 I/godot   ( 1653):
+09-25 20:13:41.850 I/BLASTBufferQueue( 1653): [SurfaceView[com.blocktower.game/com.godot.game.GodotAppLauncher]@0#1](f:0,a:0) onFrameAvailable the first frame is available
+09-25 20:13:41.857 I/SurfaceView@e3a4a6d( 1653): finishedDrawing
+09-25 20:13:41.857 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): onSyncComplete
+09-25 20:13:41.858 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): setupSync seqId=0 mSyncId=-1 fn=1 caller=android.view.ViewRootImpl$$ExternalSyntheticLambda11.accept:6 android.window.SurfaceSyncer.lambda$setupSync$1$android-window-SurfaceSyncer:128 android.window.SurfaceSyncer$$ExternalSyntheticLambda1.accept:8 android.window.SurfaceSyncer$SyncSet.checkIfSyncIsComplete:382 android.window.SurfaceSyncer$SyncSet.lambda$merge$1$android-window-SurfaceSyncer$SyncSet:435 android.window.SurfaceSyncer$SyncSet$$ExternalSyntheticLambda0.accept:6 android.window.SurfaceSyncer$SyncSet.lambda$updateCallback$0:407
+09-25 20:13:41.858 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): reportDrawFinished seqId=0 mSyncId=-1 fn=1 mSurfaceChangedTransaction=0xb400007ce3682fb0
+09-25 20:13:41.879 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): MSG_WINDOW_FOCUS_CHANGED 1 0
+09-25 20:13:41.879 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb400007db366fb60}
+09-25 20:13:41.880 D/InputMethodManager( 1653): startInputInner - Id : 0
+09-25 20:13:41.880 I/InputMethodManager( 1653): startInputInner - mService.startInputOrWindowGainedFocus
+09-25 20:13:41.887 D/InputMethodManager( 1653): startInputInner - Id : 0
+09-25 20:13:42.126 I/blocktower.game( 1653): Compiler allocated 6245KB to compile void android.view.ViewRootImpl.performTraversals()
+09-25 20:13:42.604 V/Godot   ( 1653): OnGodotSetupCompleted
+09-25 20:13:43.046 V/Godot   ( 1653): OnGodotMainLoopStarted
+09-25 20:14:33.802 V/Godot   ( 1653): OnPause: GodotFragment{12489af} (ecee050e-4f2e-4a0e-9ea9-ed9b3ebdc45b id=0x7f07002c)
+09-25 20:14:33.815 D/blocktower.game( 1653): PlayerBase::pause() from IPlayer
+09-25 20:14:33.824 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): MSG_WINDOW_FOCUS_CHANGED 0 0
+09-25 20:14:34.274 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): handleAppVisibility mAppVisible = true visible = false
+09-25 20:14:34.286 I/SurfaceView@e3a4a6d( 1653): onWindowVisibilityChanged(8) false org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F...... 0,0-1080,2400 aid=1} of ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:14:34.286 I/SurfaceView@e3a4a6d( 1653): Changes: creating=false format=false size=false visible=true alpha=false hint=false mUseAlpha=false visible=true left=false top=false
+09-25 20:14:34.286 I/SurfaceView@e3a4a6d( 1653): 238701165 Cur surface: Surface(name=null)/@0x69a5c86
+09-25 20:14:34.287 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = false t = 0xb400007ce3664650 android.view.SurfaceView.performSurfaceTransaction:959 android.view.SurfaceView.updateSurface:1105 android.view.SurfaceView.onWindowVisibilityChanged:371
+09-25 20:14:34.287 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): applyTransactionOnDraw: mRemoved = false isHardwareEnabled = true t = 0xb400007ce3664650android.view.SurfaceView.applyTransactionOnVriDraw:2048 android.view.SurfaceView.performSurfaceTransaction:959 android.view.SurfaceView.updateSurface:1105 android.view.SurfaceView.onWindowVisibilityChanged:371 android.view.View.dispatchWindowVisibilityChanged:15943
+09-25 20:14:34.287 I/SurfaceView@e3a4a6d( 1653): surfaceDestroyed
+09-25 20:14:34.287 I/SurfaceView@e3a4a6d( 1653): surfaceDestroyed callback.size 1 #2 org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F...... 0,0-1080,2400 aid=1}
+09-25 20:14:34.288 I/SurfaceView@e3a4a6d( 1653): updateSurface: mVisible = false mSurface.isValid() = true
+09-25 20:14:34.288 I/SurfaceView@e3a4a6d( 1653): releaseSurfaces: viewRoot = ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:14:34.288 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = true t = 0xb400007ce3657e10 android.view.SurfaceView.releaseSurfaces:858 android.view.SurfaceView.updateSurface:1172 android.view.SurfaceView.onWindowVisibilityChanged:371
+09-25 20:14:34.288 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: viewRoot.applyTransactionOnDrawFromReleaseSurfaces
+09-25 20:14:34.289 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): from releaseSurfaces t.apply t = 0xb400007ce3657e10
+09-25 20:14:34.289 V/SurfaceView@e3a4a6d( 1653): Layout: x=0 y=0 w=1080 h=2400, frame=Rect(0, 0 - 1080, 2400)
+09-25 20:14:34.290 D/SurfaceView@e3a4a6d( 1653): windowPositionLost, frameNr = 0
+09-25 20:14:34.291 D/OpenGLRenderer( 1653): setSurface called with nullptr
+09-25 20:14:34.291 D/OpenGLRenderer( 1653): setSurface() destroyed EGLSurface
+09-25 20:14:34.291 D/OpenGLRenderer( 1653): destroyEglSurface
+09-25 20:14:34.292 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=true mForceNextWindowRelayout=false params=null
+09-25 20:14:34.295 E/BufferQueueProducer( 1653): [SurfaceView[com.blocktower.game/com.godot.game.GodotAppLauncher]@0#1(BLAST Consumer)1](id:67500000001,api:0,p:-1,c:1653) requestBuffer: BufferQueue has no connected producer
+09-25 20:14:34.295 E/Surface ( 1653): dequeueBuffer: IGraphicBufferProducer::requestBuffer failed: -19
+09-25 20:14:34.295 E/BufferQueueProducer( 1653): [SurfaceView[com.blocktower.game/com.godot.game.GodotAppLauncher]@0#1(BLAST Consumer)1](id:67500000001,api:0,p:-1,c:1653) cancelBuffer: BufferQueue has no connected producer
+09-25 20:14:34.295 I/Adreno  ( 1653): DequeueBuffer: dequeueBuffer failed
+09-25 20:14:34.295 E/BufferQueueProducer( 1653): [SurfaceView[com.blocktower.game/com.godot.game.GodotAppLauncher]@0#1(BLAST Consumer)1](id:67500000001,api:0,p:-1,c:1653) dequeueBuffer: BufferQueue has no connected producer
+09-25 20:14:34.295 I/Adreno  ( 1653): DequeueBuffer: dequeueBuffer failed
+09-25 20:14:34.297 W/GLThread( 1653): eglSwapBuffers failed: EGL_BAD_SURFACE
+09-25 20:14:34.307 E/BufferQueueProducer( 1653): [SurfaceView[com.blocktower.game/com.godot.game.GodotAppLauncher]@0#1(BLAST Consumer)1](id:67500000001,api:0,p:-1,c:1653) disconnect: not connected (req=1)
+09-25 20:14:34.307 W/libEGL  ( 1653): EGLNativeWindowType 0xb400007db3673f90 disconnect failed
+09-25 20:14:34.308 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)8 dur=7 res=0x2 s={false 0x0} ch=true seqId=0
+09-25 20:14:34.310 I/SurfaceView@e3a4a6d( 1653): windowStopped(true) false org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F...... 0,0-1080,2400 aid=1} of ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:14:34.310 D/SurfaceView@e3a4a6d( 1653): updateSurface: surface is not valid
+09-25 20:14:34.310 I/SurfaceView@e3a4a6d( 1653): releaseSurfaces: viewRoot = ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:14:34.310 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = true t = 0xb400007ce367fad0 android.view.SurfaceView.releaseSurfaces:858 android.view.SurfaceView.updateSurface:998 android.view.SurfaceView.setWindowStopped:335
+09-25 20:14:34.310 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: viewRoot.applyTransactionOnDrawFromReleaseSurfaces
+09-25 20:14:34.311 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): from releaseSurfaces t.apply t = 0xb400007ce367fad0
+09-25 20:14:34.311 D/SurfaceView@e3a4a6d( 1653): updateSurface: surface is not valid
+09-25 20:14:34.311 I/SurfaceView@e3a4a6d( 1653): releaseSurfaces: viewRoot = ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:14:34.312 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = true t = 0xb400007ce3664530 android.view.SurfaceView.releaseSurfaces:858 android.view.SurfaceView.updateSurface:998 android.view.SurfaceView.lambda$new$0$android-view-SurfaceView:200
+09-25 20:14:34.312 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: viewRoot.applyTransactionOnDrawFromReleaseSurfaces
+09-25 20:14:34.312 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): from releaseSurfaces t.apply t = 0xb400007ce3664530
+09-25 20:14:34.315 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): stopped(true) old = false
+09-25 20:14:34.316 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): WindowStopped on com.blocktower.game/com.godot.game.GodotAppLauncher set to true
+09-25 20:14:34.318 V/Godot   ( 1653): OnStop: GodotFragment{12489af} (ecee050e-4f2e-4a0e-9ea9-ed9b3ebdc45b id=0x7f07002c)
+09-25 20:14:34.334 I/MSHandlerLifeCycle( 1653): removeMultiSplitHandler: no exist. decor=DecorView@91e0363[GodotAppLauncher]
+09-25 20:14:34.337 D/SurfaceView@e3a4a6d( 1653): updateSurface: surface is not valid
+09-25 20:14:34.337 I/SurfaceView@e3a4a6d( 1653): releaseSurfaces: viewRoot = ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:14:34.338 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = true t = 0xb400007ce368a390 android.view.SurfaceView.releaseSurfaces:858 android.view.SurfaceView.updateSurface:998 android.view.SurfaceView.lambda$new$0$android-view-SurfaceView:200
+09-25 20:14:34.338 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: viewRoot.applyTransactionOnDrawFromReleaseSurfaces
+09-25 20:14:34.338 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): from releaseSurfaces t.apply t = 0xb400007ce368a390
+09-25 20:14:35.093 D/InputTransport( 1653): Input channel destroyed: 'ClientS', fd=127
+09-25 20:15:23.139 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): handleAppVisibility mAppVisible = false visible = true
+09-25 20:15:23.144 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): stopped(false) old = true
+09-25 20:15:23.144 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): WindowStopped on com.blocktower.game/com.godot.game.GodotAppLauncher set to false
+09-25 20:15:23.146 V/Godot   ( 1653): OnStart: GodotFragment{12489af} (ecee050e-4f2e-4a0e-9ea9-ed9b3ebdc45b id=0x7f07002c)
+09-25 20:15:23.153 I/MSHandlerLifeCycle( 1653): removeMultiSplitHandler: no exist. decor=DecorView@91e0363[GodotAppLauncher]
+09-25 20:15:23.153 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): stopped(false) old = false
+09-25 20:15:23.153 V/Godot   ( 1653): OnResume: GodotFragment{12489af} (ecee050e-4f2e-4a0e-9ea9-ed9b3ebdc45b id=0x7f07002c)
+09-25 20:15:23.154 I/DecorView( 1653): notifyKeepScreenOnChanged: keepScreenOn=true
+09-25 20:15:23.159 I/MSHandlerLifeCycle( 1653): removeMultiSplitHandler: no exist. decor=DecorView@91e0363[GodotAppLauncher]
+09-25 20:15:23.160 I/SurfaceView@e3a4a6d( 1653): onWindowVisibilityChanged(0) false org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F...... 0,0-1080,2400 aid=1} of ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:15:23.160 D/SurfaceView@e3a4a6d( 1653): updateSurface: surface is not valid
+09-25 20:15:23.160 I/SurfaceView@e3a4a6d( 1653): releaseSurfaces: viewRoot = ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:15:23.160 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = true t = 0xb400007ce3688410 android.view.SurfaceView.releaseSurfaces:858 android.view.SurfaceView.updateSurface:998 android.view.SurfaceView.onWindowVisibilityChanged:371
+09-25 20:15:23.160 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: viewRoot.applyTransactionOnDrawFromReleaseSurfaces
+09-25 20:15:23.160 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): applyTransactionOnDraw: mRemoved = false isHardwareEnabled = false t = 0xb400007ce3688410android.view.ViewRootImpl.applyTransactionOnDrawFromReleaseSurfaces:12850 android.view.SurfaceView.applyTransactionOnVriDraw:2046 android.view.SurfaceView.releaseSurfaces:858 android.view.SurfaceView.updateSurface:998 android.view.SurfaceView.onWindowVisibilityChanged:371
+09-25 20:15:23.161 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): performTraversals params={(0,0)(fillxfill) sim={adjust=resize forwardNavigation} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSLUCENT wanim=0x10302f4
+09-25 20:15:23.161 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   fl=81a10180
+09-25 20:15:23.161 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   pfl=1e020040
+09-25 20:15:23.161 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   bhv=SHOW_TRANSIENT_BARS_BY_SWIPE
+09-25 20:15:23.161 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   fitSides= naviIconColor=0}
+09-25 20:15:23.162 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=true mForceNextWindowRelayout=false params={(0,0)(fillxfill) sim={adjust=resize forwardNavigation} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSLUCENT wanim=0x10302f4
+09-25 20:15:23.162 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   fl=81a10180
+09-25 20:15:23.162 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   pfl=1e020040
+09-25 20:15:23.162 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   bhv=SHOW_TRANSIENT_BARS_BY_SWIPE
+09-25 20:15:23.162 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   fitSides= naviIconColor=0}
+09-25 20:15:23.173 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): updateBlastSurfaceIfNeeded mBlastBufferQueue=null isSameSurfaceControl=false
+09-25 20:15:23.173 I/BLASTBufferQueue( 1653): new BLASTBufferQueue, mName= ViewRootImpl@ce72b67[GodotAppLauncher] mNativeObject= 0xb400007d2366fbf0 sc.mNativeObject= 0xb400007cb369cca0 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 android.view.Choreographer.doCallbacks:923 android.view.Choreographer.doFrame:852 android.view.Choreographer$FrameDisplayEventReceiver.run:1283
+09-25 20:15:23.173 I/BLASTBufferQueue( 1653): update, w= 1080 h= 2400 mName = ViewRootImpl@ce72b67[GodotAppLauncher] mNativeObject= 0xb400007d2366fbf0 sc.mNativeObject= 0xb400007cb369cca0 format= -3 caller= android.graphics.BLASTBufferQueue.<init>:84 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885
+09-25 20:15:23.174 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=11 res=0x3 s={true 0xb400007db366fb60} ch=true seqId=0
+09-25 20:15:23.174 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): mThreadedRenderer.initialize() mSurface={isValid=true 0xb400007db366fb60} hwInitialized=true
+09-25 20:15:23.174 D/OpenGLRenderer( 1653): eglCreateWindowSurface
+09-25 20:15:23.175 I/SurfaceView@e3a4a6d( 1653): windowStopped(false) true org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F...... 0,0-1080,2400 aid=1} of ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:15:23.175 I/SurfaceView@e3a4a6d( 1653): Changes: creating=true format=false size=false visible=true alpha=false hint=false mUseAlpha=false visible=true left=false top=false
+09-25 20:15:23.178 I/BLASTBufferQueue( 1653): update, w= 1080 h= 2400 mName = null mNativeObject= 0xb400007d2376dd90 sc.mNativeObject= 0xb400007cb37007a0 format= 4 caller= android.view.SurfaceView.createBlastSurfaceControls:1383 android.view.SurfaceView.updateSurface:1079 android.view.SurfaceView.setWindowStopped:335 android.view.SurfaceView.surfaceCreated:1853 android.view.ViewRootImpl.notifySurfaceCreated:2820 android.view.ViewRootImpl.performTraversals:4293
+09-25 20:15:23.178 I/SurfaceView@e3a4a6d( 1653): 238701165 Cur surface: Surface(name=null)/@0x69a5c86
+09-25 20:15:23.178 I/SurfaceView@e3a4a6d( 1653): pST: sr = Rect(0, 0 - 1080, 2400) sw = 1080 sh = 2400
+09-25 20:15:23.178 D/SurfaceView@e3a4a6d( 1653): performSurfaceTransaction RenderWorker position = [0, 0, 1080, 2400] surfaceSize = 1080x2400
+09-25 20:15:23.178 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = false t = 0xb400007ce3688e30 android.view.SurfaceView.performSurfaceTransaction:959 android.view.SurfaceView.updateSurface:1105 android.view.SurfaceView.setWindowStopped:335
+09-25 20:15:23.178 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): applyTransactionOnDraw: mRemoved = false isHardwareEnabled = true t = 0xb400007ce3688e30android.view.SurfaceView.applyTransactionOnVriDraw:2048 android.view.SurfaceView.performSurfaceTransaction:959 android.view.SurfaceView.updateSurface:1105 android.view.SurfaceView.setWindowStopped:335 android.view.SurfaceView.surfaceCreated:1853
+09-25 20:15:23.178 I/SurfaceView@e3a4a6d( 1653): updateSurface: mVisible = true mSurface.isValid() = true
+09-25 20:15:23.179 I/SurfaceView@e3a4a6d( 1653): updateSurface: mSurfaceCreated = false surfaceChanged = true visibleChanged = true
+09-25 20:15:23.179 I/SurfaceView@e3a4a6d( 1653): visibleChanged -- surfaceCreated
+09-25 20:15:23.179 I/SurfaceView@e3a4a6d( 1653): surfaceCreated 1 #1 org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F...... 0,0-1080,2400 aid=1}
+09-25 20:15:23.179 I/SurfaceView@e3a4a6d( 1653): surfaceChanged -- format=4 w=1080 h=2400
+09-25 20:15:23.179 I/SurfaceView@e3a4a6d( 1653): surfaceChanged (1080,2400) 1 #1 org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F...... 0,0-1080,2400 aid=1}
+09-25 20:15:23.179 I/SurfaceView@e3a4a6d( 1653): surfaceRedrawNeeded
+09-25 20:15:23.179 V/SurfaceView@e3a4a6d( 1653): Layout: x=0 y=0 w=1080 h=2400, frame=Rect(0, 0 - 1080, 2400)
+09-25 20:15:23.179 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): reportNextDraw android.view.ViewRootImpl.performTraversals:4438 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309
+09-25 20:15:23.179 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Setup new sync id=1
+09-25 20:15:23.179 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Setting syncFrameCallback
+09-25 20:15:23.179 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): registerCallbacksForSync syncBuffer=false
+09-25 20:15:23.180 D/SurfaceView@e3a4a6d( 1653): updateSurfacePosition RenderWorker, frameNr = 1, position = [0, 0, 1080, 2400] surfaceSize = 1080x2400
+09-25 20:15:23.181 I/SurfaceView@e3a4a6d( 1653): uSP: rtp = Rect(0, 0 - 1080, 2400) rtsw = 1080 rtsh = 2400
+09-25 20:15:23.181 I/SurfaceView@e3a4a6d( 1653): onSSPAndSRT: pl = 0 pt = 0 sx = 1.0 sy = 1.0
+09-25 20:15:23.181 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): mWNT: t=0xb400007ce3664650 mBlastBufferQueue=0xb400007d2366fbf0 fn= 1 caller= android.view.ViewRootImpl.lambda$applyTransactionOnDraw$11$android-view-ViewRootImpl:12865 android.view.ViewRootImpl$$ExternalSyntheticLambda1.onFrameDraw:4 android.graphics.HardwareRenderer$FrameDrawingCallback.onFrameDraw:924
+09-25 20:15:23.181 I/SurfaceView@e3a4a6d( 1653): aOrMT: ViewRootImpl@ce72b67[GodotAppLauncher] t = android.view.SurfaceControl$Transaction@234d31f fN = 1 android.view.SurfaceView.-$$Nest$mapplyOrMergeTransaction:0 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionChanged:1537 android.graphics.RenderNode$CompositePositionUpdateListener.positionChanged:373
+09-25 20:15:23.181 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): mWNT: t=0xb400007ce3688e30 mBlastBufferQueue=0xb400007d2366fbf0 fn= 1 caller= android.view.ViewRootImpl.lambda$applyTransactionOnDraw$11$android-view-ViewRootImpl:12865 android.view.ViewRootImpl$$ExternalSyntheticLambda1.onFrameDraw:4 android.graphics.HardwareRenderer$FrameDrawingCallback.onFrameDraw:924
+09-25 20:15:23.181 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): mWNT: t=0xb400007ce3687c30 mBlastBufferQueue=0xb400007d2366fbf0 fn= 1 caller= android.view.SurfaceView.applyOrMergeTransaction:1455 android.view.SurfaceView.-$$Nest$mapplyOrMergeTransaction:0 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionChanged:1537
+09-25 20:15:23.181 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Received frameDrawingCallback syncResult=0 frameNum=1.
+09-25 20:15:23.181 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Setting up sync and frameCommitCallback
+09-25 20:15:23.184 I/BLASTBufferQueue( 1653): [ViewRootImpl@ce72b67[GodotAppLauncher]#2](f:0,a:0) onFrameAvailable the first frame is available
+09-25 20:15:23.184 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+09-25 20:15:23.197 I/BLASTBufferQueue( 1653): [SurfaceView[com.blocktower.game/com.godot.game.GodotAppLauncher]@0#3](f:0,a:0) onFrameAvailable the first frame is available
+09-25 20:15:23.207 I/SurfaceView@e3a4a6d( 1653): finishedDrawing
+09-25 20:15:23.207 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): onSyncComplete
+09-25 20:15:23.207 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): setupSync seqId=0 mSyncId=-1 fn=1 caller=android.view.ViewRootImpl$$ExternalSyntheticLambda11.accept:6 android.window.SurfaceSyncer.lambda$setupSync$1$android-window-SurfaceSyncer:128 android.window.SurfaceSyncer$$ExternalSyntheticLambda1.accept:8 android.window.SurfaceSyncer$SyncSet.checkIfSyncIsComplete:382 android.window.SurfaceSyncer$SyncSet.lambda$merge$1$android-window-SurfaceSyncer$SyncSet:435 android.window.SurfaceSyncer$SyncSet$$ExternalSyntheticLambda0.accept:6 android.window.SurfaceSyncer$SyncSet.lambda$updateCallback$0:407
+09-25 20:15:23.207 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): reportDrawFinished seqId=0 mSyncId=-1 fn=1 mSurfaceChangedTransaction=0xb400007ce3682fb0
+09-25 20:15:23.269 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): MSG_WINDOW_FOCUS_CHANGED 1 0
+09-25 20:15:23.269 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb400007db366fb60}
+09-25 20:15:23.269 D/InputMethodManager( 1653): startInputInner - Id : 0
+09-25 20:15:23.269 I/InputMethodManager( 1653): startInputInner - mService.startInputOrWindowGainedFocus
+09-25 20:15:24.070 V/Godot   ( 1653): OnPause: GodotFragment{12489af} (ecee050e-4f2e-4a0e-9ea9-ed9b3ebdc45b id=0x7f07002c)
+09-25 20:15:24.075 D/blocktower.game( 1653): PlayerBase::pause() from IPlayer
+09-25 20:15:24.110 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): MSG_WINDOW_FOCUS_CHANGED 0 0
+09-25 20:15:24.583 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): handleAppVisibility mAppVisible = true visible = false
+09-25 20:15:24.598 I/SurfaceView@e3a4a6d( 1653): onWindowVisibilityChanged(8) false org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F...... 0,0-1080,2400 aid=1} of ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:15:24.598 I/SurfaceView@e3a4a6d( 1653): Changes: creating=false format=false size=false visible=true alpha=false hint=false mUseAlpha=false visible=true left=false top=false
+09-25 20:15:24.598 I/SurfaceView@e3a4a6d( 1653): 238701165 Cur surface: Surface(name=null)/@0x69a5c86
+09-25 20:15:24.599 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = false t = 0xb400007ce3746cd0 android.view.SurfaceView.performSurfaceTransaction:959 android.view.SurfaceView.updateSurface:1105 android.view.SurfaceView.onWindowVisibilityChanged:371
+09-25 20:15:24.599 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): applyTransactionOnDraw: mRemoved = false isHardwareEnabled = true t = 0xb400007ce3746cd0android.view.SurfaceView.applyTransactionOnVriDraw:2048 android.view.SurfaceView.performSurfaceTransaction:959 android.view.SurfaceView.updateSurface:1105 android.view.SurfaceView.onWindowVisibilityChanged:371 android.view.View.dispatchWindowVisibilityChanged:15943
+09-25 20:15:24.599 I/SurfaceView@e3a4a6d( 1653): surfaceDestroyed
+09-25 20:15:24.599 I/SurfaceView@e3a4a6d( 1653): surfaceDestroyed callback.size 1 #2 org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F...... 0,0-1080,2400 aid=1}
+09-25 20:15:24.600 I/SurfaceView@e3a4a6d( 1653): updateSurface: mVisible = false mSurface.isValid() = true
+09-25 20:15:24.600 I/SurfaceView@e3a4a6d( 1653): releaseSurfaces: viewRoot = ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:15:24.600 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = true t = 0xb400007ce3657f30 android.view.SurfaceView.releaseSurfaces:858 android.view.SurfaceView.updateSurface:1172 android.view.SurfaceView.onWindowVisibilityChanged:371
+09-25 20:15:24.600 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: viewRoot.applyTransactionOnDrawFromReleaseSurfaces
+09-25 20:15:24.600 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): from releaseSurfaces t.apply t = 0xb400007ce3657f30
+09-25 20:15:24.601 V/SurfaceView@e3a4a6d( 1653): Layout: x=0 y=0 w=1080 h=2400, frame=Rect(0, 0 - 1080, 2400)
+09-25 20:15:24.601 D/SurfaceView@e3a4a6d( 1653): windowPositionLost, frameNr = 0
+09-25 20:15:24.602 D/OpenGLRenderer( 1653): setSurface called with nullptr
+09-25 20:15:24.602 D/OpenGLRenderer( 1653): setSurface() destroyed EGLSurface
+09-25 20:15:24.602 D/OpenGLRenderer( 1653): destroyEglSurface
+09-25 20:15:24.603 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=true mForceNextWindowRelayout=false params=null
+09-25 20:15:24.611 E/BufferQueueProducer( 1653): [SurfaceView[com.blocktower.game/com.godot.game.GodotAppLauncher]@0#3(BLAST Consumer)3](id:67500000003,api:0,p:-1,c:1653) requestBuffer: BufferQueue has no connected producer
+09-25 20:15:24.611 E/Surface ( 1653): dequeueBuffer: IGraphicBufferProducer::requestBuffer failed: -19
+09-25 20:15:24.611 E/BufferQueueProducer( 1653): [SurfaceView[com.blocktower.game/com.godot.game.GodotAppLauncher]@0#3(BLAST Consumer)3](id:67500000003,api:0,p:-1,c:1653) cancelBuffer: BufferQueue has no connected producer
+09-25 20:15:24.611 I/Adreno  ( 1653): DequeueBuffer: dequeueBuffer failed
+09-25 20:15:24.611 E/BufferQueueProducer( 1653): [SurfaceView[com.blocktower.game/com.godot.game.GodotAppLauncher]@0#3(BLAST Consumer)3](id:67500000003,api:0,p:-1,c:1653) dequeueBuffer: BufferQueue has no connected producer
+09-25 20:15:24.611 I/Adreno  ( 1653): DequeueBuffer: dequeueBuffer failed
+09-25 20:15:24.612 W/GLThread( 1653): eglSwapBuffers failed: EGL_BAD_SURFACE
+09-25 20:15:24.614 E/BufferQueueProducer( 1653): [SurfaceView[com.blocktower.game/com.godot.game.GodotAppLauncher]@0#3(BLAST Consumer)3](id:67500000003,api:0,p:-1,c:1653) disconnect: not connected (req=1)
+09-25 20:15:24.614 W/libEGL  ( 1653): EGLNativeWindowType 0xb400007db36ad740 disconnect failed
+09-25 20:15:24.616 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)8 dur=9 res=0x2 s={false 0x0} ch=true seqId=0
+09-25 20:15:24.617 I/SurfaceView@e3a4a6d( 1653): windowStopped(true) false org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F...... 0,0-1080,2400 aid=1} of ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:15:24.618 D/SurfaceView@e3a4a6d( 1653): updateSurface: surface is not valid
+09-25 20:15:24.618 I/SurfaceView@e3a4a6d( 1653): releaseSurfaces: viewRoot = ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:15:24.618 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = true t = 0xb400007ce3688f50 android.view.SurfaceView.releaseSurfaces:858 android.view.SurfaceView.updateSurface:998 android.view.SurfaceView.setWindowStopped:335
+09-25 20:15:24.618 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: viewRoot.applyTransactionOnDrawFromReleaseSurfaces
+09-25 20:15:24.618 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): from releaseSurfaces t.apply t = 0xb400007ce3688f50
+09-25 20:15:24.620 D/SurfaceView@e3a4a6d( 1653): updateSurface: surface is not valid
+09-25 20:15:24.620 I/SurfaceView@e3a4a6d( 1653): releaseSurfaces: viewRoot = ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:15:24.621 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = true t = 0xb400007ce366a4d0 android.view.SurfaceView.releaseSurfaces:858 android.view.SurfaceView.updateSurface:998 android.view.SurfaceView.lambda$new$0$android-view-SurfaceView:200
+09-25 20:15:24.621 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: viewRoot.applyTransactionOnDrawFromReleaseSurfaces
+09-25 20:15:24.621 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): from releaseSurfaces t.apply t = 0xb400007ce366a4d0
+09-25 20:15:24.623 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): stopped(true) old = false
+09-25 20:15:24.623 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): WindowStopped on com.blocktower.game/com.godot.game.GodotAppLauncher set to true
+09-25 20:15:24.625 V/Godot   ( 1653): OnStop: GodotFragment{12489af} (ecee050e-4f2e-4a0e-9ea9-ed9b3ebdc45b id=0x7f07002c)
+09-25 20:15:24.629 I/MSHandlerLifeCycle( 1653): removeMultiSplitHandler: no exist. decor=DecorView@91e0363[GodotAppLauncher]
+09-25 20:15:24.632 D/SurfaceView@e3a4a6d( 1653): updateSurface: surface is not valid
+09-25 20:15:24.632 I/SurfaceView@e3a4a6d( 1653): releaseSurfaces: viewRoot = ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:15:24.632 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = true t = 0xb400007ce3667d70 android.view.SurfaceView.releaseSurfaces:858 android.view.SurfaceView.updateSurface:998 android.view.SurfaceView.lambda$new$0$android-view-SurfaceView:200
+09-25 20:15:24.632 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: viewRoot.applyTransactionOnDrawFromReleaseSurfaces
+09-25 20:15:24.632 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): from releaseSurfaces t.apply t = 0xb400007ce3667d70
+09-25 20:15:25.288 D/InputTransport( 1653): Input channel destroyed: 'ClientS', fd=128
+09-25 20:15:45.531 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): handleAppVisibility mAppVisible = false visible = true
+09-25 20:15:45.537 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): stopped(false) old = true
+09-25 20:15:45.537 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): WindowStopped on com.blocktower.game/com.godot.game.GodotAppLauncher set to false
+09-25 20:15:45.539 V/Godot   ( 1653): OnStart: GodotFragment{12489af} (ecee050e-4f2e-4a0e-9ea9-ed9b3ebdc45b id=0x7f07002c)
+09-25 20:15:45.564 I/MSHandlerLifeCycle( 1653): removeMultiSplitHandler: no exist. decor=DecorView@91e0363[GodotAppLauncher]
+09-25 20:15:45.564 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): stopped(false) old = false
+09-25 20:15:45.565 V/Godot   ( 1653): OnResume: GodotFragment{12489af} (ecee050e-4f2e-4a0e-9ea9-ed9b3ebdc45b id=0x7f07002c)
+09-25 20:15:45.565 I/DecorView( 1653): notifyKeepScreenOnChanged: keepScreenOn=true
+09-25 20:15:45.565 I/MSHandlerLifeCycle( 1653): removeMultiSplitHandler: no exist. decor=DecorView@91e0363[GodotAppLauncher]
+09-25 20:15:45.566 I/SurfaceView@e3a4a6d( 1653): onWindowVisibilityChanged(0) false org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F...... 0,0-1080,2400 aid=1} of ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:15:45.566 D/SurfaceView@e3a4a6d( 1653): updateSurface: surface is not valid
+09-25 20:15:45.566 I/SurfaceView@e3a4a6d( 1653): releaseSurfaces: viewRoot = ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:15:45.566 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = true t = 0xb400007ce36688b0 android.view.SurfaceView.releaseSurfaces:858 android.view.SurfaceView.updateSurface:998 android.view.SurfaceView.onWindowVisibilityChanged:371
+09-25 20:15:45.566 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: viewRoot.applyTransactionOnDrawFromReleaseSurfaces
+09-25 20:15:45.566 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): applyTransactionOnDraw: mRemoved = false isHardwareEnabled = false t = 0xb400007ce36688b0android.view.ViewRootImpl.applyTransactionOnDrawFromReleaseSurfaces:12850 android.view.SurfaceView.applyTransactionOnVriDraw:2046 android.view.SurfaceView.releaseSurfaces:858 android.view.SurfaceView.updateSurface:998 android.view.SurfaceView.onWindowVisibilityChanged:371
+09-25 20:15:45.569 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): performTraversals params={(0,0)(fillxfill) sim={adjust=resize forwardNavigation} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSLUCENT wanim=0x10302f4
+09-25 20:15:45.569 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   fl=81a10180
+09-25 20:15:45.569 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   pfl=1e020040
+09-25 20:15:45.569 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   bhv=SHOW_TRANSIENT_BARS_BY_SWIPE
+09-25 20:15:45.569 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   fitSides= naviIconColor=0}
+09-25 20:15:45.569 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=true mForceNextWindowRelayout=false params={(0,0)(fillxfill) sim={adjust=resize forwardNavigation} layoutInDisplayCutoutMode=shortEdges ty=BASE_APPLICATION fmt=TRANSLUCENT wanim=0x10302f4
+09-25 20:15:45.569 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   fl=81a10180
+09-25 20:15:45.569 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   pfl=1e020040
+09-25 20:15:45.569 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   bhv=SHOW_TRANSIENT_BARS_BY_SWIPE
+09-25 20:15:45.569 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653):   fitSides= naviIconColor=0}
+09-25 20:15:45.574 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): updateBlastSurfaceIfNeeded mBlastBufferQueue=null isSameSurfaceControl=false
+09-25 20:15:45.575 I/BLASTBufferQueue( 1653): new BLASTBufferQueue, mName= ViewRootImpl@ce72b67[GodotAppLauncher] mNativeObject= 0xb400007d2366fbf0 sc.mNativeObject= 0xb400007cb39b2360 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 android.view.Choreographer.doCallbacks:923 android.view.Choreographer.doFrame:852 android.view.Choreographer$FrameDisplayEventReceiver.run:1283
+09-25 20:15:45.575 I/BLASTBufferQueue( 1653): update, w= 1080 h= 2400 mName = ViewRootImpl@ce72b67[GodotAppLauncher] mNativeObject= 0xb400007d2366fbf0 sc.mNativeObject= 0xb400007cb39b2360 format= -3 caller= android.graphics.BLASTBufferQueue.<init>:84 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885
+09-25 20:15:45.575 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=5 res=0x3 s={true 0xb400007db366fb60} ch=true seqId=0
+09-25 20:15:45.576 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): mThreadedRenderer.initialize() mSurface={isValid=true 0xb400007db366fb60} hwInitialized=true
+09-25 20:15:45.576 D/OpenGLRenderer( 1653): eglCreateWindowSurface
+09-25 20:15:45.576 I/SurfaceView@e3a4a6d( 1653): windowStopped(false) true org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F...... 0,0-1080,2400 aid=1} of ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:15:45.576 I/SurfaceView@e3a4a6d( 1653): Changes: creating=true format=false size=false visible=true alpha=false hint=false mUseAlpha=false visible=true left=false top=false
+09-25 20:15:45.577 I/BLASTBufferQueue( 1653): update, w= 1080 h= 2400 mName = null mNativeObject= 0xb400007d2375ffb0 sc.mNativeObject= 0xb400007cb3700f30 format= 4 caller= android.view.SurfaceView.createBlastSurfaceControls:1383 android.view.SurfaceView.updateSurface:1079 android.view.SurfaceView.setWindowStopped:335 android.view.SurfaceView.surfaceCreated:1853 android.view.ViewRootImpl.notifySurfaceCreated:2820 android.view.ViewRootImpl.performTraversals:4293
+09-25 20:15:45.577 I/SurfaceView@e3a4a6d( 1653): 238701165 Cur surface: Surface(name=null)/@0x69a5c86
+09-25 20:15:45.577 I/SurfaceView@e3a4a6d( 1653): pST: sr = Rect(0, 0 - 1080, 2400) sw = 1080 sh = 2400
+09-25 20:15:45.578 D/SurfaceView@e3a4a6d( 1653): performSurfaceTransaction RenderWorker position = [0, 0, 1080, 2400] surfaceSize = 1080x2400
+09-25 20:15:45.578 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = false t = 0xb400007ce36585f0 android.view.SurfaceView.performSurfaceTransaction:959 android.view.SurfaceView.updateSurface:1105 android.view.SurfaceView.setWindowStopped:335
+09-25 20:15:45.578 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): applyTransactionOnDraw: mRemoved = false isHardwareEnabled = true t = 0xb400007ce36585f0android.view.SurfaceView.applyTransactionOnVriDraw:2048 android.view.SurfaceView.performSurfaceTransaction:959 android.view.SurfaceView.updateSurface:1105 android.view.SurfaceView.setWindowStopped:335 android.view.SurfaceView.surfaceCreated:1853
+09-25 20:15:45.578 I/SurfaceView@e3a4a6d( 1653): updateSurface: mVisible = true mSurface.isValid() = true
+09-25 20:15:45.578 I/SurfaceView@e3a4a6d( 1653): updateSurface: mSurfaceCreated = false surfaceChanged = true visibleChanged = true
+09-25 20:15:45.578 I/SurfaceView@e3a4a6d( 1653): visibleChanged -- surfaceCreated
+09-25 20:15:45.578 I/SurfaceView@e3a4a6d( 1653): surfaceCreated 1 #1 org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F...... 0,0-1080,2400 aid=1}
+09-25 20:15:45.578 I/SurfaceView@e3a4a6d( 1653): surfaceChanged -- format=4 w=1080 h=2400
+09-25 20:15:45.578 I/SurfaceView@e3a4a6d( 1653): surfaceChanged (1080,2400) 1 #1 org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F...... 0,0-1080,2400 aid=1}
+09-25 20:15:45.578 I/SurfaceView@e3a4a6d( 1653): surfaceRedrawNeeded
+09-25 20:15:45.578 V/SurfaceView@e3a4a6d( 1653): Layout: x=0 y=0 w=1080 h=2400, frame=Rect(0, 0 - 1080, 2400)
+09-25 20:15:45.578 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): reportNextDraw android.view.ViewRootImpl.performTraversals:4438 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309
+09-25 20:15:45.578 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Setup new sync id=2
+09-25 20:15:45.578 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Setting syncFrameCallback
+09-25 20:15:45.578 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): registerCallbacksForSync syncBuffer=false
+09-25 20:15:45.579 D/SurfaceView@e3a4a6d( 1653): updateSurfacePosition RenderWorker, frameNr = 1, position = [0, 0, 1080, 2400] surfaceSize = 1080x2400
+09-25 20:15:45.579 I/SurfaceView@e3a4a6d( 1653): uSP: rtp = Rect(0, 0 - 1080, 2400) rtsw = 1080 rtsh = 2400
+09-25 20:15:45.579 I/SurfaceView@e3a4a6d( 1653): onSSPAndSRT: pl = 0 pt = 0 sx = 1.0 sy = 1.0
+09-25 20:15:45.579 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): mWNT: t=0xb400007ce3746cd0 mBlastBufferQueue=0xb400007d2366fbf0 fn= 1 caller= android.view.ViewRootImpl.lambda$applyTransactionOnDraw$11$android-view-ViewRootImpl:12865 android.view.ViewRootImpl$$ExternalSyntheticLambda1.onFrameDraw:4 android.graphics.HardwareRenderer$FrameDrawingCallback.onFrameDraw:924
+09-25 20:15:45.579 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): mWNT: t=0xb400007ce36585f0 mBlastBufferQueue=0xb400007d2366fbf0 fn= 1 caller= android.view.ViewRootImpl.lambda$applyTransactionOnDraw$11$android-view-ViewRootImpl:12865 android.view.ViewRootImpl$$ExternalSyntheticLambda1.onFrameDraw:4 android.graphics.HardwareRenderer$FrameDrawingCallback.onFrameDraw:924
+09-25 20:15:45.579 I/SurfaceView@e3a4a6d( 1653): aOrMT: ViewRootImpl@ce72b67[GodotAppLauncher] t = android.view.SurfaceControl$Transaction@e5f84d2 fN = 1 android.view.SurfaceView.-$$Nest$mapplyOrMergeTransaction:0 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionChanged:1537 android.graphics.RenderNode$CompositePositionUpdateListener.positionChanged:373
+09-25 20:15:45.579 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Received frameDrawingCallback syncResult=0 frameNum=1.
+09-25 20:15:45.579 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Setting up sync and frameCommitCallback
+09-25 20:15:45.579 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): mWNT: t=0xb400007ce3687570 mBlastBufferQueue=0xb400007d2366fbf0 fn= 1 caller= android.view.SurfaceView.applyOrMergeTransaction:1455 android.view.SurfaceView.-$$Nest$mapplyOrMergeTransaction:0 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionChanged:1537
+09-25 20:15:45.580 I/BLASTBufferQueue( 1653): [ViewRootImpl@ce72b67[GodotAppLauncher]#4](f:0,a:0) onFrameAvailable the first frame is available
+09-25 20:15:45.581 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+09-25 20:15:45.606 I/BLASTBufferQueue( 1653): [SurfaceView[com.blocktower.game/com.godot.game.GodotAppLauncher]@0#5](f:0,a:0) onFrameAvailable the first frame is available
+09-25 20:15:45.612 I/SurfaceView@e3a4a6d( 1653): finishedDrawing
+09-25 20:15:45.612 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): onSyncComplete
+09-25 20:15:45.612 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): setupSync seqId=0 mSyncId=-1 fn=1 caller=android.view.ViewRootImpl$$ExternalSyntheticLambda11.accept:6 android.window.SurfaceSyncer.lambda$setupSync$1$android-window-SurfaceSyncer:128 android.window.SurfaceSyncer$$ExternalSyntheticLambda1.accept:8 android.window.SurfaceSyncer$SyncSet.checkIfSyncIsComplete:382 android.window.SurfaceSyncer$SyncSet.lambda$merge$1$android-window-SurfaceSyncer$SyncSet:435 android.window.SurfaceSyncer$SyncSet$$ExternalSyntheticLambda0.accept:6 android.window.SurfaceSyncer$SyncSet.lambda$updateCallback$0:407
+09-25 20:15:45.612 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): reportDrawFinished seqId=0 mSyncId=-1 fn=1 mSurfaceChangedTransaction=0xb400007ce3682fb0
+09-25 20:15:45.653 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): MSG_WINDOW_FOCUS_CHANGED 1 0
+09-25 20:15:45.653 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb400007db366fb60}
+09-25 20:15:45.654 D/InputMethodManager( 1653): startInputInner - Id : 0
+09-25 20:15:45.654 I/InputMethodManager( 1653): startInputInner - mService.startInputOrWindowGainedFocus
+09-25 20:15:45.679 V/Godot   ( 1653): OnPause: GodotFragment{12489af} (ecee050e-4f2e-4a0e-9ea9-ed9b3ebdc45b id=0x7f07002c)
+09-25 20:15:45.694 D/blocktower.game( 1653): PlayerBase::pause() from IPlayer
+09-25 20:15:45.705 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): MSG_WINDOW_FOCUS_CHANGED 0 0
+09-25 20:15:46.202 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): handleAppVisibility mAppVisible = true visible = false
+09-25 20:15:46.217 I/SurfaceView@e3a4a6d( 1653): onWindowVisibilityChanged(8) false org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F...... 0,0-1080,2400 aid=1} of ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:15:46.217 I/SurfaceView@e3a4a6d( 1653): Changes: creating=false format=false size=false visible=true alpha=false hint=false mUseAlpha=false visible=true left=false top=false
+09-25 20:15:46.218 I/SurfaceView@e3a4a6d( 1653): 238701165 Cur surface: Surface(name=null)/@0x69a5c86
+09-25 20:15:46.218 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = false t = 0xb400007ce372ae30 android.view.SurfaceView.performSurfaceTransaction:959 android.view.SurfaceView.updateSurface:1105 android.view.SurfaceView.onWindowVisibilityChanged:371
+09-25 20:15:46.218 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): applyTransactionOnDraw: mRemoved = false isHardwareEnabled = true t = 0xb400007ce372ae30android.view.SurfaceView.applyTransactionOnVriDraw:2048 android.view.SurfaceView.performSurfaceTransaction:959 android.view.SurfaceView.updateSurface:1105 android.view.SurfaceView.onWindowVisibilityChanged:371 android.view.View.dispatchWindowVisibilityChanged:15943
+09-25 20:15:46.218 I/SurfaceView@e3a4a6d( 1653): surfaceDestroyed
+09-25 20:15:46.218 I/SurfaceView@e3a4a6d( 1653): surfaceDestroyed callback.size 1 #2 org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F...... 0,0-1080,2400 aid=1}
+09-25 20:15:46.218 I/SurfaceView@e3a4a6d( 1653): updateSurface: mVisible = false mSurface.isValid() = true
+09-25 20:15:46.219 I/SurfaceView@e3a4a6d( 1653): releaseSurfaces: viewRoot = ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:15:46.219 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = true t = 0xb400007ce3668c10 android.view.SurfaceView.releaseSurfaces:858 android.view.SurfaceView.updateSurface:1172 android.view.SurfaceView.onWindowVisibilityChanged:371
+09-25 20:15:46.219 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: viewRoot.applyTransactionOnDrawFromReleaseSurfaces
+09-25 20:15:46.219 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): from releaseSurfaces t.apply t = 0xb400007ce3668c10
+09-25 20:15:46.220 V/SurfaceView@e3a4a6d( 1653): Layout: x=0 y=0 w=1080 h=2400, frame=Rect(0, 0 - 1080, 2400)
+09-25 20:15:46.221 D/SurfaceView@e3a4a6d( 1653): windowPositionLost, frameNr = 0
+09-25 20:15:46.221 D/OpenGLRenderer( 1653): setSurface called with nullptr
+09-25 20:15:46.221 D/OpenGLRenderer( 1653): setSurface() destroyed EGLSurface
+09-25 20:15:46.222 D/OpenGLRenderer( 1653): destroyEglSurface
+09-25 20:15:46.223 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): performTraversals mFirst=false windowShouldResize=false viewVisibilityChanged=true mForceNextWindowRelayout=false params=null
+09-25 20:15:46.231 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)8 dur=7 res=0x2 s={false 0x0} ch=true seqId=0
+09-25 20:15:46.237 E/BufferQueueProducer( 1653): [SurfaceView[com.blocktower.game/com.godot.game.GodotAppLauncher]@0#5(BLAST Consumer)5](id:67500000005,api:0,p:-1,c:1653) requestBuffer: BufferQueue has no connected producer
+09-25 20:15:46.237 E/Surface ( 1653): dequeueBuffer: IGraphicBufferProducer::requestBuffer failed: -19
+09-25 20:15:46.237 E/BufferQueueProducer( 1653): [SurfaceView[com.blocktower.game/com.godot.game.GodotAppLauncher]@0#5(BLAST Consumer)5](id:67500000005,api:0,p:-1,c:1653) cancelBuffer: BufferQueue has no connected producer
+09-25 20:15:46.237 I/Adreno  ( 1653): DequeueBuffer: dequeueBuffer failed
+09-25 20:15:46.237 E/BufferQueueProducer( 1653): [SurfaceView[com.blocktower.game/com.godot.game.GodotAppLauncher]@0#5(BLAST Consumer)5](id:67500000005,api:0,p:-1,c:1653) dequeueBuffer: BufferQueue has no connected producer
+09-25 20:15:46.237 I/Adreno  ( 1653): DequeueBuffer: dequeueBuffer failed
+09-25 20:15:46.237 I/SurfaceView@e3a4a6d( 1653): windowStopped(true) false org.godotengine.godot.GodotGLRenderView{e3a4a6d VFE...... .F...... 0,0-1080,2400 aid=1} of ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:15:46.237 D/SurfaceView@e3a4a6d( 1653): updateSurface: surface is not valid
+09-25 20:15:46.237 I/SurfaceView@e3a4a6d( 1653): releaseSurfaces: viewRoot = ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:15:46.238 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = true t = 0xb400007ce372eaf0 android.view.SurfaceView.releaseSurfaces:858 android.view.SurfaceView.updateSurface:998 android.view.SurfaceView.setWindowStopped:335
+09-25 20:15:46.238 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: viewRoot.applyTransactionOnDrawFromReleaseSurfaces
+09-25 20:15:46.238 W/GLThread( 1653): eglSwapBuffers failed: EGL_BAD_SURFACE
+09-25 20:15:46.238 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): from releaseSurfaces t.apply t = 0xb400007ce372eaf0
+09-25 20:15:46.239 E/BufferQueueProducer( 1653): [SurfaceView[com.blocktower.game/com.godot.game.GodotAppLauncher]@0#5(BLAST Consumer)5](id:67500000005,api:0,p:-1,c:1653) disconnect: not connected (req=1)
+09-25 20:15:46.239 W/libEGL  ( 1653): EGLNativeWindowType 0xb400007db36b1b60 disconnect failed
+09-25 20:15:46.241 D/SurfaceView@e3a4a6d( 1653): updateSurface: surface is not valid
+09-25 20:15:46.241 I/SurfaceView@e3a4a6d( 1653): releaseSurfaces: viewRoot = ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:15:46.241 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = true t = 0xb400007ce3665cd0 android.view.SurfaceView.releaseSurfaces:858 android.view.SurfaceView.updateSurface:998 android.view.SurfaceView.lambda$new$0$android-view-SurfaceView:200
+09-25 20:15:46.241 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: viewRoot.applyTransactionOnDrawFromReleaseSurfaces
+09-25 20:15:46.241 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): from releaseSurfaces t.apply t = 0xb400007ce3665cd0
+09-25 20:15:46.243 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): stopped(true) old = false
+09-25 20:15:46.243 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): WindowStopped on com.blocktower.game/com.godot.game.GodotAppLauncher set to true
+09-25 20:15:46.245 V/Godot   ( 1653): OnStop: GodotFragment{12489af} (ecee050e-4f2e-4a0e-9ea9-ed9b3ebdc45b id=0x7f07002c)
+09-25 20:15:46.247 I/MSHandlerLifeCycle( 1653): removeMultiSplitHandler: no exist. decor=DecorView@91e0363[GodotAppLauncher]
+09-25 20:15:46.247 D/InputTransport( 1653): Input channel destroyed: 'ClientS', fd=125
+09-25 20:15:46.251 D/SurfaceView@e3a4a6d( 1653): updateSurface: surface is not valid
+09-25 20:15:46.251 I/SurfaceView@e3a4a6d( 1653): releaseSurfaces: viewRoot = ViewRootImpl@ce72b67[GodotAppLauncher]
+09-25 20:15:46.252 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: vri = ViewRootImpl@ce72b67[GodotAppLauncher] fRS = true t = 0xb400007ce3664f50 android.view.SurfaceView.releaseSurfaces:858 android.view.SurfaceView.updateSurface:998 android.view.SurfaceView.lambda$new$0$android-view-SurfaceView:200
+09-25 20:15:46.252 I/SurfaceView@e3a4a6d( 1653): applyTransactionOnVriDraw: viewRoot.applyTransactionOnDrawFromReleaseSurfaces
+09-25 20:15:46.252 I/ViewRootImpl@ce72b67[GodotAppLauncher]( 1653): from releaseSurfaces t.apply t = 0xb400007ce3664f50

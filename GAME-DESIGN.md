@@ -33,4 +33,6 @@ Phase 2-G update (2026-09-25): [Brick clock-landmark part](docs/implementation/P
 
 Phase 2-H update (2026-09-25): [Tower segment jump](docs/implementation/Phase2H_Tower_Segment_Jump_2026-09-25.md) lets players enter a segment number instead of stepping through each one. It is local presentation navigation with no save or growth action. Godot 4.7.2 import passed; native interaction and Android checks remain open.
 
-Phase 3 MVP code update (2026-09-25): [Whole-tower overview and single-target appearance copy](docs/implementation/Phase3_MVP_Tower_Overview_Copy_2026-09-25.md) add bounded tall-tower viewing, exact material shares and one atomic appearance copy between completed segments. The save schema remains v2. The Phase 3 device/performance and first-play acceptance gates have not been run for this source.
+Phase 3 MVP code update (2026-09-25): [Whole-tower overview and single-target appearance copy](docs/implementation/Phase3_MVP_Tower_Overview_Copy_2026-09-25.md) add bounded tall-tower viewing, exact material shares and one atomic appearance copy between completed segments. The save schema remains v2. Device and first-play checks were pending at the initial code handoff.
+
+Phase 3 Android follow-up (2026-09-25): [One-device validation](docs/implementation/Phase3_Android_Device_Validation_2026-09-25.md) covers current-source 30/300/3,000-floor views, copy/restart behavior, and short frame and memory measurements on SM-N981N. Minimum supported hardware and first-play human observation remain open.

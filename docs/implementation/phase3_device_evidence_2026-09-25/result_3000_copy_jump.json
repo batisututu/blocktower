@@ -1,0 +1,45 @@
+{
+  "floors": 3000,
+  "fixture_sha256": "c4e76c5def6143348377c4d1a2ae076491c70646bc477973921708387be8acba",
+  "launch": "Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] pkg=com.blocktower.game.qa }\r\nStatus: ok\r\nLaunchState: COLD\r\nActivity: com.blocktower.game.qa/com.godot.game.GodotApp\r\nTotalTime: 1218\r\nWaitTime: 1226\r\nComplete",
+  "screenshots": [
+    "puzzle_3000.png",
+    "detail_3000.png",
+    "focus_3000.png",
+    "focus_next_3000.png",
+    "overview_3000.png",
+    "copy_sheet_nonbrick.png",
+    "copy_result_nonbrick.png",
+    "jump_sheet_300.png",
+    "jump_result_300.png"
+  ],
+  "memory_overview": {
+    "total_pss_kib": 294552,
+    "graphics_pss_kib": 51956
+  },
+  "presented_frames_overview": {
+    "surface": "SurfaceView[com.blocktower.game.qa/com.godot.game.GodotAppLauncher]@0(BLAST)#68503",
+    "samples": 125,
+    "median_interval_ms": 16.64,
+    "p95_interval_ms": 16.71,
+    "max_interval_ms": 16.81,
+    "over_33ms": 0
+  },
+  "read_only_save_unchanged": true,
+  "memory_detail": {
+    "total_pss_kib": 299283,
+    "graphics_pss_kib": 51956
+  },
+  "copy": {
+    "mode": "nonbrick",
+    "revision": "2",
+    "target_material": "metal",
+    "target_parts": [],
+    "same_state_after_restart": true,
+    "same_save_bytes_after_restart": true
+  },
+  "jump": {
+    "target": 300,
+    "save_unchanged": true
+  }
+}

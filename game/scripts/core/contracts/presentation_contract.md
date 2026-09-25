@@ -59,6 +59,8 @@ The user resumed combined physical-device validation on 2026-09-23. Root notice 
 
 `PuzzleScreen.selected_segment` is presentation state. When at least two segments exist, the tower screen exposes a 48px segment-jump action. Its sheet accepts an integer segment number from 1 through completed segments plus one partial segment when present. A missing, nonnumeric or out-of-range number leaves the sheet and selection unchanged with an inline error. A valid number closes the sheet and redraws the selected segment. Opening, canceling, validating and applying a jump never dispatch a `GameSession` action, write a save, alter representative selection or draw supply RNG. The existing previous/next buttons and facade/part editing remain tied to the selected segment. Enter submission and the sheet button obey the current UI epoch and application-active boundary; Back cancels the sheet.
 
+The prefilled jump number is selected when its Android input opens, so typing replaces the existing number. After invalid confirmation, the rejected number is selected for correction.
+
 ## Whole-tower overview (Phase 3 MVP)
 
 The whole-tower view is read-only presentation state. It shows exact cumulative floors, best score, completed and partial segment counts, material floor shares, the current selected segment and a shortcut to the representative segment. It renders at most 64 sampled silhouette bands regardless of tower height; this diagram is an explicitly condensed preview, while the text ratios are computed from exact sparse `growth.segment_styles` counts. No per-floor Node or texture is created. Segment jump from this view opens the selected detailed segment; Back returns to the prior detailed segment. Overview navigation never dispatches, saves, changes representative selection or advances RNG. The detailed segment view retains facade and part editing.
@@ -68,6 +70,8 @@ The overview dims its background for legible counts and shows one decimal place 
 ## Single-target appearance copy (Phase 3 MVP)
 
 The detailed segment view opens a copy sheet only for a completed source when another completed target exists. The sheet accepts one target segment number, shows its current appearance and the copied appearance, and offers cancel. Invalid, partial, same-source and unchanged targets stay in the sheet without dispatch. Confirmation submits exactly one `COPY_SEGMENT_APPEARANCE` action through `PresentationController.submit_modal`, so stale revisions and commit failures retain their existing behavior. After a successful commit, the detailed view selects the target. No bulk copy or transient undo is part of this single-target action.
+
+The prefilled copy target is selected when its Android input opens. Typing replaces it, and invalid confirmation selects the rejected text for correction.
 
 Android back is owned by AppRoot with SceneTree.quit_on_go_back disabled: close the current modal first, cancel an active drag, then return from tower to puzzle. A plain puzzle/root notice back may exit. Recovery modals remain locked. Back navigation never commits state or changes RNG; desktop Escape uses the same screen routing without exiting.
 
