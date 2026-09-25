@@ -1,0 +1,195 @@
+{
+  "ok": true,
+  "engine": "4.7.2.stable.official.ed1daf0bf",
+  "engine_sha256": "ab1824f85bfd8e0e4128182c000c4003a3e042245b2967848d089b2a04b22424",
+  "directory": "C:\\DEV\\Games\\Blocktower\\tools\\out\\w3_restart_8ef9c7352236",
+  "separate_process_probes": 35,
+  "forced_terminations": 6,
+  "checks": [
+    {
+      "check": "initial full state committed",
+      "passed": true
+    },
+    {
+      "check": "fresh process restores exact state",
+      "passed": true
+    },
+    {
+      "check": "actual app scene boots from disk",
+      "passed": true
+    },
+    {
+      "check": "before_write: writer reached checkpoint",
+      "passed": true
+    },
+    {
+      "check": "live unrelated process claim is respected",
+      "passed": true
+    },
+    {
+      "check": "before_write: killed process restores whole generation",
+      "passed": true
+    },
+    {
+      "check": "after_write: writer reached checkpoint",
+      "passed": true
+    },
+    {
+      "check": "after_write: killed process restores whole generation",
+      "passed": true
+    },
+    {
+      "check": "after_verify: writer reached checkpoint",
+      "passed": true
+    },
+    {
+      "check": "after_verify: killed process restores whole generation",
+      "passed": true
+    },
+    {
+      "check": "after_preserve: writer reached checkpoint",
+      "passed": true
+    },
+    {
+      "check": "after_preserve: killed process restores whole generation",
+      "passed": true
+    },
+    {
+      "check": "after_remove_target: writer reached checkpoint",
+      "passed": true
+    },
+    {
+      "check": "after_remove_target: killed process restores whole generation",
+      "passed": true
+    },
+    {
+      "check": "after_publish: writer reached checkpoint",
+      "passed": true
+    },
+    {
+      "check": "after_publish: killed process restores whole generation",
+      "passed": true
+    },
+    {
+      "check": "post-publication restart cannot award clear twice",
+      "passed": true
+    },
+    {
+      "check": "normal clear commits expected points floors and queue",
+      "passed": true
+    },
+    {
+      "check": "another fresh process sees committed clear",
+      "passed": true
+    },
+    {
+      "check": "corrupt latest falls back with explicit notice",
+      "passed": true
+    },
+    {
+      "check": "recovered app scene exposes recovery result",
+      "passed": true
+    },
+    {
+      "check": "recovered state can commit again",
+      "passed": true
+    },
+    {
+      "check": "damaged original bytes are preserved",
+      "passed": true
+    },
+    {
+      "check": "both corrupt block silent initialization",
+      "passed": true
+    },
+    {
+      "check": "actual app scene presents save failure path",
+      "passed": true
+    },
+    {
+      "check": "real read-only write failure preserves current generation",
+      "passed": true
+    },
+    {
+      "check": "fresh process migrates strict v1 in memory to v2 with empty parts",
+      "passed": true
+    },
+    {
+      "check": "read-only v1 process resume preserves original bytes in both slots",
+      "passed": true
+    },
+    {
+      "check": "next process action writes v2 while retaining prior v1 generation",
+      "passed": true
+    },
+    {
+      "check": "current v2 fixture commits both sorted brick parts",
+      "passed": true
+    },
+    {
+      "check": "fresh process resumes existing v2 with both parts",
+      "passed": true
+    },
+    {
+      "check": "read-only v2 resume preserves every save byte",
+      "passed": true
+    },
+    {
+      "check": "first v2 action preserves both sorted parts across generations",
+      "passed": true
+    },
+    {
+      "check": "current v2 fixture commits all three sorted brick parts",
+      "passed": true
+    },
+    {
+      "check": "fresh process resumes the three-part v2 segment",
+      "passed": true
+    },
+    {
+      "check": "read-only three-part resume preserves every save byte",
+      "passed": true
+    },
+    {
+      "check": "first action preserves all sorted parts through both generations",
+      "passed": true
+    },
+    {
+      "check": "new v2 fixture commits four sorted brick parts",
+      "passed": true
+    },
+    {
+      "check": "fresh process resumes four-part v2 state",
+      "passed": true
+    },
+    {
+      "check": "read-only four-part resume preserves every save byte",
+      "passed": true
+    },
+    {
+      "check": "first successful action preserves all four parts across both generations",
+      "passed": true
+    },
+    {
+      "check": "second fresh process restores four-part state after first write",
+      "passed": true
+    },
+    {
+      "check": "Phase 3 copy fixture commits completed source and target",
+      "passed": true
+    },
+    {
+      "check": "separate process copies facade and all visible parts in one revision",
+      "passed": true
+    },
+    {
+      "check": "appearance copy preserves puzzle, height, representative and RNG",
+      "passed": true
+    },
+    {
+      "check": "fresh process restores atomic copy without changing save bytes",
+      "passed": true
+    }
+  ],
+  "scope": "Windows process termination and actual files, not hardware power loss"
+}

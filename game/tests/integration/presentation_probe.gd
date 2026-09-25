@@ -104,6 +104,21 @@ func _run():
         if mode.begins_with("tower_") and mode.trim_prefix("tower_").is_valid_int():
             state.growth.total_floors = int(mode.trim_prefix("tower_"))
             state.growth.representative_segment = 1 if state.growth.total_floors>=10 else 0
+        if mode.begins_with("phase3_overview_") or mode.begins_with("phase3_detail_") or mode.begins_with("phase3_focus_"):
+            var tall_floors := int(mode.split("_")[-1])
+            state.growth.total_floors = tall_floors
+            state.growth.brick_lines = 2
+            state.growth.representative_segment = maxi(1,int(tall_floors/20))
+            state.growth.segment_styles = {"1":"brick"}
+            if tall_floors >= 300:
+                state.growth.segment_styles[str(tall_floors/20)] = "metal"
+                state.growth.segment_styles[str(tall_floors/10)] = "crystal"
+        if mode in ["phase3_copy_sheet","phase3_copy_commit"]:
+            state.growth.total_floors = 63
+            state.growth.brick_lines = 10
+            state.growth.representative_segment = 1
+            state.growth.segment_styles = {"1":"brick"}
+            state.growth.segment_parts = {"1":["brick_arch_window"]}
         if mode in ["tower_brick","tower_wood","tower_locked","tower_partial","tower_legacy","tower_style_probe","facade_sheet_locked","facade_sheet_unlocked","facade_sheet_legacy","facade_partial","facade_style_probe","facade_crystal_locked","facade_crystal_unlocked","facade_crystal_scrolled","facade_crystal_legacy","facade_part_locked","facade_part_unlocked","facade_part_scrolled","facade_part_dormant","facade_part_probe","tower_brick_arch","facade_part_terrace_locked","facade_part_terrace_unlocked","facade_part_terrace_scrolled","facade_part_terrace_dormant","facade_part_terrace_probe","tower_brick_terrace","tower_brick_arch_terrace","facade_part_cornice_locked","facade_part_cornice_dormant","facade_part_cornice_unlocked","facade_part_cornice_scrolled","facade_part_cornice_probe","tower_brick_cornice_horizontal","tower_brick_cornice_roof","tower_brick_all_parts","tower_brick_arch_cornice","tower_brick_terrace_cornice","facade_part_landmark_locked","facade_part_landmark_unlocked","facade_part_landmark_scrolled","facade_part_landmark_dormant","facade_part_landmark_probe","tower_brick_landmark","tower_brick_arch_landmark","tower_brick_all_parts_landmark"]:
             if mode in ["tower_partial","facade_partial"]: state.growth.total_floors = 13
             elif mode in ["facade_part_landmark_unlocked","facade_part_landmark_scrolled","facade_part_landmark_probe","facade_part_landmark_dormant","tower_brick_landmark","tower_brick_arch_landmark","tower_brick_all_parts_landmark"]: state.growth.total_floors = 300
@@ -746,6 +761,102 @@ func _run():
                 if child is Button and child.visible:
                     check(child.position.y >= 24 and child.get_rect().end.y <= root.size.y-24,"tower action remains in the 24px safe area")
         screen._redraw()
+    elif mode.begins_with("phase3_overview_"):
+        var before: Dictionary = session.snapshot()
+        screen._open_tower()
+        screen._open_tower_overview()
+        await process_frame
+        await process_frame
+        check(screen.screen_id=="tower_overview","whole-tower overview opens from a completed segment")
+        var shares: Dictionary = screen._overview_floor_counts()
+        var exact_total := 0
+        for share in shares.values(): exact_total += int(share)
+        check(exact_total==before.growth.total_floors,"sparse material counts sum to exact acquired floors")
+        check(screen.controls.get_children().any(func(child):return child is Label and child.text.contains(Screen.format_int(before.growth.total_floors)+"층")),"whole-tower screen shows exact total")
+        var plot: Rect2 = screen._overview_plot_rect()
+        var material_label: Label
+        for child in screen.controls.get_children():
+            if child is Label and child.text.begins_with("외벽 비중"): material_label = child
+        check(material_label != null and plot.end.y <= material_label.position.y-4,"condensed tower does not cover material shares")
+        var nodes_before := _count_nodes(root)
+        var memory_before := int(Performance.get_monitor(Performance.MEMORY_STATIC))
+        var frames: Array[float] = []
+        for sample in range(24):
+            var frame_start := Time.get_ticks_usec()
+            screen._redraw()
+            await process_frame
+            await RenderingServer.frame_post_draw
+            frames.append((Time.get_ticks_usec()-frame_start)/1000.0)
+        frames.sort()
+        var metrics := {"floors":before.growth.total_floors,"segments":screen._maximum_tower_segment(),"max_bands":screen.OVERVIEW_BANDS,
+            "sampled_frames":frames.size(),"frame_p95_ms":frames[22],"frame_max_ms":frames[-1],
+            "node_count_before":nodes_before,"node_count_after":_count_nodes(root),
+            "memory_static_before_bytes":memory_before,"memory_static_after_bytes":int(Performance.get_monitor(Performance.MEMORY_STATIC)),
+            "scope":"Windows host viewport redraw; no mobile or GPU-only budget"}
+        var metric_file := FileAccess.open(output+".metrics.json",FileAccess.WRITE)
+        metric_file.store_string(JSON.stringify(metrics,"\t"))
+        metric_file.close()
+        check(_count_nodes(root)==nodes_before,"overview redraw creates no per-floor scene nodes")
+        check(session.snapshot()==before,"overview redraw does not commit or advance supply")
+    elif mode.begins_with("phase3_detail_"):
+        screen._open_tower()
+        screen.selected_segment = int(session.snapshot().growth.total_floors/10)
+        screen._layout()
+        check(screen.tower_segment_view()=={"count":10,"roof":true},"selected final ten-floor segment retains the roof")
+        check(screen.selected_segment==int(session.snapshot().growth.total_floors/10),"high segment remains directly selectable")
+    elif mode.begins_with("phase3_focus_"):
+        var before: Dictionary = session.snapshot()
+        screen._open_tower()
+        screen.selected_segment = int(before.growth.total_floors/10)
+        screen._layout()
+        var focus_button: Button
+        for child in screen.controls.get_children():
+            if child is Button and child.text=="확대": focus_button = child
+        check(focus_button != null,"detail screen exposes the enlarged-view action")
+        if focus_button != null: focus_button.pressed.emit()
+        check(screen.screen_id=="tower_focus" and screen.tower_segment_view()=={"count":10,"roof":true},"enlarged view displays the selected final ten-floor segment")
+        check(screen.controls.get_children().any(func(child):return child is Button and child.text=="닫기"),"enlarged view exposes a close action")
+        var selected_before: int = screen.selected_segment
+        var previous_button: Button
+        for child in screen.controls.get_children():
+            if child is Button and child.text=="이전": previous_button = child
+        if previous_button != null: previous_button.pressed.emit()
+        check(screen.screen_id=="tower_focus" and screen.selected_segment==selected_before-1,"enlarged view keeps previous segment available")
+        var next_button: Button
+        for child in screen.controls.get_children():
+            if child is Button and child.text=="다음": next_button = child
+        if next_button != null: next_button.pressed.emit()
+        check(screen.selected_segment==selected_before,"enlarged view returns to the final segment")
+        check(session.snapshot()==before,"enlarged view does not commit or advance supply")
+    elif mode in ["phase3_copy_sheet","phase3_copy_commit"]:
+        screen._open_tower()
+        var before: Dictionary = session.snapshot()
+        screen._show_segment_copy()
+        check(screen.controller.phase=="modal" and screen.segment_copy_input != null,"copy opens an editable confirmation sheet")
+        var panel: Control = screen.modal.get_child(0)
+        check(panel.position.y>=0 and panel.position.y+panel.size.y<=root.size.y,"copy sheet remains in the viewport")
+        screen.segment_copy_input.text = "7"
+        screen._confirm_segment_copy()
+        check(screen.controller.phase=="modal" and session.snapshot()==before,"partial target is rejected before dispatch")
+        screen.segment_copy_input.text = "2"
+        screen._refresh_segment_copy_preview()
+        check(screen.segment_copy_preview.text.contains("대상 구간 2") and screen.segment_copy_preview.text.contains("복사 후: 벽돌"),"copy preview names target and resulting facade")
+        if mode == "phase3_copy_commit":
+            screen._close_modal()
+            check(session.snapshot()==before,"cancel leaves file session unchanged")
+            screen._show_segment_copy()
+            screen.segment_copy_input.text = "2"
+            screen._refresh_segment_copy_preview()
+            screen._confirm_segment_copy()
+            var resumed: Dictionary = Session.resume(repo)
+            check(resumed.ok,"copied facade and parts reload from the file repository")
+            if resumed.ok:
+                check(resumed.session.snapshot().growth.segment_styles.get("2","")=="brick","target facade survives restart")
+                check(resumed.session.snapshot().growth.segment_parts.get("2",[])==["brick_arch_window"],"target part survives restart")
+            check(screen.screen_id=="tower" and screen.selected_segment==2,"successful copy opens target segment")
+            check(session.snapshot().revision==before.revision+1,"facade and part copy use one revision")
+        else:
+            check(session.snapshot()==before,"preview alone never commits")
     elif mode == "stress":
         var durations: Array[float] = []
         var frame_durations: Array[float] = []

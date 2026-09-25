@@ -142,6 +142,25 @@ func _run():
             return
         _finish(Session.resume(repository))
         return
+    if mode == "init_copy_v2":
+        var made: Dictionary = SavedGame.new().boot(path,"copy-process-test","424242")
+        if not made.ok:
+            _finish(made)
+            return
+        var state: Dictionary = made.session.snapshot()
+        state.growth.total_floors = 300
+        state.growth.brick_lines = 100
+        state.growth.representative_segment = 3
+        state.growth.segment_styles = {"1":"brick","2":"metal","3":"crystal"}
+        state.growth.segment_parts = {"1":["brick_arch_window","brick_cornice","brick_landmark","brick_terrace"],"2":["brick_arch_window"]}
+        state.revision = 1
+        state.last_event_id = 1
+        var committed: Dictionary = repository.commit(state,0)
+        if not committed.ok:
+            _finish(committed)
+            return
+        _finish(Session.resume(repository))
+        return
     if mode == "clear" and args.size() >= 5:
         var paused = PausedRepository.new()
         var error := paused.configure(path)
@@ -159,6 +178,16 @@ func _run():
         var state: Dictionary = resumed.session.snapshot()
         var action := {"type":"SET_AUTO","session_id":state.session_id,"event_id":state.last_event_id+1,
             "enabled":not state.auto_clear,"confirmed":false}
+        var result: Dictionary = resumed.session.dispatch(action)
+        if not result.ok:
+            _finish(result)
+            return
+        _finish(resumed)
+        return
+    if mode == "copy_appearance":
+        var state: Dictionary = resumed.session.snapshot()
+        var action := {"type":"COPY_SEGMENT_APPEARANCE","session_id":state.session_id,
+            "event_id":state.last_event_id+1,"source":1,"target":2,"confirmed":true}
         var result: Dictionary = resumed.session.dispatch(action)
         if not result.ok:
             _finish(result)

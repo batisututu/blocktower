@@ -1,0 +1,77 @@
+{
+  "engine_sha256": "ab1824f85bfd8e0e4128182c000c4003a3e042245b2967848d089b2a04b22424",
+  "reports": [
+    {
+      "announcements": [],
+      "board": "[P: (12.0, 107.2), S: (296.0, 296.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "selected final ten-floor segment retains the roof",
+          "passed": true
+        },
+        {
+          "check": "high segment remains directly selectable",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 30,
+      "grayscale": false,
+      "large_text": false,
+      "mode": "phase3_detail_30",
+      "revision": 1,
+      "safe_insets_24px": false,
+      "scenario": "phase3_detail_30",
+      "score": 0,
+      "size": "320x568",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "announcements": [],
+      "board": "[P: (12.0, 196.05), S: (388.0, 388.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "selected final ten-floor segment retains the roof",
+          "passed": true
+        },
+        {
+          "check": "high segment remains directly selectable",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 3000,
+      "grayscale": false,
+      "large_text": false,
+      "mode": "phase3_detail_3000",
+      "revision": 1,
+      "safe_insets_24px": false,
+      "scenario": "phase3_detail_3000",
+      "score": 0,
+      "size": "412x915",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    }
+  ]
+}

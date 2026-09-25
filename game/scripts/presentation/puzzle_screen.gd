@@ -385,6 +385,11 @@ func _layout() -> void:
     tray_notes.clear()
     var w := size.x
     var h := size.y
+    if screen_id == "tower_focus":
+        _build_tower_focus()
+        _redraw()
+        if controller.phase == "recovery": _save_error_dialog()
+        return
     if screen_id in ["tower","tower_overview"]:
         var tower_insets := _safe_vertical()
         var tower_top := tower_insets.x
@@ -860,9 +865,10 @@ func _must_clear_emphasis() -> bool:
 func _draw_board(canvas: Control) -> void:
     if state.is_empty(): return
     if screen_id == "tower_overview":
+        canvas.draw_rect(Rect2(Vector2.ZERO,canvas.size),BACKGROUND_DIM)
         _draw_tower_overview(canvas)
         return
-    if screen_id == "tower":
+    if screen_id in ["tower","tower_focus"]:
         _draw_tower(canvas)
         return
     canvas.draw_rect(Rect2(Vector2.ZERO,size),BACKGROUND_DIM)
@@ -947,7 +953,7 @@ func handle_back() -> bool:
     if not controller.application_active: return true
     if modal != null: _close_modal()
     elif controller.phase == "dragging": _cancel_drag()
-    elif screen_id == "tower_overview": _show_selected_tower()
+    elif screen_id in ["tower_overview","tower_focus"]: _show_selected_tower()
     elif screen_id == "tower": _open_puzzle()
     else: return false
     return true
@@ -1752,6 +1758,11 @@ func _open_tower_overview() -> void:
     screen_id = "tower_overview"
     _layout()
 
+func _open_tower_focus() -> void:
+    if state.growth.total_floors <= 0: return
+    screen_id = "tower_focus"
+    _layout()
+
 func _overview_to_representative() -> void:
     selected_segment = maxi(1,int(state.growth.representative_segment))
     _show_selected_tower()
@@ -1884,6 +1895,29 @@ func _confirm_segment_copy() -> void:
         selected_segment = target
         _show_selected_tower()
 
+func _build_tower_focus() -> void:
+    var insets := _safe_vertical()
+    var bottom := size.y-insets.y
+    var maximum := _maximum_tower_segment()
+    var title := _label("구간 %s / %s 확대" % [format_int(selected_segment),format_int(maximum)],Rect2(18,insets.x+62,size.x-116,40),20)
+    var title_size := _font_size(20)
+    while title_size>13 and _text_width(title.text,title_size,true)>title.size.x: title_size -= 1
+    title.add_theme_font_size_override("font_size",title_size)
+    title.add_theme_stylebox_override("normal",_style(Color(0.15,0.10,0.07,0.85),Color(GOLD,0.4)))
+    _button("닫기",Rect2(size.x-82,insets.x+56,64,48),_show_selected_tower)
+    var previous := _button("이전",Rect2(18,bottom-58,64,48),func(): selected_segment=maxi(1,selected_segment-1);_layout())
+    previous.disabled = selected_segment<=1
+    var appearance := "미완성 · %d/10층" % int(analysis.growth.partial_floors) if selected_segment>int(analysis.growth.completed_segments) else _facade_label(tower_segment_style())
+    var visible_parts: Array = state.growth.segment_parts.get(str(selected_segment),[])
+    if tower_segment_style()=="brick" and not visible_parts.is_empty(): appearance += " · 장식 %d개" % visible_parts.size()
+    var caption := _label("구간 %s / %s\n%s" % [format_int(selected_segment),format_int(maximum),appearance],Rect2(90,bottom-70,size.x-180,60),12)
+    caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+    caption.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+    caption.accessibility_name = caption.text
+    caption.add_theme_stylebox_override("normal",_style(Color(0.15,0.10,0.07,0.85),Color(GOLD,0.4)))
+    var next := _button("다음",Rect2(size.x-82,bottom-58,64,48),func(): selected_segment=mini(maximum,selected_segment+1);_layout())
+    next.disabled = selected_segment>=maximum
+
 func _build_tower() -> void:
     var total: int = state.growth.total_floors
     var insets := _safe_vertical()
@@ -1893,7 +1927,7 @@ func _build_tower() -> void:
     if maximum_segment > 1:
         var jump := _button("구간 이동",Rect2(size.x-126,insets.x+56,108,48),_show_segment_jump)
         jump.accessibility_name = "원하는 10층 구간으로 이동"
-    _label("누적 %s층" % str(total),Rect2(18,insets.x+104,size.x-36,42),28,GOLD)
+    _label("누적 %s층" % format_int(total),Rect2(18,insets.x+104,size.x-36,42),28,GOLD)
     var desc := "첫 줄을 클리어하면 탑이 자라요" if total==0 else "%s개 구간 완성 · 다음 구간까지 %d층" % [str(analysis.growth.completed_segments),analysis.growth.floors_to_next]
     if total > 0:
         var complete_count := int(analysis.growth.completed_segments)
@@ -1971,8 +2005,10 @@ func _build_tower() -> void:
         copy.accessibility_name = "구간 %d 외형을 다른 구간에 복사" % selected_segment
         var overview := _button("전체 탑",Rect2(34+third*2,bottom-98,third,48),_open_tower_overview)
         overview.accessibility_name = "전체 탑 감상"
+        var focus := _button("확대",Rect2(size.x-82,insets.x+188,64,48),_open_tower_focus)
+        focus.accessibility_name = "선택한 10층 구간 확대 보기"
         for action_button in [representative,copy,overview]:
-            var action_font := action_button.get_theme_font_size("font_size")
+            var action_font: int = action_button.get_theme_font_size("font_size")
             while action_font>11 and _text_width(action_button.text,action_font,true)>third-18: action_font -= 1
             action_button.add_theme_font_size_override("font_size",action_font)
 
@@ -1986,6 +2022,12 @@ func _overview_floor_counts() -> Dictionary:
             counts.wood -= 10
             counts[material] += 10
     return counts
+
+func _overview_material_share(count: int, total: int) -> String:
+    if count <= 0: return "0%"
+    var share := count*100.0/float(maxi(1,total))
+    if share < 0.1: return "0.1% 미만"
+    return "%.1f%%" % share
 
 func _overview_plot_rect() -> Rect2:
     var insets := _safe_vertical()
@@ -2013,7 +2055,7 @@ func _build_tower_overview() -> void:
     diagram_note.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
     var shares := _overview_floor_counts()
     var total: int = maxi(1,int(state.growth.total_floors))
-    var share_text := "외벽 비중  목재 %d%% · 벽돌 %d%%\n금속·유리 %d%% · 크리스털 %d%%" % [roundi(shares.wood*100.0/total),roundi(shares.brick*100.0/total),roundi(shares.metal*100.0/total),roundi(shares.crystal*100.0/total)]
+    var share_text := "외벽 비중  목재 %s · 벽돌 %s\n금속·유리 %s · 크리스털 %s" % [_overview_material_share(shares.wood,total),_overview_material_share(shares.brick,total),_overview_material_share(shares.metal,total),_overview_material_share(shares.crystal,total)]
     var share_label := _label(share_text,Rect2(18,bottom-194,size.x-36,46),12,INK)
     share_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
     share_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
@@ -2188,8 +2230,9 @@ func _draw_tower(canvas: Control) -> void:
     var insets := _safe_vertical()
     var selected_parts: Array = state.growth.segment_parts.get(str(selected_segment),[])
     var landmark_caption_lift := 16.0 if tower_segment_style() == "brick" and selected_parts.size() >= 2 else 0.0
-    var base_y := size.y-insets.y-245-landmark_caption_lift
-    var available := base_y-210+landmark_caption_lift
+    var focus_bottom_space := maxf(104.0,size.y*0.16)
+    var base_y := size.y-insets.y-(focus_bottom_space if screen_id=="tower_focus" else 245.0)-landmark_caption_lift
+    var available := base_y-(insets.x+112.0) if screen_id=="tower_focus" else base_y-210+landmark_caption_lift
     var floor_step: float = tower_geometry.floor_step
     var scale_factor := minf(size.x/470,available/(count*floor_step+205))
     var anchor := Vector2(size.x/2,base_y)

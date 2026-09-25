@@ -1,0 +1,86 @@
+[
+  {
+    "file": "detail_summary.json",
+    "sha256": "a8bf2f56545f6a7c9f74d6e44c8d63eb1506f9bf68c54fcca73c6c37f55326f6"
+  },
+  {
+    "file": "gut_summary.json",
+    "sha256": "dc962a76a13851d9a107d627a0313249539db575fd8b3c92dc832e778da636ce"
+  },
+  {
+    "file": "inset_text_phase3_copy_sheet_320x568.png",
+    "sha256": "6b848d4f05d409e009bf32ad245463c89fec6a7624d66fd8ab1454c3b015b8c9"
+  },
+  {
+    "file": "inset_text_phase3_focus_30_320x568.png",
+    "sha256": "c9706ba0b04428c9f7f722083da4d5ea2286f7b08efcbcce590a8c1be78d5fa9"
+  },
+  {
+    "file": "inset_text_phase3_overview_30_320x568.metrics.json",
+    "sha256": "d490457ece6cc4c8606a209e3247e6b9c95d55eea2a1a77684498d3998908b9c"
+  },
+  {
+    "file": "inset_text_phase3_overview_30_320x568.png",
+    "sha256": "58d21d10214dbf24e9e813e8641cc4b4e1739ff25093d04f5e5e84f766446fba"
+  },
+  {
+    "file": "native_summary.json",
+    "sha256": "02c4b27dfebdbc4bb34bc4d58f34f06fea92987b1419bcde416262cf0eff41cb"
+  },
+  {
+    "file": "phase3_copy_commit_360x800.png",
+    "sha256": "f366afd136b70b6dcdff34efa8146e02be56b15d58448066cb52ff6fd44d0f6b"
+  },
+  {
+    "file": "phase3_copy_sheet_320x568.png",
+    "sha256": "a1494abe375cfa0a8f9a2a26ac72e1ee29873dfcca50d79becad33112a33be97"
+  },
+  {
+    "file": "phase3_detail_30_320x568.png",
+    "sha256": "c74648260bf165a7753493b94a36c517cceba9167df9b2b469995429eb38e004"
+  },
+  {
+    "file": "phase3_detail_3000_412x915.png",
+    "sha256": "1a034ab98437307bc36376e2bd2383c95146529e1558e9bb91c2f3268d377529"
+  },
+  {
+    "file": "phase3_focus_30_320x568.png",
+    "sha256": "8092e6beb5ca8c5e1b60908e4dc71434a5d427e64f1ce47352451a760758ccb2"
+  },
+  {
+    "file": "phase3_focus_300_360x800.png",
+    "sha256": "e01e2f4360c36e05ed457f1aa97651edacca1cd80495f42a718b8dcd35f4e83a"
+  },
+  {
+    "file": "phase3_focus_3000_412x915.png",
+    "sha256": "57a9e609a6bfb5821fa185686dfe2a27d0ada3f14145381bd77c2a5d5fb6698d"
+  },
+  {
+    "file": "phase3_overview_30_320x568.metrics.json",
+    "sha256": "2ab092a2e21174a417b74b548533c3d5feb422a0ce2af0482ee60f3f6fb47706"
+  },
+  {
+    "file": "phase3_overview_30_320x568.png",
+    "sha256": "72f73ba49e8649fceb6a5a94e61d76a24c145d7fa7eef15199d731b309b39418"
+  },
+  {
+    "file": "phase3_overview_300_360x800.metrics.json",
+    "sha256": "136f294b51d6b0ebc6c2eed009b3b9c2a1dc99718468155fa4d6f9cfad65fad7"
+  },
+  {
+    "file": "phase3_overview_300_360x800.png",
+    "sha256": "00eaad6f15bfb0058b43d4ff6e0ac3450396fc9a5a63326b212dc9ee35229177"
+  },
+  {
+    "file": "phase3_overview_3000_412x915.metrics.json",
+    "sha256": "321feb3d6c81de41f03494929512719b3728e3acf64b16efe9d6f2faafc77454"
+  },
+  {
+    "file": "phase3_overview_3000_412x915.png",
+    "sha256": "ba8f22536dd8ad4c60661653e77d0463b69570d5934e4e25652432e60643158b"
+  },
+  {
+    "file": "save_restart_summary.json",
+    "sha256": "cbc187df9408ec5b9d1125c69d5f6ad58091e0bacec80f2518aa380036258a4a"
+  }
+]

@@ -202,6 +202,20 @@ check("first successful action preserves all four parts across both generations"
 landmark_second_resume = probe("inspect", landmark_v2)
 check("second fresh process restores four-part state after first write", landmark_second_resume["ok"] and json.loads(json.loads(landmark_second_resume["state_text"])['payload'])['growth']['segment_parts'] == landmark_parts and landmark_second_resume["pid"] != landmark_action["pid"])
 
+# Phase 3 외형 복사는 재질과 파츠를 한 세대에 쓰고 새 프로세스에서 함께 복원한다.
+copy_v2 = run / "phase3_copy_v2"
+copy_initial = probe("init_copy_v2", copy_v2)
+check("Phase 3 copy fixture commits completed source and target", copy_initial["ok"])
+copy_before = json.loads(json.loads(copy_initial["state_text"])["payload"])
+copy_action = probe("copy_appearance", copy_v2)
+copy_after = json.loads(json.loads(copy_action["state_text"])["payload"]) if copy_action["ok"] else {}
+check("separate process copies facade and all visible parts in one revision", copy_action["ok"] and copy_action["pid"] != copy_initial["pid"] and int(copy_after.get("revision",-1)) == int(copy_before["revision"])+1 and copy_after.get("growth",{}).get("segment_styles") == {"1":"brick","2":"brick","3":"crystal"} and copy_after.get("growth",{}).get("segment_parts",{}).get("2") == copy_before["growth"]["segment_parts"]["1"])
+check("appearance copy preserves puzzle, height, representative and RNG", all(copy_after.get(field) == copy_before[field] for field in ("score","best","queue","occupancy","cell_style","checkpoint")) and copy_after["growth"]["total_floors"] == copy_before["growth"]["total_floors"] and copy_after["growth"]["representative_segment"] == copy_before["growth"]["representative_segment"])
+copy_files = ("slot_a.json","slot_b.json")
+copy_bytes = {name:(copy_v2 / name).read_bytes() for name in copy_files}
+copy_reopened = probe("inspect", copy_v2)
+check("fresh process restores atomic copy without changing save bytes", copy_reopened["ok"] and copy_reopened["pid"] != copy_action["pid"] and copy_reopened["state_text"] == copy_action["state_text"] and all((copy_v2 / name).read_bytes() == data for name,data in copy_bytes.items()))
+
 report = {"ok": True, "engine": version, "engine_sha256": engine_hash, "directory": str(run), "separate_process_probes": serial,
           "forced_terminations": 6, "checks": results, "scope": "Windows process termination and actual files, not hardware power loss"}
 (run / "summary.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")

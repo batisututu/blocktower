@@ -1,0 +1,621 @@
+{
+  "engine_sha256": "ab1824f85bfd8e0e4128182c000c4003a3e042245b2967848d089b2a04b22424",
+  "reports": [
+    {
+      "announcements": [],
+      "board": "[P: (12.0, 107.2), S: (296.0, 296.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "whole-tower overview opens from a completed segment",
+          "passed": true
+        },
+        {
+          "check": "sparse material counts sum to exact acquired floors",
+          "passed": true
+        },
+        {
+          "check": "whole-tower screen shows exact total",
+          "passed": true
+        },
+        {
+          "check": "condensed tower does not cover material shares",
+          "passed": true
+        },
+        {
+          "check": "overview redraw creates no per-floor scene nodes",
+          "passed": true
+        },
+        {
+          "check": "overview redraw does not commit or advance supply",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 30,
+      "grayscale": false,
+      "large_text": false,
+      "mode": "phase3_overview_30",
+      "revision": 1,
+      "safe_insets_24px": false,
+      "scenario": "phase3_overview_30",
+      "score": 0,
+      "size": "320x568",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "announcements": [],
+      "board": "[P: (12.0, 174.0), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "whole-tower overview opens from a completed segment",
+          "passed": true
+        },
+        {
+          "check": "sparse material counts sum to exact acquired floors",
+          "passed": true
+        },
+        {
+          "check": "whole-tower screen shows exact total",
+          "passed": true
+        },
+        {
+          "check": "condensed tower does not cover material shares",
+          "passed": true
+        },
+        {
+          "check": "overview redraw creates no per-floor scene nodes",
+          "passed": true
+        },
+        {
+          "check": "overview redraw does not commit or advance supply",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 300,
+      "grayscale": false,
+      "large_text": false,
+      "mode": "phase3_overview_300",
+      "revision": 1,
+      "safe_insets_24px": false,
+      "scenario": "phase3_overview_300",
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "announcements": [],
+      "board": "[P: (12.0, 196.05), S: (388.0, 388.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "whole-tower overview opens from a completed segment",
+          "passed": true
+        },
+        {
+          "check": "sparse material counts sum to exact acquired floors",
+          "passed": true
+        },
+        {
+          "check": "whole-tower screen shows exact total",
+          "passed": true
+        },
+        {
+          "check": "condensed tower does not cover material shares",
+          "passed": true
+        },
+        {
+          "check": "overview redraw creates no per-floor scene nodes",
+          "passed": true
+        },
+        {
+          "check": "overview redraw does not commit or advance supply",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 3000,
+      "grayscale": false,
+      "large_text": false,
+      "mode": "phase3_overview_3000",
+      "revision": 1,
+      "safe_insets_24px": false,
+      "scenario": "phase3_overview_3000",
+      "score": 0,
+      "size": "412x915",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "announcements": [],
+      "board": "[P: (12.0, 124.0), S: (296.0, 296.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "navigation below safe top",
+          "passed": true
+        },
+        {
+          "check": "clear above safe bottom",
+          "passed": true
+        },
+        {
+          "check": "full width retained with insets",
+          "passed": true
+        },
+        {
+          "check": "whole-tower overview opens from a completed segment",
+          "passed": true
+        },
+        {
+          "check": "sparse material counts sum to exact acquired floors",
+          "passed": true
+        },
+        {
+          "check": "whole-tower screen shows exact total",
+          "passed": true
+        },
+        {
+          "check": "condensed tower does not cover material shares",
+          "passed": true
+        },
+        {
+          "check": "overview redraw creates no per-floor scene nodes",
+          "passed": true
+        },
+        {
+          "check": "overview redraw does not commit or advance supply",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 30,
+      "grayscale": false,
+      "large_text": true,
+      "mode": "inset_text_phase3_overview_30",
+      "revision": 1,
+      "safe_insets_24px": true,
+      "scenario": "phase3_overview_30",
+      "score": 0,
+      "size": "320x568",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "announcements": [],
+      "board": "[P: (12.0, 107.2), S: (296.0, 296.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "detail screen exposes the enlarged-view action",
+          "passed": true
+        },
+        {
+          "check": "enlarged view displays the selected final ten-floor segment",
+          "passed": true
+        },
+        {
+          "check": "enlarged view exposes a close action",
+          "passed": true
+        },
+        {
+          "check": "enlarged view keeps previous segment available",
+          "passed": true
+        },
+        {
+          "check": "enlarged view returns to the final segment",
+          "passed": true
+        },
+        {
+          "check": "enlarged view does not commit or advance supply",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 30,
+      "grayscale": false,
+      "large_text": false,
+      "mode": "phase3_focus_30",
+      "revision": 1,
+      "safe_insets_24px": false,
+      "scenario": "phase3_focus_30",
+      "score": 0,
+      "size": "320x568",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "announcements": [],
+      "board": "[P: (12.0, 174.0), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "detail screen exposes the enlarged-view action",
+          "passed": true
+        },
+        {
+          "check": "enlarged view displays the selected final ten-floor segment",
+          "passed": true
+        },
+        {
+          "check": "enlarged view exposes a close action",
+          "passed": true
+        },
+        {
+          "check": "enlarged view keeps previous segment available",
+          "passed": true
+        },
+        {
+          "check": "enlarged view returns to the final segment",
+          "passed": true
+        },
+        {
+          "check": "enlarged view does not commit or advance supply",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 300,
+      "grayscale": false,
+      "large_text": false,
+      "mode": "phase3_focus_300",
+      "revision": 1,
+      "safe_insets_24px": false,
+      "scenario": "phase3_focus_300",
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "announcements": [],
+      "board": "[P: (12.0, 196.05), S: (388.0, 388.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "detail screen exposes the enlarged-view action",
+          "passed": true
+        },
+        {
+          "check": "enlarged view displays the selected final ten-floor segment",
+          "passed": true
+        },
+        {
+          "check": "enlarged view exposes a close action",
+          "passed": true
+        },
+        {
+          "check": "enlarged view keeps previous segment available",
+          "passed": true
+        },
+        {
+          "check": "enlarged view returns to the final segment",
+          "passed": true
+        },
+        {
+          "check": "enlarged view does not commit or advance supply",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 3000,
+      "grayscale": false,
+      "large_text": false,
+      "mode": "phase3_focus_3000",
+      "revision": 1,
+      "safe_insets_24px": false,
+      "scenario": "phase3_focus_3000",
+      "score": 0,
+      "size": "412x915",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "announcements": [],
+      "board": "[P: (12.0, 124.0), S: (296.0, 296.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "navigation below safe top",
+          "passed": true
+        },
+        {
+          "check": "clear above safe bottom",
+          "passed": true
+        },
+        {
+          "check": "full width retained with insets",
+          "passed": true
+        },
+        {
+          "check": "detail screen exposes the enlarged-view action",
+          "passed": true
+        },
+        {
+          "check": "enlarged view displays the selected final ten-floor segment",
+          "passed": true
+        },
+        {
+          "check": "enlarged view exposes a close action",
+          "passed": true
+        },
+        {
+          "check": "enlarged view keeps previous segment available",
+          "passed": true
+        },
+        {
+          "check": "enlarged view returns to the final segment",
+          "passed": true
+        },
+        {
+          "check": "enlarged view does not commit or advance supply",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 30,
+      "grayscale": false,
+      "large_text": true,
+      "mode": "inset_text_phase3_focus_30",
+      "revision": 1,
+      "safe_insets_24px": true,
+      "scenario": "phase3_focus_30",
+      "score": 0,
+      "size": "320x568",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "announcements": [],
+      "board": "[P: (12.0, 107.2), S: (296.0, 296.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "copy opens an editable confirmation sheet",
+          "passed": true
+        },
+        {
+          "check": "copy sheet remains in the viewport",
+          "passed": true
+        },
+        {
+          "check": "partial target is rejected before dispatch",
+          "passed": true
+        },
+        {
+          "check": "copy preview names target and resulting facade",
+          "passed": true
+        },
+        {
+          "check": "preview alone never commits",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 63,
+      "grayscale": false,
+      "large_text": false,
+      "mode": "phase3_copy_sheet",
+      "revision": 1,
+      "safe_insets_24px": false,
+      "scenario": "phase3_copy_sheet",
+      "score": 0,
+      "size": "320x568",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "announcements": [],
+      "board": "[P: (12.0, 124.0), S: (296.0, 296.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "navigation below safe top",
+          "passed": true
+        },
+        {
+          "check": "clear above safe bottom",
+          "passed": true
+        },
+        {
+          "check": "full width retained with insets",
+          "passed": true
+        },
+        {
+          "check": "copy opens an editable confirmation sheet",
+          "passed": true
+        },
+        {
+          "check": "copy sheet remains in the viewport",
+          "passed": true
+        },
+        {
+          "check": "partial target is rejected before dispatch",
+          "passed": true
+        },
+        {
+          "check": "copy preview names target and resulting facade",
+          "passed": true
+        },
+        {
+          "check": "preview alone never commits",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 63,
+      "grayscale": false,
+      "large_text": true,
+      "mode": "inset_text_phase3_copy_sheet",
+      "revision": 1,
+      "safe_insets_24px": true,
+      "scenario": "phase3_copy_sheet",
+      "score": 0,
+      "size": "320x568",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "announcements": [],
+      "board": "[P: (12.0, 174.0), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "copy opens an editable confirmation sheet",
+          "passed": true
+        },
+        {
+          "check": "copy sheet remains in the viewport",
+          "passed": true
+        },
+        {
+          "check": "partial target is rejected before dispatch",
+          "passed": true
+        },
+        {
+          "check": "copy preview names target and resulting facade",
+          "passed": true
+        },
+        {
+          "check": "cancel leaves file session unchanged",
+          "passed": true
+        },
+        {
+          "check": "copied facade and parts reload from the file repository",
+          "passed": true
+        },
+        {
+          "check": "target facade survives restart",
+          "passed": true
+        },
+        {
+          "check": "target part survives restart",
+          "passed": true
+        },
+        {
+          "check": "successful copy opens target segment",
+          "passed": true
+        },
+        {
+          "check": "facade and part copy use one revision",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 63,
+      "grayscale": false,
+      "large_text": false,
+      "mode": "phase3_copy_commit",
+      "revision": 2,
+      "safe_insets_24px": false,
+      "scenario": "phase3_copy_commit",
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    }
+  ]
+}

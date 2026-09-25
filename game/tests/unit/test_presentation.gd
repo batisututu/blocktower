@@ -1461,6 +1461,83 @@ func test_results_sheet_restart_and_tower_actions():
     assert_eq(session.snapshot().growth.total_floors,15)
     assert_eq(screen.score_label.text,"0")
 
+func test_phase3_overview_counts_sparse_facades_and_navigation_is_read_only():
+    var state: Dictionary = session.snapshot()
+    state.growth.total_floors = 3003
+    state.growth.representative_segment = 150
+    state.growth.segment_styles = {"1":"brick","150":"metal","300":"crystal"}
+    state.best = 12340
+    install(state)
+    var screen := Screen.new()
+    add_child_autofree(screen)
+    screen.set_anchors_preset(Control.PRESET_TOP_LEFT)
+    screen.size = Vector2(320,568)
+    screen.attach(session,path)
+    screen.preferences.values.muted = true
+    var before: Dictionary = session.snapshot()
+    screen._open_tower()
+    screen._open_tower_overview()
+    assert_eq(screen.screen_id,"tower_overview")
+    assert_eq(screen._maximum_tower_segment(),301)
+    assert_eq(screen._overview_floor_counts(),{"wood":2973,"brick":10,"metal":10,"crystal":10})
+    assert_true(screen.controls.get_children().any(func(child):return child is Label and child.text.contains("3,003층")))
+    assert_true(screen.controls.get_children().any(func(child):return child is Label and child.text.contains("벽돌 0.3%")),"small nonzero facade share remains visible")
+    screen._show_segment_jump()
+    assert_eq(screen.controller.phase,"modal")
+    screen.segment_jump_input.text = "302"
+    screen._confirm_segment_jump()
+    assert_eq(screen.screen_id,"tower_overview")
+    assert_true(screen.segment_jump_status.text.contains("1~301"))
+    screen.segment_jump_input.text = "301"
+    screen._confirm_segment_jump()
+    assert_eq(screen.screen_id,"tower")
+    assert_eq(screen.selected_segment,301)
+    assert_eq(screen.tower_segment_view().count,3)
+    screen._open_tower_focus()
+    assert_eq(screen.screen_id,"tower_focus")
+    assert_eq(screen.tower_segment_view().count,3)
+    assert_true(screen.handle_back())
+    assert_eq(screen.screen_id,"tower")
+    assert_eq(screen.selected_segment,301)
+    screen._open_tower_overview()
+    screen._overview_to_representative()
+    assert_eq(screen.selected_segment,150)
+    assert_eq(screen.screen_id,"tower")
+    assert_eq(session.snapshot(),before,"overview and jump do not save or advance supply")
+
+func test_phase3_copy_sheet_validates_target_and_selects_committed_copy():
+    var state: Dictionary = session.snapshot()
+    state.growth.total_floors = 63
+    state.growth.brick_lines = 10
+    state.growth.representative_segment = 1
+    state.growth.segment_styles = {"1":"brick"}
+    state.growth.segment_parts = {"1":["brick_arch_window"]}
+    install(state)
+    var screen := Screen.new()
+    add_child_autofree(screen)
+    screen.set_anchors_preset(Control.PRESET_TOP_LEFT)
+    screen.size = Vector2(320,568)
+    screen.attach(session,path)
+    screen.preferences.values.muted = true
+    screen._open_tower()
+    var before: Dictionary = session.snapshot()
+    screen._show_segment_copy()
+    assert_eq(screen.controller.phase,"modal")
+    assert_true(screen.segment_copy_preview.text.contains("대상 구간 2"))
+    screen.segment_copy_input.text = "7"
+    screen._confirm_segment_copy()
+    assert_eq(screen.controller.phase,"modal")
+    assert_eq(session.snapshot(),before,"partial target never commits")
+    screen.segment_copy_input.text = "2"
+    screen._refresh_segment_copy_preview()
+    assert_true(screen.segment_copy_preview.text.contains("복사 후: 벽돌"))
+    screen._confirm_segment_copy()
+    assert_eq(screen.screen_id,"tower")
+    assert_eq(screen.selected_segment,2)
+    assert_eq(session.snapshot().growth.segment_styles["2"],"brick")
+    assert_eq(session.snapshot().growth.segment_parts["2"],["brick_arch_window"])
+    assert_eq(session.snapshot().revision,before.revision+1)
+
 func test_format_int_is_exact():
     assert_eq(Screen.format_int(0),"0")
     assert_eq(Screen.format_int(999),"999")

@@ -1,0 +1,13 @@
+{
+	"floors": 3000,
+	"frame_max_ms": 6.83,
+	"frame_p95_ms": 6.823,
+	"max_bands": 64,
+	"memory_static_after_bytes": 62330975,
+	"memory_static_before_bytes": 62329811,
+	"node_count_after": 25,
+	"node_count_before": 25,
+	"sampled_frames": 24,
+	"scope": "Windows host viewport redraw; no mobile or GPU-only budget",
+	"segments": 300
+}

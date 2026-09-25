@@ -457,6 +457,73 @@ func test_brick_landmark_unlock_and_four_part_sparse_commit_failure_and_dormancy
     install(fast)
     assert_has(session.view().growth.parts,"brick_landmark","100-line route unlocks landmark")
 
+func test_copy_segment_appearance_commits_one_target_and_preserves_game_progress():
+    var state: Dictionary = session.snapshot()
+    state.growth.total_floors = 300
+    state.growth.brick_lines = 100
+    state.growth.representative_segment = 3
+    state.growth.segment_styles = {"1":"brick","2":"metal","3":"crystal"}
+    state.growth.segment_parts = {"1":["brick_arch_window","brick_cornice","brick_landmark","brick_terrace"],"2":["brick_arch_window"]}
+    install(state)
+    var before: Dictionary = session.snapshot()
+    var copied: Dictionary = session.dispatch(action("COPY_SEGMENT_APPEARANCE",{"source":1,"target":2,"confirmed":true}))
+    assert_true(copied.ok,str(copied))
+    assert_eq(copied.events,[{"type":"TOWER_CHANGED","segment":2,"copied_from":1}])
+    var after: Dictionary = session.snapshot()
+    assert_eq(after.revision,before.revision+1)
+    assert_eq(after.growth.segment_styles,{"1":"brick","2":"brick","3":"crystal"})
+    assert_eq(after.growth.segment_parts["2"],before.growth.segment_parts["1"])
+    assert_eq(after.growth.segment_parts["1"],before.growth.segment_parts["1"])
+    assert_eq(after.growth.representative_segment,3)
+    assert_eq(after.growth.total_floors,before.growth.total_floors)
+    for key in ["score","best","queue","occupancy","cell_style","checkpoint"]:
+        assert_eq(after[key],before[key],"appearance copy preserves "+key)
+    assert_eq(Session.resume(repo).session.snapshot(),after)
+    assert_eq(session.dispatch(action("COPY_SEGMENT_APPEARANCE",{"source":1,"target":2,"confirmed":true})).error,"NO_CHANGE")
+    assert_eq(session.snapshot(),after)
+
+func test_copy_segment_appearance_rejects_invalid_and_failed_saves_without_change():
+    var state: Dictionary = session.snapshot()
+    state.growth.total_floors = 25
+    state.growth.brick_lines = 2
+    state.growth.representative_segment = 1
+    state.growth.segment_styles = {"1":"brick"}
+    install(state)
+    var before: Dictionary = session.snapshot()
+    for extra in [
+        {"source":0,"target":2,"confirmed":true},
+        {"source":1,"target":3,"confirmed":true},
+        {"source":3,"target":2,"confirmed":true},
+        {"source":1,"target":2,"confirmed":false},
+        {"source":1,"target":1,"confirmed":true}]:
+        var result: Dictionary = session.dispatch(action("COPY_SEGMENT_APPEARANCE",extra))
+        assert_false(result.ok)
+        assert_eq(result.events,[])
+        assert_eq(session.snapshot(),before)
+    var invalid_type := action("COPY_SEGMENT_APPEARANCE",{"source":1.0,"target":2,"confirmed":true})
+    assert_eq(session.dispatch(invalid_type).error,"INVALID_SEGMENT")
+    assert_eq(session.snapshot(),before)
+    repo.fail_next_commit = true
+    assert_eq(session.dispatch(action("COPY_SEGMENT_APPEARANCE",{"source":1,"target":2,"confirmed":true})).error,"SAVE_FAILED")
+    assert_eq(session.snapshot(),before)
+    assert_eq(repo.load_snapshot().snapshot,before)
+    assert_true(session.dispatch(action("COPY_SEGMENT_APPEARANCE",{"source":1,"target":2,"confirmed":true})).ok)
+    assert_eq(session.snapshot().growth.segment_styles,{"1":"brick","2":"brick"})
+
+func test_copy_nonbrick_appearance_discards_dormant_parts_at_target():
+    var state: Dictionary = session.snapshot()
+    state.growth.total_floors = 60
+    state.growth.brick_lines = 10
+    state.growth.representative_segment = 1
+    state.growth.segment_styles = {"2":"brick"}
+    state.growth.segment_parts = {"1":["brick_arch_window"],"2":["brick_arch_window"]}
+    install(state)
+    var copied: Dictionary = session.dispatch(action("COPY_SEGMENT_APPEARANCE",{"source":1,"target":2,"confirmed":true}))
+    assert_true(copied.ok,str(copied))
+    assert_eq(session.snapshot().growth.segment_styles,{})
+    assert_eq(session.snapshot().growth.segment_parts,{"1":["brick_arch_window"]})
+    assert_eq(Session.resume(repo).session.snapshot(),session.snapshot())
+
 func test_memory_repository_v1_resume_migrates_without_write_then_action_commits_v2():
     var legacy: Dictionary = session.snapshot()
     legacy.schema_version = "bt_session_v1"
