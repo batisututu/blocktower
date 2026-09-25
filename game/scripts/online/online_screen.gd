@@ -4,7 +4,10 @@ signal start_requested(challenge: Dictionary)
 signal submit_requested
 signal exit_requested
 const FONT = preload("res://assets/fonts/NotoSansKR.ttf")
+const BACKGROUND = preload("res://assets/visual_bible/backgrounds/architecture_b.png")
+const Art = preload("res://scripts/presentation/visual_bible_theme.gd")
 const Preview = preload("res://scripts/online/representative_preview.gd")
+var art := Art.new()
 var client: Node
 var challenge_active := false
 var _server_input: LineEdit
@@ -15,10 +18,18 @@ var _busy := false
 
 func _ready() -> void:
     set_anchors_and_offsets_preset(PRESET_FULL_RECT)
-    var background := ColorRect.new()
-    background.color = Color("211b18")
+    var background := TextureRect.new()
+    background.texture = BACKGROUND
+    background.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+    background.stretch_mode = TextureRect.STRETCH_SCALE
+    background.mouse_filter = Control.MOUSE_FILTER_IGNORE
     background.set_anchors_and_offsets_preset(PRESET_FULL_RECT)
     add_child(background)
+    var tint := ColorRect.new()
+    tint.color = Color(0.08,0.05,0.03,0.91)
+    tint.mouse_filter = Control.MOUSE_FILTER_IGNORE
+    tint.set_anchors_and_offsets_preset(PRESET_FULL_RECT)
+    add_child(tint)
     var scroll := ScrollContainer.new()
     scroll.set_anchors_and_offsets_preset(PRESET_FULL_RECT)
     add_child(scroll)
@@ -41,6 +52,16 @@ func _ready() -> void:
     _server_input.editable = not challenge_active
     _server_input.custom_minimum_size = Vector2(180,48)
     _server_input.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+    var field_style := StyleBoxFlat.new()
+    field_style.bg_color = Color("342b22")
+    field_style.border_color = Color("b69562")
+    field_style.set_border_width_all(1)
+    field_style.set_corner_radius_all(8)
+    for side in [SIDE_LEFT,SIDE_TOP,SIDE_RIGHT,SIDE_BOTTOM]: field_style.set_content_margin(side,8)
+    _server_input.add_theme_stylebox_override("normal",field_style)
+    _server_input.add_theme_color_override("font_color",Color("f3e4ca"))
+    _server_input.add_theme_font_override("font",FONT)
+    _server_input.add_theme_font_size_override("font_size",14)
     server_row.add_child(_server_input)
     _button(server_row,"서버 적용",_set_server)
     var actions := HBoxContainer.new()
@@ -72,6 +93,13 @@ func _button(parent: Node, value: String, callback: Callable) -> Button:
     button.text = value
     button.custom_minimum_size = Vector2(0,48)
     button.add_theme_font_override("font",FONT)
+    button.add_theme_font_size_override("font_size",14)
+    button.add_theme_color_override("font_color",Color("f3e4ca"))
+    button.add_theme_color_override("font_hover_color",Color("ffdc91"))
+    button.add_theme_stylebox_override("normal",art.panel("button"))
+    button.add_theme_stylebox_override("hover",art.panel("button","hover"))
+    button.add_theme_stylebox_override("pressed",art.panel("button","pressed"))
+    button.add_theme_stylebox_override("focus",art.panel("button","hover"))
     button.pressed.connect(callback)
     parent.add_child(button)
     return button

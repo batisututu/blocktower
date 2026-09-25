@@ -52,14 +52,17 @@ func _read(path: String) -> Dictionary:
         return {"ok": false, "error": "TRACE_TOO_LARGE"}
     var text := file.get_as_text()
     file.close()
-    var envelope: Variant = JSON.parse_string(text)
+    var parser := JSON.new()
+    if parser.parse(text) != OK: return {"ok": false, "error": "TRACE_CORRUPT"}
+    var envelope: Variant = parser.data
     if typeof(envelope) != TYPE_DICTIONARY or envelope.size() != 3 or not envelope.has("format") or not envelope.has("payload") or not envelope.has("checksum"):
         return {"ok": false, "error": "TRACE_CORRUPT"}
     if envelope.format != "bt_online_trace_v1" or typeof(envelope.payload) != TYPE_STRING or typeof(envelope.checksum) != TYPE_STRING:
         return {"ok": false, "error": "TRACE_CORRUPT"}
     if envelope.payload.sha256_text() != envelope.checksum or JSON.stringify(envelope,"",true) != text:
         return {"ok": false, "error": "TRACE_CORRUPT"}
-    var payload: Variant = JSON.parse_string(envelope.payload)
+    if parser.parse(envelope.payload) != OK: return {"ok": false, "error": "TRACE_CORRUPT"}
+    var payload: Variant = parser.data
     if typeof(payload) != TYPE_DICTIONARY or payload.size() != 4 or payload.get("challenge_id","") != _challenge_id or payload.get("seed","") != _seed or typeof(payload.get("actions")) != TYPE_ARRAY:
         return {"ok": false, "error": "TRACE_CORRUPT"}
     var revision: Variant = payload.get("revision", "")

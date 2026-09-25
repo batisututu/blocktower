@@ -148,8 +148,10 @@ func _submit_challenge() -> void:
         {"challenge_id":active_challenge.challenge_id,"actions":online_repository.actions()},true)
     if not is_instance_valid(online_screen): return
     if response.ok:
-        online_screen.show_status("제출 완료 · 검증된 주간 증축 %d층" % int(response.get("floor_count",online_session.snapshot().growth.total_floors)))
-        online_screen._refresh()
+        var completed_panel := online_screen
+        await completed_panel._refresh()
+        if is_instance_valid(completed_panel) and completed_panel == online_screen:
+            completed_panel.show_status("제출 완료 · 검증된 주간 증축 %d층" % int(response.get("floor_count",online_session.snapshot().growth.total_floors)))
     else:
         online_screen.show_status(online_screen.error_text(str(response.error)))
 
