@@ -4,11 +4,15 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import ipaddress
 import json
+import math
 import secrets
 import sqlite3
 import subprocess
 import tempfile
+import threading
+import time
 from contextlib import contextmanager
 from datetime import datetime, timedelta, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -17,16 +21,44 @@ from urllib.parse import urlsplit
 
 MAX_BODY = 2_097_152
 MAX_ACTIONS = 20_000
+RATE_WINDOW_SECONDS = 60
+MAX_RATE_BUCKETS = 8192
+RATE_LIMITS = {"guest": 12, "recover": 8, "submit": 12, "other": 120}
 LATE_SECONDS = 0
 REDUCED_SINGLE_FIRST_WEEK = "2026-09-28"
 UTC = timezone.utc
 
 
 class ApiError(Exception):
-    def __init__(self, status: int, code: str):
+    def __init__(self, status: int, code: str, retry_after: int = 0):
         super().__init__(code)
         self.status = status
         self.code = code
+        self.retry_after = retry_after
+
+
+class RateLimiter:
+    def __init__(self):
+        self.lock = threading.Lock()
+        self.buckets: dict[tuple[str, str], tuple[float, int]] = {}
+
+    def check(self, client_ip: str, group: str) -> None:
+        now = time.monotonic()
+        key = (client_ip, group)
+        with self.lock:
+            start, count = self.buckets.get(key, (now, 0))
+            if now - start >= RATE_WINDOW_SECONDS:
+                start, count = now, 0
+            if count >= RATE_LIMITS[group]:
+                raise ApiError(429, "RATE_LIMITED", max(1, math.ceil(RATE_WINDOW_SECONDS - (now - start))))
+            if key not in self.buckets and len(self.buckets) >= MAX_RATE_BUCKETS:
+                # 오래된 창을 먼저 버리고, 상한을 채운 경우 가장 오래된 항목을 제거한다.
+                self.buckets = {bucket: value for bucket, value in self.buckets.items()
+                                if now - value[0] < RATE_WINDOW_SECONDS}
+                if len(self.buckets) >= MAX_RATE_BUCKETS:
+                    oldest = min(self.buckets, key=lambda bucket: self.buckets[bucket][0])
+                    del self.buckets[oldest]
+            self.buckets[key] = (start, count + 1)
 
 
 def canonical(value: object) -> str:
@@ -90,6 +122,7 @@ def connection(path: Path, initialize: bool = False):
 class Api:
     def __init__(self, db_path: Path, engine: Path, project: Path):
         self.db_path, self.engine, self.project = db_path, engine, project
+        self.replay_slots = threading.BoundedSemaphore(2)
         db_path.parent.mkdir(parents=True, exist_ok=True)
         with connection(db_path, initialize=True):
             pass
@@ -161,6 +194,14 @@ class Api:
                 "accepted_actions": json.loads(accepted["actions_json"]) if accepted else []}
 
     def replay(self, challenge_id: str, seed: str, supply_profile: str, actions: list) -> dict:
+        if not self.replay_slots.acquire(blocking=False):
+            raise ApiError(503, "VERIFIER_BUSY", 1)
+        try:
+            return self._replay_with_slot(challenge_id, seed, supply_profile, actions)
+        finally:
+            self.replay_slots.release()
+
+    def _replay_with_slot(self, challenge_id: str, seed: str, supply_profile: str, actions: list) -> dict:
         with tempfile.TemporaryDirectory(prefix="blocktower_replay_") as folder:
             source, output = Path(folder) / "input.json", Path(folder) / "output.json"
             source.write_text(canonical({"session_id": challenge_id, "seed": seed,
@@ -248,16 +289,61 @@ def is_extension(previous: list, proposed: list) -> bool:
 
 class Handler(BaseHTTPRequestHandler):
     api: Api
+    limiter: RateLimiter
+    trust_proxy_client_ip: bool
 
-    def reply(self, status: int, value: object) -> None:
+    def log_message(self, _format: str, *_args: object) -> None:
+        # 기본 로그는 요청 줄 전체(쿼리 포함)를 기록하므로 사용하지 않는다.
+        return
+
+    def begin_request(self, path: str) -> None:
+        self.started_at = time.monotonic()
+        self.request_id = secrets.token_hex(8)
+        self.route = path if path in {
+            "/health/live", "/health/ready", "/v1/leaderboard/current", "/v1/me",
+            "/v1/accounts/guest", "/v1/accounts/recovery-code", "/v1/accounts/recover",
+            "/v1/challenges/current", "/v1/submissions"} else "other"
+
+    def client_ip(self) -> str:
+        if not self.trust_proxy_client_ip:
+            return str(ipaddress.ip_address(self.client_address[0]))
+        values = self.headers.get_all("X-Real-IP", [])
+        if len(values) != 1 or "," in values[0]:
+            raise ApiError(400, "INVALID_CLIENT_IP")
+        try:
+            return str(ipaddress.ip_address(values[0].strip()))
+        except ValueError as error:
+            raise ApiError(400, "INVALID_CLIENT_IP") from error
+
+    def rate_limit(self, path: str) -> None:
+        if path in ("/health/live", "/health/ready"):
+            return
+        group = "other"
+        if path == "/v1/accounts/guest":
+            group = "guest"
+        elif path == "/v1/accounts/recover":
+            group = "recover"
+        elif path == "/v1/submissions":
+            group = "submit"
+        self.limiter.check(self.client_ip(), group)
+
+    def reply(self, status: int, value: object, retry_after: int = 0) -> None:
         data = canonical(value).encode("utf-8")
         self.send_response(status)
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(data)))
         self.send_header("Cache-Control", "no-store")
         self.send_header("X-Content-Type-Options", "nosniff")
+        self.send_header("X-Request-ID", self.request_id)
+        if retry_after > 0:
+            self.send_header("Retry-After", str(retry_after))
         self.end_headers()
-        self.wfile.write(data)
+        try:
+            self.wfile.write(data)
+        finally:
+            print(canonical({"event": "http_request", "request_id": self.request_id,
+                             "method": self.command, "route": self.route, "status": status,
+                             "duration_ms": round((time.monotonic() - self.started_at) * 1000)}), flush=True)
 
     def body(self) -> object:
         length = self.headers.get("Content-Length", "")
@@ -275,9 +361,25 @@ class Handler(BaseHTTPRequestHandler):
         return self.api.account(header[7:])
 
     def do_GET(self) -> None:
+        path = urlsplit(self.path).path
+        self.begin_request(path)
         try:
-            path = urlsplit(self.path).path
-            if path == "/v1/leaderboard/current":
+            self.rate_limit(path)
+            if path == "/health/live":
+                self.reply(200, {"ok": True})
+            elif path == "/health/ready":
+                try:
+                    if not self.api.db_path.is_file():
+                        raise OSError("database missing")
+                    with connection(self.api.db_path) as db:
+                        db.execute("SELECT 1 FROM accounts LIMIT 1").fetchone()
+                    ready = self.api.engine.is_file() and (self.api.project / "project.godot").is_file()
+                except (OSError, sqlite3.Error):
+                    ready = False
+                if not ready:
+                    raise ApiError(503, "NOT_READY")
+                self.reply(200, {"ok": True})
+            elif path == "/v1/leaderboard/current":
                 self.reply(200, self.api.leaderboard())
             elif path == "/v1/me":
                 account = self.authenticated()
@@ -285,11 +387,13 @@ class Handler(BaseHTTPRequestHandler):
             else:
                 raise ApiError(404, "NOT_FOUND")
         except ApiError as error:
-            self.reply(error.status, {"ok": False, "error": error.code})
+            self.reply(error.status, {"ok": False, "error": error.code}, error.retry_after)
 
     def do_POST(self) -> None:
+        path = urlsplit(self.path).path
+        self.begin_request(path)
         try:
-            path = urlsplit(self.path).path
+            self.rate_limit(path)
             body = self.body()
             if path == "/v1/accounts/guest":
                 if body != {}:
@@ -310,7 +414,7 @@ class Handler(BaseHTTPRequestHandler):
             else:
                 raise ApiError(404, "NOT_FOUND")
         except ApiError as error:
-            self.reply(error.status, {"ok": False, "error": error.code})
+            self.reply(error.status, {"ok": False, "error": error.code}, error.retry_after)
 
 
 def main() -> None:
@@ -320,13 +424,16 @@ def main() -> None:
     parser.add_argument("--project", type=Path, default=Path(__file__).resolve().parents[2] / "game")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8765)
+    parser.add_argument("--trust-proxy-client-ip", action="store_true",
+                        help="Trust exactly one X-Real-IP value supplied by a loopback TLS reverse proxy")
     args = parser.parse_args()
     if args.host not in ("127.0.0.1", "::1"):
         parser.error("Bind to loopback; use a TLS reverse proxy for external access")
     if not args.godot.is_file() or not (args.project / "project.godot").is_file():
         parser.error("Pinned Godot executable and project.godot are required")
     api = Api(args.db.resolve(), args.godot.resolve(), args.project.resolve())
-    server = ThreadingHTTPServer((args.host, args.port), type("Phase4Handler", (Handler,), {"api": api}))
+    server = ThreadingHTTPServer((args.host, args.port), type("Phase4Handler", (Handler,),
+        {"api": api, "limiter": RateLimiter(), "trust_proxy_client_ip": args.trust_proxy_client_ip}))
     print(f"Phase 4 local API on {args.host}:{args.port}", flush=True)
     server.serve_forever()
 

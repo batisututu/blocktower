@@ -152,6 +152,8 @@ func error_text(code: String) -> String:
         "CHALLENGE_NOT_FOUND":"도전 정보를 찾을 수 없습니다.",
         "TRACE_NOT_EXTENSION":"이미 제출된 기록과 달라 자동으로 합칠 수 없습니다.",
         "VERIFIER_UNAVAILABLE":"서버 검증을 잠시 사용할 수 없습니다.",
+        "VERIFIER_BUSY":"서버 검증이 혼잡합니다. 잠시 뒤 다시 시도해 주세요.",
+        "RATE_LIMITED":"요청이 많습니다. 잠시 뒤 다시 시도해 주세요.",
         "TRACE_TOO_LARGE":"도전 기록이 너무 커서 제출할 수 없습니다.",
         "RECOVERY_CODE_INVALID":"복구 코드가 올바르지 않습니다.",
         "ACCOUNT_ALREADY_PRESENT":"현재 온라인 계정이 유효합니다. 다른 계정으로 전환할 수 없습니다."

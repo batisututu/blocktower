@@ -34,5 +34,9 @@
 | `TRACE_CORRUPT`, `SAVE_FAILED` | client repository | A local generation is damaged or could not be committed. Never clear the personal save. |
 | `RECOVERY_CODE_INVALID` | server | Unknown or malformed recovery code; do not disclose whether an account exists. |
 | `VERIFIER_UNAVAILABLE` | server | The pinned engine cannot run; do not trust a client floor count as fallback. |
+| `RATE_LIMITED` | server | Per-client request budget is exhausted. HTTP 429 includes `Retry-After` in seconds; no request action is applied. The client may retry later. |
+| `VERIFIER_BUSY` | server | Replay worker slots are occupied. HTTP 503 includes `Retry-After`; no submission is accepted. |
+
+The server limits requests per normalized client IP in 60-second windows and caps concurrent replay processes. A public TLS reverse proxy must overwrite one `X-Real-IP` header and the loopback server must explicitly opt in to trusting it; without that opt-in, only the socket peer is used. Limits are per process and reset on restart. The server exposes loopback liveness/readiness endpoints and emits one sanitized JSON access event per handled GET/POST response, without bodies, credentials, query strings, or raw client IPs.
 
 The server must run the same pinned engine, rules, generator catalog, and assets for every live challenge. It currently selects one of two pinned weight profiles per challenge. Deployments that change deterministic rules or assets still need a versioned verifier retained through the current week; the MVP server is not yet set up for rolling verifier binaries.

@@ -23,6 +23,7 @@ const PRIMARY_TEXT := Color("21180f")
 const DISABLED_TEXT := Color("b8ac98")
 const NOTE_TEXT := Color("e9d6b4")
 const ICON_GOLD := Color(0.98,0.89,0.66)
+const LANE_LINE := Color(0.914,0.839,0.706,0.12)
 # 건축 배경판을 낮춰 보드와 HUD에 시선을 모은다. 배경판 자체는 수정하지 않는다.
 const BACKGROUND_DIM := Color(0.078,0.051,0.027,0.38)
 const PILL_FILL := Color(0.094,0.067,0.039,0.66)
@@ -48,6 +49,7 @@ var feedback: Node
 var state: Dictionary = {}
 var analysis: Dictionary = {}
 var board_rect := Rect2()
+var shelf_rect := Rect2()
 var tray_rects: Array[Rect2] = []
 var screen_id := "puzzle"
 var online_mode := false
@@ -437,6 +439,7 @@ func _layout() -> void:
     var score_y := top+(48 if compact_layout else 52)
     board_rect = Rect2(12,score_y+score_height+(4 if compact_layout else 6),side,side)
     var tray_y := board_rect.end.y+hint_gap+hint_height+(2 if compact_layout else 8)
+    shelf_rect = Rect2(12,tray_y,side,tray_height)
     tray_rects.clear()
     for i in range(3): tray_rects.append(Rect2(12+i*side/3.0,tray_y,side/3.0,tray_height))
     var dock_y := tray_y+tray_height+dock_gap
@@ -883,6 +886,10 @@ func _draw_board(canvas: Control) -> void:
         if state.occupancy[i] and not (effect_alpha>0 and i in snap_cells): _cell(canvas, r, state.cell_style[i])
     for row in analysis.pending_rows: _draw_line_band(canvas,_row_rect(row),true)
     for column in analysis.pending_columns: _draw_line_band(canvas,_column_rect(column),true)
+    canvas.draw_style_box(art.panel("tray"),shelf_rect)
+    for divider: int in [1,2]:
+        var x: float = shelf_rect.position.x+shelf_rect.size.x*divider/3.0
+        canvas.draw_line(Vector2(x,shelf_rect.position.y+16),Vector2(x,shelf_rect.end.y-16),LANE_LINE,1)
     for s in range(3):
         var piece: Dictionary = controller.session.piece_for_slot(s)
         if piece.is_empty(): continue

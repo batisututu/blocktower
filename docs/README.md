@@ -18,7 +18,7 @@
 
 **Phase 4 온라인 로컬 MVP:** [구현 범위와 실행 방법](implementation/Phase4_Online_MVP_2026-09-25.md), [서버·Android 실기기 검증](implementation/Phase4_Local_E2E_Validation_2026-09-25.md). 임시 계정·서버 발급 시드·행동 재생 검증·주간 순위·다른 대표 탑 보기와 별도 도전 저장을 연결했다. HTTP 검사 12개, GUT 141개/3,733개 단언, QA 실기기 도전·재시작 복원·제출·대표 10층 보기가 통과했다. 공개 서비스 운영 정책과 배포 검증은 남아 있다.
 
-**퍼즐 조정:** [1칸 조각 빈도와 대기 조각 배경](implementation/Piece_Tray_Refinement_2026-09-25.md). 새 개인 저장의 1칸 조각 가중치를 낮추고 대기 조각의 어두운 판을 숨겼다. 기존 저장·이번 주 도전은 종전 설정을 유지하며 다음 UTC 주차의 새 도전은 낮춘 설정을 받는다.
+**퍼즐 조정:** [1칸 조각 빈도와 이전 배경 결정](implementation/Piece_Tray_Refinement_2026-09-25.md). 새 개인 저장의 1칸 조각 가중치를 낮췄다. 기존 저장·이번 주 도전은 종전 설정을 유지하며 다음 UTC 주차의 새 도전은 낮춘 설정을 받는다. 최신 [조각 트레이 복구와 Phase 4 요청 제한](implementation/Phase4_Request_Controls_2026-09-26.md)에서 사용자 가독성 피드백에 따라 어두운 판을 다시 그린다.
 
 **Version 10~14 후속 확인:** [공급·서버 운영 준비 기록](implementation/Version10_Supply_And_Operations_2026-09-25.md)과 [계정 복구·충돌 실기기 기록](implementation/Phase4_Recovery_Conflict_2026-09-25.md). 10종 합성 보드에서 1칸 조각 16.70%→8.73%, QA 실기기에서 대기 조각 배경 제거·주간 제출·복구 코드·무효화된 토큰 재인증·서버 기록 복원·갈라진 기록의 보관과 선택을 확인했다. 최신 고정 GUT 147개/3,777개 단언과 HTTP 17항목이 통과했다. 공개 서버 운영과 다기기 장시간 검증은 남아 있다.
 
