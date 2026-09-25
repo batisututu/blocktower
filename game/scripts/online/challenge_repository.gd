@@ -2,26 +2,33 @@ extends RefCounted
 ## 온라인 도전의 행동 기록을 두 세대 파일로 커밋한다. 개인 저장과 분리한다.
 const Session = preload("res://scripts/core/game_session.gd")
 const MemoryRepository = preload("res://scripts/core/memory_save_repository.gd")
+const LowSingleConfig = preload("res://data/piece_generator_low_single.tres")
+const ClassicConfig = preload("res://data/piece_generator_default.tres")
 const FIELDS := ["event_id", "batch_id", "slot", "x", "y", "segment", "source", "target"]
 const MAX_TRACE_BYTES := 1800000
 var _root := ""
 var _challenge_id := ""
 var _seed := ""
+var _supply_profile := "classic"
 var _actions: Array = []
 var _staged: Dictionary = {}
 
 static func open(challenge: Dictionary) -> Dictionary:
     var id: Variant = challenge.get("challenge_id", "")
     var seed: Variant = challenge.get("seed", "")
+    var profile: Variant = challenge.get("supply_profile", "classic")
     if typeof(id) != TYPE_STRING or id.length() != 32:
         return {"ok": false, "error": "INVALID_CHALLENGE"}
     for character in id:
         if character not in "0123456789abcdef": return {"ok": false, "error": "INVALID_CHALLENGE"}
     if typeof(seed) != TYPE_STRING or seed.is_empty() or not seed.is_valid_int():
         return {"ok": false, "error": "INVALID_CHALLENGE"}
+    if typeof(profile) != TYPE_STRING or profile not in ["classic", "reduced_single"]:
+        return {"ok": false, "error": "INVALID_CHALLENGE"}
     var repo := new()
     repo._challenge_id = id
     repo._seed = seed
+    repo._supply_profile = profile
     repo._root = ProjectSettings.globalize_path("user://phase4_challenges/"+id)
     if DirAccess.make_dir_recursive_absolute(repo._root) != OK:
         return {"ok": false, "error": "SAVE_DIRECTORY_FAILED"}
@@ -29,6 +36,9 @@ static func open(challenge: Dictionary) -> Dictionary:
 
 func actions() -> Array:
     return _actions.duplicate(true)
+
+func supply_config() -> Resource:
+    return LowSingleConfig if _supply_profile == "reduced_single" else ClassicConfig
 
 func stage_action(action: Dictionary) -> Dictionary:
     if action.get("type", "") == "NEW_RUN":
@@ -83,7 +93,7 @@ func load_snapshot() -> Dictionary:
         return {"ok": false, "error": "TRACE_CORRUPT"} if damaged else {"ok": true, "found": false}
     candidates.sort_custom(func(a,b): return a.revision > b.revision)
     for candidate in candidates:
-        var started := Session.start(MemoryRepository.new(), _challenge_id, _seed)
+        var started := Session.start(MemoryRepository.new(), _challenge_id, _seed, supply_config())
         if not started.ok: return started
         var replay: RefCounted = started.session
         var valid := true

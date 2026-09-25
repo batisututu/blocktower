@@ -4,6 +4,8 @@
 
 `FileSaveRepository.open(directory="user://save_v1", config=null)` returns `{ok,repository | error}`. Absolute test paths are allowed; resource/relative/filesystem-root paths are rejected. Repository methods implement the GameSession port. `load_snapshot()` additionally returns `recovered`, `recovery` and `ignored_pending`; `GameSession.resume()` forwards recovery metadata. The same frozen generator configuration validates both generations before selection. Public `GameSession.validate_snapshot(state,config)` is the single semantic validator.
 
+The personal `SavedGame.boot` path tries the reduced-single profile first for new saves. On a checkpoint version mismatch it retries the classic profile and resumes an existing classic save only if that profile validates it. It does not rewrite a live save or switch its generator in place. Unknown hashes still fail closed.
+
 All operations are synchronous on the main thread. Windows acquires an atomic directory claim `.writer_<PID>.lock`; System32/tasklist.exe CSV output checks unrelated processes. Concurrent claims may both back off, but cannot both access the save. Godot is_process_running only knows its own children and is not a liveness oracle here.
 
 Android (W5) acquires an exclusive, nonblocking Java FileChannel.tryLock on the stable `.writer.guard` inode through JavaClassWrapper. The OS releases it when the process dies; the guard file is never deleted. A canonical-path reservation prevents another repository in the same process from opening/closing a second channel and invalidating the first POSIX lock. Contention returns SAVE_BUSY; bridge/lock/close errors fail closed. No age/timeout forcibly steals a lock.

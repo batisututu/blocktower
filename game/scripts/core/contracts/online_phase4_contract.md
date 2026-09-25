@@ -5,6 +5,7 @@
 - `GameSession` remains the only reducer of puzzle, growth, and tower state. Existing `user://save_v1` data belongs to the personal offline game.
 - `ChallengeRepository` owns a separate, two-generation action trace under `user://phase4_challenges/<challenge_id>`. A successful challenge commit writes the next action and its revision together. Replay reconstructs the challenge snapshot. The server never accepts the local snapshot as a score.
 - The server owns UTC week assignment, a random seed and one challenge per guest account per week. Its private SQLite file owns account token hashes, challenges, and verified submissions. The client stores the guest bearer token in its private application data.
+- A challenge also owns `supply_profile`. The server stores it with the issued seed and passes it to the pinned replay process. Existing database rows migrate to `classic`; challenges in weeks beginning 2026-09-28 UTC use `reduced_single`. The client replays its local action journal with the same profile. A profile cannot be changed for an issued challenge.
 - The server replays every submitted action through the pinned Godot `GameSession`; it publishes only the resulting floor count and representative segment. Other clients receive read-only derived tower data.
 
 ## Action and response rules
@@ -32,4 +33,4 @@
 | `TRACE_CORRUPT`, `SAVE_FAILED` | client repository | A local generation is damaged or could not be committed. Never clear the personal save. |
 | `VERIFIER_UNAVAILABLE` | server | The pinned engine cannot run; do not trust a client floor count as fallback. |
 
-The server must run the same pinned engine, rules, generator catalog, and assets for every live challenge. Deployments that change deterministic rules need a versioned verifier retained through the current week; the MVP server is not yet set up for rolling verifier versions.
+The server must run the same pinned engine, rules, generator catalog, and assets for every live challenge. It currently selects one of two pinned weight profiles per challenge. Deployments that change deterministic rules or assets still need a versioned verifier retained through the current week; the MVP server is not yet set up for rolling verifier binaries.

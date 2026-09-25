@@ -60,6 +60,8 @@
 
 `family_probability = weight / 45`, 보정 전 `variant_probability = family_probability / variant_count`. 예를 들어 T 계열 전체는 3/45이며 T 방향마다 3/180이다. 중복 ID를 허용하며 런타임 회전 입력은 없다. 면적, 점수, 층수, 스킨, 광고, 시간에 따른 동적 난이도는 넣지 않았다. 이 가중치는 초기 실험값이며 최종 밸런스가 아니다.
 
+**2026-09-25 공급 조정:** 위 표와 기존 기본 Resource는 이전 저장·이번 주 도전 재생용으로 보존한다. 새 개인 저장은 [낮은 1칸 조각 설정](../game/data/piece_generator_low_single.tres)을 사용한다. `single` 가중치만 5→1로 바꾸어 전체 41, 보정 전 슬롯별 확률은 5/45(11.1%)→1/41(2.4%)다. Easy 교체와 한 수 보장 fallback 때문에 최종 트레이 확률은 이 값보다 높을 수 있다. 이미 시작한 개인 판은 체크포인트 해시가 가리키는 기존 설정으로 계속 진행하며 진행 중 설정을 바꾸지 않는다. Phase 4 도전은 서버가 발급한 설정을 고정한다. 2026-09-28 UTC 시작 주차부터 새 설정을 발급하고 앞서 발급된 도전은 기존 설정을 유지한다. 이 조정값의 대량 분포·사람 체감은 아직 측정하지 않았다.
+
 설정은 [기본 Resource](../game/data/piece_generator_default.tres)와 [설정 클래스](../game/scripts/core/generation/piece_generator_config.gd)로 분리했다. 계열 순서에 맞춘 13개 정수, 각 가중치 ≥0, 합계 1~1,000,000, 알려진 Easy 계열의 중복 없는 목록, 재추첨 0~3을 검증한다. Easy/SOFT는 Easy 중 양의 가중치가 하나 이상 필요하다. 0은 추첨과 fallback 모두 비활성화한다. 실행 중 Resource 수정은 기존 생성기에 반영되지 않는다. 새 설정은 새 생성기와 새로운 checkpoint를 필요로 한다.
 
 ## 4. 세 정책과 순서

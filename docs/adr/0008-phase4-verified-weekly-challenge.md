@@ -6,4 +6,6 @@ The local permanent tower is not an authenticated history. Phase 4 uses a separa
 
 An identical retry is idempotent. Updated traces must extend the previous accepted prefix; divergent device histories require a manual choice in a later product iteration. Guest tokens have no recovery or cloud-save promise. The server binds to loopback for local development; remote exposure requires TLS, rate controls, monitoring, backup, and retained verifier binaries before launch. Automated play detection and cross-device personal save synchronization are outside this prototype.
 
+Balance settings are pinned with each challenge. Existing database rows use the classic supply profile; challenges first issued for UTC weeks beginning 2026-09-28 use the reduced-single profile. This lets an in-progress trace replay with its issued weights even after the default personal-game balance changes.
+
 This decision implements the scoped D09/D10 rules recorded in [the online contract](../../game/scripts/core/contracts/online_phase4_contract.md). It does not close the release policy or the full Phase 4 acceptance gate.

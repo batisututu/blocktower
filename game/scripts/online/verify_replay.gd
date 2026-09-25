@@ -2,6 +2,8 @@ extends SceneTree
 ## 서버가 발급한 시드와 전체 행동을 고정 규칙으로 다시 실행한다.
 const Session = preload("res://scripts/core/game_session.gd")
 const Repository = preload("res://scripts/core/memory_save_repository.gd")
+const LowSingleConfig = preload("res://data/piece_generator_low_single.tres")
+const ClassicConfig = preload("res://data/piece_generator_default.tres")
 const NUMERIC_FIELDS := ["event_id", "batch_id", "slot", "x", "y", "segment", "source", "target"]
 const ALLOWED_ACTIONS := ["PLACE", "CLEAR", "SET_AUTO", "SET_SEGMENT_STYLE", "SET_SEGMENT_PART", "SET_REPRESENTATIVE", "COPY_SEGMENT_APPEARANCE"]
 
@@ -22,15 +24,21 @@ func _initialize() -> void:
     quit(0 if result.ok else 1)
 
 func _replay(input: Variant) -> Dictionary:
-    if typeof(input) != TYPE_DICTIONARY or input.size() != 3:
+    if typeof(input) != TYPE_DICTIONARY or input.size() not in [3,4]:
         return {"ok": false, "error": "INVALID_TRACE"}
     if not input.has("session_id") or not input.has("seed") or not input.has("actions"):
         return {"ok": false, "error": "INVALID_TRACE"}
     if typeof(input.session_id) != TYPE_STRING or typeof(input.seed) != TYPE_STRING or typeof(input.actions) != TYPE_ARRAY:
         return {"ok": false, "error": "INVALID_TRACE"}
+    if input.has("supply_profile") and typeof(input.supply_profile) != TYPE_STRING:
+        return {"ok": false, "error": "INVALID_TRACE"}
+    var profile: String = input.get("supply_profile","classic")
+    if profile not in ["classic","reduced_single"]:
+        return {"ok": false, "error": "UNKNOWN_SUPPLY_PROFILE"}
     if input.actions.size() > 20000:
         return {"ok": false, "error": "TRACE_TOO_LONG"}
-    var started := Session.start(Repository.new(), input.session_id, input.seed)
+    var config: Resource = LowSingleConfig if profile == "reduced_single" else ClassicConfig
+    var started := Session.start(Repository.new(), input.session_id, input.seed, config)
     if not started.ok:
         return {"ok": false, "error": started.error}
     var session: RefCounted = started.session

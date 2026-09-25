@@ -28,7 +28,8 @@ def main() -> None:
             raise RuntimeError("challenge issue failed")
         with tempfile.TemporaryDirectory(prefix="blocktower_tower_") as directory:
             source, target = Path(directory) / "input.json", Path(directory) / "trace.json"
-            source.write_text(json.dumps({"session_id": challenge["session_id"], "seed": challenge["seed"]}), encoding="utf-8")
+            source.write_text(json.dumps({"session_id": challenge["session_id"], "seed": challenge["seed"],
+                                          "supply_profile": challenge["supply_profile"]}), encoding="utf-8")
             run = subprocess.run(
                 [str(args.godot), "--headless", "--path", str(project),
                  "--script", "res://tests/integration/phase4_generate_trace.gd", "--", str(source), str(target)],

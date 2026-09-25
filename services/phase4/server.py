@@ -18,6 +18,7 @@ from urllib.parse import urlsplit
 MAX_BODY = 2_097_152
 MAX_ACTIONS = 20_000
 LATE_SECONDS = 0
+REDUCED_SINGLE_FIRST_WEEK = "2026-09-28"
 UTC = timezone.utc
 
 
@@ -52,7 +53,8 @@ def database(path: Path, initialize: bool = False) -> sqlite3.Connection:
         CREATE TABLE IF NOT EXISTS challenges (
             id TEXT PRIMARY KEY, account_id TEXT NOT NULL REFERENCES accounts(id),
             week TEXT NOT NULL, seed TEXT NOT NULL, issued_at INTEGER NOT NULL,
-            week_end INTEGER NOT NULL, UNIQUE(account_id, week)
+            week_end INTEGER NOT NULL, supply_profile TEXT NOT NULL DEFAULT 'classic',
+            UNIQUE(account_id, week)
         );
         CREATE TABLE IF NOT EXISTS submissions (
             challenge_id TEXT PRIMARY KEY REFERENCES challenges(id),
@@ -64,6 +66,8 @@ def database(path: Path, initialize: bool = False) -> sqlite3.Connection:
         CREATE INDEX IF NOT EXISTS submissions_week_rank
             ON submissions(week, floor_count DESC, verified_at ASC);
         """)
+        if "supply_profile" not in {row[1] for row in db.execute("PRAGMA table_info(challenges)")}:
+            db.execute("ALTER TABLE challenges ADD COLUMN supply_profile TEXT NOT NULL DEFAULT 'classic'")
     return db
 
 
@@ -115,17 +119,22 @@ class Api:
             if row is None:
                 challenge_id = secrets.token_hex(16)
                 seed = str(secrets.randbelow(9_000_000_000_000_000) + 1)
-                db.execute("INSERT INTO challenges VALUES (?, ?, ?, ?, ?, ?)",
-                           (challenge_id, account["id"], week, seed, int(now.timestamp()), week_end))
+                profile = "reduced_single" if week >= REDUCED_SINGLE_FIRST_WEEK else "classic"
+                db.execute("""INSERT INTO challenges
+                    (id, account_id, week, seed, issued_at, week_end, supply_profile)
+                    VALUES (?, ?, ?, ?, ?, ?, ?)""",
+                    (challenge_id, account["id"], week, seed, int(now.timestamp()), week_end, profile))
                 row = db.execute("SELECT * FROM challenges WHERE id=?", (challenge_id,)).fetchone()
         return {"challenge_id": row["id"], "session_id": row["id"], "seed": row["seed"],
                 "week": row["week"], "issued_at": row["issued_at"], "week_end": row["week_end"],
-                "submit_until": row["week_end"] + LATE_SECONDS, "rule_version": "bt_rules_v1"}
+                "submit_until": row["week_end"] + LATE_SECONDS, "rule_version": "bt_rules_v1",
+                "supply_profile": row["supply_profile"]}
 
-    def replay(self, challenge_id: str, seed: str, actions: list) -> dict:
+    def replay(self, challenge_id: str, seed: str, supply_profile: str, actions: list) -> dict:
         with tempfile.TemporaryDirectory(prefix="blocktower_replay_") as folder:
             source, output = Path(folder) / "input.json", Path(folder) / "output.json"
-            source.write_text(canonical({"session_id": challenge_id, "seed": seed, "actions": actions}), encoding="utf-8")
+            source.write_text(canonical({"session_id": challenge_id, "seed": seed,
+                                         "supply_profile": supply_profile, "actions": actions}), encoding="utf-8")
             try:
                 run = subprocess.run(
                     [str(self.engine), "--headless", "--path", str(self.project),
@@ -168,7 +177,7 @@ class Api:
             return {"ok": True, "duplicate": True, "week": challenge["week"]}
         if previous and not is_extension(json.loads(previous["actions_json"]), actions):
             raise ApiError(409, "TRACE_NOT_EXTENSION")
-        replay = self.replay(challenge_id, challenge["seed"], actions)
+        replay = self.replay(challenge_id, challenge["seed"], challenge["supply_profile"], actions)
         if replay["revision"] != len(actions):
             raise ApiError(422, "REVISION_MISMATCH")
         with connection(self.db_path) as db:

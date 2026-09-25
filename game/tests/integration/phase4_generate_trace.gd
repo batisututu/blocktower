@@ -2,6 +2,8 @@ extends SceneTree
 ## 서버 도전 시드에서 실제 규칙 행동만 만들어 대표 구간 화면을 검증한다.
 const Session = preload("res://scripts/core/game_session.gd")
 const Repository = preload("res://scripts/core/memory_save_repository.gd")
+const LowSingleConfig = preload("res://data/piece_generator_low_single.tres")
+const ClassicConfig = preload("res://data/piece_generator_default.tres")
 
 func _initialize() -> void:
     var args := OS.get_cmdline_user_args()
@@ -12,9 +14,13 @@ func _initialize() -> void:
     if typeof(source) != TYPE_DICTIONARY:
         quit(2)
         return
+    var profile: String = str(source.get("supply_profile","classic"))
+    if profile not in ["classic","reduced_single"]:
+        quit(2)
+        return
     var best := {"floors":-1,"actions":[]}
     for attempt in range(24):
-        var result := _generate(source.session_id,source.seed,attempt)
+        var result := _generate(source.session_id,source.seed,profile,attempt)
         if result.floors > best.floors: best = result
         if best.floors >= 10: break
     var file := FileAccess.open(args[1],FileAccess.WRITE)
@@ -25,8 +31,9 @@ func _initialize() -> void:
     file.close()
     quit(0)
 
-func _generate(session_id: String, seed: String, attempt: int) -> Dictionary:
-    var started := Session.start(Repository.new(),session_id,seed)
+func _generate(session_id: String, seed: String, profile: String, attempt: int) -> Dictionary:
+    var config: Resource = LowSingleConfig if profile == "reduced_single" else ClassicConfig
+    var started := Session.start(Repository.new(),session_id,seed,config)
     if not started.ok: return {"floors":-1,"actions":[]}
     var session: RefCounted = started.session
     var actions: Array = []

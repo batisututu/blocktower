@@ -127,7 +127,7 @@ func _start_challenge(challenge: Dictionary) -> void:
     if not loaded.ok:
         if is_instance_valid(online_screen): online_screen.show_status("도전 기록을 읽지 못했습니다: "+str(loaded.error))
         return
-    var result: Dictionary = Session.resume(repository) if loaded.found else Session.start(repository,challenge.session_id,challenge.seed)
+    var result: Dictionary = Session.resume(repository,repository.supply_config()) if loaded.found else Session.start(repository,challenge.session_id,challenge.seed,repository.supply_config())
     if not result.ok:
         if is_instance_valid(online_screen): online_screen.show_status("도전을 시작하지 못했습니다: "+str(result.error))
         return
