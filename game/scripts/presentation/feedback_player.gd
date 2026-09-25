@@ -1,6 +1,6 @@
 extends Node
 ## 제한된 효과음 풀. 게임 공급 RNG는 사용하지 않는다.
-const SOUND_NAMES := ["pick", "snap", "reject", "clear", "lock", "over", "button", "air", "chime"]
+const SOUND_NAMES := ["pick", "snap", "reject", "clear", "lock", "over", "button", "air", "chime", "impact"]
 const PLAYER_LIMIT := 6
 const HAPTIC_GAP_MS := 45
 var preferences: RefCounted
@@ -15,6 +15,7 @@ func _ready() -> void:
     for name in SOUND_NAMES:
         var path := "res://assets/audio/%s.wav" % name
         if name in ["snap","clear","button","air","chime"]: path = "res://assets/audio/gamefeel/%s.wav" % name
+        if name == "impact": path = "res://assets/audio/kenney/impactWood_heavy_000.ogg"
         if ResourceLoader.exists(path): sounds[name] = load(path)
     for i in range(PLAYER_LIMIT):
         var player := AudioStreamPlayer.new()
@@ -28,7 +29,7 @@ func cue(name: String, strength: int = 1) -> void:
     played.append(name)
     if played.size() > 32: played.pop_front()
     if name == "clear":
-        _play("snap",strength,-8.0)
+        _play("impact",strength)
         _play("clear",strength)
         _play("air",strength)
         if strength >= 2: _play("chime",strength)
@@ -54,7 +55,7 @@ func _haptic(name: String, strength: int) -> void:
     last_haptic = now
 
 static func sound_priority(name: String) -> int:
-    if name in ["clear", "lock", "over"]: return 3
+    if name in ["clear", "impact", "lock", "over"]: return 3
     if name in ["snap", "chime"]: return 2
     if name in ["pick", "air"]: return 1
     return 0
@@ -77,7 +78,7 @@ func _play(name: String, strength: int, trim_db: float = 0.0) -> void:
             target.stream = sounds[name]
             target.set_meta("priority",sound_priority(name))
             target.pitch_scale = 1.0 + 0.045 * mini(strength - 1, 3) if name in ["clear", "chime"] else 1.0 + 0.02 * (cue_sequence % 3 - 1)
-            var layer_db: float = float({"pick": -5.0, "snap": -3.0, "button": -7.0, "air": -10.0, "chime": -6.0}.get(name,0.0))
+            var layer_db: float = float({"pick": -5.0, "snap": -3.0, "impact": -6.0, "button": -7.0, "air": -10.0, "chime": -6.0}.get(name,0.0))
             target.volume_db = linear_to_db(preferences.values.volume / 100.0) + layer_db + trim_db
             target.play()
 

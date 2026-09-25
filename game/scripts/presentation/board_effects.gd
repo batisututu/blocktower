@@ -1,6 +1,7 @@
 extends RefCounted
 ## 확정 결과의 복사본만 그린다. 파편 수와 이동은 결정적이며 공급 RNG를 사용하지 않는다.
 const LIGHT := Color("ffe4a5")
+const CLEAR_STAR := preload("res://assets/effects/kenney/star_02.png")
 
 static func cell_rect(board: Rect2, i: int) -> Rect2:
     var step := board.size.x/8
@@ -16,7 +17,8 @@ static func draw(canvas: CanvasItem, board: Rect2, art: RefCounted, cells: Array
             canvas.draw_rect(r.grow(1+progress*3),Color(LIGHT,(1-progress)*.65),false,1.5)
         return
     var t := progress*.42
-    var impact := minf(1.0,float(rows.size()+columns.size())/4.0)
+    var line_count := rows.size()+columns.size()
+    var impact := minf(1.0,float(line_count)/4.0)
     for k in range(cells.size()):
         var i: int = cells[k]
         var r := cell_rect(board,i).grow(-.7)
@@ -26,21 +28,34 @@ static func draw(canvas: CanvasItem, board: Rect2, art: RefCounted, cells: Array
         if size.x > .1:
             var tile := Rect2(r.get_center()-size/2,size)
             canvas.draw_texture_rect(art.cell(styles[k]),tile,false,Color(1,1,1,1-shrink))
-            canvas.draw_rect(tile,Color(LIGHT,(.12+.28*sin(clampf(t/.14,0,1)*PI))*(1-shrink)))
+            canvas.draw_rect(tile,Color(LIGHT,(.16+.40*sin(clampf(t/.14,0,1)*PI))*(1-shrink)))
+            if t < .18:
+                canvas.draw_rect(r.grow(-1.0),Color(LIGHT,.75*sin(clampf(t/.18,0,1)*PI)),false,2.0+impact)
     if t>=.045 and t<.23:
         var sweep := clampf((t-.045)/.185,0,1)
         for row in rows:
             var origin := board.position+Vector2(0,row*step)
             canvas.draw_rect(Rect2(origin,Vector2(board.size.x,step)),Color(LIGHT,.09*sin(sweep*PI)))
             var x := board.position.x+sweep*board.size.x
-            canvas.draw_rect(Rect2(Vector2(maxf(board.position.x,x-step),origin.y),Vector2(minf(step,x-board.position.x),step)),Color(LIGHT,(.22+.16*impact)*sin(sweep*PI)))
-            canvas.draw_line(Vector2(x,origin.y+2),Vector2(x,origin.y+step-2),Color(LIGHT,sin(sweep*PI)),2.0+2.0*impact)
+            canvas.draw_rect(Rect2(Vector2(maxf(board.position.x,x-step),origin.y),Vector2(minf(step,x-board.position.x),step)),Color(LIGHT,(.34+.24*impact)*sin(sweep*PI)))
+            canvas.draw_line(Vector2(x,origin.y+2),Vector2(x,origin.y+step-2),Color(LIGHT,sin(sweep*PI)),3.0+2.0*impact)
         for col in columns:
             var origin := board.position+Vector2(col*step,0)
             canvas.draw_rect(Rect2(origin,Vector2(step,board.size.y)),Color(LIGHT,.09*sin(sweep*PI)))
             var y := board.position.y+sweep*board.size.y
-            canvas.draw_rect(Rect2(Vector2(origin.x,maxf(board.position.y,y-step)),Vector2(step,minf(step,y-board.position.y))),Color(LIGHT,(.22+.16*impact)*sin(sweep*PI)))
-            canvas.draw_line(Vector2(origin.x+2,y),Vector2(origin.x+step-2,y),Color(LIGHT,sin(sweep*PI)),2.0+2.0*impact)
+            canvas.draw_rect(Rect2(Vector2(origin.x,maxf(board.position.y,y-step)),Vector2(step,minf(step,y-board.position.y))),Color(LIGHT,(.34+.24*impact)*sin(sweep*PI)))
+            canvas.draw_line(Vector2(origin.x+2,y),Vector2(origin.x+step-2,y),Color(LIGHT,sin(sweep*PI)),3.0+2.0*impact)
+    if t >= .08 and t < .34:
+        # Kenney 별빛을 지워진 셀 안에서만 재생해 보드와 다음 조각을 가리지 않는다.
+        var star_age := (t-.08)/.26
+        var star_count := mini(cells.size(),mini(12,3+3*line_count))
+        var star_alpha := sin(star_age*PI)*(.60+.20*impact)
+        for k in range(star_count):
+            var index: int = cells[(k*cells.size())/star_count]
+            var center := cell_rect(board,index).get_center()
+            var extent := step*(.28+.08*float(k%3))*(1.0+.35*star_age)
+            var bounds := Rect2(center-Vector2.ONE*extent*.5,Vector2.ONE*extent)
+            canvas.draw_texture_rect(CLEAR_STAR,bounds,false,Color(1.0,.84,.52,star_alpha))
     if t>.13:
         var age := (t-.13)/.29
         var count := mini(36,8+6*(rows.size()+columns.size()))
