@@ -8,4 +8,6 @@ An identical retry is idempotent. Updated traces must extend the previous accept
 
 Balance settings are pinned with each challenge. Existing database rows use the classic supply profile; challenges first issued for UTC weeks beginning 2026-09-28 use the reduced-single profile. This lets an in-progress trace replay with its issued weights even after the default personal-game balance changes.
 
+2026-09-26 follow-up: the server now persists `rule_version` with each challenge and routes submission replay to the matching frozen Godot project. Existing rows migrate to `bt_rules_v1`. The v1 source bundle and SHA-256 manifest remain available while v1 challenges can submit. A future rules release must keep its old verifier project and pinned engine, register them on the new server, and deploy a compatible client before issuing new-version challenges.
+
 This decision implements the scoped D09/D10 rules recorded in [the online contract](../../game/scripts/core/contracts/online_phase4_contract.md). It does not close the release policy or the full Phase 4 acceptance gate.

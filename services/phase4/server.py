@@ -26,6 +26,8 @@ MAX_RATE_BUCKETS = 8192
 RATE_LIMITS = {"guest": 12, "recover": 8, "submit": 12, "other": 120}
 LATE_SECONDS = 0
 REDUCED_SINGLE_FIRST_WEEK = "2026-09-28"
+CURRENT_RULE_VERSION = "bt_rules_v1"
+DEFAULT_VERIFIER_PROJECT = Path(__file__).resolve().parent / "verifiers" / CURRENT_RULE_VERSION
 UTC = timezone.utc
 
 
@@ -70,6 +72,30 @@ def week_bounds(now: datetime) -> tuple[str, int]:
     return monday.date().isoformat(), int((monday + timedelta(days=7)).timestamp())
 
 
+def verify_bundle(project: Path, rule_version: str) -> bool:
+    manifest_path = project / "manifest.json"
+    if not manifest_path.is_file():
+        return False
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        files = manifest["files"]
+        if (manifest["rule_version"] != rule_version or manifest["godot_version"] != "4.7.2"
+                or not isinstance(files, dict) or not files):
+            return False
+        root = project.resolve()
+        for relative, digest in files.items():
+            if not isinstance(relative, str) or not isinstance(digest, str) or len(digest) != 64:
+                return False
+            path = (root / relative).resolve()
+            if not path.is_relative_to(root) or not path.is_file():
+                return False
+            if hashlib.sha256(path.read_bytes()).hexdigest() != digest:
+                return False
+        return "project.godot" in files and "scripts/online/verify_replay.gd" in files
+    except (OSError, ValueError, KeyError, TypeError):
+        return False
+
+
 def database(path: Path, initialize: bool = False) -> sqlite3.Connection:
     db = sqlite3.connect(path, timeout=10)
     db.row_factory = sqlite3.Row
@@ -87,6 +113,7 @@ def database(path: Path, initialize: bool = False) -> sqlite3.Connection:
             id TEXT PRIMARY KEY, account_id TEXT NOT NULL REFERENCES accounts(id),
             week TEXT NOT NULL, seed TEXT NOT NULL, issued_at INTEGER NOT NULL,
             week_end INTEGER NOT NULL, supply_profile TEXT NOT NULL DEFAULT 'classic',
+            rule_version TEXT NOT NULL DEFAULT 'bt_rules_v1',
             UNIQUE(account_id, week)
         );
         CREATE TABLE IF NOT EXISTS submissions (
@@ -101,6 +128,8 @@ def database(path: Path, initialize: bool = False) -> sqlite3.Connection:
         """)
         if "supply_profile" not in {row[1] for row in db.execute("PRAGMA table_info(challenges)")}:
             db.execute("ALTER TABLE challenges ADD COLUMN supply_profile TEXT NOT NULL DEFAULT 'classic'")
+        if "rule_version" not in {row[1] for row in db.execute("PRAGMA table_info(challenges)")}:
+            db.execute("ALTER TABLE challenges ADD COLUMN rule_version TEXT NOT NULL DEFAULT 'bt_rules_v1'")
         if "recovery_hash" not in {row[1] for row in db.execute("PRAGMA table_info(accounts)")}:
             db.execute("ALTER TABLE accounts ADD COLUMN recovery_hash TEXT")
     return db
@@ -120,12 +149,26 @@ def connection(path: Path, initialize: bool = False):
 
 
 class Api:
-    def __init__(self, db_path: Path, engine: Path, project: Path):
+    def __init__(self, db_path: Path, engine: Path, project: Path,
+                 verifiers: dict[str, tuple[Path, Path]] | None = None):
         self.db_path, self.engine, self.project = db_path, engine, project
+        self.verifiers = verifiers or {CURRENT_RULE_VERSION: (engine, project)}
+        self.frozen_versions = {version for version, (_, folder) in self.verifiers.items()
+                                if (folder / "manifest.json").is_file()}
+        if CURRENT_RULE_VERSION not in self.verifiers:
+            raise RuntimeError("current rule verifier is not configured")
+        for version, (binary, folder) in self.verifiers.items():
+            if not binary.is_file() or not (folder / "project.godot").is_file():
+                raise RuntimeError(f"verifier unavailable for {version}")
+            if version in self.frozen_versions and not verify_bundle(folder, version):
+                raise RuntimeError(f"verifier bundle changed for {version}")
         self.replay_slots = threading.BoundedSemaphore(2)
         db_path.parent.mkdir(parents=True, exist_ok=True)
-        with connection(db_path, initialize=True):
-            pass
+        with connection(db_path, initialize=True) as db:
+            versions = {row[0] for row in db.execute("SELECT DISTINCT rule_version FROM challenges")}
+            missing = versions - set(self.verifiers)
+            if missing:
+                raise RuntimeError("missing retained verifier for: " + ", ".join(sorted(missing)))
 
     def account(self, token: str) -> sqlite3.Row:
         if len(token) != 64 or any(char not in "0123456789abcdef" for char in token):
@@ -182,33 +225,42 @@ class Api:
                 seed = str(secrets.randbelow(9_000_000_000_000_000) + 1)
                 profile = "reduced_single" if week >= REDUCED_SINGLE_FIRST_WEEK else "classic"
                 db.execute("""INSERT INTO challenges
-                    (id, account_id, week, seed, issued_at, week_end, supply_profile)
-                    VALUES (?, ?, ?, ?, ?, ?, ?)""",
-                    (challenge_id, account["id"], week, seed, int(now.timestamp()), week_end, profile))
+                    (id, account_id, week, seed, issued_at, week_end, supply_profile, rule_version)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
+                    (challenge_id, account["id"], week, seed, int(now.timestamp()), week_end, profile,
+                     CURRENT_RULE_VERSION))
                 row = db.execute("SELECT * FROM challenges WHERE id=?", (challenge_id,)).fetchone()
             accepted = db.execute("SELECT actions_json FROM submissions WHERE challenge_id=?", (row["id"],)).fetchone()
         return {"challenge_id": row["id"], "session_id": row["id"], "seed": row["seed"],
                 "week": row["week"], "issued_at": row["issued_at"], "week_end": row["week_end"],
-                "submit_until": row["week_end"] + LATE_SECONDS, "rule_version": "bt_rules_v1",
+                "submit_until": row["week_end"] + LATE_SECONDS, "rule_version": row["rule_version"],
                 "supply_profile": row["supply_profile"],
                 "accepted_actions": json.loads(accepted["actions_json"]) if accepted else []}
 
-    def replay(self, challenge_id: str, seed: str, supply_profile: str, actions: list) -> dict:
+    def replay(self, challenge_id: str, seed: str, supply_profile: str, actions: list,
+               rule_version: str = CURRENT_RULE_VERSION) -> dict:
         if not self.replay_slots.acquire(blocking=False):
             raise ApiError(503, "VERIFIER_BUSY", 1)
         try:
-            return self._replay_with_slot(challenge_id, seed, supply_profile, actions)
+            return self._replay_with_slot(challenge_id, seed, supply_profile, actions, rule_version)
         finally:
             self.replay_slots.release()
 
-    def _replay_with_slot(self, challenge_id: str, seed: str, supply_profile: str, actions: list) -> dict:
+    def _replay_with_slot(self, challenge_id: str, seed: str, supply_profile: str, actions: list,
+                          rule_version: str) -> dict:
+        verifier = self.verifiers.get(rule_version)
+        if verifier is None:
+            raise ApiError(503, "VERIFIER_UNAVAILABLE")
+        engine, project = verifier
+        if rule_version in self.frozen_versions and not verify_bundle(project, rule_version):
+            raise ApiError(503, "VERIFIER_UNAVAILABLE")
         with tempfile.TemporaryDirectory(prefix="blocktower_replay_") as folder:
             source, output = Path(folder) / "input.json", Path(folder) / "output.json"
             source.write_text(canonical({"session_id": challenge_id, "seed": seed,
                                          "supply_profile": supply_profile, "actions": actions}), encoding="utf-8")
             try:
                 run = subprocess.run(
-                    [str(self.engine), "--headless", "--path", str(self.project),
+                    [str(engine), "--headless", "--path", str(project),
                      "--script", "res://scripts/online/verify_replay.gd", "--", str(source), str(output)],
                     capture_output=True, text=True, timeout=30, check=False,
                 )
@@ -248,7 +300,8 @@ class Api:
             return {"ok": True, "duplicate": True, "week": challenge["week"]}
         if previous and not is_extension(json.loads(previous["actions_json"]), actions):
             raise ApiError(409, "TRACE_NOT_EXTENSION")
-        replay = self.replay(challenge_id, challenge["seed"], challenge["supply_profile"], actions)
+        replay = self.replay(challenge_id, challenge["seed"], challenge["supply_profile"], actions,
+                             challenge["rule_version"])
         if replay["revision"] != len(actions):
             raise ApiError(422, "REVISION_MISMATCH")
         with connection(self.db_path) as db:
@@ -373,7 +426,9 @@ class Handler(BaseHTTPRequestHandler):
                         raise OSError("database missing")
                     with connection(self.api.db_path) as db:
                         db.execute("SELECT 1 FROM accounts LIMIT 1").fetchone()
-                    ready = self.api.engine.is_file() and (self.api.project / "project.godot").is_file()
+                    ready = all(engine.is_file() and (project / "project.godot").is_file()
+                                and (version not in self.api.frozen_versions or verify_bundle(project, version))
+                                for version, (engine, project) in self.api.verifiers.items())
                 except (OSError, sqlite3.Error):
                     ready = False
                 if not ready:
@@ -417,11 +472,38 @@ class Handler(BaseHTTPRequestHandler):
             self.reply(error.status, {"ok": False, "error": error.code}, error.retry_after)
 
 
+def load_extra_verifiers(path: Path) -> dict[str, tuple[Path, Path]]:
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as error:
+        raise ValueError("cannot read verifier registry") from error
+    if not isinstance(raw, dict):
+        raise ValueError("verifier registry must be an object")
+    result = {}
+    for version, value in raw.items():
+        if (not isinstance(version, str) or not version.startswith("bt_rules_v")
+                or not version[10:].isdecimal() or version == CURRENT_RULE_VERSION
+                or not isinstance(value, dict) or set(value) != {"engine", "project"}
+                or not all(isinstance(item, str) for item in value.values())):
+            raise ValueError("invalid verifier registry entry")
+        engine, project = Path(value["engine"]), Path(value["project"])
+        if not engine.is_absolute():
+            engine = path.parent / engine
+        if not project.is_absolute():
+            project = path.parent / project
+        result[version] = (engine.resolve(), project.resolve())
+        if not verify_bundle(result[version][1], version):
+            raise ValueError(f"verifier bundle is missing or changed for {version}")
+    return result
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--db", type=Path, required=True)
     parser.add_argument("--godot", type=Path, required=True)
-    parser.add_argument("--project", type=Path, default=Path(__file__).resolve().parents[2] / "game")
+    parser.add_argument("--project", type=Path, default=DEFAULT_VERIFIER_PROJECT)
+    parser.add_argument("--verifier-registry", type=Path,
+                        help="JSON map of additional rule versions to pinned engine and project paths")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8765)
     parser.add_argument("--trust-proxy-client-ip", action="store_true",
@@ -431,7 +513,18 @@ def main() -> None:
         parser.error("Bind to loopback; use a TLS reverse proxy for external access")
     if not args.godot.is_file() or not (args.project / "project.godot").is_file():
         parser.error("Pinned Godot executable and project.godot are required")
-    api = Api(args.db.resolve(), args.godot.resolve(), args.project.resolve())
+    if not verify_bundle(args.project.resolve(), CURRENT_RULE_VERSION):
+        parser.error("Frozen current-rule verifier is missing or changed")
+    verifiers = {CURRENT_RULE_VERSION: (args.godot.resolve(), args.project.resolve())}
+    if args.verifier_registry:
+        try:
+            verifiers.update(load_extra_verifiers(args.verifier_registry.resolve()))
+        except ValueError as error:
+            parser.error(str(error))
+    try:
+        api = Api(args.db.resolve(), args.godot.resolve(), args.project.resolve(), verifiers)
+    except RuntimeError as error:
+        parser.error(str(error))
     server = ThreadingHTTPServer((args.host, args.port), type("Phase4Handler", (Handler,),
         {"api": api, "limiter": RateLimiter(), "trust_proxy_client_ip": args.trust_proxy_client_ip}))
     print(f"Phase 4 local API on {args.host}:{args.port}", flush=True)

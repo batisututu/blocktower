@@ -1,0 +1,23 @@
+{
+  "files": {
+    "data/piece_generator_default.tres": "caa0fb1a54bbf5c43fee5752dfb1bba8c600a8a5cf60f8f782ea522bef32d9db",
+    "data/piece_generator_low_single.tres": "6d7743189ad7ac04332b2cf1a3fff4df9f28a0d38a4c0ac1949edd328cb1f533",
+    "project.godot": "74229dd8b762f08d60ef01d82aca33e40ac55611601fcc56f81f4842fca7ef09",
+    "scripts/core/game_session.gd": "57656281ab9da106a34fedf94b84ae683d59454af759bd735ac149d19ca102b0",
+    "scripts/core/game_session.gd.uid": "04f382e15c5bafc954de505a1afdc09654c615cc12f5c523382d408087b2017c",
+    "scripts/core/generation/piece_generator.gd": "8269aac211aff3a180792d88e00cf03ee3dbe1e136fa1a294383f23a844431c0",
+    "scripts/core/generation/piece_generator.gd.uid": "c6c656793b34977cd9091a408331ec937c6d635300818df5c436897fc5959baf",
+    "scripts/core/generation/piece_generator_config.gd": "f8ea818984d9d0308b35d3cf0c5128448a98aa363f7f9749abd32ea513b8110d",
+    "scripts/core/generation/piece_generator_config.gd.uid": "13abcdb5e38f438a34235d84dd60cd8f259b8f00387bac0d0b92106ffe8e34db",
+    "scripts/core/growth_rules.gd": "04fdddb630192d80ff622c6fc0f049f3b0287214d4824a840891833f2fc92503",
+    "scripts/core/growth_rules.gd.uid": "18147982ca9a9abba43193269a48778fe524ef37c81bccc2120efe56063c32ee",
+    "scripts/core/memory_save_repository.gd": "62d0c5884135af05b51d6892a08ff14017da9110eb2437a175d96d83f91e85c5",
+    "scripts/core/memory_save_repository.gd.uid": "0d18694df8807a935bd9674071d70cb5757eb000fdd01cf465ab61a9c331a1e4",
+    "scripts/core/piece_supply.gd": "f2a185fd6132a5f4ef9fadb2b25a33924bbf258542a9c0b8d0e39d96b1cdae84",
+    "scripts/core/piece_supply.gd.uid": "d815973a055cc5029c62b55bd14bbc5dc41f38109fefd6814ae677b5bef8133d",
+    "scripts/online/verify_replay.gd": "358601b82c66cae3ec008da1b99449bd3b48fa39f85f9bd9c0932748f3276ceb",
+    "scripts/online/verify_replay.gd.uid": "f3634a1bb4d29dce5ed3badf4ba9d2e1101639406d45c91ee057857577aa504e"
+  },
+  "godot_version": "4.7.2",
+  "rule_version": "bt_rules_v1"
+}

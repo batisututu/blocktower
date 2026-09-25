@@ -38,3 +38,4 @@
 /docs/pretests/** -text
 /game/addons/gut/** -text
 /game/assets/fonts/OFL.txt -text
+/services/phase4/verifiers/bt_rules_v*/** -text -eol

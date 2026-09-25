@@ -152,6 +152,7 @@ func error_text(code: String) -> String:
         "CHALLENGE_NOT_FOUND":"도전 정보를 찾을 수 없습니다.",
         "TRACE_NOT_EXTENSION":"이미 제출된 기록과 달라 자동으로 합칠 수 없습니다.",
         "VERIFIER_UNAVAILABLE":"서버 검증을 잠시 사용할 수 없습니다.",
+        "UNSUPPORTED_VERSION":"이 도전은 현재 앱에서 지원하지 않는 규칙을 사용합니다. 앱을 업데이트해 주세요.",
         "VERIFIER_BUSY":"서버 검증이 혼잡합니다. 잠시 뒤 다시 시도해 주세요.",
         "RATE_LIMITED":"요청이 많습니다. 잠시 뒤 다시 시도해 주세요.",
         "TRACE_TOO_LARGE":"도전 기록이 너무 커서 제출할 수 없습니다.",

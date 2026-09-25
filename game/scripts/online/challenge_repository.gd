@@ -6,6 +6,7 @@ const LowSingleConfig = preload("res://data/piece_generator_low_single.tres")
 const ClassicConfig = preload("res://data/piece_generator_default.tres")
 const FIELDS := ["event_id", "batch_id", "slot", "x", "y", "segment", "source", "target"]
 const MAX_TRACE_BYTES := 1800000
+const RULE_VERSION := "bt_rules_v1"
 var _root := ""
 var _challenge_id := ""
 var _seed := ""
@@ -17,6 +18,8 @@ static func open(challenge: Dictionary) -> Dictionary:
     var id: Variant = challenge.get("challenge_id", "")
     var seed: Variant = challenge.get("seed", "")
     var profile: Variant = challenge.get("supply_profile", "classic")
+    if challenge.get("rule_version", RULE_VERSION) != RULE_VERSION:
+        return {"ok": false, "error": "UNSUPPORTED_VERSION"}
     if typeof(id) != TYPE_STRING or id.length() != 32:
         return {"ok": false, "error": "INVALID_CHALLENGE"}
     for character in id:

@@ -5,7 +5,7 @@
 - `GameSession` remains the only reducer of puzzle, growth, and tower state. Existing `user://save_v1` data belongs to the personal offline game.
 - `ChallengeRepository` owns a separate, two-generation action trace under `user://phase4_challenges/<challenge_id>`. A successful challenge commit writes the next action and its revision together. Replay reconstructs the challenge snapshot. The server never accepts the local snapshot as a score.
 - The server owns UTC week assignment, a random seed and one challenge per guest account per week. Its private SQLite file owns account token hashes, challenges, and verified submissions. The client stores the guest bearer token in its private application data.
-- A challenge also owns `supply_profile`. The server stores it with the issued seed and passes it to the pinned replay process. Existing database rows migrate to `classic`; challenges in weeks beginning 2026-09-28 UTC use `reduced_single`. The client replays its local action journal with the same profile. A profile cannot be changed for an issued challenge.
+- A challenge also owns immutable `rule_version` and `supply_profile`. The server stores them with the issued seed and selects the matching frozen replay project. Existing database rows migrate to `bt_rules_v1` and `classic`; challenges in weeks beginning 2026-09-28 UTC use `reduced_single`. The client accepts only the rule version it implements, treating a missing version in a legacy local fixture as v1, and replays its local action journal with the issued profile. Neither field can be changed for an issued challenge.
 - The server replays every submitted action through the pinned Godot `GameSession`; it publishes only the resulting floor count and representative segment. Other clients receive read-only derived tower data.
 
 ## Action and response rules
@@ -34,9 +34,10 @@
 | `TRACE_CORRUPT`, `SAVE_FAILED` | client repository | A local generation is damaged or could not be committed. Never clear the personal save. |
 | `RECOVERY_CODE_INVALID` | server | Unknown or malformed recovery code; do not disclose whether an account exists. |
 | `VERIFIER_UNAVAILABLE` | server | The pinned engine cannot run; do not trust a client floor count as fallback. |
+| `UNSUPPORTED_VERSION` | client | The issued challenge uses rules this app cannot replay; leave its journal untouched. |
 | `RATE_LIMITED` | server | Per-client request budget is exhausted. HTTP 429 includes `Retry-After` in seconds; no request action is applied. The client may retry later. |
 | `VERIFIER_BUSY` | server | Replay worker slots are occupied. HTTP 503 includes `Retry-After`; no submission is accepted. |
 
 The server limits requests per normalized client IP in 60-second windows and caps concurrent replay processes. A public TLS reverse proxy must overwrite one `X-Real-IP` header and the loopback server must explicitly opt in to trusting it; without that opt-in, only the socket peer is used. Limits are per process and reset on restart. The server exposes loopback liveness/readiness endpoints and emits one sanitized JSON access event per handled GET/POST response, without bodies, credentials, query strings, or raw client IPs.
 
-The server must run the same pinned engine, rules, generator catalog, and assets for every live challenge. It currently selects one of two pinned weight profiles per challenge. Deployments that change deterministic rules or assets still need a versioned verifier retained through the current week; the MVP server is not yet set up for rolling verifier binaries.
+The server must run the same pinned engine, rules, generator catalog, and assets for every live challenge. It selects one of two pinned weight profiles per challenge. The v1 verifier project is a frozen source bundle with a SHA-256 file manifest; startup verifies its files and refuses to serve a database containing an unconfigured rule version. A future rules release must add its own frozen project, register it, and retain every version used by an open challenge. The Godot executable remains an operator-pinned deployment artifact and must be retained with those projects until their submission windows close.

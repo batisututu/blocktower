@@ -121,7 +121,7 @@ func _close_online() -> void:
 func _start_challenge(challenge: Dictionary) -> void:
     var opened: Dictionary = ChallengeRepository.open(challenge)
     if not opened.ok:
-        if is_instance_valid(online_screen): online_screen.show_status("도전 저장을 열지 못했습니다: "+str(opened.error))
+        if is_instance_valid(online_screen): online_screen.show_status(online_screen.error_text(str(opened.error)))
         return
     var repository: RefCounted = opened.repository
     var loaded: Dictionary = repository.load_snapshot()
@@ -163,7 +163,7 @@ func _adopt_server_challenge() -> void:
         return
     var opened: Dictionary = ChallengeRepository.open(current)
     if not opened.ok:
-        online_screen.show_status("도전 저장을 열지 못했습니다: "+str(opened.error))
+        online_screen.show_status(online_screen.error_text(str(opened.error)))
         return
     var repository: RefCounted = opened.repository
     var loaded: Dictionary = repository.load_snapshot()
