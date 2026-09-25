@@ -1,0 +1,49 @@
+--------- beginning of main
+09-26 02:35:19.033 V/Godot   (15392): Initializing Godot plugin registry
+09-26 02:35:19.039 V/Godot   (15392): InitEngine with params: [--xr_mode_regular, --xr-mode, off, --fullscreen, --background_color, #000000]
+09-26 02:35:19.048 V/Godot   (15392): Godot native layer initialization completed: true
+09-26 02:35:19.048 V/Godot   (15392): Setting up native layer with params: [--xr-mode, off, --fullscreen]
+09-26 02:35:19.069 V/Godot   (15392): Godot native layer setup completed
+09-26 02:35:19.070 V/Godot   (15392): OnInitRenderView: GodotFragment{12489af} (9790b4ba-9ca1-4fb4-97b9-d60e41a62681 id=0x7f07002c)
+09-26 02:35:19.082 D/Godot   (15392): Render view should be transparent: false
+09-26 02:35:19.082 D/Godot   (15392): renderingDevice: opengl3 (ProjectSettings)
+09-26 02:35:19.082 D/Godot   (15392): 			renderer: gl_compatibility (ProjectSettings)
+09-26 02:35:19.094 V/Godot   (15392): OnStart: GodotFragment{12489af} (9790b4ba-9ca1-4fb4-97b9-d60e41a62681 id=0x7f07002c)
+09-26 02:35:19.097 V/Godot   (15392): OnResume: GodotFragment{12489af} (9790b4ba-9ca1-4fb4-97b9-d60e41a62681 id=0x7f07002c)
+09-26 02:35:19.142 I/godot   (15392): Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-26 02:35:19.225 I/godot   (15392): OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-26 02:35:19.247 I/godot   (15392):
+09-26 02:35:20.119 V/Godot   (15392): OnGodotSetupCompleted
+09-26 02:35:20.709 V/Godot   (15392): OnGodotMainLoopStarted
+09-26 02:40:41.679 V/Godot   (15931): Initializing Godot plugin registry
+09-26 02:40:41.685 V/Godot   (15931): InitEngine with params: [--xr_mode_regular, --xr-mode, off, --fullscreen, --background_color, #000000]
+09-26 02:40:41.694 V/Godot   (15931): Godot native layer initialization completed: true
+09-26 02:40:41.694 V/Godot   (15931): Setting up native layer with params: [--xr-mode, off, --fullscreen]
+09-26 02:40:41.715 V/Godot   (15931): Godot native layer setup completed
+09-26 02:40:41.715 V/Godot   (15931): OnInitRenderView: GodotFragment{12489af} (5f72bb8c-0a97-4ddf-9547-1687b4386e2e id=0x7f07002c)
+09-26 02:40:41.728 D/Godot   (15931): Render view should be transparent: false
+09-26 02:40:41.728 D/Godot   (15931): renderingDevice: opengl3 (ProjectSettings)
+09-26 02:40:41.728 D/Godot   (15931): 			renderer: gl_compatibility (ProjectSettings)
+09-26 02:40:41.740 V/Godot   (15931): OnStart: GodotFragment{12489af} (5f72bb8c-0a97-4ddf-9547-1687b4386e2e id=0x7f07002c)
+09-26 02:40:41.742 V/Godot   (15931): OnResume: GodotFragment{12489af} (5f72bb8c-0a97-4ddf-9547-1687b4386e2e id=0x7f07002c)
+09-26 02:40:41.788 I/godot   (15931): Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-26 02:40:41.866 I/godot   (15931): OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-26 02:40:41.883 I/godot   (15931):
+09-26 02:40:42.740 V/Godot   (15931): OnGodotSetupCompleted
+09-26 02:40:43.284 V/Godot   (15931): OnGodotMainLoopStarted
+09-26 02:44:24.956 V/Godot   (16273): Initializing Godot plugin registry
+09-26 02:44:24.962 V/Godot   (16273): InitEngine with params: [--xr_mode_regular, --xr-mode, off, --fullscreen, --background_color, #000000]
+09-26 02:44:24.971 V/Godot   (16273): Godot native layer initialization completed: true
+09-26 02:44:24.971 V/Godot   (16273): Setting up native layer with params: [--xr-mode, off, --fullscreen]
+09-26 02:44:24.992 V/Godot   (16273): Godot native layer setup completed
+09-26 02:44:24.993 V/Godot   (16273): OnInitRenderView: GodotFragment{12489af} (8c27c7b6-2e8c-4e10-9763-72edbb45d4b9 id=0x7f07002c)
+09-26 02:44:25.005 D/Godot   (16273): Render view should be transparent: false
+09-26 02:44:25.005 D/Godot   (16273): renderingDevice: opengl3 (ProjectSettings)
+09-26 02:44:25.005 D/Godot   (16273): 			renderer: gl_compatibility (ProjectSettings)
+09-26 02:44:25.017 V/Godot   (16273): OnStart: GodotFragment{12489af} (8c27c7b6-2e8c-4e10-9763-72edbb45d4b9 id=0x7f07002c)
+09-26 02:44:25.019 V/Godot   (16273): OnResume: GodotFragment{12489af} (8c27c7b6-2e8c-4e10-9763-72edbb45d4b9 id=0x7f07002c)
+09-26 02:44:25.064 I/godot   (16273): Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-26 02:44:25.134 I/godot   (16273): OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-26 02:44:25.154 I/godot   (16273):
+09-26 02:44:25.998 V/Godot   (16273): OnGodotSetupCompleted
+09-26 02:44:26.566 V/Godot   (16273): OnGodotMainLoopStarted
