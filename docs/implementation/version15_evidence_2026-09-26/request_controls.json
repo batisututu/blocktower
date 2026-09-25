@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "checks": [
+    "liveness and DB readiness",
+    "missing and malformed proxy IP rejected",
+    "guest limit 12/min and Retry-After",
+    "independent client budgets",
+    "recovery limit 8/min",
+    "submission limit 12/min before action processing",
+    "request ID and sanitized access events",
+    "two concurrent replay slots and busy response"
+  ],
+  "responses": 42
+}
