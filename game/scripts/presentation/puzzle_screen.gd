@@ -1,6 +1,7 @@
 extends Control
 ## 실제 저장 세션을 그리는 화면. 연출은 확정 상태 위의 일시적인 표현이다.
 signal reload_requested
+signal online_requested
 const Controller = preload("res://scripts/presentation/presentation_controller.gd")
 const Preferences = preload("res://scripts/presentation/presentation_preferences.gd")
 const Feedback = preload("res://scripts/presentation/feedback_player.gd")
@@ -51,6 +52,7 @@ var board_rect := Rect2()
 var shelf_rect := Rect2()
 var tray_rects: Array[Rect2] = []
 var screen_id := "puzzle"
+var online_mode := false
 var controls: Control
 var drag_layer: Control
 var modal: Control
@@ -393,7 +395,7 @@ func _layout() -> void:
     if screen_id in ["tower","tower_overview"]:
         var tower_insets := _safe_vertical()
         var tower_top := tower_insets.x
-        _label("Blocktower", Rect2(12,tower_top+8,w-184,48),18,INK)
+        _label("주간 도전 탑" if online_mode else "Blocktower", Rect2(12,tower_top+8,w-184,48),18,INK)
         growth_details_button = _button("해금 보기",Rect2(w-152,tower_top+8,84,48),_show_growth_details)
         _button("설정", Rect2(w-60,tower_top+8,48,48),_settings)
         if screen_id == "tower": _build_tower()
@@ -442,6 +444,7 @@ func _layout() -> void:
     for i in range(3): tray_rects.append(Rect2(12+i*side/3.0,tray_y,side/3.0,tray_height))
     var dock_y := tray_y+tray_height+dock_gap
     _build_tower_chip(top)
+    _button("도전" if online_mode else "주간",Rect2(w-128,top,60,48),_open_online)
     _icon_button("icon_settings",Rect2(w-60,top,48,48),_settings,"설정")
     _build_score(score_y,score_height)
     # 안내 줄은 보드 바로 아래에서 시작하고, 위쪽 간격은 내용 여백으로 둔다.
@@ -594,13 +597,13 @@ func _refresh_chip(locked: bool = false) -> void:
     if screen_id != "puzzle" or not is_instance_valid(tower_button) or not is_instance_valid(chip_name): return
     var floors: int = state.growth.total_floors
     var to_next: int = analysis.growth.floors_to_next
-    chip_name.text = ("대기 · %s층" if locked else "내 탑 %s층") % format_int(floors)
+    chip_name.text = ("대기 · %s층" if locked else ("도전 탑 %s층" if online_mode else "내 탑 %s층")) % format_int(floors)
     chip_remaining.text = "%d층 남음" % to_next
     var name_size := _font_size(14)
     var rest_size := _font_size(12)
-    var bar_width := 52.0
+    var bar_width := 44.0 if size.x < 340 else 52.0
     # 설정 버튼과 겹치지 않는 최대 폭 안에서 이름 글자만 줄인다.
-    var max_content := size.x-12-60-8-42-14
+    var max_content := size.x-12-128-8-42-14
     while name_size > 9 and _text_width(chip_name.text,name_size,true) > max_content:
         name_size -= 1
     chip_name.add_theme_font_size_override("font_size",name_size)
@@ -617,11 +620,11 @@ func _refresh_chip(locked: bool = false) -> void:
     chip_progress.size = Vector2(bar_width,6)
     chip_remaining.position = Vector2(42+bar_width+6,y+name_height+gap)
     chip_remaining.size = Vector2(rest_width+2,rest_height)
-    tower_button.size.x = ceilf(42+content+14)
+    tower_button.size.x = minf(ceilf(42+content+14),size.x-12-128-4)
     chip_progress.queue_redraw()
-    var description := "내 탑 %s층, 다음 구간까지 %d층" % [format_int(floors),to_next]
+    var description := "%s %s층, 다음 구간까지 %d층" % ["도전 탑" if online_mode else "내 탑",format_int(floors),to_next]
     tower_button.tooltip_text = description
-    tower_button.accessibility_name = "내 탑 보기: "+description
+    tower_button.accessibility_name = "탑 보기: "+description
     _place_growth_badge()
 
 func _place_growth_badge() -> void:
@@ -1622,6 +1625,9 @@ func _preference_toggled(value: bool, key: String, check: CheckButton, epoch: in
         _settings()
 
 func _new_run_dialog() -> void:
+    if online_mode:
+        _dialog("주간 도전 중", "이번 도전에서는 새 게임을 시작할 수 없습니다. 제출하거나 개인 탑으로 돌아가 주세요.", "확인", _close_modal, "")
+        return
     var rng := RandomNumberGenerator.new()
     rng.randomize()
     new_run_seed = str(rng.seed)
@@ -1635,6 +1641,9 @@ func _confirm_new() -> void:
         _layout()
 
 func _results() -> void:
+    if online_mode:
+        _dialog("주간 도전 종료", "도전 기록을 제출하면 검증된 층수만 순위에 반영됩니다.", "주간 기록", _request_online_from_modal, "닫기")
+        return
     # 판이 이미 끝났으므로 '다시 하기'는 추가 확인 없이 확정된 NEW_RUN을 보낸다.
     var rng := RandomNumberGenerator.new()
     rng.randomize()
@@ -1644,6 +1653,7 @@ func _results() -> void:
     stats.add_theme_constant_override("separation",8)
     stats.add_child(_stat_card("이번 점수",format_int(state.score),INK))
     stats.add_child(_stat_card("최고 기록",format_int(state.best),GOLD))
+
     modal_content.add_child(stats)
     modal_content.add_child(_tower_card())
     if not last_event_details.is_empty():
@@ -1658,6 +1668,13 @@ func _results() -> void:
         secondary.add_child(action)
         action.size_flags_horizontal = Control.SIZE_EXPAND_FILL
     _fit_modal()
+
+func _open_online() -> void:
+    if controller.application_active and controller.phase == "idle": online_requested.emit()
+
+func _request_online_from_modal() -> void:
+    _close_modal()
+    online_requested.emit()
 
 func _stat_card(caption: String, value: String, color: Color) -> Control:
     var card := PanelContainer.new()

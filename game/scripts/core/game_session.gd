@@ -232,6 +232,9 @@ func _dispatch(action: Variant) -> Dictionary:
         if _analysis(_state).status != "GAME_OVER": events.append({"type": "GAME_OVER"})
     error = _validate_state(candidate)
     if not error.is_empty(): return _error(error)
+    if _repository.has_method("stage_action"):
+        var staged: Dictionary = _repository.stage_action(action.duplicate(true))
+        if not staged.ok: return _error(staged.error)
     var saved: Dictionary = _repository.commit(candidate.duplicate(true), _state.revision)
     if not saved.ok:
         if saved.error in ["COMMIT_UNCERTAIN", "SAVE_CONFLICT", "RECOVERY_REQUIRED"]: _requires_resume = true

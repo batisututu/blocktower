@@ -16,6 +16,8 @@
 
 **Phase 3 건축 MVP:** [구현 범위](implementation/Phase3_MVP_Tower_Overview_Copy_2026-09-25.md), [데스크톱 검증](implementation/Phase3_Desktop_Validation_2026-09-25.md), [Android 실기기 검증](implementation/Phase3_Android_Device_Validation_2026-09-25.md). 전체 탑·구간 확대·단일 대상 외형 복사를 SM-N981N에서 30/300/3,000층으로 확인했다. 고정 GUT 138개/3,709개 단언이 통과했고 저장 재시작·짧은 프레임/메모리 작업 예산도 통과했다. 최소 지원 기기와 처음 플레이하는 사람의 관찰은 남아 있다.
 
+**Phase 4 온라인 MVP 착수:** [구현 범위와 실행 방법](implementation/Phase4_Online_MVP_2026-09-25.md). 임시 계정·서버 발급 시드·행동 재생 검증·주간 순위·다른 대표 탑 보기와 별도 도전 저장을 추가했다. Godot 가져오기에서 파서는 통과했으나 서버/기기 종단 간 검사와 출시 운영 정책은 아직 남아 있다.
+
 **Phase 2-G 벽돌 랜드마크 파츠:** [구현 범위와 실행 기록](implementation/Phase2G_Brick_Landmark_Part_Plan_2026-09-25.md). 벽돌 진행도 100줄 또는 누적 300층에서 해금되는 네 번째 파츠를 추가했다. 일반·아치 외벽의 중간 층에 시계 랜드마크를 표시하며 네 파츠가 한 구간에 공존한다. 기록된 고정 검사 133개/3,600개 단언, 저장 재시작 42개, Windows 화면 15종·186개 점검, 큰 글씨 스크롤 3종·231개 점검, 층 접합 8종이 통과했다. 사람 관찰과 최신 Android 검증은 후속이다.
 
 **Phase 2-H 높은 탑 구간 이동:** [구현 범위와 확인](implementation/Phase2H_Tower_Segment_Jump_2026-09-25.md). 탑 화면의 구간 번호 입력으로 원하는 완성·미완성 구간에 바로 이동한다. 저장과 대표 구간은 바뀌지 않는다. 고정 Godot 가져오기에서 파서 오류는 없었고, 입력 체험·GUT·Android 검증은 아직 수행하지 않았다.

@@ -2,6 +2,10 @@ extends Node
 ## 앱 시작과 재조회는 같은 저장 세션을 실제 퍼즐 화면에 연결한다.
 const SavedGame = preload("res://scripts/application/saved_game.gd")
 const PuzzleScreen = preload("res://scripts/presentation/puzzle_screen.gd")
+const Session = preload("res://scripts/core/game_session.gd")
+const ChallengeRepository = preload("res://scripts/online/challenge_repository.gd")
+const Phase4Client = preload("res://scripts/online/phase4_client.gd")
+const OnlineScreen = preload("res://scripts/online/online_screen.gd")
 const FONT = preload("res://assets/fonts/NotoSansKR.ttf")
 var service := SavedGame.new()
 var save_directory := "user://save_v1"
@@ -9,6 +13,12 @@ var game_session: RefCounted
 var startup_result: Dictionary
 var _notice: CanvasLayer
 var screen: Control
+var online_client: Node
+var online_screen: Control
+var online_repository: RefCounted
+var online_session: RefCounted
+var online_mode := false
+var active_challenge: Dictionary = {}
 var _application_blockers: Dictionary = {}
 var _notice_message := ""
 var _notice_retry := false
@@ -19,6 +29,8 @@ func _input(_event: InputEvent) -> void:
 
 func _ready() -> void:
     if OS.get_name() == "Android": get_tree().quit_on_go_back = false
+    online_client = Phase4Client.new()
+    add_child(online_client)
     _boot()
 
 func _notification(what: int) -> void:
@@ -37,11 +49,19 @@ func _notification(what: int) -> void:
             _refresh_notice.call_deferred(_notice, _notice_epoch)
     if what == NOTIFICATION_WM_GO_BACK_REQUEST:
         if not active: return
+        if is_instance_valid(online_screen):
+            _close_online()
+            return
         # 모달과 탑의 뒤로가기를 처리한 뒤 루트 화면에서만 종료한다.
         if is_instance_valid(_notice) or not is_instance_valid(screen) or not screen.handle_back():
             get_tree().quit()
 
 func _boot() -> void:
+    if is_instance_valid(online_screen):
+        remove_child(online_screen)
+        online_screen.queue_free()
+        online_screen = null
+    online_mode = false
     if is_instance_valid(screen):
         remove_child(screen)
         screen.queue_free()
@@ -56,16 +76,82 @@ func _boot() -> void:
         _show_notice("저장 기록을 불러오지 못했어요.\n기록은 그대로 보관하고 있습니다.\n다시 시도해 주세요.", true)
         return
     game_session = startup_result.session
-    screen = PuzzleScreen.new()
-    screen.reload_requested.connect(func():
-        if _application_blockers.is_empty(): _boot())
-    add_child(screen)
-    screen.attach(game_session, save_directory.path_join("presentation.json"))
-    screen.set_application_active(_application_blockers.is_empty())
+    _show_game_session(game_session,false)
     if startup_result.get("recovered", false):
         screen.controller.open_modal()
         screen.hide()
         _show_notice("일부 저장 기록이 손상되어\n정상적으로 읽을 수 있는 기록으로 복구했어요.\n최근 진행 일부가 되돌아갔을 수 있습니다.", false)
+
+func _show_game_session(session: RefCounted, is_online: bool) -> void:
+    if is_instance_valid(screen):
+        remove_child(screen)
+        screen.queue_free()
+        screen = null
+    screen = PuzzleScreen.new()
+    screen.online_mode = is_online
+    screen.reload_requested.connect(func():
+        if not _application_blockers.is_empty(): return
+        if online_mode and not active_challenge.is_empty(): _start_challenge(active_challenge)
+        else: _boot())
+    screen.online_requested.connect(_open_online)
+    add_child(screen)
+    screen.attach(session, save_directory.path_join("presentation.json"))
+    screen.set_application_active(_application_blockers.is_empty())
+
+func _open_online() -> void:
+    if is_instance_valid(online_screen) or not _application_blockers.is_empty(): return
+    online_screen = OnlineScreen.new()
+    online_screen.client = online_client
+    online_screen.challenge_active = online_mode
+    online_screen.start_requested.connect(_start_challenge)
+    online_screen.submit_requested.connect(_submit_challenge)
+    online_screen.exit_requested.connect(_close_online)
+    add_child(online_screen)
+
+func _close_online() -> void:
+    if is_instance_valid(online_screen):
+        remove_child(online_screen)
+        online_screen.queue_free()
+        online_screen = null
+    if online_mode:
+        online_mode = false
+        _show_game_session(game_session,false)
+
+func _start_challenge(challenge: Dictionary) -> void:
+    var opened: Dictionary = ChallengeRepository.open(challenge)
+    if not opened.ok:
+        if is_instance_valid(online_screen): online_screen.show_status("도전 저장을 열지 못했습니다: "+str(opened.error))
+        return
+    var repository: RefCounted = opened.repository
+    var loaded: Dictionary = repository.load_snapshot()
+    if not loaded.ok:
+        if is_instance_valid(online_screen): online_screen.show_status("도전 기록을 읽지 못했습니다: "+str(loaded.error))
+        return
+    var result: Dictionary = Session.resume(repository) if loaded.found else Session.start(repository,challenge.session_id,challenge.seed)
+    if not result.ok:
+        if is_instance_valid(online_screen): online_screen.show_status("도전을 시작하지 못했습니다: "+str(result.error))
+        return
+    online_repository = repository
+    online_session = result.session
+    active_challenge = challenge.duplicate(true)
+    online_mode = true
+    _show_game_session(online_session,true)
+    if is_instance_valid(online_screen):
+        remove_child(online_screen)
+        online_screen.queue_free()
+        online_screen = null
+
+func _submit_challenge() -> void:
+    if not online_mode or online_repository == null or not is_instance_valid(online_screen): return
+    online_screen.show_status("행동 기록을 서버에서 재생 확인하는 중…")
+    var response: Dictionary = await online_client.call_api(HTTPClient.METHOD_POST,"/v1/submissions",
+        {"challenge_id":active_challenge.challenge_id,"actions":online_repository.actions()},true)
+    if not is_instance_valid(online_screen): return
+    if response.ok:
+        online_screen.show_status("제출 완료 · 검증된 주간 증축 %d층" % int(response.get("floor_count",online_session.snapshot().growth.total_floors)))
+        online_screen._refresh()
+    else:
+        online_screen.show_status(online_screen.error_text(str(response.error)))
 
 func _refresh_notice(expected: CanvasLayer, epoch: int) -> void:
     if not is_inside_tree() or not _application_blockers.is_empty(): return

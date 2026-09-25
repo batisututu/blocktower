@@ -2,6 +2,8 @@
 
 Blocktower is an 8×8 block puzzle whose cleared lines permanently grow a customizable tower. Read the [current document index](docs/README.md) for the authoritative document for each topic.
 
+Phase 4 online MVP work is tracked in the [implementation record](docs/implementation/Phase4_Online_MVP_2026-09-25.md). Its separate weekly challenge uses server replay; public launch and full Phase 4 acceptance remain open.
+
 The initial playable scope is Phase 1 plus the minimal wooden tower from Phase 2. W1 tooling exists; the synthetic W0 preview failed to reproduce the user's Visual Bible. Prioritize faithful first art and native comparison under design guide section 11, with W2 GameSession and W3 Windows persistence implemented. W4 Windows input, real HUD and first B-direction feedback/art are implemented; see the [W4 report](docs/implementation/W4_Presentation_Report_2026-09-21.md). Detailed B assets and the Windows fidelity fix review are complete; see the [visual fidelity report](docs/implementation/Visual_Fidelity_Report_2026-09-21.md). Next complete remaining W4-D experience checks and W5 mobile validation. See the [development plan](docs/Blocktower_Development_Plan.md) and [historical execution evidence](docs/implementation/W0_W1_Report_2026-09-21.md).
 
 The detailed Korean documents remain authoritative. Supply weights and device/observation assumptions are experimental. Historical reviews are in docs/backup and do not override current documents.
