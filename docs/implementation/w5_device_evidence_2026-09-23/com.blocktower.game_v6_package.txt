@@ -1,0 +1,187 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        20cccb3 com.blocktower.game/com.godot.game.GodotAppLauncher filter b43e270
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        d85b9e9 com.blocktower.game/androidx.profileinstaller.ProfileInstallReceiver filter 1dcb59c
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        d85b9e9 com.blocktower.game/androidx.profileinstaller.ProfileInstallReceiver filter 3cb566e
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        d85b9e9 com.blocktower.game/androidx.profileinstaller.ProfileInstallReceiver filter 8fd810f
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        d85b9e9 com.blocktower.game/androidx.profileinstaller.ProfileInstallReceiver filter cf70ba5
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.blocktower.game/androidx.core.content.FileProvider:
+    Provider{42fcaa7 com.blocktower.game/androidx.core.content.FileProvider}
+  com.blocktower.game/androidx.startup.InitializationProvider:
+    Provider{70caafd com.blocktower.game/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.blocktower.game.fileprovider]:
+    Provider{42fcaa7 com.blocktower.game/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{92c13f2 com.blocktower.game}
+
+Key Set Manager:
+  [com.blocktower.game]
+      Signing KeySets: 157
+
+Packages:
+  Package [com.blocktower.game] (e13d8c0):
+    userId=10374
+    pkg=Package{efdf9f9 com.blocktower.game}
+    codePath=/data/app/~~kU6FdCj42SH4PgA9JsEOQQ==/com.blocktower.game-PU_DU9I_4P1rIWleJwmzEw==
+    resourcePath=/data/app/~~kU6FdCj42SH4PgA9JsEOQQ==/com.blocktower.game-PU_DU9I_4P1rIWleJwmzEw==
+    legacyNativeLibraryDir=/data/app/~~kU6FdCj42SH4PgA9JsEOQQ==/com.blocktower.game-PU_DU9I_4P1rIWleJwmzEw==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=6 minSdk=24 targetSdk=36
+    minExtensionVersions=[]
+    versionName=0.1.0-w5-lifecycle6
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.blocktower.game
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2026-09-23 11:43:04
+    lastUpdateTime=2026-09-23 11:43:22
+    packageSource=0
+    signatures=PackageSignatures{e246fdc version:3, signatures:[eb5ea72a], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    requested permissions:
+      android.permission.VIBRATE
+    install permissions:
+      android.permission.VIBRATE: granted=true
+    User 0: ceDataInode=99056 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2026-09-21 15:10:25
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk
+      legacy overlay paths:
+        /product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk
+      runtime permissions:
+    User 95: ceDataInode=254945 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2026-09-21 15:10:25
+      uninstallReason=0
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.samsung.android.bixby.agent:
+      com.blocktower.game
+    com.lguplus.appstore:
+      com.blocktower.game
+    com.skt.skaf.OA00018282:
+      com.blocktower.game
+    com.android.settings.intelligence:
+      com.blocktower.game
+    com.google.android.as:
+      com.blocktower.game
+    com.locnall.KimGiSa:
+      com.blocktower.game
+    com.kakao.talk:
+      com.blocktower.game
+    kr.co.april7.buddy:
+      com.blocktower.game
+    jp.naver.line.android:
+      com.blocktower.game
+    emotion.onekm:
+      com.blocktower.game
+    pi.browser:
+      com.blocktower.game
+    com.blockchainvault:
+      com.blocktower.game
+    com.noyesrun.meeff.kr:
+      com.blocktower.game
+    com.hellotalk:
+      com.blocktower.game
+    com.bumble.app:
+      com.blocktower.game
+    com.dreamgames.royalmatch:
+      com.blocktower.game
+    com.gof.global:
+      com.blocktower.game
+    com.whatsapp:
+      com.blocktower.game
+    com.towneers.www:
+      com.blocktower.game
+    com.fun.lastwar.gp:
+      com.blocktower.game
+    com.run.tower.defense:
+      com.blocktower.game
+  queryable via interaction:
+    User 0:
+    User 95:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.blocktower.game]
+    path: /data/app/~~kU6FdCj42SH4PgA9JsEOQQ==/com.blocktower.game-PU_DU9I_4P1rIWleJwmzEw==/base.apk
+      arm64: [status=run-from-apk] [reason=unknown]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:true
+    mLastExecutionStatus:4
+    mLastExecutionStartTimeMs:18196631
+    mLastExecutionDurationIncludingSleepMs:7
+    mLastExecutionStartUptimeMs:4598751
+    mLastExecutionDurationMs:7
+    now:54723133
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.blocktower.game]
+     base.apk - 357
+
+Historical install Logging info(9/10):
+  [com.blocktower.recovery.qa]
+    1790130316859: "Ver":"4", "Session":"0", "Write":"7", "Verifing":"2190", "Verified":"20062", "Commit":"0", "end":"98
+    1"}, 
+  [com.deephigh.englishpartners]
+    1790101583128: "Ver":"115", "Session":"0", "Write":"2387", "Write":"95", "Write":"662", "Write":"172", "Write":"3837
+    ", "Write":"6084", "Verifing":"14560", "Verified":"34653", "Commit":"0", "end":"8169"}, 
+  [net.tandem]
+    1790101667132: "Ver":"11561", "Session":"0", "Write":"11972", "Write":"318", "Write":"431", "Write":"1338", "Verifin
+    g":"59518", "Verified":"27202", "Commit":"0", "end":"8719"}, 
+  [com.blocktower.game]
+    1790131383351: "Ver":"6", "Session":"0", "Write":"2", "Verifing":"1520", "Verified":"17601", "Commit":"0", "end":"61
+    0"}, 
+  [com.blocktower.game.qa]
+    1790131144982: "Ver":"6", "Session":"0", "Write":"4", "Verifing":"1563", "Verified":"18931", "Commit":"0", "end":"64
+    8"}, 
+  [com.twitter.android]
+    1790101610930: "Ver":"312280001", "Session":"0", "Write":"11024", "Write":"2071", "Write":"274", "Write":"151", "Wri
+    te":"168", "Write":"39", "Verifing":"42472", "Verified":"31787", "Commit":"0", "end":"10534"}, 
+  [com.google.android.apps.photos]
+    1790101631080: "Ver":"52416788", "Session":"0", "Write":"1522", "Write":"1023", "Write":"129", "Write":"184", "Write
+    ":"41", "Write":"18684", "Verifing":"57782", "Verified":"19840", "Commit":"0", "end":"9941"}, 
+
+HeimdAllFS state:
+  HeimdAllFS does not supported.

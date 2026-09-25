@@ -1,0 +1,9 @@
+{
+  "error": "[\"\", \"SAVE_BUSY\", 1, 0, true, \"\", true]",
+  "expected_clear_text": "",
+  "mode": "guard",
+  "ok": true,
+  "pid": 6371,
+  "recovered": false,
+  "recovery": {}
+}

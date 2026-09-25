@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="GutTests" failures="0" tests="9" >
+  <testsuite name="tests/unit/test_design_preview.gd" tests="2" failures="0" skipped="0" time="0.111555" >
+      <testcase name="test_auto_cancel_preserves_pending_lines_and_restores_focus" assertions="8" status="pass" classname="tests/unit/test_design_preview.gd" time="0.064415" >
+      </testcase>
+      <testcase name="test_confirm_and_navigation_are_preview_only_transitions" assertions="6" status="pass" classname="tests/unit/test_design_preview.gd" time="0.04714" >
+      </testcase>
+  </testsuite>
+  <testsuite name="tests/unit/test_piece_supply.gd" tests="6" failures="0" skipped="0" time="0.018495" >
+      <testcase name="test_crossing_lines_count_as_two_and_keep_manual_clear_available" assertions="2" status="pass" classname="tests/unit/test_piece_supply.gd" time="0.003399" >
+      </testcase>
+      <testcase name="test_empty_tray_requires_refill_before_game_over" assertions="1" status="pass" classname="tests/unit/test_piece_supply.gd" time="0.002813" >
+      </testcase>
+      <testcase name="test_rng_roundtrip_preserves_next_batch" assertions="1" status="pass" classname="tests/unit/test_piece_supply.gd" time="0.003565" >
+      </testcase>
+      <testcase name="test_unknown_id_is_rejected_even_when_another_piece_fits" assertions="1" status="pass" classname="tests/unit/test_piece_supply.gd" time="0.002966" >
+      </testcase>
+      <testcase name="test_board_status_does_not_modify_input" assertions="2" status="pass" classname="tests/unit/test_piece_supply.gd" time="0.002925" >
+      </testcase>
+      <testcase name="test_integer_weight_boundaries_and_zero_weight" assertions="5" status="pass" classname="tests/unit/test_piece_supply.gd" time="0.002827" >
+      </testcase>
+  </testsuite>
+  <testsuite name="tests/unit/test_piece_supply_checks.gd" tests="1" failures="0" skipped="0" time="0.585232" >
+      <testcase name="test_ported_baseline_checks_pass_on_game_target" assertions="4" status="pass" classname="tests/unit/test_piece_supply_checks.gd" time="0.585232" >
+      </testcase>
+  </testsuite>
+</testsuites>

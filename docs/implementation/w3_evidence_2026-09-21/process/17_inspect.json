@@ -1,0 +1,9 @@
+{
+	"error": "SAVE_CORRUPT",
+	"expected_clear_text": "",
+	"mode": "inspect",
+	"ok": false,
+	"pid": 15532,
+	"recovered": false,
+	"recovery": {}
+}

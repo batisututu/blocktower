@@ -1,0 +1,309 @@
+[blocktower] engine: C:\DEV\tools\godot\4.7.2\Godot_v4.7.2-stable_win64_console.exe
+[blocktower] engine version OK: 4.7.2.stable.official.ed1daf0bf
+[blocktower] engine binary hash OK: c8f0a6bc45a19b33541501e57f6f7cd972ab18453743266339d495cbbe846643
+[blocktower] GUT 9.7.1 pinned OK (146 source files, commit aeb5d4f3f7f0a6c9b5e178876d6c99b791fda605)
+[blocktower] headless import
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] first_scan_filesystem | Started 프로젝트 초기화 (5 steps)
+[   0% ] first_scan_filesystem | 파일 구조 스캔 중...
+[  16% ] first_scan_filesystem | 전역 클래스 이름을 불러오는 중...
+[  33% ] first_scan_filesystem | GDExtensions 검증 중...
+[  50% ] first_scan_filesystem | 오토로드 스크립트를 만드는 중...
+[  66% ] first_scan_filesystem | 플러그인을 초기화 중...
+[  83% ] first_scan_filesystem | 파일 스캔 시작 중...
+[ DONE ] first_scan_filesystem
+
+[   0% ] update_scripts_classes | Started 전역 클래스를 등록하는 중... (2 steps)
+[   0% ] update_scripts_classes | 
+[  33% ] update_scripts_classes | 
+[ DONE ] update_scripts_classes
+
+[   0% ] loading_editor_layout | Started 편집기를 불러오는 중 (5 steps)
+[   0% ] loading_editor_layout | 편집기 레이아웃을 불러오는 중...
+[  16% ] loading_editor_layout | 독을 불러오는 중...
+[ DONE ] loading_editor_layout
+
+
+
+[blocktower] GUT run: res://tests/unit
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+---  GUT  ---
+[INFO]:  using [C:/Users/batis/AppData/Roaming/Godot/app_userdata/Blocktower] for temporary output.
+Godot version:  4.7.2
+GUT version:  9.7.1
+
+
+res://tests/unit/test_application_lifecycle.gd
+* test_notification_pair_order_duplicates_and_controller_gate
+    12 Orphans
+        * [@Label@24:<Label#93079996528>]
+        * [@Button@25:<Button#93130328228>]
+        * [@Button@26:<Button#93969189040>]
+        * [@Label@27:<Label#94036297912>]
+        * [@Label@28:<Label#94086629563>]
+        * [@Label@29:<Label#94136961214>]
+        * [@Label@30:<Label#94187292865>]
+        * [@Button@31:<Button#94237624516>]
+        * [@Label@32:<Label#94304733384>]
+        * [@Button@33:<Button#94338287818>]
+        * [@Label@34:<Label#94690609364>]
+        * [@Label@35:<Label#94724163798>]
+* test_drag_cancel_late_release_and_new_press_after_resume
+    12 Orphans
+        * [@Label@67:<Label#102928221797>]
+        * [@Button@66:<Button#102861112940>]
+        * [@Label@65:<Label#102827558510>]
+        * [@Label@64:<Label#102794004080>]
+        * [@Label@63:<Label#102760449650>]
+        * [@Label@62:<Label#102726895220>]
+        * [@Button@61:<Button#102659786361>]
+        * [@Button@60:<Button#101871257222>]
+        * [@Label@69:<Label#103314098291>]
+        * [@Button@68:<Button#102961776765>]
+        * [@Label@70:<Label#103347652743>]
+        * [@Label@59:<Label#101837703372>]
+* test_paused_clear_keeps_commit_and_does_not_replay_tail
+* test_old_confirmation_and_pressed_buttons_cannot_execute_after_resume
+    41 Orphans
+        * [@Control@141:<Control#116853310925>(puzzle_screen.gd)] + 22
+        * [@ColorRect@185:<ColorRect#124168177256>] + 5
+        * [@Button@180:<Button#123832632937>]
+        * [@Label@181:<Label#123899742342>]
+        * [@Label@183:<Label#124084291720>]
+        * [@Label@173:<Label#123413203083>]
+        * [@Label@176:<Label#123698415767>]
+        * [@Label@177:<Label#123731970200>]
+        * [@Button@175:<Button#123631306911>]
+        * [@Label@184:<Label#124117846192>]
+        * [@Label@178:<Label#123765524659>]
+        * [@Label@179:<Label#123799079120>]
+        * [@Button@182:<Button#123933296851>]
+        * [@Button@174:<Button#123446757633>]
+* test_old_preferences_and_tower_controls_are_inert
+    29 Orphans
+        * [@Button@222:<Button#132623894122>]
+        * [@Label@226:<Label#132791666300>]
+        * [@Label@235:<Label#133513086590>]
+        * [@Button@233:<Button#133412423296>]
+        * [@Button@229:<Button#132925884035>]
+        * [@Label@232:<Label#133362091666>]
+        * [@Button@227:<Button#132825221230>]
+        * [@Label@225:<Label#132758112367>]
+        * [@Label@228:<Label#132892330108>]
+        * [@Label@224:<Label#132724557954>]
+        * [@Label@220:<Label#131801811081>]
+        * [@Button@221:<Button#131835365540>]
+        * [@Label@223:<Label#132691003676>]
+        * [@Button@237:<Button#133596973349>]
+        * [@ColorRect@238:<ColorRect#133664082217>] + 10
+        * [@Label@230:<Label#133278206267>]
+        * [@Label@231:<Label#133311760706>]
+        * [@Label@234:<Label#133479532876>]
+        * [@Label@236:<Label#133546641743>]
+* test_mandatory_commit_recovery_survives_pause_and_reload_inherits_gate
+    57 Orphans
+        * [@Button@273:<Button#141180274282>]
+        * [@Control@256:<Control#136029668971>(puzzle_screen.gd)] + 27
+        * [@Button@268:<Button#140978947692>]
+        * [@Label@310:<Label#143512307314>]
+        * [@Label@269:<Label#141046056572>]
+        * [@Label@270:<Label#141079611503>]
+        * [@Label@271:<Label#141113165954>]
+        * [@Button@312:<Button#143730411661>]
+        * [@Label@277:<Label#141666814096>]
+        * [@Label@274:<Label#141247383716>]
+        * [@Button@275:<Button#141280938168>]
+        * [@ColorRect@278:<ColorRect#141733923007>] + 4
+        * [@Button@267:<Button#140190419185>]
+        * [@Label@276:<Label#141633259772>]
+        * [@Button@317:<Button#143931738371>]
+        * [@Label@316:<Label#143898183944>]
+        * [@Label@313:<Label#143797520649>]
+        * [@Label@315:<Label#143864629515>]
+        * [@Label@314:<Label#143831075088>]
+        * [@Label@272:<Label#141146720540>]
+        * [@Label@266:<Label#140156864824>]
+        * [@Button@311:<Button#143545862507>]
+        * [@Label@318:<Label#143998847358>]
+        * [@Button@319:<Button#144032401792>]
+        * [@Label@320:<Label#144183396744>]
+        * [@Label@321:<Label#144216951178>]
+* test_startup_recovery_notice_requires_fresh_confirmation_after_resume
+    6 Orphans
+        * [@CanvasLayer@397:<CanvasLayer#153578637598>] + 5
+* test_repeated_pause_resume_never_changes_rng_revision_or_replays_audio
+* test_startup_failure_retry_is_blocked_until_fresh_active_notice
+    6 Orphans
+        * [@CanvasLayer@695:<CanvasLayer#196410870155>] + 5
+* test_os_notification_propagation_keeps_root_notice_attached_and_stale_press_inert
+    6 Orphans
+        * [@CanvasLayer@798:<CanvasLayer#211107711303>] + 5
+* test_deferred_notice_refresh_is_discarded_after_another_suspend_or_boot
+11/11 passed.
+
+
+res://tests/unit/test_design_preview.gd
+* test_auto_cancel_preserves_pending_lines_and_restores_focus
+* test_confirm_and_navigation_are_preview_only_transitions
+2/2 passed.
+
+
+res://tests/unit/test_file_save.gd
+* test_legacy_owner_checks_fail_closed_and_preserve_committed_bytes
+* test_legacy_nonempty_and_invalid_claims_are_never_deleted
+* test_disk_roundtrip_new_repository_and_growth_integer_precision
+* test_corrupt_latest_recovers_previous_preserves_bytes_before_next_commit
+* test_both_corrupt_and_future_versions_never_start_over
+* test_future_schema_and_policy_mismatch_block_fallback_to_supported_slot
+* test_codec_rejects_bad_hash_types_utf8_and_noncanonical_ints
+* test_inactive_generation_removal_and_publication_faults_recover_whole_state
+* test_real_write_path_failure_does_not_commit_or_publish
+* test_recovery_preservation_failure_keeps_damaged_original
+* test_stale_session_and_unobserved_recovery_cannot_overwrite
+* test_same_process_claim_busy_and_pending_only_initial_save
+* test_boot_uses_existing_identity_and_retains_recovery_notice
+* test_divergent_same_revision_and_session_identity_fail_closed
+* test_saved_v1_fixtures_roundtrip_and_replay_clear_exactly
+15/15 passed.
+
+
+res://tests/unit/test_game_session.gd
+* test_initial_supply_commits_before_exposure_and_resume_draws_nothing
+* test_invalid_placements_preserve_board_queue_score_rng_and_event_id
+* test_manual_crossing_clear_counts_union_and_keeps_tray_checkpoint
+* test_full_board_clear_sixteen_lines_and_two_segment_crossings
+* test_auto_confirmation_cancel_and_confirm_are_one_commit
+* test_auto_placement_detects_success_before_clear_and_refills_once
+* test_old_pending_line_does_not_count_as_new_batch_success
+* test_failed_save_rolls_back_refill_and_retry_matches_control
+* test_ambiguous_commit_requires_resume_and_never_reawards
+* test_competing_writer_cannot_overwrite_committed_state
+* test_duplicate_out_of_order_and_stale_batch_do_not_consume
+* test_new_run_preserves_growth_records_mode_and_advances_identity
+* test_materials_and_every_defined_part_have_cumulative_route
+* test_material_progress_counts_lower_tiers_and_unlocks_parts_same_event
+* test_segment_edits_representative_and_new_wood_segments_are_preserved
+* test_bad_snapshots_versions_numeric_types_and_styles_are_rejected
+* test_repository_reentrancy_is_rejected_until_commit_finishes
+* test_mid_tray_game_over_ends_streak_without_settling_or_losing_growth
+* test_action_sequence_replay_matches_across_forty_session_resumes
+* test_counter_boundary_rejects_entire_candidate_without_commit
+20/20 passed.
+
+
+res://tests/unit/test_piece_generator.gd
+* test_catalog_geometry_unique_connected_normalized_and_legacy_preserved
+* test_integer_ticket_boundaries_exhaustive
+* test_config_errors_and_defensive_snapshot
+* test_strict_int64_and_checkpoint_validation
+* test_bad_input_and_nonempty_tray_do_not_change_owned_state
+* test_post_clear_union_and_must_clear_before_game_over
+* test_exhaustive_512_local_masks_match_independent_coordinate_oracle
+* test_deterministic_json_resume_and_board_ownership
+* test_bounded_fallback_zero_weights_and_no_enabled_fit
+* test_raw_control_has_no_easy_injection_and_old_checkpoint_rejected
+* test_each_piece_fit_does_not_imply_whole_tray_solution
+* test_easy_fallback_and_replacement_slots_and_config_identity
+12/12 passed.
+
+
+res://tests/unit/test_piece_generator_redteam.gd
+* test_every_piece_at_every_legal_origin_has_current_witness
+* test_random_full_board_positive_and_negative_decisions_match_oracle
+* test_all_active_family_subsets_obey_conditional_guarantee
+* test_later_current_piece_beats_earlier_post_clear_piece_and_output_is_owned
+4/4 passed.
+
+
+res://tests/unit/test_piece_supply.gd
+* test_crossing_lines_count_as_two_and_keep_manual_clear_available
+* test_empty_tray_requires_refill_before_game_over
+* test_rng_roundtrip_preserves_next_batch
+* test_unknown_id_is_rejected_even_when_another_piece_fits
+* test_board_status_does_not_modify_input
+* test_integer_weight_boundaries_and_zero_weight
+6/6 passed.
+
+
+res://tests/unit/test_piece_supply_checks.gd
+* test_ported_baseline_checks_pass_on_game_target
+1/1 passed.
+
+
+res://tests/unit/test_presentation.gd
+* test_clear_geometry_contains_union_and_styles_before_automatic_removal
+* test_preview_uses_commit_validator_and_does_not_change_state
+* test_pointer_origin_and_owner_prevent_duplicate_or_clamped_drop
+* test_stale_drag_and_confirmation_never_commit_new_state
+* test_failed_commit_has_no_presentation_uncertainty_locks_until_attach
+* test_settings_roundtrip_is_separate_and_corrupt_original_is_preserved
+* test_real_screen_clear_and_interrupt_restore_input_and_exact_hud
+* test_screen_auto_modal_cancel_and_confirm_commit_once
+* test_back_closes_modal_then_tower_and_cancels_drag_without_commit
+* test_sixteen_line_payload_is_unique_and_precise
+* test_touch_cancellation_and_focus_loss_do_not_place_or_leave_drag
+* test_recovery_modal_cannot_be_dismissed_into_a_frozen_screen
+* test_new_run_from_tower_preserves_growth_and_resets_hud
+* test_audio_off_does_not_start_players_and_history_is_bounded
+* test_resize_preserves_mandatory_recovery_action
+* test_resumed_below_best_run_announces_first_new_record_once
+* test_tower_roof_tracks_actual_top_across_segment_boundary
+* test_assist_nearest_edge_hysteresis_and_exact_release_share_validator
+* test_assist_does_not_pull_from_outside_or_write_during_preview
+* test_assist_all_catalog_shapes_preview_and_commit_same_bottom_edge_cells
+* test_full_width_board_and_top_navigation_fit_compact_and_tall
+* test_clear_unlocks_before_tail_and_interruption_cannot_repeat_reward
+* test_compact_safe_insets_fit_board_and_action
+    24 Orphans
+        * [@Button@1531:<Button#1891966650555>]
+        * [@Label@1545:<Label#1893661149459>]
+        * [@Button@1539:<Button#1893057169703>]
+        * [@Label@1542:<Label#1893493377408>]
+        * [@Label@1538:<Label#1893023615432>]
+        * [@Label@1540:<Label#1893409491404>]
+        * [@Label@1530:<Label#1891933096406>]
+        * [@Label@1553:<Label#1893996694160>]
+        * [@Label@1552:<Label#1893963139730>]
+        * [@Label@1550:<Label#1893862476438>]
+        * [@Button@1551:<Button#1893896030871>]
+        * [@Label@1548:<Label#1893761813148>]
+        * [@Button@1549:<Button#1893795367582>]
+        * [@Label@1547:<Label#1893728258720>]
+        * [@Label@1546:<Label#1893694704290>]
+        * [@Button@1532:<Button#1892755180211>]
+        * [@Label@1533:<Label#1892822289079>]
+        * [@Label@1534:<Label#1892855843512>]
+        * [@Label@1535:<Label#1892889397948>]
+        * [@Label@1536:<Label#1892922952381>]
+        * [@Button@1537:<Button#1892956506814>]
+        * [@Label@1541:<Label#1893443046087>]
+        * [@Button@1543:<Button#1893526932171>]
+        * [@Button@1544:<Button#1893594041042>]
+* test_reward_stays_off_board_and_new_pick_restores_hint
+24/24 passed.
+
+
+
+
+==============================================
+= Run Summary
+==============================================
+
+Totals
+------
+Scripts               9
+Tests                95
+Passing Tests        95
+Asserts            3027
+Time              30.199s
+
+
+---- All tests passed! ----
+
+Results saved to C:/DEV/Games/Blocktower/tools/out/gut_unit.xml
+
+
+[blocktower] GUT result: suites=9 tests=95 failures=0 errors=0 pending=0 exit=0
+[PASS] W1 test run complete.

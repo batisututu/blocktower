@@ -1,0 +1,8 @@
+{
+  "package": "com.blocktower.game.qa",
+  "apk_sha256": "1cbf2f0b58ed5061a23ff9aab25ef62d80aeb9fed4c827ad4c99e1fa3c30d768",
+  "same_runtime_as_main": true,
+  "difference": "package name/app label only, controlled QA save fixture",
+  "input": "Android adb input swipe/tap, not injected Godot events",
+  "fixture_scope": "QA package only, main app data never replaced"
+}

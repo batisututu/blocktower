@@ -1,0 +1,27 @@
+PASS initial full state committed
+PASS fresh process restores exact state
+PASS actual app scene boots from disk
+PASS before_write: writer reached checkpoint
+PASS live unrelated process claim is respected
+PASS before_write: killed process restores whole generation
+PASS after_write: writer reached checkpoint
+PASS after_write: killed process restores whole generation
+PASS after_verify: writer reached checkpoint
+PASS after_verify: killed process restores whole generation
+PASS after_preserve: writer reached checkpoint
+PASS after_preserve: killed process restores whole generation
+PASS after_remove_target: writer reached checkpoint
+PASS after_remove_target: killed process restores whole generation
+PASS after_publish: writer reached checkpoint
+PASS after_publish: killed process restores whole generation
+PASS post-publication restart cannot award clear twice
+PASS normal clear commits expected points floors and queue
+PASS another fresh process sees committed clear
+PASS corrupt latest falls back with explicit notice
+PASS recovered app scene exposes recovery result
+PASS recovered state can commit again
+PASS damaged original bytes are preserved
+PASS both corrupt block silent initialization
+PASS actual app scene presents save failure path
+PASS real read-only write failure preserves current generation
+PASS W3 restart 26 checks; report C:\DEV\Games\Blocktower\tools\out\w3_restart_285220b24447\summary.json

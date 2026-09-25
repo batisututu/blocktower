@@ -1,0 +1,1266 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-21T07:35:13.318840+00:00",
+  "title": "Design System: Blocktower W0 and W4",
+  "extensions": {
+    "colorMeta": {
+      "charcoal": {
+        "role": "neutral",
+        "displayName": "Charcoal",
+        "tonalRamp": [
+          "oklch(15.00% 0.01608 232.61)",
+          "oklch(26.43% 0.01608 232.61)",
+          "oklch(37.86% 0.01608 232.61)",
+          "oklch(49.29% 0.01608 232.61)",
+          "oklch(60.71% 0.01608 232.61)",
+          "oklch(72.14% 0.01608 232.61)",
+          "oklch(83.57% 0.01608 232.61)",
+          "oklch(95.00% 0.01608 232.61)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.02158 226.09)",
+          "oklch(26.43% 0.02158 226.09)",
+          "oklch(37.86% 0.02158 226.09)",
+          "oklch(49.29% 0.02158 226.09)",
+          "oklch(60.71% 0.02158 226.09)",
+          "oklch(72.14% 0.02158 226.09)",
+          "oklch(83.57% 0.02158 226.09)",
+          "oklch(95.00% 0.02158 226.09)"
+        ]
+      },
+      "ivory": {
+        "role": "neutral",
+        "displayName": "Ivory",
+        "tonalRamp": [
+          "oklch(15.00% 0.01967 87.51)",
+          "oklch(26.43% 0.01967 87.51)",
+          "oklch(37.86% 0.01967 87.51)",
+          "oklch(49.29% 0.01967 87.51)",
+          "oklch(60.71% 0.01967 87.51)",
+          "oklch(72.14% 0.01967 87.51)",
+          "oklch(83.57% 0.01967 87.51)",
+          "oklch(95.00% 0.01967 87.51)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15.00% 0.01559 186.61)",
+          "oklch(26.43% 0.01559 186.61)",
+          "oklch(37.86% 0.01559 186.61)",
+          "oklch(49.29% 0.01559 186.61)",
+          "oklch(60.71% 0.01559 186.61)",
+          "oklch(72.14% 0.01559 186.61)",
+          "oklch(83.57% 0.01559 186.61)",
+          "oklch(95.00% 0.01559 186.61)"
+        ]
+      },
+      "brass": {
+        "role": "primary",
+        "displayName": "Brass",
+        "tonalRamp": [
+          "oklch(15.00% 0.11156 86.05)",
+          "oklch(26.43% 0.11156 86.05)",
+          "oklch(37.86% 0.11156 86.05)",
+          "oklch(49.29% 0.11156 86.05)",
+          "oklch(60.71% 0.11156 86.05)",
+          "oklch(72.14% 0.11156 86.05)",
+          "oklch(83.57% 0.11156 86.05)",
+          "oklch(95.00% 0.11156 86.05)"
+        ]
+      },
+      "mint": {
+        "role": "primary",
+        "displayName": "Mint",
+        "tonalRamp": [
+          "oklch(15.00% 0.05622 164.49)",
+          "oklch(26.43% 0.05622 164.49)",
+          "oklch(37.86% 0.05622 164.49)",
+          "oklch(49.29% 0.05622 164.49)",
+          "oklch(60.71% 0.05622 164.49)",
+          "oklch(72.14% 0.05622 164.49)",
+          "oklch(83.57% 0.05622 164.49)",
+          "oklch(95.00% 0.05622 164.49)"
+        ]
+      },
+      "board": {
+        "role": "neutral",
+        "displayName": "Board",
+        "tonalRamp": [
+          "oklch(15.00% 0.01542 227.08)",
+          "oklch(26.43% 0.01542 227.08)",
+          "oklch(37.86% 0.01542 227.08)",
+          "oklch(49.29% 0.01542 227.08)",
+          "oklch(60.71% 0.01542 227.08)",
+          "oklch(72.14% 0.01542 227.08)",
+          "oklch(83.57% 0.01542 227.08)",
+          "oklch(95.00% 0.01542 227.08)"
+        ]
+      },
+      "board-border": {
+        "role": "neutral",
+        "displayName": "Board Border",
+        "tonalRamp": [
+          "oklch(15.00% 0.02061 220.01)",
+          "oklch(26.43% 0.02061 220.01)",
+          "oklch(37.86% 0.02061 220.01)",
+          "oklch(49.29% 0.02061 220.01)",
+          "oklch(60.71% 0.02061 220.01)",
+          "oklch(72.14% 0.02061 220.01)",
+          "oklch(83.57% 0.02061 220.01)",
+          "oklch(95.00% 0.02061 220.01)"
+        ]
+      },
+      "empty-cell": {
+        "role": "neutral",
+        "displayName": "Empty Cell",
+        "tonalRamp": [
+          "oklch(15.00% 0.02157 220.29)",
+          "oklch(26.43% 0.02157 220.29)",
+          "oklch(37.86% 0.02157 220.29)",
+          "oklch(49.29% 0.02157 220.29)",
+          "oklch(60.71% 0.02157 220.29)",
+          "oklch(72.14% 0.02157 220.29)",
+          "oklch(83.57% 0.02157 220.29)",
+          "oklch(95.00% 0.02157 220.29)"
+        ]
+      },
+      "disabled": {
+        "role": "neutral",
+        "displayName": "Disabled",
+        "tonalRamp": [
+          "oklch(15.00% 0.01945 223.33)",
+          "oklch(26.43% 0.01945 223.33)",
+          "oklch(37.86% 0.01945 223.33)",
+          "oklch(49.29% 0.01945 223.33)",
+          "oklch(60.71% 0.01945 223.33)",
+          "oklch(72.14% 0.01945 223.33)",
+          "oklch(83.57% 0.01945 223.33)",
+          "oklch(95.00% 0.01945 223.33)"
+        ]
+      },
+      "panel-border": {
+        "role": "neutral",
+        "displayName": "Panel Border",
+        "tonalRamp": [
+          "oklch(15.00% 0.01860 206.36)",
+          "oklch(26.43% 0.01860 206.36)",
+          "oklch(37.86% 0.01860 206.36)",
+          "oklch(49.29% 0.01860 206.36)",
+          "oklch(60.71% 0.01860 206.36)",
+          "oklch(72.14% 0.01860 206.36)",
+          "oklch(83.57% 0.01860 206.36)",
+          "oklch(95.00% 0.01860 206.36)"
+        ]
+      },
+      "terracotta": {
+        "role": "secondary",
+        "displayName": "Terracotta",
+        "tonalRamp": [
+          "oklch(15.00% 0.10929 37.12)",
+          "oklch(26.43% 0.10929 37.12)",
+          "oklch(37.86% 0.10929 37.12)",
+          "oklch(49.29% 0.10929 37.12)",
+          "oklch(60.71% 0.10929 37.12)",
+          "oklch(72.14% 0.10929 37.12)",
+          "oklch(83.57% 0.10929 37.12)",
+          "oklch(95.00% 0.10929 37.12)"
+        ]
+      },
+      "ochre": {
+        "role": "secondary",
+        "displayName": "Ochre",
+        "tonalRamp": [
+          "oklch(15.00% 0.11048 82.58)",
+          "oklch(26.43% 0.11048 82.58)",
+          "oklch(37.86% 0.11048 82.58)",
+          "oklch(49.29% 0.11048 82.58)",
+          "oklch(60.71% 0.11048 82.58)",
+          "oklch(72.14% 0.11048 82.58)",
+          "oklch(83.57% 0.11048 82.58)",
+          "oklch(95.00% 0.11048 82.58)"
+        ]
+      },
+      "sage": {
+        "role": "secondary",
+        "displayName": "Sage",
+        "tonalRamp": [
+          "oklch(15.00% 0.04916 166.47)",
+          "oklch(26.43% 0.04916 166.47)",
+          "oklch(37.86% 0.04916 166.47)",
+          "oklch(49.29% 0.04916 166.47)",
+          "oklch(60.71% 0.04916 166.47)",
+          "oklch(72.14% 0.04916 166.47)",
+          "oklch(83.57% 0.04916 166.47)",
+          "oklch(95.00% 0.04916 166.47)"
+        ]
+      },
+      "steel": {
+        "role": "secondary",
+        "displayName": "Steel",
+        "tonalRamp": [
+          "oklch(15.00% 0.04356 229.03)",
+          "oklch(26.43% 0.04356 229.03)",
+          "oklch(37.86% 0.04356 229.03)",
+          "oklch(49.29% 0.04356 229.03)",
+          "oklch(60.71% 0.04356 229.03)",
+          "oklch(72.14% 0.04356 229.03)",
+          "oklch(83.57% 0.04356 229.03)",
+          "oklch(95.00% 0.04356 229.03)"
+        ]
+      },
+      "sand": {
+        "role": "secondary",
+        "displayName": "Sand",
+        "tonalRamp": [
+          "oklch(15.00% 0.06571 66.40)",
+          "oklch(26.43% 0.06571 66.40)",
+          "oklch(37.86% 0.06571 66.40)",
+          "oklch(49.29% 0.06571 66.40)",
+          "oklch(60.71% 0.06571 66.40)",
+          "oklch(72.14% 0.06571 66.40)",
+          "oklch(83.57% 0.06571 66.40)",
+          "oklch(95.00% 0.06571 66.40)"
+        ]
+      },
+      "lavender": {
+        "role": "secondary",
+        "displayName": "Lavender",
+        "tonalRamp": [
+          "oklch(15.00% 0.05249 305.02)",
+          "oklch(26.43% 0.05249 305.02)",
+          "oklch(37.86% 0.05249 305.02)",
+          "oklch(49.29% 0.05249 305.02)",
+          "oklch(60.71% 0.05249 305.02)",
+          "oklch(72.14% 0.05249 305.02)",
+          "oklch(83.57% 0.05249 305.02)",
+          "oklch(95.00% 0.05249 305.02)"
+        ]
+      },
+      "invalid": {
+        "role": "secondary",
+        "displayName": "Invalid",
+        "tonalRamp": [
+          "oklch(15.00% 0.11119 32.74)",
+          "oklch(26.43% 0.11119 32.74)",
+          "oklch(37.86% 0.11119 32.74)",
+          "oklch(49.29% 0.11119 32.74)",
+          "oklch(60.71% 0.11119 32.74)",
+          "oklch(72.14% 0.11119 32.74)",
+          "oklch(83.57% 0.11119 32.74)",
+          "oklch(95.00% 0.11119 32.74)"
+        ]
+      },
+      "wood": {
+        "role": "secondary",
+        "displayName": "Wood",
+        "tonalRamp": [
+          "oklch(15.00% 0.07507 65.94)",
+          "oklch(26.43% 0.07507 65.94)",
+          "oklch(37.86% 0.07507 65.94)",
+          "oklch(49.29% 0.07507 65.94)",
+          "oklch(60.71% 0.07507 65.94)",
+          "oklch(72.14% 0.07507 65.94)",
+          "oklch(83.57% 0.07507 65.94)",
+          "oklch(95.00% 0.07507 65.94)"
+        ]
+      },
+      "wood-edge": {
+        "role": "secondary",
+        "displayName": "Wood Edge",
+        "tonalRamp": [
+          "oklch(15.00% 0.04942 55.78)",
+          "oklch(26.43% 0.04942 55.78)",
+          "oklch(37.86% 0.04942 55.78)",
+          "oklch(49.29% 0.04942 55.78)",
+          "oklch(60.71% 0.04942 55.78)",
+          "oklch(72.14% 0.04942 55.78)",
+          "oklch(83.57% 0.04942 55.78)",
+          "oklch(95.00% 0.04942 55.78)"
+        ]
+      },
+      "wood-trim": {
+        "role": "secondary",
+        "displayName": "Wood Trim",
+        "tonalRamp": [
+          "oklch(15.00% 0.08307 77.06)",
+          "oklch(26.43% 0.08307 77.06)",
+          "oklch(37.86% 0.08307 77.06)",
+          "oklch(49.29% 0.08307 77.06)",
+          "oklch(60.71% 0.08307 77.06)",
+          "oklch(72.14% 0.08307 77.06)",
+          "oklch(83.57% 0.08307 77.06)",
+          "oklch(95.00% 0.08307 77.06)"
+        ]
+      },
+      "wood-window": {
+        "role": "secondary",
+        "displayName": "Wood Window",
+        "tonalRamp": [
+          "oklch(15.00% 0.02881 213.40)",
+          "oklch(26.43% 0.02881 213.40)",
+          "oklch(37.86% 0.02881 213.40)",
+          "oklch(49.29% 0.02881 213.40)",
+          "oklch(60.71% 0.02881 213.40)",
+          "oklch(72.14% 0.02881 213.40)",
+          "oklch(83.57% 0.02881 213.40)",
+          "oklch(95.00% 0.02881 213.40)"
+        ]
+      },
+      "cornice": {
+        "role": "secondary",
+        "displayName": "Cornice",
+        "tonalRamp": [
+          "oklch(15.00% 0.05338 59.79)",
+          "oklch(26.43% 0.05338 59.79)",
+          "oklch(37.86% 0.05338 59.79)",
+          "oklch(49.29% 0.05338 59.79)",
+          "oklch(60.71% 0.05338 59.79)",
+          "oklch(72.14% 0.05338 59.79)",
+          "oklch(83.57% 0.05338 59.79)",
+          "oklch(95.00% 0.05338 59.79)"
+        ]
+      },
+      "roof": {
+        "role": "secondary",
+        "displayName": "Roof",
+        "tonalRamp": [
+          "oklch(15.00% 0.03001 178.06)",
+          "oklch(26.43% 0.03001 178.06)",
+          "oklch(37.86% 0.03001 178.06)",
+          "oklch(49.29% 0.03001 178.06)",
+          "oklch(60.71% 0.03001 178.06)",
+          "oklch(72.14% 0.03001 178.06)",
+          "oklch(83.57% 0.03001 178.06)",
+          "oklch(95.00% 0.03001 178.06)"
+        ]
+      },
+      "roof-edge": {
+        "role": "secondary",
+        "displayName": "Roof Edge",
+        "tonalRamp": [
+          "oklch(15.00% 0.02513 158.97)",
+          "oklch(26.43% 0.02513 158.97)",
+          "oklch(37.86% 0.02513 158.97)",
+          "oklch(49.29% 0.02513 158.97)",
+          "oklch(60.71% 0.02513 158.97)",
+          "oklch(72.14% 0.02513 158.97)",
+          "oklch(83.57% 0.02513 158.97)",
+          "oklch(95.00% 0.02513 158.97)"
+        ]
+      },
+      "base": {
+        "role": "secondary",
+        "displayName": "Base",
+        "tonalRamp": [
+          "oklch(15.00% 0.02355 69.65)",
+          "oklch(26.43% 0.02355 69.65)",
+          "oklch(37.86% 0.02355 69.65)",
+          "oklch(49.29% 0.02355 69.65)",
+          "oklch(60.71% 0.02355 69.65)",
+          "oklch(72.14% 0.02355 69.65)",
+          "oklch(83.57% 0.02355 69.65)",
+          "oklch(95.00% 0.02355 69.65)"
+        ]
+      },
+      "base-edge": {
+        "role": "secondary",
+        "displayName": "Base Edge",
+        "tonalRamp": [
+          "oklch(15.00% 0.04183 83.09)",
+          "oklch(26.43% 0.04183 83.09)",
+          "oklch(37.86% 0.04183 83.09)",
+          "oklch(49.29% 0.04183 83.09)",
+          "oklch(60.71% 0.04183 83.09)",
+          "oklch(72.14% 0.04183 83.09)",
+          "oklch(83.57% 0.04183 83.09)",
+          "oklch(95.00% 0.04183 83.09)"
+        ]
+      },
+      "w4-ink": {
+        "role": "neutral",
+        "displayName": "W4 Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.03512 81.27)",
+          "oklch(26.43% 0.03512 81.27)",
+          "oklch(37.86% 0.03512 81.27)",
+          "oklch(49.29% 0.03512 81.27)",
+          "oklch(60.71% 0.03512 81.27)",
+          "oklch(72.14% 0.03512 81.27)",
+          "oklch(83.57% 0.03512 81.27)",
+          "oklch(95.00% 0.03512 81.27)"
+        ]
+      },
+      "w4-muted": {
+        "role": "neutral",
+        "displayName": "W4 Muted",
+        "tonalRamp": [
+          "oklch(15.00% 0.04687 80.01)",
+          "oklch(26.43% 0.04687 80.01)",
+          "oklch(37.86% 0.04687 80.01)",
+          "oklch(49.29% 0.04687 80.01)",
+          "oklch(60.71% 0.04687 80.01)",
+          "oklch(72.14% 0.04687 80.01)",
+          "oklch(83.57% 0.04687 80.01)",
+          "oklch(95.00% 0.04687 80.01)"
+        ]
+      },
+      "w4-gold": {
+        "role": "primary",
+        "displayName": "W4 Gold",
+        "tonalRamp": [
+          "oklch(15.00% 0.11653 80.86)",
+          "oklch(26.43% 0.11653 80.86)",
+          "oklch(37.86% 0.11653 80.86)",
+          "oklch(49.29% 0.11653 80.86)",
+          "oklch(60.71% 0.11653 80.86)",
+          "oklch(72.14% 0.11653 80.86)",
+          "oklch(83.57% 0.11653 80.86)",
+          "oklch(95.00% 0.11653 80.86)"
+        ]
+      },
+      "w4-ready": {
+        "role": "primary",
+        "displayName": "W4 Ready",
+        "tonalRamp": [
+          "oklch(15.00% 0.07625 125.61)",
+          "oklch(26.43% 0.07625 125.61)",
+          "oklch(37.86% 0.07625 125.61)",
+          "oklch(49.29% 0.07625 125.61)",
+          "oklch(60.71% 0.07625 125.61)",
+          "oklch(72.14% 0.07625 125.61)",
+          "oklch(83.57% 0.07625 125.61)",
+          "oklch(95.00% 0.07625 125.61)"
+        ]
+      },
+      "w4-primary-text": {
+        "role": "neutral",
+        "displayName": "W4 Primary Text",
+        "tonalRamp": [
+          "oklch(15.00% 0.02193 66.24)",
+          "oklch(26.43% 0.02193 66.24)",
+          "oklch(37.86% 0.02193 66.24)",
+          "oklch(49.29% 0.02193 66.24)",
+          "oklch(60.71% 0.02193 66.24)",
+          "oklch(72.14% 0.02193 66.24)",
+          "oklch(83.57% 0.02193 66.24)",
+          "oklch(95.00% 0.02193 66.24)"
+        ]
+      },
+      "w4-disabled-text": {
+        "role": "neutral",
+        "displayName": "W4 Disabled Text",
+        "tonalRamp": [
+          "oklch(15.00% 0.03111 80.61)",
+          "oklch(26.43% 0.03111 80.61)",
+          "oklch(37.86% 0.03111 80.61)",
+          "oklch(49.29% 0.03111 80.61)",
+          "oklch(60.71% 0.03111 80.61)",
+          "oklch(72.14% 0.03111 80.61)",
+          "oklch(83.57% 0.03111 80.61)",
+          "oklch(95.00% 0.03111 80.61)"
+        ]
+      },
+      "w4-invalid": {
+        "role": "neutral",
+        "displayName": "W4 Invalid",
+        "tonalRamp": [
+          "oklch(15.00% 0.09860 34.83)",
+          "oklch(26.43% 0.09860 34.83)",
+          "oklch(37.86% 0.09860 34.83)",
+          "oklch(49.29% 0.09860 34.83)",
+          "oklch(60.71% 0.09860 34.83)",
+          "oklch(72.14% 0.09860 34.83)",
+          "oklch(83.57% 0.09860 34.83)",
+          "oklch(95.00% 0.09860 34.83)"
+        ]
+      },
+      "b-sage": {
+        "role": "secondary",
+        "displayName": "B Sage",
+        "tonalRamp": [
+          "oklch(15.00% 0.06133 138.14)",
+          "oklch(26.43% 0.06133 138.14)",
+          "oklch(37.86% 0.06133 138.14)",
+          "oklch(49.29% 0.06133 138.14)",
+          "oklch(60.71% 0.06133 138.14)",
+          "oklch(72.14% 0.06133 138.14)",
+          "oklch(83.57% 0.06133 138.14)",
+          "oklch(95.00% 0.06133 138.14)"
+        ]
+      },
+      "b-clay": {
+        "role": "secondary",
+        "displayName": "B Clay",
+        "tonalRamp": [
+          "oklch(15.00% 0.10229 50.77)",
+          "oklch(26.43% 0.10229 50.77)",
+          "oklch(37.86% 0.10229 50.77)",
+          "oklch(49.29% 0.10229 50.77)",
+          "oklch(60.71% 0.10229 50.77)",
+          "oklch(72.14% 0.10229 50.77)",
+          "oklch(83.57% 0.10229 50.77)",
+          "oklch(95.00% 0.10229 50.77)"
+        ]
+      },
+      "b-sand": {
+        "role": "secondary",
+        "displayName": "B Sand",
+        "tonalRamp": [
+          "oklch(15.00% 0.05598 81.27)",
+          "oklch(26.43% 0.05598 81.27)",
+          "oklch(37.86% 0.05598 81.27)",
+          "oklch(49.29% 0.05598 81.27)",
+          "oklch(60.71% 0.05598 81.27)",
+          "oklch(72.14% 0.05598 81.27)",
+          "oklch(83.57% 0.05598 81.27)",
+          "oklch(95.00% 0.05598 81.27)"
+        ]
+      },
+      "b-gold": {
+        "role": "secondary",
+        "displayName": "B Gold",
+        "tonalRamp": [
+          "oklch(15.00% 0.11731 81.86)",
+          "oklch(26.43% 0.11731 81.86)",
+          "oklch(37.86% 0.11731 81.86)",
+          "oklch(49.29% 0.11731 81.86)",
+          "oklch(60.71% 0.11731 81.86)",
+          "oklch(72.14% 0.11731 81.86)",
+          "oklch(83.57% 0.11731 81.86)",
+          "oklch(95.00% 0.11731 81.86)"
+        ]
+      },
+      "b-violet": {
+        "role": "secondary",
+        "displayName": "B Violet",
+        "tonalRamp": [
+          "oklch(15.00% 0.07852 312.86)",
+          "oklch(26.43% 0.07852 312.86)",
+          "oklch(37.86% 0.07852 312.86)",
+          "oklch(49.29% 0.07852 312.86)",
+          "oklch(60.71% 0.07852 312.86)",
+          "oklch(72.14% 0.07852 312.86)",
+          "oklch(83.57% 0.07852 312.86)",
+          "oklch(95.00% 0.07852 312.86)"
+        ]
+      },
+      "b-blue": {
+        "role": "secondary",
+        "displayName": "B Blue",
+        "tonalRamp": [
+          "oklch(15.00% 0.05747 223.23)",
+          "oklch(26.43% 0.05747 223.23)",
+          "oklch(37.86% 0.05747 223.23)",
+          "oklch(49.29% 0.05747 223.23)",
+          "oklch(60.71% 0.05747 223.23)",
+          "oklch(72.14% 0.05747 223.23)",
+          "oklch(83.57% 0.05747 223.23)",
+          "oklch(95.00% 0.05747 223.23)"
+        ]
+      },
+      "b-panel-top": {
+        "role": "neutral",
+        "displayName": "B Panel Top",
+        "tonalRamp": [
+          "oklch(15.00% 0.03891 67.84)",
+          "oklch(26.43% 0.03891 67.84)",
+          "oklch(37.86% 0.03891 67.84)",
+          "oklch(49.29% 0.03891 67.84)",
+          "oklch(60.71% 0.03891 67.84)",
+          "oklch(72.14% 0.03891 67.84)",
+          "oklch(83.57% 0.03891 67.84)",
+          "oklch(95.00% 0.03891 67.84)"
+        ]
+      },
+      "b-panel-bottom": {
+        "role": "neutral",
+        "displayName": "B Panel Bottom",
+        "tonalRamp": [
+          "oklch(15.00% 0.01830 77.85)",
+          "oklch(26.43% 0.01830 77.85)",
+          "oklch(37.86% 0.01830 77.85)",
+          "oklch(49.29% 0.01830 77.85)",
+          "oklch(60.71% 0.01830 77.85)",
+          "oklch(72.14% 0.01830 77.85)",
+          "oklch(83.57% 0.01830 77.85)",
+          "oklch(95.00% 0.01830 77.85)"
+        ]
+      },
+      "b-panel-edge": {
+        "role": "neutral",
+        "displayName": "B Panel Edge",
+        "tonalRamp": [
+          "oklch(15.00% 0.07897 76.20)",
+          "oklch(26.43% 0.07897 76.20)",
+          "oklch(37.86% 0.07897 76.20)",
+          "oklch(49.29% 0.07897 76.20)",
+          "oklch(60.71% 0.07897 76.20)",
+          "oklch(72.14% 0.07897 76.20)",
+          "oklch(83.57% 0.07897 76.20)",
+          "oklch(95.00% 0.07897 76.20)"
+        ]
+      },
+      "b-tray-top": {
+        "role": "neutral",
+        "displayName": "B Tray Top",
+        "tonalRamp": [
+          "oklch(15.00% 0.02623 73.91)",
+          "oklch(26.43% 0.02623 73.91)",
+          "oklch(37.86% 0.02623 73.91)",
+          "oklch(49.29% 0.02623 73.91)",
+          "oklch(60.71% 0.02623 73.91)",
+          "oklch(72.14% 0.02623 73.91)",
+          "oklch(83.57% 0.02623 73.91)",
+          "oklch(95.00% 0.02623 73.91)"
+        ]
+      },
+      "b-tray-bottom": {
+        "role": "neutral",
+        "displayName": "B Tray Bottom",
+        "tonalRamp": [
+          "oklch(15.00% 0.01272 78.00)",
+          "oklch(26.43% 0.01272 78.00)",
+          "oklch(37.86% 0.01272 78.00)",
+          "oklch(49.29% 0.01272 78.00)",
+          "oklch(60.71% 0.01272 78.00)",
+          "oklch(72.14% 0.01272 78.00)",
+          "oklch(83.57% 0.01272 78.00)",
+          "oklch(95.00% 0.01272 78.00)"
+        ]
+      },
+      "b-tray-edge": {
+        "role": "neutral",
+        "displayName": "B Tray Edge",
+        "tonalRamp": [
+          "oklch(15.00% 0.06987 72.53)",
+          "oklch(26.43% 0.06987 72.53)",
+          "oklch(37.86% 0.06987 72.53)",
+          "oklch(49.29% 0.06987 72.53)",
+          "oklch(60.71% 0.06987 72.53)",
+          "oklch(72.14% 0.06987 72.53)",
+          "oklch(83.57% 0.06987 72.53)",
+          "oklch(95.00% 0.06987 72.53)"
+        ]
+      },
+      "b-board-top": {
+        "role": "neutral",
+        "displayName": "B Board Top",
+        "tonalRamp": [
+          "oklch(15.00% 0.02472 66.70)",
+          "oklch(26.43% 0.02472 66.70)",
+          "oklch(37.86% 0.02472 66.70)",
+          "oklch(49.29% 0.02472 66.70)",
+          "oklch(60.71% 0.02472 66.70)",
+          "oklch(72.14% 0.02472 66.70)",
+          "oklch(83.57% 0.02472 66.70)",
+          "oklch(95.00% 0.02472 66.70)"
+        ]
+      },
+      "b-board-bottom": {
+        "role": "neutral",
+        "displayName": "B Board Bottom",
+        "tonalRamp": [
+          "oklch(15.00% 0.01050 80.58)",
+          "oklch(26.43% 0.01050 80.58)",
+          "oklch(37.86% 0.01050 80.58)",
+          "oklch(49.29% 0.01050 80.58)",
+          "oklch(60.71% 0.01050 80.58)",
+          "oklch(72.14% 0.01050 80.58)",
+          "oklch(83.57% 0.01050 80.58)",
+          "oklch(95.00% 0.01050 80.58)"
+        ]
+      },
+      "b-board-edge": {
+        "role": "neutral",
+        "displayName": "B Board Edge",
+        "tonalRamp": [
+          "oklch(15.00% 0.05865 72.41)",
+          "oklch(26.43% 0.05865 72.41)",
+          "oklch(37.86% 0.05865 72.41)",
+          "oklch(49.29% 0.05865 72.41)",
+          "oklch(60.71% 0.05865 72.41)",
+          "oklch(72.14% 0.05865 72.41)",
+          "oklch(83.57% 0.05865 72.41)",
+          "oklch(95.00% 0.05865 72.41)"
+        ]
+      },
+      "b-button-top": {
+        "role": "primary",
+        "displayName": "B Button Top",
+        "tonalRamp": [
+          "oklch(15.00% 0.11769 78.43)",
+          "oklch(26.43% 0.11769 78.43)",
+          "oklch(37.86% 0.11769 78.43)",
+          "oklch(49.29% 0.11769 78.43)",
+          "oklch(60.71% 0.11769 78.43)",
+          "oklch(72.14% 0.11769 78.43)",
+          "oklch(83.57% 0.11769 78.43)",
+          "oklch(95.00% 0.11769 78.43)"
+        ]
+      },
+      "b-button-bottom": {
+        "role": "primary",
+        "displayName": "B Button Bottom",
+        "tonalRamp": [
+          "oklch(15.00% 0.11900 55.88)",
+          "oklch(26.43% 0.11900 55.88)",
+          "oklch(37.86% 0.11900 55.88)",
+          "oklch(49.29% 0.11900 55.88)",
+          "oklch(60.71% 0.11900 55.88)",
+          "oklch(72.14% 0.11900 55.88)",
+          "oklch(83.57% 0.11900 55.88)",
+          "oklch(95.00% 0.11900 55.88)"
+        ]
+      },
+      "b-button-edge": {
+        "role": "primary",
+        "displayName": "B Button Edge",
+        "tonalRamp": [
+          "oklch(15.00% 0.08421 85.31)",
+          "oklch(26.43% 0.08421 85.31)",
+          "oklch(37.86% 0.08421 85.31)",
+          "oklch(49.29% 0.08421 85.31)",
+          "oklch(60.71% 0.08421 85.31)",
+          "oklch(72.14% 0.08421 85.31)",
+          "oklch(83.57% 0.08421 85.31)",
+          "oklch(95.00% 0.08421 85.31)"
+        ]
+      },
+      "b-disabled-top": {
+        "role": "neutral",
+        "displayName": "B Disabled Top",
+        "tonalRamp": [
+          "oklch(15.00% 0.04067 73.62)",
+          "oklch(26.43% 0.04067 73.62)",
+          "oklch(37.86% 0.04067 73.62)",
+          "oklch(49.29% 0.04067 73.62)",
+          "oklch(60.71% 0.04067 73.62)",
+          "oklch(72.14% 0.04067 73.62)",
+          "oklch(83.57% 0.04067 73.62)",
+          "oklch(95.00% 0.04067 73.62)"
+        ]
+      },
+      "b-disabled-bottom": {
+        "role": "neutral",
+        "displayName": "B Disabled Bottom",
+        "tonalRamp": [
+          "oklch(15.00% 0.02586 74.03)",
+          "oklch(26.43% 0.02586 74.03)",
+          "oklch(37.86% 0.02586 74.03)",
+          "oklch(49.29% 0.02586 74.03)",
+          "oklch(60.71% 0.02586 74.03)",
+          "oklch(72.14% 0.02586 74.03)",
+          "oklch(83.57% 0.02586 74.03)",
+          "oklch(95.00% 0.02586 74.03)"
+        ]
+      },
+      "b-disabled-edge": {
+        "role": "neutral",
+        "displayName": "B Disabled Edge",
+        "tonalRamp": [
+          "oklch(15.00% 0.06215 76.59)",
+          "oklch(26.43% 0.06215 76.59)",
+          "oklch(37.86% 0.06215 76.59)",
+          "oklch(49.29% 0.06215 76.59)",
+          "oklch(60.71% 0.06215 76.59)",
+          "oklch(72.14% 0.06215 76.59)",
+          "oklch(83.57% 0.06215 76.59)",
+          "oklch(95.00% 0.06215 76.59)"
+        ]
+      },
+      "b-empty-face": {
+        "role": "neutral",
+        "displayName": "B Empty Face",
+        "tonalRamp": [
+          "oklch(15.00% 0.02685 83.05)",
+          "oklch(26.43% 0.02685 83.05)",
+          "oklch(37.86% 0.02685 83.05)",
+          "oklch(49.29% 0.02685 83.05)",
+          "oklch(60.71% 0.02685 83.05)",
+          "oklch(72.14% 0.02685 83.05)",
+          "oklch(83.57% 0.02685 83.05)",
+          "oklch(95.00% 0.02685 83.05)"
+        ]
+      },
+      "b-empty-edge": {
+        "role": "neutral",
+        "displayName": "B Empty Edge",
+        "tonalRamp": [
+          "oklch(15.00% 0.04385 76.93)",
+          "oklch(26.43% 0.04385 76.93)",
+          "oklch(37.86% 0.04385 76.93)",
+          "oklch(49.29% 0.04385 76.93)",
+          "oklch(60.71% 0.04385 76.93)",
+          "oklch(72.14% 0.04385 76.93)",
+          "oklch(83.57% 0.04385 76.93)",
+          "oklch(95.00% 0.04385 76.93)"
+        ]
+      },
+      "b-icon": {
+        "role": "neutral",
+        "displayName": "B Icon",
+        "tonalRamp": [
+          "oklch(15.00% 0.07516 83.15)",
+          "oklch(26.43% 0.07516 83.15)",
+          "oklch(37.86% 0.07516 83.15)",
+          "oklch(49.29% 0.07516 83.15)",
+          "oklch(60.71% 0.07516 83.15)",
+          "oklch(72.14% 0.07516 83.15)",
+          "oklch(83.57% 0.07516 83.15)",
+          "oklch(95.00% 0.07516 83.15)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Tower total",
+        "purpose": "Native tower count at weight 650."
+      },
+      "score": {
+        "displayName": "Puzzle score",
+        "purpose": "Native puzzle score at weight 650."
+      },
+      "body": {
+        "displayName": "Korean body",
+        "purpose": "Bundled Noto Sans KR variable font at weight 400."
+      },
+      "w4-score": {
+        "displayName": "W4 Score",
+        "purpose": "Current native B refinement; size/weight in DESIGN.md; long-number fallback documented separately."
+      },
+      "w4-heading": {
+        "displayName": "W4 Heading",
+        "purpose": "Current native B refinement; size/weight in DESIGN.md; long-number fallback documented separately."
+      },
+      "w4-action": {
+        "displayName": "W4 Action",
+        "purpose": "Current native B refinement; size/weight in DESIGN.md; long-number fallback documented separately."
+      },
+      "w4-body": {
+        "displayName": "W4 Body",
+        "purpose": "Current native B refinement; size/weight in DESIGN.md; long-number fallback documented separately."
+      },
+      "w4-label": {
+        "displayName": "W4 Label",
+        "purpose": "Current native B refinement; size/weight in DESIGN.md; long-number fallback documented separately."
+      },
+      "label": {
+        "displayName": "Historical W0 — Label",
+        "purpose": "Historical synthetic preview only; do not apply to current B surface."
+      },
+      "action": {
+        "displayName": "Historical W0 — Action",
+        "purpose": "Historical synthetic preview only; do not apply to current B surface."
+      },
+      "headline": {
+        "displayName": "Historical W0 — Headline",
+        "purpose": "Historical synthetic preview only; do not apply to current B surface."
+      },
+      "title": {
+        "displayName": "Historical W0 — Title",
+        "purpose": "Historical synthetic preview only; do not apply to current B surface."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "w4-button-down",
+        "value": "65ms; scale 0.955; cubic ease-out",
+        "purpose": "Enabled buttons; fixed layout rectangle; immediate color-only reduced motion."
+      },
+      {
+        "name": "w4-button-up",
+        "value": "120ms; scale 1; back ease-out",
+        "purpose": "Release and pointer exit."
+      },
+      {
+        "name": "w4-snap",
+        "value": "140ms; scale 0.78 → 1.06 → 1.0",
+        "purpose": "Committed placement; skipped with reduced motion."
+      },
+      {
+        "name": "w4-clear-input",
+        "value": "280ms",
+        "purpose": "Release input independently of decorative clear tail."
+      },
+      {
+        "name": "w4-clear-visual",
+        "value": "420ms",
+        "purpose": "Highlight, axis sweep, shrink and at most 36 deterministic fragments; skipped with reduced motion."
+      },
+      {
+        "name": "w4-placement-toast-hold",
+        "value": "450ms",
+        "purpose": "Ordinary placement reward in below-board hint strip."
+      },
+      {
+        "name": "w4-other-toast-hold",
+        "value": "1000ms",
+        "purpose": "Clear/error text; immediately dismissed by a new pickup."
+      },
+      {
+        "name": "w4-toast-fade",
+        "value": "150ms",
+        "purpose": "Restore hint after fading; remains in reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "w4-compact-usable-height",
+        "value": "680px",
+        "purpose": "Compact when logical height minus safe top/bottom insets is below this threshold."
+      }
+    ],
+    "translationNotes": [
+      "Native Godot is rendering authority. Current specimens inline actual authored SVG layers; their HTML/CSS approximates nine-slice and per-channel state modulation and is not fidelity evidence.",
+      "Unprefixed primitives and Historical W0 specimens remain historical only. Current B material gradients use frontmatter source colors; component backgroundColor denotes the lower gradient stop.",
+      "Tonal ramps are panel metadata, not additional runtime palette states."
+    ],
+    "notCanonized": [
+      "Native default settings-widget appearance.",
+      "Score downscaling floor and small captions are observed implementation, not approved accessibility minima.",
+      "Android safe areas, enlarged text, physical touch, device motion/audio/haptics and user final art approval."
+    ],
+    "referenceFidelity": {
+      "authority": "docs/디자인시안.png — B×2 puzzle and Wood tower",
+      "direction": "art_source/visual_bible/direction.md",
+      "status": "Historical B material refinement verdict; does not accept current gamefeel.",
+      "review": ".impeccable/review/fidelity/finish-review.md",
+      "notClaimed": [
+        "Pixel identity",
+        "User final approval",
+        "Android/W5 acceptance",
+        "Unrestricted whole-surface certification",
+        "Motion/audio certification"
+      ]
+    },
+    "historicalW0": {
+      "nativeEvidence": {
+        "renderer": "Godot desktop OpenGL",
+        "captures": "docs/design/captures/capture_manifest.json",
+        "captureCount": 13,
+        "logicalSizes": [
+          "320x568",
+          "360x800",
+          "412x915"
+        ],
+        "authority": "game/scripts/presentation/design_preview.gd",
+        "vectorAuthority": "art_source/build_vector_assets.py",
+        "limitations": [
+          "Synthetic fixtures; no actual drag, save, or GameSession integration.",
+          "Android portrait remains an assumption pending device preference.",
+          "No Android device, safe-area, enlarged-font, color-vision, or final acceptance claim.",
+          "Wood is first front-elevation SVG output; final 2.5D remains future work."
+        ]
+      },
+      "nativeStyles": {
+        "focus": "StyleBoxFlat transparent fill, 1px mint border, 12px radius",
+        "modalScrim": "Color(0.025, 0.05, 0.06, 0.85)",
+        "primaryHover": "GOLD.lightened(0.08)",
+        "primaryPressed": "GOLD.darkened(0.1)",
+        "secondaryHover": "SURFACE.lightened(0.07)",
+        "secondaryPressed": "SURFACE.darkened(0.15)"
+      },
+      "narrative": {
+        "northStar": "B Structural Frame",
+        "overview": "The supplied B identity lands as matte colored cells with inset architectural frames, a charcoal board, warm ivory text, brass actions, and quiet wood modules. This document records the reusable values in the native Godot W0 preview. It does not create a replacement identity or establish final production art.\n\nThe build is a synthetic state-review surface with Korean text and original SVG geometry. It has no actual drag placement, save integration, or GameSession connection. Android portrait remains a working assumption pending device preference; desktop Godot is the review host. Product and Korean policy authority remain in [PRODUCT.md](PRODUCT.md) and [the design and asset guide](docs/Blocktower_Design_Asset_Guide.md); this document records implementation rather than duplicating those policies.",
+        "keyCharacteristics": [
+          "Matte chamfered cells with a separate inset frame layer.",
+          "Static outlines, edge markers, symbols, and text identify preview states.",
+          "Brass primary actions and mint keyboard focus on charcoal surfaces.",
+          "Front-elevation wood modules with explicit shared attachment dimensions."
+        ],
+        "rules": [
+          {
+            "name": "The Action Contrast Rule",
+            "body": "Primary-button text stays charcoal in normal, hover, pressed, and focused states; focus adds a mint outline.",
+            "section": "colors"
+          }
+        ],
+        "dos": [
+          "Do derive new B cells and tray pieces from the shared cell and frame geometry.",
+          "Do preserve charcoal primary text through focus and retain the mint focus border.",
+          "Do keep the board hint reserve when adapting the compact preview layout.",
+          "Do label synthetic state and desktop rendering evidence accurately."
+        ],
+        "donts": [
+          "Don't replace the pinned B identity with glossy gem styling or an unrelated brand concept.",
+          "Don't treat the 9–10px preview footer as an approved body-text minimum.",
+          "Don't infer mobile verification, final acceptance, or completed gameplay from the W0 captures.",
+          "Don't treat front-elevation wood vectors as the final 2.5D production specification."
+        ]
+      },
+      "note": "Unprefixed tokens and original specimens preserve the rejected synthetic W0 preview; do not apply them to W4."
+    },
+    "nativeEvidence": {
+      "renderer": "Windows Godot OpenGL native viewport; no HTML detector",
+      "authority": "game/scripts/presentation/puzzle_screen.gd",
+      "captures": ".impeccable/review/gamefeel/summary.json",
+      "captureCount": 20,
+      "logicalSizes": [
+        "320x568",
+        "360x800",
+        "412x915"
+      ],
+      "motionFrames": 6,
+      "motionTimeline": ".impeccable/review/gamefeel/motion_360x800.timeline.json",
+      "tests": 82,
+      "assertions": 2843,
+      "verdict": ".impeccable/review/gamefeel/verdict-pass.json",
+      "disposition": "ship for GF-01/GF-02 corrections only",
+      "androidDisposition": "recapture",
+      "limitations": [
+        "State matrix, not every state at every resolution.",
+        "Windows input dispatch and simulated 24px insets; not physical Android touch or safe-area acceptance.",
+        "Instrumented motion readback is not a device latency benchmark.",
+        "ARM64 versionCode 3 APK built; absent Samsung device, not installed there.",
+        "Separate pre-fix QA emulator installation succeeded but SwiftShader shader linking failed with gray output; no Android visual pass.",
+        "Sound balance, haptics, Android Back/font-scale/dark-mode and user acceptance remain pending."
+      ]
+    },
+    "nativeStyles": {
+      "focus": "StyleBoxFlat transparent fill, 1px w4-ready border, w4-focus radius",
+      "modalScrim": "Color(0.08,0.06,0.04,0.94)",
+      "panelSource": "art_source/visual_bible/build_surfaces.py",
+      "themeBinding": "game/scripts/presentation/visual_bible_theme.gd",
+      "panelTextureMargin": "spacing.b-texture-margin",
+      "panelContentMargin": "spacing.b-content-margin",
+      "hoverModulation": [
+        1.08,
+        1.06,
+        1.02
+      ],
+      "pressedModulation": [
+        0.92,
+        0.91,
+        0.89
+      ],
+      "primaryText": "w4-primary-text in all enabled states; enabled buttons share scale and color modulation",
+      "backgroundFit": "TextureRect.STRETCH_SCALE full plate",
+      "cellDrawInset": 0.35,
+      "familyMap": [
+        "sage",
+        "clay",
+        "sand",
+        "clay",
+        "gold",
+        "sage",
+        "violet",
+        "blue",
+        "sage",
+        "clay",
+        "sand",
+        "blue",
+        "violet"
+      ],
+      "tower": {
+        "geometry": "game/assets/visual_bible/tower/geometry.json",
+        "editableSource": "art_source/visual_bible/render_tower.gd",
+        "scenes": "art_source/visual_bible/tower_scenes",
+        "moduleCount": 9,
+        "canvas": [
+          640,
+          480
+        ],
+        "anchor": [
+          320,
+          240
+        ],
+        "floorHeight": 1.18,
+        "floorStep": 106.468368530273,
+        "roofCourses": "UV/material-bound mesh; no floating seam geometry",
+        "widthBands": [
+          3,
+          3,
+          4
+        ],
+        "roof": "Global top only; width matched; cornice otherwise"
+      }
+    },
+    "designSync": {
+      "source": "DESIGN.md",
+      "algorithm": "sha256",
+      "sha256": "18e36045366b990b0f5098ec04fb2ab1b3f272c3c2b2bbaa3e078b15ee8d03d0"
+    },
+    "historicalFidelityEvidence": {
+      "renderer": "Windows Godot OpenGL native viewport; no HTML detector",
+      "authority": "game/scripts/presentation/puzzle_screen.gd",
+      "captures": "docs/implementation/fidelity_evidence_2026-09-21/native/summary.json",
+      "captureCount": 19,
+      "composition": "13 first-correction UI/background states plus six final roof/tower states",
+      "logicalSizes": [
+        "320x568",
+        "360x800",
+        "412x915"
+      ],
+      "limitations": [
+        "State matrix, not every state at every resolution.",
+        "Input.parse_input_event and isolated durable fixtures, not physical Android touch.",
+        "Scoped final review; no pixel identity or user approval."
+      ]
+    },
+    "nativeLayout": {
+      "contract": "art_source/gamefeel/direction.md",
+      "boardSide": "width - 24",
+      "navigationHeight": 48,
+      "scoreHeight": 48,
+      "clearHeight": 48,
+      "compactMinimumTestedUsableHeightAt320": 520,
+      "trayHeightNormal": 104,
+      "trayHeightCompact": "48–64, based on remaining usable height",
+      "trayCellUnit": "min(28, (trayWidth-16)/largestPieceWidth, (trayHeight-12)/largestPieceHeight)",
+      "ordinaryReward": "Below-board hint strip; new pickup dismisses reward and restores guidance."
+    },
+    "inputAssist": {
+      "acquireCells": 0.7,
+      "releaseCells": 0.9,
+      "search": "3x3 legal anchors",
+      "touchLiftCells": 1.4,
+      "authority": "game/scripts/presentation/presentation_controller.gd"
+    },
+    "documentationScope": "DESIGN.md, this sidecar and existing W4 surface brief only; Historical W0 preserved; PRODUCT drift remains outside scope.",
+    "deviceFollowup": {
+      "date": "2026-09-21",
+      "report": "docs/implementation/GameFeel_Device_Verification_2026-09-21.md",
+      "device": "SM-N981N Android13",
+      "version_code": 3,
+      "checks_passed": 26,
+      "scope": "Single-device installation/UI/input/clear/save smoke; full acceptance and subjective audio/haptics pending",
+      "native_video": "docs/implementation/gamefeel_device_evidence_2026-09-21/qa/motion.mp4"
+    }
+  },
+  "components": [
+    {
+      "name": "Historical W0 — Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Historical W0 only. Illustrative CSS translation of the native 48px dialog action; browser font rendering is not Godot evidence.",
+      "html": "<button class=\"ds-primary\">지우고 자동 켜기</button>",
+      "css": ".ds-primary{font-family:\"Noto Sans KR\",sans-serif;font-size:16px;font-weight:650;border:1px solid transparent;border-radius:12px;height:48px;width:280px;cursor:pointer;background:#dfba66;color:#182126}.ds-primary:hover{background:rgb(225.56 191.52 114.24)}.ds-primary:active{background:rgb(200.7 167.4 91.8)}.ds-primary:focus-visible{outline:1px solid #bdebd5;outline-offset:-1px;color:#182126}"
+    },
+    {
+      "name": "Historical W0 — Secondary action",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Historical W0 only. Native secondary action appearance, translated without additional motion.",
+      "html": "<button class=\"ds-secondary\">퍼즐로 돌아가기</button>",
+      "css": ".ds-secondary{font-family:\"Noto Sans KR\",sans-serif;font-size:16px;font-weight:650;border:1px solid transparent;border-radius:12px;height:48px;width:280px;cursor:pointer;background:#243238;color:#f3eddf}.ds-secondary:hover{background:rgb(51.33 64.35 69.93)}.ds-secondary:active{background:rgb(30.6 42.5 47.6)}.ds-secondary:focus-visible{outline:1px solid #bdebd5;outline-offset:-1px}"
+    },
+    {
+      "name": "Historical W0 — Disabled clear action",
+      "kind": "button",
+      "refersTo": "button-disabled",
+      "description": "Historical W0 only. No pending lines in the preview fixture.",
+      "html": "<button class=\"ds-disabled\" disabled>완성한 줄이 없어요</button>",
+      "css": ".ds-disabled{font-family:\"Noto Sans KR\",sans-serif;font-size:16px;font-weight:650;border:1px solid transparent;border-radius:12px;height:48px;width:280px;cursor:pointer;background:#29363b;color:#b8c6c4;cursor:default}"
+    },
+    {
+      "name": "Historical W0 — Back icon button",
+      "kind": "nav",
+      "refersTo": "icon-button",
+      "description": "Historical W0 only. The actual inline back SVG within a 48px native-sized target.",
+      "html": "<button class=\"ds-back\" aria-label=\"퍼즐로 돌아가기\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><g fill=\"none\" stroke=\"#f3eddf\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 5L7 12L14 19M7 12H21\"/></g></svg></button>",
+      "css": ".ds-back{width:48px;height:48px;border:1px solid transparent;border-radius:12px;background:#243238;display:inline-grid;place-items:center;cursor:pointer}.ds-back:hover{background:rgb(51.33 64.35 69.93)}.ds-back:active{background:rgb(30.6 42.5 47.6)}.ds-back:focus-visible{outline:1px solid #bdebd5;outline-offset:-1px}"
+    },
+    {
+      "name": "Historical W0 — Selected tray slot",
+      "kind": "button",
+      "refersTo": "tray-slot",
+      "description": "Historical W0 only. Brass slot outline and reusable B cell geometry; browser tint is illustrative.",
+      "html": "<button class=\"ds-tray\" aria-label=\"선택한 조각\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"29\" height=\"29\" viewBox=\"0 0 64 64\"><path d=\"M10 2H54L62 10V54L54 62H10L2 54V10Z\" fill=\"#c9775f\"/><path d=\"M12 5H52L59 12V52L52 59H12L5 52V12Z\" fill=\"#000000\" fill-opacity=\".045\"/><path d=\"M17 13H47L51 17V49H13V17Z\" fill=\"#c9775f\" fill-opacity=\".06\" stroke=\"#ffffff\" stroke-opacity=\".66\" stroke-width=\"2\"/><path d=\"M13 49H51\" stroke=\"#000000\" stroke-opacity=\".18\" stroke-width=\"2\"/><path d=\"M17 13H47L51 17V49H13V17Z\" fill=\"none\" stroke=\"#fff3da\" stroke-opacity=\".58\" stroke-width=\"2\"/></svg></button>",
+      "css": ".ds-tray{width:105px;height:86px;border:1px solid #dfba66;border-radius:10px;background:#243238;display:inline-grid;place-items:center;cursor:pointer}.ds-tray:hover,.ds-tray:active{background:#243238}.ds-tray:focus-visible{outline:1px solid #bdebd5;outline-offset:-1px}"
+    },
+    {
+      "name": "Historical W0 — Confirmation panel",
+      "kind": "card",
+      "refersTo": "dialog",
+      "description": "Historical W0 only. Compact two-action native panel translated into a static browser specimen; interaction/focus locking remain native-only.",
+      "html": "<section class=\"ds-dialog\"><h2>자동으로 지울까요?</h2><p>대기 중인 2줄이 함께 지워져요.<br>+240점 · 탑 +2층</p><button class=\"ds-dialog-primary\">지우고 자동 켜기</button><button class=\"ds-dialog-secondary\">취소</button></section>",
+      "css": ".ds-dialog{font-family:\"Noto Sans KR\",sans-serif;position:relative;width:280px;height:260px;border:1px solid #556466;border-radius:16px;background:#243238;color:#f3eddf}.ds-dialog h2{position:absolute;left:20px;top:19px;margin:0;font-size:20px;font-weight:650}.ds-dialog p{position:absolute;left:20px;top:64px;margin:0;color:#b8c6c4;font-size:13px;line-height:1.8}.ds-dialog button{font-family:\"Noto Sans KR\",sans-serif;position:absolute;left:16px;width:248px;height:48px;border:1px solid transparent;border-radius:12px;font-size:16px;font-weight:650;cursor:pointer}.ds-dialog-primary{top:138px;background:#dfba66;color:#182126}.ds-dialog-primary:hover{background:rgb(225.56 191.52 114.24)}.ds-dialog-primary:active{background:rgb(200.7 167.4 91.8)}.ds-dialog-secondary{top:196px;background:#243238;color:#f3eddf}.ds-dialog-secondary:hover{background:rgb(51.33 64.35 69.93)}.ds-dialog-secondary:active{background:rgb(30.6 42.5 47.6)}.ds-dialog button:focus-visible{outline:1px solid #bdebd5;outline-offset:-1px}"
+    },
+    {
+      "name": "Current B — Primary action",
+      "kind": "button",
+      "refersTo": "w4-button-primary",
+      "description": "Actual SVG asset in an illustrative browser specimen; Godot nine-slice and exact texture modulation govern. Enabled native buttons now compress at 65ms/0.955 and rebound at 120ms; this specimen is illustrative.",
+      "html": "<button class=\"ds-b-primary\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"none\" viewBox=\"0 0 128 128\"><defs><linearGradient id=\"p\" x2=\"0\" y2=\"1\"><stop stop-color=\"#efbc68\"/><stop offset=\"1\" stop-color=\"#a96024\"/></linearGradient></defs><rect x=\"3\" y=\"5\" width=\"122\" height=\"121\" rx=\"8\" fill=\"#171109\" opacity=\".40\"/><rect x=\"3\" y=\"2\" width=\"122\" height=\"121\" rx=\"7\" fill=\"url(#p)\" stroke=\"#f6d99c\" stroke-width=\"1.2\"/><rect x=\"7\" y=\"6\" width=\"114\" height=\"113\" rx=\"5\" fill=\"none\" stroke=\"#a7946a\" stroke-width=\".7\" opacity=\".6\"/><path d=\"M15 5H113Q121 5 122 15\" fill=\"none\" stroke=\"#f9e6bf\" opacity=\".65\"/><circle cx=\"110.7\" cy=\"28.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"15.4\" cy=\"113.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"31.8\" cy=\"26.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.4\" cy=\"48.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"103.7\" cy=\"37.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.9\" cy=\"45.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"74.3\" cy=\"107.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"82.9\" cy=\"106.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"85.2\" cy=\"18.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"102.9\" cy=\"73.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"44.7\" cy=\"33.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.7\" cy=\"72.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"108.7\" cy=\"91.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"111.0\" cy=\"70.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"84.2\" cy=\"75.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"39.4\" cy=\"109.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"44.9\" cy=\"92.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.4\" cy=\"79.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"27.5\" cy=\"96.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"81.1\" cy=\"32.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.0\" cy=\"67.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"16.3\" cy=\"106.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.6\" cy=\"65.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.8\" cy=\"80.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.5\" cy=\"44.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.1\" cy=\"72.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"43.3\" cy=\"73.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.4\" cy=\"57.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"81.7\" cy=\"66.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"22.0\" cy=\"113.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.3\" cy=\"57.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.1\" cy=\"107.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.1\" cy=\"65.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"53.9\" cy=\"23.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"104.3\" cy=\"31.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.8\" cy=\"48.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"46.5\" cy=\"49.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"32.5\" cy=\"17.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"67.6\" cy=\"93.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.0\" cy=\"34.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"83.8\" cy=\"19.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.9\" cy=\"96.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.9\" cy=\"60.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.3\" cy=\"63.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"66.4\" cy=\"72.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"114.1\" cy=\"88.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"61.2\" cy=\"86.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"78.6\" cy=\"49.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"93.0\" cy=\"96.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"75.1\" cy=\"108.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"14.9\" cy=\"64.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"77.7\" cy=\"48.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"30.5\" cy=\"83.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"57.3\" cy=\"40.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"17.3\" cy=\"110.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"48.9\" cy=\"25.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"35.1\" cy=\"39.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"101.4\" cy=\"32.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"41.2\" cy=\"23.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"60.9\" cy=\"34.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"48.1\" cy=\"87.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"107.4\" cy=\"97.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"16.9\" cy=\"51.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.6\" cy=\"17.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"33.7\" cy=\"63.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"52.0\" cy=\"89.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"86.2\" cy=\"60.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"38.4\" cy=\"37.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"40.2\" cy=\"20.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"80.9\" cy=\"29.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"103.7\" cy=\"78.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.8\" cy=\"63.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"74.6\" cy=\"18.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"62.6\" cy=\"17.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"91.2\" cy=\"14.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"77.5\" cy=\"112.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.3\" cy=\"37.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"67.5\" cy=\"28.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"47.9\" cy=\"100.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"96.4\" cy=\"14.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.7\" cy=\"78.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"30.9\" cy=\"94.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"104.1\" cy=\"69.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.9\" cy=\"98.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"65.3\" cy=\"32.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"41.3\" cy=\"29.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"98.5\" cy=\"65.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"84.1\" cy=\"95.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"112.3\" cy=\"33.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.4\" cy=\"101.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"90.7\" cy=\"52.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.9\" cy=\"33.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"29.5\" cy=\"19.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.7\" cy=\"37.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"65.8\" cy=\"111.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"28.6\" cy=\"69.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"101.2\" cy=\"73.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"66.8\" cy=\"90.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"15.2\" cy=\"108.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"83.0\" cy=\"94.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"97.2\" cy=\"23.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"19.8\" cy=\"31.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.5\" cy=\"107.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"105.7\" cy=\"55.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"76.5\" cy=\"88.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"46.9\" cy=\"111.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"109.1\" cy=\"86.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"104.9\" cy=\"94.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.5\" cy=\"46.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"41.7\" cy=\"37.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.9\" cy=\"106.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"43.4\" cy=\"16.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"45.2\" cy=\"24.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"58.4\" cy=\"47.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"30.9\" cy=\"61.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"55.3\" cy=\"49.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"96.0\" cy=\"44.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.2\" cy=\"101.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.8\" cy=\"51.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"17.1\" cy=\"109.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"65.4\" cy=\"35.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"26.1\" cy=\"37.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"44.7\" cy=\"27.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.0\" cy=\"113.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"96.7\" cy=\"25.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"62.0\" cy=\"94.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.5\" cy=\"20.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"47.6\" cy=\"52.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.3\" cy=\"72.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"59.8\" cy=\"77.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.0\" cy=\"82.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"95.4\" cy=\"81.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.8\" cy=\"42.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"14.0\" cy=\"22.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"28.8\" cy=\"59.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"92.4\" cy=\"35.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"61.2\" cy=\"77.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"77.2\" cy=\"16.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.9\" cy=\"72.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"43.9\" cy=\"37.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"83.3\" cy=\"107.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"47.4\" cy=\"53.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"69.8\" cy=\"31.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.4\" cy=\"105.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"69.8\" cy=\"96.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"39.7\" cy=\"100.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"92.8\" cy=\"36.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"67.1\" cy=\"82.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"71.4\" cy=\"74.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"37.5\" cy=\"69.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.2\" cy=\"93.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.0\" cy=\"111.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"72.2\" cy=\"36.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"55.4\" cy=\"26.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"88.1\" cy=\"18.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"74.7\" cy=\"44.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"92.3\" cy=\"26.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"82.4\" cy=\"85.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"36.8\" cy=\"27.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.0\" cy=\"78.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"39.6\" cy=\"14.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"58.0\" cy=\"94.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"29.1\" cy=\"108.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.8\" cy=\"30.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"23.2\" cy=\"51.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"61.6\" cy=\"31.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"21.6\" cy=\"64.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"38.9\" cy=\"58.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"59.0\" cy=\"83.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"71.9\" cy=\"36.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"31.3\" cy=\"99.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.2\" cy=\"26.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"20.1\" cy=\"96.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.2\" cy=\"106.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"76.9\" cy=\"47.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"56.9\" cy=\"87.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"36.6\" cy=\"94.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.6\" cy=\"18.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"48.1\" cy=\"70.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"28.0\" cy=\"104.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/></svg><span>전환하고 클리어</span></button>",
+      "css": ".ds-b-primary{position:relative;width:292px;height:52px;padding:0 8px;border:0;background:transparent;color:#21180f;font:700 14px \"Noto Sans KR\",sans-serif}.ds-b-primary>svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.ds-b-primary>span{position:relative}.ds-b-primary:enabled:hover>svg{filter:brightness(1.06)}.ds-b-primary:enabled:active>svg{filter:brightness(.91)}.ds-b-primary:focus-visible{outline:1px solid #d2e8b1;outline-offset:-1px;border-radius:8px} .ds-b-primary{transition:transform 120ms}.ds-b-primary:active{transform:scale(.955);transition-duration:65ms}@media(prefers-reduced-motion:reduce){.ds-b-primary{transition:none}.ds-b-primary:active{transform:none}}"
+    },
+    {
+      "name": "Current B — Secondary action",
+      "kind": "button",
+      "refersTo": "w4-button-secondary",
+      "description": "Actual SVG asset in an illustrative browser specimen; Godot nine-slice and exact texture modulation govern. Enabled native buttons now compress at 65ms/0.955 and rebound at 120ms; this specimen is illustrative.",
+      "html": "<button class=\"ds-b-secondary\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"none\" viewBox=\"0 0 128 128\"><defs><linearGradient id=\"p\" x2=\"0\" y2=\"1\"><stop stop-color=\"#554330\"/><stop offset=\"1\" stop-color=\"#2b251c\"/></linearGradient></defs><rect x=\"3\" y=\"5\" width=\"122\" height=\"121\" rx=\"8\" fill=\"#171109\" opacity=\".40\"/><rect x=\"3\" y=\"2\" width=\"122\" height=\"121\" rx=\"7\" fill=\"url(#p)\" stroke=\"#a78553\" stroke-width=\"1.2\"/><rect x=\"7\" y=\"6\" width=\"114\" height=\"113\" rx=\"5\" fill=\"none\" stroke=\"#725a38\" stroke-width=\".7\" opacity=\".6\"/><path d=\"M15 5H113Q121 5 122 15\" fill=\"none\" stroke=\"#c6b08f\" opacity=\".65\"/><circle cx=\"110.7\" cy=\"28.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"15.4\" cy=\"113.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"31.8\" cy=\"26.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.4\" cy=\"48.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"103.7\" cy=\"37.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.9\" cy=\"45.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"74.3\" cy=\"107.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"82.9\" cy=\"106.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"85.2\" cy=\"18.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"102.9\" cy=\"73.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"44.7\" cy=\"33.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.7\" cy=\"72.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"108.7\" cy=\"91.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"111.0\" cy=\"70.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"84.2\" cy=\"75.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"39.4\" cy=\"109.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"44.9\" cy=\"92.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.4\" cy=\"79.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"27.5\" cy=\"96.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"81.1\" cy=\"32.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.0\" cy=\"67.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"16.3\" cy=\"106.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.6\" cy=\"65.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.8\" cy=\"80.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.5\" cy=\"44.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.1\" cy=\"72.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"43.3\" cy=\"73.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.4\" cy=\"57.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"81.7\" cy=\"66.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"22.0\" cy=\"113.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.3\" cy=\"57.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.1\" cy=\"107.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.1\" cy=\"65.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"53.9\" cy=\"23.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"104.3\" cy=\"31.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.8\" cy=\"48.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"46.5\" cy=\"49.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"32.5\" cy=\"17.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"67.6\" cy=\"93.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.0\" cy=\"34.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"83.8\" cy=\"19.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.9\" cy=\"96.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.9\" cy=\"60.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.3\" cy=\"63.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"66.4\" cy=\"72.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"114.1\" cy=\"88.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"61.2\" cy=\"86.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"78.6\" cy=\"49.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"93.0\" cy=\"96.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"75.1\" cy=\"108.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"14.9\" cy=\"64.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"77.7\" cy=\"48.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"30.5\" cy=\"83.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"57.3\" cy=\"40.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"17.3\" cy=\"110.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"48.9\" cy=\"25.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"35.1\" cy=\"39.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"101.4\" cy=\"32.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"41.2\" cy=\"23.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"60.9\" cy=\"34.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"48.1\" cy=\"87.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"107.4\" cy=\"97.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"16.9\" cy=\"51.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.6\" cy=\"17.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"33.7\" cy=\"63.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"52.0\" cy=\"89.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"86.2\" cy=\"60.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"38.4\" cy=\"37.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"40.2\" cy=\"20.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"80.9\" cy=\"29.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"103.7\" cy=\"78.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.8\" cy=\"63.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"74.6\" cy=\"18.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"62.6\" cy=\"17.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"91.2\" cy=\"14.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"77.5\" cy=\"112.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.3\" cy=\"37.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"67.5\" cy=\"28.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"47.9\" cy=\"100.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"96.4\" cy=\"14.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.7\" cy=\"78.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"30.9\" cy=\"94.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"104.1\" cy=\"69.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.9\" cy=\"98.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"65.3\" cy=\"32.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"41.3\" cy=\"29.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"98.5\" cy=\"65.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"84.1\" cy=\"95.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"112.3\" cy=\"33.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.4\" cy=\"101.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"90.7\" cy=\"52.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.9\" cy=\"33.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"29.5\" cy=\"19.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.7\" cy=\"37.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"65.8\" cy=\"111.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"28.6\" cy=\"69.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"101.2\" cy=\"73.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"66.8\" cy=\"90.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"15.2\" cy=\"108.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"83.0\" cy=\"94.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"97.2\" cy=\"23.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"19.8\" cy=\"31.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.5\" cy=\"107.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"105.7\" cy=\"55.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"76.5\" cy=\"88.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"46.9\" cy=\"111.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"109.1\" cy=\"86.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"104.9\" cy=\"94.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.5\" cy=\"46.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"41.7\" cy=\"37.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.9\" cy=\"106.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"43.4\" cy=\"16.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"45.2\" cy=\"24.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"58.4\" cy=\"47.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"30.9\" cy=\"61.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"55.3\" cy=\"49.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"96.0\" cy=\"44.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.2\" cy=\"101.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.8\" cy=\"51.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"17.1\" cy=\"109.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"65.4\" cy=\"35.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"26.1\" cy=\"37.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"44.7\" cy=\"27.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.0\" cy=\"113.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"96.7\" cy=\"25.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"62.0\" cy=\"94.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.5\" cy=\"20.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"47.6\" cy=\"52.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.3\" cy=\"72.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"59.8\" cy=\"77.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.0\" cy=\"82.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"95.4\" cy=\"81.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.8\" cy=\"42.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"14.0\" cy=\"22.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"28.8\" cy=\"59.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"92.4\" cy=\"35.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"61.2\" cy=\"77.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"77.2\" cy=\"16.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.9\" cy=\"72.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"43.9\" cy=\"37.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"83.3\" cy=\"107.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"47.4\" cy=\"53.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"69.8\" cy=\"31.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.4\" cy=\"105.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"69.8\" cy=\"96.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"39.7\" cy=\"100.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"92.8\" cy=\"36.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"67.1\" cy=\"82.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"71.4\" cy=\"74.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"37.5\" cy=\"69.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.2\" cy=\"93.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.0\" cy=\"111.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"72.2\" cy=\"36.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"55.4\" cy=\"26.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"88.1\" cy=\"18.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"74.7\" cy=\"44.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"92.3\" cy=\"26.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"82.4\" cy=\"85.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"36.8\" cy=\"27.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.0\" cy=\"78.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"39.6\" cy=\"14.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"58.0\" cy=\"94.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"29.1\" cy=\"108.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.8\" cy=\"30.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"23.2\" cy=\"51.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"61.6\" cy=\"31.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"21.6\" cy=\"64.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"38.9\" cy=\"58.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"59.0\" cy=\"83.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"71.9\" cy=\"36.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"31.3\" cy=\"99.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.2\" cy=\"26.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"20.1\" cy=\"96.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.2\" cy=\"106.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"76.9\" cy=\"47.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"56.9\" cy=\"87.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"36.6\" cy=\"94.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.6\" cy=\"18.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"48.1\" cy=\"70.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"28.0\" cy=\"104.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/></svg><span>퍼즐로 돌아가기</span></button>",
+      "css": ".ds-b-secondary{position:relative;width:292px;height:52px;padding:0 8px;border:0;background:transparent;color:#f8ead2;font:700 14px \"Noto Sans KR\",sans-serif}.ds-b-secondary>svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.ds-b-secondary>span{position:relative}.ds-b-secondary:enabled:hover>svg{filter:brightness(1.06)}.ds-b-secondary:enabled:active>svg{filter:brightness(.91)}.ds-b-secondary:focus-visible{outline:1px solid #d2e8b1;outline-offset:-1px;border-radius:8px} .ds-b-secondary{transition:transform 120ms}.ds-b-secondary:active{transform:scale(.955);transition-duration:65ms}@media(prefers-reduced-motion:reduce){.ds-b-secondary{transition:none}.ds-b-secondary:active{transform:none}}"
+    },
+    {
+      "name": "Current B — Disabled action",
+      "kind": "button",
+      "refersTo": "w4-button-disabled",
+      "description": "Actual SVG asset in an illustrative browser specimen; Godot nine-slice and exact texture modulation govern.",
+      "html": "<button class=\"ds-b-disabled\" disabled><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"none\" viewBox=\"0 0 128 128\"><defs><linearGradient id=\"p\" x2=\"0\" y2=\"1\"><stop stop-color=\"#61503a\"/><stop offset=\"1\" stop-color=\"#403629\"/></linearGradient></defs><rect x=\"3\" y=\"5\" width=\"122\" height=\"121\" rx=\"8\" fill=\"#171109\" opacity=\".40\"/><rect x=\"3\" y=\"2\" width=\"122\" height=\"121\" rx=\"7\" fill=\"url(#p)\" stroke=\"#967c56\" stroke-width=\"1.2\"/><rect x=\"7\" y=\"6\" width=\"114\" height=\"113\" rx=\"5\" fill=\"none\" stroke=\"#66543a\" stroke-width=\".7\" opacity=\".6\"/><path d=\"M15 5H113Q121 5 122 15\" fill=\"none\" stroke=\"#bbaa91\" opacity=\".65\"/><circle cx=\"110.7\" cy=\"28.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"15.4\" cy=\"113.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"31.8\" cy=\"26.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.4\" cy=\"48.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"103.7\" cy=\"37.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.9\" cy=\"45.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"74.3\" cy=\"107.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"82.9\" cy=\"106.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"85.2\" cy=\"18.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"102.9\" cy=\"73.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"44.7\" cy=\"33.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.7\" cy=\"72.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"108.7\" cy=\"91.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"111.0\" cy=\"70.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"84.2\" cy=\"75.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"39.4\" cy=\"109.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"44.9\" cy=\"92.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.4\" cy=\"79.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"27.5\" cy=\"96.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"81.1\" cy=\"32.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.0\" cy=\"67.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"16.3\" cy=\"106.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.6\" cy=\"65.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.8\" cy=\"80.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.5\" cy=\"44.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.1\" cy=\"72.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"43.3\" cy=\"73.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.4\" cy=\"57.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"81.7\" cy=\"66.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"22.0\" cy=\"113.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.3\" cy=\"57.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.1\" cy=\"107.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.1\" cy=\"65.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"53.9\" cy=\"23.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"104.3\" cy=\"31.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.8\" cy=\"48.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"46.5\" cy=\"49.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"32.5\" cy=\"17.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"67.6\" cy=\"93.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.0\" cy=\"34.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"83.8\" cy=\"19.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.9\" cy=\"96.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.9\" cy=\"60.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.3\" cy=\"63.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"66.4\" cy=\"72.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"114.1\" cy=\"88.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"61.2\" cy=\"86.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"78.6\" cy=\"49.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"93.0\" cy=\"96.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"75.1\" cy=\"108.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"14.9\" cy=\"64.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"77.7\" cy=\"48.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"30.5\" cy=\"83.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"57.3\" cy=\"40.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"17.3\" cy=\"110.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"48.9\" cy=\"25.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"35.1\" cy=\"39.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"101.4\" cy=\"32.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"41.2\" cy=\"23.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"60.9\" cy=\"34.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"48.1\" cy=\"87.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"107.4\" cy=\"97.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"16.9\" cy=\"51.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.6\" cy=\"17.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"33.7\" cy=\"63.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"52.0\" cy=\"89.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"86.2\" cy=\"60.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"38.4\" cy=\"37.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"40.2\" cy=\"20.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"80.9\" cy=\"29.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"103.7\" cy=\"78.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.8\" cy=\"63.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"74.6\" cy=\"18.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"62.6\" cy=\"17.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"91.2\" cy=\"14.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"77.5\" cy=\"112.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.3\" cy=\"37.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"67.5\" cy=\"28.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"47.9\" cy=\"100.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"96.4\" cy=\"14.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.7\" cy=\"78.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"30.9\" cy=\"94.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"104.1\" cy=\"69.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.9\" cy=\"98.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"65.3\" cy=\"32.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"41.3\" cy=\"29.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"98.5\" cy=\"65.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"84.1\" cy=\"95.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"112.3\" cy=\"33.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.4\" cy=\"101.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"90.7\" cy=\"52.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.9\" cy=\"33.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"29.5\" cy=\"19.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.7\" cy=\"37.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"65.8\" cy=\"111.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"28.6\" cy=\"69.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"101.2\" cy=\"73.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"66.8\" cy=\"90.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"15.2\" cy=\"108.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"83.0\" cy=\"94.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"97.2\" cy=\"23.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"19.8\" cy=\"31.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.5\" cy=\"107.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"105.7\" cy=\"55.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"76.5\" cy=\"88.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"46.9\" cy=\"111.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"109.1\" cy=\"86.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"104.9\" cy=\"94.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.5\" cy=\"46.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"41.7\" cy=\"37.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.9\" cy=\"106.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"43.4\" cy=\"16.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"45.2\" cy=\"24.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"58.4\" cy=\"47.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"30.9\" cy=\"61.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"55.3\" cy=\"49.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"96.0\" cy=\"44.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.2\" cy=\"101.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.8\" cy=\"51.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"17.1\" cy=\"109.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"65.4\" cy=\"35.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"26.1\" cy=\"37.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"44.7\" cy=\"27.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.0\" cy=\"113.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"96.7\" cy=\"25.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"62.0\" cy=\"94.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.5\" cy=\"20.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"47.6\" cy=\"52.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.3\" cy=\"72.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"59.8\" cy=\"77.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.0\" cy=\"82.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"95.4\" cy=\"81.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.8\" cy=\"42.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"14.0\" cy=\"22.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"28.8\" cy=\"59.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"92.4\" cy=\"35.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"61.2\" cy=\"77.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"77.2\" cy=\"16.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.9\" cy=\"72.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"43.9\" cy=\"37.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"83.3\" cy=\"107.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"47.4\" cy=\"53.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"69.8\" cy=\"31.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.4\" cy=\"105.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"69.8\" cy=\"96.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"39.7\" cy=\"100.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"92.8\" cy=\"36.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"67.1\" cy=\"82.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"71.4\" cy=\"74.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"37.5\" cy=\"69.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.2\" cy=\"93.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.0\" cy=\"111.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"72.2\" cy=\"36.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"55.4\" cy=\"26.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"88.1\" cy=\"18.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"74.7\" cy=\"44.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"92.3\" cy=\"26.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"82.4\" cy=\"85.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"36.8\" cy=\"27.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.0\" cy=\"78.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"39.6\" cy=\"14.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"58.0\" cy=\"94.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"29.1\" cy=\"108.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.8\" cy=\"30.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"23.2\" cy=\"51.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"61.6\" cy=\"31.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"21.6\" cy=\"64.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"38.9\" cy=\"58.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"59.0\" cy=\"83.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"71.9\" cy=\"36.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"31.3\" cy=\"99.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.2\" cy=\"26.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"20.1\" cy=\"96.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.2\" cy=\"106.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"76.9\" cy=\"47.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"56.9\" cy=\"87.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"36.6\" cy=\"94.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.6\" cy=\"18.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"48.1\" cy=\"70.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"28.0\" cy=\"104.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/></svg><span>줄을 완성하면 클리어할 수 있어요</span></button>",
+      "css": ".ds-b-disabled{position:relative;width:292px;height:52px;padding:0 8px;border:0;background:transparent;color:#b8ac98;font:700 14px \"Noto Sans KR\",sans-serif}.ds-b-disabled>svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.ds-b-disabled>span{position:relative}.ds-b-disabled:enabled:hover>svg{filter:brightness(1.06)}.ds-b-disabled:enabled:active>svg{filter:brightness(.91)}.ds-b-disabled:focus-visible{outline:1px solid #d2e8b1;outline-offset:-1px;border-radius:8px}"
+    },
+    {
+      "name": "Current B — Tray material",
+      "kind": "custom",
+      "refersTo": "w4-tray-slot",
+      "description": "Actual source material in a small illustrative specimen; not a gameplay or fidelity capture.",
+      "html": "<div class=\"ds-b-tray\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"none\" viewBox=\"0 0 128 128\"><defs><linearGradient id=\"p\" x2=\"0\" y2=\"1\"><stop stop-color=\"#3a3023\"/><stop offset=\"1\" stop-color=\"#211d17\"/></linearGradient></defs><rect x=\"3\" y=\"5\" width=\"122\" height=\"121\" rx=\"8\" fill=\"#171109\" opacity=\".40\"/><rect x=\"3\" y=\"2\" width=\"122\" height=\"121\" rx=\"7\" fill=\"url(#p)\" stroke=\"#907047\" stroke-width=\"1.2\"/><rect x=\"7\" y=\"6\" width=\"114\" height=\"113\" rx=\"5\" fill=\"none\" stroke=\"#624c30\" stroke-width=\".7\" opacity=\".6\"/><path d=\"M15 5H113Q121 5 122 15\" fill=\"none\" stroke=\"#b7a287\" opacity=\".65\"/><circle cx=\"110.7\" cy=\"28.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"15.4\" cy=\"113.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"31.8\" cy=\"26.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.4\" cy=\"48.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"103.7\" cy=\"37.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.9\" cy=\"45.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"74.3\" cy=\"107.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"82.9\" cy=\"106.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"85.2\" cy=\"18.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"102.9\" cy=\"73.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"44.7\" cy=\"33.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.7\" cy=\"72.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"108.7\" cy=\"91.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"111.0\" cy=\"70.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"84.2\" cy=\"75.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"39.4\" cy=\"109.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"44.9\" cy=\"92.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.4\" cy=\"79.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"27.5\" cy=\"96.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"81.1\" cy=\"32.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.0\" cy=\"67.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"16.3\" cy=\"106.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.6\" cy=\"65.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.8\" cy=\"80.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.5\" cy=\"44.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.1\" cy=\"72.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"43.3\" cy=\"73.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.4\" cy=\"57.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"81.7\" cy=\"66.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"22.0\" cy=\"113.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.3\" cy=\"57.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.1\" cy=\"107.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.1\" cy=\"65.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"53.9\" cy=\"23.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"104.3\" cy=\"31.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.8\" cy=\"48.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"46.5\" cy=\"49.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"32.5\" cy=\"17.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"67.6\" cy=\"93.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.0\" cy=\"34.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"83.8\" cy=\"19.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.9\" cy=\"96.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.9\" cy=\"60.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.3\" cy=\"63.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"66.4\" cy=\"72.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"114.1\" cy=\"88.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"61.2\" cy=\"86.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"78.6\" cy=\"49.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"93.0\" cy=\"96.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"75.1\" cy=\"108.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"14.9\" cy=\"64.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"77.7\" cy=\"48.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"30.5\" cy=\"83.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"57.3\" cy=\"40.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"17.3\" cy=\"110.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"48.9\" cy=\"25.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"35.1\" cy=\"39.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"101.4\" cy=\"32.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"41.2\" cy=\"23.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"60.9\" cy=\"34.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"48.1\" cy=\"87.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"107.4\" cy=\"97.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"16.9\" cy=\"51.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.6\" cy=\"17.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"33.7\" cy=\"63.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"52.0\" cy=\"89.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"86.2\" cy=\"60.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"38.4\" cy=\"37.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"40.2\" cy=\"20.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"80.9\" cy=\"29.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"103.7\" cy=\"78.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.8\" cy=\"63.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"74.6\" cy=\"18.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"62.6\" cy=\"17.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"91.2\" cy=\"14.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"77.5\" cy=\"112.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.3\" cy=\"37.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"67.5\" cy=\"28.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"47.9\" cy=\"100.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"96.4\" cy=\"14.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.7\" cy=\"78.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"30.9\" cy=\"94.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"104.1\" cy=\"69.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.9\" cy=\"98.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"65.3\" cy=\"32.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"41.3\" cy=\"29.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"98.5\" cy=\"65.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"84.1\" cy=\"95.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"112.3\" cy=\"33.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.4\" cy=\"101.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"90.7\" cy=\"52.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.9\" cy=\"33.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"29.5\" cy=\"19.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.7\" cy=\"37.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"65.8\" cy=\"111.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"28.6\" cy=\"69.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"101.2\" cy=\"73.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"66.8\" cy=\"90.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"15.2\" cy=\"108.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"83.0\" cy=\"94.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"97.2\" cy=\"23.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"19.8\" cy=\"31.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.5\" cy=\"107.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"105.7\" cy=\"55.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"76.5\" cy=\"88.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"46.9\" cy=\"111.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"109.1\" cy=\"86.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"104.9\" cy=\"94.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.5\" cy=\"46.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"41.7\" cy=\"37.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.9\" cy=\"106.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"43.4\" cy=\"16.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"45.2\" cy=\"24.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"58.4\" cy=\"47.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"30.9\" cy=\"61.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"55.3\" cy=\"49.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"96.0\" cy=\"44.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.2\" cy=\"101.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.8\" cy=\"51.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"17.1\" cy=\"109.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"65.4\" cy=\"35.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"26.1\" cy=\"37.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"44.7\" cy=\"27.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.0\" cy=\"113.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"96.7\" cy=\"25.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"62.0\" cy=\"94.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.5\" cy=\"20.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"47.6\" cy=\"52.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.3\" cy=\"72.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"59.8\" cy=\"77.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.0\" cy=\"82.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"95.4\" cy=\"81.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.8\" cy=\"42.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"14.0\" cy=\"22.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"28.8\" cy=\"59.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"92.4\" cy=\"35.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"61.2\" cy=\"77.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"77.2\" cy=\"16.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.9\" cy=\"72.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"43.9\" cy=\"37.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"83.3\" cy=\"107.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"47.4\" cy=\"53.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"69.8\" cy=\"31.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.4\" cy=\"105.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"69.8\" cy=\"96.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"39.7\" cy=\"100.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"92.8\" cy=\"36.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"67.1\" cy=\"82.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"71.4\" cy=\"74.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"37.5\" cy=\"69.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.2\" cy=\"93.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.0\" cy=\"111.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"72.2\" cy=\"36.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"55.4\" cy=\"26.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"88.1\" cy=\"18.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"74.7\" cy=\"44.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"92.3\" cy=\"26.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"82.4\" cy=\"85.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"36.8\" cy=\"27.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.0\" cy=\"78.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"39.6\" cy=\"14.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"58.0\" cy=\"94.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"29.1\" cy=\"108.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.8\" cy=\"30.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"23.2\" cy=\"51.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"61.6\" cy=\"31.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"21.6\" cy=\"64.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"38.9\" cy=\"58.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"59.0\" cy=\"83.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"71.9\" cy=\"36.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"31.3\" cy=\"99.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.2\" cy=\"26.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"20.1\" cy=\"96.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.2\" cy=\"106.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"76.9\" cy=\"47.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"56.9\" cy=\"87.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"36.6\" cy=\"94.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.6\" cy=\"18.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"48.1\" cy=\"70.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"28.0\" cy=\"104.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/></svg><div class=\"ds-b-tile\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"none\" viewBox=\"0 0 128 128\"><defs><linearGradient id=\"face\" x2=\"0.25\" y2=\"1\"><stop stop-color=\"#9bb394\"/><stop offset=\".55\" stop-color=\"#8ba782\"/><stop offset=\"1\" stop-color=\"#7e9876\"/></linearGradient></defs><path d=\"M13 6H115L123 14V115L115 124H13L5 116V14Z\" fill=\"#171711\" opacity=\".45\"/><path d=\"M12 3H114L122 11V112L114 120H12L4 112V11Z\" fill=\"#5c6e56\" stroke=\"#29241a\" stroke-width=\"1.5\"/><path d=\"M12 4H114L106 15H21L5 12Z\" fill=\"#c3d1be\"/><path d=\"M5 12L21 24V103L13 118 5 111Z\" fill=\"#a0b798\"/><path d=\"M114 5L121 12V111L109 103V23Z\" fill=\"#758c6d\"/><path d=\"M13 119L23 106H106L115 118Z\" fill=\"#64785e\"/><path d=\"M22 16H105L112 23V102L104 110H22L15 102V23Z\" fill=\"url(#face)\"/><circle cx=\"84.6\" cy=\"97.6\" r=\"0.27\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"108.4\" cy=\"46.4\" r=\"0.36\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"68.2\" cy=\"82.6\" r=\"0.58\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"86.8\" cy=\"41.5\" r=\"0.51\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"84.0\" cy=\"70.9\" r=\"0.32\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"22.0\" cy=\"88.7\" r=\"0.33\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"80.5\" cy=\"65.1\" r=\"0.26\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"56.4\" cy=\"44.2\" r=\"0.31\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"84.5\" cy=\"65.8\" r=\"0.51\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"87.4\" cy=\"104.1\" r=\"0.65\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"82.7\" cy=\"73.1\" r=\"0.32\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"74.0\" cy=\"35.3\" r=\"0.40\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"51.5\" cy=\"45.5\" r=\"0.78\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"62.5\" cy=\"33.8\" r=\"0.76\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"19.5\" cy=\"89.0\" r=\"0.26\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"72.1\" cy=\"98.7\" r=\"0.60\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"66.0\" cy=\"95.4\" r=\"0.46\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"50.2\" cy=\"76.2\" r=\"0.44\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"18.5\" cy=\"98.2\" r=\"0.58\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"81.1\" cy=\"45.5\" r=\"0.29\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"101.2\" cy=\"96.7\" r=\"0.46\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"86.3\" cy=\"47.2\" r=\"0.39\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"63.4\" cy=\"53.7\" r=\"0.73\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"30.2\" cy=\"44.0\" r=\"0.50\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"94.1\" cy=\"56.8\" r=\"0.70\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"24.9\" cy=\"97.1\" r=\"0.35\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"101.0\" cy=\"55.9\" r=\"0.44\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"20.8\" cy=\"100.2\" r=\"0.73\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"51.1\" cy=\"76.5\" r=\"0.45\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"103.2\" cy=\"66.3\" r=\"0.40\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"49.1\" cy=\"104.5\" r=\"0.62\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"51.5\" cy=\"71.3\" r=\"0.68\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"72.2\" cy=\"72.1\" r=\"0.78\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"59.4\" cy=\"47.5\" r=\"0.69\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"46.0\" cy=\"48.3\" r=\"0.38\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"61.8\" cy=\"52.0\" r=\"0.32\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"46.5\" cy=\"99.2\" r=\"0.63\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"81.5\" cy=\"100.3\" r=\"0.51\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"74.4\" cy=\"22.8\" r=\"0.77\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"25.9\" cy=\"79.2\" r=\"0.60\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"64.1\" cy=\"26.5\" r=\"0.52\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"68.0\" cy=\"58.3\" r=\"0.27\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"39.8\" cy=\"100.2\" r=\"0.43\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"50.0\" cy=\"50.7\" r=\"0.25\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"25.8\" cy=\"82.1\" r=\"0.63\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"46.7\" cy=\"97.0\" r=\"0.67\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"93.5\" cy=\"19.9\" r=\"0.67\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"72.5\" cy=\"81.4\" r=\"0.76\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"84.5\" cy=\"82.9\" r=\"0.56\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"102.7\" cy=\"22.1\" r=\"0.60\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"103.2\" cy=\"32.4\" r=\"0.56\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"59.1\" cy=\"65.4\" r=\"0.36\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"43.5\" cy=\"53.3\" r=\"0.52\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"55.3\" cy=\"71.0\" r=\"0.51\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"99.1\" cy=\"40.7\" r=\"0.67\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"74.6\" cy=\"85.6\" r=\"0.66\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"55.7\" cy=\"97.5\" r=\"0.79\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"71.6\" cy=\"90.9\" r=\"0.54\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"74.6\" cy=\"60.6\" r=\"0.37\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"73.0\" cy=\"47.4\" r=\"0.50\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"72.5\" cy=\"61.0\" r=\"0.74\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"84.2\" cy=\"93.1\" r=\"0.32\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"99.3\" cy=\"67.8\" r=\"0.29\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"34.9\" cy=\"94.4\" r=\"0.42\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"19.3\" cy=\"67.6\" r=\"0.55\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"36.9\" cy=\"34.1\" r=\"0.30\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"66.0\" cy=\"87.1\" r=\"0.55\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"54.9\" cy=\"63.3\" r=\"0.56\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"60.3\" cy=\"36.9\" r=\"0.63\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"18.1\" cy=\"83.6\" r=\"0.29\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"37.2\" cy=\"51.7\" r=\"0.41\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"36.1\" cy=\"75.7\" r=\"0.31\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"97.6\" cy=\"69.8\" r=\"0.74\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"68.6\" cy=\"87.6\" r=\"0.48\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"37.5\" cy=\"33.6\" r=\"0.75\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"108.2\" cy=\"81.6\" r=\"0.78\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"94.2\" cy=\"98.7\" r=\"0.46\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"66.5\" cy=\"64.5\" r=\"0.39\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"53.1\" cy=\"104.3\" r=\"0.38\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"86.6\" cy=\"55.0\" r=\"0.62\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"107.7\" cy=\"26.4\" r=\"0.75\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"96.4\" cy=\"46.6\" r=\"0.67\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"55.4\" cy=\"41.1\" r=\"0.70\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"108.0\" cy=\"62.1\" r=\"0.50\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"86.3\" cy=\"54.4\" r=\"0.71\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"107.2\" cy=\"31.9\" r=\"0.32\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"20.5\" cy=\"60.4\" r=\"0.48\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"52.3\" cy=\"57.2\" r=\"0.61\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"57.6\" cy=\"28.9\" r=\"0.78\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"49.0\" cy=\"82.4\" r=\"0.45\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"49.9\" cy=\"23.4\" r=\"0.41\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"42.4\" cy=\"49.0\" r=\"0.70\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"19.0\" cy=\"62.3\" r=\"0.76\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"84.7\" cy=\"19.2\" r=\"0.38\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"48.5\" cy=\"35.8\" r=\"0.38\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"44.4\" cy=\"104.7\" r=\"0.60\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"24.0\" cy=\"59.4\" r=\"0.48\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"64.6\" cy=\"37.1\" r=\"0.46\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"84.4\" cy=\"52.9\" r=\"0.47\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"25.4\" cy=\"28.9\" r=\"0.76\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"19.8\" cy=\"61.6\" r=\"0.37\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"50.8\" cy=\"34.2\" r=\"0.27\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"53.5\" cy=\"63.9\" r=\"0.79\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"75.9\" cy=\"88.0\" r=\"0.77\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"97.6\" cy=\"79.6\" r=\"0.77\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"24.6\" cy=\"76.5\" r=\"0.44\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"74.5\" cy=\"58.3\" r=\"0.62\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"93.4\" cy=\"55.5\" r=\"0.62\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"98.2\" cy=\"66.3\" r=\"0.72\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"94.5\" cy=\"40.8\" r=\"0.39\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"103.9\" cy=\"26.6\" r=\"0.74\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"41.5\" cy=\"90.0\" r=\"0.28\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"50.5\" cy=\"38.0\" r=\"0.77\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"35.4\" cy=\"51.3\" r=\"0.67\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"92.7\" cy=\"72.4\" r=\"0.61\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"19.1\" cy=\"87.2\" r=\"0.67\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"105.9\" cy=\"94.9\" r=\"0.74\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"66.8\" cy=\"101.1\" r=\"0.64\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"81.8\" cy=\"97.3\" r=\"0.43\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"39.0\" cy=\"57.3\" r=\"0.36\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"57.8\" cy=\"26.9\" r=\"0.30\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"80.0\" cy=\"69.3\" r=\"0.63\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"49.5\" cy=\"28.8\" r=\"0.27\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"97.7\" cy=\"98.4\" r=\"0.75\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"78.9\" cy=\"42.5\" r=\"0.67\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"49.5\" cy=\"93.2\" r=\"0.58\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"104.1\" cy=\"26.5\" r=\"0.68\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"95.0\" cy=\"95.8\" r=\"0.29\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"81.4\" cy=\"99.6\" r=\"0.76\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"71.3\" cy=\"82.1\" r=\"0.73\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"75.3\" cy=\"22.9\" r=\"0.31\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"105.9\" cy=\"49.1\" r=\"0.66\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"32.8\" cy=\"66.5\" r=\"0.59\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"61.2\" cy=\"25.2\" r=\"0.48\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"23.5\" cy=\"81.2\" r=\"0.46\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"21.3\" cy=\"34.6\" r=\"0.39\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"57.5\" cy=\"93.4\" r=\"0.55\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"104.1\" cy=\"50.9\" r=\"0.75\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"21.3\" cy=\"80.7\" r=\"0.77\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"65.2\" cy=\"85.9\" r=\"0.73\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"106.4\" cy=\"33.6\" r=\"0.77\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"102.3\" cy=\"37.3\" r=\"0.40\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"100.8\" cy=\"97.3\" r=\"0.47\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"25.8\" cy=\"54.8\" r=\"0.52\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"34.9\" cy=\"38.6\" r=\"0.43\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"103.0\" cy=\"85.6\" r=\"0.50\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"59.7\" cy=\"88.9\" r=\"0.53\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"40.7\" cy=\"52.3\" r=\"0.30\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"81.7\" cy=\"35.5\" r=\"0.63\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"81.7\" cy=\"19.3\" r=\"0.75\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"18.9\" cy=\"85.1\" r=\"0.44\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"81.6\" cy=\"61.1\" r=\"0.37\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"56.2\" cy=\"103.7\" r=\"0.78\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"20.2\" cy=\"69.8\" r=\"0.32\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"19.5\" cy=\"59.6\" r=\"0.64\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"41.6\" cy=\"68.6\" r=\"0.51\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"49.2\" cy=\"54.7\" r=\"0.75\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"68.8\" cy=\"65.7\" r=\"0.58\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"82.8\" cy=\"51.8\" r=\"0.63\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"89.4\" cy=\"50.4\" r=\"0.43\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"27.3\" cy=\"95.8\" r=\"0.76\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"73.7\" cy=\"101.1\" r=\"0.43\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"21.6\" cy=\"20.5\" r=\"0.42\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"95.5\" cy=\"37.1\" r=\"0.72\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"57.5\" cy=\"77.2\" r=\"0.71\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"46.1\" cy=\"31.8\" r=\"0.31\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"47.8\" cy=\"89.6\" r=\"0.49\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"46.1\" cy=\"97.3\" r=\"0.47\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"59.1\" cy=\"39.4\" r=\"0.79\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"106.9\" cy=\"58.4\" r=\"0.68\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"95.4\" cy=\"95.7\" r=\"0.39\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"102.5\" cy=\"27.1\" r=\"0.67\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"64.6\" cy=\"26.8\" r=\"0.49\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"107.3\" cy=\"48.2\" r=\"0.69\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"103.9\" cy=\"95.7\" r=\"0.26\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"87.3\" cy=\"64.4\" r=\"0.65\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"89.6\" cy=\"53.5\" r=\"0.75\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"51.4\" cy=\"55.8\" r=\"0.31\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"85.0\" cy=\"31.8\" r=\"0.71\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"20.0\" cy=\"80.0\" r=\"0.40\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"42.9\" cy=\"72.6\" r=\"0.51\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"43.4\" cy=\"21.2\" r=\"0.38\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"37.5\" cy=\"38.2\" r=\"0.64\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"34.6\" cy=\"85.9\" r=\"0.67\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"41.4\" cy=\"100.4\" r=\"0.65\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"27.3\" cy=\"95.0\" r=\"0.31\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"105.7\" cy=\"27.9\" r=\"0.69\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"106.8\" cy=\"65.2\" r=\"0.73\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"81.1\" cy=\"72.5\" r=\"0.40\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"26.2\" cy=\"69.1\" r=\"0.33\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"52.7\" cy=\"22.1\" r=\"0.80\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"42.5\" cy=\"19.4\" r=\"0.43\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"64.7\" cy=\"78.2\" r=\"0.51\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"83.5\" cy=\"90.6\" r=\"0.67\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"50.2\" cy=\"38.3\" r=\"0.65\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"108.3\" cy=\"54.9\" r=\"0.52\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"94.4\" cy=\"83.1\" r=\"0.63\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"77.0\" cy=\"56.1\" r=\"0.60\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"38.3\" cy=\"33.6\" r=\"0.74\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"79.3\" cy=\"48.5\" r=\"0.60\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"51.5\" cy=\"62.6\" r=\"0.48\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"67.7\" cy=\"89.8\" r=\"0.35\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"86.5\" cy=\"32.7\" r=\"0.36\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"101.6\" cy=\"28.0\" r=\"0.60\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"81.5\" cy=\"99.7\" r=\"0.59\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"74.5\" cy=\"82.7\" r=\"0.30\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"62.5\" cy=\"24.8\" r=\"0.41\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"105.4\" cy=\"43.4\" r=\"0.28\" fill=\"#384334\" opacity=\".11\"/><circle cx=\"53.1\" cy=\"35.4\" r=\"0.54\" fill=\"#d6e0d3\" opacity=\".11\"/><circle cx=\"24.0\" cy=\"27.9\" r=\"0.75\" fill=\"#d6e0d3\" opacity=\".11\"/><path d=\"M23 17H104L110 24M16 25V101L23 108H103\" fill=\"none\" stroke=\"#b7c8b2\" stroke-width=\"1.3\"/><path d=\"M111 27V103L105 110H26\" fill=\"none\" stroke=\"#5f7258\" stroke-width=\"1.2\"/><path d=\"M5 12L28 34M114 5L96 32M115 118L94 94M13 119L32 96\" fill=\"none\" stroke=\"#586952\" stroke-width=\"1.3\" opacity=\".65\"/><path d=\"M7 12L29 33M114 8L97 33M113 115L95 93M15 116L33 97\" fill=\"none\" stroke=\"#bfcfba\" stroke-width=\".85\" opacity=\".7\"/></svg></div></div>",
+      "css": ".ds-b-tray{position:relative;width:248px;height:80px;display:grid;place-items:center}.ds-b-tray>svg{position:absolute;inset:0;width:100%;height:100%}.ds-b-tile{position:relative;width:26px;height:26px}.ds-b-pending{position:relative;width:224px;height:30px;border:2px solid #d2e8b1;color:#d2e8b1;text-align:center;font:500 12px \"Noto Sans KR\",sans-serif;line-height:30px}"
+    },
+    {
+      "name": "Current B — Board material",
+      "kind": "custom",
+      "refersTo": "w4-board",
+      "description": "Actual source material in a small illustrative specimen; not a gameplay or fidelity capture.",
+      "html": "<div class=\"ds-b-board\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"none\" viewBox=\"0 0 128 128\"><defs><linearGradient id=\"p\" x2=\"0\" y2=\"1\"><stop stop-color=\"#392e23\"/><stop offset=\"1\" stop-color=\"#1e1b16\"/></linearGradient></defs><rect x=\"3\" y=\"5\" width=\"122\" height=\"121\" rx=\"8\" fill=\"#171109\" opacity=\".40\"/><rect x=\"3\" y=\"2\" width=\"122\" height=\"121\" rx=\"7\" fill=\"url(#p)\" stroke=\"#765c3b\" stroke-width=\"1.2\"/><rect x=\"7\" y=\"6\" width=\"114\" height=\"113\" rx=\"5\" fill=\"none\" stroke=\"#503f28\" stroke-width=\".7\" opacity=\".6\"/><path d=\"M15 5H113Q121 5 122 15\" fill=\"none\" stroke=\"#a69580\" opacity=\".65\"/><circle cx=\"110.7\" cy=\"28.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"15.4\" cy=\"113.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"31.8\" cy=\"26.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.4\" cy=\"48.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"103.7\" cy=\"37.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.9\" cy=\"45.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"74.3\" cy=\"107.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"82.9\" cy=\"106.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"85.2\" cy=\"18.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"102.9\" cy=\"73.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"44.7\" cy=\"33.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.7\" cy=\"72.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"108.7\" cy=\"91.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"111.0\" cy=\"70.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"84.2\" cy=\"75.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"39.4\" cy=\"109.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"44.9\" cy=\"92.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.4\" cy=\"79.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"27.5\" cy=\"96.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"81.1\" cy=\"32.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.0\" cy=\"67.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"16.3\" cy=\"106.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.6\" cy=\"65.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.8\" cy=\"80.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.5\" cy=\"44.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.1\" cy=\"72.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"43.3\" cy=\"73.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.4\" cy=\"57.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"81.7\" cy=\"66.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"22.0\" cy=\"113.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.3\" cy=\"57.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.1\" cy=\"107.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.1\" cy=\"65.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"53.9\" cy=\"23.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"104.3\" cy=\"31.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.8\" cy=\"48.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"46.5\" cy=\"49.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"32.5\" cy=\"17.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"67.6\" cy=\"93.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.0\" cy=\"34.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"83.8\" cy=\"19.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.9\" cy=\"96.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.9\" cy=\"60.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.3\" cy=\"63.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"66.4\" cy=\"72.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"114.1\" cy=\"88.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"61.2\" cy=\"86.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"78.6\" cy=\"49.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"93.0\" cy=\"96.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"75.1\" cy=\"108.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"14.9\" cy=\"64.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"77.7\" cy=\"48.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"30.5\" cy=\"83.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"57.3\" cy=\"40.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"17.3\" cy=\"110.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"48.9\" cy=\"25.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"35.1\" cy=\"39.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"101.4\" cy=\"32.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"41.2\" cy=\"23.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"60.9\" cy=\"34.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"48.1\" cy=\"87.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"107.4\" cy=\"97.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"16.9\" cy=\"51.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.6\" cy=\"17.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"33.7\" cy=\"63.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"52.0\" cy=\"89.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"86.2\" cy=\"60.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"38.4\" cy=\"37.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"40.2\" cy=\"20.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"80.9\" cy=\"29.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"103.7\" cy=\"78.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.8\" cy=\"63.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"74.6\" cy=\"18.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"62.6\" cy=\"17.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"91.2\" cy=\"14.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"77.5\" cy=\"112.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"99.3\" cy=\"37.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"67.5\" cy=\"28.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"47.9\" cy=\"100.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"96.4\" cy=\"14.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.7\" cy=\"78.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"30.9\" cy=\"94.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"104.1\" cy=\"69.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.9\" cy=\"98.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"65.3\" cy=\"32.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"41.3\" cy=\"29.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"98.5\" cy=\"65.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"84.1\" cy=\"95.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"112.3\" cy=\"33.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.4\" cy=\"101.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"90.7\" cy=\"52.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.9\" cy=\"33.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"29.5\" cy=\"19.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.7\" cy=\"37.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"65.8\" cy=\"111.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"28.6\" cy=\"69.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"101.2\" cy=\"73.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"66.8\" cy=\"90.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"15.2\" cy=\"108.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"83.0\" cy=\"94.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"97.2\" cy=\"23.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"19.8\" cy=\"31.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.5\" cy=\"107.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"105.7\" cy=\"55.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"76.5\" cy=\"88.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"46.9\" cy=\"111.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"109.1\" cy=\"86.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"104.9\" cy=\"94.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"79.5\" cy=\"46.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"41.7\" cy=\"37.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.9\" cy=\"106.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"43.4\" cy=\"16.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"45.2\" cy=\"24.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"58.4\" cy=\"47.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"30.9\" cy=\"61.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"55.3\" cy=\"49.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"96.0\" cy=\"44.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.2\" cy=\"101.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"110.8\" cy=\"51.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"17.1\" cy=\"109.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"65.4\" cy=\"35.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"26.1\" cy=\"37.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"44.7\" cy=\"27.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.0\" cy=\"113.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"96.7\" cy=\"25.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"62.0\" cy=\"94.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.5\" cy=\"20.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"47.6\" cy=\"52.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.3\" cy=\"72.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"59.8\" cy=\"77.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.0\" cy=\"82.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"95.4\" cy=\"81.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.8\" cy=\"42.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"14.0\" cy=\"22.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"28.8\" cy=\"59.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"92.4\" cy=\"35.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"61.2\" cy=\"77.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"77.2\" cy=\"16.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"106.9\" cy=\"72.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"43.9\" cy=\"37.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"83.3\" cy=\"107.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"47.4\" cy=\"53.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"69.8\" cy=\"31.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.4\" cy=\"105.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"69.8\" cy=\"96.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"39.7\" cy=\"100.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"92.8\" cy=\"36.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"67.1\" cy=\"82.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"71.4\" cy=\"74.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"37.5\" cy=\"69.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"49.2\" cy=\"93.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.0\" cy=\"111.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"72.2\" cy=\"36.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"55.4\" cy=\"26.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"88.1\" cy=\"18.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"74.7\" cy=\"44.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"92.3\" cy=\"26.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"82.4\" cy=\"85.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"36.8\" cy=\"27.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"51.0\" cy=\"78.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"39.6\" cy=\"14.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"58.0\" cy=\"94.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"29.1\" cy=\"108.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"64.8\" cy=\"30.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"23.2\" cy=\"51.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"61.6\" cy=\"31.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"21.6\" cy=\"64.1\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"38.9\" cy=\"58.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"59.0\" cy=\"83.7\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"71.9\" cy=\"36.8\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"31.3\" cy=\"99.9\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"18.2\" cy=\"26.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"20.1\" cy=\"96.6\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"68.2\" cy=\"106.4\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"76.9\" cy=\"47.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"56.9\" cy=\"87.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"36.6\" cy=\"94.3\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"54.6\" cy=\"18.2\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"48.1\" cy=\"70.0\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/><circle cx=\"28.0\" cy=\"104.5\" r=\".45\" fill=\"#eadbb4\" opacity=\".045\"/></svg><div class=\"ds-b-pending\">1줄 완성</div></div>",
+      "css": ".ds-b-board{position:relative;width:336px;height:80px;display:grid;place-items:center}.ds-b-board>svg{position:absolute;inset:0;width:100%;height:100%}.ds-b-tile{position:relative;width:26px;height:26px}.ds-b-pending{position:relative;width:224px;height:30px;border:2px solid #d2e8b1;color:#d2e8b1;text-align:center;font:500 12px \"Noto Sans KR\",sans-serif;line-height:30px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "B Structural Frame",
+    "overview": "The user-selected B × warm 2 identity retains six authored structural tile textures, bronze/wood nine-slice HUD materials, a quiet ochre architectural plate, and tapered cream-stone/brown-timber tower modules. The user's rejection of the narrow board and side menus authorizes the new full-width board composition while preserving these materials.\n\nThe native screen remains connected to GameSession and the durable repository. The [approved gamefeel contract](art_source/gamefeel/direction.md) and [existing W4 surface brief](.impeccable/surfaces/game-scripts-presentation-puzzle-screen-gd.md) own this screen's layout and interaction. The [Visual Bible refinement contract](art_source/visual_bible/direction.md) remains material history; the [original W4 contract](art_source/w4/direction.md) is first-pass history. Exact scores, 8×8 rules, three supplied pieces, saved growth and modal ownership remain implemented constraints.",
+    "keyCharacteristics": [
+      "Full-width puzzle board with navigation above it and three nearby supply trays.",
+      "Six chamfered structural tile materials shared by board, tray, drag and clear remnants.",
+      "Textured score strip, recessed trays, amber actions and live Korean labels.",
+      "Explicit text, outlines and invalid crosses supplement color.",
+      "Immediate finger-follow, legal-anchor assistance and committed placement/clear feedback.",
+      "Success feedback follows the saved commit; reduced motion preserves factual results.",
+      "Tapered tower segments retain acquired floor counts; only the global top receives a width-matched roof."
+    ],
+    "rules": [
+      {
+        "name": "The W4 Action Contrast Rule",
+        "body": "Primary text stays dark in normal, hover, pressed, and focused states; all enabled buttons share press modulation without replacing the dark primary text color.",
+        "section": "colors"
+      },
+      {
+        "name": "The Committed Feedback Rule",
+        "body": "Preview motion may describe a candidate placement, but score, clear, unlock, and new-record success feedback comes only from a committed session result.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do derive board, tray, dragged, and clearing cells from the same six authored structural textures.",
+      "Do preserve dark primary text across all control states.",
+      "Do retain explicit pending counts, placement text, and invalid crosses alongside color.",
+      "Do tie success feedback to saved commits and keep text when motion or audio is reduced.",
+      "Do preserve full-plate architecture framing and a quiet central board field.",
+      "Do use a cornice on intermediate segments and a width-matched roof only at the actual top.",
+      "Do keep roof courses bound to mesh UVs and editable source assets aligned to runtime exports."
+    ],
+    "donts": [
+      "Don't promote the scoped GF-01/GF-02 Windows correction verdict into whole-surface Android or physical-device acceptance.",
+      "Don't apply historical W0 or superseded first-pass W4 materials to the refined surface."
+    ]
+  }
+}

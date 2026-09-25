@@ -1,0 +1,597 @@
+{
+  "engine_sha256": "ab1824f85bfd8e0e4128182c000c4003a3e042245b2967848d089b2a04b22424",
+  "reports": [
+    {
+      "board": "[P: (12.0, 112.0), S: (296.0, 296.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "mode": "basic",
+      "revision": 1,
+      "score": 0,
+      "size": "320x568",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 169.6), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "mode": "basic",
+      "revision": 1,
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 188.5), S: (388.0, 388.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "mode": "reference",
+      "revision": 1,
+      "score": 2580,
+      "size": "412x915",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 169.6), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native input dispatch picked tray",
+          "passed": true
+        },
+        {
+          "check": "native input preview valid",
+          "passed": true
+        },
+        {
+          "check": "one input committed once",
+          "passed": true
+        },
+        {
+          "check": "preview/drop exact cell",
+          "passed": true
+        },
+        {
+          "check": "input unlocked after settle",
+          "passed": true
+        },
+        {
+          "check": "disk matches rendered session",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "mode": "input",
+      "revision": 2,
+      "score": 1,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 169.6), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "mode": "valid",
+      "revision": 1,
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 169.6), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "mode": "invalid",
+      "revision": 1,
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 169.6), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 9,
+      "mode": "cross",
+      "revision": 1,
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 112.0), S: (296.0, 296.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 9,
+      "mode": "modal",
+      "revision": 1,
+      "score": 0,
+      "size": "320x568",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 112.0), S: (296.0, 296.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "mode": "settings",
+      "revision": 1,
+      "score": 0,
+      "size": "320x568",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 112.0), S: (296.0, 296.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "mode": "large",
+      "revision": 1,
+      "score": 8999999999999000,
+      "size": "320x568",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 169.6), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "mode": "button",
+      "revision": 1,
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 169.6), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "removal cells captured",
+          "passed": true
+        },
+        {
+          "check": "clear score exact",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 11,
+      "mode": "anticipation",
+      "revision": 2,
+      "score": 240,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 169.6), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "removal cells captured",
+          "passed": true
+        },
+        {
+          "check": "clear score exact",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 11,
+      "mode": "sweep",
+      "revision": 2,
+      "score": 240,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 169.6), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "removal cells captured",
+          "passed": true
+        },
+        {
+          "check": "clear score exact",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 11,
+      "mode": "shrink",
+      "revision": 2,
+      "score": 240,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 169.6), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "removal cells captured",
+          "passed": true
+        },
+        {
+          "check": "clear released input",
+          "passed": true
+        },
+        {
+          "check": "clear score exact",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 11,
+      "mode": "clear",
+      "revision": 2,
+      "score": 240,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 169.6), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "removal cells captured",
+          "passed": true
+        },
+        {
+          "check": "clear released input",
+          "passed": true
+        },
+        {
+          "check": "clear score exact",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 25,
+      "mode": "max",
+      "revision": 2,
+      "score": 2560,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 169.6), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "only actual top receives roof",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 13,
+      "mode": "tower_top",
+      "revision": 1,
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 169.6), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "motion frame 0 saved",
+          "passed": true
+        },
+        {
+          "check": "motion frame 60 saved",
+          "passed": true
+        },
+        {
+          "check": "motion frame 140 saved",
+          "passed": true
+        },
+        {
+          "check": "motion frame 220 saved",
+          "passed": true
+        },
+        {
+          "check": "motion frame 300 saved",
+          "passed": true
+        },
+        {
+          "check": "motion frame 460 saved",
+          "passed": true
+        },
+        {
+          "check": "real-time clear released input",
+          "passed": true
+        },
+        {
+          "check": "real-time clear awarded once",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 11,
+      "mode": "motion",
+      "revision": 2,
+      "score": 240,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 128.0), S: (296.0, 296.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "navigation below safe top",
+          "passed": true
+        },
+        {
+          "check": "clear above safe bottom",
+          "passed": true
+        },
+        {
+          "check": "full width retained with insets",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "mode": "inset",
+      "revision": 1,
+      "score": 0,
+      "size": "320x568",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 169.6), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "pickup during clear tail allowed",
+          "passed": true
+        },
+        {
+          "check": "old clear reward dismissed on pickup",
+          "passed": true
+        },
+        {
+          "check": "new drag guidance visible immediately",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 11,
+      "mode": "clear_pick",
+      "revision": 2,
+      "score": 240,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    }
+  ]
+}

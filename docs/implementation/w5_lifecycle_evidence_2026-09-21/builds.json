@@ -1,0 +1,21 @@
+{
+  "version_code": 5,
+  "version_name": "0.1.0-w5-lifecycle5",
+  "physical_device_install": "held by user; not attempted",
+  "builds": [
+    {
+      "path": "game\\export\\blocktower-device-debug.apk",
+      "sha256": "726ad2ef0321b50b7b20c3ac07d15b6a38bdbddca560b0d9368a94eb243fcf5e",
+      "bytes": 38426684,
+      "test_hooks_absent": true
+    },
+    {
+      "path": "game\\export\\blocktower-device-qa.apk",
+      "sha256": "a400c6ddb5cd349bc55d77dff3041a2f4ba51ebce387909cfbc312278b8b046c",
+      "bytes": 38426684,
+      "test_hooks_absent": true
+    }
+  ],
+  "main_and_ui_qa_identical_assets": 182,
+  "unchanged_compiled_save_assets_vs_tested_recovery_qa": 20
+}

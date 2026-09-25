@@ -1,0 +1,938 @@
+{
+  "schema": 1,
+  "date": "2026-09-21",
+  "variant": "B2_structural_warm",
+  "authority": "docs/디자인시안.png",
+  "scope": "User-requested detailed B appearance; native validation recorded separately",
+  "origins": {
+    "background": "Built-in image generation referencing user Visual Bible; exact background_prompt.txt; no embedded UI",
+    "surfaces": "Original code-authored geometric SVG material/icon assets; build_surfaces.py; independent native labels",
+    "tower": "Original editable Godot 3D geometry, no external models or textures; render_tower.gd and tower_scenes/*.tscn",
+    "brick_tower": "Original code-authored Godot 3D geometry; no external models or textures. Reproduced with art_source/visual_bible/render_brick_tower.gd; four editable tower_scenes/brick_floor_*.tscn modules and four runtime PNGs share wood camera, lighting, 640x480 canvas, (320,240) anchor and 106.4683685px floor step.",
+    "metal_tower": "Original code-authored Godot 3D geometry; no external models or textures. Reproduced with art_source/visual_bible/render_metal_tower.gd; four editable tower_scenes/metal_floor_*.tscn modules, metal_geometry.json, and four transparent runtime PNGs share wood camera, lighting, 640x480 canvas, (320,240) anchor and 106.4683685px floor step. Gunmetal structural framing, mullions and broad glass bays define the facade beyond tint.",
+    "crystal_tower": "Original code-authored Godot 3D crystal geometry; no external models or textures. Reproduced with art_source/visual_bible/render_crystal_tower.gd; four editable tower_scenes/crystal_floor_*.tscn modules, crystal_geometry.json and four transparent runtime PNGs share wood camera, lighting, 640x480 canvas, (320,240) anchor and 106.4683685px floor step. Faceted hexagonal columns and restrained cyan/lavender luminous planes distinguish the facade.",
+    "brick_arch_part": "Original code-authored Godot 3D brick arch-window variation; no external models or textures. Reproduced with art_source/visual_bible/render_brick_arch_tower.gd; four editable tower_scenes/brick_arch_floor_{entry,wide,mid,top}.tscn modules, brick_arch_geometry.json and four transparent runtime PNGs share brick/wood camera, lighting, 640x480 canvas, (320,240) anchor and 106.4683685px floor step. Faceted voussoirs, keystones and arch-shaped glazing alter structure and silhouette beyond tint.",
+    "brick_terrace_part": "Original code-authored Godot 3D limestone terrace and balustrade compositions; no external models or textures. Reproduced with art_source/visual_bible/render_brick_terrace_tower.gd. Four editable entry/wide modules (terrace-only and arch+terrace) and four transparent runtime PNGs share the brick camera/lighting, 640x480 canvas, (320,240) anchor and 106.4683685px floor step.",
+    "brick_cornice_part": "Original code-authored Godot 3D projecting limestone dentil cornice with preserved hip-roof silhouettes, stone bands/merlons, and the gold finial/flag from all three matching base roof variants; no external models or textures. Reproduced with art_source/visual_bible/render_brick_cornice.gd. Four editable 640x480 cap scenes and four transparent runtime PNGs share the wood camera/light, (320,240) anchor and 106.4683685px floor step.",
+    "brick_landmark_part": "Original code-authored Godot 3D clock-face landmark, with projecting pilasters, plinth and cornice; no external model or texture. Reproduced with art_source/visual_bible/render_brick_landmark.gd. Two editable ordinary-brick and brick-arch mid-floor scenes and transparent runtime PNGs share the brick camera/light, 640x480 canvas, (320,240) anchor and 106.4683685px floor step."
+  },
+  "panel_margins": {
+    "texture": 16,
+    "content": 8
+  },
+  "source": [
+    {
+      "path": "art_source/visual_bible/README.md",
+      "bytes": 7520,
+      "sha256": "bef9e4ab414408551b978355d251556ea71117591566f678f742b22464f51a8c"
+    },
+    {
+      "path": "art_source/visual_bible/background_prompt.txt",
+      "bytes": 1318,
+      "sha256": "edd566ce4461f97fdd253958bd26950f606efa26fc30af7b5ca1a9fbe3b221a5"
+    },
+    {
+      "path": "art_source/visual_bible/build_surfaces.py",
+      "bytes": 5673,
+      "sha256": "06befb81c6312e45163725336c4335bbbad9b96f362509ad875cf9006e8a985e"
+    },
+    {
+      "path": "art_source/visual_bible/direction.md",
+      "bytes": 1910,
+      "sha256": "02dbb3545ff2052dc78198f6f748960fdbb91fc935d4bfc8da2b90421354461d"
+    },
+    {
+      "path": "art_source/visual_bible/export_surfaces.gd",
+      "bytes": 777,
+      "sha256": "06097b3a8b014f5fe7cf003690ed49b4c5755c1dd60daad99a161cfbca65afc6"
+    },
+    {
+      "path": "art_source/visual_bible/render_brick_arch_tower.gd",
+      "bytes": 8310,
+      "sha256": "8710a9726ead57bd74f183b39267d54d6e225b39d28e9f674402b4e52e0a02bf"
+    },
+    {
+      "path": "art_source/visual_bible/render_brick_cornice.gd",
+      "bytes": 6329,
+      "sha256": "bd95f9aef69757358f0c433955059c3f26efbc011b9a3e6ef752f2bf603e1644"
+    },
+    {
+      "path": "art_source/visual_bible/render_brick_landmark.gd",
+      "bytes": 7870,
+      "sha256": "e64bdf679d22f6e80073b7d6a923a934c57c4fd0a3df8882c9febf8977526689"
+    },
+    {
+      "path": "art_source/visual_bible/render_brick_terrace_tower.gd",
+      "bytes": 4897,
+      "sha256": "1ab2213cfa44686dd26d521a755616da8ed4561dd878a0ab18458dad98711541"
+    },
+    {
+      "path": "art_source/visual_bible/render_brick_tower.gd",
+      "bytes": 6662,
+      "sha256": "91d877b1e3063812ea933cbd5bdb39e7781a035fbff2d51ab27bef628546f7c4"
+    },
+    {
+      "path": "art_source/visual_bible/render_crystal_tower.gd",
+      "bytes": 8228,
+      "sha256": "438e496e38f181a166d5149fb5ca4125e08839ce9115f1a029951cdeac4e348c"
+    },
+    {
+      "path": "art_source/visual_bible/render_metal_tower.gd",
+      "bytes": 6388,
+      "sha256": "0840607be44d748532376ad288749beb3cb44299dc51cd7df17825a0a8212c35"
+    },
+    {
+      "path": "art_source/visual_bible/render_tower.gd",
+      "bytes": 11698,
+      "sha256": "f0a5529f4dc9cbb034b4a7830fc5356d0209e940b9d3590985f86ce5f5be580a"
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/board.png",
+      "bytes": 3214,
+      "sha256": "1d4998aca12a3a38aae5e2b6a75a541b6eb3ad990639395e832914f6d70c9a67",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/button.png",
+      "bytes": 3306,
+      "sha256": "4e16cf7125615a199896103621e3105127a9f34458b6ffba27b235a19595c29b",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/disabled.png",
+      "bytes": 3302,
+      "sha256": "60300cd3eb302d988c7709c10b8822e4f7fa00f04ddc5017bde35337d0bd2307",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/empty.png",
+      "bytes": 1348,
+      "sha256": "aca4f1002a522d067167641e8fb43801dbcc37a03a6e6c8477c0be9691af00cb",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/icon_back.png",
+      "bytes": 361,
+      "sha256": "5318dfdb9ed3fc5a10aad25f50c025986d8c56fe4114e7dde02736bf775ba306",
+      "dimensions": [
+        28,
+        28
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/icon_best.png",
+      "bytes": 741,
+      "sha256": "e9143b615e4fdf8c2e4e7a50303440443bc1891e48fb296fb5c4b8f64d76fffc",
+      "dimensions": [
+        28,
+        28
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/icon_close.png",
+      "bytes": 402,
+      "sha256": "676abaa09fd953c6f4982b2b48eca7dda064873a5c37df7246ec2ed3583629a2",
+      "dimensions": [
+        28,
+        28
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/icon_settings.png",
+      "bytes": 1274,
+      "sha256": "73afefd26a0f78d2e9307c308a811d73b113da2f05a10f98fc2935fcb9daacfb",
+      "dimensions": [
+        28,
+        28
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/icon_streak.png",
+      "bytes": 620,
+      "sha256": "c61c37e862cf39bf01a975631bb3e3b9db306e7c13c92469ef1720e1eef8142a",
+      "dimensions": [
+        28,
+        28
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/icon_tower.png",
+      "bytes": 883,
+      "sha256": "daa311a6b1ae69e31dc19f928b678e501f3fca05ea12128805e9ad69706864f7",
+      "dimensions": [
+        28,
+        28
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/panel.png",
+      "bytes": 3360,
+      "sha256": "c4499ce84219b8d8d6aab833879f18fb93483234365358821ac072b03d05b187",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/switch_off.png",
+      "bytes": 1601,
+      "sha256": "701e16b108ae50edd0fd98fc469e9ea320fe6057ca24a4417fee5fab9622b2d4",
+      "dimensions": [
+        48,
+        28
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/switch_on.png",
+      "bytes": 1533,
+      "sha256": "1f0111472c000f9cee3c006f6ed98f5d78685f32a5b4d63f593f88be8f628aba",
+      "dimensions": [
+        48,
+        28
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/tile_blue.png",
+      "bytes": 8186,
+      "sha256": "e851daeab5c5e3432a1a7bc76590ed94424bed8277d15393d778e53f5e6ff035",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/tile_clay.png",
+      "bytes": 8283,
+      "sha256": "e156e06fa4c54f71fdc92a70ecce27789cf60990a8ee354aaa88bc9347c9d92f",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/tile_gold.png",
+      "bytes": 7781,
+      "sha256": "6bf0269284cd40ae29adfb9df6dbb39ca172630f3b712dbcd1fc621ad8802947",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/tile_sage.png",
+      "bytes": 7865,
+      "sha256": "5ecdd6333ab78ae34c6b76be3aef1a5cafc97c64509f890736bb32e1a47efb7a",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/tile_sand.png",
+      "bytes": 7668,
+      "sha256": "e12092c06760b68d8f0b81072597e19dae3a4ea9bc71bcca90f169909f410f24",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/tile_violet.png",
+      "bytes": 7966,
+      "sha256": "b7149c33158ec84abb68ab11e9527493601bf3f1f06d2f78327665a7cfe2024f",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/surface_exports/tray.png",
+      "bytes": 3272,
+      "sha256": "878d3954ef7c741ef07bd6853ea80b5b100bd7d4ae9cd2bfae1df37aae558834",
+      "dimensions": [
+        128,
+        128
+      ]
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/base.tscn",
+      "bytes": 93487,
+      "sha256": "95743d2f61a5eea8f68e02d9644c02e874926a5aa2537bbd4920b65f5f2aae9c"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/brick_arch_floor_entry.tscn",
+      "bytes": 43534,
+      "sha256": "34a388777e2e4ad2f4bf2a6033b2eaea19e54f4f835133c84b7c14bf9c2a6a7d"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/brick_arch_floor_mid.tscn",
+      "bytes": 42158,
+      "sha256": "17f9d66b790370a114e284fbd13da4a758dedfb9863604a6b5da3a2376eff3e1"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/brick_arch_floor_top.tscn",
+      "bytes": 42166,
+      "sha256": "046c7b6f29015bfcf0b07e489778a1df543df6dce8ac68581708edb4e2833cc4"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/brick_arch_floor_wide.tscn",
+      "bytes": 42179,
+      "sha256": "500379e7220bbff84415335f7f33d01157dfafa930617c75edcab02f59c8ad64"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/brick_arch_landmark_floor_mid.tscn",
+      "bytes": 44047,
+      "sha256": "d3651bb1e559e13e72b83dc0d53c4dafb7e3252b31a32e718d188ffc56623c34"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/brick_arch_terrace_floor_entry.tscn",
+      "bytes": 60189,
+      "sha256": "1cca3c662dbb40d92271e0289568dac09662497bbc0a344997d1fef2a8250729"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/brick_arch_terrace_floor_wide.tscn",
+      "bytes": 58832,
+      "sha256": "50e583d8bdbf34ca8158308d24a8d0401865ea14decb0a957abf15f1c0229fe8"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/brick_cornice.tscn",
+      "bytes": 12069,
+      "sha256": "ec5bd7469dea91bc145f30803dda5787112211def7d9ec392ca50e186d809981"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/brick_cornice_roof_mid.tscn",
+      "bytes": 12140,
+      "sha256": "bbb428dde970f1da51f05daf3e35f6c142fba427e846810d456dad73b71c320a"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/brick_cornice_roof_top.tscn",
+      "bytes": 12146,
+      "sha256": "8f2991e1686e3dfcd477ca8c90860254414b8de33ff9c0f7d82865db64c62edb"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/brick_cornice_roof_wide.tscn",
+      "bytes": 12094,
+      "sha256": "c27b9376a567e3f7ba1beb824eedba57503fa4762b85026e47c9903508cc3ed2"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/brick_floor_entry.tscn",
+      "bytes": 31208,
+      "sha256": "b632c7ecf629ba5d035cf90b12e131c56a0ddd727798dae4366bd4372a41a13f"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/brick_floor_mid.tscn",
+      "bytes": 29831,
+      "sha256": "27767329210a52aae28d11c7690f3ecb67eede24319602f998b1bff959ece519"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/brick_floor_top.tscn",
+      "bytes": 29831,
+      "sha256": "31c91438ca7a4a82b93422ea03cd952e776cad49eb8007fafcef704aaf88c370"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/brick_floor_wide.tscn",
+      "bytes": 29739,
+      "sha256": "9cfc0d47b69a436212447bcee553d14d2a4fddaf79efdf9e390445489a6eb284"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/brick_landmark_floor_mid.tscn",
+      "bytes": 36661,
+      "sha256": "6bea66d1a34226475e970a0e1b3393d991b5374ebcb0c2e92899250d5de52e0b"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/brick_terrace_floor_entry.tscn",
+      "bytes": 47701,
+      "sha256": "c2dd924d6eb9905b9947743c100e8f50dab648e800254c091706daba125c5a4d"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/brick_terrace_floor_wide.tscn",
+      "bytes": 46205,
+      "sha256": "ef80a57a40ffc8e7a0f3605710e620f27f03e6363eaedd30c22706f40e525af4"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/cornice.tscn",
+      "bytes": 1514,
+      "sha256": "ae927cf19db39557dc3caca32f3c388dd904e6cb5a18a9b50ca5a74e7b918b1a"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/crystal_floor_entry.tscn",
+      "bytes": 37642,
+      "sha256": "ef0a6ccb90e9bb9324374c3c276d65f0ee91cf9d676315eb714d96463a3ce79f"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/crystal_floor_mid.tscn",
+      "bytes": 36315,
+      "sha256": "bbbbb2064dccb6bff23a2eac40246f7ef4da19fce21e2362855871a6796d5d68"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/crystal_floor_top.tscn",
+      "bytes": 36321,
+      "sha256": "53adcba5c7e160cf69d16ccddebfde4b7ee2468cff554310c3412c63c85dc10a"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/crystal_floor_wide.tscn",
+      "bytes": 36232,
+      "sha256": "9d69fba15294dfb5028c1c4e001a0d4b31ca766c6dfc06d9a5102f94ca5e02f3"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/floor_entry.tscn",
+      "bytes": 202271,
+      "sha256": "36213778e4ccbc3a8594a22ea6882d9b976e151aa1b39d3af0e6e98e1535e52a"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/floor_mid.tscn",
+      "bytes": 196928,
+      "sha256": "311573f2745e365020ad8a534ed683f2bb092b42f0fa183bb9a70a62e0798e8f"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/floor_top.tscn",
+      "bytes": 197555,
+      "sha256": "98010137ccb4a85c252722fa25446ce46829aa516daa6526bdb5e04582a27bd2"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/floor_wide.tscn",
+      "bytes": 197062,
+      "sha256": "ebd062310f514fe7340074ca6bfd9d2babc3c927f511dad00175f5991d57ab09"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/metal_floor_entry.tscn",
+      "bytes": 19920,
+      "sha256": "8b68d8f7b8aae016de3a858603ca39d04260c878e8e2aadeb7e703a71df91a7a"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/metal_floor_mid.tscn",
+      "bytes": 18538,
+      "sha256": "2f9501624dc28bf262c9dd6263584cccb1da24d1d48d99c3b0d1e9f92dadba71"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/metal_floor_top.tscn",
+      "bytes": 18579,
+      "sha256": "fbc9a0450d552ec5674e0e43d5e6fa9b53fe17c686d8ee8861a78a2f7d9650b0"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/metal_floor_wide.tscn",
+      "bytes": 18465,
+      "sha256": "ab1b7fe47862a648089b820829e2b13482bf933d656c7ffef4b0dc4873915515"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/roof_mid.tscn",
+      "bytes": 27681,
+      "sha256": "bb3abb3d75d67ca91ae6ba6e7072e94092e9390fb512a671c9c72ac058d9b600"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/roof_top.tscn",
+      "bytes": 27679,
+      "sha256": "ace0ceb0f67d0d39c1fedafbe2973927d729811bb01259f8865bf3cdef1f55ae"
+    },
+    {
+      "path": "art_source/visual_bible/tower_scenes/roof_wide.tscn",
+      "bytes": 27669,
+      "sha256": "9a89e0a2c4d3eea7d3679bd9e29e7b30962849e23d84f02a2ac574c1ac25e2ec"
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_arch_geometry.json",
+      "bytes": 172,
+      "sha256": "ce9b9c6cb00bdabdddbf438da918a206c1602da629e38ce5fc225c45ca41b8e3"
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_geometry.json",
+      "bytes": 172,
+      "sha256": "ce9b9c6cb00bdabdddbf438da918a206c1602da629e38ce5fc225c45ca41b8e3"
+    },
+    {
+      "path": "game/assets/visual_bible/tower/crystal_geometry.json",
+      "bytes": 172,
+      "sha256": "ce9b9c6cb00bdabdddbf438da918a206c1602da629e38ce5fc225c45ca41b8e3"
+    },
+    {
+      "path": "game/assets/visual_bible/tower/metal_geometry.json",
+      "bytes": 172,
+      "sha256": "ce9b9c6cb00bdabdddbf438da918a206c1602da629e38ce5fc225c45ca41b8e3"
+    }
+  ],
+  "runtime": [
+    {
+      "path": "game/assets/visual_bible/backgrounds/architecture_b.png",
+      "bytes": 1772215,
+      "sha256": "e179bce78e2cd91ddbbc2c88d0c272ba2b9f85509b3e9fbd1b330ab0ca6f18ed",
+      "dimensions": [
+        940,
+        1672
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/board.svg",
+      "bytes": 12708,
+      "sha256": "bd4428dea4398e9e4dfe4d0159d691b85948b3c262871c59d1f6555d3c2f6d50"
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/button.svg",
+      "bytes": 12708,
+      "sha256": "b5f8df18254c8e8e9f298d62490aa7faa611fab0ea493d8ce808c60f113058ee"
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/disabled.svg",
+      "bytes": 12708,
+      "sha256": "d3148f7d6f5105be46c134ae979c7f98ecf148bdec7692dee67604be981440bf"
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/empty.svg",
+      "bytes": 356,
+      "sha256": "46ef3303d35e076f755d373b4b07d404a8947736fd11889ed8397e61e8731797"
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/icon_back.svg",
+      "bytes": 226,
+      "sha256": "265f2a3a7fe99728beec5870f1a2efa5709a6b6e08cc30c3e4d5e70506ee7f9b"
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/icon_best.svg",
+      "bytes": 323,
+      "sha256": "0dba30b58cc6dd7e969feec62ede7310b5102780a3e694e71e01f13d1c9f69c8"
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/icon_close.svg",
+      "bytes": 224,
+      "sha256": "9bdab4c0715f256b4ee0fca78a709f0dfd201add4978dbe7df70f7980b368bed"
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/icon_settings.svg",
+      "bytes": 329,
+      "sha256": "29489ba4db78cc1dcd1d03dfbb5183521886e53c4f07d43cba22d87c4fc0e049"
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/icon_streak.svg",
+      "bytes": 252,
+      "sha256": "c51a32fc1573de1ff02857855ff8688c4d83a7805ed2d14e67d33c5ed95c5fc4"
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/icon_tower.svg",
+      "bytes": 271,
+      "sha256": "041dede782f482852eb2cf9cd6dc61d9e422ceb55bedd3044093f42b52dfacb3"
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/panel.svg",
+      "bytes": 12708,
+      "sha256": "4a6781e83d95a86a52be5af1c3ee2024cac2214c9fa677361b99c58e4768c5c1"
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/switch_off.svg",
+      "bytes": 321,
+      "sha256": "5819ad2b8f6a025b0f7e9c63638d41fae199cd8f7c0abf98c80466e0aba30c20"
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/switch_on.svg",
+      "bytes": 321,
+      "sha256": "a32f18164dedd26f1c4ea58efef02d793f5d4b77c69192f1caf098dda43c3c32"
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/tile_blue.svg",
+      "bytes": 15320,
+      "sha256": "10aafe397b8e60509df294b2bd979994f2466ff9a66f1457fa15b7b7135be469"
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/tile_clay.svg",
+      "bytes": 15321,
+      "sha256": "c948e82e47d8930f34e0fd7e62c9a72f063e8bcdf6021e65ef95b5c410232cd2"
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/tile_gold.svg",
+      "bytes": 15279,
+      "sha256": "e5b86a8646d09aefd36f894a46f4aee50cdc31595d978b0b5ec3ed12a64d656f"
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/tile_sage.svg",
+      "bytes": 15287,
+      "sha256": "0d63b22f8a28d04d2dcb61f892bafbce550a82d21219245048ec2b750317c0ca"
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/tile_sand.svg",
+      "bytes": 15290,
+      "sha256": "6fe0a7a29cefad75c78f74791dbf17076ec1fc7770335da7b16c1641e95667e0"
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/tile_violet.svg",
+      "bytes": 15284,
+      "sha256": "84618aa49de99bbf59c2db2ed8808227a7f15b54275625dee215c396e85d1349"
+    },
+    {
+      "path": "game/assets/visual_bible/surfaces/tray.svg",
+      "bytes": 12708,
+      "sha256": "b63a7a961aadaafaaf3b265dcc44ad175c4723d5858c7e5fc9dce66d98d4285b"
+    },
+    {
+      "path": "game/assets/visual_bible/tower/base.png",
+      "bytes": 37432,
+      "sha256": "5b25a4b502ca9a22b0596386f6bcfe71330fbb792b83d4c4f62a6a405d343a11",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_arch_floor_entry.png",
+      "bytes": 24455,
+      "sha256": "851ab5f24f28214e8b6e6d312b6a7eb1d79e7ea44e9cf7c7143ad0cefc6d2816",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_arch_floor_mid.png",
+      "bytes": 19120,
+      "sha256": "f8de6e170a95d084fe7b9789b4aa7681ee5ff66f3173b9650aa3a5e9f9121fe1",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_arch_floor_top.png",
+      "bytes": 16555,
+      "sha256": "c1bcca2e32e6061b7690b4e1acc63f2a6bd570c2b24754bdb1aef1467a4b3a30",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_arch_floor_wide.png",
+      "bytes": 22807,
+      "sha256": "31b6b4a4492ec275dc944a2daf0edd165653a3b8e4e1876298bcd4c8ab1eb380",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_arch_landmark_floor_mid.png",
+      "bytes": 20471,
+      "sha256": "041b493e073f271fc660e84c99615ec47950c49abdc92ace24877e87b0349696",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_arch_terrace_floor_entry.png",
+      "bytes": 35298,
+      "sha256": "3dfc52020a26cdb25dbed80e81504fffe0244038f2c7ee3b3e1b3e8e3dc982c5",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_arch_terrace_floor_wide.png",
+      "bytes": 33741,
+      "sha256": "e39f3d7dace3cd1edd803ce42e0e3b4f7a1887a31de5b9fb65541261107091f9",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_cornice.png",
+      "bytes": 7035,
+      "sha256": "8cc48f63bc3232b8509ca29dad84e4bffdaf54cbdfc30e45d99dbc0532a51b82",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_cornice_geometry.json",
+      "bytes": 309,
+      "sha256": "017364f6ada8584d63e76bcc887abb1dbcf46f8da77457eba3eaa9bef50942d0"
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_cornice_roof_mid.png",
+      "bytes": 16803,
+      "sha256": "5cee23556ddc993787bff97771b40cf37ebb2b9ed7987e6c930bda30dc431f93",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_cornice_roof_top.png",
+      "bytes": 15115,
+      "sha256": "7a702e03f0f8e51d55c1f636ae636a68f74c2e3489541f518c2e7b101e7c59d1",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_cornice_roof_wide.png",
+      "bytes": 18290,
+      "sha256": "37c4c27e0c12424d80d7dae596b8341fd8a57d422a6885879f78ffc572f03ec7",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_floor_entry.png",
+      "bytes": 21592,
+      "sha256": "320a8e387c3fd51866427384537ea4f19d4416e368a261ea00ef4dc227a3c954",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_floor_mid.png",
+      "bytes": 17020,
+      "sha256": "3734d4712dc4ee565241f1196a341affd3a5daf4b9648c44c5b70d9b2a106bd4",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_floor_top.png",
+      "bytes": 14480,
+      "sha256": "0309c3cc56de512701d8000d67aa7986ff48e9c4bb08697d2128ed896a6ca2a7",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_floor_wide.png",
+      "bytes": 19832,
+      "sha256": "d50c2bb53a376fe291b5bc5788a7165172ff12803a3860c8db2c306ba12bd99e",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_landmark_floor_mid.png",
+      "bytes": 19036,
+      "sha256": "c9e6f24e638689b63572f46c86285442df4446eab2b7924559a4f91356f5e953",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_landmark_geometry.json",
+      "bytes": 336,
+      "sha256": "03e48418ab1db931d0848cad838042eff6c08f53eac5b9c9beeaf8784d38ab01"
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_terrace_floor_entry.png",
+      "bytes": 34893,
+      "sha256": "7ec92d0c0123aebef40955fd2fdb9eab43cc7b761447f3faf9050606292e1244",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_terrace_floor_wide.png",
+      "bytes": 33326,
+      "sha256": "32ea6423d5f356d48835319c2388ef906e499e5050bc341f6fe0be28c278cb42",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/brick_terrace_geometry.json",
+      "bytes": 530,
+      "sha256": "74c65b897a250a39eebea80885847ae6aba2153fdc835ff76ea654e9192b5965"
+    },
+    {
+      "path": "game/assets/visual_bible/tower/cornice.png",
+      "bytes": 3004,
+      "sha256": "0bdb2ab4588f353202f01404967f7535c7b35e99f8dfda058987d8e7e2672507",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/crystal_floor_entry.png",
+      "bytes": 28911,
+      "sha256": "cf14adf67b85d41f7bdf3fd34f301c49fb42b3b44943355e33bb455ca9d2c172",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/crystal_floor_mid.png",
+      "bytes": 21305,
+      "sha256": "1c5ffb93c5bc6fbe97ca8ef4941221000ac87aaac2c421587a89568636e08654",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/crystal_floor_top.png",
+      "bytes": 18565,
+      "sha256": "a15cb69f08eab5671b2933461400baef9759aca6d568c843a2ab84d715b9ff03",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/crystal_floor_wide.png",
+      "bytes": 26418,
+      "sha256": "69423acab879625f9a1e1caa570915bc54ab094b1e306d9af92c76d93e7cb400",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/floor_entry.png",
+      "bytes": 31452,
+      "sha256": "a291aa6f1ba203387c1983369df1aad3a99ecc6d7a4c16432997db8af2fc8931",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/floor_mid.png",
+      "bytes": 27519,
+      "sha256": "ea53139ed7080ccbd4c77b92bf921b062532f0a50be62a0b4c400f5ffde53485",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/floor_top.png",
+      "bytes": 22877,
+      "sha256": "4650c36e6225b6d543139473973a9fe3757de83d7f886ad3f58178c5b5e038fe",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/floor_wide.png",
+      "bytes": 31090,
+      "sha256": "1fb6339dcc430da68a851b32e8e022cf1f375a7b7772c8a1033c9658128130d5",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/geometry.json",
+      "bytes": 172,
+      "sha256": "ce9b9c6cb00bdabdddbf438da918a206c1602da629e38ce5fc225c45ca41b8e3"
+    },
+    {
+      "path": "game/assets/visual_bible/tower/metal_floor_entry.png",
+      "bytes": 15410,
+      "sha256": "26d9e66a1d2b749736b2b148a333f43ecce2e1bf783cb0d95401e23125ed9e30",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/metal_floor_mid.png",
+      "bytes": 11109,
+      "sha256": "1bd54f368c79c7bc342c0def9878ffbc5c5065bd5833b575fc1d29f2aa9ebdb7",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/metal_floor_top.png",
+      "bytes": 10032,
+      "sha256": "65cf2792a0d3b0018f15f08f4b31ef2fb909d103107a1de7dead17f368a5c4e4",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/metal_floor_wide.png",
+      "bytes": 13027,
+      "sha256": "b5c42a20e5e592e33da611deb7f42f15745000ca43b4472a9e49c2187b69c25a",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/roof_mid.png",
+      "bytes": 18790,
+      "sha256": "5630017e3aa66ac84ed84e73ead0975e7ba07f856038bd2f143ed7d40feabf8b",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/roof_top.png",
+      "bytes": 16034,
+      "sha256": "f28e048b8628e1d8f80d1182db9d981bbc49f08b67395ddc622ac91101b0ab50",
+      "dimensions": [
+        640,
+        480
+      ]
+    },
+    {
+      "path": "game/assets/visual_bible/tower/roof_wide.png",
+      "bytes": 20334,
+      "sha256": "ac7944c110f3d8c739e435835857e221efa2832fa6a09a34233beca9c38f3871",
+      "dimensions": [
+        640,
+        480
+      ]
+    }
+  ],
+  "background_fit": "Stretch full independent plate per viewport; preserve side architecture without aspect-cover cropping",
+  "revisions": [
+    {
+      "date": "2026-09-23",
+      "change": "HUD refinement: added icon_close, icon_best, icon_streak, switch_off, switch_on from build_surfaces.py; existing surfaces byte-identical"
+    },
+    {
+      "date": "2026-09-24",
+      "change": "Added original metal/glass tower modules, transparent runtime exports and provenance metadata."
+    },
+    {
+      "date": "2026-09-24",
+      "change": "Added original crystal facade modules, transparent runtime exports and source provenance."
+    },
+    {
+      "date": "2026-09-24",
+      "change": "Added original brick arch-window part modules, transparent runtime exports, geometry metadata and source provenance."
+    },
+    {
+      "date": "2026-09-24",
+      "change": "Added original brick terrace and arch-plus-terrace modules, transparent runtime exports and geometry metadata."
+    },
+    {
+      "date": "2026-09-25",
+      "change": "Added original brick clock-landmark floor modules for ordinary and arch-window facades, transparent runtime exports, geometry metadata and provenance."
+    }
+  ]
+}

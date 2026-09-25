@@ -1,0 +1,36 @@
+{
+  "origin": "Original procedural synthesis; no external samples",
+  "generator": "art_source/gamefeel/build_audio.py",
+  "files": [
+    {
+      "path": "game/assets/audio/gamefeel/button.wav",
+      "seconds": 0.075,
+      "peak": 0.1347697378460036,
+      "sha256": "91f93132222184d2c6f9c59dcb45159a5ca6a951f8c2495a8414e8bc22fbe592"
+    },
+    {
+      "path": "game/assets/audio/gamefeel/snap.wav",
+      "seconds": 0.16,
+      "peak": 0.38303781243324075,
+      "sha256": "cb4291ae3e9495bc1b162389d90301689d41b870ab1166cc9f682af5c8f1d609"
+    },
+    {
+      "path": "game/assets/audio/gamefeel/clear.wav",
+      "seconds": 0.32,
+      "peak": 0.29007843256935334,
+      "sha256": "cc913a449fd387d3f04379117c643ef94263017b7fbd7ce93da22e48b0120855"
+    },
+    {
+      "path": "game/assets/audio/gamefeel/air.wav",
+      "seconds": 0.32,
+      "peak": 0.06497390667439802,
+      "sha256": "fc48b1b2a41d4da9d3a54468549d39009bc0be8b09ec1e55abf0e2563da2bc2e"
+    },
+    {
+      "path": "game/assets/audio/gamefeel/chime.wav",
+      "seconds": 0.42,
+      "peak": 0.17538987395855588,
+      "sha256": "84b4bb25136e3896f73b689867cfffa68c735dcda106b229101b936d946c86b3"
+    }
+  ]
+}

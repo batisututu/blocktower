@@ -1,0 +1,113 @@
+{
+  "date": "2026-09-21",
+  "task_intent": "Research UI patterns and reusable art resources to faithfully reproduce an architectural block puzzle visual reference in Godot.",
+  "method": "Mobbin MCP; examined returned preview images. Canonical result links only; no screenshots included in game assets.",
+  "calls": [
+    {
+      "tool": "search_screens",
+      "query": "A puzzle game play screen with a board in the center, a score at the top and game controls below the board",
+      "screens": [
+        {
+          "id": "6e7e71b7-d02f-44d4-a980-ca44aca2b0d7",
+          "mobbin_url": "https://mobbin.com/screens/6e7e71b7-d02f-44d4-a980-ca44aca2b0d7",
+          "app_name": "Quizlet",
+          "platform": "ios"
+        },
+        {
+          "id": "6bdb2388-7e2c-4117-9c21-b6f9fbdff354",
+          "mobbin_url": "https://mobbin.com/screens/6bdb2388-7e2c-4117-9c21-b6f9fbdff354",
+          "app_name": "Google Arts & Culture",
+          "platform": "ios"
+        },
+        {
+          "id": "61e2a0be-afb6-4cc0-be46-b9affb586b45",
+          "mobbin_url": "https://mobbin.com/screens/61e2a0be-afb6-4cc0-be46-b9affb586b45",
+          "app_name": "Nibble",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "tool": "search_screens",
+      "query": "A collection screen showing illustrated buildings or collectible objects with locked items and progress toward unlocking them",
+      "screens": [
+        {
+          "id": "83509751-7c83-4eeb-ba04-f9e3c37689d3",
+          "mobbin_url": "https://mobbin.com/screens/83509751-7c83-4eeb-ba04-f9e3c37689d3",
+          "app_name": "Finch",
+          "platform": "ios"
+        },
+        {
+          "id": "9b6c19d8-ef6d-47a6-8649-45de38abf36a",
+          "mobbin_url": "https://mobbin.com/screens/9b6c19d8-ef6d-47a6-8649-45de38abf36a",
+          "app_name": "Numo",
+          "platform": "ios"
+        },
+        {
+          "id": "c305d492-71c0-433b-99e7-71309ec14278",
+          "mobbin_url": "https://mobbin.com/screens/c305d492-71c0-433b-99e7-71309ec14278",
+          "app_name": "Duolingo",
+          "platform": "ios"
+        }
+      ]
+    },
+    {
+      "tool": "search_flows",
+      "query": "Changing a setting with a confirmation dialog and a cancel action before applying the change",
+      "page": 1,
+      "has_next_page": true,
+      "flows": [
+        {
+          "id": "f888537a-dc6c-4a1f-b852-71471dd5fea5",
+          "name": "Turning off Easy Connect",
+          "actions": [
+            "Turning On/Off"
+          ],
+          "mobbin_url": "https://mobbin.com/flows/f888537a-dc6c-4a1f-b852-71471dd5fea5",
+          "app_name": "Azar",
+          "platform": "ios",
+          "screen_count": 3,
+          "screens": [
+            {
+              "screen_id": "a57f2ca9-5808-48b8-84bc-036fed13b6ea",
+              "position": 1
+            },
+            {
+              "screen_id": "eb6fdae7-661f-4f2f-91d7-bc4680ae2631",
+              "position": 2
+            },
+            {
+              "screen_id": "63c952f7-77b1-4f77-bcae-bb0822c9378a",
+              "position": 3
+            }
+          ]
+        },
+        {
+          "id": "84561eb0-a1d4-4ddb-aca0-79ec90029fe4",
+          "name": "Canceling changes",
+          "actions": [
+            "Misc"
+          ],
+          "mobbin_url": "https://mobbin.com/flows/84561eb0-a1d4-4ddb-aca0-79ec90029fe4",
+          "app_name": "GoPro Quik",
+          "platform": "ios",
+          "screen_count": 3,
+          "screens": [
+            {
+              "screen_id": "feaf157e-4338-4462-9889-e037f385cfcc",
+              "position": 1
+            },
+            {
+              "screen_id": "beed654c-76cd-4e1d-b533-038a3c4667d3",
+              "position": 2
+            },
+            {
+              "screen_id": "c0bb1efb-3a88-4edd-aa1c-7f5e4abdbab5",
+              "position": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

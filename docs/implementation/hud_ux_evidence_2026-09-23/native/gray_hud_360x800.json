@@ -1,0 +1,44 @@
+{
+	"announcements": [],
+	"board": "[P: (12.0, 174.0), S: (336.0, 336.0)]",
+	"checks": [
+		{
+			"check": "fixture committed",
+			"passed": true
+		},
+		{
+			"check": "tower chip shows floors and segment remainder",
+			"passed": true
+		},
+		{
+			"check": "score and best use exact grouped integers",
+			"passed": true
+		},
+		{
+			"check": "streak chip visible for a streak of three outside compact layout",
+			"passed": true
+		},
+		{
+			"check": "chip does not cover settings",
+			"passed": true
+		},
+		{
+			"check": "native screenshot saved",
+			"passed": true
+		},
+		{
+			"check": "screen state equals session",
+			"passed": true
+		}
+	],
+	"floors": 9,
+	"grayscale": true,
+	"large_text": false,
+	"mode": "gray_hud",
+	"revision": 1,
+	"safe_insets_24px": false,
+	"scenario": "hud",
+	"score": 2580,
+	"size": "360x800",
+	"source": "Windows Godot OpenGL native viewport; not Android"
+}

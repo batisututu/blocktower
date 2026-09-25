@@ -1,0 +1,1 @@
+  mCurrentFocus=Window{345dca5 u0 com.blocktower.game/com.godot.game.GodotAppLauncher}

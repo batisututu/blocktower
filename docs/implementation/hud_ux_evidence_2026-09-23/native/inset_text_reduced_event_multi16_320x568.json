@@ -1,0 +1,148 @@
+{
+	"announcements": [
+		"[완료] 16줄 · +2560점 · +16층",
+		"구간 +2 · 해금 4종",
+		"기록 갱신"
+	],
+	"board": "[P: (12.0, 124.0), S: (296.0, 296.0)]",
+	"checks": [
+		{
+			"check": "fixture committed",
+			"passed": true
+		},
+		{
+			"check": "navigation below safe top",
+			"passed": true
+		},
+		{
+			"check": "clear above safe bottom",
+			"passed": true
+		},
+		{
+			"check": "full width retained with insets",
+			"passed": true
+		},
+		{
+			"check": "fixed event has 16 pending lines",
+			"passed": true
+		},
+		{
+			"check": "fixed event committed through GameSession",
+			"passed": true
+		},
+		{
+			"check": "fixed event score matches rules",
+			"passed": true
+		},
+		{
+			"check": "fixed event floor total matches rules",
+			"passed": true
+		},
+		{
+			"check": "event notice starts below the board",
+			"passed": true
+		},
+		{
+			"check": "event notice ends before the tray (445 <= 446)",
+			"passed": true
+		},
+		{
+			"check": "next drag is not blocked by event notices",
+			"passed": true
+		},
+		{
+			"check": "clear, score and floor reward notice is present",
+			"passed": true
+		},
+		{
+			"check": "event notice count is bounded at three",
+			"passed": true
+		},
+		{
+			"check": "complete notice sequence stays under three seconds",
+			"passed": true
+		},
+		{
+			"check": "multi-segment and unlock count remain visible",
+			"passed": true
+		},
+		{
+			"check": "latest clear records exact segment unlocks",
+			"passed": true
+		},
+		{
+			"check": "latest clear records exact material unlocks",
+			"passed": true
+		},
+		{
+			"check": "latest clear records exact part unlocks",
+			"passed": true
+		},
+		{
+			"check": "notice 0 fits without clipping",
+			"passed": true
+		},
+		{
+			"check": "notice frame 0 captured",
+			"passed": true
+		},
+		{
+			"check": "notice 1 fits without clipping",
+			"passed": true
+		},
+		{
+			"check": "notice frame 1 captured",
+			"passed": true
+		},
+		{
+			"check": "notice 2 fits without clipping",
+			"passed": true
+		},
+		{
+			"check": "notice frame 2 captured",
+			"passed": true
+		},
+		{
+			"check": "fast next pickup dismisses notices without blocking drag",
+			"passed": true
+		},
+		{
+			"check": "fast pickup preserves exact milestone facts",
+			"passed": true
+		},
+		{
+			"check": "tower has a durable growth-details action",
+			"passed": true
+		},
+		{
+			"check": "tower details action native screen captured",
+			"passed": true
+		},
+		{
+			"check": "tower flow exposes exact segment, material and part unlock facts",
+			"passed": true
+		},
+		{
+			"check": "growth details native screen captured",
+			"passed": true
+		},
+		{
+			"check": "native screenshot saved",
+			"passed": true
+		},
+		{
+			"check": "screen state equals session",
+			"passed": true
+		}
+	],
+	"floors": 25,
+	"grayscale": false,
+	"large_text": true,
+	"mode": "inset_text_reduced_event_multi16",
+	"revision": 2,
+	"safe_insets_24px": true,
+	"scenario": "event_multi16",
+	"score": 2560,
+	"size": "320x568",
+	"source": "Windows Godot OpenGL native viewport; not Android"
+}

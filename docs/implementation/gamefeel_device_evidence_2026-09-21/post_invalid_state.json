@@ -1,0 +1,39 @@
+{
+  "auto_clear": true,
+  "batch_id": "8",
+  "batch_success": true,
+  "best": "780",
+  "best_streak": "2",
+  "cell_style": "00000000000303030d0d0d00000b00000d0d0d00000b0b0000000000000000000406060000000001040001030000000004000303000000020000000300000000",
+  "checkpoint": {
+    "catalog_version": "bt_catalog_29_v0_2",
+    "config_hash": "528fa1271d1294cd1756956627c928afa4f1e047549e9d80c5167076bca5dce5",
+    "definition_hash": "114d11e19e7496a26a05e0635dfed2135755358a0774e93589378f167f427f8c",
+    "engine_version": "4.7.2-stable (official)",
+    "rng_seed": "-4635637074970834949",
+    "rng_state": "8209133089395516189",
+    "supply_policy_version": "bt_soft_one_move_v0_2"
+  },
+  "growth": {
+    "brick_lines": "0",
+    "crystal_lines": "0",
+    "metal_lines": "0",
+    "representative_segment": "0",
+    "segment_styles": {},
+    "total_floors": "7"
+  },
+  "last_event_id": "25",
+  "occupancy": "00000000000101010101010000010000010101000001010000000000000000000101010000000001010001010000000001000101000000010000000100000000",
+  "queue": [
+    "line4_v1",
+    "",
+    ""
+  ],
+  "revision": "25",
+  "rule_version": "bt_rules_v1",
+  "run_id": "1",
+  "schema_version": "bt_session_v1",
+  "score": "780",
+  "session_id": "local-dd548744b62c218ae153cd664aeb5c27",
+  "streak": "0"
+}

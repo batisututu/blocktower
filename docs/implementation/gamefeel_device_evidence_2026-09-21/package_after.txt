@@ -1,0 +1,182 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        56574c8 com.blocktower.game/com.godot.game.GodotAppLauncher filter 77d961
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        9494c86 com.blocktower.game/androidx.profileinstaller.ProfileInstallReceiver filter 977aa9d
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        9494c86 com.blocktower.game/androidx.profileinstaller.ProfileInstallReceiver filter f2a9947
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      androidx.profileinstaller.action.SKIP_FILE:
+        9494c86 com.blocktower.game/androidx.profileinstaller.ProfileInstallReceiver filter 3c11574
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        9494c86 com.blocktower.game/androidx.profileinstaller.ProfileInstallReceiver filter 5dab12
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.blocktower.game/androidx.core.content.FileProvider:
+    Provider{59ad7bd com.blocktower.game/androidx.core.content.FileProvider}
+  com.blocktower.game/androidx.startup.InitializationProvider:
+    Provider{9d7a1b2 com.blocktower.game/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.blocktower.game.fileprovider]:
+    Provider{59ad7bd com.blocktower.game/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{5c04503 com.blocktower.game}
+
+Key Set Manager:
+  [com.blocktower.game]
+      Signing KeySets: 157
+
+Packages:
+  Package [com.blocktower.game] (b367c80):
+    userId=10374
+    pkg=Package{b2232b9 com.blocktower.game}
+    codePath=/data/app/~~Z6sEZoVhXYprpc4RvAMr_Q==/com.blocktower.game-qXv84HgaDrZ4aL1anF6bIA==
+    resourcePath=/data/app/~~Z6sEZoVhXYprpc4RvAMr_Q==/com.blocktower.game-qXv84HgaDrZ4aL1anF6bIA==
+    legacyNativeLibraryDir=/data/app/~~Z6sEZoVhXYprpc4RvAMr_Q==/com.blocktower.game-qXv84HgaDrZ4aL1anF6bIA==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=3 minSdk=24 targetSdk=36
+    minExtensionVersions=[]
+    versionName=0.1.0-gamefeel3
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=3
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.blocktower.game
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2026-09-21 16:51:10
+    lastUpdateTime=2026-09-21 16:51:29
+    packageSource=0
+    signatures=PackageSignatures{8187733 version:3, signatures:[eb5ea72a], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    requested permissions:
+      android.permission.VIBRATE
+    install permissions:
+      android.permission.VIBRATE: granted=true
+    User 0: ceDataInode=99056 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2026-09-21 15:10:25
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk
+      legacy overlay paths:
+        /product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk
+      runtime permissions:
+    User 95: ceDataInode=254945 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2026-09-21 15:10:25
+      uninstallReason=0
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.samsung.android.bixby.agent:
+      com.blocktower.game
+    com.lguplus.appstore:
+      com.blocktower.game
+    com.skt.skaf.OA00018282:
+      com.blocktower.game
+    com.android.settings.intelligence:
+      com.blocktower.game
+    com.google.android.as:
+      com.blocktower.game
+    com.locnall.KimGiSa:
+      com.blocktower.game
+    com.kakao.talk:
+      com.blocktower.game
+    kr.co.april7.buddy:
+      com.blocktower.game
+    jp.naver.line.android:
+      com.blocktower.game
+    emotion.onekm:
+      com.blocktower.game
+    pi.browser:
+      com.blocktower.game
+    com.blockchainvault:
+      com.blocktower.game
+    com.noyesrun.meeff.kr:
+      com.blocktower.game
+    com.hellotalk:
+      com.blocktower.game
+    com.bumble.app:
+      com.blocktower.game
+    com.dreamgames.royalmatch:
+      com.blocktower.game
+    com.gof.global:
+      com.blocktower.game
+    com.whatsapp:
+      com.blocktower.game
+    com.towneers.www:
+      com.blocktower.game
+    com.fun.lastwar.gp:
+      com.blocktower.game
+    com.run.tower.defense:
+      com.blocktower.game
+  queryable via interaction:
+    User 0:
+      [com.android.providers.settings,com.samsung.aasaservice,com.samsung.android.localeoverlaymanager,com.wssyncmldm,com.samsung.android.app.omcagent,com.samsung.accessibility,com.sec.bcservice,com.sec.android.app.wlantest,com.samsung.android.keycustomizationinfobackupservice,com.sem.factoryapp,com.samsung.android.bbc.bbcagent,com.sec.android.diagmonagent,com.sec.android.app.parser,com.samsung.android.smartswitchassistant,com.samsung.android.lool,com.samsung.android.photoremasterservice,com.samsung.gpuwatchapp,com.sec.android.soagent,com.samsung.android.app.dressroom,com.sec.enterprise.mdm.services.simpin,com.sec.android.app.applinker,com.samsung.clipboardsaveservice,com.sec.android.emergencylauncher,com.samsung.android.smartface,com.samsung.android.knox.attestation,com.samsung.android.biometrics.app.setting,com.android.localtransport,com.samsung.android.cmfa.framework,com.sec.android.CcInfo,com.samsung.android.stickercenter,com.ims.dm,com.samsung.android.aircommandmanager,com.sec.imslogger,com.skms.android.agent,com.qti.snapdragon.qdcm_ff,com.android.keychain,com.android.dynsystem,com.sec.app.RilErrorNotifier,com.sec.android.app.apex,com.samsung.android.peripheral.framework,com.samsung.oda.service,com.samsung.android.bixby.wakeup,com.samsung.android.fmm,com.samsung.android.forest,com.qualcomm.qti.services.secureui,com.sec.automation,com.samsung.android.svcagent,com.samsung.android.vtcamerasettings,com.samsung.android.app.settings.bixby,com.sec.android.app.quicktool,com.samsung.android.brightnessbackupservice,com.android.location.fused,com.sec.modem.settings,com.sec.factory.camera,com.sec.usbsettings,com.sec.facatfunction,com.android.wallpaperbackup,com.sec.imsservice,com.samsung.android.dck.timesync,com.samsung.android.shortcutbackupservice,com.samsung.android.knox.pushmanager,com.sec.android.app.personalization,com.samsung.android.themecenter,com.samsung.android.sume.nn.service,com.sec.android.sdhms,com.samsung.android.providers.factory,com.sec.android.app.hwmoduletest,com.sec.epdg,com.samsung.android.dqagent,com.samsung.android.mdecservice,com.samsung.cmfa.AuthTouch,com.sec.android.app.dexonpc,com.samsung.android.cameraxservice,com.samsung.android.audiomirroring,com.samsung.SMT,com.sec.sve,com.sec.android.app.SecSetupWizard,com.sec.android.app.servicemodeapp,com.android.settings,com.sec.android.smartfpsadjuster,com.samsung.android.hdmapp,com.sec.android.app.desktoplauncher,com.samsung.android.emergency,com.android.server.telecom,com.android.inputdevices,com.samsung.android.camerasdkservice,com.samsung.android.da.daagent,com.sec.mhs.smarttethering,android,com.sec.android.app.factorykeystring,com.samsung.android.provider.filterprovider,com.sec.android.iaft]:
+        com.blocktower.game
+      com.samsung.android.honeyboard:
+        com.blocktower.game
+    User 95:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.blocktower.game]
+    path: /data/app/~~Z6sEZoVhXYprpc4RvAMr_Q==/com.blocktower.game-qXv84HgaDrZ4aL1anF6bIA==/base.apk
+      arm64: [status=run-from-apk] [reason=unknown]
+  BgDexopt state:
+    enabled:true
+    mDexOptThread:null
+    mDexOptCancellingThread:null
+    mFinishedPostBootUpdate:true
+    mLastExecutionStatus:0
+    mLastExecutionStartTimeMs:69965982
+    mLastExecutionDurationIncludingSleepMs:56742
+    mLastExecutionStartUptimeMs:22208353
+    mLastExecutionDurationMs:56741
+    now:245363723
+    mLastCancelledPackages:
+    mFailedPackageNamesPrimary:
+    mFailedPackageNamesSecondary:
+
+Compiler stats:
+  [com.blocktower.game]
+    (No recorded stats)
+
+Historical install Logging info(9/10):
+  [com.blocktower.game]
+    1789977069720: "Ver":"3", "Session":"0", "Write":"18", "Verifing":"1526", "Verified":"18306", "Commit":"0", "end":"1
+    031"}, 
+  [com.mylog.app.dev]
+    1789961401833: "Ver":"21", "Session":"0", "Write":"9", "Verifing":"2357", "Verified":"30999", "Commit":"0", "end":"2
+    193"}, 
+  [com.littlefinger.app]
+    1789960008971: "Ver":"34", "Session":"0", "Write":"1592", "Write":"17", "Write":"70", "Write":"461", "Write":"1218",
+     "Write":"1987", "Verifing":"861", "Verified":"25027", "Commit":"1", "end":"3730"}, 
+  [com.tinder]
+    1789962850422: "Ver":"17340184", "Session":"0", "Write":"1781", "Write":"2989", "Write":"2058", "Write":"19465", "Wr
+    ite":"1473", "Write":"1606", "Verifing":"3556", "Verified":"21971", "Commit":"0", "end":"5786"}, 
+
+HeimdAllFS state:
+  HeimdAllFS does not supported.

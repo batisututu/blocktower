@@ -1,0 +1,104 @@
+{
+	"announcements": [
+		"[완료] 2줄 · +240점 · +2층",
+		"구간 +1 · 해금 1종",
+		"기록 갱신"
+	],
+	"board": "[P: (12.0, 107.2), S: (296.0, 296.0)]",
+	"checks": [
+		{
+			"check": "fixture committed",
+			"passed": true
+		},
+		{
+			"check": "fixed event has 2 pending lines",
+			"passed": true
+		},
+		{
+			"check": "fixed event committed through GameSession",
+			"passed": true
+		},
+		{
+			"check": "fixed event score matches rules",
+			"passed": true
+		},
+		{
+			"check": "fixed event floor total matches rules",
+			"passed": true
+		},
+		{
+			"check": "event notice starts below the board",
+			"passed": true
+		},
+		{
+			"check": "event notice ends before the tray (427 <= 429)",
+			"passed": true
+		},
+		{
+			"check": "next drag is not blocked by event notices",
+			"passed": true
+		},
+		{
+			"check": "clear, score and floor reward notice is present",
+			"passed": true
+		},
+		{
+			"check": "event notice count is bounded at three",
+			"passed": true
+		},
+		{
+			"check": "complete notice sequence stays under three seconds",
+			"passed": true
+		},
+		{
+			"check": "segment and material unlock counts remain visible",
+			"passed": true
+		},
+		{
+			"check": "latest clear records the material unlock",
+			"passed": true
+		},
+		{
+			"check": "notice 0 fits without clipping",
+			"passed": true
+		},
+		{
+			"check": "notice frame 0 captured",
+			"passed": true
+		},
+		{
+			"check": "notice 1 fits without clipping",
+			"passed": true
+		},
+		{
+			"check": "notice frame 1 captured",
+			"passed": true
+		},
+		{
+			"check": "notice 2 fits without clipping",
+			"passed": true
+		},
+		{
+			"check": "notice frame 2 captured",
+			"passed": true
+		},
+		{
+			"check": "native screenshot saved",
+			"passed": true
+		},
+		{
+			"check": "screen state equals session",
+			"passed": true
+		}
+	],
+	"floors": 11,
+	"grayscale": false,
+	"large_text": false,
+	"mode": "event_9_11",
+	"revision": 2,
+	"safe_insets_24px": false,
+	"scenario": "event_9_11",
+	"score": 240,
+	"size": "320x568",
+	"source": "Windows Godot OpenGL native viewport; not Android"
+}

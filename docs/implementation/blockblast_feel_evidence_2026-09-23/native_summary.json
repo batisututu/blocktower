@@ -1,0 +1,95 @@
+{
+  "engine_sha256": "ab1824f85bfd8e0e4128182c000c4003a3e042245b2967848d089b2a04b22424",
+  "reports": [
+    {
+      "board": "[P: (12.0, 169.6), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "pickup during clear tail allowed",
+          "passed": true
+        },
+        {
+          "check": "old clear reward dismissed on pickup",
+          "passed": true
+        },
+        {
+          "check": "new drag guidance visible immediately",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 11,
+      "mode": "clear_pick",
+      "revision": 2,
+      "score": 240,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "board": "[P: (12.0, 169.6), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "motion frame 0 saved",
+          "passed": true
+        },
+        {
+          "check": "motion frame 60 saved",
+          "passed": true
+        },
+        {
+          "check": "motion frame 140 saved",
+          "passed": true
+        },
+        {
+          "check": "motion frame 220 saved",
+          "passed": true
+        },
+        {
+          "check": "motion frame 300 saved",
+          "passed": true
+        },
+        {
+          "check": "motion frame 460 saved",
+          "passed": true
+        },
+        {
+          "check": "real-time clear released input",
+          "passed": true
+        },
+        {
+          "check": "real-time clear awarded once",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 11,
+      "mode": "motion",
+      "revision": 2,
+      "score": 240,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    }
+  ]
+}

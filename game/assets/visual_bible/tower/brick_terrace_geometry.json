@@ -1,0 +1,36 @@
+{
+	"anchor": [
+		320,
+		240
+	],
+	"camera": [
+		5,
+		2.8,
+		8
+	],
+	"camera_size": 5.1,
+	"canvas": [
+		640,
+		480
+	],
+	"floor_height": 1.18,
+	"floor_step": 106.4683685,
+	"terrace_variants": [
+		{
+			"base": "brick_floor_entry",
+			"stem": "brick_terrace_floor_entry"
+		},
+		{
+			"base": "brick_floor_wide",
+			"stem": "brick_terrace_floor_wide"
+		},
+		{
+			"base": "brick_arch_floor_entry",
+			"stem": "brick_arch_terrace_floor_entry"
+		},
+		{
+			"base": "brick_arch_floor_wide",
+			"stem": "brick_arch_terrace_floor_wide"
+		}
+	]
+}

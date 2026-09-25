@@ -1,0 +1,802 @@
+--------- beginning of main
+09-21 07:18:12.599  7250  7299 E GFXSTREAM: [GL2Encoder.cpp(6800)] GL error 0x501 condition [!isShaderOrProgramObject].
+09-21 07:18:12.599  7250  7299 E GFXSTREAM: [GL2Encoder.cpp(6800)] GL error 0x501 condition [!isShaderOrProgramObject].
+09-21 07:18:12.617   774   927 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-21 07:18:12.860   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(9)
+09-21 07:18:12.966   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:13.050   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(4)
+09-21 07:18:13.081   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(6)
+09-21 07:18:13.188   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:13.262   615   719 D AF::Track: interceptBuffer: took 1243us to intercept 0 tracks
+09-21 07:18:13.324   774   933 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-21 07:18:13.325   774   933 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-21 07:18:13.325   774   933 D InetDiagMessage: Destroyed live tcp sockets for uids={10159} in 3ms
+09-21 07:18:13.326   774   933 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-21 07:18:13.326   774   933 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-21 07:18:13.326   774   933 D InetDiagMessage: Destroyed live tcp sockets for uids={20159} in 1ms
+09-21 07:18:13.501   615   719 D AF::Track: interceptBuffer: took 1440us to intercept 0 tracks
+09-21 07:18:13.828   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(104)
+09-21 07:18:13.934   615   719 D AF::Track: interceptBuffer: took 842us to intercept 0 tracks
+09-21 07:18:14.074   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(12)
+09-21 07:18:14.360   615   719 D AF::Track: interceptBuffer: took 581us to intercept 0 tracks
+09-21 07:18:14.361   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:14.387   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:14.584   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(4)
+09-21 07:18:14.615   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:14.686   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(4)
+09-21 07:18:14.777   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(9)
+09-21 07:18:14.788  1312  1312 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.aang.events.services.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentApiService }
+09-21 07:18:14.887   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:15.109   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(22)
+09-21 07:18:15.161   615   719 D AF::Track: interceptBuffer: took 1533us to intercept 0 tracks
+09-21 07:18:15.177   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:15.221   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(8)
+09-21 07:18:15.264   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:15.299   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(4)
+09-21 07:18:15.658   774   927 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-21 07:18:15.782   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(11)
+09-21 07:18:16.001  1312  1312 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+09-21 07:18:16.659   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:16.721   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:17.764   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:18.132   615   719 D AF::Track: interceptBuffer: took 4824us to intercept 0 tracks
+09-21 07:18:18.514   615   719 D AF::Track: interceptBuffer: took 1181us to intercept 0 tracks
+09-21 07:18:18.683   774   927 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-21 07:18:18.902   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+--------- beginning of system
+09-21 07:18:18.922   774   874 D ActivityManager: freezing 1606 com.google.android.permissioncontroller
+09-21 07:18:18.931   774   933 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-21 07:18:18.931   774   933 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-21 07:18:18.931   774   933 D InetDiagMessage: Destroyed live tcp sockets for uids={10209} in 1ms
+09-21 07:18:19.012   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(11)
+09-21 07:18:19.263   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:19.391   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:19.391   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:19.391   615   719 D AF::Track: interceptBuffer: took 748us to intercept 0 tracks
+09-21 07:18:19.398   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(10)
+09-21 07:18:19.468   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(11)
+09-21 07:18:19.548   615   719 D AF::Track: interceptBuffer: took 562us to intercept 0 tracks
+09-21 07:18:19.574   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(28)
+09-21 07:18:19.598   615   719 D AF::Track: interceptBuffer: took 6675us to intercept 0 tracks
+09-21 07:18:19.612   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(6)
+09-21 07:18:20.557  1178  1276 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+09-21 07:18:20.558  1178  1276 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+09-21 07:18:21.493   774   867 D ActivityManager: sync unfroze 3087 com.android.vending for 6
+09-21 07:18:21.504   615   719 D AF::Track: interceptBuffer: took 12161us to intercept 0 tracks
+09-21 07:18:21.648   774  1716 W ProcessStats: Tracking association SourceState{9e46a7 system/1000 ImpBg #3601} whose proc state 6 is better than process ProcessState{8e9bdec com.android.vending/10153 pkg=com.android.vending} proc state 14 (6 skipped)
+09-21 07:18:21.666   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:21.684  3087  3087 I Finsky  : [2] SCH: job service start with id 9361.
+09-21 07:18:21.717   774   927 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-21 07:18:21.766   615   719 D AF::Track: interceptBuffer: took 6751us to intercept 0 tracks
+09-21 07:18:21.883  3087  7247 I Finsky  : [228] SCH: Satisfied jobs for 9361 are: 12-1
+09-21 07:18:21.926  3087  7325 I Finsky  : [232] SCH: Job 12-1 starting
+09-21 07:18:21.931  3087  3087 I Finsky  : [2] WM::SCH: Logging work start for 12-1
+09-21 07:18:21.934  3087  3087 I Finsky  : [2] [ContentSync] job started
+09-21 07:18:22.096   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(26)
+09-21 07:18:22.522   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(7)
+09-21 07:18:22.524   615   719 D AF::Track: interceptBuffer: took 749us to intercept 0 tracks
+09-21 07:18:22.549   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(6)
+09-21 07:18:22.673  3087  7326 I android.vending: IncrementDisableThreadFlip blocked for 35.296ms
+09-21 07:18:22.799  3087  7326 E Finsky  : [233] [Counters] attempted to use a non-positive increment for: 9200
+09-21 07:18:22.799  3087  7326 I Finsky  : [233] App states replicator found 25 unowned apps
+09-21 07:18:22.830  3087  3091 W android.vending: Suspending all threads took: 24.732ms
+09-21 07:18:22.873  3087  3149 I Finsky  : [57] Completed 0 account content syncs with 0 successful.
+09-21 07:18:22.873  3087  3087 I Finsky  : [2] [ContentSync] Installation state replication succeeded.
+09-21 07:18:22.873  3087  3087 I Finsky  : [2] SCH: jobFinished: 12-1. TimeElapsed: 945ms.
+09-21 07:18:22.877  3087  3087 I Finsky  : [2] WM::SCH: Logging work end for 12-1
+09-21 07:18:23.005  3087  3140 I Finsky  : [53] SCH: Scheduling phonesky job Id: 1-1337, CT: 1789958442285, Constraints: [{ L: 42270800, D: 85470800, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+09-21 07:18:23.040  3087  3144 I Finsky  : [54] SCH: Scheduling 1 system job(s)
+09-21 07:18:23.059  3087  3144 I Finsky  : [54] SCH: Scheduling system job Id: 9364, L: 25610045, D: 68810045, C: false, I: false, N: 1
+09-21 07:18:23.090  3087  7325 I Finsky  : [232] SCH: job service finished with id 9361.
+09-21 07:18:23.162  3087  3087 I Finsky  : [2] Memory trim requested to level 40
+09-21 07:18:23.162  3087  3087 I Finsky  : [2] Flushing in-memory image cache
+09-21 07:18:23.210   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:23.299   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:23.372   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:23.542   615   719 D AF::Track: interceptBuffer: took 675us to intercept 0 tracks
+09-21 07:18:23.596   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(9)
+09-21 07:18:23.704   615   719 D AF::Track: interceptBuffer: took 567us to intercept 0 tracks
+09-21 07:18:24.069   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(18)
+09-21 07:18:24.757   774   927 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-21 07:18:24.789   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(8)
+09-21 07:18:25.411   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(21)
+09-21 07:18:25.466   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(6)
+09-21 07:18:25.549   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(9)
+09-21 07:18:25.592   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(18)
+09-21 07:18:25.815   615   719 D AF::Track: interceptBuffer: took 7799us to intercept 0 tracks
+09-21 07:18:26.189   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(55)
+09-21 07:18:26.264   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(27)
+09-21 07:18:26.307   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(7)
+09-21 07:18:26.341   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:26.341   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:26.455   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:26.455   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:26.517   615   719 D AF::Track: interceptBuffer: took 576us to intercept 0 tracks
+09-21 07:18:26.567   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:26.567   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:26.626   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:26.650   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:26.653   615   719 D AF::Track: interceptBuffer: took 980us to intercept 0 tracks
+09-21 07:18:26.676   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:26.680   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:26.785   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:26.785   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:26.807   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(6)
+09-21 07:18:26.897   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:26.901   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:27.022   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:27.022   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:27.140   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:27.140   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:27.141   615   719 D AF::Track: interceptBuffer: took 592us to intercept 0 tracks
+09-21 07:18:27.266   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:27.266   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:27.283   615   719 D AF::Track: interceptBuffer: took 2890us to intercept 0 tracks
+09-21 07:18:27.302   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(10)
+09-21 07:18:27.371   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:27.372   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:27.372   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:27.400   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:27.469   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:27.481   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:27.482   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:27.603   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:27.603   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:27.714   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:27.714   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:27.844   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:27.844   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:27.846   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(8)
+09-21 07:18:27.850   774   927 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-21 07:18:27.887   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:27.964   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:27.965   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:28.072   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:28.072   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:28.177   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:28.177   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:28.257   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:28.280   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:28.283   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:28.311   615   719 D AF::Track: interceptBuffer: took 2717us to intercept 0 tracks
+09-21 07:18:28.389   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:28.390   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:28.498   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:28.499   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:28.605   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:28.605   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:28.714   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:28.714   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:28.821   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:28.821   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:28.927   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:28.928   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:29.035   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:29.035   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:29.051   615   719 D AF::Track: interceptBuffer: took 2643us to intercept 0 tracks
+09-21 07:18:29.141   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:29.141   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:29.161   615   719 D AF::Track: interceptBuffer: took 18133us to intercept 0 tracks
+09-21 07:18:29.265   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:29.265   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:29.307   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(11)
+09-21 07:18:29.372   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:29.372   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:29.399   615   719 D AF::Track: interceptBuffer: took 547us to intercept 0 tracks
+09-21 07:18:29.419   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(29)
+09-21 07:18:29.481   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:29.482   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:29.585   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:29.585   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:29.690   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:29.690   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:29.799   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:29.799   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:29.910   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:29.910   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:30.013   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:30.013   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:30.127   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:30.127   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:30.230   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:30.230   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:30.268   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:30.270   615   719 D AF::Track: interceptBuffer: took 885us to intercept 0 tracks
+09-21 07:18:30.335   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:30.335   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:30.440   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:30.440   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:30.544   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:30.545   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:30.557  1178  1276 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+09-21 07:18:30.565  1178  1276 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+09-21 07:18:30.649   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:30.650   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:30.678   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:30.754   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:30.754   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:30.860   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:30.860   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:30.886   774   927 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-21 07:18:30.965   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:30.965   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:31.073   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:31.073   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:31.177   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:31.177   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:31.285   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:31.285   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:31.392   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:31.392   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:31.499   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:31.500   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:31.604   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:31.604   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:31.697   615   719 D AF::Track: interceptBuffer: took 1136us to intercept 0 tracks
+09-21 07:18:31.712   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:31.712   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:31.813   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:31.813   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:31.918   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:31.919   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:32.027   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:32.027   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:32.131   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:32.131   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:32.235   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:32.235   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:32.337   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:32.337   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:32.444   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:32.445   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:32.550   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:32.550   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:32.649   615   719 D AF::Track: interceptBuffer: took 707us to intercept 0 tracks
+09-21 07:18:32.659   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:32.659   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:32.763   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:32.763   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:32.860   615   719 D AF::Track: interceptBuffer: took 1929us to intercept 0 tracks
+09-21 07:18:32.868   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:32.868   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:32.975   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:32.997   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:33.053   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(10)
+09-21 07:18:33.086   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:33.101   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:33.101   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:33.176   615   719 D AF::Track: interceptBuffer: took 533us to intercept 0 tracks
+09-21 07:18:33.205   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:33.206   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:33.213   774   874 D ActivityManager: freezing 3087 com.android.vending
+09-21 07:18:33.239   774   933 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-21 07:18:33.261   774   933 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-21 07:18:33.261   774   933 D InetDiagMessage: Destroyed live tcp sockets for uids={10153} in 29ms
+09-21 07:18:33.310   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:33.312   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:33.425   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:33.425   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:33.481   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(7)
+09-21 07:18:33.530   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:33.535   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:33.640   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:33.640   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:33.761   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:33.761   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:33.866   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:33.866   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:33.942   774   927 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-21 07:18:33.975   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:33.975   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:34.087   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:34.087   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:34.190   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:34.190   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:34.205   615   719 D AF::Track: interceptBuffer: took 12818us to intercept 0 tracks
+09-21 07:18:34.303   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:34.303   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:34.332   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:34.427   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:34.428   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:34.529   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:34.529   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:34.637   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:34.637   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:34.664   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:34.728   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:34.761   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:34.761   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:34.787   615   719 D AF::Track: interceptBuffer: took 796us to intercept 0 tracks
+09-21 07:18:34.825   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(4)
+09-21 07:18:34.880   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:34.880   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:35.007   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:35.008   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:35.034   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(17)
+09-21 07:18:35.077   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(6)
+09-21 07:18:35.148   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:35.159   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:35.270   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:35.270   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:35.304   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:35.373   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:35.373   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:35.473   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:35.474   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:35.520   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:35.598   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:35.598   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:35.657   774   874 D ActivityManager: freezing 3937 com.android.keychain
+09-21 07:18:35.658   774   874 D ActivityManager: freezing 2925 com.android.settings
+09-21 07:18:35.661   774   874 D ActivityManager: freezing 3001 com.android.dynsystem:dynsystem
+09-21 07:18:35.662   774   874 D ActivityManager: freezing 2962 com.android.dynsystem
+09-21 07:18:35.743   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:35.743   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:35.867   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:35.868   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:35.991   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:36.017   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:36.162   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:36.163   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:36.238   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:36.256   615   719 D AF::Track: interceptBuffer: took 1892us to intercept 0 tracks
+09-21 07:18:36.266   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:36.267   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:36.287   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:36.376   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:36.376   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:36.422   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:36.519   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(6)
+09-21 07:18:36.521   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:36.521   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:36.600   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:36.606   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:36.607   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:36.727   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:36.727   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:36.758   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:36.848   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:36.849   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:36.911   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(8)
+09-21 07:18:36.968   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:36.968   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:36.969   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:37.000   774   927 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-21 07:18:37.075   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:37.075   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:37.186   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:37.187   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:37.221   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:37.292   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:37.292   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:37.357   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(17)
+09-21 07:18:37.413   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:37.414   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:37.492   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(10)
+09-21 07:18:37.526   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:37.526   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:37.591   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(16)
+09-21 07:18:37.596   615   719 D AF::Track: interceptBuffer: took 2678us to intercept 0 tracks
+09-21 07:18:37.646   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:37.646   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:37.658   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(7)
+09-21 07:18:37.753   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:37.753   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:37.760   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(4)
+09-21 07:18:37.785   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:37.857   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:37.857   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:37.893   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(6)
+09-21 07:18:37.959   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(7)
+09-21 07:18:37.964   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:37.964   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:37.997   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(6)
+09-21 07:18:38.075   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:38.075   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:38.109   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(10)
+09-21 07:18:38.184   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:38.185   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:38.281   774   874 D ActivityManager: freezing 2178 com.google.android.apps.wellbeing
+09-21 07:18:38.290   774   933 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-21 07:18:38.295   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:38.295   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:38.309   774   933 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-21 07:18:38.309   774   933 D InetDiagMessage: Destroyed live tcp sockets for uids={10159} in 20ms
+09-21 07:18:38.399   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:38.399   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:38.466   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:38.502   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:38.505   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:38.615   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:38.615   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:38.727   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:38.727   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:38.768   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:38.853   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:38.853   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:38.943   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(12)
+09-21 07:18:38.956   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:38.956   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:39.006   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(15)
+09-21 07:18:39.065   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(7)
+09-21 07:18:39.075   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:39.075   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:39.178   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:39.178   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:39.180   615   719 D AF::Track: interceptBuffer: took 1385us to intercept 0 tracks
+09-21 07:18:39.298   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:39.308   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:39.309   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:39.350   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(4)
+09-21 07:18:39.461   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:39.461   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:39.531   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(11)
+09-21 07:18:39.595   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:39.595   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:39.643   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:39.699   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:39.700   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:39.749   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(23)
+09-21 07:18:39.804   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:39.805   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:39.822   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(6)
+09-21 07:18:39.893   615   719 D AF::Track: interceptBuffer: took 1386us to intercept 0 tracks
+09-21 07:18:39.931   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:39.931   615   719 D AF::Track: interceptBuffer: took 3570us to intercept 0 tracks
+09-21 07:18:39.934   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:40.049   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:40.051   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:40.074   615   719 D AF::Track: interceptBuffer: took 26369us to intercept 0 tracks
+09-21 07:18:40.079   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(6)
+09-21 07:18:40.132   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:40.153   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:40.153   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:40.170   774   927 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-21 07:18:40.215   615   719 D AF::Track: interceptBuffer: took 603us to intercept 0 tracks
+09-21 07:18:40.231   615   719 D AF::Track: interceptBuffer: took 2178us to intercept 0 tracks
+09-21 07:18:40.257   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:40.257   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:40.290   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:40.362   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:40.362   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:40.430   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(32)
+09-21 07:18:40.465   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:40.466   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:40.504   615   719 D AF::Track: interceptBuffer: took 521us to intercept 0 tracks
+09-21 07:18:40.566  1178  1276 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+09-21 07:18:40.568  1178  1276 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+09-21 07:18:40.569   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:40.569   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:40.673   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:40.673   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:40.718   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(7)
+09-21 07:18:40.777   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:40.777   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:40.800   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(4)
+09-21 07:18:40.889   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:40.889   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:41.013   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:41.013   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:41.045   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(6)
+09-21 07:18:41.130   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:41.130   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:41.233   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:41.234   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:41.297   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:41.357   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:41.357   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:41.397   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(9)
+09-21 07:18:41.437   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:41.462   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:41.462   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:41.579   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:41.579   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:41.663   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:41.692   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:41.692   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:41.749   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(18)
+09-21 07:18:41.792   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:41.792   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:41.898   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:41.898   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:42.014   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:42.015   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:42.120   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:42.120   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:42.222   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:42.222   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:42.329   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:42.330   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:42.361   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:42.433   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:42.434   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:42.477   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(8)
+09-21 07:18:42.542   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:42.542   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:42.571   615   719 D AF::Track: interceptBuffer: took 1170us to intercept 0 tracks
+09-21 07:18:42.656   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:42.656   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:42.680   615   719 D AF::Track: interceptBuffer: took 658us to intercept 0 tracks
+09-21 07:18:42.692   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:42.731   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:42.761   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:42.761   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:42.869   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:42.869   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:42.972   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:42.973   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:43.080   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:43.080   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:43.125   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(9)
+09-21 07:18:43.161   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(4)
+09-21 07:18:43.193   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:43.194   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:43.218   774   927 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-21 07:18:43.302   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:43.302   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:43.311   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:43.404   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:43.404   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:43.406   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(4)
+09-21 07:18:43.523   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:43.524   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:43.633   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:43.633   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:43.662   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:43.739   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:43.740   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:43.792   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(12)
+09-21 07:18:43.842   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:43.842   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:43.869   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:43.937   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:43.957   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:43.957   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:44.009   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:44.067   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:44.068   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:44.169   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:44.169   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:44.192   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(7)
+09-21 07:18:44.273   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:44.274   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:44.301   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(11)
+09-21 07:18:44.388   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:44.389   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:44.413   615   719 D AF::Track: interceptBuffer: took 1602us to intercept 0 tracks
+09-21 07:18:44.505   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:44.506   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:44.610   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:44.610   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:44.610   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:44.715   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:44.715   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:44.722   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(6)
+09-21 07:18:44.829   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:44.829   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:44.862   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(7)
+09-21 07:18:44.912   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:44.939   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:44.939   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:45.002   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(8)
+09-21 07:18:45.048   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:45.048   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:45.156   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:45.156   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:45.292   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:45.292   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:45.363   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:45.423   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:45.423   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:45.424   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:45.503   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(20)
+09-21 07:18:45.524   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:45.525   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:45.543   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:45.632   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:45.632   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:45.740   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:45.741   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:45.845   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:45.852   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:45.863   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:45.957   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:45.957   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:46.061   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:46.061   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:46.175   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:46.175   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:46.279   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:46.280   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:46.281   774   927 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-21 07:18:46.432   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:46.432   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:46.486   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(10)
+09-21 07:18:46.535   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:46.586   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:46.628   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:46.698   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:46.698   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:46.803   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:46.803   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:46.889   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:46.906   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:46.906   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:46.966   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(7)
+09-21 07:18:47.018   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:47.018   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:47.026   615   719 D AF::Track: interceptBuffer: took 1251us to intercept 0 tracks
+09-21 07:18:47.070   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:47.125   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:47.125   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:47.125   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:47.242   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:47.245   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:47.276   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(4)
+09-21 07:18:47.350   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:47.352   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:47.356   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:47.462   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:47.462   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:47.485   615   719 D AF::Track: interceptBuffer: took 1640us to intercept 0 tracks
+09-21 07:18:47.564   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:47.565   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:47.566   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:47.604   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:47.670   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:47.697   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:47.752   615   719 D AF::Track: interceptBuffer: took 5631us to intercept 0 tracks
+09-21 07:18:47.810   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:47.810   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:47.915   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:47.915   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:48.017   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:48.017   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:48.049   615   719 D AF::Track: interceptBuffer: took 913us to intercept 0 tracks
+09-21 07:18:48.057   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(15)
+09-21 07:18:48.122   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:48.122   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:48.235   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:48.236   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:48.343   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:48.343   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:48.397   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:48.452   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:48.452   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:48.466   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:48.562   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:48.562   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:48.623   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(7)
+09-21 07:18:48.675   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:48.675   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:48.680   615   719 D AF::Track: interceptBuffer: took 699us to intercept 0 tracks
+09-21 07:18:48.683   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(8)
+09-21 07:18:48.794   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(4)
+09-21 07:18:48.799   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:48.799   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:48.891   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(7)
+09-21 07:18:48.939   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:48.940   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:49.070   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:49.070   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:49.081   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(9)
+09-21 07:18:49.161   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(9)
+09-21 07:18:49.194   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:49.194   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:49.279   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(9)
+09-21 07:18:49.307   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:49.310   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:49.366   774   927 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-21 07:18:49.414   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:49.414   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:49.437   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:49.527   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:49.527   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:49.567   615   719 D AF::Track: interceptBuffer: took 1173us to intercept 0 tracks
+09-21 07:18:49.639   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:49.639   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:49.685   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:49.744   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:49.744   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:49.745   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:49.847   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:49.848   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:49.849   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:49.886   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:49.957   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:49.957   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:50.072   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:50.075   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:50.114   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(7)
+09-21 07:18:50.193   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:50.195   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:50.229   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(7)
+09-21 07:18:50.291   615   719 D AF::Track: interceptBuffer: took 1233us to intercept 0 tracks
+09-21 07:18:50.312   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:50.312   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:50.421   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:50.421   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:50.450   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:50.526   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:50.526   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:50.586  1178  1276 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+09-21 07:18:50.589  1178  1276 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+09-21 07:18:50.630   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:50.632   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:50.644   615   719 D AF::Track: interceptBuffer: took 606us to intercept 0 tracks
+09-21 07:18:50.658   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:50.738   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:50.738   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:50.833   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(6)
+09-21 07:18:50.857   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:50.857   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:50.911   615   719 D AF::Track: interceptBuffer: took 704us to intercept 0 tracks
+09-21 07:18:50.989   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:50.989   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:51.070   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(10)
+09-21 07:18:51.102   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:51.103   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:51.165   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(29)
+09-21 07:18:51.214   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:51.215   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:51.317   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:51.317   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:51.359   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(33)
+09-21 07:18:51.421   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:51.421   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:51.496   615   719 D AF::Track: interceptBuffer: took 668us to intercept 0 tracks
+09-21 07:18:51.525   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:51.525   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:51.580   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:51.630   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:51.630   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:51.667   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(4)
+09-21 07:18:51.733   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:51.733   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:51.802   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(9)
+09-21 07:18:51.839   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:51.839   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:51.858   615   719 D AF::Track: interceptBuffer: took 14426us to intercept 0 tracks
+09-21 07:18:51.925   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:51.955   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:51.955   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:52.001   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:52.085   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:52.085   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:52.191   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:52.191   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:52.306   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:52.306   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:52.385   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(21)
+09-21 07:18:52.409   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:52.409   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:52.421   774   927 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+09-21 07:18:52.445   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(4)
+09-21 07:18:52.537   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:52.537   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:52.542   615   719 D AF::Track: interceptBuffer: took 1558us to intercept 0 tracks
+09-21 07:18:52.624   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(1)
+09-21 07:18:52.641   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:52.642   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:52.749   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:52.749   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:52.753   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(2)
+09-21 07:18:52.781   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(10)
+09-21 07:18:52.864   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:52.864   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:52.985   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:52.985   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:53.096   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:53.096   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:53.126   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(5)
+09-21 07:18:53.201   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:53.201   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:53.312   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:53.314   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:53.381   615   719 D AudioFlinger: mixer(0x7bf39c229790) throttle end: throttle time(3)
+09-21 07:18:53.433   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:53.453   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:53.559   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:53.559   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+09-21 07:18:53.666   561  7321 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+09-21 07:18:53.666   561  7321 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1

@@ -1,0 +1,55 @@
+{
+	"board": "[P: (12.0, 169.6), S: (336.0, 336.0)]",
+	"checks": [
+		{
+			"check": "fixture committed",
+			"passed": true
+		},
+		{
+			"check": "motion frame 0 saved",
+			"passed": true
+		},
+		{
+			"check": "motion frame 60 saved",
+			"passed": true
+		},
+		{
+			"check": "motion frame 140 saved",
+			"passed": true
+		},
+		{
+			"check": "motion frame 220 saved",
+			"passed": true
+		},
+		{
+			"check": "motion frame 300 saved",
+			"passed": true
+		},
+		{
+			"check": "motion frame 460 saved",
+			"passed": true
+		},
+		{
+			"check": "real-time clear released input",
+			"passed": true
+		},
+		{
+			"check": "real-time clear awarded once",
+			"passed": true
+		},
+		{
+			"check": "native screenshot saved",
+			"passed": true
+		},
+		{
+			"check": "screen state equals session",
+			"passed": true
+		}
+	],
+	"floors": 11,
+	"mode": "motion",
+	"revision": 2,
+	"score": 240,
+	"size": "360x800",
+	"source": "Windows Godot OpenGL native viewport; not Android"
+}

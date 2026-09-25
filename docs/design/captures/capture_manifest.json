@@ -1,0 +1,97 @@
+{
+  "date": "2026-09-21T01:12:21",
+  "captures": [
+    {
+      "name": "basic_360x800",
+      "file": "basic_360x800.png",
+      "exit_code": 0,
+      "sha256": "e288f822105d6d5a767af4dc0d72e505c8d8bf8253535f8006e37ad14c741d47",
+      "size": "360x800"
+    },
+    {
+      "name": "basic_320x568",
+      "file": "basic_320x568.png",
+      "exit_code": 0,
+      "sha256": "a280409c0b8ba5dfedaf84707f3c2f8f20167929e5e1f5825eb0c64ea1e8dd7a",
+      "size": "320x568"
+    },
+    {
+      "name": "ready_360x800",
+      "file": "ready_360x800.png",
+      "exit_code": 0,
+      "sha256": "256d8d466beb9882f3c2e1f43d8ac89eebcf61620548a23d4fb242995ba6dfbd",
+      "size": "360x800"
+    },
+    {
+      "name": "cross_412x915",
+      "file": "cross_412x915.png",
+      "exit_code": 0,
+      "sha256": "a4e51f257a0d35b1d7f04475be78dc978eadc9eb304f1a50a20ceb7e80fab255",
+      "size": "412x915"
+    },
+    {
+      "name": "valid_360x800",
+      "file": "valid_360x800.png",
+      "exit_code": 0,
+      "sha256": "0359fe5917def5003d9eb626a83b0c599b2ed12f5bdd88f8683c375766179609",
+      "size": "360x800"
+    },
+    {
+      "name": "invalid_360x800",
+      "file": "invalid_360x800.png",
+      "exit_code": 0,
+      "sha256": "1ee9c51cfe6cde50b4d8589fe3d90b34baf5456375b4da90fda4bea468ec0582",
+      "size": "360x800"
+    },
+    {
+      "name": "blocked_360x800",
+      "file": "blocked_360x800.png",
+      "exit_code": 0,
+      "sha256": "b8a43bc7b495a6bc6fd893c4046a3c21cfac3a9d0a53b18081e12a8bbfef1f00",
+      "size": "360x800"
+    },
+    {
+      "name": "game_over_320x568",
+      "file": "game_over_320x568.png",
+      "exit_code": 0,
+      "sha256": "9223d00dd9d19c1943dfebe3839aae4dc8d85b2c3edf26070f337e1bff8bbae1",
+      "size": "320x568"
+    },
+    {
+      "name": "save_error_360x800",
+      "file": "save_error_360x800.png",
+      "exit_code": 0,
+      "sha256": "7eeece98037c253f210810780a79c8d6121e3d70fd44555d4ba73538fbbbfe80",
+      "size": "360x800"
+    },
+    {
+      "name": "auto_confirm_320x568",
+      "file": "auto_confirm_320x568.png",
+      "exit_code": 0,
+      "sha256": "53fbf35a5051edeb68d9afefe2a07ae0a6876ca8c94f580ca00d7edf491e99ca",
+      "size": "320x568"
+    },
+    {
+      "name": "tower_13_360x800",
+      "file": "tower_13_360x800.png",
+      "exit_code": 0,
+      "sha256": "01a082b8282afb607a5ecfe4e5a8e9ff2641df555cd0b67d77bc8c8bec83d94a",
+      "size": "360x800"
+    },
+    {
+      "name": "tower_0_320x568",
+      "file": "tower_0_320x568.png",
+      "exit_code": 0,
+      "sha256": "505cb66ecf421c771e26238747adffcaedcfabe57c951edbd5e0ed55581b6992",
+      "size": "320x568"
+    },
+    {
+      "name": "tower_30_412x915",
+      "file": "tower_30_412x915.png",
+      "exit_code": 0,
+      "sha256": "957b96458ffe86f7d41e7e8b2d9a6151051720d425a260f0fafa83db05a99150",
+      "size": "412x915"
+    }
+  ],
+  "source": "Godot desktop OpenGL viewport; not Android device evidence"
+}

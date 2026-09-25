@@ -1,0 +1,24 @@
+{
+  "verdict": [
+    {
+      "id": "GF-01",
+      "status": "resolved",
+      "evidence": "Refreshed input_360x800.png shows +1 reward entirely below the board in the hint strip. clear_pick_360x800.png shows clear fragments still active, old center reward absent, new valid ghost and immediately visible placement guidance. Matching JSON checks confirm pickup during tail, toast dismissed, hint shown; source performs this dismissal before preview for valid or invalid placement."
+    },
+    {
+      "id": "GF-02",
+      "status": "resolved",
+      "evidence": "Refreshed inset_320x568.png shows the full296px board and complete clear action between simulated24px safe top/bottom bounds. Matching JSON confirms board at(12,128),296×296, navigation below safe top and clear above safe bottom. Refreshed basic_320x568.png preserves no-inset fit; actions remain48px."
+    }
+  ],
+  "regressions": "No material regression from the two corrections observed in targeted refreshed captures.",
+  "remaining": [
+    "Scored material corrections: clear. This SHIP disposition covers GF-01 and GF-02 only; it is not a whole-surface re-review.",
+    "Android whole-surface validation remains RECAPTURE: obtain valid native capture on a working renderer/device. Current emulator SwiftShader shader-link failure and gray image are diagnostics only.",
+    "Physical Samsung drag latency, smoothness, layered audio balance, haptics and current-build acceptance remain unverified while device is absent. Android Back/font-scale/dark-mode validation remains open.",
+    "Root reports82tests/2843assertions and20native probes pass, plus ARM64 APK export and v2/v3 signature validation. Those do not replace native visual or physical interaction evidence."
+  ],
+  "disposition": "ship",
+  "scope": "The two scored Windows-native material fixes only",
+  "whole_android_surface_disposition": "recapture"
+}

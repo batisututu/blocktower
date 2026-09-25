@@ -1,0 +1,55 @@
+{
+	"board": "[P: (12.0, 112.0), S: (296.0, 296.0)]",
+	"checks": [
+		{
+			"check": "fixture committed",
+			"passed": true
+		},
+		{
+			"check": "resume waits for focus",
+			"passed": true
+		},
+		{
+			"check": "old native button release cannot activate replacement",
+			"passed": true
+		},
+		{
+			"check": "fresh native touch can pick",
+			"passed": true
+		},
+		{
+			"check": "second finger cannot open settings during drag",
+			"passed": true
+		},
+		{
+			"check": "orphan touch release cannot place after resume",
+			"passed": true
+		},
+		{
+			"check": "clear tail settles without replay",
+			"passed": true
+		},
+		{
+			"check": "lifecycle never awards again",
+			"passed": true
+		},
+		{
+			"check": "real disk matches resumed HUD session",
+			"passed": true
+		},
+		{
+			"check": "native screenshot saved",
+			"passed": true
+		},
+		{
+			"check": "screen state equals session",
+			"passed": true
+		}
+	],
+	"floors": 11,
+	"mode": "lifecycle",
+	"revision": 2,
+	"score": 240,
+	"size": "320x568",
+	"source": "Windows Godot OpenGL native viewport; not Android"
+}

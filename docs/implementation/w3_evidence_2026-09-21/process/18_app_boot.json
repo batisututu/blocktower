@@ -1,0 +1,9 @@
+{
+	"error": "SAVE_CORRUPT",
+	"expected_clear_text": "",
+	"mode": "app_boot",
+	"ok": false,
+	"pid": 2640,
+	"recovered": false,
+	"recovery": {}
+}

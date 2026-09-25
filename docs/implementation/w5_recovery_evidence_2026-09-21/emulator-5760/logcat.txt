@@ -1,0 +1,686 @@
+--------- beginning of main
+09-21 07:18:03.786  7250  7299 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 07:18:06.386  7250  7299 I godot   : 1: 
+09-21 07:18:06.386  7250  7299 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 07:18:06.386  7250  7299 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 07:18:06.386  7250  7299 E godot   : 
+09-21 07:18:06.386  7250  7299 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 07:18:06.386  7250  7299 E godot   : ERROR: Method/function failed.
+09-21 07:18:06.387  7250  7299 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 07:18:06.527  7250  7299 I godot   : 1: 
+09-21 07:18:06.527  7250  7299 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 07:18:06.527  7250  7299 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 07:18:06.527  7250  7299 E godot   : 
+09-21 07:18:06.527  7250  7299 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 07:18:06.528  7250  7299 E godot   : ERROR: Method/function failed.
+09-21 07:18:06.536  7250  7299 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 07:18:06.577  7250  7299 I godot   : 1: 
+09-21 07:18:06.577  7250  7299 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 07:18:06.577  7250  7299 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 07:18:06.577  7250  7299 E godot   : 
+09-21 07:18:06.577  7250  7299 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 07:18:06.577  7250  7299 E godot   : ERROR: Method/function failed.
+09-21 07:18:06.577  7250  7299 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 07:18:06.598  7250  7299 I godot   : 1: 
+09-21 07:18:06.598  7250  7299 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 07:18:06.598  7250  7299 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 07:18:06.598  7250  7299 E godot   : 
+09-21 07:18:06.598  7250  7299 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 07:18:06.598  7250  7299 E godot   : ERROR: Method/function failed.
+09-21 07:18:06.598  7250  7299 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 07:18:06.600  7250  7299 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 07:18:06.600  7250  7299 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 07:18:06.610  7250  7299 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 07:18:06.968  7250  7299 I godot   : 
+09-21 07:18:12.579  7250  7299 I godot   : 1: 
+09-21 07:18:12.580  7250  7299 E godot   : ERROR: CanvasShaderGLES3: Program linking failed:
+09-21 07:18:12.580  7250  7299 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 07:18:12.580  7250  7299 E godot   : 
+09-21 07:18:12.580  7250  7299 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 07:18:12.581  7250  7299 E godot   : ERROR: Method/function failed.
+09-21 07:18:12.582  7250  7299 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 07:18:12.598  7250  7299 I godot   : 1: 
+09-21 07:18:12.598  7250  7299 E godot   : ERROR: CanvasShaderGLES3: Program linking failed:
+09-21 07:18:12.598  7250  7299 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 07:18:12.598  7250  7299 E godot   : 
+09-21 07:18:12.599  7250  7299 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 07:18:12.599  7250  7299 E godot   : ERROR: Method/function failed.
+09-21 07:18:12.599  7250  7299 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:41:45.000  8427  8461 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:41:46.504  8427  8461 I godot   : 1: 
+09-21 09:41:46.504  8427  8461 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:41:46.504  8427  8461 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:41:46.504  8427  8461 E godot   : 
+09-21 09:41:46.504  8427  8461 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:41:46.504  8427  8461 E godot   : ERROR: Method/function failed.
+09-21 09:41:46.504  8427  8461 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:41:46.554  8427  8461 I godot   : 1: 
+09-21 09:41:46.554  8427  8461 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:41:46.554  8427  8461 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:41:46.554  8427  8461 E godot   : 
+09-21 09:41:46.554  8427  8461 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:41:46.554  8427  8461 E godot   : ERROR: Method/function failed.
+09-21 09:41:46.554  8427  8461 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:41:46.570  8427  8461 I godot   : 1: 
+09-21 09:41:46.570  8427  8461 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:41:46.570  8427  8461 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:41:46.570  8427  8461 E godot   : 
+09-21 09:41:46.570  8427  8461 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:41:46.570  8427  8461 E godot   : ERROR: Method/function failed.
+09-21 09:41:46.570  8427  8461 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:41:46.585  8427  8461 I godot   : 1: 
+09-21 09:41:46.585  8427  8461 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:41:46.585  8427  8461 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:41:46.585  8427  8461 E godot   : 
+09-21 09:41:46.585  8427  8461 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:41:46.585  8427  8461 E godot   : ERROR: Method/function failed.
+09-21 09:41:46.585  8427  8461 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:41:46.586  8427  8461 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:41:46.586  8427  8461 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:41:46.592  8427  8461 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:41:46.802  8427  8461 I godot   : 
+09-21 09:41:50.434  8427  8461 E godot   : SCRIPT ERROR: Invalid call to function 'tryLock' in base 'JavaObject'. Expected 3 argument(s).
+09-21 09:41:50.435  8427  8461 E godot   :    at: acquire (res://scripts/persistence/android_file_guard.gd:32)
+09-21 09:41:50.435  8427  8461 E godot   :    GDScript backtrace (most recent call first):
+09-21 09:41:50.435  8427  8461 E godot   :        [0] acquire (res://scripts/persistence/android_file_guard.gd:32)
+09-21 09:41:50.435  8427  8461 E godot   :        [1] _run (res://probe.gd:54)
+09-21 09:41:50.450  8427  8461 E godot   : SCRIPT ERROR: Invalid call to function 'tryLock' in base 'JavaObject'. Expected 3 argument(s).
+09-21 09:41:50.451  8427  8461 E godot   :    at: acquire (res://scripts/persistence/android_file_guard.gd:32)
+09-21 09:41:50.451  8427  8461 E godot   :    GDScript backtrace (most recent call first):
+09-21 09:41:50.451  8427  8461 E godot   :        [0] acquire (res://scripts/persistence/android_file_guard.gd:32)
+09-21 09:41:50.451  8427  8461 E godot   :        [1] _run (res://probe.gd:59)
+09-21 09:41:50.451  8427  8461 I godot   : SAVE_PROCESS_PROBE guard ok=false
+09-21 09:44:26.926  8646  8679 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:44:28.284  8646  8679 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:44:28.284  8646  8679 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:44:28.725  8646  8679 I godot   : 1: 
+09-21 09:44:28.726  8646  8679 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:44:28.726  8646  8679 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:44:28.726  8646  8679 E godot   : 
+09-21 09:44:28.726  8646  8679 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:44:28.726  8646  8679 E godot   : ERROR: Method/function failed.
+09-21 09:44:28.726  8646  8679 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:44:28.727  8646  8679 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:44:28.727  8646  8679 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:44:28.734  8646  8679 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:44:28.818  8646  8679 I godot   : 
+09-21 09:44:31.836  8646  8679 I godot   : SAVE_PROCESS_PROBE guard ok=false
+09-21 09:47:12.879  8847  8879 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:47:14.552  8847  8879 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:47:14.552  8847  8879 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:47:14.863  8847  8879 I godot   : 1: 
+09-21 09:47:14.863  8847  8879 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:47:14.863  8847  8879 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:47:14.863  8847  8879 E godot   : 
+09-21 09:47:14.863  8847  8879 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:47:14.864  8847  8879 E godot   : ERROR: Method/function failed.
+09-21 09:47:14.864  8847  8879 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:47:14.866  8847  8879 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:47:14.866  8847  8879 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:47:14.875  8847  8879 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:47:15.017  8847  8879 I godot   : 
+09-21 09:47:18.634  8847  8879 I godot   : SAVE_PROCESS_PROBE guard ok=true
+09-21 09:47:47.835  8987  9011 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:47:48.312  8987  9011 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:47:48.312  8987  9011 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:47:48.809  8987  9011 I godot   : 1: 
+09-21 09:47:48.809  8987  9011 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:47:48.809  8987  9011 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:47:48.809  8987  9011 E godot   : 
+09-21 09:47:48.809  8987  9011 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:47:48.810  8987  9011 E godot   : ERROR: Method/function failed.
+09-21 09:47:48.810  8987  9011 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:47:48.810  8987  9011 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:47:48.810  8987  9011 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:47:48.819  8987  9011 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:47:48.928  8987  9011 I godot   : 
+09-21 09:47:52.043  8987  9011 I godot   : SAVE_PROCESS_PROBE guard ok=true
+09-21 09:47:56.415  9096  9120 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:47:56.878  9096  9120 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:47:56.878  9096  9120 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:47:57.708  9096  9120 I godot   : 1: 
+09-21 09:47:57.708  9096  9120 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:47:57.708  9096  9120 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:47:57.708  9096  9120 E godot   : 
+09-21 09:47:57.708  9096  9120 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:47:57.709  9096  9120 E godot   : ERROR: Method/function failed.
+09-21 09:47:57.709  9096  9120 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:47:57.710  9096  9120 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:47:57.712  9096  9120 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:47:57.719  9096  9120 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:47:57.769  9096  9120 I godot   : 
+09-21 09:48:01.074  9096  9120 I godot   : SAVE_PROCESS_PROBE init ok=true
+09-21 09:48:06.116  9213  9237 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:48:06.939  9213  9237 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:48:06.939  9213  9237 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:48:07.272  9213  9237 I godot   : 1: 
+09-21 09:48:07.273  9213  9237 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:48:07.273  9213  9237 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:48:07.273  9213  9237 E godot   : 
+09-21 09:48:07.273  9213  9237 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:48:07.273  9213  9237 E godot   : ERROR: Method/function failed.
+09-21 09:48:07.273  9213  9237 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:48:07.274  9213  9237 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:48:07.274  9213  9237 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:48:07.281  9213  9237 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:48:07.318  9213  9237 I godot   : 
+09-21 09:48:10.440  9213  9237 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-21 09:48:15.705  9327  9351 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:48:16.407  9327  9351 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:48:16.433  9327  9351 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:48:16.898  9327  9351 I godot   : 1: 
+09-21 09:48:16.898  9327  9351 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:48:16.898  9327  9351 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:48:16.898  9327  9351 E godot   : 
+09-21 09:48:16.898  9327  9351 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:48:16.898  9327  9351 E godot   : ERROR: Method/function failed.
+09-21 09:48:16.898  9327  9351 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:48:16.899  9327  9351 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:48:16.899  9327  9351 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:48:16.907  9327  9351 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:48:17.034  9327  9351 I godot   : 
+09-21 09:48:28.314  9452  9476 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:48:29.137  9452  9476 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:48:29.137  9452  9476 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:48:29.725  9452  9476 I godot   : 1: 
+09-21 09:48:29.725  9452  9476 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:48:29.725  9452  9476 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:48:29.725  9452  9476 E godot   : 
+09-21 09:48:29.725  9452  9476 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:48:29.725  9452  9476 E godot   : ERROR: Method/function failed.
+09-21 09:48:29.725  9452  9476 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:48:29.726  9452  9476 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:48:29.727  9452  9476 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:48:29.734  9452  9476 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:48:29.795  9452  9476 I godot   : 
+09-21 09:48:33.314  9452  9476 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-21 09:48:37.987  9561  9585 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:48:38.673  9561  9585 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:48:38.673  9561  9585 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:48:39.135  9561  9585 I godot   : 1: 
+09-21 09:48:39.136  9561  9585 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:48:39.136  9561  9585 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:48:39.136  9561  9585 E godot   : 
+09-21 09:48:39.136  9561  9585 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:48:39.136  9561  9585 E godot   : ERROR: Method/function failed.
+09-21 09:48:39.136  9561  9585 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:48:39.138  9561  9585 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:48:39.138  9561  9585 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:48:39.147  9561  9585 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:48:39.255  9561  9585 I godot   : 
+09-21 09:48:42.559  9561  9585 I godot   : SAVE_PROCESS_PROBE clear ok=true
+09-21 09:48:47.425  9668  9692 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:48:48.258  9668  9692 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:48:48.258  9668  9692 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:48:48.695  9668  9692 I godot   : 1: 
+09-21 09:48:48.695  9668  9692 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:48:48.695  9668  9692 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:48:48.695  9668  9692 E godot   : 
+09-21 09:48:48.695  9668  9692 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:48:48.696  9668  9692 E godot   : ERROR: Method/function failed.
+09-21 09:48:48.696  9668  9692 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:48:48.697  9668  9692 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:48:48.698  9668  9692 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:48:48.707  9668  9692 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:48:48.744  9668  9692 I godot   : 
+09-21 09:48:52.187  9668  9692 I godot   : SAVE_PROCESS_PROBE duplicate ok=false
+09-21 09:48:57.609  9787  9810 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:48:58.223  9787  9810 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:48:58.223  9787  9810 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:48:59.256  9787  9810 I godot   : 1: 
+09-21 09:48:59.256  9787  9810 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:48:59.256  9787  9810 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:48:59.256  9787  9810 E godot   : 
+09-21 09:48:59.256  9787  9810 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:48:59.258  9787  9810 E godot   : ERROR: Method/function failed.
+09-21 09:48:59.258  9787  9810 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:48:59.259  9787  9810 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:48:59.260  9787  9810 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:48:59.269  9787  9810 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:48:59.347  9787  9810 I godot   : 
+09-21 09:49:08.702  9902  9926 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:49:09.781  9902  9926 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:49:09.781  9902  9926 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:49:10.192  9902  9926 I godot   : 1: 
+09-21 09:49:10.192  9902  9926 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:49:10.192  9902  9926 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:49:10.192  9902  9926 E godot   : 
+09-21 09:49:10.192  9902  9926 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:49:10.193  9902  9926 E godot   : ERROR: Method/function failed.
+09-21 09:49:10.193  9902  9926 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:49:10.194  9902  9926 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:49:10.195  9902  9926 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:49:10.199  9902  9926 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:49:10.234  9902  9926 I godot   : 
+09-21 09:49:13.626  9902  9926 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-21 09:49:17.798 10009 10033 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:49:18.330 10009 10033 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:49:18.330 10009 10033 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:49:18.769 10009 10033 I godot   : 1: 
+09-21 09:49:18.770 10009 10033 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:49:18.770 10009 10033 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:49:18.770 10009 10033 E godot   : 
+09-21 09:49:18.770 10009 10033 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:49:18.770 10009 10033 E godot   : ERROR: Method/function failed.
+09-21 09:49:18.770 10009 10033 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:49:18.770 10009 10033 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:49:18.771 10009 10033 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:49:18.778 10009 10033 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:49:18.816 10009 10033 I godot   : 
+09-21 09:49:21.799 10009 10033 I godot   : SAVE_PROCESS_PROBE clear ok=true
+09-21 09:49:25.142 10113 10133 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:49:25.538 10113 10133 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:49:25.540 10113 10133 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:49:26.239 10113 10133 I godot   : 1: 
+09-21 09:49:26.240 10113 10133 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:49:26.240 10113 10133 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:49:26.240 10113 10133 E godot   : 
+09-21 09:49:26.240 10113 10133 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:49:26.240 10113 10133 E godot   : ERROR: Method/function failed.
+09-21 09:49:26.240 10113 10133 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:49:26.245 10113 10133 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:49:26.245 10113 10133 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:49:26.255 10113 10133 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:49:26.296 10113 10133 I godot   : 
+09-21 09:49:29.300 10113 10133 I godot   : SAVE_PROCESS_PROBE duplicate ok=false
+09-21 09:49:34.375 10221 10244 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:49:35.080 10221 10244 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:49:35.081 10221 10244 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:49:35.672 10221 10244 I godot   : 1: 
+09-21 09:49:35.672 10221 10244 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:49:35.672 10221 10244 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:49:35.672 10221 10244 E godot   : 
+09-21 09:49:35.672 10221 10244 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:49:35.672 10221 10244 E godot   : ERROR: Method/function failed.
+09-21 09:49:35.672 10221 10244 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:49:35.673 10221 10244 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:49:35.674 10221 10244 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:49:35.681 10221 10244 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:49:35.731 10221 10244 I godot   : 
+09-21 09:49:43.611 10336 10360 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:49:44.268 10336 10360 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:49:44.269 10336 10360 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:49:44.790 10336 10360 I godot   : 1: 
+09-21 09:49:44.791 10336 10360 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:49:44.791 10336 10360 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:49:44.791 10336 10360 E godot   : 
+09-21 09:49:44.791 10336 10360 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:49:44.791 10336 10360 E godot   : ERROR: Method/function failed.
+09-21 09:49:44.791 10336 10360 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:49:44.794 10336 10360 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:49:44.794 10336 10360 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:49:44.800 10336 10360 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:49:44.850 10336 10360 I godot   : 
+09-21 09:49:47.963 10336 10360 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-21 09:49:51.338 10438 10459 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:49:52.122 10438 10459 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:49:52.122 10438 10459 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:49:52.558 10438 10459 I godot   : 1: 
+09-21 09:49:52.558 10438 10459 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:49:52.558 10438 10459 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:49:52.558 10438 10459 E godot   : 
+09-21 09:49:52.558 10438 10459 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:49:52.558 10438 10459 E godot   : ERROR: Method/function failed.
+09-21 09:49:52.558 10438 10459 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:49:52.559 10438 10459 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:49:52.559 10438 10459 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:49:52.566 10438 10459 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:49:52.607 10438 10459 I godot   : 
+09-21 09:49:55.694 10438 10459 I godot   : SAVE_PROCESS_PROBE clear ok=true
+09-21 09:49:59.620 10542 10567 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:49:59.942 10542 10567 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:49:59.943 10542 10567 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:50:00.692 10542 10567 I godot   : 1: 
+09-21 09:50:00.692 10542 10567 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:50:00.692 10542 10567 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:50:00.692 10542 10567 E godot   : 
+09-21 09:50:00.692 10542 10567 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:50:00.692 10542 10567 E godot   : ERROR: Method/function failed.
+09-21 09:50:00.692 10542 10567 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:50:00.693 10542 10567 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:50:00.693 10542 10567 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:50:00.702 10542 10567 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:50:00.800 10542 10567 I godot   : 
+09-21 09:50:03.690 10542 10567 I godot   : SAVE_PROCESS_PROBE duplicate ok=false
+09-21 09:50:08.768 10655 10678 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:50:09.519 10655 10678 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:50:09.520 10655 10678 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:50:09.911 10655 10678 I godot   : 1: 
+09-21 09:50:09.912 10655 10678 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:50:09.912 10655 10678 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:50:09.912 10655 10678 E godot   : 
+09-21 09:50:09.912 10655 10678 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:50:09.912 10655 10678 E godot   : ERROR: Method/function failed.
+09-21 09:50:09.912 10655 10678 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:50:09.914 10655 10678 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:50:09.915 10655 10678 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:50:09.920 10655 10678 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:50:09.968 10655 10678 I godot   : 
+09-21 09:50:18.036 10761 10785 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:50:18.825 10761 10785 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:50:18.825 10761 10785 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:50:19.237 10761 10785 I godot   : 1: 
+09-21 09:50:19.239 10761 10785 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:50:19.239 10761 10785 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:50:19.239 10761 10785 E godot   : 
+09-21 09:50:19.239 10761 10785 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:50:19.240 10761 10785 E godot   : ERROR: Method/function failed.
+09-21 09:50:19.241 10761 10785 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:50:19.242 10761 10785 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:50:19.242 10761 10785 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:50:19.249 10761 10785 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:50:19.287 10761 10785 I godot   : 
+09-21 09:50:26.794 10761 10785 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-21 09:50:32.202 10877 10901 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:50:33.206 10877 10901 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:50:33.206 10877 10901 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:50:33.576 10877 10901 I godot   : 1: 
+09-21 09:50:33.576 10877 10901 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:50:33.576 10877 10901 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:50:33.576 10877 10901 E godot   : 
+09-21 09:50:33.576 10877 10901 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:50:33.578 10877 10901 E godot   : ERROR: Method/function failed.
+09-21 09:50:33.578 10877 10901 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:50:33.578 10877 10901 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:50:33.579 10877 10901 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:50:33.583 10877 10901 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:50:33.630 10877 10901 I godot   : 
+09-21 09:50:36.806 10877 10901 I godot   : SAVE_PROCESS_PROBE clear ok=true
+09-21 09:50:42.455 10982 11008 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:50:43.332 10982 11008 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:50:43.339 10982 11008 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:50:44.627 10982 11008 I godot   : 1: 
+09-21 09:50:44.627 10982 11008 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:50:44.627 10982 11008 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:50:44.627 10982 11008 E godot   : 
+09-21 09:50:44.627 10982 11008 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:50:44.627 10982 11008 E godot   : ERROR: Method/function failed.
+09-21 09:50:44.627 10982 11008 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:50:44.628 10982 11008 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:50:44.629 10982 11008 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:50:44.635 10982 11008 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:50:44.718 10982 11008 I godot   : 
+09-21 09:50:47.936 10982 11008 I godot   : SAVE_PROCESS_PROBE duplicate ok=false
+09-21 09:50:52.799 11103 11125 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:50:53.341 11103 11125 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:50:53.341 11103 11125 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:50:54.119 11103 11125 I godot   : 1: 
+09-21 09:50:54.119 11103 11125 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:50:54.119 11103 11125 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:50:54.119 11103 11125 E godot   : 
+09-21 09:50:54.119 11103 11125 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:50:54.119 11103 11125 E godot   : ERROR: Method/function failed.
+09-21 09:50:54.120 11103 11125 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:50:54.121 11103 11125 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:50:54.121 11103 11125 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:50:54.126 11103 11125 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:50:54.167 11103 11125 I godot   : 
+09-21 09:51:10.046 11219 11243 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:51:11.211 11219 11243 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:51:11.211 11219 11243 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:51:11.931 11219 11243 I godot   : 1: 
+09-21 09:51:11.931 11219 11243 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:51:11.931 11219 11243 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:51:11.931 11219 11243 E godot   : 
+09-21 09:51:11.931 11219 11243 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:51:11.931 11219 11243 E godot   : ERROR: Method/function failed.
+09-21 09:51:11.931 11219 11243 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:51:11.932 11219 11243 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:51:11.932 11219 11243 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:51:11.942 11219 11243 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:51:12.029 11219 11243 I godot   : 
+09-21 09:51:15.469 11219 11243 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-21 09:51:20.462 11325 11350 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:51:21.760 11325 11350 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:51:21.760 11325 11350 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:51:22.095 11325 11350 I godot   : 1: 
+09-21 09:51:22.095 11325 11350 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:51:22.095 11325 11350 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:51:22.095 11325 11350 E godot   : 
+09-21 09:51:22.096 11325 11350 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:51:22.097 11325 11350 E godot   : ERROR: Method/function failed.
+09-21 09:51:22.098 11325 11350 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:51:22.101 11325 11350 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:51:22.102 11325 11350 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:51:22.113 11325 11350 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:51:22.265 11325 11350 I godot   : 
+09-21 09:51:25.789 11325 11350 I godot   : SAVE_PROCESS_PROBE clear ok=true
+09-21 09:51:30.612 11435 11460 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:51:31.053 11435 11460 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:51:31.053 11435 11460 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:51:31.734 11435 11460 I godot   : 1: 
+09-21 09:51:31.734 11435 11460 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:51:31.734 11435 11460 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:51:31.734 11435 11460 E godot   : 
+09-21 09:51:31.734 11435 11460 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:51:31.735 11435 11460 E godot   : ERROR: Method/function failed.
+09-21 09:51:31.735 11435 11460 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:51:31.738 11435 11460 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:51:31.738 11435 11460 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:51:31.744 11435 11460 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:51:31.796 11435 11460 I godot   : 
+09-21 09:51:35.074 11435 11460 I godot   : SAVE_PROCESS_PROBE duplicate ok=false
+09-21 09:51:39.961 11551 11574 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:51:40.866 11551 11574 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:51:40.866 11551 11574 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:51:41.232 11551 11574 I godot   : 1: 
+09-21 09:51:41.232 11551 11574 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:51:41.232 11551 11574 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:51:41.232 11551 11574 E godot   : 
+09-21 09:51:41.232 11551 11574 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:51:41.232 11551 11574 E godot   : ERROR: Method/function failed.
+09-21 09:51:41.232 11551 11574 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:51:41.234 11551 11574 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:51:41.234 11551 11574 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:51:41.241 11551 11574 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:51:41.285 11551 11574 I godot   : 
+09-21 09:51:50.073 11665 11693 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:51:51.455 11665 11693 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:51:51.455 11665 11693 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:51:51.837 11665 11693 I godot   : 1: 
+09-21 09:51:51.838 11665 11693 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:51:51.838 11665 11693 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:51:51.838 11665 11693 E godot   : 
+09-21 09:51:51.838 11665 11693 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:51:51.838 11665 11693 E godot   : ERROR: Method/function failed.
+09-21 09:51:51.838 11665 11693 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:51:51.842 11665 11693 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:51:51.843 11665 11693 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:51:51.852 11665 11693 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:51:51.916 11665 11693 I godot   : 
+09-21 09:51:55.301 11665 11693 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-21 09:51:58.661 11777 11797 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:51:59.566 11777 11797 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:51:59.566 11777 11797 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:52:00.079 11777 11797 I godot   : 1: 
+09-21 09:52:00.080 11777 11797 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:52:00.080 11777 11797 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:52:00.080 11777 11797 E godot   : 
+09-21 09:52:00.080 11777 11797 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:52:00.080 11777 11797 E godot   : ERROR: Method/function failed.
+09-21 09:52:00.084 11777 11797 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:52:00.084 11777 11797 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:52:00.084 11777 11797 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:52:00.091 11777 11797 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:52:00.165 11777 11797 I godot   : 
+09-21 09:52:03.444 11777 11797 I godot   : SAVE_PROCESS_PROBE duplicate ok=false
+09-21 09:52:08.839 11901 11924 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:52:10.049 11901 11924 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:52:10.049 11901 11924 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:52:10.324 11901 11924 I godot   : 1: 
+09-21 09:52:10.324 11901 11924 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:52:10.324 11901 11924 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:52:10.324 11901 11924 E godot   : 
+09-21 09:52:10.324 11901 11924 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:52:10.325 11901 11924 E godot   : ERROR: Method/function failed.
+09-21 09:52:10.325 11901 11924 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:52:10.326 11901 11924 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:52:10.326 11901 11924 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:52:10.333 11901 11924 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:52:10.378 11901 11924 I godot   : 
+09-21 09:52:13.837 11901 11924 I godot   : SAVE_PROCESS_PROBE inspect ok=false
+09-21 09:52:18.445 12013 12037 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:52:19.221 12013 12037 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:52:19.222 12013 12037 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:52:19.548 12013 12037 I godot   : 1: 
+09-21 09:52:19.548 12013 12037 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:52:19.548 12013 12037 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:52:19.548 12013 12037 E godot   : 
+09-21 09:52:19.548 12013 12037 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:52:19.549 12013 12037 E godot   : ERROR: Method/function failed.
+09-21 09:52:19.549 12013 12037 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:52:19.550 12013 12037 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:52:19.551 12013 12037 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:52:19.568 12013 12037 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:52:19.637 12013 12037 I godot   : 
+09-21 09:52:22.762 12013 12037 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-21 09:52:27.826 12133 12156 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:52:28.602 12133 12156 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:52:28.602 12133 12156 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:52:29.117 12133 12156 I godot   : 1: 
+09-21 09:52:29.118 12133 12156 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:52:29.118 12133 12156 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:52:29.118 12133 12156 E godot   : 
+09-21 09:52:29.118 12133 12156 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:52:29.118 12133 12156 E godot   : ERROR: Method/function failed.
+09-21 09:52:29.118 12133 12156 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:52:29.119 12133 12156 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:52:29.119 12133 12156 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:52:29.124 12133 12156 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:52:29.160 12133 12156 I godot   : 
+09-21 09:52:32.614 12133 12156 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-21 09:52:38.359 12251 12273 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:52:39.101 12251 12273 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:52:39.102 12251 12273 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:52:39.841 12251 12273 I godot   : 1: 
+09-21 09:52:39.841 12251 12273 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:52:39.841 12251 12273 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:52:39.841 12251 12273 E godot   : 
+09-21 09:52:39.841 12251 12273 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:52:39.842 12251 12273 E godot   : ERROR: Method/function failed.
+09-21 09:52:39.842 12251 12273 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:52:39.843 12251 12273 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:52:39.844 12251 12273 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:52:39.851 12251 12273 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:52:39.891 12251 12273 I godot   : 
+09-21 09:52:43.233 12251 12273 I godot   : SAVE_PROCESS_PROBE inspect ok=false
+09-21 09:52:48.219 12377 12401 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:52:48.469 12377 12401 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:52:48.469 12377 12401 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:52:49.249 12377 12401 I godot   : 1: 
+09-21 09:52:49.249 12377 12401 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:52:49.249 12377 12401 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:52:49.249 12377 12401 E godot   : 
+09-21 09:52:49.249 12377 12401 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:52:49.249 12377 12401 E godot   : ERROR: Method/function failed.
+09-21 09:52:49.249 12377 12401 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:52:49.250 12377 12401 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:52:49.250 12377 12401 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:52:49.261 12377 12401 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:52:49.359 12377 12401 I godot   : 
+09-21 09:52:52.433 12377 12401 I godot   : SAVE_PROCESS_PROBE inspect ok=false
+09-21 09:52:57.201 12501 12525 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:52:57.924 12501 12525 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:52:57.924 12501 12525 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:52:58.366 12501 12525 I godot   : 1: 
+09-21 09:52:58.366 12501 12525 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:52:58.366 12501 12525 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:52:58.366 12501 12525 E godot   : 
+09-21 09:52:58.366 12501 12525 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:52:58.366 12501 12525 E godot   : ERROR: Method/function failed.
+09-21 09:52:58.366 12501 12525 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:52:58.367 12501 12525 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:52:58.369 12501 12525 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:52:58.377 12501 12525 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:52:58.436 12501 12525 I godot   : 
+09-21 09:53:01.466 12501 12525 I godot   : SAVE_PROCESS_PROBE inspect ok=false
+09-21 09:53:06.247 12621 12645 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:53:06.893 12621 12645 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:53:06.894 12621 12645 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:53:07.384 12621 12645 I godot   : 1: 
+09-21 09:53:07.384 12621 12645 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:53:07.384 12621 12645 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:53:07.384 12621 12645 E godot   : 
+09-21 09:53:07.385 12621 12645 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:53:07.385 12621 12645 E godot   : ERROR: Method/function failed.
+09-21 09:53:07.385 12621 12645 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:53:07.389 12621 12645 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:53:07.389 12621 12645 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:53:07.397 12621 12645 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:53:07.436 12621 12645 I godot   : 
+09-21 09:53:10.653 12621 12645 I godot   : SAVE_PROCESS_PROBE clear ok=true
+09-21 09:53:14.955 12730 12756 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:53:15.824 12730 12756 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:53:15.824 12730 12756 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:53:16.442 12730 12756 I godot   : 1: 
+09-21 09:53:16.443 12730 12756 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:53:16.443 12730 12756 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:53:16.443 12730 12756 E godot   : 
+09-21 09:53:16.443 12730 12756 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:53:16.443 12730 12756 E godot   : ERROR: Method/function failed.
+09-21 09:53:16.443 12730 12756 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:53:16.444 12730 12756 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:53:16.445 12730 12756 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:53:16.450 12730 12756 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:53:16.488 12730 12756 I godot   : 
+09-21 09:53:19.599 12730 12756 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-21 09:53:22.954 12837 12858 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:53:23.769 12837 12858 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:53:23.769 12837 12858 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:53:24.169 12837 12858 I godot   : 1: 
+09-21 09:53:24.169 12837 12858 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:53:24.169 12837 12858 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:53:24.169 12837 12858 E godot   : 
+09-21 09:53:24.169 12837 12858 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:53:24.169 12837 12858 E godot   : ERROR: Method/function failed.
+09-21 09:53:24.169 12837 12858 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:53:24.170 12837 12858 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:53:24.170 12837 12858 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:53:24.178 12837 12858 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:53:24.218 12837 12858 I godot   : 
+09-21 09:53:27.253 12837 12858 I godot   : SAVE_PROCESS_PROBE clear ok=true
+09-21 09:53:31.769 12946 12969 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:53:32.484 12946 12969 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:53:32.484 12946 12969 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:53:33.184 12946 12969 I godot   : 1: 
+09-21 09:53:33.185 12946 12969 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:53:33.185 12946 12969 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:53:33.185 12946 12969 E godot   : 
+09-21 09:53:33.185 12946 12969 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:53:33.185 12946 12969 E godot   : ERROR: Method/function failed.
+09-21 09:53:33.185 12946 12969 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:53:33.186 12946 12969 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:53:33.187 12946 12969 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:53:33.192 12946 12969 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:53:33.267 12946 12969 I godot   : 
+09-21 09:53:36.543 12946 12969 I godot   : SAVE_PROCESS_PROBE inspect ok=false
+09-21 09:53:41.581 13074 13098 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:53:42.597 13074 13098 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:53:42.597 13074 13098 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:53:43.014 13074 13098 I godot   : 1: 
+09-21 09:53:43.014 13074 13098 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:53:43.014 13074 13098 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:53:43.014 13074 13098 E godot   : 
+09-21 09:53:43.014 13074 13098 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:53:43.015 13074 13098 E godot   : ERROR: Method/function failed.
+09-21 09:53:43.015 13074 13098 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:53:43.015 13074 13098 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:53:43.015 13074 13098 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:53:43.022 13074 13098 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:53:43.101 13074 13098 I godot   : 
+09-21 09:53:46.183 13074 13098 I godot   : SAVE_PROCESS_PROBE inspect ok=false
+09-21 09:54:40.802 13194 13218 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 09:54:41.428 13194 13218 E godot   : WARNING: Failed to load cached shader, recompiling.
+09-21 09:54:41.428 13194 13218 E godot   :    at: _load_from_cache (drivers/gles3/shader_gles3.cpp:615)
+09-21 09:54:41.900 13194 13218 I godot   : 1: 
+09-21 09:54:41.901 13194 13218 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 09:54:41.901 13194 13218 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 09:54:41.901 13194 13218 E godot   : 
+09-21 09:54:41.901 13194 13218 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 09:54:41.902 13194 13218 E godot   : ERROR: Method/function failed.
+09-21 09:54:41.902 13194 13218 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 09:54:41.903 13194 13218 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 09:54:41.903 13194 13218 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 09:54:41.911 13194 13218 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 09:54:41.976 13194 13218 I godot   : 
+09-21 09:54:45.087 13194 13218 I godot   : SAVE_PROCESS_PROBE init ok=true

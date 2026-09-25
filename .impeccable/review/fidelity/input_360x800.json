@@ -1,0 +1,47 @@
+{
+	"board": "[P: (56.0, 204.96), S: (248.0, 248.0)]",
+	"checks": [
+		{
+			"check": "fixture committed",
+			"passed": true
+		},
+		{
+			"check": "native input dispatch picked tray",
+			"passed": true
+		},
+		{
+			"check": "native input preview valid",
+			"passed": true
+		},
+		{
+			"check": "one input committed once",
+			"passed": true
+		},
+		{
+			"check": "preview/drop exact cell",
+			"passed": true
+		},
+		{
+			"check": "input unlocked after settle",
+			"passed": true
+		},
+		{
+			"check": "disk matches rendered session",
+			"passed": true
+		},
+		{
+			"check": "native screenshot saved",
+			"passed": true
+		},
+		{
+			"check": "screen state equals session",
+			"passed": true
+		}
+	],
+	"floors": 0,
+	"mode": "input",
+	"revision": 2,
+	"score": 1,
+	"size": "360x800",
+	"source": "Windows Godot OpenGL native viewport; not Android"
+}

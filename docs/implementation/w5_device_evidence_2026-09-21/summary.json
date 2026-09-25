@@ -1,0 +1,59 @@
+{
+  "date": "2026-09-21",
+  "scope": "One physical Android device interim smoke verification; no injected fixtures or save writes",
+  "input": "ADB OS touchscreen/key events, not manual usability certification",
+  "checks": {
+    "background_preserves_full_state": true,
+    "force_stop_restore_preserves_full_state": true,
+    "out_of_board_drop_preserves_full_state": true,
+    "one_placement_commit": true,
+    "automatic_clear_points": true,
+    "automatic_clear_growth": true,
+    "update_preserves_full_state": true,
+    "back_navigation_preserves_full_state": true,
+    "cancel_new_game_preserves_full_state": true,
+    "root_exit_restore_preserves_full_state": true,
+    "settings_survive_update": true,
+    "original_settings_restored": true,
+    "final_app_log_no_godot_or_fatal_errors": true
+  },
+  "screenshots": [
+    "03_background_return",
+    "05_restarted",
+    "07_invalid_return",
+    "08b_auto_clear",
+    "09_tower",
+    "15_final_settings",
+    "16_back_to_tower",
+    "17_back_to_puzzle",
+    "18_new_run_confirmation",
+    "19_cancel_new_run",
+    "20_final_puzzle"
+  ],
+  "back_routing_evidence": [
+    "16_back_to_tower.png",
+    "17_back_to_puzzle.png",
+    "19_cancel_new_run.png"
+  ],
+  "tests": {
+    "tests": 75,
+    "assertions": 2602,
+    "failures": 0
+  },
+  "final_state": {
+    "revision": 11,
+    "score": 331,
+    "floors": 3
+  },
+  "remaining": [
+    "stale writer lock recovery on Android",
+    "kill during commit",
+    "multi-touch and interrupted drag",
+    "broader devices/insets/accessibility",
+    "long-duration performance/audio/haptics"
+  ],
+  "known_build_diagnostics": [
+    "No project icon specified: fallback launcher icon, export/sign/install succeeded",
+    "JDK 25 apksigner native-access warning"
+  ]
+}

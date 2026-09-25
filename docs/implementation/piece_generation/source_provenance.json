@@ -1,0 +1,64 @@
+{
+  "checked_on": "2026-09-21",
+  "sources": [
+    {
+      "repo": "LonamiWebs/Klooni1010",
+      "branch": "master",
+      "commit": "db50b8537ccbcea54e6dd0e2bddab87445c642ae",
+      "license": "GPL-3.0",
+      "files": [
+        {
+          "path": "core/src/dev/lonami/klooni/game/Piece.java",
+          "url": "https://raw.githubusercontent.com/LonamiWebs/Klooni1010/db50b8537ccbcea54e6dd0e2bddab87445c642ae/core/src/dev/lonami/klooni/game/Piece.java",
+          "sha256": "273a8bd7b3b34fa75455f0a7c85590b2e98bbccbe2faa4b648148d3a7f354642"
+        }
+      ]
+    },
+    {
+      "repo": "tokaa1/blockerino",
+      "branch": "master",
+      "commit": "488544878d4f19e16fad043450c13e5070de4689",
+      "license": "MIT",
+      "files": [
+        {
+          "path": "constants/Piece.tsx",
+          "url": "https://raw.githubusercontent.com/tokaa1/blockerino/488544878d4f19e16fad043450c13e5070de4689/constants/Piece.tsx",
+          "sha256": "664d44254c8f70646896d05ca3d133457f49a05e0e19671787ea81115b45f428"
+        },
+        {
+          "path": "constants/Hand.tsx",
+          "url": "https://raw.githubusercontent.com/tokaa1/blockerino/488544878d4f19e16fad043450c13e5070de4689/constants/Hand.tsx",
+          "sha256": "86a0784b9760f4c14427dab10b656168b4de6874cda4974800c0b5a91e1e359e"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/tokaa1/blockerino/488544878d4f19e16fad043450c13e5070de4689/LICENSE",
+          "sha256": "53cd5b6760e173c32c3feaab75fc52866165cdd084aeaff60227f688a89a8f7f"
+        }
+      ]
+    },
+    {
+      "repo": "viliceq/10block",
+      "branch": "main",
+      "commit": "93dfa7eaf785043d038a4e5f20ba358d90f6edd9",
+      "license": "MIT",
+      "files": [
+        {
+          "path": "src/pieces.ts",
+          "url": "https://raw.githubusercontent.com/viliceq/10block/93dfa7eaf785043d038a4e5f20ba358d90f6edd9/src/pieces.ts",
+          "sha256": "eb0573c2e3e285d318bb2f5434d9aced739646add2189ab04475c57a60f510f0"
+        },
+        {
+          "path": "docs/iterations/0032-tray-weighting.md",
+          "url": "https://raw.githubusercontent.com/viliceq/10block/93dfa7eaf785043d038a4e5f20ba358d90f6edd9/docs/iterations/0032-tray-weighting.md",
+          "sha256": "ab0be914d5c3cb88f25436c29ddf3ca0fcb8aba428f2d00cfbc5e2d3313fb4ef"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/viliceq/10block/93dfa7eaf785043d038a4e5f20ba358d90f6edd9/LICENSE",
+          "sha256": "4d013a53410d06a061d3b8839eeb393f88849466c742e171dbe95691a5223ca9"
+        }
+      ]
+    }
+  ]
+}

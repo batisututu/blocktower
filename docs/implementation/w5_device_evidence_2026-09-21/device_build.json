@@ -1,0 +1,24 @@
+{
+  "model": "SM-N981N",
+  "android": "13",
+  "sdk": "33",
+  "abi": "arm64-v8a",
+  "manufacturer": "samsung",
+  "display": "Physical size: 1080x2400",
+  "density": "Physical density: 450",
+  "apk": {
+    "version_code": 2,
+    "version_name": "0.1.0-w5-device2",
+    "package": "com.blocktower.game",
+    "sha256": "157b1a9a4a93da2376b2a2081a0e71673301c9000da4f91abd58aa6759e9e22c",
+    "bytes": 38175221,
+    "native_libraries": [
+      "lib/arm64-v8a/libc++_shared.so",
+      "lib/arm64-v8a/libgodot_android.so"
+    ],
+    "geometry_entries": [
+      "assets/assets/presentation/tower/geometry.json",
+      "assets/assets/visual_bible/tower/geometry.json"
+    ]
+  }
+}

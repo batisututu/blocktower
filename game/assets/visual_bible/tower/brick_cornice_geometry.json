@@ -1,0 +1,24 @@
+{
+	"anchor": [
+		320,
+		240
+	],
+	"camera": [
+		5,
+		2.8,
+		8
+	],
+	"camera_size": 5.1,
+	"canvas": [
+		640,
+		480
+	],
+	"floor_step": 106.4683685,
+	"origin": "original code-authored Godot 3D geometry; no external models or textures",
+	"variants": [
+		"horizontal",
+		"roof_wide",
+		"roof_mid",
+		"roof_top"
+	]
+}

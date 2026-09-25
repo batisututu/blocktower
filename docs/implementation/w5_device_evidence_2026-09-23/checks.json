@@ -1,0 +1,264 @@
+[
+  {
+    "check": "main update preserves complete session",
+    "passed": true
+  },
+  {
+    "check": "main update preserves preferences",
+    "passed": true
+  },
+  {
+    "check": "UI QA and recovery QA use identical production resources in their tested scope",
+    "passed": true
+  },
+  {
+    "check": "drag Home/resume and orphan release do not place or change RNG",
+    "passed": true
+  },
+  {
+    "check": "Home/resume keeps same live app process",
+    "passed": true
+  },
+  {
+    "check": "Android shell injection helper completed held touch",
+    "passed": true
+  },
+  {
+    "check": "held AUTO button release after Home/resume cannot change mode",
+    "passed": true
+  },
+  {
+    "check": "two-pointer OS input preserves owner drag and commits exact target once",
+    "passed": true
+  },
+  {
+    "check": "owner tray slot consumed after second finger touches settings",
+    "passed": true
+  },
+  {
+    "check": "unconfirmed AUTO clear discarded on Home/resume",
+    "passed": true
+  },
+  {
+    "check": "clear then Home commits one exact reward",
+    "passed": true
+  },
+  {
+    "check": "clear Home/resume does not repeat reward",
+    "passed": true
+  },
+  {
+    "check": "v6 actual recovered notice visible after OS Home/resume (screenshot reviewed)",
+    "passed": true
+  },
+  {
+    "check": "v6 mandatory notice blocks background clear",
+    "passed": true
+  },
+  {
+    "check": "v6 recovered gameplay accepts fresh confirm and clear exactly once",
+    "passed": true
+  },
+  {
+    "check": "v6 UI next commit preserves exact corrupt original",
+    "passed": true
+  },
+  {
+    "check": "v6 both-corrupt failure notice visible after Home/resume (screenshot reviewed)",
+    "passed": true
+  },
+  {
+    "check": "v6 both-corrupt retry preserves slot a",
+    "passed": true
+  },
+  {
+    "check": "v6 both-corrupt retry preserves slot b",
+    "passed": true
+  },
+  {
+    "check": "v6 screen lock cancels drag and rejects orphan release",
+    "passed": true,
+    "status": "partial",
+    "evidence": "state stayed unchanged while secure keyguard still covered app; resume requires unlock",
+    "resolved_by": "v6 after actual user unlock late release leaves complete state unchanged; v6 fresh two-pointer input after actual unlock commits owner exactly once"
+  },
+  {
+    "check": "v6 fresh two-pointer gesture after screen lock commits owner once",
+    "passed": false,
+    "status": "blocked_by_secure_keyguard",
+    "evidence": "v6_lock_debug: mCurrentFocus=Window Bouncer; input did not reach app",
+    "resolved_by": "v6 after actual user unlock late release leaves complete state unchanged; v6 fresh two-pointer input after actual unlock commits owner exactly once"
+  },
+  {
+    "check": "v6 main update preserves entire original user session",
+    "passed": true
+  },
+  {
+    "check": "v6 main update preserves original user preferences",
+    "passed": true
+  },
+  {
+    "check": "v6 after actual user unlock late release leaves complete state unchanged",
+    "passed": true
+  },
+  {
+    "check": "v6 fresh two-pointer input after actual unlock commits owner exactly once",
+    "passed": true
+  },
+  {
+    "check": "v6 reduced motion preference written via actual UI",
+    "passed": true
+  },
+  {
+    "check": "v6 held setting release after Home cannot toggle or change session",
+    "passed": true
+  },
+  {
+    "check": "v6 unconfirmed new game discarded on Home/resume",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 1 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 2 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 3 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 4 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 5 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 6 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 7 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 8 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 9 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 10 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 11 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 12 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 13 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 14 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 15 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 16 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 17 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 18 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 19 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 background/resume cycle 20 exact session and settings",
+    "passed": true
+  },
+  {
+    "check": "v6 twenty transitions retain same process",
+    "passed": true
+  },
+  {
+    "check": "v6 fresh placement after twenty transitions works once",
+    "passed": true
+  },
+  {
+    "check": "v6 normal motion restored through UI",
+    "passed": true
+  },
+  {
+    "check": "v6 AUTO confirmation discarded on Home/resume",
+    "passed": true
+  },
+  {
+    "check": "v6 clear Home delay 80ms commits reward once",
+    "passed": true
+  },
+  {
+    "check": "v6 clear Home delay 80ms resume exact state",
+    "passed": true
+  },
+  {
+    "check": "v6 clear Home delay 300ms commits reward once",
+    "passed": true
+  },
+  {
+    "check": "v6 clear Home delay 300ms resume exact state",
+    "passed": true
+  },
+  {
+    "check": "v6 clear resumed screenshot shows exact HUD with no stale clear toast (reviewed)",
+    "passed": true
+  },
+  {
+    "check": "QA cleanup com.blocktower.game.qa",
+    "passed": true
+  },
+  {
+    "check": "QA cleanup com.blocktower.recovery.qa",
+    "passed": true
+  },
+  {
+    "check": "final main exact original session preserved after all QA tests",
+    "passed": true
+  },
+  {
+    "check": "final main exact original preferences preserved",
+    "passed": true
+  },
+  {
+    "check": "only user main app remains installed",
+    "passed": true
+  },
+  {
+    "check": "final foreground is user main app",
+    "passed": true
+  },
+  {
+    "check": "captured v6 app processes have no Godot errors Java fatal or ANR lines",
+    "passed": true
+  }
+]

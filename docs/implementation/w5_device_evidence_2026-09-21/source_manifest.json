@@ -1,0 +1,26 @@
+[
+  {
+    "path": "game/project.godot",
+    "sha256": "a74ef50db7de0ea8f8eddb9733ed7c5fb6f29447bf3b14d7686e959d5ae98c49"
+  },
+  {
+    "path": "game/export_presets.cfg",
+    "sha256": "dc323ca4ebd9dfcd5955bdeddc3051a66bf800c7b653d0bdadac682897ee0edd"
+  },
+  {
+    "path": "game/scripts/application/app_root.gd",
+    "sha256": "f7748b3441a90cd56b7be6e6b19983f1309dd126b71fa478b17d758f8f75c28a"
+  },
+  {
+    "path": "game/scripts/presentation/puzzle_screen.gd",
+    "sha256": "b767489fbd0472cd363cdfc2714a557a451b2819ce9dbdb7af7c2914c022a9c6"
+  },
+  {
+    "path": "game/scripts/core/contracts/presentation_contract.md",
+    "sha256": "8a17c2a1ea96810f4d1299ceb3ff14574d6fe83432de0995282ef3c872f05329"
+  },
+  {
+    "path": "game/tests/unit/test_presentation.gd",
+    "sha256": "d71b829589015887163489887ba5a342f5153093d6d975aa863afb48f56e7576"
+  }
+]

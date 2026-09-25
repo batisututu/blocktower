@@ -1,0 +1,22 @@
+{
+  "v6_clear_300_logcat.txt": {
+    "lines": 352,
+    "errors": []
+  },
+  "v6_clear_80_logcat.txt": {
+    "lines": 541,
+    "errors": []
+  },
+  "v6_failure_logcat.txt": {
+    "lines": 352,
+    "errors": []
+  },
+  "v6_lifecycle_logcat.txt": {
+    "lines": 2091,
+    "errors": []
+  },
+  "v6_main_logcat.txt": {
+    "lines": 182,
+    "errors": []
+  }
+}

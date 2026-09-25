@@ -1,0 +1,534 @@
+{
+  "engine_sha256": "ab1824f85bfd8e0e4128182c000c4003a3e042245b2967848d089b2a04b22424",
+  "reports": [
+    {
+      "board": "[P: (56.0, 204.96), S: (248.0, 248.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "mode": "basic",
+      "revision": 1,
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android",
+      "capture_directory": "tools/out/fidelity_review_fix1"
+    },
+    {
+      "board": "[P: (56.0, 116.0), S: (208.0, 208.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "mode": "basic",
+      "revision": 1,
+      "score": 0,
+      "size": "320x568",
+      "source": "Windows Godot OpenGL native viewport; not Android",
+      "capture_directory": "tools/out/fidelity_review_fix1"
+    },
+    {
+      "board": "[P: (56.0, 204.96), S: (248.0, 248.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "mode": "reference",
+      "revision": 1,
+      "score": 2580,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android",
+      "capture_directory": "tools/out/fidelity_review_fix1"
+    },
+    {
+      "board": "[P: (56.0, 235.2), S: (300.0, 300.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "mode": "reference",
+      "revision": 1,
+      "score": 2580,
+      "size": "412x915",
+      "source": "Windows Godot OpenGL native viewport; not Android",
+      "capture_directory": "tools/out/fidelity_review_fix1"
+    },
+    {
+      "board": "[P: (56.0, 235.2), S: (300.0, 300.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 9,
+      "mode": "cross",
+      "revision": 1,
+      "score": 0,
+      "size": "412x915",
+      "source": "Windows Godot OpenGL native viewport; not Android",
+      "capture_directory": "tools/out/fidelity_review_fix1"
+    },
+    {
+      "board": "[P: (56.0, 204.96), S: (248.0, 248.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native input dispatch picked tray",
+          "passed": true
+        },
+        {
+          "check": "native input preview valid",
+          "passed": true
+        },
+        {
+          "check": "one input committed once",
+          "passed": true
+        },
+        {
+          "check": "preview/drop exact cell",
+          "passed": true
+        },
+        {
+          "check": "input unlocked after settle",
+          "passed": true
+        },
+        {
+          "check": "disk matches rendered session",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "mode": "input",
+      "revision": 2,
+      "score": 1,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android",
+      "capture_directory": "tools/out/fidelity_review_fix1"
+    },
+    {
+      "board": "[P: (56.0, 204.96), S: (248.0, 248.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "mode": "valid",
+      "revision": 1,
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android",
+      "capture_directory": "tools/out/fidelity_review_fix1"
+    },
+    {
+      "board": "[P: (56.0, 204.96), S: (248.0, 248.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "mode": "invalid",
+      "revision": 1,
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android",
+      "capture_directory": "tools/out/fidelity_review_fix1"
+    },
+    {
+      "board": "[P: (56.0, 116.0), S: (208.0, 208.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 9,
+      "mode": "modal",
+      "revision": 1,
+      "score": 0,
+      "size": "320x568",
+      "source": "Windows Godot OpenGL native viewport; not Android",
+      "capture_directory": "tools/out/fidelity_review_fix1"
+    },
+    {
+      "board": "[P: (56.0, 116.0), S: (208.0, 208.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "mode": "settings",
+      "revision": 1,
+      "score": 0,
+      "size": "320x568",
+      "source": "Windows Godot OpenGL native viewport; not Android",
+      "capture_directory": "tools/out/fidelity_review_fix1"
+    },
+    {
+      "board": "[P: (56.0, 204.96), S: (248.0, 248.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "removal cells captured",
+          "passed": true
+        },
+        {
+          "check": "clear released input",
+          "passed": true
+        },
+        {
+          "check": "clear score exact",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 11,
+      "mode": "clear",
+      "revision": 2,
+      "score": 240,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android",
+      "capture_directory": "tools/out/fidelity_review_fix1"
+    },
+    {
+      "board": "[P: (56.0, 204.96), S: (248.0, 248.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "removal cells captured",
+          "passed": true
+        },
+        {
+          "check": "clear released input",
+          "passed": true
+        },
+        {
+          "check": "clear score exact",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 25,
+      "mode": "max",
+      "revision": 2,
+      "score": 2560,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android",
+      "capture_directory": "tools/out/fidelity_review_fix1"
+    },
+    {
+      "board": "[P: (56.0, 204.96), S: (248.0, 248.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "exact acquired floor count and top",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 1,
+      "mode": "tower_1",
+      "revision": 1,
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android",
+      "capture_directory": "tools/out/fidelity_roof_final"
+    },
+    {
+      "board": "[P: (56.0, 204.96), S: (248.0, 248.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "exact acquired floor count and top",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 9,
+      "mode": "tower_9",
+      "revision": 1,
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android",
+      "capture_directory": "tools/out/fidelity_roof_final"
+    },
+    {
+      "board": "[P: (56.0, 204.96), S: (248.0, 248.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "exact acquired floor count and top",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 10,
+      "mode": "tower_10",
+      "revision": 1,
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android",
+      "capture_directory": "tools/out/fidelity_roof_final"
+    },
+    {
+      "board": "[P: (56.0, 204.96), S: (248.0, 248.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "exact acquired floor count and top",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 11,
+      "mode": "tower_11",
+      "revision": 1,
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android",
+      "capture_directory": "tools/out/fidelity_roof_final"
+    },
+    {
+      "board": "[P: (56.0, 204.96), S: (248.0, 248.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "only actual top receives roof",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 13,
+      "mode": "tower",
+      "revision": 1,
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android",
+      "capture_directory": "tools/out/fidelity_roof_final"
+    },
+    {
+      "board": "[P: (56.0, 204.96), S: (248.0, 248.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "only actual top receives roof",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 13,
+      "mode": "tower_top",
+      "revision": 1,
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android",
+      "capture_directory": "tools/out/fidelity_roof_final"
+    },
+    {
+      "board": "[P: (56.0, 116.0), S: (208.0, 208.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "mode": "large",
+      "revision": 1,
+      "score": 8999999999999000,
+      "size": "320x568",
+      "source": "Windows Godot OpenGL native viewport; not Android",
+      "capture_directory": "tools/out/fidelity_review_fix1"
+    }
+  ],
+  "scope": "19 Windows native states; 13 unchanged UI captures + 6 final UV-roof captures; not Android"
+}

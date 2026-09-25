@@ -1,0 +1,115 @@
+{
+  "ok": true,
+  "engine": "4.7.2.stable.official.ed1daf0bf",
+  "engine_sha256": "ab1824f85bfd8e0e4128182c000c4003a3e042245b2967848d089b2a04b22424",
+  "directory": "C:\\DEV\\Games\\Blocktower\\tools\\out\\w3_restart_41b1aa04d8dc",
+  "separate_process_probes": 20,
+  "forced_terminations": 6,
+  "checks": [
+    {
+      "check": "initial full state committed",
+      "passed": true
+    },
+    {
+      "check": "fresh process restores exact state",
+      "passed": true
+    },
+    {
+      "check": "actual app scene boots from disk",
+      "passed": true
+    },
+    {
+      "check": "before_write: writer reached checkpoint",
+      "passed": true
+    },
+    {
+      "check": "live unrelated process claim is respected",
+      "passed": true
+    },
+    {
+      "check": "before_write: killed process restores whole generation",
+      "passed": true
+    },
+    {
+      "check": "after_write: writer reached checkpoint",
+      "passed": true
+    },
+    {
+      "check": "after_write: killed process restores whole generation",
+      "passed": true
+    },
+    {
+      "check": "after_verify: writer reached checkpoint",
+      "passed": true
+    },
+    {
+      "check": "after_verify: killed process restores whole generation",
+      "passed": true
+    },
+    {
+      "check": "after_preserve: writer reached checkpoint",
+      "passed": true
+    },
+    {
+      "check": "after_preserve: killed process restores whole generation",
+      "passed": true
+    },
+    {
+      "check": "after_remove_target: writer reached checkpoint",
+      "passed": true
+    },
+    {
+      "check": "after_remove_target: killed process restores whole generation",
+      "passed": true
+    },
+    {
+      "check": "after_publish: writer reached checkpoint",
+      "passed": true
+    },
+    {
+      "check": "after_publish: killed process restores whole generation",
+      "passed": true
+    },
+    {
+      "check": "post-publication restart cannot award clear twice",
+      "passed": true
+    },
+    {
+      "check": "normal clear commits expected points floors and queue",
+      "passed": true
+    },
+    {
+      "check": "another fresh process sees committed clear",
+      "passed": true
+    },
+    {
+      "check": "corrupt latest falls back with explicit notice",
+      "passed": true
+    },
+    {
+      "check": "recovered app scene exposes recovery result",
+      "passed": true
+    },
+    {
+      "check": "recovered state can commit again",
+      "passed": true
+    },
+    {
+      "check": "damaged original bytes are preserved",
+      "passed": true
+    },
+    {
+      "check": "both corrupt block silent initialization",
+      "passed": true
+    },
+    {
+      "check": "actual app scene presents save failure path",
+      "passed": true
+    },
+    {
+      "check": "real read-only write failure preserves current generation",
+      "passed": true
+    }
+  ],
+  "scope": "Windows process termination and actual files, not hardware power loss"
+}

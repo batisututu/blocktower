@@ -1,0 +1,130 @@
+--------- beginning of main
+09-21 07:17:57.599  7250  7250 I Zygote  : Process 7250 created for com.blocktower.game.qa
+09-21 07:17:57.600  7250  7250 I cktower.game.qa: Late-enabling -Xcheck:jni
+09-21 07:17:58.498  7250  7250 I cktower.game.qa: Using CollectorTypeCMC GC.
+09-21 07:17:58.503  7250  7250 W cktower.game.qa: Unexpected CPU variant for x86: x86_64.
+09-21 07:17:58.503  7250  7250 W cktower.game.qa: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, alderlake, default
+09-21 07:17:58.678  7250  7250 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+09-21 07:17:59.430  7250  7250 D nativeloader: Configuring clns-9 for other apk /data/app/~~_C82svlbdKaI_QnV_8yxhg==/com.blocktower.game.qa-Dfmjt2r5usOYeJqEj9AzFQ==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~_C82svlbdKaI_QnV_8yxhg==/com.blocktower.game.qa-Dfmjt2r5usOYeJqEj9AzFQ==/lib/x86_64:/data/app/~~_C82svlbdKaI_QnV_8yxhg==/com.blocktower.game.qa-Dfmjt2r5usOYeJqEj9AzFQ==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.blocktower.game.qa
+09-21 07:17:59.485  7250  7250 V GraphicsEnvironment: Currently set values for:
+09-21 07:17:59.486  7250  7250 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+09-21 07:17:59.487  7250  7250 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+09-21 07:17:59.490  7250  7250 V GraphicsEnvironment: com.blocktower.game.qa is not listed in per-application setting
+09-21 07:17:59.490  7250  7250 V GraphicsEnvironment: ANGLE allowlist from config: com.dreamgames.royalmatch com.dts.freefiremax com.dxx.firenow com.gramgames.mergedragons com.ludo.king com.mojang.minecraftpe com.my.defense com.nintendo.zaka com.os.airforce com.playrix.fishdomdd.gplay io.teslatech.callbreak jp.konami.prospia net.peakgames.toonblast
+09-21 07:17:59.491  7250  7250 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+09-21 07:17:59.491  7250  7250 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+09-21 07:17:59.541  7250  7250 D DesktopExperienceFlags: Toggle override initialized to: false
+--------- beginning of system
+09-21 07:17:59.674  7250  7289 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+09-21 07:18:00.295  7250  7289 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv1_CM_emulation.so
+09-21 07:18:00.295  7250  7289 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv2_emulation.so
+09-21 07:18:00.324  7250  7289 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+09-21 07:18:00.705  7250  7250 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+09-21 07:18:00.856  7250  7250 D CompatChangeReporter: Compat change id reported: 377864165; UID 10228; state: ENABLED
+09-21 07:18:00.858  7250  7250 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+09-21 07:18:00.974  7250  7250 D GodotActivity: Project command line parameters: [--xr_mode_regular, --xr-mode, off, --fullscreen, --background_color, #000000]
+09-21 07:18:00.976  7250  7250 D GodotActivity: Launch intent Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 pkg=com.blocktower.game.qa cmp=com.blocktower.game.qa/com.godot.game.GodotAppLauncher } with parameters []
+09-21 07:18:01.166  7250  7250 V GodotActivity: Creating new Godot fragment instance.
+09-21 07:18:01.474  7250  7250 V Godot   : Initializing Godot plugin registry
+09-21 07:18:01.632  7250  7250 I GodotPluginRegistry: Registering runtime plugin AndroidRuntime
+09-21 07:18:01.637  7250  7250 V Godot   : InitEngine with params: [--xr_mode_regular, --xr-mode, off, --fullscreen, --background_color, #000000]
+09-21 07:18:02.043  7250  7250 D nativeloader: Load /data/app/~~_C82svlbdKaI_QnV_8yxhg==/com.blocktower.game.qa-Dfmjt2r5usOYeJqEj9AzFQ==/lib/x86_64/libgodot_android.so using class loader ns clns-9 (caller=/data/app/~~_C82svlbdKaI_QnV_8yxhg==/com.blocktower.game.qa-Dfmjt2r5usOYeJqEj9AzFQ==/base.apk!classes7.dex): ok
+09-21 07:18:02.059  7250  7250 V Godot   : Godot native layer initialization completed: true
+09-21 07:18:02.059  7250  7250 V Godot   : Setting up native layer with params: [--xr-mode, off, --fullscreen]
+09-21 07:18:02.586  7250  7250 V Godot   : Godot native layer setup completed
+09-21 07:18:02.588  7250  7250 V Godot   : OnInitRenderView: GodotFragment{c49bab2} (32b20c53-b1f9-492f-8165-87b0165ed56e id=0x7f07002c)
+09-21 07:18:02.730  7250  7250 D Godot   : Render view should be transparent: false
+09-21 07:18:02.734  7250  7250 D Godot   : renderingDevice: opengl3 (ProjectSettings)
+09-21 07:18:02.734  7250  7250 D Godot   : 			renderer: gl_compatibility (ProjectSettings)
+09-21 07:18:03.012  7250  7250 V Godot   : OnStart: GodotFragment{c49bab2} (32b20c53-b1f9-492f-8165-87b0165ed56e id=0x7f07002c)
+09-21 07:18:03.037  7250  7250 V Godot   : OnResume: GodotFragment{c49bab2} (32b20c53-b1f9-492f-8165-87b0165ed56e id=0x7f07002c)
+09-21 07:18:03.125  7250  7250 W HWUI    : Unknown dataspace 0
+09-21 07:18:03.170  7250  7250 D InsetsController: Setting requestedVisibleTypes to 496 (was 503)
+09-21 07:18:03.253  7250  7250 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@7373088
+09-21 07:18:03.264  7250  7250 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.activity.OnBackPressedDispatcher$Api34Impl$createOnBackAnimationCallback$1@4794a21
+09-21 07:18:03.284  7250  7250 D VRI[GodotAppLauncher]: WindowInsets changed: 1080x2400 statusBars:[0,63,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,63,0,84] 
+09-21 07:18:03.314  7250  7250 I HWUI    : Using FreeType backend (prop=Auto)
+09-21 07:18:03.417  7250  7250 D VRI[GodotAppLauncher]: WindowInsets changed: statusBars:null navigationBars:null 
+09-21 07:18:03.602  7250  7299 W RegularContextFactory: creating OpenGL ES 3.0 context :
+09-21 07:18:03.786  7250  7299 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 07:18:03.838  7250  7250 I Choreographer: Skipped 33 frames!  The application may be doing too much work on its main thread.
+09-21 07:18:04.520  7250  7250 D InsetsController: hide(ime())
+09-21 07:18:04.526  7250  7250 I ImeTracker: com.blocktower.game.qa:1af049da: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+09-21 07:18:04.558  7250  7307 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(wmsSync-VRI[GodotAppLauncher]#1) as ready
+09-21 07:18:04.595  7250  7307 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(VRI[GodotAppLauncher]#2) as ready
+09-21 07:18:04.631  7250  7250 W InteractionJankMonitor: Initializing without READ_DEVICE_CONFIG permission. enabled=false, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=com.blocktower.game.qa
+09-21 07:18:04.820  7250  7307 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(SurfaceView[com.blocktower.game.qa/com.godot.game.GodotAppLauncher]#0) as ready
+09-21 07:18:05.856  7250  7299 E GFXSTREAM: [GL2Encoder.cpp(5045)] GL error 0x502 condition [bufSize < programBinaryInfoBytes.size()].
+09-21 07:18:05.860  7250  7299 E GFXSTREAM: [GL2Encoder.cpp(5045)] GL error 0x502 condition [bufSize < programBinaryInfoBytes.size()].
+09-21 07:18:05.866  7250  7299 E GFXSTREAM: [GL2Encoder.cpp(5045)] GL error 0x502 condition [bufSize < programBinaryInfoBytes.size()].
+09-21 07:18:05.879  7250  7299 E GFXSTREAM: [GL2Encoder.cpp(5045)] GL error 0x502 condition [bufSize < programBinaryInfoBytes.size()].
+09-21 07:18:05.883  7250  7299 E GFXSTREAM: [GL2Encoder.cpp(5045)] GL error 0x502 condition [bufSize < programBinaryInfoBytes.size()].
+09-21 07:18:06.037  7250  7299 E GFXSTREAM: [GL2Encoder.cpp(5045)] GL error 0x502 condition [bufSize < programBinaryInfoBytes.size()].
+09-21 07:18:06.095  7250  7299 E GFXSTREAM: [GL2Encoder.cpp(5045)] GL error 0x502 condition [bufSize < programBinaryInfoBytes.size()].
+09-21 07:18:06.386  7250  7299 I godot   : 1: 
+09-21 07:18:06.386  7250  7299 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 07:18:06.386  7250  7299 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 07:18:06.386  7250  7299 E godot   : 
+09-21 07:18:06.386  7250  7299 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 07:18:06.386  7250  7299 E godot   : ERROR: Method/function failed.
+09-21 07:18:06.387  7250  7299 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 07:18:06.527  7250  7299 I godot   : 1: 
+09-21 07:18:06.527  7250  7299 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 07:18:06.527  7250  7299 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 07:18:06.527  7250  7299 E godot   : 
+09-21 07:18:06.527  7250  7299 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 07:18:06.528  7250  7299 E godot   : ERROR: Method/function failed.
+09-21 07:18:06.536  7250  7299 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 07:18:06.577  7250  7299 I godot   : 1: 
+09-21 07:18:06.577  7250  7299 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 07:18:06.577  7250  7299 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 07:18:06.577  7250  7299 E godot   : 
+09-21 07:18:06.577  7250  7299 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 07:18:06.577  7250  7299 E godot   : ERROR: Method/function failed.
+09-21 07:18:06.577  7250  7299 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 07:18:06.598  7250  7299 I godot   : 1: 
+09-21 07:18:06.598  7250  7299 E godot   : ERROR: SceneShaderGLES3: Program linking failed:
+09-21 07:18:06.598  7250  7299 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 07:18:06.598  7250  7299 E godot   : 
+09-21 07:18:06.598  7250  7299 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 07:18:06.598  7250  7299 E godot   : ERROR: Method/function failed.
+09-21 07:18:06.598  7250  7299 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 07:18:06.600  7250  7299 E GFXSTREAM: [GL2Encoder.cpp(6800)] GL error 0x501 condition [!isShaderOrProgramObject].
+09-21 07:18:06.600  7250  7299 E GFXSTREAM: [GL2Encoder.cpp(6800)] GL error 0x501 condition [!isShaderOrProgramObject].
+09-21 07:18:06.600  7250  7299 E GFXSTREAM: [GL2Encoder.cpp(6800)] GL error 0x501 condition [!isShaderOrProgramObject].
+09-21 07:18:06.600  7250  7299 E GFXSTREAM: [GL2Encoder.cpp(6800)] GL error 0x501 condition [!isShaderOrProgramObject].
+09-21 07:18:06.600  7250  7299 E godot   : WARNING: shader failed to compile, unable to bind shader.
+09-21 07:18:06.600  7250  7299 E godot   :    at: _version_bind_shader (./drivers/gles3/shader_gles3.h:215)
+09-21 07:18:06.610  7250  7299 I godot   : OpenGL API OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1) - Compatibility - Using Device: Google (Google Inc.) - Android Emulator OpenGL ES Translator (Google SwiftShader)
+09-21 07:18:06.628  7250  7299 D AudioSystem: onNewServiceWithAdapter: media.audio_flinger service obtained 0x79684169ab30
+09-21 07:18:06.655  7250  7299 D AudioSystem: getService: IAudioFlingerService retrieved: 0x79671171e8d0  IAudioFlinger cached: 0x79684169ab30
+09-21 07:18:06.658  7250  7299 D cktower.game.qa: PlayerBase::PlayerBase()
+09-21 07:18:06.658  7250  7299 D cktower.game.qa: TrackPlayerBase::TrackPlayerBase()
+09-21 07:18:06.659  7250  7299 I libOpenSLES: Emulating old channel mask behavior (ignoring positional mask 0x3, using default mask 0x3 based on channel count of 2)
+09-21 07:18:06.968  7250  7299 I godot   : 
+09-21 07:18:09.477  7250  7263 W cktower.game.qa: userfaultfd: MOVE ioctl seems unsupported: Connection timed out
+09-21 07:18:09.498  7250  7263 I cktower.game.qa: Background concurrent mark compact GC freed 3873KB AllocSpace bytes, 3(60KB) LOS objects, 49% free, 2394KB/4789KB, paused 6.847ms,4.927ms total 81.987ms
+09-21 07:18:09.899  7250  7262 I cktower.game.qa: Compiler allocated 5087KB to compile void android.view.ViewRootImpl.performTraversals()
+09-21 07:18:10.232  7250  7263 I cktower.game.qa: Background young concurrent mark compact GC freed 2240KB AllocSpace bytes, 3(100KB) LOS objects, 48% free, 2466KB/4789KB, paused 5.475ms,6.111ms total 62.132ms
+09-21 07:18:10.889  7250  7263 I cktower.game.qa: Background concurrent mark compact GC freed 2090KB AllocSpace bytes, 1(112KB) LOS objects, 49% free, 2574KB/5148KB, paused 9.533ms,7.099ms total 79.664ms
+09-21 07:18:11.688  7250  7299 V Godot   : OnGodotSetupCompleted
+09-21 07:18:12.469  7250  7299 V Godot   : OnGodotMainLoopStarted
+09-21 07:18:12.579  7250  7299 I godot   : 1: 
+09-21 07:18:12.580  7250  7299 E godot   : ERROR: CanvasShaderGLES3: Program linking failed:
+09-21 07:18:12.580  7250  7299 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 07:18:12.580  7250  7299 E godot   : 
+09-21 07:18:12.580  7250  7299 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 07:18:12.581  7250  7299 E godot   : ERROR: Method/function failed.
+09-21 07:18:12.582  7250  7299 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 07:18:12.583  7250  7299 E GFXSTREAM: [GL2Encoder.cpp(6800)] GL error 0x501 condition [!isShaderOrProgramObject].
+09-21 07:18:12.598  7250  7299 I godot   : 1: 
+09-21 07:18:12.598  7250  7299 E godot   : ERROR: CanvasShaderGLES3: Program linking failed:
+09-21 07:18:12.598  7250  7299 E godot   : Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)
+09-21 07:18:12.598  7250  7299 E godot   : 
+09-21 07:18:12.599  7250  7299 E godot   :    at: _display_error_with_code (drivers/gles3/shader_gles3.cpp:262)
+09-21 07:18:12.599  7250  7299 E godot   : ERROR: Method/function failed.
+09-21 07:18:12.599  7250  7299 E godot   :    at: _compile_specialization (drivers/gles3/shader_gles3.cpp:464)
+09-21 07:18:12.599  7250  7299 E GFXSTREAM: [GL2Encoder.cpp(6800)] GL error 0x501 condition [!isShaderOrProgramObject].
+09-21 07:18:12.599  7250  7299 E GFXSTREAM: [GL2Encoder.cpp(6800)] GL error 0x501 condition [!isShaderOrProgramObject].
+09-21 07:19:24.760  7250  7250 D InsetsController: hide(ime())
+09-21 07:19:24.763  7250  7250 I ImeTracker: com.blocktower.game.qa:62717f18: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN

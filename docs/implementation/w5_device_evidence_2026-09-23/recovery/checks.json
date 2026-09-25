@@ -1,0 +1,178 @@
+[
+  {
+    "check": "JNI lock, canonical alias contention, release/reacquire, live/dead errno",
+    "passed": true
+  },
+  {
+    "check": "initial generation committed on Android",
+    "passed": true
+  },
+  {
+    "check": "fresh Android process restores exact snapshot",
+    "passed": true
+  },
+  {
+    "check": "before_write: real writer reached checkpoint",
+    "passed": true
+  },
+  {
+    "check": "unrelated Java process cannot acquire active Godot lock",
+    "passed": true
+  },
+  {
+    "check": "before_write: force-stop restores exact generation",
+    "passed": true
+  },
+  {
+    "check": "before_write: retry applies exact reward once",
+    "passed": true
+  },
+  {
+    "check": "before_write: duplicate event rejected",
+    "passed": true
+  },
+  {
+    "check": "after_write: real writer reached checkpoint",
+    "passed": true
+  },
+  {
+    "check": "after_write: force-stop restores exact generation",
+    "passed": true
+  },
+  {
+    "check": "after_write: retry applies exact reward once",
+    "passed": true
+  },
+  {
+    "check": "after_write: duplicate event rejected",
+    "passed": true
+  },
+  {
+    "check": "after_verify: real writer reached checkpoint",
+    "passed": true
+  },
+  {
+    "check": "after_verify: force-stop restores exact generation",
+    "passed": true
+  },
+  {
+    "check": "after_verify: retry applies exact reward once",
+    "passed": true
+  },
+  {
+    "check": "after_verify: duplicate event rejected",
+    "passed": true
+  },
+  {
+    "check": "after_preserve: real writer reached checkpoint",
+    "passed": true
+  },
+  {
+    "check": "after_preserve: force-stop restores exact generation",
+    "passed": true
+  },
+  {
+    "check": "after_preserve: retry applies exact reward once",
+    "passed": true
+  },
+  {
+    "check": "after_preserve: duplicate event rejected",
+    "passed": true
+  },
+  {
+    "check": "after_remove_target: real writer reached checkpoint",
+    "passed": true
+  },
+  {
+    "check": "after_remove_target: force-stop restores exact generation",
+    "passed": true
+  },
+  {
+    "check": "after_remove_target: retry applies exact reward once",
+    "passed": true
+  },
+  {
+    "check": "after_remove_target: duplicate event rejected",
+    "passed": true
+  },
+  {
+    "check": "after_publish: real writer reached checkpoint",
+    "passed": true
+  },
+  {
+    "check": "after_publish: force-stop restores exact generation",
+    "passed": true
+  },
+  {
+    "check": "after_publish: duplicate event rejected",
+    "passed": true
+  },
+  {
+    "check": "Godot respects unrelated live Java writer",
+    "passed": true
+  },
+  {
+    "check": "killed unrelated owner releases kernel lock",
+    "passed": true
+  },
+  {
+    "check": "legacy dead PID claim recovers exact state",
+    "passed": true
+  },
+  {
+    "check": "legacy dead claim removed; stable guard retained",
+    "passed": true
+  },
+  {
+    "check": "legacy_live: blocks unsafe recovery",
+    "passed": true
+  },
+  {
+    "check": "legacy_live: committed bytes untouched",
+    "passed": true
+  },
+  {
+    "check": "legacy_invalid: blocks unsafe recovery",
+    "passed": true
+  },
+  {
+    "check": "legacy_invalid: committed bytes untouched",
+    "passed": true
+  },
+  {
+    "check": "legacy_nonempty: blocks unsafe recovery",
+    "passed": true
+  },
+  {
+    "check": "legacy_nonempty: committed bytes untouched",
+    "passed": true
+  },
+  {
+    "check": "normal clear publishes expected full state",
+    "passed": true
+  },
+  {
+    "check": "corrupt latest falls back with recovery metadata",
+    "passed": true
+  },
+  {
+    "check": "recovered state can commit exactly once",
+    "passed": true
+  },
+  {
+    "check": "damaged original preserved byte for byte",
+    "passed": true
+  },
+  {
+    "check": "both corrupt fail closed without resetting",
+    "passed": true
+  },
+  {
+    "check": "unsupported newer format blocks fallback and preserves bytes",
+    "passed": true
+  },
+  {
+    "check": "pending without committed generations is never resumed or rewarded",
+    "passed": true
+  }
+]

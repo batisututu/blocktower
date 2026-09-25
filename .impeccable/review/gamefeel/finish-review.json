@@ -1,0 +1,94 @@
+{
+  "disposition": {
+    "status": "fix",
+    "scope": "Fresh full review against 2026-09-21 user rejection and research request; historical ship verdicts excluded",
+    "bounded_corrections": [
+      "GF-01",
+      "GF-02"
+    ],
+    "android_evidence": "RECAPTURE required for whole Android surface approval; QA APK installed/launched on emulator but shader linking failed and gray capture is diagnostic only"
+  },
+  "material_findings": [
+    {
+      "id": "GF-01",
+      "severity": "material",
+      "title": "Transient reward masks live placement information",
+      "evidence": [
+        "input_360x800.png visibly places +1 reward over first board row",
+        "puzzle_screen.gd:493 places ordinary reward at score_rect.end.y while board starts only 8 px lower",
+        "puzzle_screen.gd:576 hides hint for 0.6–1.15 s; a new drag can start after 0.14/0.28 s and _pointer does not dismiss the toast"
+      ],
+      "impact": "Fast successive play sees a reward over target cells and loses valid/invalid placement guidance during the next drag.",
+      "correction": "Place ordinary placement reward outside board, e.g. replace the hint strip briefly; dismiss any reward on successful pickup and immediately show live placement guidance.",
+      "acceptance": "Capture ordinary placement reward outside board; start valid and invalid drags during prior reward lifetime and verify hints visible, reward dismissed, exactly one commit."
+    },
+    {
+      "id": "GF-02",
+      "severity": "material",
+      "title": "Compact layout clips clear action once safe insets are present",
+      "evidence": [
+        "basic_320x568.png clear target occupies y512–560 with no insets",
+        "puzzle_screen.gd:224–246 accounts for insets in compact choice and top offset but fixed compact heights still require 552 px",
+        "At 320×568, clear bottom=560+topInset; usable bottom=568−bottomInset. Total safe insets greater than8 clip target."
+      ],
+      "impact": "On a compact Android viewport with system bar/cutout reservation, the manual clear target can cross the usable bottom edge.",
+      "correction": "Derive compact spacing and tray from usable height while retaining 296 px board at320 width and >=48 logical px actionable targets; apply safe top/bottom budget.",
+      "acceptance": "Verify 320×568 with top24/bottom24 inset simulation and native safe-area geometry; assert complete clear target stays inside usable content. Capture compact after correction."
+    }
+  ],
+  "strengths_scope": [
+    "Board width now follows width minus24:296/336/388 at320/360/412 widths. The rejected narrow board and side rails are clearly replaced.",
+    "Tower and settings navigation sit above board; tray is adjacent; warm B materials and tower assets remain coherent.",
+    "Nearest legal anchor and hysteresis share session validation with release; no core rule or save bypass observed.",
+    "Clear animation visibly phases through anticipation, line sweep, shrink/fade, bounded fragments and return to stable state.",
+    "Old visual-tail callback cannot cancel an active new drag: controller.settle only changes settling; new commits interrupt the old tween before installing new effects.",
+    "Compact settings and confirmation text fit in reviewed Windows captures; extreme score remains exact and fits.",
+    "No unrelated aesthetic redesign, new raster generation, historical PRODUCT drift repair or HTML detector requested."
+  ],
+  "evidence_coverage": {
+    "inspected_images": [
+      "user_rejected.png",
+      "basic_320x568.png",
+      "basic_360x800.png",
+      "reference_412x915.png",
+      "input_360x800.png",
+      "valid_360x800.png",
+      "invalid_360x800.png",
+      "cross_360x800.png",
+      "modal_320x568.png",
+      "settings_320x568.png",
+      "large_320x568.png",
+      "button_360x800.png",
+      "anticipation_360x800.png",
+      "sweep_360x800.png",
+      "shrink_360x800.png",
+      "clear_360x800.png",
+      "max_360x800.png",
+      "tower_top_360x800.png",
+      "motion_360x800_t0.png",
+      "motion_360x800_t60.png",
+      "motion_360x800_t140.png",
+      "motion_360x800_t220.png",
+      "motion_360x800_t300.png",
+      "motion_360x800_t460.png"
+    ],
+    "motion": "Real-time Windows native tween samples show settling through230.8ms, idle by309.8ms, complete by466.6ms. Controlled phase screenshots are not physical timing evidence. Instrumented PNG readback is not a device frame-time benchmark.",
+    "code": [
+      "game/scripts/presentation/puzzle_screen.gd",
+      "game/scripts/presentation/presentation_controller.gd",
+      "game/scripts/presentation/board_effects.gd",
+      "game/scripts/presentation/feedback_player.gd",
+      "game/scripts/presentation/feedback_tokens.gd",
+      "game/tests/unit/test_presentation.gd"
+    ],
+    "reported_validation": "Root reports80 tests/2834 assertions,18 native probes. Reviewer read relevant tests and native JSON records; did not independently rerun full suite.",
+    "platform": "Windows Godot native viewport evidence remains valid. Android isolated QA APK install/launch succeeded, but SwiftShader GLES3 SceneShader/CanvasShader linking failed: active fragment uniforms261 exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS. emulator_puzzle.png is gray diagnostic output and excluded from visual acceptance.",
+    "assets": "Prior B generated raster assets retained with original provenance; newly authored synthesized audio manifest reported. No new raster assets in this review."
+  },
+  "remaining_validation": [
+    "One bounded correction batch for GF-01/GF-02, then targeted confirmation evidence only.",
+    "Working Android renderer/device native screenshots plus System Back, font scale1.3 and dark-mode coverage and restore; record actual safe insets. Current gray emulator output cannot satisfy native visual coverage.",
+    "Physical Samsung gameplay/drag latency, refresh smoothness, layered audio and haptics remain unverified while device absent; no physical acceptance claimed.",
+    "Update historical design documentation only after final result, as assigned separately."
+  ]
+}

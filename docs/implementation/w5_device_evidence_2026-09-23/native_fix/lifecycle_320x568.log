@@ -1,0 +1,4 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 610.88 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3070 Laptop GPU
+
+W4_PROBE lifecycle [{ "check": "fixture committed", "passed": true }, { "check": "resume waits for focus", "passed": true }, { "check": "old native button release cannot activate replacement", "passed": true }, { "check": "fresh native touch can pick", "passed": true }, { "check": "second finger cannot open settings during drag", "passed": true }, { "check": "orphan touch release cannot place after resume", "passed": true }, { "check": "clear tail settles without replay", "passed": true }, { "check": "lifecycle never awards again", "passed": true }, { "check": "real disk matches resumed HUD session", "passed": true }, { "check": "native screenshot saved", "passed": true }, { "check": "screen state equals session", "passed": true }]

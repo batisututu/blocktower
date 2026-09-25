@@ -1,0 +1,44 @@
+{
+  "device_pixels": {
+    "board_x": 36,
+    "board_y_approx": 573,
+    "cell": 126
+  },
+  "steps": [
+    [
+      "swipe",
+      180,
+      1833,
+      729,
+      1191,
+      900
+    ],
+    [
+      "tap",
+      540,
+      2085
+    ],
+    [
+      "tap",
+      930,
+      477
+    ],
+    [
+      "swipe",
+      540,
+      1833,
+      729,
+      1695,
+      700
+    ],
+    [
+      "swipe",
+      900,
+      1833,
+      981,
+      1695,
+      700
+    ]
+  ],
+  "note": "Coordinates observed on this portrait device only. QA controlled fixture, never replay blindly against user profile."
+}

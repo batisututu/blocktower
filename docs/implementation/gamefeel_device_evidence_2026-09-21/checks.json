@@ -1,0 +1,54 @@
+[
+  {
+    "check": "APK update preserves full game state",
+    "passed": true
+  },
+  {
+    "check": "APK update preserves preferences",
+    "passed": true
+  },
+  {
+    "check": "Outside-board touch drop cancels without state change",
+    "passed": true
+  },
+  {
+    "check": "Android Back closes settings without exiting",
+    "passed": true
+  },
+  {
+    "check": "Settings open/back does not change game state",
+    "passed": true
+  },
+  {
+    "check": "Android Back returns tower to puzzle without exiting",
+    "passed": true
+  },
+  {
+    "check": "Tower navigation does not change game state",
+    "passed": true
+  },
+  {
+    "check": "Device Godot runtime log has no script or engine errors",
+    "passed": true
+  },
+  {
+    "check": "QA testing leaves user main profile unchanged",
+    "passed": true
+  },
+  {
+    "check": "Main app relaunch restores current user state exactly",
+    "passed": true
+  },
+  {
+    "check": "Main user preferences unchanged after all verification",
+    "passed": true
+  },
+  {
+    "check": "Results open/back preserves game-over board",
+    "passed": true
+  },
+  {
+    "check": "New-game confirmation canceled without resetting progress",
+    "passed": true
+  }
+]

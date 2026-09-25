@@ -1,0 +1,33 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+bt_family_weighted_v0_2: 10000/100000
+bt_family_weighted_v0_2: 20000/100000
+bt_family_weighted_v0_2: 30000/100000
+bt_family_weighted_v0_2: 40000/100000
+bt_family_weighted_v0_2: 50000/100000
+bt_family_weighted_v0_2: 60000/100000
+bt_family_weighted_v0_2: 70000/100000
+bt_family_weighted_v0_2: 80000/100000
+bt_family_weighted_v0_2: 90000/100000
+bt_family_weighted_v0_2: 100000/100000
+bt_easy_family_v0_2: 10000/100000
+bt_easy_family_v0_2: 20000/100000
+bt_easy_family_v0_2: 30000/100000
+bt_easy_family_v0_2: 40000/100000
+bt_easy_family_v0_2: 50000/100000
+bt_easy_family_v0_2: 60000/100000
+bt_easy_family_v0_2: 70000/100000
+bt_easy_family_v0_2: 80000/100000
+bt_easy_family_v0_2: 90000/100000
+bt_easy_family_v0_2: 100000/100000
+bt_soft_one_move_v0_2: 10000/100000
+bt_soft_one_move_v0_2: 20000/100000
+bt_soft_one_move_v0_2: 30000/100000
+bt_soft_one_move_v0_2: 40000/100000
+bt_soft_one_move_v0_2: 50000/100000
+bt_soft_one_move_v0_2: 60000/100000
+bt_soft_one_move_v0_2: 70000/100000
+bt_soft_one_move_v0_2: 80000/100000
+bt_soft_one_move_v0_2: 90000/100000
+bt_soft_one_move_v0_2: 100000/100000
+Simulation complete: ok=true, trays=300000, report=C:/DEV/Games/Blocktower/tools/out/piece_generation_simulation.json

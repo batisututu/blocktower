@@ -1,0 +1,12 @@
+{
+  "scripts\\application\\saved_game.gd": "0c83a51955b66fac25ad6f6eead0b26dc6e09034b8440270814def40b879d615",
+  "scripts\\core\\game_session.gd": "bdd758cbfda34ab9b97b53431b57a034b5d67be33c7d7db787551adccac11742",
+  "scripts\\core\\growth_rules.gd": "b283952836ce870ff39efc7c651d67622427a41a824e4139b50eb6c941c5edc5",
+  "scripts\\core\\memory_save_repository.gd": "62d0c5884135af05b51d6892a08ff14017da9110eb2437a175d96d83f91e85c5",
+  "scripts\\core\\piece_supply.gd": "f2a185fd6132a5f4ef9fadb2b25a33924bbf258542a9c0b8d0e39d96b1cdae84",
+  "scripts\\persistence\\android_file_guard.gd": "6f6c38728b48dde3a2dfc90a87c5d9edfd6c683e010722542df0e68f8038f0d6",
+  "scripts\\persistence\\file_save_repository.gd": "2b5fbdda10ee1e905e1a5c2e299a199485d7d87ba0624881acfa3fbd1ef2c819",
+  "scripts\\persistence\\save_codec.gd": "2c354f9e0f361708a1454a5e673975b0a0a16c192c292093912822e8fb43be32",
+  "scripts\\core\\generation\\piece_generator.gd": "8269aac211aff3a180792d88e00cf03ee3dbe1e136fa1a294383f23a844431c0",
+  "scripts\\core\\generation\\piece_generator_config.gd": "f8ea818984d9d0308b35d3cf0c5128448a98aa363f7f9749abd32ea513b8110d"
+}

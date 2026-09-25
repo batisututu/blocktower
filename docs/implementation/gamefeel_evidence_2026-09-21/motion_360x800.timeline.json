@@ -1,0 +1,42 @@
+{
+	"longest_observed_frame_ms": 13.449,
+	"samples": [
+		{
+			"elapsed_ms": 40.531,
+			"phase": "settling",
+			"progress": 0.0140571426600218,
+			"requested_ms": 0
+		},
+		{
+			"elapsed_ms": 67.011,
+			"phase": "settling",
+			"progress": 0.198820650577545,
+			"requested_ms": 60
+		},
+		{
+			"elapsed_ms": 147.819,
+			"phase": "settling",
+			"progress": 0.351580947637558,
+			"requested_ms": 140
+		},
+		{
+			"elapsed_ms": 232.317,
+			"phase": "settling",
+			"progress": 0.544316112995148,
+			"requested_ms": 220
+		},
+		{
+			"elapsed_ms": 313.308,
+			"phase": "idle",
+			"progress": 0.769999861717224,
+			"requested_ms": 300
+		},
+		{
+			"elapsed_ms": 471.899,
+			"phase": "idle",
+			"progress": 1.0,
+			"requested_ms": 460
+		}
+	],
+	"scope": "Windows native real-time tween, instrumented PNG readback; not device frame-time benchmark"
+}

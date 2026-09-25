@@ -1,0 +1,52 @@
+{
+	"announcements": [
+		"[완료] 2줄 · +240점 · +2층",
+		"구간 +1 · 해금 1종",
+		"기록 갱신"
+	],
+	"board": "[P: (12.0, 174.0), S: (336.0, 336.0)]",
+	"checks": [
+		{
+			"check": "fixture committed",
+			"passed": true
+		},
+		{
+			"check": "removal cells captured",
+			"passed": true
+		},
+		{
+			"check": "clear released input",
+			"passed": true
+		},
+		{
+			"check": "clear result has a text cue",
+			"passed": true
+		},
+		{
+			"check": "clear reward remains below the board",
+			"passed": true
+		},
+		{
+			"check": "clear score exact",
+			"passed": true
+		},
+		{
+			"check": "native screenshot saved",
+			"passed": true
+		},
+		{
+			"check": "screen state equals session",
+			"passed": true
+		}
+	],
+	"floors": 11,
+	"grayscale": false,
+	"large_text": false,
+	"mode": "clear",
+	"revision": 2,
+	"safe_insets_24px": false,
+	"scenario": "clear",
+	"score": 240,
+	"size": "360x800",
+	"source": "Windows Godot OpenGL native viewport; not Android"
+}

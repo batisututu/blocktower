@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="GutTests" failures="0" tests="58" >
+  <testsuite name="tests/unit/test_design_preview.gd" tests="2" failures="0" skipped="0" time="0.117136" >
+      <testcase name="test_auto_cancel_preserves_pending_lines_and_restores_focus" assertions="8" status="pass" classname="tests/unit/test_design_preview.gd" time="0.066057" >
+      </testcase>
+      <testcase name="test_confirm_and_navigation_are_preview_only_transitions" assertions="6" status="pass" classname="tests/unit/test_design_preview.gd" time="0.051079" >
+      </testcase>
+  </testsuite>
+  <testsuite name="tests/unit/test_file_save.gd" tests="13" failures="0" skipped="0" time="1.120768" >
+      <testcase name="test_disk_roundtrip_new_repository_and_growth_integer_precision" assertions="10" status="pass" classname="tests/unit/test_file_save.gd" time="0.064631" >
+      </testcase>
+      <testcase name="test_corrupt_latest_recovers_previous_preserves_bytes_before_next_commit" assertions="10" status="pass" classname="tests/unit/test_file_save.gd" time="0.092212" >
+      </testcase>
+      <testcase name="test_both_corrupt_and_future_versions_never_start_over" assertions="7" status="pass" classname="tests/unit/test_file_save.gd" time="0.038799" >
+      </testcase>
+      <testcase name="test_future_schema_and_policy_mismatch_block_fallback_to_supported_slot" assertions="8" status="pass" classname="tests/unit/test_file_save.gd" time="0.060848" >
+      </testcase>
+      <testcase name="test_codec_rejects_bad_hash_types_utf8_and_noncanonical_ints" assertions="15" status="pass" classname="tests/unit/test_file_save.gd" time="0.038068" >
+      </testcase>
+      <testcase name="test_inactive_generation_removal_and_publication_faults_recover_whole_state" assertions="54" status="pass" classname="tests/unit/test_file_save.gd" time="0.346436" >
+      </testcase>
+      <testcase name="test_real_write_path_failure_does_not_commit_or_publish" assertions="7" status="pass" classname="tests/unit/test_file_save.gd" time="0.062218" >
+      </testcase>
+      <testcase name="test_recovery_preservation_failure_keeps_damaged_original" assertions="8" status="pass" classname="tests/unit/test_file_save.gd" time="0.095427" >
+      </testcase>
+      <testcase name="test_stale_session_and_unobserved_recovery_cannot_overwrite" assertions="7" status="pass" classname="tests/unit/test_file_save.gd" time="0.093421" >
+      </testcase>
+      <testcase name="test_same_process_claim_busy_and_pending_only_initial_save" assertions="8" status="pass" classname="tests/unit/test_file_save.gd" time="0.045299" >
+      </testcase>
+      <testcase name="test_boot_uses_existing_identity_and_retains_recovery_notice" assertions="10" status="pass" classname="tests/unit/test_file_save.gd" time="0.086742" >
+      </testcase>
+      <testcase name="test_divergent_same_revision_and_session_identity_fail_closed" assertions="6" status="pass" classname="tests/unit/test_file_save.gd" time="0.055819" >
+      </testcase>
+      <testcase name="test_saved_v1_fixtures_roundtrip_and_replay_clear_exactly" assertions="7" status="pass" classname="tests/unit/test_file_save.gd" time="0.040848" >
+      </testcase>
+  </testsuite>
+  <testsuite name="tests/unit/test_game_session.gd" tests="20" failures="0" skipped="0" time="1.676332" >
+      <testcase name="test_initial_supply_commits_before_exposure_and_resume_draws_nothing" assertions="7" status="pass" classname="tests/unit/test_game_session.gd" time="0.013967" >
+      </testcase>
+      <testcase name="test_invalid_placements_preserve_board_queue_score_rng_and_event_id" assertions="25" status="pass" classname="tests/unit/test_game_session.gd" time="0.040845" >
+      </testcase>
+      <testcase name="test_manual_crossing_clear_counts_union_and_keeps_tray_checkpoint" assertions="14" status="pass" classname="tests/unit/test_game_session.gd" time="0.009477" >
+      </testcase>
+      <testcase name="test_full_board_clear_sixteen_lines_and_two_segment_crossings" assertions="11" status="pass" classname="tests/unit/test_game_session.gd" time="0.007641" >
+      </testcase>
+      <testcase name="test_auto_confirmation_cancel_and_confirm_are_one_commit" assertions="13" status="pass" classname="tests/unit/test_game_session.gd" time="0.009209" >
+      </testcase>
+      <testcase name="test_auto_placement_detects_success_before_clear_and_refills_once" assertions="14" status="pass" classname="tests/unit/test_game_session.gd" time="0.010898" >
+      </testcase>
+      <testcase name="test_old_pending_line_does_not_count_as_new_batch_success" assertions="8" status="pass" classname="tests/unit/test_game_session.gd" time="0.007522" >
+      </testcase>
+      <testcase name="test_failed_save_rolls_back_refill_and_retry_matches_control" assertions="9" status="pass" classname="tests/unit/test_game_session.gd" time="0.029901" >
+      </testcase>
+      <testcase name="test_ambiguous_commit_requires_resume_and_never_reawards" assertions="11" status="pass" classname="tests/unit/test_game_session.gd" time="0.00932" >
+      </testcase>
+      <testcase name="test_competing_writer_cannot_overwrite_committed_state" assertions="5" status="pass" classname="tests/unit/test_game_session.gd" time="0.006028" >
+      </testcase>
+      <testcase name="test_duplicate_out_of_order_and_stale_batch_do_not_consume" assertions="11" status="pass" classname="tests/unit/test_game_session.gd" time="0.010498" >
+      </testcase>
+      <testcase name="test_new_run_preserves_growth_records_mode_and_advances_identity" assertions="15" status="pass" classname="tests/unit/test_game_session.gd" time="0.008211" >
+      </testcase>
+      <testcase name="test_materials_and_every_defined_part_have_cumulative_route" assertions="32" status="pass" classname="tests/unit/test_game_session.gd" time="0.02042" >
+      </testcase>
+      <testcase name="test_material_progress_counts_lower_tiers_and_unlocks_parts_same_event" assertions="10" status="pass" classname="tests/unit/test_game_session.gd" time="0.006536" >
+      </testcase>
+      <testcase name="test_segment_edits_representative_and_new_wood_segments_are_preserved" assertions="15" status="pass" classname="tests/unit/test_game_session.gd" time="0.012233" >
+      </testcase>
+      <testcase name="test_bad_snapshots_versions_numeric_types_and_styles_are_rejected" assertions="13" status="pass" classname="tests/unit/test_game_session.gd" time="0.027566" >
+      </testcase>
+      <testcase name="test_repository_reentrancy_is_rejected_until_commit_finishes" assertions="4" status="pass" classname="tests/unit/test_game_session.gd" time="0.00537" >
+      </testcase>
+      <testcase name="test_mid_tray_game_over_ends_streak_without_settling_or_losing_growth" assertions="12" status="pass" classname="tests/unit/test_game_session.gd" time="0.008261" >
+      </testcase>
+      <testcase name="test_action_sequence_replay_matches_across_forty_session_resumes" assertions="603" status="pass" classname="tests/unit/test_game_session.gd" time="1.42168" >
+      </testcase>
+      <testcase name="test_counter_boundary_rejects_entire_candidate_without_commit" assertions="7" status="pass" classname="tests/unit/test_game_session.gd" time="0.010749" >
+      </testcase>
+  </testsuite>
+  <testsuite name="tests/unit/test_piece_generator.gd" tests="12" failures="0" skipped="0" time="3.939126" >
+      <testcase name="test_catalog_geometry_unique_connected_normalized_and_legacy_preserved" assertions="156" status="pass" classname="tests/unit/test_piece_generator.gd" time="0.015996" >
+      </testcase>
+      <testcase name="test_integer_ticket_boundaries_exhaustive" assertions="4" status="pass" classname="tests/unit/test_piece_generator.gd" time="0.004137" >
+      </testcase>
+      <testcase name="test_config_errors_and_defensive_snapshot" assertions="12" status="pass" classname="tests/unit/test_piece_generator.gd" time="0.008814" >
+      </testcase>
+      <testcase name="test_strict_int64_and_checkpoint_validation" assertions="39" status="pass" classname="tests/unit/test_piece_generator.gd" time="0.003969" >
+      </testcase>
+      <testcase name="test_bad_input_and_nonempty_tray_do_not_change_owned_state" assertions="11" status="pass" classname="tests/unit/test_piece_generator.gd" time="0.00623" >
+      </testcase>
+      <testcase name="test_post_clear_union_and_must_clear_before_game_over" assertions="8" status="pass" classname="tests/unit/test_piece_generator.gd" time="0.004281" >
+      </testcase>
+      <testcase name="test_exhaustive_512_local_masks_match_independent_coordinate_oracle" assertions="1" status="pass" classname="tests/unit/test_piece_generator.gd" time="3.163672" >
+      </testcase>
+      <testcase name="test_deterministic_json_resume_and_board_ownership" assertions="1200" status="pass" classname="tests/unit/test_piece_generator.gd" time="0.670453" >
+      </testcase>
+      <testcase name="test_bounded_fallback_zero_weights_and_no_enabled_fit" assertions="13" status="pass" classname="tests/unit/test_piece_generator.gd" time="0.010764" >
+      </testcase>
+      <testcase name="test_raw_control_has_no_easy_injection_and_old_checkpoint_rejected" assertions="4" status="pass" classname="tests/unit/test_piece_generator.gd" time="0.005116" >
+      </testcase>
+      <testcase name="test_each_piece_fit_does_not_imply_whole_tray_solution" assertions="4" status="pass" classname="tests/unit/test_piece_generator.gd" time="0.005007" >
+      </testcase>
+      <testcase name="test_easy_fallback_and_replacement_slots_and_config_identity" assertions="9" status="pass" classname="tests/unit/test_piece_generator.gd" time="0.040687" >
+      </testcase>
+  </testsuite>
+  <testsuite name="tests/unit/test_piece_generator_redteam.gd" tests="4" failures="0" skipped="0" time="9.115947" >
+      <testcase name="test_every_piece_at_every_legal_origin_has_current_witness" assertions="1" status="pass" classname="tests/unit/test_piece_generator_redteam.gd" time="0.089869" >
+      </testcase>
+      <testcase name="test_random_full_board_positive_and_negative_decisions_match_oracle" assertions="1" status="pass" classname="tests/unit/test_piece_generator_redteam.gd" time="0.878553" >
+      </testcase>
+      <testcase name="test_all_active_family_subsets_obey_conditional_guarantee" assertions="1" status="pass" classname="tests/unit/test_piece_generator_redteam.gd" time="8.139664" >
+      </testcase>
+      <testcase name="test_later_current_piece_beats_earlier_post_clear_piece_and_output_is_owned" assertions="5" status="pass" classname="tests/unit/test_piece_generator_redteam.gd" time="0.007861" >
+      </testcase>
+  </testsuite>
+  <testsuite name="tests/unit/test_piece_supply.gd" tests="6" failures="0" skipped="0" time="0.018342" >
+      <testcase name="test_crossing_lines_count_as_two_and_keep_manual_clear_available" assertions="2" status="pass" classname="tests/unit/test_piece_supply.gd" time="0.002935" >
+      </testcase>
+      <testcase name="test_empty_tray_requires_refill_before_game_over" assertions="1" status="pass" classname="tests/unit/test_piece_supply.gd" time="0.002569" >
+      </testcase>
+      <testcase name="test_rng_roundtrip_preserves_next_batch" assertions="1" status="pass" classname="tests/unit/test_piece_supply.gd" time="0.00429" >
+      </testcase>
+      <testcase name="test_unknown_id_is_rejected_even_when_another_piece_fits" assertions="1" status="pass" classname="tests/unit/test_piece_supply.gd" time="0.002795" >
+      </testcase>
+      <testcase name="test_board_status_does_not_modify_input" assertions="2" status="pass" classname="tests/unit/test_piece_supply.gd" time="0.002991" >
+      </testcase>
+      <testcase name="test_integer_weight_boundaries_and_zero_weight" assertions="5" status="pass" classname="tests/unit/test_piece_supply.gd" time="0.002762" >
+      </testcase>
+  </testsuite>
+  <testsuite name="tests/unit/test_piece_supply_checks.gd" tests="1" failures="0" skipped="0" time="0.736324" >
+      <testcase name="test_ported_baseline_checks_pass_on_game_target" assertions="4" status="pass" classname="tests/unit/test_piece_supply_checks.gd" time="0.736324" >
+      </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,54 @@
+[
+  {
+    "check": "QA controlled fixture restored with exact state",
+    "passed": true
+  },
+  {
+    "check": "Physical touch placement commits once",
+    "passed": true
+  },
+  {
+    "check": "Touch drop matches center ghost anchor",
+    "passed": true
+  },
+  {
+    "check": "Manual placement awards only one cell",
+    "passed": true
+  },
+  {
+    "check": "Manual crossing clear awards 240 points and two floors once",
+    "passed": true
+  },
+  {
+    "check": "Auto button enables mode",
+    "passed": true
+  },
+  {
+    "check": "Second touch placement awards once",
+    "passed": true
+  },
+  {
+    "check": "Automatic row clear awards 100 points and one floor once",
+    "passed": true
+  },
+  {
+    "check": "Third placement refills tray once",
+    "passed": true
+  },
+  {
+    "check": "QA Home and resume preserve entire state",
+    "passed": true
+  },
+  {
+    "check": "QA force-stop after commit restores entire state",
+    "passed": true
+  },
+  {
+    "check": "Reduced-motion toggle writes preference",
+    "passed": true
+  },
+  {
+    "check": "Reduced-motion setting restored",
+    "passed": true
+  }
+]

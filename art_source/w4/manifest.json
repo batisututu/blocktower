@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "date": "2026-09-21",
+  "variant": "B2_structural_warm",
+  "scope": "First playable assets; final Visual Bible fidelity pending",
+  "source_files": [
+    {
+      "path": "art_source/w4/background_prompt.txt",
+      "bytes": 990,
+      "sha256": "6397b54227e9b666b3c58f31a1154997156d4041a593d3cf8b07dec9a09d6f00"
+    },
+    {
+      "path": "art_source/w4/render_tower.gd",
+      "bytes": 4843,
+      "sha256": "69d0cbae4ad602336f43fc255822a202e6f80619696d65aa35bb06be60cc3f6c"
+    },
+    {
+      "path": "art_source/w4/build_audio.py",
+      "bytes": 1843,
+      "sha256": "97cccb80d2bdbc0b40339ebb090dda03172432149d709cda9a522b2a42a52950"
+    },
+    {
+      "path": "game/assets/presentation/tower/geometry.json",
+      "bytes": 359,
+      "sha256": "26a0bd75c4b3a63190b76ccc3a0c98cc63d3fc934a4e3f86174efd57807e6df4"
+    },
+    {
+      "path": "game/assets/audio/manifest.json",
+      "bytes": 1681,
+      "sha256": "658c05cd917269d1f6d93ace4d7bb5f30af0143c6f0f03fe926709d9ede742e9"
+    }
+  ],
+  "assets": [
+    {
+      "path": "game/assets/presentation/architecture_b.png",
+      "bytes": 1951023,
+      "sha256": "ec16f73feaea38f5b242379736e34adbb0247383fbddea4361715c0d6aede4d1",
+      "origin": "Built-in image generation; prompt art_source/w4/background_prompt.txt"
+    },
+    {
+      "path": "game/assets/presentation/tower/base.png",
+      "bytes": 4308,
+      "sha256": "64c31aa982ed00b564cdaa383b683db8809c4ebf951f3c820313cd69646e81e0",
+      "origin": "Original project 3D geometry; generator art_source/w4/render_tower.gd"
+    },
+    {
+      "path": "game/assets/presentation/tower/cornice.png",
+      "bytes": 2023,
+      "sha256": "719aa6e96e05f2ca5ff90428ba2a93fd7ea3cdaef8cac89bdb33c8ad3ab5cb1b",
+      "origin": "Original project 3D geometry; generator art_source/w4/render_tower.gd"
+    },
+    {
+      "path": "game/assets/presentation/tower/floor.png",
+      "bytes": 10166,
+      "sha256": "5b329ca18569627d6a2aaf223a43d2cff93d3c52dbe4d284e5acb1fb42c87e5f",
+      "origin": "Original project 3D geometry; generator art_source/w4/render_tower.gd"
+    },
+    {
+      "path": "game/assets/presentation/tower/roof.png",
+      "bytes": 7528,
+      "sha256": "170aef9e675092cf70c311f6f281ee546c503473192d566050f9e081729248ad",
+      "origin": "Original project 3D geometry; generator art_source/w4/render_tower.gd"
+    },
+    {
+      "path": "game/assets/audio/clear.wav",
+      "bytes": 26504,
+      "sha256": "feb414ac15c17b136b1166018d1697421196aabacad619edf740f0bc6cb880a2",
+      "origin": "Original additive synthesis; generator art_source/w4/build_audio.py"
+    },
+    {
+      "path": "game/assets/audio/lock.wav",
+      "bytes": 31796,
+      "sha256": "64555e22f00e018784a4d29ccc53b1b1890f9cb4670d7dae22517fed74c5aebf",
+      "origin": "Original additive synthesis; generator art_source/w4/build_audio.py"
+    },
+    {
+      "path": "game/assets/audio/over.wav",
+      "bytes": 37088,
+      "sha256": "0a309361455c587ec833c14199d07de9ee50988ad63b3dcec5037a2a8ded8942",
+      "origin": "Original additive synthesis; generator art_source/w4/build_audio.py"
+    },
+    {
+      "path": "game/assets/audio/pick.wav",
+      "bytes": 5776,
+      "sha256": "6c00365a8fed55de07f44ec2fc7394b17d6407989c4ce838f2ad9a881df3da57",
+      "origin": "Original additive synthesis; generator art_source/w4/build_audio.py"
+    },
+    {
+      "path": "game/assets/audio/reject.wav",
+      "bytes": 7982,
+      "sha256": "d52972150754716ee3aa74faa080d7728b26a958c1002a1f8f65f36e539a3d70",
+      "origin": "Original additive synthesis; generator art_source/w4/build_audio.py"
+    },
+    {
+      "path": "game/assets/audio/snap.wav",
+      "bytes": 10628,
+      "sha256": "566c53a45d67495b296f48023a29d6c31d2a93149151df236ebeff4885e8ec79",
+      "origin": "Original additive synthesis; generator art_source/w4/build_audio.py"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+	"announcements": [],
+	"board": "[P: (12.0, 174.0), S: (336.0, 336.0)]",
+	"checks": [
+		{
+			"check": "fixture committed",
+			"passed": true
+		},
+		{
+			"check": "drag preview valid",
+			"passed": true
+		},
+		{
+			"check": "drag hint has a text cue",
+			"passed": true
+		},
+		{
+			"check": "native screenshot saved",
+			"passed": true
+		},
+		{
+			"check": "screen state equals session",
+			"passed": true
+		}
+	],
+	"floors": 9,
+	"grayscale": false,
+	"large_text": false,
+	"mode": "drag",
+	"revision": 1,
+	"safe_insets_24px": false,
+	"scenario": "drag",
+	"score": 2580,
+	"size": "360x800",
+	"source": "Windows Godot OpenGL native viewport; not Android"
+}

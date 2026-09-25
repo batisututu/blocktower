@@ -1,0 +1,37 @@
+{
+  "_purpose": "Durable engine/addon pin for Blocktower W1. tools/test.ps1 verifies the engine binary hash, the GUT plugin version and the GUT source manifest hash against this file. The original 2026-09-20 preflight provenance is preserved unchanged at docs/pretests/results/engine_provenance_2026-09-20.json and docs/pretests/results/gut_compatibility_2026-09-20.json.",
+  "recorded_on": "2026-09-21",
+  "engine": {
+    "name": "Godot Engine",
+    "version": "4.7.2.stable.official.ed1daf0bf",
+    "download_url": "https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_win64.exe.zip",
+    "archive_file": "Godot_v4.7.2-stable_win64.exe.zip",
+    "archive_sha256": "731980f9608d61333e5baf54a2ef17210acc7a538446c0cb9969f002aca1e953",
+    "archive_sha256_matches_preflight_record": true,
+    "exe_file": "Godot_v4.7.2-stable_win64.exe",
+    "exe_sha256": "ab1824f85bfd8e0e4128182c000c4003a3e042245b2967848d089b2a04b22424",
+    "console_exe_file": "Godot_v4.7.2-stable_win64_console.exe",
+    "console_exe_sha256": "c8f0a6bc45a19b33541501e57f6f7cd972ab18453743266339d495cbbe846643",
+    "durable_dir": "C:/DEV/tools/godot/4.7.2",
+    "copied_from": "C:/Users/batis/AppData/Local/Temp/blocktower-preflight-20260920",
+    "copy_verification": "SHA-256 of the zip and both executables computed at the temp source and again at the durable copy; all three pairs identical. '--version' from the durable console executable printed the pinned version with exit code 0.",
+    "note": "2026-09-21 W5 follow-up: matching 4.7.2 Android debug/release export templates installed after official SHA512 verification; see docs/implementation/W5_Device_Interim_Report_2026-09-21.md"
+  },
+  "gut": {
+    "name": "GUT (Godot Unit Test)",
+    "version": "9.7.1",
+    "tag": "v9.7.1",
+    "commit": "aeb5d4f3f7f0a6c9b5e178876d6c99b791fda605",
+    "repository": "https://github.com/bitwes/Gut",
+    "license": "MIT",
+    "license_file": "game/addons/gut/LICENSE.md",
+    "installed_path": "game/addons/gut",
+    "copied_from": "C:/Users/batis/AppData/Local/Temp/blocktower-gut-preflight-20260920/addons/gut",
+    "preflight_archive_sha256": "840382c1f3170ad9f039f4bbbcf94c922547792ea290227ec09c7b509e899d58",
+    "preflight_archive_note": "Archive hash as recorded by the 2026-09-20 preflight; the archive was not retained, so W1 pins the extracted source tree instead.",
+    "source_manifest_sha256": "8a3fd437bec2b62206afde3021d34c30147ee1607483cd36d61afb8977ab5b7a",
+    "source_manifest_file_count": 146,
+    "source_manifest_rule": "All files under game/addons/gut except *.import and *.uid. One line per file: '<relative path with forward slashes> <sha256 lowercase>'. Lines sorted by ordinal byte order, joined with LF, trailing LF, UTF-8; SHA-256 of that text. Computed identically by tools/common.ps1 Get-GutManifestHash and by bash (find | LC_ALL=C sort | sha256sum). Both produced this value on 2026-09-21.",
+    "editor_generated_files_note": "*.uid and *.import files are tracked in git for stable references but excluded from the pin because the editor may regenerate them."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "counts": {
+    "vector_hashes": 21,
+    "font_hashes": 2,
+    "original_backup_hashes": 29,
+    "capture_hashes": 13,
+    "local_links": 143
+  },
+  "failures": []
+}

@@ -1,0 +1,147 @@
+[
+  {
+    "path": "Blocktower_BlockSkin_B_vs_C_v0.2.png",
+    "sha256": "6e3b174c1f2473589b09f720996fe135229beda95e69572df319366334558732",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "Blocktower_Claude_Review_2026-09-20.md",
+    "sha256": "35cf200c4915dbc890b0f99f7fffb44176dab766e637ce345f9268b6fc0f6392",
+    "action": "moved_to_backup"
+  },
+  {
+    "path": "Blocktower_Claude_Tech_Review_2026-09-20.md",
+    "sha256": "ca6e0ee4f3de9392926a87acdec0d9bf2b723789a55cb818190697561e1edd57",
+    "action": "moved_to_backup"
+  },
+  {
+    "path": "Blocktower_Godot_Tech_Research_2026.md",
+    "sha256": "c9644c2ae4c1aa33e418f37ff57648daed60e9e203b974743a90d511daf02ab9",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "Blocktower_Growth_System_Plan_v0.2.md",
+    "sha256": "e2b7938a3766d2e01660a151029c69060f2aa95e6616c2e63acaf2ae54877d6c",
+    "action": "moved_to_backup"
+  },
+  {
+    "path": "Blocktower_Growth_System_Plan_v0.3.md",
+    "sha256": "1ee6a2e615c582e952c19ee1216229fcec2b643ebaf52f0348d661368b11074c",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "Blocktower_Piece_Supply_Research_v0.1.md",
+    "sha256": "cf08fc11748177d8fb74ea790034a4e4b88fa7367a62cdd01f2f5d916b8a2143",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "Blocktower_Predevelopment_Readiness_v0.1.md",
+    "sha256": "a06070ffd1e29b936c9640214a0be0d7382aa9718d1eaa079c2743447e398929",
+    "action": "moved_to_backup"
+  },
+  {
+    "path": "Blocktower_Predevelopment_Readiness_v0.2.md",
+    "sha256": "7edb263433f406ddfb0b722b0ae9390138bb78c7dcff7c8645b615b975514899",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "Blocktower_Preflight_Test_Report_2026-09-20.md",
+    "sha256": "7d8c1c20579361fc65047fb8895d1060a13d11667c96501a23d7313fe6cc6e9c",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "Blocktower_Redteam_Review_2026-09-20.md",
+    "sha256": "b2e293bf60a2598f283bd3565613c68b4968c791818fbad487df49c001cb8671",
+    "action": "moved_to_backup"
+  },
+  {
+    "path": "Blocktower_Upper_Game_Design_v0.3.md",
+    "sha256": "86b15075f0058a3d24261709e91e0a433bdfe702b301a32e76f9c7c7f278cfb6",
+    "action": "moved_to_backup"
+  },
+  {
+    "path": "Blocktower_Upper_Game_Design_v0.4.md",
+    "sha256": "3180f62ed547822e151c20686b4781a867d41ff483c08e0dfafbccb62ab47665",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "Blocktower_Visual_Bible_BlockSkin_Decision_v0.2.md",
+    "sha256": "a9f65fb7f80274fa0e640483095af133f751f748d000ab77a89eb1652fde5f51",
+    "action": "moved_to_backup"
+  },
+  {
+    "path": "Blocktower_Visual_Bible_BlockSkin_Decision_v0.3.md",
+    "sha256": "37c167591c7c15716ac19f97b0a10de2674e69427905591f3e31001465235d92",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "README.md",
+    "sha256": "d08a76d32421611b0ee81bd6426e7219fe2a6412b11addc1f051626060741325",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "adr/0001-godot-baseline-and-contracts.md",
+    "sha256": "a66955d2ef25e8706a4df24945d4aacebf1ccb27f051841354f516f3d2c924d2",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "archive/Blocktower_Godot_Tech_Research_2026_original_2026-09-20.md",
+    "sha256": "8114dbb3e00ac49a04171708b8a73e12d400429876452e9e320ad30d0db97669",
+    "action": "moved_to_backup"
+  },
+  {
+    "path": "examples/check_piece_supply.gd",
+    "sha256": "3941329bbc279304f0f9b6ab7d0b4aa39d0de92b64240573512dd084b69fe8c8",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "examples/piece_supply_check_2026-09-20.json",
+    "sha256": "4fa720ab4adbc8e047f6d7c45dd837ea7728218fe3ddd1bb216e4772e540df52",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "examples/piece_supply_v0_1.gd",
+    "sha256": "9d4d1e7ab86e93b38b1d747d14abb686827749da56e6d3208e72fa47f9690be2",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "pretests/preflight_probe.gd",
+    "sha256": "326328786f663e612fbdf12c2fba9ce010c81a46014f146755a16f2b2a0e65a0",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "pretests/run_preflight.py",
+    "sha256": "20d3e7eff5cbff9517ce18e2627a9d744ac011e6389523c18ffefef9fc05bd8a",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "pretests/test_supply_gut.gd",
+    "sha256": "db63c3015e0038e09e36525284d250cea0a95d5e565d0bd42396236ed7bf9e85",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "pretests/results/engine_provenance_2026-09-20.json",
+    "sha256": "591b32140fa850b563f8399be4140f630049e538035bfac13e442a064a25fba2",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "pretests/results/gut_compatibility_2026-09-20.json",
+    "sha256": "1a6531c30e86337940ba4d307317b07ecbba8f4a1f678f6a525e97dd7c109132",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "pretests/results/play_data.json",
+    "sha256": "9982f81df56560f6764f52b17242c2bf5555d18912b122c39805ce9ce296e068",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "pretests/results/preflight_2026-09-20.json",
+    "sha256": "6b8e054bf6212fa97dc22c80150046da3fdb234262385096847a9334311c1260",
+    "action": "snapshot_before_consolidation"
+  },
+  {
+    "path": "pretests/results/replay_checkpoints.json",
+    "sha256": "5e6e56158714184926bf6393e09bca22cfcc4f925591c2516e8bc41e7f4a7125",
+    "action": "snapshot_before_consolidation"
+  }
+]

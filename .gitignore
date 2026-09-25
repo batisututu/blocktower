@@ -1,0 +1,38 @@
+# Godot caches and build outputs
+.godot/
+*.tmp
+/game/export/
+/game/build/
+/game/android/
+/game/export_credentials.cfg
+
+# Machine-local engine paths and tool outputs
+/tools/engine.local.json
+/tools/out/
+
+# Packaged builds and signing material (never tracked)
+*.apk
+*.aab
+*.ipa
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+
+# Secrets
+.env
+.env.*
+
+# OS and editor noise
+Thumbs.db
+.DS_Store
+*.swp
+*~
+
+# Python helper caches
+__pycache__/
+*.pyc
+
+# Blender backups
+*.blend1
+*.blend2

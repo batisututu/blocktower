@@ -1,0 +1,19 @@
+{
+	"actions": 30,
+	"audio_player_playing_after_actions": 0,
+	"audio_player_pool_size": 6,
+	"dispatch_max_ms": 31.055,
+	"dispatch_p95_ms": 29.589,
+	"feedback_cue_requests": 30,
+	"memory_static_bytes_after": 60546278,
+	"memory_static_bytes_before": 60127320,
+	"memory_static_peak_bytes": 60554035,
+	"muted": true,
+	"next_frame_max_ms": 22.954,
+	"next_frame_p95_ms": 6.608,
+	"node_count_after": 40,
+	"node_count_before": 40,
+	"node_count_delta": 0,
+	"node_count_peak": 40,
+	"scope": "Windows host observation including sync file commit, not mobile budget or GPU-only time"
+}

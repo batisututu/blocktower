@@ -1,0 +1,11 @@
+{
+  "package": "com.blocktower.game",
+  "version_code": 3,
+  "version_name": "0.1.0-gamefeel3",
+  "architecture": "arm64-v8a",
+  "path": "game/export/blocktower-device-debug.apk",
+  "sha256": "9e088503c6b30b0205462889c4229859b9f033f3b5706a92b1e8fc5a21986be1",
+  "physical_install_verified": true,
+  "emulator_note": "isolated QA pre-review-fix build installed; SwiftShader shader linking failed, no visual pass",
+  "physical_followup": "docs/implementation/GameFeel_Device_Verification_2026-09-21.md"
+}

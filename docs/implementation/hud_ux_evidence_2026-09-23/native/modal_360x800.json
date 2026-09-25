@@ -1,0 +1,40 @@
+{
+	"announcements": [],
+	"board": "[P: (12.0, 174.0), S: (336.0, 336.0)]",
+	"checks": [
+		{
+			"check": "fixture committed",
+			"passed": true
+		},
+		{
+			"check": "confirmation modal remains active",
+			"passed": true
+		},
+		{
+			"check": "confirmation stays inside the viewport",
+			"passed": true
+		},
+		{
+			"check": "confirmation action keeps a 48px target",
+			"passed": true
+		},
+		{
+			"check": "native screenshot saved",
+			"passed": true
+		},
+		{
+			"check": "screen state equals session",
+			"passed": true
+		}
+	],
+	"floors": 9,
+	"grayscale": false,
+	"large_text": false,
+	"mode": "modal",
+	"revision": 1,
+	"safe_insets_24px": false,
+	"scenario": "modal",
+	"score": 0,
+	"size": "360x800",
+	"source": "Windows Godot OpenGL native viewport; not Android"
+}

@@ -1,0 +1,7 @@
+Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] pkg=com.blocktower.game }
+Status: ok
+LaunchState: COLD
+Activity: com.blocktower.game/com.godot.game.GodotApp
+TotalTime: 592
+WaitTime: 600
+Complete

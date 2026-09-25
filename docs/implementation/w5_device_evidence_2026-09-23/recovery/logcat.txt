@@ -1,0 +1,150 @@
+--------- beginning of main
+09-23 11:25:01.308  5883  5991 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:25:01.438  5883  5991 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:25:01.463  5883  5991 I godot   : 
+09-23 11:25:53.380  6371  6412 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:25:53.462  6371  6412 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:25:53.474  6371  6412 I godot   : 
+09-23 11:25:54.179  6371  6412 I godot   : SAVE_PROCESS_PROBE guard ok=true
+09-23 11:25:55.417  6504  6543 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:25:55.483  6504  6543 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:25:55.493  6504  6543 I godot   : 
+09-23 11:25:56.321  6504  6543 I godot   : SAVE_PROCESS_PROBE init ok=true
+09-23 11:25:57.863  6690  6725 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:25:57.948  6690  6725 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:25:57.963  6690  6725 I godot   : 
+09-23 11:25:58.713  6690  6725 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-23 11:26:00.297  6825  6859 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:00.366  6825  6859 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:00.377  6825  6859 I godot   : 
+09-23 11:26:04.153  6968  7015 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:04.225  6968  7015 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:04.236  6968  7015 I godot   : 
+09-23 11:26:04.895  6968  7015 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-23 11:26:06.081  7098  7133 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:06.155  7098  7133 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:06.165  7098  7133 I godot   : 
+09-23 11:26:06.906  7098  7133 I godot   : SAVE_PROCESS_PROBE clear ok=true
+09-23 11:26:08.104  7216  7251 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:08.176  7216  7251 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:08.187  7216  7251 I godot   : 
+09-23 11:26:08.916  7216  7251 I godot   : SAVE_PROCESS_PROBE duplicate ok=false
+09-23 11:26:10.566  7340  7374 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:10.631  7340  7374 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:10.642  7340  7374 I godot   : 
+09-23 11:26:12.704  7462  7498 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:12.776  7462  7498 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:12.790  7462  7498 I godot   : 
+09-23 11:26:13.510  7462  7498 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-23 11:26:14.705  7581  7616 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:14.775  7581  7616 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:14.785  7581  7616 I godot   : 
+09-23 11:26:15.512  7581  7616 I godot   : SAVE_PROCESS_PROBE clear ok=true
+09-23 11:26:16.651  7697  7733 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:16.716  7697  7733 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:16.728  7697  7733 I godot   : 
+09-23 11:26:17.478  7697  7733 I godot   : SAVE_PROCESS_PROBE duplicate ok=false
+09-23 11:26:19.160  7825  7859 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:19.233  7825  7859 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:19.243  7825  7859 I godot   : 
+09-23 11:26:21.270  7947  7980 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:21.340  7947  7980 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:21.352  7947  7980 I godot   : 
+09-23 11:26:22.061  7947  7980 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-23 11:26:23.300  8066  8098 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:23.373  8066  8098 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:23.382  8066  8098 I godot   : 
+09-23 11:26:24.086  8066  8098 I godot   : SAVE_PROCESS_PROBE clear ok=true
+09-23 11:26:25.460  8190  8226 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:25.534  8190  8226 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:25.545  8190  8226 I godot   : 
+09-23 11:26:26.267  8190  8226 I godot   : SAVE_PROCESS_PROBE duplicate ok=false
+09-23 11:26:28.142  8323  8358 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:28.207  8323  8358 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:28.219  8323  8358 I godot   : 
+09-23 11:26:30.377  8472  8508 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:30.450  8472  8508 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:30.461  8472  8508 I godot   : 
+09-23 11:26:31.202  8472  8508 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-23 11:26:32.656  8603  8641 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:32.732  8603  8641 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:32.742  8603  8641 I godot   : 
+09-23 11:26:33.474  8603  8641 I godot   : SAVE_PROCESS_PROBE clear ok=true
+09-23 11:26:34.609  8737  8770 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:34.681  8737  8770 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:34.692  8737  8770 I godot   : 
+09-23 11:26:35.443  8737  8770 I godot   : SAVE_PROCESS_PROBE duplicate ok=false
+09-23 11:26:37.059  8862  8904 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:37.130  8862  8904 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:37.140  8862  8904 I godot   : 
+09-23 11:26:39.326  9073  9117 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:39.392  9073  9117 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:39.407  9073  9117 I godot   : 
+09-23 11:26:40.165  9073  9117 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-23 11:26:41.472  9242  9316 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:41.545  9242  9316 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:41.556  9242  9316 I godot   : 
+09-23 11:26:42.313  9242  9316 I godot   : SAVE_PROCESS_PROBE clear ok=true
+09-23 11:26:43.498  9406  9441 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:43.570  9406  9441 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:43.582  9406  9441 I godot   : 
+09-23 11:26:44.331  9406  9441 I godot   : SAVE_PROCESS_PROBE duplicate ok=false
+09-23 11:26:45.987  9537  9571 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:46.058  9537  9571 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:46.068  9537  9571 I godot   : 
+09-23 11:26:48.096  9661  9694 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:48.161  9661  9694 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:48.174  9661  9694 I godot   : 
+09-23 11:26:48.921  9661  9694 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-23 11:26:50.003  9780  9816 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:50.067  9780  9816 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:50.079  9780  9816 I godot   : 
+09-23 11:26:50.816  9780  9816 I godot   : SAVE_PROCESS_PROBE duplicate ok=false
+09-23 11:26:52.900  9917  9956 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:52.972  9917  9956 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:52.983  9917  9956 I godot   : 
+09-23 11:26:53.706  9917  9956 I godot   : SAVE_PROCESS_PROBE inspect ok=false
+09-23 11:26:54.997 10042 10076 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:55.081 10042 10076 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:55.091 10042 10076 I godot   : 
+09-23 11:26:55.794 10042 10076 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-23 11:26:57.486 10168 10202 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:26:57.561 10168 10202 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:26:57.573 10168 10202 I godot   : 
+09-23 11:26:58.284 10168 10202 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-23 11:27:00.057 10299 10334 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:27:00.123 10299 10334 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:27:00.135 10299 10334 I godot   : 
+09-23 11:27:00.893 10299 10334 I godot   : SAVE_PROCESS_PROBE inspect ok=false
+09-23 11:27:02.858 10445 10530 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:27:02.930 10445 10530 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:27:02.941 10445 10530 I godot   : 
+09-23 11:27:03.690 10445 10530 I godot   : SAVE_PROCESS_PROBE inspect ok=false
+09-23 11:27:05.786 10648 10691 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:27:05.857 10648 10691 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:27:05.869 10648 10691 I godot   : 
+09-23 11:27:06.556 10648 10691 I godot   : SAVE_PROCESS_PROBE inspect ok=false
+09-23 11:27:08.404 10789 10825 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:27:08.474 10789 10825 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:27:08.486 10789 10825 I godot   : 
+09-23 11:27:09.234 10789 10825 I godot   : SAVE_PROCESS_PROBE clear ok=true
+09-23 11:27:10.532 10913 10949 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:27:10.601 10913 10949 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:27:10.611 10913 10949 I godot   : 
+09-23 11:27:11.349 10913 10949 I godot   : SAVE_PROCESS_PROBE inspect ok=true
+09-23 11:27:12.483 11031 11064 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:27:12.555 11031 11064 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:27:12.566 11031 11064 I godot   : 
+09-23 11:27:13.275 11031 11064 I godot   : SAVE_PROCESS_PROBE clear ok=true
+09-23 11:27:14.992 11161 11199 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:27:15.068 11161 11199 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:27:15.077 11161 11199 I godot   : 
+09-23 11:27:15.807 11161 11199 I godot   : SAVE_PROCESS_PROBE inspect ok=false
+09-23 11:27:18.080 11300 11334 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:27:18.145 11300 11334 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:27:18.158 11300 11334 I godot   : 
+09-23 11:27:18.886 11300 11334 I godot   : SAVE_PROCESS_PROBE inspect ok=false
+09-23 11:27:20.521 11424 11470 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-23 11:27:20.595 11424 11470 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-23 11:27:20.607 11424 11470 I godot   : 
+09-23 11:27:21.371 11424 11470 I godot   : SAVE_PROCESS_PROBE init ok=true

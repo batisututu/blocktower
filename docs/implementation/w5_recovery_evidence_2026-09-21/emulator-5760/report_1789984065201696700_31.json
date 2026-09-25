@@ -1,0 +1,9 @@
+{
+  "error": "SAVE_LOCK_INVALID",
+  "expected_clear_text": "",
+  "mode": "inspect",
+  "ok": false,
+  "pid": 12377,
+  "recovered": false,
+  "recovery": {}
+}

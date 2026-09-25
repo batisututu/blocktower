@@ -1,0 +1,37 @@
+{
+  "version_code": 6,
+  "version_name": "0.1.0-w5-lifecycle6",
+  "ui_assets_equal": 182,
+  "recovery_compiled_scripts_equal": [
+    "assets/scripts/application/saved_game.gdc",
+    "assets/scripts/core/generation/piece_generator.gdc",
+    "assets/scripts/persistence/save_codec.gdc",
+    "assets/scripts/persistence/file_save_repository.gdc",
+    "assets/scripts/persistence/android_file_guard.gdc",
+    "assets/scripts/core/piece_supply.gdc",
+    "assets/scripts/core/memory_save_repository.gdc",
+    "assets/scripts/core/growth_rules.gdc",
+    "assets/scripts/core/game_session.gdc",
+    "assets/scripts/core/generation/piece_generator_config.gdc",
+    "assets/scripts/application/saved_game.gd.remap",
+    "assets/scripts/core/generation/piece_generator.gd.remap",
+    "assets/scripts/persistence/save_codec.gd.remap",
+    "assets/scripts/persistence/file_save_repository.gd.remap",
+    "assets/scripts/persistence/android_file_guard.gd.remap",
+    "assets/scripts/core/piece_supply.gd.remap",
+    "assets/scripts/core/memory_save_repository.gd.remap",
+    "assets/scripts/core/growth_rules.gd.remap",
+    "assets/scripts/core/game_session.gd.remap",
+    "assets/scripts/core/generation/piece_generator_config.gd.remap"
+  ],
+  "recovery_differences": [
+    "assets/.godot/uid_cache.bin",
+    "assets/project.binary",
+    "assets/assets.sparsepck"
+  ],
+  "apks": {
+    "game\\export\\blocktower-device-debug.apk": "c12618240510c5b59a035e3e31787615d3144e70697a6ea27058b3822276bc58",
+    "game\\export\\blocktower-device-qa.apk": "4b44a556e40ebc1e5ed8fda01e4756210045b9a3cfa1163168d05f4664225df5",
+    "tools\\out\\android_recovery_probe\\probe.apk": "c3cf17544bd39d7baa13bb84d7a5655228b25cb71ee9662324332cf036bdc9c7"
+  }
+}

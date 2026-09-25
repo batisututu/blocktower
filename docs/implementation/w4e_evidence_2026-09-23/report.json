@@ -1,0 +1,161 @@
+{
+  "scope": "W4-E event clarity",
+  "code_changed_files": [
+    "game/scripts/presentation/puzzle_screen.gd",
+    "game/tests/unit/test_presentation.gd",
+    "game/tests/integration/presentation_probe.gd",
+    "tools/verify_presentation.py"
+  ],
+  "plan_files_edited": [],
+  "implementation": "Event feedback uses at most three grouped notices: clear reward, combined segment/unlock counts, and a compact record/supply/game-over status. Notices hold for 0.72 seconds and fade for 0.15 seconds, so the maximum three-notice sequence is 2.61 seconds. A nonblocking '해금 보기' action on the existing tower view opens exact latest-clear segment/material/part facts and the currently saved unlock set; result dialogs retain full event details. New-pick dismissal does not erase growth details.",
+  "combined_clear_unlock_best_supply_game_over": {
+    "default_valid_session_reachable": false,
+    "reason": "Default refill is generated after the clear against post-clear occupancy and preserves a legal placement when one exists; a completed row or column creates the required open space. A deterministic presentation-only fixed payload test verifies all notices and the result-dialog fallback."
+  },
+  "verification": {
+    "godot_version": "4.7.2.stable.official.ed1daf0bf",
+    "godot_sha256": "c8f0a6bc45a19b33541501e57f6f7cd972ab18453743266339d495cbbe846643",
+    "gut_version": "9.7.1",
+    "gut_source_manifest_sha256": "8a3fd437bec2b62206afde3021d34c30147ee1607483cd36d61afb8977ab5b7a",
+    "suites": 9,
+    "tests": 102,
+    "assertions": 3124,
+    "failures": 0,
+    "errors": 0,
+    "pending": 0,
+    "junit_xml": "C:\\DEV\\Games\\Blocktower\\tools\\out\\gut_unit.xml",
+    "run_summary": "tools/out/last_test_run.json",
+    "native_capture_cases": 27,
+    "native_capture_failed_checks": 0,
+    "native_capture_summary": "tools/out/w4e_readability_20260923/summary.json",
+    "capture_directory": "tools/out/w4e_readability_20260923",
+    "event_screenshots": "Each event capture stores _notice_00.png through the final queued notice and the final viewport .png.",
+    "visually_inspected": [
+      "tools/out/w4e_readability_20260923/inset_text_event_9_11_320x568_notice_00.png",
+      "tools/out/w4e_readability_20260923/inset_text_reduced_event_multi16_320x568_notice_00.png",
+      "tools/out/w4e_readability_20260923/gray_reduced_text_event_multi16_360x800_notice_00.png",
+      "tools/out/w4e_readability_20260923/text_event_multi16_412x915_notice_00.png"
+    ],
+    "desktop_scope": "Windows Godot OpenGL native captures; no Android installation or physical-device validation.",
+    "follow_up_native_capture_cases": 8,
+    "follow_up_native_checks": 206,
+    "follow_up_native_failed_checks": 0,
+    "follow_up_native_capture_summary": "tools/out/w4e_readability_20260923_final/summary.json",
+    "follow_up_capture_directory": "tools/out/w4e_readability_20260923_final",
+    "follow_up_stress_capture": "tools/out/w4e_readability_20260923_stress/stress_320x568.png",
+    "follow_up_visually_inspected": [
+      "tools/out/w4e_readability_20260923_final/event_multi16_320x568_notice_00.png",
+      "tools/out/w4e_readability_20260923_final/event_multi16_320x568_notice_01.png",
+      "tools/out/w4e_readability_20260923_final/inset_text_reduced_event_multi16_320x568_tower_details_action.png",
+      "tools/out/w4e_readability_20260923_final/inset_text_reduced_event_multi16_320x568_growth_details.png",
+      "tools/out/w4e_readability_20260923_final/gray_reduced_text_event_multi16_360x800_notice_02.png",
+      "tools/out/w4e_readability_20260923_final/gray_reduced_text_event_multi16_360x800_growth_details.png",
+      "tools/out/w4e_readability_20260923_final/text_event_multi16_412x915_growth_details.png"
+    ]
+  },
+  "windows_metrics": {
+    "thirty_actions": {
+      "actions": 30,
+      "dispatch_p95_ms": 248.262,
+      "dispatch_max_ms": 250.583,
+      "next_frame_p95_ms": 48.548,
+      "next_frame_max_ms": 78.458,
+      "node_count_before": 24,
+      "node_count_after": 24,
+      "node_count_delta": 0,
+      "node_count_peak": 24,
+      "memory_static_bytes_before": 59359017,
+      "memory_static_bytes_after": 59785195,
+      "memory_static_peak_bytes": 59790416,
+      "feedback_cue_requests": 30,
+      "audio_player_pool_size": 6,
+      "audio_player_playing_after_actions": 0,
+      "muted": true,
+      "scope": "Windows host observation including sync file commit, not mobile budget or GPU-only time",
+      "evidence": "tools/out/w4e_readability_20260923_stress/stress_320x568.metrics.json"
+    },
+    "maximum_16_line_clear": {
+      "scenario": "event_multi16",
+      "dispatch_ms": 87.386,
+      "settle_wait_ms": 460,
+      "node_count_before": 24,
+      "node_count_after": 24,
+      "node_count_delta": 0,
+      "memory_static_bytes_before": 59550358,
+      "memory_static_bytes_after": 59885459,
+      "memory_static_delta_bytes": 335101,
+      "feedback_cue_requests": 2,
+      "audio_player_pool_size": 6,
+      "audio_player_playing_after_settle": 0,
+      "notice_count": 3,
+      "notice_hold_seconds": 0.72,
+      "notice_max_sequence_seconds": 2.61,
+      "fast_pick_dismissed_without_block": true,
+      "growth_facts_accessible_after_pick": true,
+      "muted": true,
+      "reduced_motion": false,
+      "scope": "Windows native Godot observation; not a mobile performance result",
+      "evidence": "tools/out/w4e_readability_20260923_final/event_multi16_320x568.metrics.json"
+    },
+    "qualification": "Windows host only; does not represent mobile frame time, memory, or audio behavior."
+  },
+  "remaining_limits": [
+    "No Android/device validation by instruction.",
+    "Combined valid-session clear+unlock+supply+immediate-game-over path was not reachable under the default refill guarantee; only its presentation path is synthetic-tested.",
+    "Windows performance observations do not establish mobile performance."
+  ],
+  "follow_up": {
+    "status": "implemented and verified",
+    "changed_code_files": [
+      "game/scripts/presentation/puzzle_screen.gd",
+      "game/tests/unit/test_presentation.gd",
+      "game/tests/integration/presentation_probe.gd"
+    ],
+    "notice_contract": {
+      "maximum_notices": 3,
+      "hold_seconds_each": 0.72,
+      "fade_seconds_each": 0.15,
+      "maximum_sequence_seconds": 2.61,
+      "fast_next_pick_clears_toast_but_preserves_unlock_facts": true
+    },
+    "durable_inspection": "Tower view exposes a visible '해금 보기' action. In the active session it includes exact latest-clear segment/material/part facts; it also reconstructs all currently unlocked materials and parts and cumulative segments from the existing saved growth state. No save schema, game rules, RNG, or preferences changed.",
+    "full_gut": {
+      "engine": "Godot 4.7.2.stable.official.ed1daf0bf",
+      "gut": "9.7.1",
+      "suites": 9,
+      "tests": 102,
+      "assertions": 3124,
+      "failures": 0,
+      "errors": 0,
+      "pending": 0,
+      "junit": "tools/out/gut_unit.xml",
+      "summary": "tools/out/last_test_run.json"
+    },
+    "native_capture_cases": [
+      "event_9_11:320x568",
+      "inset_text_event_9_11:320x568",
+      "event_19_21:360x800",
+      "text_event_19_21:412x915",
+      "event_multi16:320x568",
+      "inset_text_reduced_event_multi16:320x568",
+      "gray_reduced_text_event_multi16:360x800",
+      "text_event_multi16:412x915"
+    ],
+    "native_check_count": 206,
+    "native_failed_checks": 0,
+    "capture_summary": "tools/out/w4e_readability_20260923_final/summary.json",
+    "growth_details_evidence": [
+      "tools/out/w4e_readability_20260923_final/event_multi16_320x568_tower_details_action.png",
+      "tools/out/w4e_readability_20260923_final/event_multi16_320x568_growth_details.png",
+      "tools/out/w4e_readability_20260923_final/inset_text_reduced_event_multi16_320x568_growth_details.png",
+      "tools/out/w4e_readability_20260923_final/gray_reduced_text_event_multi16_360x800_growth_details.png",
+      "tools/out/w4e_readability_20260923_final/text_event_multi16_412x915_growth_details.png"
+    ],
+    "stress_evidence": "tools/out/w4e_readability_20260923_stress/stress_320x568.metrics.json",
+    "limits": [
+      "Exact latest-clear chronology is held in memory for the active screen session; after restart, tower details reconstruct the cumulative segments and all currently saved unlocks, not event chronology.",
+      "Windows host observations do not establish mobile performance.",
+      "No Android install or physical-device validation was performed."
+    ]
+  }
+}

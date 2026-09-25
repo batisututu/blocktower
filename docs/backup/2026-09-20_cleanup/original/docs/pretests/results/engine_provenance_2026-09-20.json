@@ -1,0 +1,11 @@
+{
+  "download_url": "https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_win64.exe.zip",
+  "archive_sha256": "731980f9608d61333e5baf54a2ef17210acc7a538446c0cb9969f002aca1e953",
+  "expected_sha256": "731980f9608d61333e5baf54a2ef17210acc7a538446c0cb9969f002aca1e953",
+  "executable": "C:\\Users\\batis\\AppData\\Local\\Temp\\blocktower-preflight-20260920\\engine\\Godot_v4.7.2-stable_win64_console.exe",
+  "version_stdout": "4.7.2.stable.official.ed1daf0bf",
+  "version_stderr": "",
+  "exit": 0,
+  "gut_commit": "aeb5d4f3f7f0a6c9b5e178876d6c99b791fda605",
+  "gut_archive_sha256": "840382c1f3170ad9f039f4bbbcf94c922547792ea290227ec09c7b509e899d58"
+}

@@ -1,0 +1,37 @@
+[gd_scene format=3]
+
+[sub_resource type="Environment" id="Environment_lkpnk"]
+ambient_light_source = 2
+ambient_light_color = Color(0.93333334, 0.89411765, 0.8117647, 1)
+ambient_light_energy = 0.32
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d4p0j"]
+albedo_color = Color(0.69458824, 0.64635295, 0.5209412, 1)
+roughness = 0.92
+
+[sub_resource type="BoxMesh" id="BoxMesh_nap4x"]
+size = Vector3(1.8942, 0.07, 1.452)
+
+[node name="@Node3D@3" type="Node3D" unique_id=954882295]
+
+[node name="@WorldEnvironment@4" type="WorldEnvironment" parent="." unique_id=1222285222]
+environment = SubResource("Environment_lkpnk")
+
+[node name="@DirectionalLight3D@5" type="DirectionalLight3D" parent="." unique_id=518633326]
+transform = Transform3D(0.7880108, 0.4575257, -0.41195792, 0, 0.66913056, 0.74314487, 0.6156615, -0.58560616, 0.5272821, 0, 0, 0)
+light_color = Color(1, 0.9411765, 0.827451, 1)
+light_energy = 0.65
+shadow_enabled = true
+
+[node name="@Camera3D@6" type="Camera3D" parent="." unique_id=1760693845]
+transform = Transform3D(0.8479983, -0.15080148, 0.5080922, 0, 0.9586666, 0.28453168, -0.5299989, -0.24128239, 0.8129477, 5, 2.8, 8)
+projection = 1
+current = true
+size = 5.1
+
+[node name="cornice" type="Node3D" parent="." unique_id=1344697844]
+
+[node name="@MeshInstance3D@1721" type="MeshInstance3D" parent="cornice" unique_id=1881214208]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.035, 0)
+material_override = SubResource("StandardMaterial3D_d4p0j")
+mesh = SubResource("BoxMesh_nap4x")

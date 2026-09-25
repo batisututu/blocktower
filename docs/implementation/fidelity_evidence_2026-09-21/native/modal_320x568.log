@@ -1,0 +1,4 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 610.88 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3070 Laptop GPU
+
+W4_PROBE modal [{ "check": "fixture committed", "passed": true }, { "check": "native screenshot saved", "passed": true }, { "check": "screen state equals session", "passed": true }]

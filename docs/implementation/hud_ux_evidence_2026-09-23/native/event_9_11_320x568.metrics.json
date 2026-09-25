@@ -1,0 +1,22 @@
+{
+	"audio_player_playing_after_settle": 0,
+	"audio_player_pool_size": 6,
+	"dispatch_ms": 18.845,
+	"fast_pick_dismissed_without_block": false,
+	"feedback_cue_requests": 2,
+	"growth_facts_accessible_after_pick": false,
+	"memory_static_bytes_after": 60351024,
+	"memory_static_bytes_before": 60137577,
+	"memory_static_delta_bytes": 213447,
+	"muted": true,
+	"node_count_after": 40,
+	"node_count_before": 40,
+	"node_count_delta": 0,
+	"notice_count": 3,
+	"notice_hold_seconds": 0.72,
+	"notice_max_sequence_seconds": 2.61,
+	"reduced_motion": false,
+	"scenario": "event_9_11",
+	"scope": "Windows native Godot observation; not a mobile performance result",
+	"settle_wait_ms": 460
+}

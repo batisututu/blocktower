@@ -1,0 +1,173 @@
+{
+  "version": "bt_assets_b_0_1",
+  "assets": {
+    "cell_b": {
+      "path": "game/assets/vector/cell_b.svg",
+      "width": 64,
+      "height": 64,
+      "sha256": "2cb63785fcd27c28f32927fb04c4f32661b8845befa07ca771e518329426cde8",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "cell_empty": {
+      "path": "game/assets/vector/cell_empty.svg",
+      "width": 64,
+      "height": 64,
+      "sha256": "18e1e62df96c04952d118157e318397784387c6c9991b5dd4c73b22b2afd70e8",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "cell_frame": {
+      "path": "game/assets/vector/cell_frame.svg",
+      "width": 64,
+      "height": 64,
+      "sha256": "653dc29833aa135ea13d60ce4cf96b9f7afce46eae4894cbb2ec0e64fbf98e7b",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "state_valid": {
+      "path": "game/assets/vector/state_valid.svg",
+      "width": 64,
+      "height": 64,
+      "sha256": "4ea2aea85ab653562c15b86106892dcaa62377f5c458a33b3dcf726018c47066",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "state_invalid": {
+      "path": "game/assets/vector/state_invalid.svg",
+      "width": 64,
+      "height": 64,
+      "sha256": "3050c687ec4afb0286a3607180386498e0964e92cdae434541140e47bd268186",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "state_selected": {
+      "path": "game/assets/vector/state_selected.svg",
+      "width": 64,
+      "height": 64,
+      "sha256": "e8aa6c6b88d49477dbe2a9a014b36c075646052de338623271facfbba0062e25",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "icon_settings": {
+      "path": "game/assets/vector/icon_settings.svg",
+      "width": 24,
+      "height": 24,
+      "sha256": "d17b41a06b3278721f4501a757ded399c21db508e4e738b638c3696163323849",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "icon_back": {
+      "path": "game/assets/vector/icon_back.svg",
+      "width": 24,
+      "height": 24,
+      "sha256": "a705ce4d459a9beca399069815acae6ab1ca3936bc0ad1db002d536dbb970b2d",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "icon_close": {
+      "path": "game/assets/vector/icon_close.svg",
+      "width": 24,
+      "height": 24,
+      "sha256": "085f039df8ee8ba8d4956b1002e4efbfacaca228934d416f748c6dd35758a497",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "icon_tower": {
+      "path": "game/assets/vector/icon_tower.svg",
+      "width": 24,
+      "height": 24,
+      "sha256": "e151585b95493a73639f5acc2cc5d47f33b3ec9f585906ebc03d636b26962d58",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "icon_edit": {
+      "path": "game/assets/vector/icon_edit.svg",
+      "width": 24,
+      "height": 24,
+      "sha256": "2a355c5f67fc7298e819b00195c26c627a78393001f431f7ec0aa9ddd06b7d97",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "icon_featured": {
+      "path": "game/assets/vector/icon_featured.svg",
+      "width": 24,
+      "height": 24,
+      "sha256": "ae14b8fa7de2e458d5976eca69a541c59b1bf951cb85d82a2d46756e2f35e654",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "icon_lock": {
+      "path": "game/assets/vector/icon_lock.svg",
+      "width": 24,
+      "height": 24,
+      "sha256": "0e7173f692c10a06992becf52d155c3631da15ab8be5d2821a4f2d26c90af230",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "icon_audio": {
+      "path": "game/assets/vector/icon_audio.svg",
+      "width": 24,
+      "height": 24,
+      "sha256": "1edc9ab3dd5bbcc0f67415dc2b3157c8bded5196c2d0fa987193816bb85bdf34",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "icon_check": {
+      "path": "game/assets/vector/icon_check.svg",
+      "width": 24,
+      "height": 24,
+      "sha256": "aef7d1b8b2da62a34365b589108f75856d25899c870121eb727a1e61be943f06",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "icon_chevron": {
+      "path": "game/assets/vector/icon_chevron.svg",
+      "width": 24,
+      "height": 24,
+      "sha256": "f60ae21719b63c12b1d8c77b55436181f9bdf04eb3b6d25f696340fe1ac458cc",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "icon_layers": {
+      "path": "game/assets/vector/icon_layers.svg",
+      "width": 24,
+      "height": 24,
+      "sha256": "a6be70ec6397001e40d937be9e9d6528067f64c2d72104ee11d13d56527622a6",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "wood_floor": {
+      "path": "game/assets/vector/wood_floor.svg",
+      "width": 160,
+      "height": 40,
+      "sha256": "1d0b4ee20b9c9cca5ab8158c7d6044369dbcf5078d1a62d767ab0380d534bbe2",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "wood_cornice": {
+      "path": "game/assets/vector/wood_cornice.svg",
+      "width": 160,
+      "height": 12,
+      "sha256": "fdfcd211e8de99340c307edd3dbbf4d647a41d2cc9435ef8c268301880a3bf87",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "wood_roof": {
+      "path": "game/assets/vector/wood_roof.svg",
+      "width": 160,
+      "height": 42,
+      "sha256": "02b1173b66dd8cf33b1949c21c7d7df3b3418fcdc636366e62cff5cf4dcdb2cc",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    },
+    "wood_base": {
+      "path": "game/assets/vector/wood_base.svg",
+      "width": 160,
+      "height": 24,
+      "sha256": "6630a54e9a964ea5edd87eb508685e10f4eb983293bd3b7dc9cdf0191181847f",
+      "origin": "Original project vector geometry",
+      "source": "art_source/build_vector_assets.py"
+    }
+  }
+}

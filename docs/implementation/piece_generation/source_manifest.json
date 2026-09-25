@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-21",
+  "files": [
+    {
+      "path": "game/scripts/core/generation/piece_generator.gd",
+      "sha256": "8269aac211aff3a180792d88e00cf03ee3dbe1e136fa1a294383f23a844431c0"
+    },
+    {
+      "path": "game/scripts/core/generation/piece_generator_config.gd",
+      "sha256": "f8ea818984d9d0308b35d3cf0c5128448a98aa363f7f9749abd32ea513b8110d"
+    },
+    {
+      "path": "game/scripts/core/piece_supply.gd",
+      "sha256": "f2a185fd6132a5f4ef9fadb2b25a33924bbf258542a9c0b8d0e39d96b1cdae84"
+    },
+    {
+      "path": "game/data/piece_generator_default.tres",
+      "sha256": "caa0fb1a54bbf5c43fee5752dfb1bba8c600a8a5cf60f8f782ea522bef32d9db"
+    },
+    {
+      "path": "game/scripts/core/contracts/piece_generation_contract.md",
+      "sha256": "cc209c137c0590c57265a3ff246ccfcbd0dafe2db32abdd8392bf723c515881d"
+    },
+    {
+      "path": "game/tests/unit/test_piece_generator.gd",
+      "sha256": "2714e59602cba2a01e137c964b1ad0e15f7049ebb7a29739db3722f223bb8fa5"
+    },
+    {
+      "path": "game/tests/simulation/piece_generator_simulation.gd",
+      "sha256": "bf109c08f01b5becb33a8a2d239b2b49bf6de62e7046703a109dd088c29a23f2"
+    },
+    {
+      "path": "tools/simulate_piece_generator.ps1",
+      "sha256": "41c8cc86c9bfd3b026509b90f672eaf7ecbcb08fb8d4cde954385c94e56374ab"
+    },
+    {
+      "path": "tools/test.ps1",
+      "sha256": "1cd20565af41a2f6393fcd5d0658cfdf0c4b7c9184b63d41a05951409f18cb42"
+    },
+    {
+      "path": "tools/common.ps1",
+      "sha256": "add0871234c4d66ce5b32ab8aa35648517e6fdb6a354b6fd811673378087de37"
+    },
+    {
+      "path": "tools/engine_provenance.json",
+      "sha256": "71c5653f1ccc659c321a1655295c60bee35016292c3bb6a6c66cf617dd840756"
+    }
+  ]
+}

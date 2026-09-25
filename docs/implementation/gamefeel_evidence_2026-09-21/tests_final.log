@@ -1,0 +1,200 @@
+[blocktower] engine: C:\DEV\tools\godot\4.7.2\Godot_v4.7.2-stable_win64_console.exe
+[blocktower] engine version OK: 4.7.2.stable.official.ed1daf0bf
+[blocktower] engine binary hash OK: c8f0a6bc45a19b33541501e57f6f7cd972ab18453743266339d495cbbe846643
+[blocktower] GUT 9.7.1 pinned OK (146 source files, commit aeb5d4f3f7f0a6c9b5e178876d6c99b791fda605)
+[blocktower] headless import
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] first_scan_filesystem | Started 프로젝트 초기화 (5 steps)
+[   0% ] first_scan_filesystem | 파일 구조 스캔 중...
+[  16% ] first_scan_filesystem | 전역 클래스 이름을 불러오는 중...
+[  33% ] first_scan_filesystem | GDExtensions 검증 중...
+[  50% ] first_scan_filesystem | 오토로드 스크립트를 만드는 중...
+[  66% ] first_scan_filesystem | 플러그인을 초기화 중...
+[  83% ] first_scan_filesystem | 파일 스캔 시작 중...
+[ DONE ] first_scan_filesystem
+
+[   0% ] update_scripts_classes | Started 전역 클래스를 등록하는 중... (4 steps)
+[   0% ] update_scripts_classes | 
+[  20% ] update_scripts_classes | 
+[  40% ] update_scripts_classes | 
+[  60% ] update_scripts_classes | 
+[ DONE ] update_scripts_classes
+
+[   0% ] loading_editor_layout | Started 편집기를 불러오는 중 (5 steps)
+[   0% ] loading_editor_layout | 편집기 레이아웃을 불러오는 중...
+[  16% ] loading_editor_layout | 독을 불러오는 중...
+[ DONE ] loading_editor_layout
+
+
+
+[blocktower] GUT run: res://tests/unit
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+---  GUT  ---
+[INFO]:  using [C:/Users/batis/AppData/Roaming/Godot/app_userdata/Blocktower] for temporary output.
+Godot version:  4.7.2
+GUT version:  9.7.1
+
+
+res://tests/unit/test_design_preview.gd
+* test_auto_cancel_preserves_pending_lines_and_restores_focus
+* test_confirm_and_navigation_are_preview_only_transitions
+2/2 passed.
+
+
+res://tests/unit/test_file_save.gd
+* test_disk_roundtrip_new_repository_and_growth_integer_precision
+* test_corrupt_latest_recovers_previous_preserves_bytes_before_next_commit
+* test_both_corrupt_and_future_versions_never_start_over
+* test_future_schema_and_policy_mismatch_block_fallback_to_supported_slot
+* test_codec_rejects_bad_hash_types_utf8_and_noncanonical_ints
+* test_inactive_generation_removal_and_publication_faults_recover_whole_state
+* test_real_write_path_failure_does_not_commit_or_publish
+* test_recovery_preservation_failure_keeps_damaged_original
+* test_stale_session_and_unobserved_recovery_cannot_overwrite
+* test_same_process_claim_busy_and_pending_only_initial_save
+* test_boot_uses_existing_identity_and_retains_recovery_notice
+* test_divergent_same_revision_and_session_identity_fail_closed
+* test_saved_v1_fixtures_roundtrip_and_replay_clear_exactly
+13/13 passed.
+
+
+res://tests/unit/test_game_session.gd
+* test_initial_supply_commits_before_exposure_and_resume_draws_nothing
+* test_invalid_placements_preserve_board_queue_score_rng_and_event_id
+* test_manual_crossing_clear_counts_union_and_keeps_tray_checkpoint
+* test_full_board_clear_sixteen_lines_and_two_segment_crossings
+* test_auto_confirmation_cancel_and_confirm_are_one_commit
+* test_auto_placement_detects_success_before_clear_and_refills_once
+* test_old_pending_line_does_not_count_as_new_batch_success
+* test_failed_save_rolls_back_refill_and_retry_matches_control
+* test_ambiguous_commit_requires_resume_and_never_reawards
+* test_competing_writer_cannot_overwrite_committed_state
+* test_duplicate_out_of_order_and_stale_batch_do_not_consume
+* test_new_run_preserves_growth_records_mode_and_advances_identity
+* test_materials_and_every_defined_part_have_cumulative_route
+* test_material_progress_counts_lower_tiers_and_unlocks_parts_same_event
+* test_segment_edits_representative_and_new_wood_segments_are_preserved
+* test_bad_snapshots_versions_numeric_types_and_styles_are_rejected
+* test_repository_reentrancy_is_rejected_until_commit_finishes
+* test_mid_tray_game_over_ends_streak_without_settling_or_losing_growth
+* test_action_sequence_replay_matches_across_forty_session_resumes
+* test_counter_boundary_rejects_entire_candidate_without_commit
+20/20 passed.
+
+
+res://tests/unit/test_piece_generator.gd
+* test_catalog_geometry_unique_connected_normalized_and_legacy_preserved
+* test_integer_ticket_boundaries_exhaustive
+* test_config_errors_and_defensive_snapshot
+* test_strict_int64_and_checkpoint_validation
+* test_bad_input_and_nonempty_tray_do_not_change_owned_state
+* test_post_clear_union_and_must_clear_before_game_over
+* test_exhaustive_512_local_masks_match_independent_coordinate_oracle
+* test_deterministic_json_resume_and_board_ownership
+* test_bounded_fallback_zero_weights_and_no_enabled_fit
+* test_raw_control_has_no_easy_injection_and_old_checkpoint_rejected
+* test_each_piece_fit_does_not_imply_whole_tray_solution
+* test_easy_fallback_and_replacement_slots_and_config_identity
+12/12 passed.
+
+
+res://tests/unit/test_piece_generator_redteam.gd
+* test_every_piece_at_every_legal_origin_has_current_witness
+* test_random_full_board_positive_and_negative_decisions_match_oracle
+* test_all_active_family_subsets_obey_conditional_guarantee
+* test_later_current_piece_beats_earlier_post_clear_piece_and_output_is_owned
+4/4 passed.
+
+
+res://tests/unit/test_piece_supply.gd
+* test_crossing_lines_count_as_two_and_keep_manual_clear_available
+* test_empty_tray_requires_refill_before_game_over
+* test_rng_roundtrip_preserves_next_batch
+* test_unknown_id_is_rejected_even_when_another_piece_fits
+* test_board_status_does_not_modify_input
+* test_integer_weight_boundaries_and_zero_weight
+6/6 passed.
+
+
+res://tests/unit/test_piece_supply_checks.gd
+* test_ported_baseline_checks_pass_on_game_target
+1/1 passed.
+
+
+res://tests/unit/test_presentation.gd
+* test_clear_geometry_contains_union_and_styles_before_automatic_removal
+* test_preview_uses_commit_validator_and_does_not_change_state
+* test_pointer_origin_and_owner_prevent_duplicate_or_clamped_drop
+* test_stale_drag_and_confirmation_never_commit_new_state
+* test_failed_commit_has_no_presentation_uncertainty_locks_until_attach
+* test_settings_roundtrip_is_separate_and_corrupt_original_is_preserved
+* test_real_screen_clear_and_interrupt_restore_input_and_exact_hud
+* test_screen_auto_modal_cancel_and_confirm_commit_once
+* test_back_closes_modal_then_tower_and_cancels_drag_without_commit
+* test_sixteen_line_payload_is_unique_and_precise
+* test_touch_cancellation_and_focus_loss_do_not_place_or_leave_drag
+* test_recovery_modal_cannot_be_dismissed_into_a_frozen_screen
+* test_new_run_from_tower_preserves_growth_and_resets_hud
+* test_audio_off_does_not_start_players_and_history_is_bounded
+* test_resize_preserves_mandatory_recovery_action
+* test_resumed_below_best_run_announces_first_new_record_once
+* test_tower_roof_tracks_actual_top_across_segment_boundary
+* test_assist_nearest_edge_hysteresis_and_exact_release_share_validator
+* test_assist_does_not_pull_from_outside_or_write_during_preview
+* test_assist_all_catalog_shapes_preview_and_commit_same_bottom_edge_cells
+* test_full_width_board_and_top_navigation_fit_compact_and_tall
+* test_clear_unlocks_before_tail_and_interruption_cannot_repeat_reward
+* test_compact_safe_insets_fit_board_and_action
+    24 Orphans
+        * [@Label@633:<Label#1748605339754>]
+        * [@Button@619:<Button#1746910841025>]
+        * [@Button@627:<Button#1748001360106>]
+        * [@Label@626:<Label#1747967805704>]
+        * [@Label@618:<Label#1746877286678>]
+        * [@Label@628:<Label#1748353681702>]
+        * [@Label@630:<Label#1748437567785>]
+        * [@Label@641:<Label#1748940884473>]
+        * [@Label@640:<Label#1748907330043>]
+        * [@Label@638:<Label#1748806666751>]
+        * [@Button@639:<Button#1748840221184>]
+        * [@Label@636:<Label#1748706003461>]
+        * [@Button@637:<Button#1748739557895>]
+        * [@Label@635:<Label#1748672449033>]
+        * [@Label@634:<Label#1748638894603>]
+        * [@Button@620:<Button#1747699370524>]
+        * [@Label@621:<Label#1747766479392>]
+        * [@Label@622:<Label#1747800033825>]
+        * [@Label@623:<Label#1747833588261>]
+        * [@Label@624:<Label#1747867142694>]
+        * [@Button@625:<Button#1747900697127>]
+        * [@Label@629:<Label#1748387236400>]
+        * [@Button@631:<Button#1748471122484>]
+        * [@Button@632:<Button#1748538231355>]
+* test_reward_stays_off_board_and_new_pick_restores_hint
+24/24 passed.
+
+
+
+
+==============================================
+= Run Summary
+==============================================
+
+Totals
+------
+Scripts               8
+Tests                82
+Passing Tests        82
+Asserts            2843
+Time              49.764s
+
+
+---- All tests passed! ----
+
+Results saved to C:/DEV/Games/Blocktower/tools/out/gut_unit.xml
+
+
+[blocktower] GUT result: suites=8 tests=82 failures=0 errors=0 pending=0 exit=0
+[PASS] W1 test run complete.

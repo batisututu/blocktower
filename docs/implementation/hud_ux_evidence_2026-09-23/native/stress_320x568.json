@@ -1,0 +1,150 @@
+{
+	"announcements": [
+		"[배치] +4점"
+	],
+	"board": "[P: (12.0, 107.2), S: (296.0, 296.0)]",
+	"checks": [
+		{
+			"check": "fixture committed",
+			"passed": true
+		},
+		{
+			"check": "stress action 0 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 1 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 2 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 3 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 4 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 5 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 6 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 7 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 8 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 9 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 10 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 11 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 12 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 13 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 14 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 15 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 16 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 17 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 18 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 19 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 20 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 21 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 22 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 23 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 24 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 25 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 26 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 27 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 28 returns idle",
+			"passed": true
+		},
+		{
+			"check": "stress action 29 returns idle",
+			"passed": true
+		},
+		{
+			"check": "native screenshot saved",
+			"passed": true
+		},
+		{
+			"check": "screen state equals session",
+			"passed": true
+		}
+	],
+	"floors": 7,
+	"grayscale": false,
+	"large_text": false,
+	"mode": "stress",
+	"revision": 31,
+	"safe_insets_24px": false,
+	"scenario": "stress",
+	"score": 770,
+	"size": "320x568",
+	"source": "Windows Godot OpenGL native viewport; not Android"
+}

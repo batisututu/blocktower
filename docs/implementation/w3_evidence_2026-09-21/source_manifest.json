@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-21",
+  "tests": 58,
+  "assertions": 2495,
+  "process_checks": 26,
+  "files": {
+    "game/data/piece_generator_default.tres": "caa0fb1a54bbf5c43fee5752dfb1bba8c600a8a5cf60f8f782ea522bef32d9db",
+    "game/project.godot": "5e73d8855f1cdc4ea8f74b85636aef5495b42e846be26c9586b463629c847747",
+    "game/scenes/app.tscn": "ce1de41599badc0b3482a58d0c5fa897ac371df820bca19e0fbcb98f2e6d40aa",
+    "game/scenes/main.tscn": "b1e4b14c902ce029984635952852f81ad3bb6104958d8c410fe64f4cfbe2c34b",
+    "game/scripts/application/app_root.gd": "738cdda690502795c655ba3bba51c53130854eb48fb4debad45c6f9c41eec091",
+    "game/scripts/application/saved_game.gd": "0c83a51955b66fac25ad6f6eead0b26dc6e09034b8440270814def40b879d615",
+    "game/scripts/core/contracts/file_save_contract.md": "1a6758dc91a336785dd8f6b1787a7505f905b9068bd0a03981824ed150393a10",
+    "game/scripts/core/contracts/game_session_contract.md": "007863301d1feecfe515b49bdcb470875847d2b530e8f55c40d69441bd65eb81",
+    "game/scripts/core/contracts/piece_generation_contract.md": "cc209c137c0590c57265a3ff246ccfcbd0dafe2db32abdd8392bf723c515881d",
+    "game/scripts/core/game_session.gd": "bdbd62aaa26e88864ce6d844ab923d32dfcfe5ada02bf4dfe7b984d2addc2fc4",
+    "game/scripts/core/generation/piece_generator.gd": "8269aac211aff3a180792d88e00cf03ee3dbe1e136fa1a294383f23a844431c0",
+    "game/scripts/core/generation/piece_generator_config.gd": "f8ea818984d9d0308b35d3cf0c5128448a98aa363f7f9749abd32ea513b8110d",
+    "game/scripts/core/growth_rules.gd": "b283952836ce870ff39efc7c651d67622427a41a824e4139b50eb6c941c5edc5",
+    "game/scripts/core/memory_save_repository.gd": "62d0c5884135af05b51d6892a08ff14017da9110eb2437a175d96d83f91e85c5",
+    "game/scripts/persistence/file_save_repository.gd": "906465c21eeea9292ba2b375d2ea5ee529274f9955bd75cd77004eba039f1808",
+    "game/scripts/persistence/save_codec.gd": "2c354f9e0f361708a1454a5e673975b0a0a16c192c292093912822e8fb43be32",
+    "game/tests/fixtures/save_v1_cleared_cross.json": "b8bb436094444d9e2656b777570c0b37ee22aef3cbb3a017f10db05fca6f231f",
+    "game/tests/fixtures/save_v1_pending_cross.json": "cec835eb1bc7b5f5edd0e1ff957260342ed2b3abf66c0eb0559101b49ae9ddcc",
+    "game/tests/integration/save_process_probe.gd": "37588967e61f0d31132fe3413c5d848f72c80590a8c0e4b3fa66a55f1f1a046b",
+    "game/tests/unit/test_file_save.gd": "7582a5dacbca03b0eb7060e36cd06d83ddc4b7fd74565fda1a06228170cdda44",
+    "tools/run.ps1": "a975fa285ec0d0386a26d02efee50e121c22653234c206f11b25c41b93acffee",
+    "tools/verify_save_restart.py": "4dd4eecd0e7ee27771a3d894b5f56d83a824e7b5c15d1ae1d55271c64b28b519"
+  }
+}

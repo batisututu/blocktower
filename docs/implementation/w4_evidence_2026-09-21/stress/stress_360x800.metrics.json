@@ -1,0 +1,8 @@
+{
+	"actions": 30,
+	"dispatch_max_ms": 46.836,
+	"dispatch_p95_ms": 42.81,
+	"next_frame_max_ms": 24.587,
+	"next_frame_p95_ms": 15.947,
+	"scope": "Windows host observation including sync file commit, not mobile budget or GPU-only time"
+}

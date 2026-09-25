@@ -1,0 +1,54 @@
+{
+  "source": "Original project additive synthesis; no external samples",
+  "generator": "art_source/w4/build_audio.py",
+  "files": [
+    {
+      "file": "game/assets/audio/pick.wav",
+      "sample_rate": 44100,
+      "channels": 1,
+      "duration": 0.065,
+      "peak": 0.09659108249153112,
+      "sha256": "6c00365a8fed55de07f44ec2fc7394b17d6407989c4ce838f2ad9a881df3da57"
+    },
+    {
+      "file": "game/assets/audio/snap.wav",
+      "sample_rate": 44100,
+      "channels": 1,
+      "duration": 0.12,
+      "peak": 0.1805169835505234,
+      "sha256": "566c53a45d67495b296f48023a29d6c31d2a93149151df236ebeff4885e8ec79"
+    },
+    {
+      "file": "game/assets/audio/reject.wav",
+      "sample_rate": 44100,
+      "channels": 1,
+      "duration": 0.09,
+      "peak": 0.08499404889065218,
+      "sha256": "d52972150754716ee3aa74faa080d7728b26a958c1002a1f8f65f36e539a3d70"
+    },
+    {
+      "file": "game/assets/audio/clear.wav",
+      "sample_rate": 44100,
+      "channels": 1,
+      "duration": 0.3,
+      "peak": 0.3610339671010468,
+      "sha256": "feb414ac15c17b136b1166018d1697421196aabacad619edf740f0bc6cb880a2"
+    },
+    {
+      "file": "game/assets/audio/lock.wav",
+      "sample_rate": 44100,
+      "channels": 1,
+      "duration": 0.36,
+      "peak": 0.2683492538224433,
+      "sha256": "64555e22f00e018784a4d29ccc53b1b1890f9cb4670d7dae22517fed74c5aebf"
+    },
+    {
+      "file": "game/assets/audio/over.wav",
+      "sample_rate": 44100,
+      "channels": 1,
+      "duration": 0.42,
+      "peak": 0.14056825464644307,
+      "sha256": "0a309361455c587ec833c14199d07de9ee50988ad63b3dcec5037a2a8ded8942"
+    }
+  ]
+}

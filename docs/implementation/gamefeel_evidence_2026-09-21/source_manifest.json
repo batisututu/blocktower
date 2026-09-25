@@ -1,0 +1,14 @@
+{
+  "game/scripts/presentation/puzzle_screen.gd": "92559ad545ac68664da3a8bd0e2e63c119e7402fa08981644d63c55f6c7f1745",
+  "game/scripts/presentation/presentation_controller.gd": "a1540f051a4d88ef6ee43114d43112348d277d956565540124537c2590ea619b",
+  "game/scripts/presentation/board_effects.gd": "8507482600a65207bc3762d35ce0aff8ec78544d1c22368e4c067e00f717f832",
+  "game/scripts/presentation/feedback_tokens.gd": "b22231a99ca7f6985bb2bd700a6ae732304723b275096ec99dc633a777dce6b3",
+  "game/scripts/presentation/feedback_player.gd": "91e8ae06be0d96712d2e2d6984ef31639b4bb441eb631be589ef0e449478fb08",
+  "game/project.godot": "67a9ea556b86bdeed22e084410b05442eadfcdbb392c3d9f08b5471b11e6e5c7",
+  "game/export_presets.cfg": "cf80d89c8121ec4d29c38c15715412bfa08de7a79b2de5681722244a0e67a273",
+  "game/tests/integration/presentation_probe.gd": "9650a0c9fd44b5b3cd8d4534c8e9ed30fa394aba9357960211ac6ff7b6ae115e",
+  "game/tests/integration/inset_puzzle_screen.gd": "d7ddc12ab913727be68c9086e2dcd9ffd05c8dcd5d388dbe8ebee806ff235e7e",
+  "game/tests/unit/test_presentation.gd": "e9af2e12699680720bf4e7832c5467527d645ea599a604edcf70a4d58cc254f4",
+  "art_source/gamefeel/build_audio.py": "543eae1fb225fdb587d627a98cb1fdc6fdbc02a700cb7b427644f6b2af094ba3",
+  "game/scripts/core/contracts/presentation_contract.md": "d46386e107b1d0980b2f65e7461866741b18ac2136ac73e4c69abc1abce6a72e"
+}

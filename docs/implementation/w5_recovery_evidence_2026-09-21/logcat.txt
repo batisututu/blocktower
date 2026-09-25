@@ -1,0 +1,4 @@
+--------- beginning of main
+09-21 18:37:06.379 10196 10235 I godot   : Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+09-21 18:37:09.494 10196 10235 I godot   : OpenGL API OpenGL ES 3.2 V@0502.11.5 (GIT@db7e7066a2, I1fad33e957, 1746950372) (Date:05/11/25) - Compatibility - Using Device: Qualcomm - Adreno (TM) 650
+09-21 18:37:09.575 10196 10235 I godot   : 

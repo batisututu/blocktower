@@ -1,0 +1,27 @@
+{
+	"board": "[P: (56.0, 204.96), S: (248.0, 248.0)]",
+	"checks": [
+		{
+			"check": "fixture committed",
+			"passed": true
+		},
+		{
+			"check": "exact acquired floor count and top",
+			"passed": true
+		},
+		{
+			"check": "native screenshot saved",
+			"passed": true
+		},
+		{
+			"check": "screen state equals session",
+			"passed": true
+		}
+	],
+	"floors": 1,
+	"mode": "tower_1",
+	"revision": 1,
+	"score": 0,
+	"size": "360x800",
+	"source": "Windows Godot OpenGL native viewport; not Android"
+}

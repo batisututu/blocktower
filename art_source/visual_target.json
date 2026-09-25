@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "updated": "2026-09-21",
+  "status": "board_first_gamefeel_windows_verified_single_device_smoke_pass",
+  "visual_authority": {
+    "path": "docs/디자인시안.png",
+    "width": 1222,
+    "height": 1287,
+    "sha256": "f3a00233f60098fa27cc270bc6add4a67be5b5c7884620b209fa89981d395330",
+    "rgba_pixel_sha256": "6b1bf4a15f31cfaf5b664caad436bbccdeb6b620d430a8513143c0aaf318b8b5",
+    "matches_user_attachment_pixels": true
+  },
+  "variant": {
+    "options": [
+      "A1_classic_urban",
+      "B2_structural_warm",
+      "C3_stone_cool"
+    ],
+    "working_proposal": "B2_structural_warm",
+    "user_selection": "B2_structural_warm",
+    "selection_status": "user_confirmed_B_2026-09-21_direction_only"
+  },
+  "scope": {
+    "logical_viewport_proposal": [
+      360,
+      800
+    ],
+    "additional_review_sizes": [
+      [
+        320,
+        568
+      ],
+      [
+        412,
+        915
+      ]
+    ],
+    "board": [
+      8,
+      8
+    ],
+    "existing_preview": "functional_layout_fixture_only",
+    "full_game_screenshot_as_runtime_ui": false,
+    "skin_must_not_change_rewards": true,
+    "playable_scene": "game/scenes/app.tscn"
+  },
+  "reference_regions_px": {
+    "note": "Approximate hand-observed reference regions for review, not production assets or final layout coordinates.",
+    "puzzle_A1": [
+      19,
+      627,
+      302,
+      444
+    ],
+    "puzzle_B2": [
+      324,
+      627,
+      301,
+      444
+    ],
+    "puzzle_C3": [
+      628,
+      627,
+      299,
+      444
+    ],
+    "tower_wood": [
+      948,
+      628,
+      127,
+      193
+    ]
+  },
+  "production_items": [
+    {
+      "id": "VR01",
+      "name": "Full screen layered composition",
+      "source_directory": "art_source/visual_bible",
+      "planned_runtime_directory": "game/assets/visual_bible",
+      "status": "windows_detailed_art_reviewed",
+      "required": "Independent editable background, board, tray, score, controls and text; same art direction as reference",
+      "w4_evidence": "docs/implementation/W4_Presentation_Report_2026-09-21.md",
+      "fidelity_evidence": "docs/implementation/Visual_Fidelity_Report_2026-09-21.md"
+    },
+    {
+      "id": "VR02",
+      "name": "Textured beveled block set",
+      "source_directory": "art_source/visual_bible",
+      "planned_runtime_directory": "game/assets/visual_bible",
+      "status": "windows_detailed_art_reviewed",
+      "required": "Six colors preserve framed bevel, local shading and architectural surface detail; state overlays separate",
+      "w4_evidence": "docs/implementation/W4_Presentation_Report_2026-09-21.md",
+      "fidelity_evidence": "docs/implementation/Visual_Fidelity_Report_2026-09-21.md"
+    },
+    {
+      "id": "VR03",
+      "name": "Architectural background",
+      "source_directory": "art_source/visual_bible",
+      "planned_runtime_directory": "game/assets/visual_bible",
+      "status": "windows_detailed_art_reviewed",
+      "required": "Architectural outlines, depth, ground light and material palette; viewport crop plan",
+      "w4_evidence": "docs/implementation/W4_Presentation_Report_2026-09-21.md",
+      "fidelity_evidence": "docs/implementation/Visual_Fidelity_Report_2026-09-21.md"
+    },
+    {
+      "id": "VR04",
+      "name": "Textured HUD theme",
+      "source_directory": "art_source/visual_bible",
+      "planned_runtime_directory": "game/assets/visual_bible",
+      "status": "windows_detailed_art_reviewed",
+      "required": "Score, tray, button, toggle, icon containers; nine-slice margins and normal/pressed/disabled/focus",
+      "w4_evidence": "docs/implementation/W4_Presentation_Report_2026-09-21.md",
+      "fidelity_evidence": "docs/implementation/Visual_Fidelity_Report_2026-09-21.md"
+    },
+    {
+      "id": "VR05",
+      "name": "Wood tower render modules",
+      "source_directory": "art_source/visual_bible",
+      "planned_runtime_directory": "game/assets/visual_bible",
+      "status": "windows_detailed_art_reviewed",
+      "required": "Editable 3D source, pinned camera/light, base/floor/window/cornice/roof/decor, matching anchors and alpha; 1/9/10/11 floors",
+      "w4_evidence": "docs/implementation/W4_Presentation_Report_2026-09-21.md",
+      "fidelity_evidence": "docs/implementation/Visual_Fidelity_Report_2026-09-21.md"
+    },
+    {
+      "id": "VR06",
+      "name": "Feedback states",
+      "source_directory": "game/scripts/presentation",
+      "planned_runtime_directory": "game/scripts/presentation",
+      "status": "windows_states_checked_full_experience_pending",
+      "required": "Valid/invalid/ready/cross/sweep/growth states, timing and reduced-motion equivalents",
+      "w4_evidence": "docs/implementation/W4_Presentation_Report_2026-09-21.md",
+      "fidelity_evidence": "docs/implementation/Visual_Fidelity_Report_2026-09-21.md"
+    }
+  ],
+  "gates": [
+    {
+      "id": "G_REF",
+      "status": "pass",
+      "evidence": "Source image inspected and attachment RGBA pixels matched"
+    },
+    {
+      "id": "G_RESEARCH",
+      "status": "pass",
+      "evidence": "docs/design/Reference_Research_2026-09-21.md"
+    },
+    {
+      "id": "G_VARIANT",
+      "status": "pass",
+      "evidence": "User selected B안 on 2026-09-21; art_source/w4/direction.md"
+    },
+    {
+      "id": "G_ART",
+      "status": "pass_scoped_b_windows",
+      "evidence": "docs/implementation/Visual_Fidelity_Report_2026-09-21.md",
+      "scope": "B refinement, native Windows captures; approved adaptation, not pixel identity or user final approval; historical B-art evidence only, not current user/gamefeel acceptance"
+    },
+    {
+      "id": "G_ENGINE_FIDELITY",
+      "status": "pass_scoped_b_windows",
+      "evidence": "docs/implementation/Visual_Fidelity_Report_2026-09-21.md",
+      "scope": "B refinement, native Windows captures; approved adaptation, not pixel identity or user final approval; historical B-art evidence only, not current user/gamefeel acceptance"
+    },
+    {
+      "id": "G_DEVICE",
+      "status": "version3_single_device_smoke_pass",
+      "evidence": "docs/implementation/GameFeel_Device_Verification_2026-09-21.md",
+      "scope": "SM-N981N Android13 install/UI/input/manual and auto clear/persistence;26checks; human audio/haptics and whole-release acceptance pending"
+    }
+  ],
+  "layout_authority_override": {
+    "date": "2026-09-21",
+    "source": "User rejected real-device screenshot: move tower/settings above board and fill screen width",
+    "direction": "art_source/gamefeel/direction.md",
+    "board_width": "viewport_width - 24 logical px",
+    "historical_side_rails": "superseded by explicit user request",
+    "evidence": "docs/implementation/GameFeel_Improvement_Report_2026-09-21.md"
+  }
+}

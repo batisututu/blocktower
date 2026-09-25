@@ -1,0 +1,511 @@
+{
+  "date": "2026-09-21",
+  "scope": "W4 tested source/assets plus executable test tooling; excludes editor cache",
+  "files": [
+    {
+      "path": "art_source/w4/background_prompt.txt",
+      "bytes": 990,
+      "sha256": "6397b54227e9b666b3c58f31a1154997156d4041a593d3cf8b07dec9a09d6f00"
+    },
+    {
+      "path": "art_source/w4/build_audio.py",
+      "bytes": 1843,
+      "sha256": "97cccb80d2bdbc0b40339ebb090dda03172432149d709cda9a522b2a42a52950"
+    },
+    {
+      "path": "art_source/w4/direction.md",
+      "bytes": 2114,
+      "sha256": "1b8de29fffa6f4b4f2030ae352996b13a62f4a01ee5d61073c2cf1ca9bca0073"
+    },
+    {
+      "path": "art_source/w4/manifest.json",
+      "bytes": 3955,
+      "sha256": "d48e9e1db34328ecbde31fc31cef75e05d82ca695f1610cea32da30b08740d84"
+    },
+    {
+      "path": "art_source/w4/render_tower.gd",
+      "bytes": 4843,
+      "sha256": "69d0cbae4ad602336f43fc255822a202e6f80619696d65aa35bb06be60cc3f6c"
+    },
+    {
+      "path": "game/assets/audio/clear.wav",
+      "bytes": 26504,
+      "sha256": "feb414ac15c17b136b1166018d1697421196aabacad619edf740f0bc6cb880a2"
+    },
+    {
+      "path": "game/assets/audio/clear.wav.import",
+      "bytes": 485,
+      "sha256": "9f5a2dee116ca8e4ca3bcbcc2dce999be0386cd9e767c4b0edc3b93ca926f0c4"
+    },
+    {
+      "path": "game/assets/audio/lock.wav",
+      "bytes": 31796,
+      "sha256": "64555e22f00e018784a4d29ccc53b1b1890f9cb4670d7dae22517fed74c5aebf"
+    },
+    {
+      "path": "game/assets/audio/lock.wav.import",
+      "bytes": 483,
+      "sha256": "7a1fb8e365055c772d65fddea256e5f573afedd17774882ee2c817e75520a1ce"
+    },
+    {
+      "path": "game/assets/audio/manifest.json",
+      "bytes": 1681,
+      "sha256": "658c05cd917269d1f6d93ace4d7bb5f30af0143c6f0f03fe926709d9ede742e9"
+    },
+    {
+      "path": "game/assets/audio/over.wav",
+      "bytes": 37088,
+      "sha256": "0a309361455c587ec833c14199d07de9ee50988ad63b3dcec5037a2a8ded8942"
+    },
+    {
+      "path": "game/assets/audio/over.wav.import",
+      "bytes": 482,
+      "sha256": "4f09b7a14f535123b05e8a9bbd5d7b899c1999640ecd4393bf3a5b1ef7127908"
+    },
+    {
+      "path": "game/assets/audio/pick.wav",
+      "bytes": 5776,
+      "sha256": "6c00365a8fed55de07f44ec2fc7394b17d6407989c4ce838f2ad9a881df3da57"
+    },
+    {
+      "path": "game/assets/audio/pick.wav.import",
+      "bytes": 483,
+      "sha256": "0e4f28936bfbd16a06594bd9e1c2d5154dc1623e7ab705bcb830de259fa67b70"
+    },
+    {
+      "path": "game/assets/audio/reject.wav",
+      "bytes": 7982,
+      "sha256": "d52972150754716ee3aa74faa080d7728b26a958c1002a1f8f65f36e539a3d70"
+    },
+    {
+      "path": "game/assets/audio/reject.wav.import",
+      "bytes": 489,
+      "sha256": "f291525274c475b602efd8629071c578e79aad26e5a800e8b9a9c16b7c250a89"
+    },
+    {
+      "path": "game/assets/audio/snap.wav",
+      "bytes": 10628,
+      "sha256": "566c53a45d67495b296f48023a29d6c31d2a93149151df236ebeff4885e8ec79"
+    },
+    {
+      "path": "game/assets/audio/snap.wav.import",
+      "bytes": 482,
+      "sha256": "2e67ab50f718027f998c33f5d60af4ba35f45d13c0281a47193f1b1793fbd5b7"
+    },
+    {
+      "path": "game/assets/presentation/architecture_b.png",
+      "bytes": 1951023,
+      "sha256": "ec16f73feaea38f5b242379736e34adbb0247383fbddea4361715c0d6aede4d1"
+    },
+    {
+      "path": "game/assets/presentation/architecture_b.png.import",
+      "bytes": 966,
+      "sha256": "43ddce406743d87b50bac6a7732bda569b733118b5aa5607144b36df2b744e64"
+    },
+    {
+      "path": "game/assets/presentation/tower/base.png",
+      "bytes": 4308,
+      "sha256": "64c31aa982ed00b564cdaa383b683db8809c4ebf951f3c820313cd69646e81e0"
+    },
+    {
+      "path": "game/assets/presentation/tower/base.png.import",
+      "bytes": 941,
+      "sha256": "e4ac8166b3b2a999878d3384913fe9a78ddf82d5f7426b67226ea019bd78ffd0"
+    },
+    {
+      "path": "game/assets/presentation/tower/cornice.png",
+      "bytes": 2023,
+      "sha256": "719aa6e96e05f2ca5ff90428ba2a93fd7ea3cdaef8cac89bdb33c8ad3ab5cb1b"
+    },
+    {
+      "path": "game/assets/presentation/tower/cornice.png.import",
+      "bytes": 951,
+      "sha256": "8dbb6cb0640ae909636a05d62dd5b31309291b303d88358bb3921a174b602c77"
+    },
+    {
+      "path": "game/assets/presentation/tower/floor.png",
+      "bytes": 10166,
+      "sha256": "5b329ca18569627d6a2aaf223a43d2cff93d3c52dbe4d284e5acb1fb42c87e5f"
+    },
+    {
+      "path": "game/assets/presentation/tower/floor.png.import",
+      "bytes": 944,
+      "sha256": "541ddc6134e2628663fe6942a95298a2beea9f5d4cdf405d6eff33764d03a5ad"
+    },
+    {
+      "path": "game/assets/presentation/tower/geometry.json",
+      "bytes": 359,
+      "sha256": "26a0bd75c4b3a63190b76ccc3a0c98cc63d3fc934a4e3f86174efd57807e6df4"
+    },
+    {
+      "path": "game/assets/presentation/tower/roof.png",
+      "bytes": 7528,
+      "sha256": "170aef9e675092cf70c311f6f281ee546c503473192d566050f9e081729248ad"
+    },
+    {
+      "path": "game/assets/presentation/tower/roof.png.import",
+      "bytes": 941,
+      "sha256": "762b8b6d9b5bde3194f142e0e1be0d75358543bd5f70f1521fb6c413714aa001"
+    },
+    {
+      "path": "game/project.godot",
+      "bytes": 758,
+      "sha256": "5e73d8855f1cdc4ea8f74b85636aef5495b42e846be26c9586b463629c847747"
+    },
+    {
+      "path": "game/scenes/app.tscn",
+      "bytes": 182,
+      "sha256": "310da5c1eb1ee594b91ac6b7d4eacc78576032c2ee54dc7b40670e7760b54528"
+    },
+    {
+      "path": "game/scenes/main.tscn",
+      "bytes": 305,
+      "sha256": "b1e4b14c902ce029984635952852f81ad3bb6104958d8c410fe64f4cfbe2c34b"
+    },
+    {
+      "path": "game/scripts/application/app_root.gd",
+      "bytes": 2857,
+      "sha256": "33164f212eff9d388090881c5bc87fc031d5071f61bfcb907dacd01f54c51dbf"
+    },
+    {
+      "path": "game/scripts/application/app_root.gd.uid",
+      "bytes": 20,
+      "sha256": "6c8938ff772d4c6e815d7d9e3557cc227c69be14277d24a07c78656d07e5473a"
+    },
+    {
+      "path": "game/scripts/application/saved_game.gd",
+      "bytes": 1479,
+      "sha256": "0c83a51955b66fac25ad6f6eead0b26dc6e09034b8440270814def40b879d615"
+    },
+    {
+      "path": "game/scripts/application/saved_game.gd.uid",
+      "bytes": 19,
+      "sha256": "d39eea9cba3b682b4541653fa35d0cb56ebef4943f1bc6f50b91b81f216f90ac"
+    },
+    {
+      "path": "game/scripts/core/contracts/file_save_contract.md",
+      "bytes": 5202,
+      "sha256": "1a6758dc91a336785dd8f6b1787a7505f905b9068bd0a03981824ed150393a10"
+    },
+    {
+      "path": "game/scripts/core/contracts/game_session_contract.md",
+      "bytes": 7204,
+      "sha256": "5c616cccb4fcc5f7f996ec6860fafde566fba0ce1b3e9b2fb53f4650b2ac4a53"
+    },
+    {
+      "path": "game/scripts/core/contracts/piece_generation_contract.md",
+      "bytes": 3754,
+      "sha256": "cc209c137c0590c57265a3ff246ccfcbd0dafe2db32abdd8392bf723c515881d"
+    },
+    {
+      "path": "game/scripts/core/contracts/presentation_contract.md",
+      "bytes": 3621,
+      "sha256": "f097f428d8cd89ba51830ae062a0b155b454bf3ca901fc69efa13527526a87a8"
+    },
+    {
+      "path": "game/scripts/core/game_session.gd",
+      "bytes": 18310,
+      "sha256": "bdd758cbfda34ab9b97b53431b57a034b5d67be33c7d7db787551adccac11742"
+    },
+    {
+      "path": "game/scripts/core/game_session.gd.uid",
+      "bytes": 20,
+      "sha256": "04f382e15c5bafc954de505a1afdc09654c615cc12f5c523382d408087b2017c"
+    },
+    {
+      "path": "game/scripts/core/generation/piece_generator.gd",
+      "bytes": 12754,
+      "sha256": "8269aac211aff3a180792d88e00cf03ee3dbe1e136fa1a294383f23a844431c0"
+    },
+    {
+      "path": "game/scripts/core/generation/piece_generator.gd.uid",
+      "bytes": 20,
+      "sha256": "c6c656793b34977cd9091a408331ec937c6d635300818df5c436897fc5959baf"
+    },
+    {
+      "path": "game/scripts/core/generation/piece_generator_config.gd",
+      "bytes": 478,
+      "sha256": "f8ea818984d9d0308b35d3cf0c5128448a98aa363f7f9749abd32ea513b8110d"
+    },
+    {
+      "path": "game/scripts/core/generation/piece_generator_config.gd.uid",
+      "bytes": 20,
+      "sha256": "13abcdb5e38f438a34235d84dd60cd8f259b8f00387bac0d0b92106ffe8e34db"
+    },
+    {
+      "path": "game/scripts/core/growth_rules.gd",
+      "bytes": 2093,
+      "sha256": "b283952836ce870ff39efc7c651d67622427a41a824e4139b50eb6c941c5edc5"
+    },
+    {
+      "path": "game/scripts/core/growth_rules.gd.uid",
+      "bytes": 19,
+      "sha256": "18147982ca9a9abba43193269a48778fe524ef37c81bccc2120efe56063c32ee"
+    },
+    {
+      "path": "game/scripts/core/memory_save_repository.gd",
+      "bytes": 851,
+      "sha256": "62d0c5884135af05b51d6892a08ff14017da9110eb2437a175d96d83f91e85c5"
+    },
+    {
+      "path": "game/scripts/core/memory_save_repository.gd.uid",
+      "bytes": 20,
+      "sha256": "0d18694df8807a935bd9674071d70cb5757eb000fdd01cf465ab61a9c331a1e4"
+    },
+    {
+      "path": "game/scripts/core/piece_supply.gd",
+      "bytes": 6300,
+      "sha256": "f2a185fd6132a5f4ef9fadb2b25a33924bbf258542a9c0b8d0e39d96b1cdae84"
+    },
+    {
+      "path": "game/scripts/core/piece_supply.gd.uid",
+      "bytes": 20,
+      "sha256": "d815973a055cc5029c62b55bd14bbc5dc41f38109fefd6814ae677b5bef8133d"
+    },
+    {
+      "path": "game/scripts/persistence/file_save_repository.gd",
+      "bytes": 11390,
+      "sha256": "906465c21eeea9292ba2b375d2ea5ee529274f9955bd75cd77004eba039f1808"
+    },
+    {
+      "path": "game/scripts/persistence/file_save_repository.gd.uid",
+      "bytes": 20,
+      "sha256": "42ca600e7155b0463db37dd4b961311b81424985ae14ad6e8ba0c4072e1870c1"
+    },
+    {
+      "path": "game/scripts/persistence/save_codec.gd",
+      "bytes": 5309,
+      "sha256": "2c354f9e0f361708a1454a5e673975b0a0a16c192c292093912822e8fb43be32"
+    },
+    {
+      "path": "game/scripts/persistence/save_codec.gd.uid",
+      "bytes": 20,
+      "sha256": "83f654af8b2c3673a5c4a97cc37d2e343460f0f54bc62a338616337de17143ce"
+    },
+    {
+      "path": "game/scripts/presentation/design_preview.gd",
+      "bytes": 18596,
+      "sha256": "dcac48c00103b0d08b82802b355f38b3ba808bf5cff5e2f2d0db32d7bfe712c6"
+    },
+    {
+      "path": "game/scripts/presentation/design_preview.gd.uid",
+      "bytes": 20,
+      "sha256": "c3371e5fcf34601f579a063eb9bb52747c406aedf778361c301c0a96321dc9f1"
+    },
+    {
+      "path": "game/scripts/presentation/feedback_player.gd",
+      "bytes": 1835,
+      "sha256": "c3285832d6eb3dc7ddd12a9825fc05287bda1d1e2adf48258b845a5fa8cb35ac"
+    },
+    {
+      "path": "game/scripts/presentation/feedback_player.gd.uid",
+      "bytes": 20,
+      "sha256": "52c2ab4b695eeac910ff965a5b3e98e50b6fc75f5ddd9fd32d1ce9bf63591a09"
+    },
+    {
+      "path": "game/scripts/presentation/feedback_tokens.gd",
+      "bytes": 262,
+      "sha256": "722a2250abb63664a45752574af16e5074c241714ab81e181e84593e36a11688"
+    },
+    {
+      "path": "game/scripts/presentation/feedback_tokens.gd.uid",
+      "bytes": 19,
+      "sha256": "d4f91c983a112dae1472d2fd201f6df5876bbdeb3f13d95563a9888a258db315"
+    },
+    {
+      "path": "game/scripts/presentation/presentation_controller.gd",
+      "bytes": 3573,
+      "sha256": "6c8338c8455817f7ef50167d6ee0c4538f69269722f227b01788c657c55891e2"
+    },
+    {
+      "path": "game/scripts/presentation/presentation_controller.gd.uid",
+      "bytes": 19,
+      "sha256": "16eabfe3591a2a7aa8193c57dfa8b04a87039fdee4d16b467330a98f7a562eff"
+    },
+    {
+      "path": "game/scripts/presentation/presentation_preferences.gd",
+      "bytes": 2420,
+      "sha256": "df0bfc5de134703d9e4930531d37fb37bd1de6c8daef333639373f1905be3342"
+    },
+    {
+      "path": "game/scripts/presentation/presentation_preferences.gd.uid",
+      "bytes": 20,
+      "sha256": "a6f87e38a438be4ab1c68a02ba9120d553159b8ea81afff1ce3537bd8658c263"
+    },
+    {
+      "path": "game/scripts/presentation/preview_fixtures.gd",
+      "bytes": 1986,
+      "sha256": "a3c8de0a3d17dbed856797ffc65a3621db381fc8034d9cfa46388e469f16e458"
+    },
+    {
+      "path": "game/scripts/presentation/preview_fixtures.gd.uid",
+      "bytes": 20,
+      "sha256": "04f17cb62485ad30778e899ca0a3b65efff47c16dcaf1c18c03b448762e112d0"
+    },
+    {
+      "path": "game/scripts/presentation/puzzle_screen.gd",
+      "bytes": 31646,
+      "sha256": "b02ee2c3996a9c16a54282f80ee8eec88c924303b19e397dea68faa31d4eff74"
+    },
+    {
+      "path": "game/scripts/presentation/puzzle_screen.gd.uid",
+      "bytes": 20,
+      "sha256": "b3641bad4cfc88dddb70df748543c342d10cfab6940b252a6b4fd53f17cd5437"
+    },
+    {
+      "path": "game/tests/fixtures/save_v1_cleared_cross.json",
+      "bytes": 1343,
+      "sha256": "b8bb436094444d9e2656b777570c0b37ee22aef3cbb3a017f10db05fca6f231f"
+    },
+    {
+      "path": "game/tests/fixtures/save_v1_pending_cross.json",
+      "bytes": 1338,
+      "sha256": "cec835eb1bc7b5f5edd0e1ff957260342ed2b3abf66c0eb0559101b49ae9ddcc"
+    },
+    {
+      "path": "game/tests/integration/presentation_probe.gd",
+      "bytes": 7549,
+      "sha256": "e357b3a798a18c36ea326fd278ca48ddfd649ff8604a47ae008ebbe7f2057b7c"
+    },
+    {
+      "path": "game/tests/integration/presentation_probe.gd.uid",
+      "bytes": 20,
+      "sha256": "2b3e59a3e7cb9c192a56c0c10b4398e1a54f086c3d75bb3422358b50e86cd40f"
+    },
+    {
+      "path": "game/tests/integration/save_process_probe.gd",
+      "bytes": 4427,
+      "sha256": "37588967e61f0d31132fe3413c5d848f72c80590a8c0e4b3fa66a55f1f1a046b"
+    },
+    {
+      "path": "game/tests/integration/save_process_probe.gd.uid",
+      "bytes": 20,
+      "sha256": "6b1674b1615b906d996041b4970b0f877c549be4204d96a4b377c62adb4a2dec"
+    },
+    {
+      "path": "game/tests/simulation/piece_generator_simulation.gd",
+      "bytes": 6641,
+      "sha256": "bf109c08f01b5becb33a8a2d239b2b49bf6de62e7046703a109dd088c29a23f2"
+    },
+    {
+      "path": "game/tests/simulation/piece_generator_simulation.gd.uid",
+      "bytes": 20,
+      "sha256": "ec2f2a224675b715b98abb20f5f4fd1abf049ac0b3946a0bd3430c423d76e559"
+    },
+    {
+      "path": "game/tests/support/piece_supply_checks.gd",
+      "bytes": 7160,
+      "sha256": "8b527710ecdb036ce109a457be9b2ddef1d3b5550473c74187f0a311f3152eca"
+    },
+    {
+      "path": "game/tests/support/piece_supply_checks.gd.uid",
+      "bytes": 18,
+      "sha256": "5babf13783fb852f839beb4620451f6a538a31dc0c68a5ca2c8c8543e361cfa8"
+    },
+    {
+      "path": "game/tests/unit/test_design_preview.gd",
+      "bytes": 2177,
+      "sha256": "4c724779055abfb5abfa4c13fd4cabbf90e3041af4efdfdb250ad9ae7ff0be59"
+    },
+    {
+      "path": "game/tests/unit/test_design_preview.gd.uid",
+      "bytes": 20,
+      "sha256": "c1d0b045e1617dfb2450369a08bbd1d1a6f0074f416c420322ec9bf2fd3b17f5"
+    },
+    {
+      "path": "game/tests/unit/test_file_save.gd",
+      "bytes": 11265,
+      "sha256": "7582a5dacbca03b0eb7060e36cd06d83ddc4b7fd74565fda1a06228170cdda44"
+    },
+    {
+      "path": "game/tests/unit/test_file_save.gd.uid",
+      "bytes": 20,
+      "sha256": "3703c5ca1d453a796b8a3d1f76c54f65dfa390eef0da85cd79efdc8514e0c55d"
+    },
+    {
+      "path": "game/tests/unit/test_game_session.gd",
+      "bytes": 18035,
+      "sha256": "deed62fc7e2fb824a663e6ec885bd39ad8b15f2534e3de0d47d47c17dc23d395"
+    },
+    {
+      "path": "game/tests/unit/test_game_session.gd.uid",
+      "bytes": 19,
+      "sha256": "d4049a8c91980413aacdcc99a29bc35401b190fb129b33f27f2e58faf06b0284"
+    },
+    {
+      "path": "game/tests/unit/test_piece_generator.gd",
+      "bytes": 12172,
+      "sha256": "2714e59602cba2a01e137c964b1ad0e15f7049ebb7a29739db3722f223bb8fa5"
+    },
+    {
+      "path": "game/tests/unit/test_piece_generator.gd.uid",
+      "bytes": 19,
+      "sha256": "ee40e252c14447a02fb0862f9e00b2f2b46b93f8bc0fd5d7cdfc4f5d4ab51f29"
+    },
+    {
+      "path": "game/tests/unit/test_piece_generator_redteam.gd",
+      "bytes": 5355,
+      "sha256": "2e233b8b4df92f4c02541ccec975d6a5e11befc4fdf298e713e356ffd57e7073"
+    },
+    {
+      "path": "game/tests/unit/test_piece_generator_redteam.gd.uid",
+      "bytes": 20,
+      "sha256": "c0b9706b68bbffc154dbb10c90a9d7dceab16b5134309352b223cb972f36bf5e"
+    },
+    {
+      "path": "game/tests/unit/test_piece_supply.gd",
+      "bytes": 2091,
+      "sha256": "4b91382874630dffb067e009444e7db7d0812d1819db53d885082d8e1b80dd0e"
+    },
+    {
+      "path": "game/tests/unit/test_piece_supply.gd.uid",
+      "bytes": 20,
+      "sha256": "c274ae2d668ad08e6cff6bba01f7b7cc0d614bc11a31454cf9e200f3e0dd292e"
+    },
+    {
+      "path": "game/tests/unit/test_piece_supply_checks.gd",
+      "bytes": 1201,
+      "sha256": "a05f3e632b53c23c014070a531dc940aca452f9426e36c95fb4f8e37b1f70721"
+    },
+    {
+      "path": "game/tests/unit/test_piece_supply_checks.gd.uid",
+      "bytes": 20,
+      "sha256": "e9c6549058cfb122405cf4d506afa3c47261c077e94fe26f1f93bb8a58f480c3"
+    },
+    {
+      "path": "game/tests/unit/test_presentation.gd",
+      "bytes": 11314,
+      "sha256": "eebfc5af657bfed38dbe3f20ad08e1bb171ed7c4578e7706b01b82ac33633ad5"
+    },
+    {
+      "path": "game/tests/unit/test_presentation.gd.uid",
+      "bytes": 20,
+      "sha256": "f473758153e49df822b4dd586e3442104734be79557e1bbacf079e7c8ead2aaa"
+    },
+    {
+      "path": "tools/engine_provenance.json",
+      "bytes": 3123,
+      "sha256": "71c5653f1ccc659c321a1655295c60bee35016292c3bb6a6c66cf617dd840756"
+    },
+    {
+      "path": "tools/run.ps1",
+      "bytes": 1262,
+      "sha256": "a975fa285ec0d0386a26d02efee50e121c22653234c206f11b25c41b93acffee"
+    },
+    {
+      "path": "tools/test.ps1",
+      "bytes": 5923,
+      "sha256": "1cd20565af41a2f6393fcd5d0658cfdf0c4b7c9184b63d41a05951409f18cb42"
+    },
+    {
+      "path": "tools/verify_presentation.py",
+      "bytes": 1968,
+      "sha256": "4c2804223f3c01469e7b574102ddbd164ed2f6f2efa8855f821fdb3194b5b6a5"
+    },
+    {
+      "path": "tools/verify_save_restart.py",
+      "bytes": 7489,
+      "sha256": "4dd4eecd0e7ee27771a3d894b5f56d83a824e7b5c15d1ae1d55271c64b28b519"
+    }
+  ]
+}

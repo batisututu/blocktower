@@ -1,0 +1,64 @@
+{
+	"announcements": [
+		"[완료] 2줄 · +240점 · +2층",
+		"구간 +1 · 해금 1종",
+		"기록 갱신"
+	],
+	"board": "[P: (12.0, 174.0), S: (336.0, 336.0)]",
+	"checks": [
+		{
+			"check": "fixture committed",
+			"passed": true
+		},
+		{
+			"check": "resume waits for focus",
+			"passed": true
+		},
+		{
+			"check": "old native button release cannot activate replacement",
+			"passed": true
+		},
+		{
+			"check": "fresh native touch can pick",
+			"passed": true
+		},
+		{
+			"check": "second finger cannot open settings during drag",
+			"passed": true
+		},
+		{
+			"check": "orphan touch release cannot place after resume",
+			"passed": true
+		},
+		{
+			"check": "clear tail settles without replay",
+			"passed": true
+		},
+		{
+			"check": "lifecycle never awards again",
+			"passed": true
+		},
+		{
+			"check": "real disk matches resumed HUD session",
+			"passed": true
+		},
+		{
+			"check": "native screenshot saved",
+			"passed": true
+		},
+		{
+			"check": "screen state equals session",
+			"passed": true
+		}
+	],
+	"floors": 11,
+	"grayscale": false,
+	"large_text": false,
+	"mode": "lifecycle",
+	"revision": 2,
+	"safe_insets_24px": false,
+	"scenario": "lifecycle",
+	"score": 240,
+	"size": "360x800",
+	"source": "Windows Godot OpenGL native viewport; not Android"
+}

@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-09-20",
+  "scope": "Isolated example checks only; target Godot 4.7.2 and game integration NOT verified",
+  "result": {
+    "checks": 109,
+    "engine": "4.6.1-stable (official)",
+    "failures": [],
+    "family_counts": {
+      "elbow3": 4782,
+      "elbow5": 2428,
+      "line2": 4663,
+      "line3": 5247,
+      "line4": 3658,
+      "line5": 1902,
+      "single": 1762,
+      "square2": 4307,
+      "square3": 1251
+    },
+    "first_batch": {
+      "catalog_version": "bt_catalog_19_v0_1",
+      "definition_hash": "a91e1b381f5445452e1219d3803fb21016895f6054c4bab0a7cc39a546defa59",
+      "engine_version": "4.6.1-stable (official)",
+      "ok": true,
+      "piece_ids": [
+        "line4_v1",
+        "line4_v0",
+        "elbow5_v3"
+      ],
+      "rng_seed": "20260920",
+      "rng_state": "-2341413972497487552",
+      "supply_policy_version": "bt_family_weighted_v0_1"
+    },
+    "sample_pieces": 30000
+  },
+  "sha256": {
+    "piece_supply_v0_1.gd": "9d4d1e7ab86e93b38b1d747d14abb686827749da56e6d3208e72fa47f9690be2",
+    "check_piece_supply.gd": "3941329bbc279304f0f9b6ab7d0b4aa39d0de92b64240573512dd084b69fe8c8"
+  }
+}

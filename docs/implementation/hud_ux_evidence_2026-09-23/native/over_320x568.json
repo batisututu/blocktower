@@ -1,0 +1,40 @@
+{
+	"announcements": [],
+	"board": "[P: (12.0, 107.2), S: (296.0, 296.0)]",
+	"checks": [
+		{
+			"check": "fixture committed",
+			"passed": true
+		},
+		{
+			"check": "fixture is over",
+			"passed": true
+		},
+		{
+			"check": "results sheet inside viewport",
+			"passed": true
+		},
+		{
+			"check": "restart is the primary result action",
+			"passed": true
+		},
+		{
+			"check": "native screenshot saved",
+			"passed": true
+		},
+		{
+			"check": "screen state equals session",
+			"passed": true
+		}
+	],
+	"floors": 15,
+	"grayscale": false,
+	"large_text": false,
+	"mode": "over",
+	"revision": 1,
+	"safe_insets_24px": false,
+	"scenario": "over",
+	"score": 4160,
+	"size": "320x568",
+	"source": "Windows Godot OpenGL native viewport; not Android"
+}

@@ -1,0 +1,40 @@
+# Normalize line endings in the repository; Godot text formats stay LF.
+* text=auto
+
+*.gd text eol=lf
+*.gdshader text eol=lf
+*.tscn text eol=lf
+*.tres text eol=lf
+*.godot text eol=lf
+*.cfg text eol=lf
+*.import text eol=lf
+*.uid text eol=lf
+*.json text eol=lf
+*.md text
+*.txt text
+*.py text eol=lf
+*.ps1 text eol=crlf
+
+# Binary assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.svg text eol=lf
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.wav binary
+*.ogg binary
+*.mp3 binary
+*.blend binary
+*.zip binary
+*.exe binary
+
+# Preserve audited historical bytes and the pinned vendor manifest on checkout.
+/docs/backup/** -text
+/docs/examples/** -text
+/docs/pretests/** -text
+/game/addons/gut/** -text
+/game/assets/fonts/OFL.txt -text

@@ -1,0 +1,9 @@
+{
+  "error": "UNSUPPORTED_FORMAT",
+  "expected_clear_text": "",
+  "mode": "inspect",
+  "ok": false,
+  "pid": 13074,
+  "recovered": false,
+  "recovery": {}
+}

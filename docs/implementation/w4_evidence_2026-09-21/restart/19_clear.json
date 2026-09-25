@@ -1,0 +1,9 @@
+{
+	"error": "SAVE_WRITE_FAILED",
+	"expected_clear_text": "",
+	"mode": "clear",
+	"ok": false,
+	"pid": 27688,
+	"recovered": false,
+	"recovery": {}
+}

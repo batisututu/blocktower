@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-21",
+  "scope": "research and documentation; runtime unchanged; GUT not rerun",
+  "local_links_checked": 167,
+  "reference_size": [
+    1222,
+    1287
+  ],
+  "source_file_and_pixel_hashes_match": true,
+  "mobbin_screen_results": 6,
+  "mobbin_flows": 2,
+  "backup_originals_checked": 29,
+  "errors": [],
+  "visual_fidelity": "pending_art_and_native_comparison"
+}

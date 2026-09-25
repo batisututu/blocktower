@@ -1,0 +1,23 @@
+{
+	"anchor": [
+		320,
+		240
+	],
+	"camera": [
+		5,
+		2.8,
+		8
+	],
+	"camera_size": 5.1,
+	"canvas": [
+		640,
+		480
+	],
+	"floor_height": 1.18,
+	"floor_step": 106.4683685,
+	"origin": "original code-authored Godot 3D geometry; no external model or texture",
+	"variants": [
+		"brick_landmark_floor_mid",
+		"brick_arch_landmark_floor_mid"
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"error": "",
+	"expected_clear_text": "",
+	"mode": "inspect",
+	"ok": true,
+	"pid": 26420,
+	"recovered": false,
+	"recovery": {},
+	"state_text": "{\"checksum\":\"15fbc25ecd149e672c54691b29c828cfeb32e121df4f34d9d6905771159e972f\",\"format\":\"bt_save_envelope_v1\",\"payload\":\"{\\\"auto_clear\\\":false,\\\"batch_id\\\":\\\"1\\\",\\\"batch_success\\\":false,\\\"best\\\":\\\"0\\\",\\\"best_streak\\\":\\\"0\\\",\\\"cell_style\\\":\\\"00000000000100000000000000010000000000000001000001010101010101010000000000010000000000000001000000000000000100000000000000010000\\\",\\\"checkpoint\\\":{\\\"catalog_version\\\":\\\"bt_catalog_29_v0_2\\\",\\\"config_hash\\\":\\\"528fa1271d1294cd1756956627c928afa4f1e047549e9d80c5167076bca5dce5\\\",\\\"definition_hash\\\":\\\"114d11e19e7496a26a05e0635dfed2135755358a0774e93589378f167f427f8c\\\",\\\"engine_version\\\":\\\"4.7.2-stable (official)\\\",\\\"rng_seed\\\":\\\"-9223372036854775808\\\",\\\"rng_state\\\":\\\"-3400659080988343768\\\",\\\"supply_policy_version\\\":\\\"bt_soft_one_move_v0_2\\\"},\\\"growth\\\":{\\\"brick_lines\\\":\\\"0\\\",\\\"crystal_lines\\\":\\\"0\\\",\\\"metal_lines\\\":\\\"0\\\",\\\"representative_segment\\\":\\\"0\\\",\\\"segment_styles\\\":{},\\\"total_floors\\\":\\\"9\\\"},\\\"last_event_id\\\":\\\"1\\\",\\\"occupancy\\\":\\\"00000000000100000000000000010000000000000001000001010101010101010000000000010000000000000001000000000000000100000000000000010000\\\",\\\"queue\\\":[\\\"single_v0\\\",\\\"single_v0\\\",\\\"single_v0\\\"],\\\"revision\\\":\\\"1\\\",\\\"rule_version\\\":\\\"bt_rules_v1\\\",\\\"run_id\\\":\\\"1\\\",\\\"schema_version\\\":\\\"bt_session_v1\\\",\\\"score\\\":\\\"0\\\",\\\"session_id\\\":\\\"process-test\\\",\\\"streak\\\":\\\"0\\\"}\"}"
+}

@@ -1,0 +1,13 @@
+{
+  "main_checks": 13,
+  "qa_checks": 13,
+  "total_checks": 26,
+  "all_checks_passed": true,
+  "final_user_score": 1047,
+  "final_user_floors": 9,
+  "final_user_revision": 36,
+  "qa_uninstalled": true,
+  "physical_input": "adb input on SM-N981N",
+  "subjective_audio_haptics_certified": false,
+  "release_acceptance_complete": false
+}

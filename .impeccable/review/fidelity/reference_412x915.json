@@ -1,0 +1,23 @@
+{
+	"board": "[P: (56.0, 235.2), S: (300.0, 300.0)]",
+	"checks": [
+		{
+			"check": "fixture committed",
+			"passed": true
+		},
+		{
+			"check": "native screenshot saved",
+			"passed": true
+		},
+		{
+			"check": "screen state equals session",
+			"passed": true
+		}
+	],
+	"floors": 0,
+	"mode": "reference",
+	"revision": 1,
+	"score": 2580,
+	"size": "412x915",
+	"source": "Windows Godot OpenGL native viewport; not Android"
+}

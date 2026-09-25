@@ -1,0 +1,12 @@
+{
+  "device": "SM-N981N",
+  "serial": "R3CN80ZJ8SV",
+  "os": "Android13",
+  "package": "com.blocktower.game",
+  "version_code": 3,
+  "version_name": "0.1.0-gamefeel3",
+  "apk_sha256": "9e088503c6b30b0205462889c4229859b9f033f3b5706a92b1e8fc5a21986be1",
+  "install_mode": "--no-incremental -r",
+  "startup_total_ms": 1346,
+  "startup_scope": "am start activity launch, not touch-ready time"
+}

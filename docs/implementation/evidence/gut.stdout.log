@@ -1,0 +1,47 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+---  GUT  ---
+[1m[INFO]:  [0musing [C:/Users/batis/AppData/Roaming/Godot/app_userdata/Blocktower] for temporary output.
+Godot version:  4.7.2
+GUT version:  9.7.1
+[4m
+
+res://tests/unit/test_design_preview.gd
+[0m* test_auto_cancel_preserves_pending_lines_and_restores_focus
+* test_confirm_and_navigation_are_preview_only_transitions
+[1m2/2 passed.
+[0m[4m
+
+res://tests/unit/test_piece_supply.gd
+[0m* test_crossing_lines_count_as_two_and_keep_manual_clear_available
+* test_empty_tray_requires_refill_before_game_over
+* test_rng_roundtrip_preserves_next_batch
+* test_unknown_id_is_rejected_even_when_another_piece_fits
+* test_board_status_does_not_modify_input
+* test_integer_weight_boundaries_and_zero_weight
+[1m6/6 passed.
+[0m[4m
+
+res://tests/unit/test_piece_supply_checks.gd
+[0m* test_ported_baseline_checks_pass_on_game_target
+[1m1/1 passed.
+[0m
+
+
+
+[33m==============================================
+[0m[33m= Run Summary
+[0m[33m==============================================
+[0m
+Totals
+------
+Scripts               3
+Tests                 9
+Passing Tests         9
+Asserts              30
+Time              1.119s
+
+
+[32m---- All tests passed! ----
+[0m
+Results saved to C:/DEV/Games/Blocktower/tools/out/gut_unit.xml

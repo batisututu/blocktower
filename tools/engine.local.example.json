@@ -1,0 +1,5 @@
+{
+  "_comment": "Copy to tools/engine.local.json (git-ignored) and point both paths at the pinned Godot 4.7.2 build for this machine. tools/test.ps1 and tools/run.ps1 also accept -GodotExe or the BLOCKTOWER_GODOT environment variable.",
+  "godot_console_exe": "C:/DEV/tools/godot/4.7.2/Godot_v4.7.2-stable_win64_console.exe",
+  "godot_exe": "C:/DEV/tools/godot/4.7.2/Godot_v4.7.2-stable_win64.exe"
+}

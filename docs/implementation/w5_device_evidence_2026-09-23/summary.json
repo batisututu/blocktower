@@ -1,0 +1,22 @@
+{
+  "completed": true,
+  "device": "SM-N981N",
+  "android": "13",
+  "version_code": 6,
+  "physical_recovery_passed": 44,
+  "ui_setup_cleanup_checks_passed": 62,
+  "excluded_secure_lock_attempts": 2,
+  "excluded_attempts_resolved": true,
+  "unit_tests": 95,
+  "unit_assertions": 3027,
+  "native_lifecycle_checks": 22,
+  "main_save_preserved": true,
+  "main_preferences_preserved": true,
+  "qa_uninstalled": true,
+  "not_accepted": [
+    "physical power loss",
+    "other devices/OS",
+    "long thermal/performance/latency measurements",
+    "human audio/haptic/gamefeel approval"
+  ]
+}

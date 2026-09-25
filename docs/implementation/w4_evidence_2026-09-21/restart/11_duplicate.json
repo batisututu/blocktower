@@ -1,0 +1,9 @@
+{
+	"error": "ALREADY_APPLIED",
+	"expected_clear_text": "",
+	"mode": "duplicate",
+	"ok": false,
+	"pid": 26688,
+	"recovered": false,
+	"recovery": {}
+}
