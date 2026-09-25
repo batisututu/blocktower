@@ -77,7 +77,7 @@ if ($Seed -cnotmatch '\A(?:0|-?[1-9][0-9]*)\z' -or
 }
 
 $gameSessionPath = Join-Path $script:GameDir 'scripts\core\game_session.gd'
-$generatorConfigPath = Join-Path $script:GameDir 'data\piece_generator_default.tres'
+$generatorConfigPath = Join-Path $script:GameDir 'data\piece_generator_low_single.tres'
 $gameSessionText = Get-Content -LiteralPath $gameSessionPath -Raw -Encoding UTF8
 $generatorConfigText = Get-Content -LiteralPath $generatorConfigPath -Raw -Encoding UTF8
 if ($gameSessionText -notmatch '"rule_version"\s*:\s*"([^"]+)"') {
@@ -97,6 +97,7 @@ $runtimeFiles = @(
     'project.godot',
     'scenes\app.tscn',
     'data\piece_generator_default.tres',
+    'data\piece_generator_low_single.tres',
     'scripts\application\app_root.gd',
     'scripts\application\saved_game.gd',
     'scripts\core\game_session.gd',

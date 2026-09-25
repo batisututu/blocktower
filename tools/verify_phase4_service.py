@@ -82,6 +82,11 @@ def main() -> None:
     status, branch = call(base, "/v1/submissions", {"challenge_id": challenge_id, "actions": []}, token)
     require(status == 409 and branch["error"] == "TRACE_NOT_EXTENSION", "branch rejected")
     checks.append("shortened trace rejected")
+    divergent = dict(action, enabled=False)
+    status, conflict = call(base, "/v1/submissions",
+                            {"challenge_id": challenge_id, "actions": [divergent]}, token)
+    require(status == 409 and conflict["error"] == "TRACE_NOT_EXTENSION", "same-length device conflict rejected")
+    checks.append("divergent device trace rejected")
 
     bad = dict(action, event_id="3")
     status, invalid = call(base, "/v1/submissions", {"challenge_id": challenge_id, "actions": [action, bad]}, token)

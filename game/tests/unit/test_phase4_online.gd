@@ -20,7 +20,7 @@ func _session() -> Dictionary:
     var opened: Dictionary = ChallengeRepository.open(_challenge)
     assert_true(opened.ok)
     if not opened.ok: return opened
-    var started: Dictionary = Session.start(opened.repository,_challenge.session_id,_challenge.seed)
+    var started: Dictionary = Session.start(opened.repository,_challenge.session_id,_challenge.seed,opened.repository.supply_config())
     assert_true(started.ok)
     if not started.ok: return started
     return {"ok":true,"repository":opened.repository,"session":started.session}
@@ -72,3 +72,19 @@ func test_damaged_latest_generation_recovers_previous_trace() -> void:
         assert_true(loaded.recovered)
         assert_eq(loaded.snapshot.revision,0)
         assert_false(loaded.snapshot.auto_clear)
+
+func test_reduced_single_challenge_reopens_with_issued_profile() -> void:
+    _challenge["supply_profile"] = "reduced_single"
+    var made := _session()
+    if not made.ok: return
+    var expected_hash: String = made.session.snapshot().checkpoint.config_hash
+    var action := {"type":"SET_AUTO","session_id":_challenge.session_id,"event_id":1,"enabled":true,"confirmed":true}
+    assert_true(made.session.dispatch(action).ok)
+    var reopened: Dictionary = ChallengeRepository.open(_challenge)
+    assert_true(reopened.ok)
+    if not reopened.ok: return
+    var resumed: Dictionary = Session.resume(reopened.repository,reopened.repository.supply_config())
+    assert_true(resumed.ok)
+    if resumed.ok:
+        assert_eq(resumed.session.snapshot().checkpoint.config_hash,expected_hash)
+        assert_eq(resumed.session.snapshot(),made.session.snapshot())
