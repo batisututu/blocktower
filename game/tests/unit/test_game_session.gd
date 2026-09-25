@@ -59,6 +59,29 @@ func test_initial_supply_commits_before_exposure_and_resume_draws_nothing():
     assert_false(empty.load_snapshot().found)
     assert_eq(Session.resume(empty).error, "SAVE_NOT_FOUND")
 
+func test_view_is_isolated_and_changes_only_after_successful_commit():
+    install(with_lines(2, 9))
+    var before: Dictionary = session.view()
+    var edited: Dictionary = session.view()
+    edited.pending_rows.clear()
+    edited.pending_columns.append(7)
+    edited.post_clear[0] = 1
+    edited.witness.clear()
+    edited.growth.materials.clear()
+    edited.growth.parts.append("unknown")
+    assert_eq(session.view(), before, "returned nested values never change the cached view")
+    repo.fail_next_commit = true
+    assert_eq(session.dispatch(action("CLEAR")).error, "SAVE_FAILED")
+    assert_eq(session.view(), before, "failed candidate is never visible")
+    assert_true(session.dispatch(action("CLEAR")).ok)
+    var after: Dictionary = session.view()
+    assert_eq(after.clear_lines, 0)
+    assert_eq(after.growth.completed_segments, 1)
+    assert_eq(after.growth.partial_floors, 1)
+    assert_eq(after, Session.resume(repo).session.view(), "cache agrees with a fresh replay of saved state")
+    assert_true(session.dispatch(action("NEW_RUN", {"seed_text": "7", "confirmed": true})).ok)
+    assert_eq(session.view(), Session.resume(repo).session.view(), "new run cannot retain old witnesses")
+
 func test_invalid_placements_preserve_board_queue_score_rng_and_event_id():
     var state: Dictionary = session.snapshot()
     state.queue = ["square2_v0", "single_v0", "single_v0"]

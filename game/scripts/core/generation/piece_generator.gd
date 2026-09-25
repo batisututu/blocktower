@@ -10,7 +10,6 @@ const EASY := "bt_easy_family_v0_2"
 const SOFT := "bt_soft_one_move_v0_2"
 const SIDE := 8
 const TRAY_SIZE := 3
-const MAX_WEIGHT := 1000000
 const CHECKPOINT_KEYS := ["rng_seed", "rng_state", "engine_version", "catalog_version", "supply_policy_version", "definition_hash", "config_hash"]
 
 var _families: Array = []
@@ -182,11 +181,12 @@ func _board_context(board: PackedByteArray) -> Dictionary:
 			full_columns.append(x)
 	var post := board.duplicate()
 	var post_rows := rows.duplicate()
-	for y in range(SIDE):
-		for x in range(SIDE):
-			if y in full_rows or x in full_columns:
-				post[y * SIDE + x] = 0
-				post_rows[y] &= ~(1 << x)
+	if not full_rows.is_empty() or not full_columns.is_empty():
+		for y in range(SIDE):
+			for x in range(SIDE):
+				if y in full_rows or x in full_columns:
+					post[y * SIDE + x] = 0
+					post_rows[y] &= ~(1 << x)
 	return {"current": rows, "after": post_rows, "post_clear": post,
 		"pending_rows": full_rows, "pending_columns": full_columns,
 		"has_pending": not full_rows.is_empty() or not full_columns.is_empty(), "cache": {}}

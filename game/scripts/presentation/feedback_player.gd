@@ -3,6 +3,7 @@ extends Node
 const SOUND_NAMES := ["pick", "snap", "reject", "clear", "lock", "over", "button", "air", "chime", "impact"]
 const PLAYER_LIMIT := 6
 const HAPTIC_GAP_MS := 45
+const LAYER_DB := {"pick": -5.0, "snap": -3.0, "impact": -6.0, "button": -7.0, "air": -10.0, "chime": -6.0}
 var preferences: RefCounted
 var players: Array[AudioStreamPlayer] = []
 var sounds: Dictionary = {}
@@ -60,7 +61,7 @@ static func sound_priority(name: String) -> int:
     if name in ["pick", "air"]: return 1
     return 0
 
-func _play(name: String, strength: int, trim_db: float = 0.0) -> void:
+func _play(name: String, strength: int) -> void:
     if not preferences.values.muted and preferences.values.volume > 0 and sounds.has(name):
         var target: AudioStreamPlayer
         for player in players:
@@ -78,8 +79,7 @@ func _play(name: String, strength: int, trim_db: float = 0.0) -> void:
             target.stream = sounds[name]
             target.set_meta("priority",sound_priority(name))
             target.pitch_scale = 1.0 + 0.045 * mini(strength - 1, 3) if name in ["clear", "chime"] else 1.0 + 0.02 * (cue_sequence % 3 - 1)
-            var layer_db: float = float({"pick": -5.0, "snap": -3.0, "impact": -6.0, "button": -7.0, "air": -10.0, "chime": -6.0}.get(name,0.0))
-            target.volume_db = linear_to_db(preferences.values.volume / 100.0) + layer_db + trim_db
+            target.volume_db = linear_to_db(preferences.values.volume / 100.0) + float(LAYER_DB.get(name,0.0))
             target.play()
 
 func stop_all() -> void:

@@ -1,0 +1,523 @@
+{
+  "engine_sha256": "ab1824f85bfd8e0e4128182c000c4003a3e042245b2967848d089b2a04b22424",
+  "reports": [
+    {
+      "announcements": [],
+      "board": "[P: (12.0, 174.0), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "disabled clear action has a text cue",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "grayscale": false,
+      "large_text": false,
+      "mode": "basic",
+      "revision": 1,
+      "safe_insets_24px": false,
+      "scenario": "basic",
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "announcements": [],
+      "board": "[P: (12.0, 107.2), S: (296.0, 296.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "pending lines have a text cue",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 9,
+      "grayscale": false,
+      "large_text": false,
+      "mode": "pending",
+      "revision": 1,
+      "safe_insets_24px": false,
+      "scenario": "pending",
+      "score": 0,
+      "size": "320x568",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "announcements": [],
+      "board": "[P: (12.0, 174.0), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "placement preview has a text cue",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "grayscale": false,
+      "large_text": false,
+      "mode": "valid",
+      "revision": 1,
+      "safe_insets_24px": false,
+      "scenario": "valid",
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "announcements": [],
+      "board": "[P: (12.0, 174.0), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "placement preview has a text cue",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 0,
+      "grayscale": false,
+      "large_text": false,
+      "mode": "invalid",
+      "revision": 1,
+      "safe_insets_24px": false,
+      "scenario": "invalid",
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "announcements": [
+        "[\uc644\ub8cc] 2\uc904 \u00b7 +240\uc810 \u00b7 +2\uce35",
+        "\uad6c\uac04 +1 \u00b7 \ud574\uae08 1\uc885",
+        "\uae30\ub85d \uac31\uc2e0"
+      ],
+      "board": "[P: (12.0, 107.2), S: (296.0, 296.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "removal cells captured",
+          "passed": true
+        },
+        {
+          "check": "clear released input",
+          "passed": true
+        },
+        {
+          "check": "clear result has a text cue",
+          "passed": true
+        },
+        {
+          "check": "clear reward remains below the board",
+          "passed": true
+        },
+        {
+          "check": "clear score exact",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 11,
+      "grayscale": false,
+      "large_text": false,
+      "mode": "clear",
+      "revision": 2,
+      "safe_insets_24px": false,
+      "scenario": "clear",
+      "score": 240,
+      "size": "320x568",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "announcements": [
+        "[\uc644\ub8cc] 16\uc904 \u00b7 +2560\uc810 \u00b7 +16\uce35",
+        "\uad6c\uac04 +2 \u00b7 \ud574\uae08 4\uc885",
+        "\uae30\ub85d \uac31\uc2e0"
+      ],
+      "board": "[P: (12.0, 174.0), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "fixed event has 16 pending lines",
+          "passed": true
+        },
+        {
+          "check": "fixed event committed through GameSession",
+          "passed": true
+        },
+        {
+          "check": "fixed event score matches rules",
+          "passed": true
+        },
+        {
+          "check": "fixed event floor total matches rules",
+          "passed": true
+        },
+        {
+          "check": "event notice starts below the board",
+          "passed": true
+        },
+        {
+          "check": "event notice ends before the tray (544 <= 552)",
+          "passed": true
+        },
+        {
+          "check": "next drag is not blocked by event notices",
+          "passed": true
+        },
+        {
+          "check": "clear, score and floor reward notice is present",
+          "passed": true
+        },
+        {
+          "check": "event notice count is bounded at three",
+          "passed": true
+        },
+        {
+          "check": "complete notice sequence stays under three seconds",
+          "passed": true
+        },
+        {
+          "check": "multi-segment and unlock count remain visible",
+          "passed": true
+        },
+        {
+          "check": "latest clear records exact segment unlocks",
+          "passed": true
+        },
+        {
+          "check": "latest clear records exact material unlocks",
+          "passed": true
+        },
+        {
+          "check": "latest clear records exact part unlocks",
+          "passed": true
+        },
+        {
+          "check": "notice 0 fits without clipping",
+          "passed": true
+        },
+        {
+          "check": "notice frame 0 captured",
+          "passed": true
+        },
+        {
+          "check": "notice 1 fits without clipping",
+          "passed": true
+        },
+        {
+          "check": "notice frame 1 captured",
+          "passed": true
+        },
+        {
+          "check": "notice 2 fits without clipping",
+          "passed": true
+        },
+        {
+          "check": "notice frame 2 captured",
+          "passed": true
+        },
+        {
+          "check": "fast next pickup dismisses notices without blocking drag",
+          "passed": true
+        },
+        {
+          "check": "fast pickup preserves exact milestone facts",
+          "passed": true
+        },
+        {
+          "check": "tower has a durable growth-details action",
+          "passed": true
+        },
+        {
+          "check": "tower details action native screen captured",
+          "passed": true
+        },
+        {
+          "check": "tower flow exposes exact segment, material and part unlock facts",
+          "passed": true
+        },
+        {
+          "check": "growth details native screen captured",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 25,
+      "grayscale": false,
+      "large_text": false,
+      "mode": "reduced_event_multi16",
+      "revision": 2,
+      "safe_insets_24px": false,
+      "scenario": "event_multi16",
+      "score": 2560,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "announcements": [
+        "[\ubc30\uce58] +4\uc810"
+      ],
+      "board": "[P: (12.0, 107.2), S: (296.0, 296.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "stress action 0 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 1 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 2 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 3 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 4 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 5 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 6 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 7 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 8 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 9 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 10 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 11 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 12 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 13 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 14 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 15 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 16 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 17 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 18 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 19 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 20 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 21 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 22 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 23 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 24 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 25 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 26 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 27 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 28 returns idle",
+          "passed": true
+        },
+        {
+          "check": "stress action 29 returns idle",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 7,
+      "grayscale": false,
+      "large_text": false,
+      "mode": "stress",
+      "revision": 31,
+      "safe_insets_24px": false,
+      "scenario": "stress",
+      "score": 770,
+      "size": "320x568",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    },
+    {
+      "announcements": [],
+      "board": "[P: (12.0, 174.0), S: (336.0, 336.0)]",
+      "checks": [
+        {
+          "check": "fixture committed",
+          "passed": true
+        },
+        {
+          "check": "whole-tower overview opens from a completed segment",
+          "passed": true
+        },
+        {
+          "check": "sparse material counts sum to exact acquired floors",
+          "passed": true
+        },
+        {
+          "check": "whole-tower screen shows exact total",
+          "passed": true
+        },
+        {
+          "check": "condensed tower does not cover material shares",
+          "passed": true
+        },
+        {
+          "check": "overview redraw creates no per-floor scene nodes",
+          "passed": true
+        },
+        {
+          "check": "overview redraw does not commit or advance supply",
+          "passed": true
+        },
+        {
+          "check": "native screenshot saved",
+          "passed": true
+        },
+        {
+          "check": "screen state equals session",
+          "passed": true
+        }
+      ],
+      "floors": 3000,
+      "grayscale": false,
+      "large_text": false,
+      "mode": "phase3_overview_3000",
+      "revision": 1,
+      "safe_insets_24px": false,
+      "scenario": "phase3_overview_3000",
+      "score": 0,
+      "size": "360x800",
+      "source": "Windows Godot OpenGL native viewport; not Android"
+    }
+  ]
+}

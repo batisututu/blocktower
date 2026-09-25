@@ -3,10 +3,8 @@ extends RefCounted
 const Generator = preload("res://scripts/core/generation/piece_generator.gd")
 const Growth = preload("res://scripts/core/growth_rules.gd")
 const MAX_COUNTER := 9000000000000000
+# v1/v2의 최상위 키는 동일하며, 이전 성장 구조만 LEGACY_GROWTH_KEYS로 구분한다.
 const STATE_KEYS := ["schema_version", "rule_version", "session_id", "revision", "last_event_id", "run_id",
-    "occupancy", "cell_style", "queue", "batch_id", "batch_success", "streak", "best_streak", "score", "best",
-    "auto_clear", "growth", "checkpoint"]
-const LEGACY_STATE_KEYS := ["schema_version", "rule_version", "session_id", "revision", "last_event_id", "run_id",
     "occupancy", "cell_style", "queue", "batch_id", "batch_success", "streak", "best_streak", "score", "best",
     "auto_clear", "growth", "checkpoint"]
 const GROWTH_KEYS := ["total_floors", "brick_lines", "metal_lines", "crystal_lines", "representative_segment", "segment_styles", "segment_parts"]
@@ -20,6 +18,7 @@ var _state: Dictionary = {}
 var _repository: RefCounted
 var _generator: RefCounted
 var _pieces: Dictionary = {}
+var _view_cache: Dictionary = {}
 var _busy := false
 var _requires_resume := false
 
@@ -78,7 +77,7 @@ static func resume(repository: Variant, config: Variant = null) -> Dictionary:
     var s = made.session
     var resumed_state: Dictionary = loaded.snapshot.duplicate(true)
     if typeof(resumed_state) == TYPE_DICTIONARY and resumed_state.get("schema_version", "") == "bt_session_v1":
-        if not _keys(resumed_state, LEGACY_STATE_KEYS) or not _keys(resumed_state.get("growth"), LEGACY_GROWTH_KEYS):
+        if not _keys(resumed_state, STATE_KEYS) or not _keys(resumed_state.get("growth"), LEGACY_GROWTH_KEYS):
             return _error("INVALID_STATE")
         resumed_state.schema_version = "bt_session_v2"
         resumed_state.growth.segment_parts = {}
@@ -102,11 +101,13 @@ func snapshot() -> Dictionary:
     return _state.duplicate(true)
 
 func view() -> Dictionary:
-    var result := _analysis(_state)
-    result["growth"] = Growth.describe(_state.growth)
-    result["clear_lines"] = result.pending_rows.size() + result.pending_columns.size()
-    result["clear_points"] = clear_points(result.clear_lines)
-    return result
+    # 확정 상태에서만 재사용한다. 외부에서 반환값을 바꿔도 캐시는 보존한다.
+    if _view_cache.is_empty():
+        _view_cache = _analysis(_state)
+        _view_cache["growth"] = Growth.describe(_state.growth)
+        _view_cache["clear_lines"] = _view_cache.pending_rows.size() + _view_cache.pending_columns.size()
+        _view_cache["clear_points"] = clear_points(_view_cache.clear_lines)
+    return _view_cache.duplicate(true)
 
 static func clear_points(lines: int) -> int:
     return 0 if lines <= 0 else lines * [100, 120, 140, 160][mini(lines, 4) - 1]
@@ -172,13 +173,14 @@ func _validate_state(state: Variant) -> String:
     if total_segments == 0 and growth.representative_segment != 0: return "INVALID_STATE"
     if total_segments > 0 and (growth.representative_segment == 0 or growth.representative_segment > total_segments): return "INVALID_STATE"
     if typeof(growth.segment_styles) != TYPE_DICTIONARY: return "INVALID_STATE"
-    var available: Array = Growth.describe(growth).materials
+    var growth_view := Growth.describe(growth)
+    var available: Array = growth_view.materials
     for key in growth.segment_styles:
         var parsed := Generator.parse_int64(key)
         if not parsed.ok or parsed.value < 1 or parsed.value > total_segments: return "INVALID_STATE"
         if typeof(growth.segment_styles[key]) != TYPE_STRING or growth.segment_styles[key] not in available: return "INVALID_STATE"
     if typeof(growth.segment_parts) != TYPE_DICTIONARY: return "INVALID_STATE"
-    var unlocked_parts: Array = Growth.describe(growth).parts
+    var unlocked_parts: Array = growth_view.parts
     for key in growth.segment_parts:
         var parsed_part_segment := Generator.parse_int64(key)
         if not parsed_part_segment.ok or str(parsed_part_segment.value) != key or parsed_part_segment.value < 1 or parsed_part_segment.value > total_segments: return "INVALID_STATE"
@@ -240,6 +242,7 @@ func _dispatch(action: Variant) -> Dictionary:
         if saved.error in ["COMMIT_UNCERTAIN", "SAVE_CONFLICT", "RECOVERY_REQUIRED"]: _requires_resume = true
         return _error(saved.error)
     _state = candidate
+    _view_cache = {}
     return {"ok": true, "snapshot": snapshot(), "events": events}
 
 func _refill(state: Dictionary) -> String:

@@ -62,6 +62,28 @@ func test_new_run_is_rejected_without_a_trace_write() -> void:
     assert_eq(made.session.snapshot(),before)
     assert_true(made.repository.actions().is_empty())
 
+func test_appended_trace_is_isolated_from_caller_mutations() -> void:
+    var made := _session()
+    if not made.ok: return
+    var first := {"type":"SET_AUTO","session_id":_challenge.session_id,"event_id":1,"enabled":true,"confirmed":true}
+    assert_true(made.session.dispatch(first).ok)
+    first.enabled = false
+    var published: Array = made.repository.actions()
+    published[0].enabled = false
+    published.clear()
+    assert_true(made.session.dispatch({"type":"SET_AUTO","session_id":_challenge.session_id,
+        "event_id":2,"enabled":false,"confirmed":true}).ok)
+    var trace: Array = made.repository.actions()
+    assert_eq(trace.size(),2)
+    assert_true(trace[0].enabled, "append does not reuse caller-owned actions")
+    assert_false(trace[1].enabled)
+    var reopened: Dictionary = ChallengeRepository.open(_challenge)
+    assert_true(reopened.ok)
+    if not reopened.ok: return
+    var resumed: Dictionary = Session.resume(reopened.repository)
+    assert_true(resumed.ok)
+    if resumed.ok: assert_eq(resumed.session.snapshot(),made.session.snapshot())
+
 func test_damaged_latest_generation_recovers_previous_trace() -> void:
     var made := _session()
     if not made.ok: return

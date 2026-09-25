@@ -11,6 +11,20 @@ var session
 var controller
 var path: String
 
+class CountingSession:
+    extends RefCounted
+    var source: RefCounted
+    var piece_reads := 0
+    var preview_reads := 0
+    func snapshot() -> Dictionary:
+        return source.snapshot()
+    func piece_for_slot(slot: int) -> Dictionary:
+        piece_reads += 1
+        return source.piece_for_slot(slot)
+    func preview_placement(slot: int, x: int, y: int) -> Dictionary:
+        preview_reads += 1
+        return source.preview_placement(slot, x, y)
+
 func before_each():
     path = "user://w4_tests/%d_%d/settings.json" % [Time.get_ticks_usec(),randi()]
     repo = Memory.new()
@@ -67,6 +81,41 @@ func test_preview_uses_commit_validator_and_does_not_change_state():
     piece.cells.clear()
     assert_eq(session.piece_for_slot(0).cells.size(),1)
     assert_eq(session.snapshot(),before)
+
+func test_tray_reuses_committed_pieces_and_refreshes_on_revision_or_session_change():
+    var initial: Dictionary = session.snapshot()
+    initial.queue = ["single_v0", "single_v0", "single_v0"]
+    install(initial)
+    var counted := CountingSession.new()
+    counted.source = session
+    var screen := Screen.new()
+    screen.controller.attach(counted)
+    screen.state = session.snapshot()
+    screen._refresh_fits()
+    assert_eq(counted.piece_reads, 3)
+    var first_previews := counted.preview_reads
+    for i in range(20): screen._refresh_fits()
+    assert_eq(counted.piece_reads, 3, "layout refreshes do not copy pieces again")
+    assert_eq(counted.preview_reads, first_previews, "unchanged board is not searched again")
+    var placed: Dictionary = session.dispatch({"type": "PLACE", "session_id": initial.session_id,
+        "event_id": 1, "batch_id": initial.batch_id, "slot": 0, "x": 0, "y": 0})
+    assert_true(placed.ok)
+    screen.state = session.snapshot()
+    screen._refresh_fits()
+    assert_eq(counted.piece_reads, 6)
+    assert_true(screen.tray_pieces[0].is_empty(), "consumed slot is removed from drawing")
+    assert_false(screen.tray_pieces[1].is_empty())
+    var replacement := CountingSession.new()
+    replacement.source = Session.start(Memory.new(), "replacement", "1").session
+    assert_true(replacement.source.dispatch({"type": "SET_AUTO", "session_id": "replacement",
+        "event_id": 1, "enabled": true, "confirmed": true}).ok)
+    screen.controller.attach(replacement)
+    screen.state = replacement.snapshot()
+    screen._refresh_fits()
+    assert_eq(replacement.piece_reads, 3, "same revision in another session invalidates cache")
+    for slot in range(3):
+        assert_eq(screen.tray_pieces[slot], replacement.source.piece_for_slot(slot))
+    screen.free()
 
 func test_pointer_origin_and_owner_prevent_duplicate_or_clamped_drop():
     var board := Rect2(20,100,320,320)

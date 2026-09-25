@@ -1,0 +1,1947 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+---  GUT  ---
+[1m[INFO]:  [0musing [C:/Users/batis/AppData/Roaming/Godot/app_userdata/Blocktower] for temporary output.
+Godot version:  4.7.2
+GUT version:  9.7.1
+[4m
+
+res://tests/unit/test_application_lifecycle.gd
+[0m* test_notification_pair_order_duplicates_and_controller_gate
+[33m    28 Orphans[0m
+[33m        * [@Button@25:<Button#106501769451>] + 5
+        * [@Button@31:<Button#107474848109>]
+        * [@Button@32:<Button#107592288627>]
+        * [@HBoxContainer@35:<HBoxContainer#107877501303>] + 2
+        * [@Label@36:<Label#108196268415>]
+        * [@PanelContainer@40:<PanelContainer#108229822851>] + 3
+        * [@Label@41:<Label#108598921612>] + 1
+        * [@Label@43:<Label#108699584916>] + 1
+        * [@Label@45:<Label#108800248218>]
+        * [@Label@46:<Label#108850579869>]
+        * [@Label@47:<Label#108884134303>]
+        * [@Button@48:<Button#108917688737>]
+        * [@Button@49:<Button#109270010283>] + 3[0m
+* test_drag_cancel_late_release_and_new_press_after_resume
+[33m    28 Orphans[0m
+[33m        * [@HBoxContainer@103:<HBoxContainer#125124478569>] + 2
+        * [@Button@100:<Button#124839265901>]
+        * [@Button@99:<Button#124772157041>]
+        * [@Label@104:<Label#125443246332>]
+        * [@PanelContainer@108:<PanelContainer#125476800768>] + 3
+        * [@Label@109:<Label#125845899529>] + 1
+        * [@Label@111:<Label#125946562833>] + 1
+        * [@Label@113:<Label#126047226135>]
+        * [@Label@114:<Label#126080780569>]
+        * [@Label@115:<Label#126114335003>]
+        * [@Button@116:<Button#126147889437>]
+        * [@Button@117:<Button#126500210983>] + 3
+        * [@Button@93:<Button#123799079340>] + 5[0m
+* test_paused_clear_keeps_commit_and_does_not_replay_tail
+* test_old_confirmation_and_pressed_buttons_cannot_execute_after_resume
+[33m    84 Orphans[0m
+[33m        * [@Button@305:<Button#166077662831>] + 5
+        * [@Label@323:<Label#167017186959>] + 1
+        * [@Button@329:<Button#167369509098>] + 3
+        * [@Label@326:<Label#167151405375>]
+        * [@Label@321:<Label#166916524353>] + 1
+        * [@Label@316:<Label#166715197768>]
+        * [@PanelContainer@320:<PanelContainer#166748752202>] + 3
+        * [@HBoxContainer@315:<HBoxContainer#166597757264>] + 2
+        * [@Control@257:<Control#151414376795>(puzzle_screen.gd)] + 39
+        * [@Label@325:<Label#167117850980>]
+        * [@Label@327:<Label#167184959848>]
+        * [@Button@328:<Button#167218514282>]
+        * [@ColorRect@333:<ColorRect#167721830823>] + 10
+        * [@Button@311:<Button#166446762513>]
+        * [@Button@312:<Button#166513871378>][0m
+* test_old_preferences_and_tower_controls_are_inert
+[33m    59 Orphans[0m
+[33m        * [@Button@405:<Button#184465492204>]
+        * [@ColorRect@434:<ColorRect#187116292378>] + 18
+        * [@Button@428:<Button#186797525277>]
+        * [@Label@430:<Label#186931743006>]
+        * [@Button@429:<Button#186864634145>]
+        * [@Label@432:<Label#187015629106>]
+        * [@Label@427:<Label#186747193657>]
+        * [@PanelContainer@414:<PanelContainer#185170135431>] + 3
+        * [@Label@410:<Label#185136581010>]
+        * [@HBoxContainer@409:<HBoxContainer#184817813911>] + 2
+        * [@Button@399:<Button#183492413862>] + 5
+        * [@Label@431:<Label#186982074797>]
+        * [@Button@406:<Button#184532601271>]
+        * [@Button@433:<Button#187049183691>]
+        * [@Label@419:<Label#185740560950>]
+        * [@Button@423:<Button#186193545783>] + 3
+        * [@Button@422:<Button#185841224248>]
+        * [@Label@420:<Label#185774115396>]
+        * [@Label@421:<Label#185807669837>]
+        * [@Label@415:<Label#185539234451>] + 1
+        * [@Label@417:<Label#185639897755>] + 1[0m
+* test_mandatory_commit_recovery_survives_pause_and_reload_inherits_gate
+[33m    124 Orphans[0m
+[33m        * [@ColorRect@502:<ColorRect#204212274632>] + 8
+        * [@Label@495:<Label#203222419692>]
+        * [@Control@464:<Control#190891166007>(puzzle_screen.gd)] + 48
+        * [@PanelContainer@489:<PanelContainer#202618440068>] + 3
+        * [@Label@492:<Label#203088202128>] + 1
+        * [@Label@490:<Label#202987538834>] + 1
+        * [@Label@494:<Label#203188865432>]
+        * [@Button@497:<Button#203289528742>]
+        * [@Label@496:<Label#203255974312>]
+        * [@Button@562:<Button#207869708720>] + 5
+        * [@Button@498:<Button#203641850330>] + 3
+        * [@Button@481:<Button#201980906038>]
+        * [@Button@474:<Button#200940718651>] + 5
+        * [@HBoxContainer@572:<HBoxContainer#208389802559>] + 2
+        * [@Button@569:<Button#208305916482>]
+        * [@Button@568:<Button#208238807624>]
+        * [@Button@480:<Button#201913797197>]
+        * [@Label@485:<Label#202584885904>]
+        * [@HBoxContainer@484:<HBoxContainer#202266118810>] + 2
+        * [@Label@573:<Label#208507243196>]
+        * [@PanelContainer@577:<PanelContainer#208540797630>] + 3
+        * [@Label@578:<Label#208708569799>] + 1
+        * [@Label@580:<Label#208809233100>] + 1
+        * [@Label@582:<Label#208909896403>]
+        * [@Label@583:<Label#208943450837>]
+        * [@Label@584:<Label#208977005271>]
+        * [@Button@585:<Button#209010559705>]
+        * [@Button@586:<Button#209161554653>] + 3[0m
+* test_startup_recovery_notice_requires_fresh_confirmation_after_resume
+[33m    6 Orphans[0m
+[33m        * [@CanvasLayer@730:<CanvasLayer#229344545356>] + 5[0m
+* test_repeated_pause_resume_never_changes_rng_revision_or_replays_audio
+* test_startup_failure_retry_is_blocked_until_fresh_active_notice
+[33m    6 Orphans[0m
+[33m        * [@CanvasLayer@1382:<CanvasLayer#302728088320>] + 5[0m
+* test_os_notification_propagation_keeps_root_notice_attached_and_stale_press_inert
+[33m    6 Orphans[0m
+[33m        * [@CanvasLayer@1550:<CanvasLayer#334806125224>] + 5[0m
+* test_deferred_notice_refresh_is_discarded_after_another_suspend_or_boot
+[1m11/11 passed.
+[0m[4m
+
+res://tests/unit/test_design_preview.gd
+[0m* test_auto_cancel_preserves_pending_lines_and_restores_focus
+* test_confirm_and_navigation_are_preview_only_transitions
+[1m2/2 passed.
+[0m[4m
+
+res://tests/unit/test_file_save.gd
+[0m* test_legacy_owner_checks_fail_closed_and_preserve_committed_bytes
+* test_legacy_nonempty_and_invalid_claims_are_never_deleted
+* test_disk_roundtrip_new_repository_and_growth_integer_precision
+* test_v1_file_migration_is_read_only_until_next_successful_v2_action
+* test_corrupt_latest_recovers_previous_preserves_bytes_before_next_commit
+* test_both_corrupt_and_future_versions_never_start_over
+* test_future_schema_and_policy_mismatch_block_fallback_to_supported_slot
+* test_codec_rejects_bad_hash_types_utf8_and_noncanonical_ints
+* test_inactive_generation_removal_and_publication_faults_recover_whole_state
+* test_real_write_path_failure_does_not_commit_or_publish
+* test_recovery_preservation_failure_keeps_damaged_original
+* test_stale_session_and_unobserved_recovery_cannot_overwrite
+* test_same_process_claim_busy_and_pending_only_initial_save
+* test_boot_uses_existing_identity_and_retains_recovery_notice
+* test_divergent_same_revision_and_session_identity_fail_closed
+* test_saved_v1_fixtures_roundtrip_and_replay_clear_exactly
+[1m16/16 passed.
+[0m[4m
+
+res://tests/unit/test_game_session.gd
+[0m* test_initial_supply_commits_before_exposure_and_resume_draws_nothing
+* test_view_is_isolated_and_changes_only_after_successful_commit
+* test_invalid_placements_preserve_board_queue_score_rng_and_event_id
+* test_manual_crossing_clear_counts_union_and_keeps_tray_checkpoint
+* test_full_board_clear_sixteen_lines_and_two_segment_crossings
+* test_auto_confirmation_cancel_and_confirm_are_one_commit
+* test_auto_placement_detects_success_before_clear_and_refills_once
+* test_old_pending_line_does_not_count_as_new_batch_success
+* test_failed_save_rolls_back_refill_and_retry_matches_control
+* test_ambiguous_commit_requires_resume_and_never_reawards
+* test_competing_writer_cannot_overwrite_committed_state
+* test_duplicate_out_of_order_and_stale_batch_do_not_consume
+* test_new_run_preserves_growth_records_mode_and_advances_identity
+* test_materials_and_every_defined_part_have_cumulative_route
+* test_material_progress_counts_lower_tiers_and_unlocks_parts_same_event
+* test_segment_edits_representative_and_new_wood_segments_are_preserved
+* test_brick_arch_part_unlock_equip_dormancy_independence_and_no_puzzle_mutation
+* test_brick_arch_part_progress_lock_and_save_failure_have_no_phantom_change
+* test_brick_terrace_unlock_thresholds_coexistence_order_dormancy_and_save_failure
+* test_brick_cornice_unlock_paths_and_three_part_commit_failure_and_restore
+* test_brick_landmark_unlock_and_four_part_sparse_commit_failure_and_dormancy
+* test_copy_segment_appearance_commits_one_target_and_preserves_game_progress
+* test_copy_segment_appearance_rejects_invalid_and_failed_saves_without_change
+* test_copy_nonbrick_appearance_discards_dormant_parts_at_target
+* test_memory_repository_v1_resume_migrates_without_write_then_action_commits_v2
+* test_bad_snapshots_versions_numeric_types_and_styles_are_rejected
+* test_repository_reentrancy_is_rejected_until_commit_finishes
+* test_mid_tray_game_over_ends_streak_without_settling_or_losing_growth
+* test_action_sequence_replay_matches_across_forty_session_resumes
+* test_counter_boundary_rejects_entire_candidate_without_commit
+[1m30/30 passed.
+[0m[4m
+
+res://tests/unit/test_phase4_online.gd
+[0m* test_committed_action_survives_new_repository_and_replay
+* test_new_run_is_rejected_without_a_trace_write
+* test_appended_trace_is_isolated_from_caller_mutations
+* test_damaged_latest_generation_recovers_previous_trace
+* test_reduced_single_challenge_reopens_with_issued_profile
+* test_accepted_server_trace_restores_fresh_challenge
+* test_local_extension_is_kept_and_divergence_is_rejected
+* test_explicit_server_choice_archives_local_journal
+[1m8/8 passed.
+[0m[4m
+
+res://tests/unit/test_piece_generator.gd
+[0m* test_catalog_geometry_unique_connected_normalized_and_legacy_preserved
+* test_integer_ticket_boundaries_exhaustive
+* test_config_errors_and_defensive_snapshot
+* test_strict_int64_and_checkpoint_validation
+* test_bad_input_and_nonempty_tray_do_not_change_owned_state
+* test_post_clear_union_and_must_clear_before_game_over
+* test_exhaustive_512_local_masks_match_independent_coordinate_oracle
+* test_deterministic_json_resume_and_board_ownership
+* test_bounded_fallback_zero_weights_and_no_enabled_fit
+* test_raw_control_has_no_easy_injection_and_old_checkpoint_rejected
+* test_each_piece_fit_does_not_imply_whole_tray_solution
+* test_easy_fallback_and_replacement_slots_and_config_identity
+[1m12/12 passed.
+[0m[4m
+
+res://tests/unit/test_piece_generator_redteam.gd
+[0m* test_every_piece_at_every_legal_origin_has_current_witness
+* test_random_full_board_positive_and_negative_decisions_match_oracle
+* test_all_active_family_subsets_obey_conditional_guarantee
+* test_later_current_piece_beats_earlier_post_clear_piece_and_output_is_owned
+[1m4/4 passed.
+[0m[4m
+
+res://tests/unit/test_piece_supply.gd
+[0m* test_crossing_lines_count_as_two_and_keep_manual_clear_available
+* test_empty_tray_requires_refill_before_game_over
+* test_rng_roundtrip_preserves_next_batch
+* test_unknown_id_is_rejected_even_when_another_piece_fits
+* test_board_status_does_not_modify_input
+* test_integer_weight_boundaries_and_zero_weight
+[1m6/6 passed.
+[0m[4m
+
+res://tests/unit/test_piece_supply_checks.gd
+[0m* test_ported_baseline_checks_pass_on_game_target
+[1m1/1 passed.
+[0m[4m
+
+res://tests/unit/test_presentation.gd
+[0m* test_clear_geometry_contains_union_and_styles_before_automatic_removal
+* test_preview_uses_commit_validator_and_does_not_change_state
+* test_tray_reuses_committed_pieces_and_refreshes_on_revision_or_session_change
+* test_pointer_origin_and_owner_prevent_duplicate_or_clamped_drop
+* test_stale_drag_and_confirmation_never_commit_new_state
+* test_failed_commit_has_no_presentation_uncertainty_locks_until_attach
+* test_settings_roundtrip_is_separate_and_corrupt_original_is_preserved
+* test_settings_v1_migration_preserves_every_existing_value
+* test_large_text_fits_320_safe_area_and_settings_dialog
+[33m    108 Orphans[0m
+[33m        * [@Button@1922:<Button#1991170328173>] + 5
+        * [@Label@1933:<Label#1992814495363>]
+        * [@HBoxContainer@1932:<HBoxContainer#1992495728858>] + 2
+        * [@Button@1929:<Button#1992210516187>]
+        * [@Label@1944:<Label#1993485584663>]
+        * [@Label@1942:<Label#1993418475805>]
+        * [@Button@1928:<Button#1992143407393>]
+        * [@Button@1945:<Button#1993519139107>]
+        * [@PanelContainer@1937:<PanelContainer#1992848050576>] + 3
+        * [@Label@1938:<Label#1993217149351>] + 1
+        * [@Label@1940:<Label#1993317812653>] + 1
+        * [@Button@1950:<Button#1994425108998>] + 5
+        * [@Label@1943:<Label#1993452030488>]
+        * [@Button@1946:<Button#1993871460987>] + 3
+        * [@Button@1956:<Button#1994676767511>]
+        * [@Button@1957:<Button#1994760653597>]
+        * [@HBoxContainer@1960:<HBoxContainer#1994827762465>] + 2
+        * [@Label@1961:<Label#1994928425767>]
+        * [@PanelContainer@1965:<PanelContainer#1994961980201>] + 3
+        * [@Label@1966:<Label#1995112975153>] + 1
+        * [@Label@1968:<Label#1995213638456>] + 1
+        * [@Label@1970:<Label#1995314301757>]
+        * [@Label@1971:<Label#1995347856192>]
+        * [@Label@1972:<Label#1995381410625>]
+        * [@Button@1973:<Button#1995414965060>]
+        * [@Button@1974:<Button#1995482073928>] + 3
+        * [@Button@1978:<Button#1995817618253>] + 5
+        * [@Button@1984:<Button#1996069276508>]
+        * [@Button@1985:<Button#1996136385376>]
+        * [@HBoxContainer@1988:<HBoxContainer#1996203494244>] + 2
+        * [@Label@1989:<Label#1996304157546>]
+        * [@PanelContainer@1993:<PanelContainer#1996337711980>] + 3
+        * [@Label@1994:<Label#1996488706933>] + 1
+        * [@Label@1996:<Label#1996589370235>] + 1
+        * [@Label@1998:<Label#1996690033537>]
+        * [@Label@1999:<Label#1996723587971>]
+        * [@Label@2000:<Label#1996757142405>]
+        * [@Button@2001:<Button#1996790696839>]
+        * [@Button@2002:<Button#1996857805707>] + 3
+        * [@ColorRect@2006:<ColorRect#1997042355093>] + 18[0m
+* test_tall_touch_piece_stays_above_finger_and_uses_shared_origin
+* test_feedback_profiles_prioritize_clear_and_preserve_saved_haptics_choice
+* test_real_screen_clear_and_interrupt_restore_input_and_exact_hud
+* test_screen_auto_modal_cancel_and_confirm_commit_once
+* test_back_closes_modal_then_tower_and_cancels_drag_without_commit
+* test_sixteen_line_payload_is_unique_and_precise
+* test_touch_cancellation_and_focus_loss_do_not_place_or_leave_drag
+* test_recovery_modal_cannot_be_dismissed_into_a_frozen_screen
+* test_new_run_from_tower_preserves_growth_and_resets_hud
+* test_audio_off_does_not_start_players_and_history_is_bounded
+* test_resize_preserves_mandatory_recovery_action
+* test_resumed_below_best_run_announces_first_new_record_once
+* test_tower_roof_tracks_actual_top_across_segment_boundary
+* test_tower_facade_style_is_per_completed_segment_and_survives_resume
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    168 Orphans[0m
+[33m        * [@Label@2849:<Label#2191624504963>]
+        * [@Label@2776:<Label#2186624894598>] + 1
+        * [@Button@2758:<Button#2184477410960>] + 5
+        * [@Label@2769:<Label#2186121578729>]
+        * [@Button@2781:<Button#2186826221813>]
+        * [@Button@2816:<Button#2189040814359>]
+        * [@Label@2846:<Label#2191456733509>]
+        * [@Button@2869:<Button#2192849242450>]
+        * [@Label@2778:<Label#2186725558651>]
+        * [@Button@2866:<Button#2192715024767>]
+        * [@Button@2818:<Button#2189141477764>]
+        * [@Label@2868:<Label#2192815688074>]
+        * [@Button@2793:<Button#2188050958736>]
+        * [@Button@2857:<Button#2192027158946>]
+        * [@Label@2807:<Label#2188638161363>]
+        * [@Button@2815:<Button#2188973705688>]
+        * [@Label@2804:<Label#2188503943641>] + 1
+        * [@Button@2828:<Button#2189711903264>]
+        * [@Label@2867:<Label#2192782133811>]
+        * [@Button@2764:<Button#2185450490422>]
+        * [@Button@2847:<Button#2191490288192>]
+        * [@Label@2817:<Label#2189107923530>]
+        * [@Button@2854:<Button#2191859386988>]
+        * [@Button@2826:<Button#2189577685617>]
+        * [@Label@2779:<Label#2186759113331>]
+        * [@Label@2820:<Label#2189242141325>]
+        * [@Button@2870:<Button#2192916351649>]
+        * [@Button@2842:<Button#2190567541415>]
+        * [@Label@2871:<Label#2192983460535>]
+        * [@PanelContainer@2801:<PanelContainer#2188252285636>] + 3
+        * [@Button@2872:<Button#2193017014984>]
+        * [@PanelContainer@2773:<PanelContainer#2186155133649>] + 3
+        * [@Label@2865:<Label#2192681470687>]
+        * [@Label@2780:<Label#2186792667872>]
+        * [@Label@2814:<Label#2188940151569>]
+        * [@Button@2825:<Button#2189510576926>]
+        * [@Button@2824:<Button#2189443468063>]
+        * [@Label@2823:<Label#2189409913632>]
+        * [@Label@2819:<Label#2189208587057>]
+        * [@Button@2838:<Button#2190332660532>]
+        * [@Button@2841:<Button#2190500432705>]
+        * [@Button@2856:<Button#2191960050498>]
+        * [@Label@2851:<Label#2191725169484>]
+        * [@Button@2822:<Button#2189342804822>]
+        * [@Button@2850:<Button#2191658060634>]
+        * [@Button@2809:<Button#2188705270622>]
+        * [@Label@2808:<Label#2188671716191>]
+        * [@Label@2802:<Label#2188403280746>] + 1
+        * [@Button@2844:<Button#2190701759340>]
+        * [@Button@2786:<Button#2187732192115>] + 5
+        * [@Label@2852:<Label#2191758723958>]
+        * [@Button@2829:<Button#2189779012477>]
+        * [@Label@2830:<Label#2189896452993>]
+        * [@Button@2827:<Button#2189644794754>]
+        * [@HBoxContainer@2768:<HBoxContainer#2185802812298>] + 2
+        * [@Button@2845:<Button#2190768868249>]
+        * [@Button@2834:<Button#2190131334050>]
+        * [@Label@2833:<Label#2190081002405>]
+        * [@Button@2843:<Button#2190634650539>]
+        * [@Label@2797:<Label#2188218731436>]
+        * [@Button@2837:<Button#2190265551802>]
+        * [@Label@2835:<Label#2190198442940>]
+        * [@Label@2839:<Label#2190399769533>]
+        * [@Button@2848:<Button#2191557397440>]
+        * [@Label@2836:<Label#2190231997378>]
+        * [@Button@2782:<Button#2187178544076>] + 3
+        * [@Label@2806:<Label#2188604607438>]
+        * [@Button@2832:<Button#2190013893587>]
+        * [@Button@2831:<Button#2189946784725>]
+        * [@Button@2810:<Button#2188772379615>] + 3
+        * [@Button@2765:<Button#2185517599724>]
+        * [@Button@2840:<Button#2190433324014>]
+        * [@Button@2821:<Button#2189275696119>]
+        * [@Button@2853:<Button#2191792278558>]
+        * [@Button@2792:<Button#2187983850541>]
+        * [@Label@2855:<Label#2191926496308>]
+        * [@HBoxContainer@2796:<HBoxContainer#2188118068283>] + 2
+        * [@Label@2774:<Label#2186524232774>] + 1
+        * [@Button@2861:<Button#2192295595079>]
+        * [@Button@2858:<Button#2192094268511>]
+        * [@Button@2859:<Button#2192161377377>]
+        * [@Button@2860:<Button#2192228486245>]
+        * [@Button@2863:<Button#2192547253357>]
+        * [@Label@2862:<Label#2192513698927>]
+        * [@Button@2864:<Button#2192614362225>]
+        * [@Button@2873:<Button#2193084124277>]
+        * [@Button@2874:<Button#2193151233145>]
+        * [@Button@2875:<Button#2193218342013>]
+        * [@Button@2876:<Button#2193285450881>]
+        * [@Button@2877:<Button#2193352559749>]
+        * [@Label@2878:<Label#2193453223050>]
+        * [@Button@2879:<Button#2193486777484>]
+        * [@Button@2880:<Button#2193553886352>]
+        * [@Label@2881:<Label#2193620995220>]
+        * [@Button@2882:<Button#2193654549654>]
+        * [@Label@2883:<Label#2193721658522>]
+        * [@Label@2884:<Label#2193755212956>]
+        * [@Button@2885:<Button#2193788767390>]
+        * [@Button@2886:<Button#2193855876258>]
+        * [@Label@2887:<Label#2193922985126>]
+        * [@Button@2888:<Button#2193956539560>]
+        * [@Button@2889:<Button#2194023648428>]
+        * [@Button@2890:<Button#2194090757296>]
+        * [@Button@2891:<Button#2194157866164>]
+        * [@Button@2892:<Button#2194224975032>]
+        * [@Button@2893:<Button#2194292083900>]
+        * [@Label@2894:<Label#2194409524419>]
+        * [@Button@2895:<Button#2194443078853>]
+        * [@Button@2896:<Button#2194510187721>]
+        * [@Label@2897:<Label#2194577296589>]
+        * [@Button@2898:<Button#2194610851023>]
+        * [@Label@2899:<Label#2194677959891>]
+        * [@Label@2900:<Label#2194711514325>]
+        * [@Button@2901:<Button#2194745068759>]
+        * [@Button@2902:<Button#2194812177627>]
+        * [@Label@2903:<Label#2194879286495>]
+        * [@Button@2904:<Button#2194912840929>]
+        * [@Button@2905:<Button#2194979949797>]
+        * [@Button@2906:<Button#2195047058665>]
+        * [@Button@2907:<Button#2195114167533>]
+        * [@Button@2908:<Button#2195181276401>]
+        * [@Button@2909:<Button#2195248385269>]
+        * [@Label@2910:<Label#2195332271353>]
+        * [@Button@2911:<Button#2195365825787>]
+        * [@Button@2912:<Button#2195432934655>]
+        * [@Label@2913:<Label#2195500043523>]
+        * [@Button@2914:<Button#2195533597957>]
+        * [@Label@2915:<Label#2195600706825>]
+        * [@Label@2916:<Label#2195634261259>]
+        * [@Button@2917:<Button#2195667815693>]
+        * [@Button@2918:<Button#2195734924561>]
+        * [@Label@2919:<Label#2195802033429>]
+        * [@Button@2920:<Button#2195835587863>]
+        * [@Button@2921:<Button#2195902696731>]
+        * [@Button@2922:<Button#2195969805599>]
+        * [@Button@2923:<Button#2196036914467>]
+        * [@Button@2924:<Button#2196104023335>]
+        * [@Button@2925:<Button#2196171132203>][0m
+* test_locked_brick_status_is_clear_and_not_selectable
+[33m    28 Orphans[0m
+[33m        * [@Button@2952:<Button#2210196884364>] + 5
+        * [@Button@2976:<Button#2212898016389>] + 3
+        * [@Button@2975:<Button#2212545694864>]
+        * [@Label@2974:<Label#2212512140436>]
+        * [@Label@2972:<Label#2212445031574>]
+        * [@Label@2973:<Label#2212478586007>]
+        * [@Label@2970:<Label#2212344368287>] + 1
+        * [@Label@2968:<Label#2212243704998>] + 1
+        * [@PanelContainer@2967:<PanelContainer#2211874606258>] + 3
+        * [@Label@2963:<Label#2211841051830>]
+        * [@HBoxContainer@2962:<HBoxContainer#2211522284734>] + 2
+        * [@Button@2959:<Button#2211237072068>]
+        * [@Button@2958:<Button#2211169963208>][0m
+* test_metal_facade_selection_is_committed_per_segment_and_resumes
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    148 Orphans[0m
+[33m        * [@Label@3137:<Label#2234272188685>]
+        * [@Button@3138:<Button#2234305743119>]
+        * [@Button@3141:<Button#2234439960857>]
+        * [@Button@3154:<Button#2235614365981>]
+        * [@Button@3136:<Button#2234205079865>]
+        * [@Button@3145:<Button#2234674841930>]
+        * [@Label@3073:<Label#2230111439207>]
+        * [@Button@3144:<Button#2234607733108>]
+        * [@Button@3047:<Button#2228299499978>]
+        * [@Label@3143:<Label#2234574178772>]
+        * [@ColorRect@3096:<ColorRect#2231369730592>] + 16
+        * [@Button@3048:<Button#2228651821619>] + 3
+        * [@Label@3045:<Label#2228232391228>]
+        * [@Button@3151:<Button#2235446594139>]
+        * [@Button@3059:<Button#2229524236908>]
+        * [@Button@3135:<Button#2234137971319>]
+        * [@Label@3046:<Label#2228265945783>]
+        * [@Label@3074:<Label#2230144994020>]
+        * [@Button@3152:<Button#2235513703169>]
+        * [@Button@3081:<Button#2230446983982>]
+        * [@Button@3076:<Button#2230245657403>] + 3
+        * [@Label@3070:<Label#2229977221951>] + 1
+        * [@Label@3063:<Label#2229692009292>]
+        * [@PanelContainer@3067:<PanelContainer#2229725563738>] + 3
+        * [@Button@3031:<Button#2226990877551>]
+        * [@Label@3134:<Label#2234104417155>]
+        * [@PanelContainer@3039:<PanelContainer#2227628411799>] + 3
+        * [@Label@3080:<Label#2230413429656>]
+        * [@Label@3068:<Label#2229876558753>] + 1
+        * [@Button@3094:<Button#2231185181609>]
+        * [@Button@3093:<Button#2231118072750>]
+        * [@Button@3146:<Button#2234741951412>]
+        * [@Button@3091:<Button#2230983855030>]
+        * [@Button@3092:<Button#2231050963896>]
+        * [@Button@3095:<Button#2231252290505>]
+        * [@Label@3035:<Label#2227594857419>]
+        * [@Button@3075:<Button#2230178548699>]
+        * [@Label@3072:<Label#2230077885415>]
+        * [@HBoxContainer@3034:<HBoxContainer#2227276090347>] + 2
+        * [@Button@3142:<Button#2234507070458>]
+        * [@HBoxContainer@3062:<HBoxContainer#2229591346206>] + 2
+        * [@Label@3140:<Label#2234406407209>]
+        * [@Button@3058:<Button#2229457128504>]
+        * [@ColorRect@3115:<ColorRect#2233030675515>] + 16
+        * [@Button@3147:<Button#2234809060416>]
+        * [@Button@3052:<Button#2229205470281>] + 5
+        * [@Button@3149:<Button#2234943278154>]
+        * [@Label@3153:<Label#2235580812371>]
+        * [@Label@3139:<Label#2234372852822>]
+        * [@Button@3024:<Button#2225950690427>] + 5
+        * [@Label@3042:<Label#2228098174093>] + 1
+        * [@Label@3150:<Label#2235413040325>]
+        * [@Button@3090:<Button#2230916746467>]
+        * [@Label@3089:<Label#2230883192036>]
+        * [@Button@3088:<Button#2230816083176>]
+        * [@Label@3086:<Label#2230715419881>]
+        * [@Label@3085:<Label#2230681865455>]
+        * [@Button@3084:<Button#2230614756595>]
+        * [@Label@3083:<Label#2230581202164>]
+        * [@Button@3087:<Button#2230748974326>]
+        * [@Button@3082:<Button#2230514093306>]
+        * [@Label@3044:<Label#2228198837500>]
+        * [@Label@3040:<Label#2227997510920>] + 1
+        * [@Button@3030:<Button#2226923769114>]
+        * [@Button@3148:<Button#2234876169520>]
+        * [@Label@3155:<Label#2235681475891>]
+        * [@Label@3156:<Label#2235715030378>]
+        * [@Button@3157:<Button#2235748584813>]
+        * [@Button@3158:<Button#2235815693680>]
+        * [@Label@3159:<Label#2235882802548>]
+        * [@Button@3160:<Button#2235916356982>]
+        * [@Button@3161:<Button#2235983465850>]
+        * [@Button@3162:<Button#2236050574718>]
+        * [@Button@3163:<Button#2236117683586>]
+        * [@Button@3164:<Button#2236184792454>]
+        * [@Button@3165:<Button#2236251901322>][0m
+* test_material_sheet_buttons_apply_their_own_bound_choice
+[33m    264 Orphans[0m
+[33m        * [@Label@3214:<Label#2251233954037>]
+        * [@Button@3198:<Button#2249891776798>]
+        * [@Button@3215:<Button#2251267508571>]
+        * [@Label@3203:<Label#2250562865710>]
+        * [@Button@3235:<Button#2253012339267>]
+        * [@ColorRect@3236:<ColorRect#2253129779781>] + 16
+        * [@Button@3199:<Button#2249958886097>]
+        * [@Button@3224:<Button#2252374805301>]
+        * [@Button@3281:<Button#2256585886518>] + 5
+        * [@Label@3208:<Label#2250965519213>] + 1
+        * [@HBoxContainer@3291:<HBoxContainer#2257105980271>] + 2
+        * [@Button@3234:<Button#2252945230722>]
+        * [@Label@3212:<Label#2251166845842>]
+        * [@Button@3222:<Button#2252274142114>]
+        * [@Button@3221:<Button#2252207033253>]
+        * [@Label@3220:<Label#2252173478823>]
+        * [@Button@3216:<Button#2251619830707>] + 3
+        * [@Label@3299:<Label#2257525410753>] + 1
+        * [@Label@3223:<Label#2252341251010>]
+        * [@Label@3210:<Label#2251066182598>] + 1
+        * [@Button@3287:<Button#2256954985419>]
+        * [@Label@3213:<Label#2251200400338>]
+        * [@Button@3233:<Button#2252878121983>]
+        * [@HBoxContainer@3202:<HBoxContainer#2250244099132>] + 2
+        * [@PanelContainer@3207:<PanelContainer#2250596420688>] + 3
+        * [@Button@3192:<Button#2248918699120>] + 5
+        * [@PanelContainer@3296:<PanelContainer#2257256975483>] + 3
+        * [@Label@3301:<Label#2257626074293>]
+        * [@Label@3302:<Label#2257659628727>]
+        * [@Button@3321:<Button#2258867588287>]
+        * [@Button@3317:<Button#2258632707268>]
+        * [@Button@3319:<Button#2258733370566>]
+        * [@Label@3318:<Label#2258699816136>]
+        * [@Button@3323:<Button#2259001806025>]
+        * [@Button@3322:<Button#2258934697167>]
+        * [@Button@3320:<Button#2258800479456>]
+        * [@Label@3225:<Label#2252441914593>]
+        * [@Button@3227:<Button#2252509023461>]
+        * [@Label@3226:<Label#2252475469031>]
+        * [@Label@3229:<Label#2252643241198>]
+        * [@Button@3230:<Button#2252676795632>]
+        * [@Button@3231:<Button#2252743904497>]
+        * [@Button@3228:<Button#2252576132344>]
+        * [@Button@3232:<Button#2252811013369>]
+        * [@Button@3288:<Button#2257022094609>]
+        * [@Label@3292:<Label#2257223421208>]
+        * [@Label@3297:<Label#2257424747809>] + 1
+        * [@Label@3303:<Label#2257693183378>]
+        * [@Button@3304:<Button#2257726737814>]
+        * [@Button@3305:<Button#2257877732764>] + 3
+        * [@Button@3310:<Button#2258263608753>]
+        * [@Label@3309:<Label#2258230054322>]
+        * [@Button@3311:<Button#2258330717621>]
+        * [@Label@3312:<Label#2258397826489>]
+        * [@Button@3313:<Button#2258431380926>]
+        * [@Label@3315:<Label#2258532044225>]
+        * [@Label@3314:<Label#2258498489794>]
+        * [@Button@3316:<Button#2258565598662>]
+        * [@Button@3324:<Button#2259068915145>]
+        * [@ColorRect@3325:<ColorRect#2259186355664>] + 16
+        * [@Button@3370:<Button#2262642462290>] + 5
+        * [@Button@3376:<Button#2263011561085>]
+        * [@Button@3377:<Button#2263078669953>]
+        * [@HBoxContainer@3380:<HBoxContainer#2263162556037>] + 2
+        * [@Label@3381:<Label#2263279996555>]
+        * [@PanelContainer@3385:<PanelContainer#2263313550989>] + 3
+        * [@Label@3386:<Label#2263481323158>] + 1
+        * [@Label@3388:<Label#2263581986460>] + 1
+        * [@Label@3390:<Label#2263682649762>]
+        * [@Label@3391:<Label#2263716204196>]
+        * [@Label@3392:<Label#2263749758630>]
+        * [@Button@3393:<Button#2263783313064>]
+        * [@Button@3394:<Button#2263934308016>] + 3
+        * [@Label@3398:<Label#2264286629572>]
+        * [@Button@3399:<Button#2264320184006>]
+        * [@Button@3400:<Button#2264387292874>]
+        * [@Label@3401:<Label#2264454401742>]
+        * [@Button@3402:<Button#2264487956176>]
+        * [@Label@3403:<Label#2264555065044>]
+        * [@Label@3404:<Label#2264588619478>]
+        * [@Button@3405:<Button#2264622173912>]
+        * [@Button@3406:<Button#2264689282780>]
+        * [@Label@3407:<Label#2264756391648>]
+        * [@Button@3408:<Button#2264789946082>]
+        * [@Button@3409:<Button#2264857054950>]
+        * [@Button@3410:<Button#2264924163818>]
+        * [@Button@3411:<Button#2264991272686>]
+        * [@Button@3412:<Button#2265058381554>]
+        * [@Button@3413:<Button#2265125490422>]
+        * [@ColorRect@3414:<ColorRect#2265242930941>] + 16
+        * [@Button@3459:<Button#2268699037567>] + 5
+        * [@Button@3465:<Button#2269068136362>]
+        * [@Button@3466:<Button#2269135245230>]
+        * [@HBoxContainer@3469:<HBoxContainer#2269219131314>] + 2
+        * [@Label@3470:<Label#2269336571832>]
+        * [@PanelContainer@3474:<PanelContainer#2269370126266>] + 3
+        * [@Label@3475:<Label#2269537898435>] + 1
+        * [@Label@3477:<Label#2269638561737>] + 1
+        * [@Label@3479:<Label#2269739225039>]
+        * [@Label@3480:<Label#2269772779473>]
+        * [@Label@3481:<Label#2269806333907>]
+        * [@Button@3482:<Button#2269839888341>]
+        * [@Button@3483:<Button#2269990883293>] + 3
+        * [@Label@3487:<Label#2270343204849>]
+        * [@Button@3488:<Button#2270376759283>]
+        * [@Button@3489:<Button#2270443868151>]
+        * [@Label@3490:<Label#2270510977019>]
+        * [@Button@3491:<Button#2270544531453>]
+        * [@Label@3492:<Label#2270611640321>]
+        * [@Label@3493:<Label#2270645194755>]
+        * [@Button@3494:<Button#2270678749189>]
+        * [@Button@3495:<Button#2270745858057>]
+        * [@Label@3496:<Label#2270812966925>]
+        * [@Button@3497:<Button#2270846521359>]
+        * [@Button@3498:<Button#2270913630227>]
+        * [@Button@3499:<Button#2270980739095>]
+        * [@Button@3500:<Button#2271047847963>]
+        * [@Button@3501:<Button#2271114956831>]
+        * [@Button@3502:<Button#2271182065699>]
+        * [@ColorRect@3503:<ColorRect#2271299506218>] + 16[0m
+* test_saved_crystal_displays_without_migration_and_failed_change_keeps_it
+[33m    28 Orphans[0m
+[33m        * [@Button@3572:<Button#2288412264724>] + 3
+        * [@Label@3570:<Label#2288026390469>]
+        * [@Button@3571:<Button#2288059944902>]
+        * [@Label@3568:<Label#2287959281612>]
+        * [@Label@3569:<Label#2287992836045>]
+        * [@Label@3566:<Label#2287858618322>] + 1
+        * [@Label@3564:<Label#2287757955029>] + 1
+        * [@PanelContainer@3563:<PanelContainer#2287388856287>] + 3
+        * [@Label@3559:<Label#2287355301874>]
+        * [@HBoxContainer@3558:<HBoxContainer#2287036534778>] + 2
+        * [@Button@3555:<Button#2286751322111>]
+        * [@Button@3554:<Button#2286684213250>]
+        * [@Button@3548:<Button#2285711134762>] + 5[0m
+* test_crystal_button_commits_independently_and_resumes_with_other_facade
+[33m    66 Orphans[0m
+[33m        * [@ColorRect@3676:<ColorRect#2306464550574>] + 16
+        * [@Label@3663:<Label#2305676021437>]
+        * [@Button@3667:<Button#2305843793600>]
+        * [@Button@3664:<Button#2305709575873>]
+        * [@Label@3660:<Label#2305508249356>]
+        * [@Button@3661:<Button#2305541803789>]
+        * [@Button@3662:<Button#2305608912657>]
+        * [@Label@3666:<Label#2305810239251>]
+        * [@Label@3665:<Label#2305776684820>]
+        * [@Button@3675:<Button#2306347110169>]
+        * [@Button@3668:<Button#2305910902558>]
+        * [@Button@3670:<Button#2306011565856>]
+        * [@Label@3669:<Label#2305978011425>]
+        * [@Button@3671:<Button#2306078674724>]
+        * [@Button@3672:<Button#2306145783592>]
+        * [@Button@3673:<Button#2306212892460>]
+        * [@Button@3674:<Button#2306280001341>]
+        * [@Button@3655:<Button#2304602279807>]
+        * [@Button@3656:<Button#2304954601379>] + 3
+        * [@Label@3654:<Label#2304568725419>]
+        * [@Button@3632:<Button#2302253469617>] + 5
+        * [@Button@3639:<Button#2303293657067>]
+        * [@Button@3638:<Button#2303226548290>]
+        * [@HBoxContainer@3642:<HBoxContainer#2303578869835>] + 2
+        * [@Label@3643:<Label#2303897636940>]
+        * [@PanelContainer@3647:<PanelContainer#2303931191376>] + 3
+        * [@Label@3648:<Label#2304300290137>] + 1
+        * [@Label@3650:<Label#2304400953441>] + 1
+        * [@Label@3652:<Label#2304501616740>]
+        * [@Label@3653:<Label#2304535171175>][0m
+* test_failed_facade_commit_keeps_saved_and_displayed_material_unchanged
+[33m    28 Orphans[0m
+[33m        * [@HBoxContainer@3731:<HBoxContainer#2320859401812>] + 2
+        * [@Button@3728:<Button#2320574189247>]
+        * [@Button@3727:<Button#2320507080442>]
+        * [@PanelContainer@3736:<PanelContainer#2321211723517>] + 3
+        * [@Label@3737:<Label#2321580822430>] + 1
+        * [@Label@3732:<Label#2321178169252>]
+        * [@Label@3739:<Label#2321681485757>] + 1
+        * [@Button@3721:<Button#2319534002233>] + 5
+        * [@Button@3745:<Button#2322235134028>] + 3
+        * [@Button@3744:<Button#2321882812499>]
+        * [@Label@3741:<Label#2321782149213>]
+        * [@Label@3742:<Label#2321815703647>]
+        * [@Label@3743:<Label#2321849258082>][0m
+* test_brick_arch_part_button_lock_unlock_and_failed_commit_are_real_pressed_actions
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    148 Orphans[0m
+[33m        * [@Button@3897:<Button#2342535563682>]
+        * [@Button@3839:<Button#2339381447605>]
+        * [@Button@3873:<Button#2340975283285>]
+        * [@Button@3921:<Button#2343894518973>]
+        * [@Label@3920:<Label#2343860964548>]
+        * [@Button@3919:<Button#2343793855687>]
+        * [@Button@3913:<Button#2343491865801>]
+        * [@Button@3915:<Button#2343592529101>]
+        * [@Label@3914:<Label#2343558974671>]
+        * [@Button@3918:<Button#2343726746836>]
+        * [@Label@3916:<Label#2343659637974>]
+        * [@Label@3917:<Label#2343693192416>]
+        * [@Label@3900:<Label#2342703336708>]
+        * [@Label@3898:<Label#2342602673579>]
+        * [@Button@3926:<Button#2344230063537>]
+        * [@ColorRect@3927:<ColorRect#2344297172402>] + 16
+        * [@Button@3925:<Button#2344162954677>]
+        * [@Button@3924:<Button#2344095845820>]
+        * [@Button@3923:<Button#2344028736962>]
+        * [@Button@3922:<Button#2343961628100>]
+        * [@Button@3912:<Button#2343424757193>]
+        * [@Button@3896:<Button#2342468455887>]
+        * [@Button@3899:<Button#2342636228073>]
+        * [@Button@3910:<Button#2343273762284>]
+        * [@Label@3911:<Label#2343391202798>]
+        * [@Button@3902:<Button#2342770445811>]
+        * [@Label@3901:<Label#2342736891380>]
+        * [@Button@3903:<Button#2342837554679>]
+        * [@Label@3904:<Label#2342904663547>]
+        * [@Button@3905:<Button#2342938217984>]
+        * [@Button@3906:<Button#2343005326852>]
+        * [@Button@3907:<Button#2343072435720>]
+        * [@Button@3908:<Button#2343139544588>]
+        * [@Button@3909:<Button#2343206653456>]
+        * [@Button@3872:<Button#2340908174994>]
+        * [@Label@3863:<Label#2340438412951>]
+        * [@Label@3860:<Label#2340270640800>]
+        * [@Button@3861:<Button#2340304195233>]
+        * [@Label@3854:<Label#2340002205352>]
+        * [@Button@3856:<Button#2340102868649>] + 3
+        * [@Label@3853:<Label#2339968650934>]
+        * [@Label@3852:<Label#2339935096503>]
+        * [@Button@3855:<Button#2340035759801>]
+        * [@Label@3850:<Label#2339834433221>] + 1
+        * [@Button@3862:<Button#2340371304137>]
+        * [@Label@3820:<Label#2337854721746>] + 1
+        * [@PanelContainer@3819:<PanelContainer#2337485622998>] + 3
+        * [@Label@3815:<Label#2337452068568>]
+        * [@Button@3874:<Button#2341042392805>]
+        * [@Label@3826:<Label#2338123157223>]
+        * [@Label@3824:<Label#2338056048377>]
+        * [@Button@3810:<Button#2336780979969>]
+        * [@Label@3895:<Label#2342434901781>]
+        * [@Button@3875:<Button#2341109501720>]
+        * [@ColorRect@3876:<ColorRect#2341226942252>] + 16
+        * [@Button@3811:<Button#2336848088886>]
+        * [@Button@3832:<Button#2339062681540>] + 5
+        * [@Label@3825:<Label#2338089603033>]
+        * [@HBoxContainer@3842:<HBoxContainer#2339448557532>] + 2
+        * [@Button@3838:<Button#2339314339810>]
+        * [@Label@3866:<Label#2340572631027>]
+        * [@PanelContainer@3847:<PanelContainer#2339582775284>] + 3
+        * [@Button@3864:<Button#2340471967733>]
+        * [@Label@3843:<Label#2339549220854>]
+        * [@Label@3865:<Label#2340539076604>]
+        * [@Button@3867:<Button#2340606185470>]
+        * [@Button@3827:<Button#2338156711939>]
+        * [@Button@3871:<Button#2340841066502>]
+        * [@Button@3870:<Button#2340773957644>]
+        * [@Label@3869:<Label#2340740403214>]
+        * [@Button@3868:<Button#2340673294354>]
+        * [@Label@3848:<Label#2339733770271>] + 1
+        * [@Button@3828:<Button#2338509033511>] + 3
+        * [@HBoxContainer@3814:<HBoxContainer#2337133301818>] + 2
+        * [@Button@3804:<Button#2335807901755>] + 5
+        * [@Label@3822:<Label#2337955385449>] + 1[0m
+* test_brick_terrace_and_arch_choices_are_independent_real_button_actions
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    148 Orphans[0m
+[33m        * [@Label@4137:<Label#2369043564765>]
+        * [@Label@4131:<Label#2368724797713>]
+        * [@Label@4128:<Label#2368557025558>]
+        * [@Button@4132:<Button#2368758352153>]
+        * [@Button@4129:<Button#2368590580000>]
+        * [@Button@4069:<Button#2364815706675>]
+        * [@Button@4143:<Button#2369412663921>]
+        * [@Button@4136:<Button#2368959679203>]
+        * [@Button@4141:<Button#2369278446310>]
+        * [@Button@4139:<Button#2369144228685>]
+        * [@Button@4135:<Button#2368892570462>]
+        * [@Button@4130:<Button#2368657689444>]
+        * [@Button@4140:<Button#2369211337658>]
+        * [@Button@4138:<Button#2369077119933>]
+        * [@Label@4134:<Label#2368859016157>]
+        * [@Button@4142:<Button#2369345555422>]
+        * [@Label@4133:<Label#2368825461741>]
+        * [@Button@4009:<Button#2360822729916>]
+        * [@Label@4013:<Label#2361426709708>]
+        * [@HBoxContainer@4012:<HBoxContainer#2361107942609>] + 2
+        * [@Button@4008:<Button#2360755621081>]
+        * [@Button@4026:<Button#2362483674372>] + 3
+        * [@Button@4002:<Button#2359782542768>] + 5
+        * [@PanelContainer@4017:<PanelContainer#2361460264394>] + 3
+        * [@Button@4062:<Button#2364446608852>]
+        * [@Label@4064:<Label#2364547272150>]
+        * [@Label@4063:<Label#2364513717719>]
+        * [@Button@4065:<Button#2364580826587>]
+        * [@Button@4066:<Button#2364647935455>]
+        * [@Button@4068:<Button#2364748598754>]
+        * [@Label@4067:<Label#2364715044323>]
+        * [@Button@4025:<Button#2362131353079>]
+        * [@Label@4024:<Label#2362097798651>]
+        * [@Label@4023:<Label#2362064244222>]
+        * [@Label@4022:<Label#2362030689792>]
+        * [@Label@4020:<Label#2361930026502>] + 1
+        * [@Label@4018:<Label#2361829363214>] + 1
+        * [@Button@4070:<Button#2364882816628>]
+        * [@Button@4060:<Button#2364345945719>]
+        * [@Label@4061:<Label#2364413054588>]
+        * [@Label@4058:<Label#2364245282429>]
+        * [@Button@4059:<Button#2364278836863>]
+        * [@Button@4054:<Button#2364077510283>] + 3
+        * [@Button@4036:<Button#2363288981134>]
+        * [@Button@4095:<Button#2366443097743>]
+        * [@Button@4053:<Button#2364010401429>]
+        * [@Button@4071:<Button#2364949925538>]
+        * [@Button@4072:<Button#2365017034403>]
+        * [@ColorRect@4074:<ColorRect#2365201583786>] + 16
+        * [@Label@4046:<Label#2363708411593>] + 1
+        * [@Label@4102:<Label#2366812196556>]
+        * [@Button@4073:<Button#2365084143310>]
+        * [@Button@4105:<Button#2366979968725>]
+        * [@Button@4104:<Button#2366912859865>]
+        * [@Button@4106:<Button#2367047077595>]
+        * [@Button@4107:<Button#2367114186464>]
+        * [@Button@4030:<Button#2363037322981>] + 5
+        * [@Label@4099:<Label#2366644424441>]
+        * [@Button@4101:<Button#2366745087772>]
+        * [@Label@4052:<Label#2363976847146>]
+        * [@Label@4051:<Label#2363943292719>]
+        * [@Label@4050:<Label#2363909738289>]
+        * [@Button@4103:<Button#2366845751256>]
+        * [@Label@4098:<Label#2366610870233>]
+        * [@Button@4097:<Button#2366543761409>]
+        * [@PanelContainer@4045:<PanelContainer#2363557416962>] + 3
+        * [@Label@4096:<Label#2366510206979>]
+        * [@Button@4037:<Button#2363356090373>]
+        * [@HBoxContainer@4040:<HBoxContainer#2363423199256>] + 2
+        * [@Label@4048:<Label#2363809075233>] + 1
+        * [@Label@4093:<Label#2366342434855>]
+        * [@Button@4094:<Button#2366375989288>]
+        * [@Label@4041:<Label#2363523862570>]
+        * [@ColorRect@4109:<ColorRect#2367466508347>] + 16
+        * [@Button@4100:<Button#2366677979241>]
+        * [@Button@4108:<Button#2367181295763>][0m
+* test_brick_cornice_actual_button_and_roof_vs_horizontal_cap_selection
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    166 Orphans[0m
+[33m        * [@Button@4206:<Button#2384830925079>]
+        * [@Button@4319:<Button#2391541811669>]
+        * [@Button@4207:<Button#2384898034200>]
+        * [@Button@4322:<Button#2391709583904>]
+        * [@PanelContainer@4243:<PanelContainer#2387632720505>] + 3
+        * [@Button@4326:<Button#2391978019672>]
+        * [@Label@4317:<Label#2391474703244>]
+        * [@Button@4332:<Button#2392363895714>]
+        * [@Button@4335:<Button#2392498113459>]
+        * [@Label@4333:<Label#2392431004598>]
+        * [@Label@4334:<Label#2392464559032>]
+        * [@Label@4331:<Label#2392330341315>]
+        * [@ColorRect@4344:<ColorRect#2393219533778>] + 16
+        * [@HBoxContainer@4210:<HBoxContainer#2385183247315>] + 2
+        * [@Button@4325:<Button#2391910910958>]
+        * [@Button@4343:<Button#2393001430056>]
+        * [@Button@4316:<Button#2391407594680>]
+        * [@Label@4315:<Label#2391374040253>]
+        * [@Label@4318:<Label#2391508257992>]
+        * [@Button@4308:<Button#2391038495953>] + 3
+        * [@Label@4312:<Label#2391206268121>]
+        * [@Button@4313:<Button#2391239822555>]
+        * [@Button@4330:<Button#2392263232744>]
+        * [@Label@4328:<Label#2392162569451>]
+        * [@Button@4327:<Button#2392045128940>]
+        * [@Button@4324:<Button#2391843802353>]
+        * [@Button@4329:<Button#2392196123894>]
+        * [@Button@4323:<Button#2391776693497>]
+        * [@Button@4291:<Button#2390317075716>]
+        * [@Label@4211:<Label#2385502014732>]
+        * [@Label@4321:<Label#2391676030221>]
+        * [@Button@4314:<Button#2391306931639>]
+        * [@Button@4200:<Button#2383857847784>] + 5
+        * [@Label@4305:<Label#2390904278508>]
+        * [@Label@4306:<Label#2390937832941>]
+        * [@Label@4304:<Label#2390870724079>]
+        * [@HBoxContainer@4294:<HBoxContainer#2390384184817>] + 2
+        * [@Label@4295:<Label#2390484848119>]
+        * [@PanelContainer@4299:<PanelContainer#2390518402554>] + 3
+        * [@Label@4300:<Label#2390669397508>] + 1
+        * [@Label@4302:<Label#2390770060810>] + 1
+        * [@Button@4307:<Button#2390971387408>]
+        * [@Button@4341:<Button#2392867212912>]
+        * [@Button@4256:<Button#2388790349433>] + 5
+        * [@Button@4263:<Button#2389109116547>]
+        * [@Button@4262:<Button#2389042007684>]
+        * [@HBoxContainer@4266:<HBoxContainer#2389176225425>] + 2
+        * [@Label@4276:<Label#2389662764695>]
+        * [@Label@4250:<Label#2388052151964>]
+        * [@Button@4252:<Button#2388152815266>] + 3
+        * [@Button@4251:<Button#2388085706403>]
+        * [@Label@4244:<Label#2387783716525>] + 1
+        * [@Label@4337:<Label#2392632331964>]
+        * [@Label@4221:<Label#2386139549382>]
+        * [@Button@4228:<Button#2387112627912>] + 5
+        * [@Label@4220:<Label#2386105994955>]
+        * [@Label@4249:<Label#2388018597582>]
+        * [@Label@4218:<Label#2386005331664>] + 1
+        * [@Label@4222:<Label#2386173103826>]
+        * [@Label@4216:<Label#2385904668380>] + 1
+        * [@PanelContainer@4215:<PanelContainer#2385535569636>] + 3
+        * [@Button@4224:<Button#2386558979815>] + 3
+        * [@Button@4320:<Button#2391608921859>]
+        * [@Button@4338:<Button#2392665886478>]
+        * [@Button@4342:<Button#2392934321939>]
+        * [@Button@4340:<Button#2392800104223>]
+        * [@Label@4267:<Label#2389276888881>]
+        * [@Button@4223:<Button#2386206658366>]
+        * [@Button@4290:<Button#2390249967512>]
+        * [@Button@4336:<Button#2392565223334>]
+        * [@Label@4239:<Label#2387599167444>]
+        * [@Label@4246:<Label#2387884380117>] + 1
+        * [@Label@4274:<Label#2389562101749>] + 1
+        * [@Label@4248:<Label#2387985043446>]
+        * [@Button@4279:<Button#2389763428343>]
+        * [@HBoxContainer@4238:<HBoxContainer#2387498504186>] + 2
+        * [@Button@4284:<Button#2389998309388>] + 5
+        * [@Label@4278:<Label#2389729873944>]
+        * [@Button@4280:<Button#2389830537242>] + 3
+        * [@Label@4272:<Label#2389461438493>] + 1
+        * [@PanelContainer@4271:<PanelContainer#2389310443553>] + 3
+        * [@Button@4234:<Button#2387364286502>]
+        * [@Label@4277:<Label#2389696319530>]
+        * [@Button@4339:<Button#2392732995641>]
+        * [@Button@4235:<Button#2387431395427>][0m
+* test_brick_two_part_captions_are_truthful_measured_and_accessible
+[33m    256 Orphans[0m
+[33m        * [@HBoxContainer@4619:<HBoxContainer#2422848095850>] + 2
+        * [@Label@4658:<Label#2424911693434>]
+        * [@Button@4643:<Button#2424257382716>]
+        * [@Button@4451:<Button#2412999870924>] + 3
+        * [@PanelContainer@4652:<PanelContainer#2424525818319>] + 3
+        * [@Label@4648:<Label#2424492263905>]
+        * [@Label@4620:<Label#2422948760118>]
+        * [@Label@4657:<Label#2424878140012>]
+        * [@Label@4447:<Label#2412546886267>]
+        * [@PanelContainer@4624:<PanelContainer#2422982314633>] + 3
+        * [@Button@4543:<Button#2417714268854>]
+        * [@Button@4665:<Button#2425213684434>] + 5
+        * [@Label@4655:<Label#2424777476819>] + 1
+        * [@Button@4554:<Button#2418351803137>]
+        * [@HBoxContainer@4647:<HBoxContainer#2424391600981>] + 2
+        * [@Label@4599:<Label#2421757578084>] + 1
+        * [@Button@4644:<Button#2424324492153>]
+        * [@Button@4427:<Button#2410298739602>] + 5
+        * [@Label@4653:<Label#2424676813721>] + 1
+        * [@PanelContainer@4442:<PanelContainer#2411976461218>] + 3
+        * [@Label@4531:<Label#2417177398197>]
+        * [@Label@4438:<Label#2411942906808>]
+        * [@Label@4449:<Label#2412613995483>]
+        * [@Button@4660:<Button#2424978803764>]
+        * [@Label@4601:<Label#2421858241594>]
+        * [@Button@4637:<Button#2424005725245>] + 5
+        * [@Label@4448:<Label#2412580441159>]
+        * [@Button@4616:<Button#2422780988492>]
+        * [@Button@4661:<Button#2425045912680>] + 3
+        * [@Label@4532:<Label#2417210952810>]
+        * [@Label@4603:<Label#2421925350580>]
+        * [@Label@4602:<Label#2421891796155>]
+        * [@Button@4461:<Button#2413805178044>]
+        * [@Button@4615:<Button#2422713879745>]
+        * [@Button@4462:<Button#2413872286934>]
+        * [@Label@4443:<Label#2412345560292>] + 1
+        * [@Label@4445:<Label#2412446223599>] + 1
+        * [@Button@4450:<Button#2412647550202>]
+        * [@Button@4478:<Button#2414526598395>]
+        * [@Button@4553:<Button#2418284694798>]
+        * [@Button@4479:<Button#2414593707279>] + 3
+        * [@Label@4659:<Label#2424945249558>]
+        * [@Button@4605:<Button#2422109900060>] + 3
+        * [@Label@4466:<Label#2414040059290>]
+        * [@Label@4597:<Label#2421656915370>] + 1
+        * [@Button@4455:<Button#2413553520067>] + 5
+        * [@HBoxContainer@4465:<HBoxContainer#2413939396044>] + 2
+        * [@PanelContainer@4470:<PanelContainer#2414073613806>] + 3
+        * [@Label@4477:<Label#2414493044210>]
+        * [@Label@4473:<Label#2414325272057>] + 1
+        * [@Label@4476:<Label#2414459489798>]
+        * [@Label@4471:<Label#2414224608775>] + 1
+        * [@Label@4625:<Label#2423133310501>] + 1
+        * [@Label@4627:<Label#2423233973805>] + 1
+        * [@Label@4630:<Label#2423368191538>]
+        * [@Label@4629:<Label#2423334637107>]
+        * [@Button@4632:<Button#2423435300406>]
+        * [@Label@4631:<Label#2423401745975>]
+        * [@Button@4633:<Button#2423502409274>] + 3
+        * [@Label@4592:<Label#2421455588953>]
+        * [@Button@4506:<Button#2416070102646>]
+        * [@Button@4507:<Button#2416137211512>] + 3
+        * [@Label@4504:<Label#2416002993794>]
+        * [@Button@4541:<Button#2417613606541>]
+        * [@Button@4490:<Button#2415415791257>]
+        * [@Label@4499:<Label#2415768112795>] + 1
+        * [@Button@4517:<Button#2416556641951>]
+        * [@Button@4511:<Button#2416304983714>] + 5
+        * [@HBoxContainer@4591:<HBoxContainer#2421338148524>] + 2
+        * [@Button@4534:<Button#2417278062257>]
+        * [@Button@4433:<Button#2411271818946>]
+        * [@Label@4544:<Label#2417781378758>]
+        * [@Label@4545:<Label#2417814933195>]
+        * [@Button@4547:<Button#2417915596492>]
+        * [@Button@4546:<Button#2417848487632>]
+        * [@Label@4548:<Label#2417982705361>]
+        * [@Label@4475:<Label#2414425935573>]
+        * [@Button@4549:<Button#2418016259799>]
+        * [@Button@4551:<Button#2418150477531>]
+        * [@Label@4533:<Label#2417244507871>]
+        * [@Label@4539:<Label#2417512943335>]
+        * [@Button@4434:<Button#2411338927866>]
+        * [@Button@4552:<Button#2418217586433>]
+        * [@Button@4588:<Button#2421254262533>]
+        * [@Label@4501:<Label#2415868776237>] + 1
+        * [@Label@4505:<Label#2416036548411>]
+        * [@Label@4542:<Label#2417680715582>]
+        * [@PanelContainer@4596:<PanelContainer#2421489143615>] + 3
+        * [@Button@4581:<Button#2420818055020>] + 5
+        * [@Label@4503:<Label#2415969439647>]
+        * [@HBoxContainer@4437:<HBoxContainer#2411624140710>] + 2
+        * [@PanelContainer@4526:<PanelContainer#2416825077706>] + 3
+        * [@Label@4522:<Label#2416791523275>]
+        * [@Label@4527:<Label#2416976072658>] + 1
+        * [@HBoxContainer@4493:<HBoxContainer#2415482900448>] + 2
+        * [@Label@4529:<Label#2417076735974>] + 1
+        * [@Button@4604:<Button#2421958905836>]
+        * [@PanelContainer@4498:<PanelContainer#2415617118200>] + 3
+        * [@Button@4518:<Button#2416623751161>]
+        * [@Button@4489:<Button#2415348682751>]
+        * [@Label@4494:<Label#2415583563778>]
+        * [@Button@4540:<Button#2417546498051>]
+        * [@Button@4550:<Button#2418083368964>]
+        * [@Button@4483:<Button#2415097024538>] + 5
+        * [@Button@4535:<Button#2417345171490>] + 3
+        * [@HBoxContainer@4521:<HBoxContainer#2416690860067>] + 2
+        * [@Button@4587:<Button#2421187153979>]
+        * [@Button@4609:<Button#2422462222491>] + 5
+        * [@Button@4671:<Button#2425465344171>]
+        * [@Button@4672:<Button#2425532453039>]
+        * [@HBoxContainer@4675:<HBoxContainer#2425599561907>] + 2
+        * [@Label@4676:<Label#2425700225209>]
+        * [@PanelContainer@4680:<PanelContainer#2425733779643>] + 3
+        * [@Label@4681:<Label#2425884774596>] + 1
+        * [@Label@4683:<Label#2425985437898>] + 1
+        * [@Label@4685:<Label#2426086101200>]
+        * [@Label@4686:<Label#2426119655634>]
+        * [@Label@4687:<Label#2426153210068>]
+        * [@Button@4688:<Button#2426186764502>]
+        * [@Button@4689:<Button#2426253873370>] + 3
+        * [@Label@4693:<Label#2426421645540>]
+        * [@Button@4694:<Button#2426455199974>]
+        * [@Button@4695:<Button#2426522308842>]
+        * [@Label@4696:<Label#2426589417710>]
+        * [@Button@4697:<Button#2426622972144>]
+        * [@Label@4698:<Label#2426690081012>]
+        * [@Label@4699:<Label#2426723635446>]
+        * [@Button@4700:<Button#2426757189880>]
+        * [@Button@4701:<Button#2426824298748>]
+        * [@Label@4702:<Label#2426891407616>]
+        * [@Button@4703:<Button#2426924962050>]
+        * [@Button@4704:<Button#2426992070918>]
+        * [@Button@4705:<Button#2427059179786>]
+        * [@Button@4706:<Button#2427126288654>]
+        * [@Button@4707:<Button#2427193397522>]
+        * [@Button@4708:<Button#2427260506390>][0m
+* test_brick_landmark_button_combines_with_arch_and_four_part_caption_fits
+[33m    [GUT WARNING]:  [0mWarn:  Float/Int comparison.  Got FLOAT but expected INT
+[33m    214 Orphans[0m
+[33m        * [@Button@4759:<Button#2443651843704>] + 3
+        * [@Button@4941:<Button#2453902722694>]
+        * [@Button@4825:<Button#2447208613515>]
+        * [@Label@4757:<Label#2443265968396>]
+        * [@Label@4841:<Label#2447896480023>]
+        * [@Label@4904:<Label#2451537136034>]
+        * [@Button@4851:<Button#2448366242216>]
+        * [@Button@4924:<Button#2452879313356>]
+        * [@Label@4756:<Label#2443232414178>]
+        * [@Button@4735:<Button#2440950712815>] + 5
+        * [@Label@4779:<Label#2444876581467>] + 1
+        * [@HBoxContainer@4773:<HBoxContainer#2444591368871>] + 2
+        * [@Label@4753:<Label#2443098196690>] + 1
+        * [@Label@4840:<Label#2447862926048>]
+        * [@PanelContainer@4778:<PanelContainer#2444725586771>] + 3
+        * [@Button@4769:<Button#2444457151322>]
+        * [@Button@4763:<Button#2444205493095>] + 5
+        * [@Button@4842:<Button#2447930035073>]
+        * [@Label@4856:<Label#2448634678168>]
+        * [@Button@4770:<Button#2444524260254>]
+        * [@Button@4906:<Button#2451637799849>]
+        * [@Label@4935:<Label#2453600734136>]
+        * [@Button@4934:<Button#2453533625276>]
+        * [@Label@4933:<Label#2453500070853>]
+        * [@Label@4809:<Label#2446520749016>] + 1
+        * [@Label@4774:<Label#2444692032487>]
+        * [@Button@4945:<Button#2454171159586>]
+        * [@Button@4942:<Button#2453969833030>]
+        * [@Button@4928:<Button#2453147749447>]
+        * [@HBoxContainer@4801:<HBoxContainer#2446134873163>] + 2
+        * [@Label@4835:<Label#2447628045491>] + 1
+        * [@Label@4837:<Label#2447728708792>] + 1
+        * [@Label@4852:<Label#2448433351875>]
+        * [@Button@4921:<Button#2452711541958>]
+        * [@Button@4915:<Button#2452409552076>]
+        * [@Button@4922:<Button#2452778650833>]
+        * [@Label@4919:<Label#2452644433115>]
+        * [@Button@4931:<Button#2453365853409>]
+        * [@Button@4932:<Button#2453432962279>]
+        * [@Label@4930:<Label#2453332298989>]
+        * [@Button@4929:<Button#2453214858479>]
+        * [@Button@4927:<Button#2453080640752>]
+        * [@Label@4903:<Label#2451503582479>]
+        * [@Button@4925:<Button#2452946423059>]
+        * [@Label@4807:<Label#2446420086049>] + 1
+        * [@Label@4802:<Label#2446235536820>]
+        * [@Label@4920:<Label#2452677987777>]
+        * [@Button@4902:<Button#2451436473801>]
+        * [@Label@4923:<Label#2452845759947>]
+        * [@Button@4905:<Button#2451570691561>]
+        * [@Label@4907:<Label#2451721686506>]
+        * [@Button@4916:<Button#2452476661228>]
+        * [@Label@4914:<Label#2452375997935>]
+        * [@Button@4908:<Button#2451755240945>]
+        * [@Button@4912:<Button#2452023676410>]
+        * [@Button@4910:<Button#2451889458687>]
+        * [@Button@4909:<Button#2451822349825>]
+        * [@Button@4913:<Button#2452090785293>]
+        * [@Button@4911:<Button#2451956567566>]
+        * [@Label@4917:<Label#2452543770128>]
+        * [@Button@4826:<Button#2447275724306>]
+        * [@Button@4787:<Button#2445245681204>] + 3
+        * [@Label@4785:<Label#2445145017913>]
+        * [@Button@4786:<Button#2445178572347>]
+        * [@Label@4781:<Label#2444977245757>] + 1
+        * [@Label@4783:<Label#2445077909057>]
+        * [@Label@4784:<Label#2445111463492>]
+        * [@PanelContainer@4806:<PanelContainer#2446269091400>] + 3
+        * [@HBoxContainer@4829:<HBoxContainer#2447342833232>] + 2
+        * [@Button@4819:<Button#2446956957271>] + 5
+        * [@Button@4943:<Button#2454036942447>]
+        * [@Label@4755:<Label#2443198860912>]
+        * [@ColorRect@4879:<ColorRect#2450094296692>] + 16
+        * [@Label@4830:<Label#2447443496592>]
+        * [@Button@4861:<Button#2448936668826>]
+        * [@Button@4865:<Button#2449221881521>]
+        * [@Label@4866:<Label#2449288990386>]
+        * [@Label@4863:<Label#2449121218227>]
+        * [@Label@4939:<Label#2453802061506>]
+        * [@Button@4918:<Button#2452577324741>]
+        * [@Button@4867:<Button#2449322544840>]
+        * [@Button@4878:<Button#2449993633486>]
+        * [@Button@4854:<Button#2448500461273>]
+        * [@Button@4855:<Button#2448567570140>]
+        * [@Label@4847:<Label#2448164916958>]
+        * [@Button@4848:<Button#2448198471393>]
+        * [@Button@4849:<Button#2448265580260>]
+        * [@Label@4839:<Label#2447829372649>]
+        * [@Button@4938:<Button#2453734952698>]
+        * [@Button@4791:<Button#2445748997887>] + 5
+        * [@Button@4874:<Button#2449725198084>]
+        * [@Button@4926:<Button#2453013532422>]
+        * [@Label@4850:<Label#2448332689177>]
+        * [@PanelContainer@4834:<PanelContainer#2447477051162>] + 3
+        * [@Button@4858:<Button#2448735342364>]
+        * [@Button@4814:<Button#2446722076481>]
+        * [@Button@4815:<Button#2446789185347>] + 3
+        * [@Label@4853:<Label#2448466906977>]
+        * [@Button@4798:<Button#2446067765128>]
+        * [@Label@4936:<Label#2453634289574>]
+        * [@Button@4937:<Button#2453667844007>]
+        * [@Label@4811:<Label#2446621413288>]
+        * [@Button@4940:<Button#2453835616169>]
+        * [@Label@4872:<Label#2449624534989>]
+        * [@Button@4876:<Button#2449859416015>]
+        * [@Button@4877:<Button#2449926524885>]
+        * [@Label@4813:<Label#2446688522198>]
+        * [@Button@4873:<Button#2449658089439>]
+        * [@Button@4871:<Button#2449523871714>]
+        * [@Label@4898:<Label#2451235147763>]
+        * [@Button@4899:<Button#2451268702213>]
+        * [@Label@4901:<Label#2451402919947>]
+        * [@Button@4900:<Button#2451335811089>]
+        * [@Button@4875:<Button#2449792307235>]
+        * [@Label@4868:<Label#2449389654054>]
+        * [@Button@4862:<Button#2449003778102>]
+        * [@Button@4944:<Button#2454104051769>]
+        * [@Label@4869:<Label#2449423208510>]
+        * [@Button@4860:<Button#2448869560383>]
+        * [@Label@4812:<Label#2446654967876>]
+        * [@Button@4864:<Button#2449154773066>]
+        * [@Button@4870:<Button#2449456762979>]
+        * [@Button@4857:<Button#2448668233832>]
+        * [@Button@4859:<Button#2448802451561>]
+        * [@Button@4843:<Button#2447997145235>] + 3
+        * [@Button@4797:<Button#2446000656542>]
+        * [@Button@4758:<Button#2443299524774>]
+        * [@Label@4751:<Label#2442997534896>] + 1
+        * [@PanelContainer@4750:<PanelContainer#2442628436148>] + 3
+        * [@HBoxContainer@4745:<HBoxContainer#2442276114620>] + 2
+        * [@Label@4746:<Label#2442594881731>]
+        * [@Button@4741:<Button#2441923793092>]
+        * [@Button@4742:<Button#2441990901961>][0m
+* test_three_part_landmark_captions_match_each_equipped_combination
+[33m    384 Orphans[0m
+[33m        * [@Label@5142:<Label#2479185987890>] + 1
+        * [@Label@5090:<Label#2475344005503>]
+        * [@Button@5028:<Button#2472626096761>] + 5
+        * [@Label@5146:<Label#2479387314834>]
+        * [@Button@5091:<Button#2475377560229>]
+        * [@Label@5046:<Label#2473397848758>] + 1
+        * [@Button@5085:<Button#2475075570399>]
+        * [@Button@5056:<Button#2473834056471>] + 5
+        * [@Label@5050:<Label#2473565621038>]
+        * [@Button@5099:<Button#2475914431332>]
+        * [@Label@5067:<Label#2474320595837>]
+        * [@HBoxContainer@5066:<HBoxContainer#2474219932545>] + 2
+        * [@Button@5080:<Button#2474874243971>] + 3
+        * [@Label@5076:<Label#2474706471818>]
+        * [@Button@5063:<Button#2474152823701>]
+        * [@Button@5062:<Button#2474085714839>]
+        * [@Button@5178:<Button#2481031482288>] + 3
+        * [@Button@5097:<Button#2475780213713>]
+        * [@Button@5133:<Button#2478783335383>]
+        * [@PanelContainer@5071:<PanelContainer#2474354150386>] + 3
+        * [@Button@5126:<Button#2478347127854>] + 5
+        * [@HBoxContainer@5136:<HBoxContainer#2478867221577>] + 2
+        * [@Button@5034:<Button#2472877755498>]
+        * [@Label@5072:<Label#2474505145523>] + 1
+        * [@PanelContainer@4987:<PanelContainer#2469505535164>] + 3
+        * [@Button@4979:<Button#2468868000959>]
+        * [@HBoxContainer@4982:<HBoxContainer#2469153213664>] + 2
+        * [@Label@5049:<Label#2473532067061>]
+        * [@Button@5051:<Button#2473599175929>]
+        * [@Button@5132:<Button#2478716226822>]
+        * [@Button@4978:<Button#2468800892173>]
+        * [@Button@5092:<Button#2475444669722>]
+        * [@Button@5098:<Button#2475847322913>]
+        * [@Label@4983:<Label#2469471980995>]
+        * [@Label@4990:<Label#2469975297518>] + 1
+        * [@Label@4988:<Label#2469874634223>] + 1
+        * [@Button@4995:<Button#2470176624121>]
+        * [@Label@4992:<Label#2470075960831>]
+        * [@Label@4994:<Label#2470143069697>]
+        * [@Label@5020:<Label#2471955009039>]
+        * [@Button@4972:<Button#2467827813929>] + 5
+        * [@Label@5170:<Label#2480662384203>] + 1
+        * [@Label@5089:<Label#2475310452307>]
+        * [@Label@5093:<Label#2475545333333>]
+        * [@Button@5006:<Button#2471334252152>]
+        * [@HBoxContainer@5010:<HBoxContainer#2471468469889>] + 2
+        * [@PanelContainer@5015:<PanelContainer#2471602687619>] + 3
+        * [@Button@5007:<Button#2471401361032>]
+        * [@Label@5021:<Label#2471988563609>]
+        * [@Label@5087:<Label#2475209789099>]
+        * [@Button@5035:<Button#2472944864945>]
+        * [@Button@5052:<Button#2473666285261>] + 3
+        * [@PanelContainer@5043:<PanelContainer#2473146191591>] + 3
+        * [@Label@5078:<Label#2474773581544>]
+        * [@Button@5086:<Button#2475142680327>]
+        * [@Label@5148:<Label#2479454424850>]
+        * [@Button@5024:<Button#2472122781464>] + 3
+        * [@Label@5074:<Label#2474605809434>] + 1
+        * [@Label@5011:<Label#2471569133359>]
+        * [@Button@5094:<Button#2475578888001>]
+        * [@Label@5172:<Label#2480763047759>] + 1
+        * [@Label@5175:<Label#2480897265493>]
+        * [@Label@5174:<Label#2480863711062>]
+        * [@Button@5177:<Button#2480964374361>]
+        * [@Label@5176:<Label#2480930819930>]
+        * [@Button@4996:<Button#2470528946072>] + 3
+        * [@Button@5096:<Button#2475713105832>]
+        * [@Button@5095:<Button#2475645997014>]
+        * [@Label@5048:<Label#2473498513368>]
+        * [@Label@5016:<Label#2471753682936>] + 1
+        * [@Button@5023:<Button#2472055672831>]
+        * [@Label@5018:<Label#2471854346242>] + 1
+        * [@Button@5079:<Button#2474807136268>]
+        * [@Button@5000:<Button#2471082594322>] + 5
+        * [@Label@5022:<Label#2472022118427>]
+        * [@Label@5044:<Label#2473297186857>] + 1
+        * [@Label@5039:<Label#2473112637494>]
+        * [@Label@4993:<Label#2470109515834>]
+        * [@HBoxContainer@5038:<HBoxContainer#2473011974218>] + 2
+        * [@PanelContainer@5141:<PanelContainer#2479018217637>] + 3
+        * [@Label@5137:<Label#2478984663208>]
+        * [@Label@5144:<Label#2479286653101>] + 1
+        * [@Label@5077:<Label#2474740027569>]
+        * [@Button@5149:<Button#2479487979699>]
+        * [@Label@5147:<Label#2479420870840>]
+        * [@Button@5150:<Button#2479638974653>] + 3
+        * [@Label@5084:<Label#2475042017472>]
+        * [@Button@5154:<Button#2479991296206>] + 5
+        * [@Button@5088:<Button#2475243344080>]
+        * [@PanelContainer@5169:<PanelContainer#2480511389924>] + 3
+        * [@Label@5165:<Label#2480477835495>]
+        * [@HBoxContainer@5164:<HBoxContainer#2480377172204>] + 2
+        * [@Button@5161:<Button#2480310063346>]
+        * [@Button@5160:<Button#2480242954485>]
+        * [@Button@5182:<Button#2481534800230>] + 5
+        * [@Button@5188:<Button#2481786458485>]
+        * [@Button@5189:<Button#2481853567353>]
+        * [@HBoxContainer@5192:<HBoxContainer#2481920676221>] + 2
+        * [@Label@5193:<Label#2482021339523>]
+        * [@PanelContainer@5197:<PanelContainer#2482054893957>] + 3
+        * [@Label@5198:<Label#2482205888910>] + 1
+        * [@Label@5200:<Label#2482306552212>] + 1
+        * [@Label@5202:<Label#2482407215514>]
+        * [@Label@5203:<Label#2482440769948>]
+        * [@Label@5204:<Label#2482474324382>]
+        * [@Button@5205:<Button#2482507878816>]
+        * [@Button@5206:<Button#2482574987684>] + 3
+        * [@Button@5210:<Button#2482742759854>] + 5
+        * [@Button@5216:<Button#2482994418109>]
+        * [@Button@5217:<Button#2483061526977>]
+        * [@HBoxContainer@5220:<HBoxContainer#2483128635845>] + 2
+        * [@Label@5221:<Label#2483229299147>]
+        * [@PanelContainer@5225:<PanelContainer#2483262853581>] + 3
+        * [@Label@5226:<Label#2483413848534>] + 1
+        * [@Label@5228:<Label#2483514511836>] + 1
+        * [@Label@5230:<Label#2483615175138>]
+        * [@Label@5231:<Label#2483648729572>]
+        * [@Label@5232:<Label#2483682284006>]
+        * [@Button@5233:<Button#2483715838440>]
+        * [@Button@5234:<Button#2483782947308>] + 3
+        * [@Label@5238:<Label#2483950719478>]
+        * [@Button@5239:<Button#2483984273912>]
+        * [@Button@5240:<Button#2484051382780>]
+        * [@Label@5241:<Label#2484118491648>]
+        * [@Button@5242:<Button#2484152046082>]
+        * [@Label@5243:<Label#2484219154950>]
+        * [@Label@5244:<Label#2484252709384>]
+        * [@Button@5245:<Button#2484286263818>]
+        * [@Button@5246:<Button#2484353372686>]
+        * [@Label@5247:<Label#2484454035988>]
+        * [@Button@5248:<Button#2484487590422>]
+        * [@Button@5249:<Button#2484554699290>]
+        * [@Button@5250:<Button#2484621808158>]
+        * [@Button@5251:<Button#2484688917026>]
+        * [@Button@5252:<Button#2484756025894>]
+        * [@Button@5253:<Button#2484823134762>]
+        * [@Button@5280:<Button#2487255831152>] + 5
+        * [@Button@5286:<Button#2487624929947>]
+        * [@Button@5287:<Button#2487692038815>]
+        * [@HBoxContainer@5290:<HBoxContainer#2487775924899>] + 2
+        * [@Label@5291:<Label#2487893365417>]
+        * [@PanelContainer@5295:<PanelContainer#2487926919851>] + 3
+        * [@Label@5296:<Label#2488094692020>] + 1
+        * [@Label@5298:<Label#2488195355322>] + 1
+        * [@Label@5300:<Label#2488296018624>]
+        * [@Label@5301:<Label#2488329573058>]
+        * [@Label@5302:<Label#2488363127492>]
+        * [@Button@5303:<Button#2488396681926>]
+        * [@Button@5304:<Button#2488547676878>] + 3
+        * [@Button@5308:<Button#2488899998434>] + 5
+        * [@Button@5314:<Button#2489151656689>]
+        * [@Button@5315:<Button#2489218765557>]
+        * [@HBoxContainer@5318:<HBoxContainer#2489285874425>] + 2
+        * [@Label@5319:<Label#2489386537727>]
+        * [@PanelContainer@5323:<PanelContainer#2489420092161>] + 3
+        * [@Label@5324:<Label#2489571087114>] + 1
+        * [@Label@5326:<Label#2489671750416>] + 1
+        * [@Label@5328:<Label#2489772413718>]
+        * [@Label@5329:<Label#2489805968152>]
+        * [@Label@5330:<Label#2489839522586>]
+        * [@Button@5331:<Button#2489873077020>]
+        * [@Button@5332:<Button#2489940185888>] + 3
+        * [@Button@5336:<Button#2490443502398>] + 5
+        * [@Button@5342:<Button#2490695160653>]
+        * [@Button@5343:<Button#2490762269521>]
+        * [@HBoxContainer@5346:<HBoxContainer#2490829378389>] + 2
+        * [@Label@5347:<Label#2490930041691>]
+        * [@PanelContainer@5351:<PanelContainer#2490963596125>] + 3
+        * [@Label@5352:<Label#2491114591078>] + 1
+        * [@Label@5354:<Label#2491215254380>] + 1
+        * [@Label@5356:<Label#2491315917682>]
+        * [@Label@5357:<Label#2491349472116>]
+        * [@Label@5358:<Label#2491383026550>]
+        * [@Button@5359:<Button#2491416580984>]
+        * [@Button@5360:<Button#2491483689852>] + 3
+        * [@Button@5364:<Button#2491651462022>] + 5
+        * [@Button@5370:<Button#2491903120277>]
+        * [@Button@5371:<Button#2491970229145>]
+        * [@HBoxContainer@5374:<HBoxContainer#2492037338013>] + 2
+        * [@Label@5375:<Label#2492138001315>]
+        * [@PanelContainer@5379:<PanelContainer#2492171555749>] + 3
+        * [@Label@5380:<Label#2492322550702>] + 1
+        * [@Label@5382:<Label#2492423214004>] + 1
+        * [@Label@5384:<Label#2492523877306>]
+        * [@Label@5385:<Label#2492557431740>]
+        * [@Label@5386:<Label#2492590986174>]
+        * [@Button@5387:<Button#2492624540608>]
+        * [@Button@5388:<Button#2492691649476>] + 3
+        * [@Label@5392:<Label#2492859421646>]
+        * [@Button@5393:<Button#2492892976080>]
+        * [@Button@5394:<Button#2492960084948>]
+        * [@Label@5395:<Label#2493027193816>]
+        * [@Button@5396:<Button#2493060748250>]
+        * [@Label@5397:<Label#2493127857118>]
+        * [@Label@5398:<Label#2493161411552>]
+        * [@Button@5399:<Button#2493194965986>]
+        * [@Button@5400:<Button#2493262074854>]
+        * [@Label@5401:<Label#2493362738156>]
+        * [@Button@5402:<Button#2493396292590>]
+        * [@Button@5403:<Button#2493463401458>]
+        * [@Button@5404:<Button#2493530510326>]
+        * [@Button@5405:<Button#2493597619194>]
+        * [@Button@5406:<Button#2493664728062>]
+        * [@Button@5407:<Button#2493731836930>][0m
+* test_brick_arch_part_is_dormant_across_material_switch_and_can_be_cleared
+[33m    130 Orphans[0m
+[33m        * [@Label@5454:<Label#2510777485637>]
+        * [@Label@5532:<Label#2516129417575>]
+        * [@Button@5518:<Button#2515240225586>]
+        * [@Button@5525:<Button#2515676433337>]
+        * [@Button@5538:<Button#2516464962498>]
+        * [@Button@5523:<Button#2515542216915>]
+        * [@Button@5534:<Button#2516230082772>]
+        * [@Label@5519:<Label#2515307336023>]
+        * [@Button@5533:<Button#2516162974042>]
+        * [@Button@5521:<Button#2515407999325>]
+        * [@Button@5522:<Button#2515475108193>]
+        * [@Button@5520:<Button#2515340890466>]
+        * [@ColorRect@5542:<ColorRect#2516783731198>] + 16
+        * [@Button@5541:<Button#2516666290691>]
+        * [@Button@5540:<Button#2516599181830>]
+        * [@Button@5539:<Button#2516532072971>]
+        * [@Button@5537:<Button#2516397855247>]
+        * [@Label@5531:<Label#2516095865368>]
+        * [@Button@5530:<Button#2516028756508>]
+        * [@Label@5529:<Label#2515995202077>]
+        * [@Button@5528:<Button#2515928093217>]
+        * [@Button@5527:<Button#2515860984357>]
+        * [@Label@5526:<Label#2515827429928>]
+        * [@Button@5524:<Button#2515609326128>]
+        * [@Label@5535:<Label#2516297192039>]
+        * [@Button@5536:<Button#2516330746472>]
+        * [@Button@5512:<Button#2514938237583>]
+        * [@Label@5513:<Label#2515005346448>]
+        * [@Button@5514:<Button#2515038900882>]
+        * [@Label@5515:<Label#2515106009750>]
+        * [@Label@5516:<Label#2515139564184>]
+        * [@Button@5517:<Button#2515173118617>]
+        * [@Button@5511:<Button#2514871128734>]
+        * [@Label@5510:<Label#2514837574304>]
+        * [@Button@5509:<Button#2514518807204>]
+        * [@Button@5506:<Button#2514317480619>]
+        * [@Button@5507:<Button#2514384589487>]
+        * [@Button@5508:<Button#2514451698355>]
+        * [@Button@5505:<Button#2514250371765>]
+        * [@Label@5503:<Label#2514149708475>]
+        * [@Button@5504:<Button#2514183262911>]
+        * [@Button@5502:<Button#2514082599616>]
+        * [@Button@5501:<Button#2514015490756>]
+        * [@Label@5499:<Label#2513948381894>]
+        * [@Label@5500:<Label#2513981936327>]
+        * [@Button@5496:<Button#2513780609742>]
+        * [@Label@5497:<Label#2513847718610>]
+        * [@Button@5498:<Button#2513881273044>]
+        * [@Button@5492:<Button#2513512174309>]
+        * [@Button@5493:<Button#2513579283175>]
+        * [@Label@5494:<Label#2513679946475>]
+        * [@Button@5495:<Button#2513713500909>]
+        * [@Button@5491:<Button#2513445065460>]
+        * [@Button@5490:<Button#2513377956600>]
+        * [@Button@5489:<Button#2513310847740>]
+        * [@Button@5488:<Button#2513243738880>]
+        * [@Button@5485:<Button#2513075966721>]
+        * [@Button@5486:<Button#2513143075589>]
+        * [@Label@5487:<Label#2513210184457>]
+        * [@Label@5483:<Label#2513008857867>]
+        * [@Label@5484:<Label#2513042412303>]
+        * [@Label@5481:<Label#2512908194577>]
+        * [@Button@5482:<Button#2512941749013>]
+        * [@Button@5480:<Button#2512841085718>]
+        * [@Button@5479:<Button#2512773976858>]
+        * [@Label@5478:<Label#2512740422429>]
+        * [@Button@5476:<Button#2512555873059>]
+        * [@Button@5477:<Button#2512622981925>]
+        * [@Button@5434:<Button#2508529341229>] + 5
+        * [@Button@5472:<Button#2512287437630>]
+        * [@Button@5473:<Button#2512354546498>]
+        * [@Button@5474:<Button#2512421655366>]
+        * [@Button@5475:<Button#2512488764234>]
+        * [@Label@5471:<Label#2512253883214>]
+        * [@Button@5470:<Button#2512186774354>]
+        * [@Label@5467:<Label#2512052556629>]
+        * [@Label@5468:<Label#2512086111063>]
+        * [@Button@5469:<Button#2512119665497>]
+        * [@Button@5464:<Button#2511884784479>]
+        * [@Label@5465:<Label#2511951893346>]
+        * [@Button@5466:<Button#2511985447780>]
+        * [@Label@5462:<Label#2511784121192>]
+        * [@Button@5463:<Button#2511817675625>]
+        * [@Button@5458:<Button#2511230473089>] + 3
+        * [@Label@5452:<Label#2510676824966>] + 1
+        * [@Label@5455:<Label#2510811042700>]
+        * [@Label@5456:<Label#2510844597134>]
+        * [@Button@5457:<Button#2510878151568>]
+        * [@Label@5450:<Label#2510576161690>] + 1
+        * [@PanelContainer@5449:<PanelContainer#2510207062942>] + 3
+        * [@HBoxContainer@5444:<HBoxContainer#2509854741414>] + 2
+        * [@Label@5445:<Label#2510173508525>]
+        * [@Button@5440:<Button#2509502419886>]
+        * [@Button@5441:<Button#2509569528755>][0m
+* test_assist_nearest_edge_hysteresis_and_exact_release_share_validator
+* test_assist_does_not_pull_from_outside_or_write_during_preview
+* test_assist_all_catalog_shapes_preview_and_commit_same_bottom_edge_cells
+* test_full_width_board_and_top_navigation_fit_compact_and_tall
+* test_clear_unlocks_before_tail_and_interruption_cannot_repeat_reward
+* test_compact_safe_insets_fit_board_and_action
+[33m    56 Orphans[0m
+[33m        * [@Button@5854:<Button#2606608943375>]
+        * [@Label@5877:<Label#2608286665001>] + 1
+        * [@Label@5853:<Label#2606575390287>]
+        * [@Label@5870:<Label#2608001453912>]
+        * [@PanelContainer@5874:<PanelContainer#2608035008346>] + 3
+        * [@Label@5875:<Label#2608186003318>] + 1
+        * [@HBoxContainer@5869:<HBoxContainer#2607900790949>] + 2
+        * [@Button@5837:<Button#2605233213614>]
+        * [@Button@5855:<Button#2606961266877>] + 3
+        * [@Button@5831:<Button#2604260135103>] + 5
+        * [@Label@5847:<Label#2606306955485>] + 1
+        * [@Label@5849:<Label#2606407618793>] + 1
+        * [@Label@5851:<Label#2606508282097>]
+        * [@Label@5852:<Label#2606541836531>]
+        * [@HBoxContainer@5841:<HBoxContainer#2605585535327>] + 2
+        * [@Button@5882:<Button#2608487993703>]
+        * [@Label@5879:<Label#2608387330413>]
+        * [@Label@5880:<Label#2608420884847>]
+        * [@Label@5881:<Label#2608454439281>]
+        * [@Button@5883:<Button#2608555102582>] + 3
+        * [@Button@5859:<Button#2607514915267>] + 5
+        * [@Button@5838:<Button#2605300322759>]
+        * [@Label@5842:<Label#2605904302572>]
+        * [@Button@5866:<Button#2607833682575>]
+        * [@Button@5865:<Button#2607766573713>]
+        * [@PanelContainer@5846:<PanelContainer#2605937857428>] + 3[0m
+* test_reward_stays_off_board_and_new_pick_restores_hint
+* test_real_segment_crossings_and_unlocks_are_announced_in_large_compact_strip
+* test_sixteen_line_clear_has_bounded_notices_and_tower_unlock_details_survive_fast_pick
+[33m    56 Orphans[0m
+[33m        * [@Label@6106:<Label#2658735753588>]
+        * [@Label@6111:<Label#2659138407632>] + 1
+        * [@Button@6147:<Button#2661386554959>] + 3
+        * [@Label@6143:<Label#2661218783395>]
+        * [@Label@6144:<Label#2661252337829>]
+        * [@Button@6146:<Button#2661319446766>]
+        * [@Label@6145:<Label#2661285892338>]
+        * [@Button@6102:<Button#2658131775851>]
+        * [@Button@6101:<Button#2658064666990>]
+        * [@HBoxContainer@6105:<HBoxContainer#2658416988530>] + 2
+        * [@Label@6116:<Label#2659373289942>]
+        * [@Button@6118:<Button#2659440398812>]
+        * [@Label@6117:<Label#2659406844384>]
+        * [@Label@6113:<Label#2659239072227>] + 1
+        * [@PanelContainer@6110:<PanelContainer#2658769310208>] + 3
+        * [@Label@6141:<Label#2661118120715>] + 1
+        * [@Label@6139:<Label#2661017457433>] + 1
+        * [@PanelContainer@6138:<PanelContainer#2660866462500>] + 3
+        * [@Label@6134:<Label#2660832908071>]
+        * [@Button@6129:<Button#2660598027071>]
+        * [@Button@6130:<Button#2660665135942>]
+        * [@HBoxContainer@6133:<HBoxContainer#2660732244808>] + 2
+        * [@Button@6123:<Button#2660346368853>] + 5
+        * [@Button@6119:<Button#2659792720773>] + 3
+        * [@Button@6095:<Button#2657091589021>] + 5
+        * [@Label@6115:<Label#2659339736002>][0m
+* test_fixed_combined_event_is_bounded_and_keeps_every_fact_in_result_dialog
+* test_hud_chip_score_and_streak_follow_committed_state
+* test_streak_chip_hidden_below_two_and_in_compact
+[33m    84 Orphans[0m
+[33m        * [@Button@6319:<Button#2706651482380>]
+        * [@Button@6359:<Button#2709151288240>]
+        * [@Button@6352:<Button#2708832522070>] + 5
+        * [@HBoxContainer@6362:<HBoxContainer#2709218398046>] + 2
+        * [@Button@6347:<Button#2708597641379>]
+        * [@Label@6346:<Label#2708564086949>]
+        * [@PanelContainer@6339:<PanelContainer#2708144656589>] + 3
+        * [@Label@6344:<Label#2708496978139>]
+        * [@Button@6320:<Button#2707003805926>] + 3
+        * [@Button@6348:<Button#2708664750312>] + 3
+        * [@Label@6345:<Label#2708530532774>]
+        * [@Button@6302:<Button#2705275752893>]
+        * [@PanelContainer@6367:<PanelContainer#2709352616388>] + 3
+        * [@Button@6324:<Button#2707624563145>] + 5
+        * [@Button@6331:<Button#2707943330252>]
+        * [@Label@6317:<Label#2706584375766>]
+        * [@Label@6316:<Label#2706550821342>]
+        * [@Button@6358:<Button#2709084180962>]
+        * [@Label@6342:<Label#2708396315110>] + 1
+        * [@HBoxContainer@6334:<HBoxContainer#2708010439150>] + 2
+        * [@Label@6318:<Label#2706617930257>]
+        * [@Label@6363:<Label#2709319062119>]
+        * [@Button@6303:<Button#2705342861968>]
+        * [@HBoxContainer@6306:<HBoxContainer#2705628074671>] + 2
+        * [@Label@6307:<Label#2705946841919>]
+        * [@Button@6330:<Button#2707876221762>]
+        * [@PanelContainer@6311:<PanelContainer#2705980396363>] + 3
+        * [@Label@6312:<Label#2706349495124>] + 1
+        * [@Button@6296:<Button#2704302674792>] + 5
+        * [@Label@6314:<Label#2706450158454>] + 1
+        * [@Label@6340:<Label#2708295652234>] + 1
+        * [@Label@6335:<Label#2708111102886>]
+        * [@Button@6376:<Button#2709872710612>] + 3
+        * [@Label@6368:<Label#2709503611862>] + 1
+        * [@Label@6373:<Label#2709738492890>]
+        * [@Button@6375:<Button#2709805601757>]
+        * [@Label@6374:<Label#2709772047327>]
+        * [@Label@6372:<Label#2709704938464>]
+        * [@Label@6370:<Label#2709604275169>] + 1[0m
+* test_clear_dock_states_and_auto_switch_text
+* test_pending_hint_and_must_clear_emphasis
+[33m    28 Orphans[0m
+[33m        * [@HBoxContainer@6466:<HBoxContainer#2737823551651>] + 2
+        * [@Label@6467:<Label#2738142318825>]
+        * [@Button@6462:<Button#2737471230304>]
+        * [@Button@6456:<Button#2736498152111>] + 5
+        * [@Label@6472:<Label#2738544972467>] + 1
+        * [@Button@6463:<Button#2737538339611>]
+        * [@Label@6476:<Label#2738746299202>]
+        * [@Button@6479:<Button#2738846962500>]
+        * [@Label@6478:<Label#2738813408072>]
+        * [@Label@6477:<Label#2738779853651>]
+        * [@Label@6474:<Label#2738645635948>] + 1
+        * [@PanelContainer@6471:<PanelContainer#2738175873918>] + 3
+        * [@Button@6480:<Button#2739199284128>] + 3[0m
+* test_unplaceable_piece_is_marked_but_still_pickable_without_commit
+* test_drag_hint_counts_only_newly_completed_lines
+* test_sheets_fit_safe_area_and_confirmation_order
+* test_sound_switch_is_inverse_of_saved_muted_value
+* test_results_sheet_restart_and_tower_actions
+[33m    140 Orphans[0m
+[33m        * [@Label@6869:<Label#2821122427583>]
+        * [@Label@6860:<Label#2820652665641>]
+        * [@Button@6883:<Button#2821944512076>]
+        * [@HBoxContainer@6886:<HBoxContainer#2822011620941>] + 2
+        * [@ColorRect@6829:<ColorRect#2819176271609>] + 28
+        * [@Button@6862:<Button#2820753330121>]
+        * [@Button@6861:<Button#2820686221263>]
+        * [@Button@6873:<Button#2821357310133>]
+        * [@Button@6874:<Button#2821424419022>]
+        * [@ColorRect@6904:<ColorRect#2822850482385>] + 28
+        * [@Button@6808:<Button#2816978456794>]
+        * [@Button@6807:<Button#2816911347957>]
+        * [@Label@6898:<Label#2822565269866>]
+        * [@Button@6870:<Button#2821155983736>]
+        * [@Button@6864:<Button#2820853993860>]
+        * [@PanelContainer@6891:<PanelContainer#2822145839498>] + 3
+        * [@Label@6887:<Label#2822112285067>]
+        * [@Label@6863:<Label#2820820439437>]
+        * [@Button@6867:<Button#2820988211599>]
+        * [@Label@6896:<Label#2822498161041>]
+        * [@Button@6876:<Button#2821625745819>] + 5
+        * [@Button@6872:<Button#2821290201569>]
+        * [@Label@6865:<Label#2820921102822>]
+        * [@Label@6812:<Label#2817582436905>]
+        * [@Button@6825:<Button#2818639401659>] + 3
+        * [@Button@6801:<Button#2815938269892>] + 5
+        * [@Label@6823:<Label#2818253525712>]
+        * [@Label@6821:<Label#2818186416867>]
+        * [@Button@6824:<Button#2818287080174>]
+        * [@Label@6822:<Label#2818219971311>]
+        * [@Label@6819:<Label#2818085753587>] + 1
+        * [@Label@6817:<Label#2817985090302>] + 1
+        * [@PanelContainer@6816:<PanelContainer#2817615991556>] + 3
+        * [@Label@6897:<Label#2822531715876>]
+        * [@Button@6875:<Button#2821491528522>]
+        * [@Button@6882:<Button#2821877404494>]
+        * [@Button@6900:<Button#2822665933701>] + 3
+        * [@Button@6899:<Button#2822598824866>]
+        * [@Button@6868:<Button#2821055321013>]
+        * [@HBoxContainer@6811:<HBoxContainer#2817263670199>] + 2
+        * [@Label@6866:<Label#2820954657722>]
+        * [@Button@6871:<Button#2821223093182>]
+        * [@Label@6892:<Label#2822296835031>] + 1
+        * [@Label@6894:<Label#2822397498340>] + 1[0m
+* test_phase3_overview_counts_sparse_facades_and_navigation_is_read_only
+[33m    122 Orphans[0m
+[33m        * [@Label@7052:<Label#2842916030072>]
+        * [@Button@7045:<Button#2842546931331>]
+        * [@Button@7077:<Button#2844476312047>]
+        * [@Button@7075:<Button#2844342094677>]
+        * [@Label@7088:<Label#2845080292184>]
+        * [@Label@7046:<Label#2842614041444>]
+        * [@Label@7043:<Label#2842446269287>]
+        * [@Button@7053:<Button#2842949585950>]
+        * [@Button@7082:<Button#2844811857104>]
+        * [@Button@7089:<Button#2845113847028>]
+        * [@Button@7028:<Button#2841389305242>]
+        * [@Label@7087:<Label#2845046738357>]
+        * [@Label@7086:<Label#2845013184074>]
+        * [@Button@7091:<Button#2845248065133>]
+        * [@Button@7011:<Button#2840382672591>]
+        * [@Button@7051:<Button#2842848923469>]
+        * [@Label@7073:<Label#2844241432400>]
+        * [@Button@7071:<Button#2844107214709>]
+        * [@Button@7009:<Button#2840282009545>]
+        * [@Button@7084:<Button#2844912521163>]
+        * [@Label@7083:<Label#2844878966734>]
+        * [@Label@7010:<Label#2840349118415>]
+        * [@Label@7085:<Label#2844979630104>]
+        * [@Button@7072:<Button#2844174323874>]
+        * [@Button@7047:<Button#2842647597232>]
+        * [@Button@7058:<Button#2843285131444>]
+        * [@Button@7065:<Button#2843805225146>]
+        * [@Button@7074:<Button#2844274987203>]
+        * [@Label@6993:<Label#2838872723676>]
+        * [@Button@7005:<Button#2840080683231>]
+        * [@Label@7059:<Label#2843419349222>]
+        * [@Button@7055:<Button#2843083804914>]
+        * [@Label@7049:<Label#2842748260601>]
+        * [@Button@7044:<Button#2842479825250>]
+        * [@Label@7001:<Label#2839879356792>]
+        * [@Button@7068:<Button#2843972997500>]
+        * [@Label@7007:<Label#2840181346692>]
+        * [@Label@7004:<Label#2840047128975>]
+        * [@Button@6997:<Button#2839325708690>] + 3
+        * [@Button@7081:<Button#2844744749462>]
+        * [@Label@7067:<Label#2843939443097>]
+        * [@Label@7069:<Label#2844040106398>]
+        * [@Label@7070:<Label#2844073660833>]
+        * [@Label@6995:<Label#2838939832740>]
+        * [@Label@6984:<Label#2838268744101>]
+        * [@Label@7025:<Label#2841221534163>]
+        * [@Button@7066:<Button#2843872334295>]
+        * [@Button@7063:<Button#2843671007717>]
+        * [@Label@7006:<Label#2840147792358>]
+        * [@Label@7024:<Label#2841187979754>]
+        * [@Button@7056:<Button#2843150914038>]
+        * [@Button@7027:<Button#2841322197518>]
+        * [@Label@6991:<Label#2838772060775>] + 1
+        * [@Label@6989:<Label#2838671397524>] + 1
+        * [@Button@7014:<Button#2840584000153>]
+        * [@Button@6996:<Button#2838973387423>]
+        * [@ColorRect@7029:<ColorRect#2841640964769>] + 11
+        * [@Label@6994:<Label#2838906278562>]
+        * [@Button@7013:<Button#2840516891302>]
+        * [@Button@7002:<Button#2839912911538>]
+        * [@Button@7012:<Button#2840449782459>]
+        * [@Button@7018:<Button#2840869212902>]
+        * [@Label@7017:<Label#2840835658472>]
+        * [@Button@7016:<Button#2840718217967>]
+        * [@Button@7015:<Button#2840651109104>]
+        * [@Button@7019:<Button#2840936321780>]
+        * [@Label@7022:<Label#2841104093945>]
+        * [@Label@7020:<Label#2841003430657>]
+        * [@Button@7021:<Button#2841036985091>]
+        * [@Label@7048:<Label#2842714706697>]
+        * [@Button@7057:<Button#2843218023193>]
+        * [@Button@7090:<Button#2845180957469>]
+        * [@Button@6973:<Button#2836624577342>] + 5
+        * [@Button@7008:<Button#2840214901567>]
+        * [@Button@7079:<Button#2844610532177>]
+        * [@HBoxContainer@6983:<HBoxContainer#2837949977435>] + 2
+        * [@Label@7062:<Label#2843620676451>]
+        * [@Button@6980:<Button#2837664764773>]
+        * [@Button@7078:<Button#2844543423370>]
+        * [@Label@7064:<Label#2843771671446>]
+        * [@Button@7076:<Button#2844409205657>]
+        * [@PanelContainer@6988:<PanelContainer#2838302299034>] + 3
+        * [@Label@7080:<Label#2844711195548>]
+        * [@Button@7026:<Button#2841255089076>]
+        * [@Button@7003:<Button#2839980020661>]
+        * [@Label@7023:<Label#2841154425789>]
+        * [@Button@7060:<Button#2843486458816>]
+        * [@Button@7061:<Button#2843553567683>]
+        * [@Button@7050:<Button#2842781815755>]
+        * [@Button@7054:<Button#2843016696783>]
+        * [@Button@6979:<Button#2837597656026>][0m
+* test_phase3_copy_sheet_validates_target_and_selects_committed_copy
+[33m    77 Orphans[0m
+[33m        * [@Button@7141:<Button#2861404523364>]
+        * [@Button@7142:<Button#2861756844903>] + 3
+        * [@Button@7184:<Button#2865548495721>]
+        * [@Label@7134:<Label#2861102533484>] + 1
+        * [@Button@7159:<Button#2863015136170>]
+        * [@Label@7140:<Label#2861370969548>]
+        * [@Label@7155:<Label#2862780255993>]
+        * [@Label@7176:<Label#2865145843571>]
+        * [@Label@7179:<Label#2865313616046>]
+        * [@Label@7139:<Label#2861337415856>]
+        * [@Button@7188:<Button#2865783378120>]
+        * [@Button@7157:<Button#2862880919756>]
+        * [@Label@7181:<Label#2865414279374>]
+        * [@Button@7160:<Button#2863082246359>]
+        * [@Button@7125:<Button#2860095901926>]
+        * [@Button@7186:<Button#2865649160432>]
+        * [@Button@7177:<Button#2865179398390>]
+        * [@Button@7161:<Button#2863149355355>]
+        * [@Button@7156:<Button#2862813811044>]
+        * [@Button@7178:<Button#2865246507384>]
+        * [@Button@7190:<Button#2865917596033>]
+        * [@Label@7185:<Label#2865615606189>]
+        * [@Button@7191:<Button#2865984704964>]
+        * [@HBoxContainer@7128:<HBoxContainer#2860381114852>] + 2
+        * [@PanelContainer@7133:<PanelContainer#2860733436435>] + 3
+        * [@Button@7187:<Button#2865716269589>]
+        * [@Button@7158:<Button#2862948028964>]
+        * [@Label@7129:<Label#2860699882024>]
+        * [@Button@7183:<Button#2865481388703>]
+        * [@Label@7151:<Label#2862578930337>]
+        * [@Label@7152:<Label#2862612484813>]
+        * [@Label@7149:<Label#2862478267110>]
+        * [@ColorRect@7162:<ColorRect#2863266796271>] + 11
+        * [@Button@7148:<Button#2862411158260>]
+        * [@Button@7150:<Button#2862511821566>]
+        * [@Button@7147:<Button#2862344049408>]
+        * [@Label@7146:<Label#2862310494979>]
+        * [@Label@7138:<Label#2861303862025>]
+        * [@Label@7182:<Label#2865447834406>]
+        * [@Button@7180:<Button#2865347171146>]
+        * [@Button@7154:<Button#2862713148266>]
+        * [@Button@7118:<Button#2859055715245>] + 5
+        * [@Button@7153:<Button#2862646039473>]
+        * [@Button@7124:<Button#2860028793792>]
+        * [@Label@7136:<Label#2861203198923>] + 1
+        * [@Button@7189:<Button#2865850487774>][0m
+* test_format_int_is_exact
+[1m58/58 passed.
+[0m[4m
+
+res://tests/unit/test_supply_profiles.gd
+[0m* test_new_personal_save_uses_lower_single_profile_after_restart
+* test_existing_classic_save_keeps_its_original_profile
+[1m2/2 passed.
+[0m
+
+
+
+[33m==============================================
+[0m[33m= Run Summary
+[0m[33m==============================================
+[0m
+Totals
+------
+Warnings             70
+
+Scripts              11
+Tests               150
+Passing Tests       150
+Asserts            3812
+Time              32.368s
+
+
+[32m---- All tests passed! ----
+[0m
+Results saved to C:/DEV/Games/Blocktower/tools/out/gut_unit.xml

@@ -186,7 +186,8 @@ func _write_actions(next_actions: Array, both_slots: bool = false) -> Dictionary
 func commit(candidate: Dictionary, expected_revision: int) -> Dictionary:
     if candidate.get("session_id", "") != _challenge_id or (expected_revision == -1 and not _actions.is_empty()) or (expected_revision >= 0 and expected_revision != _actions.size()):
         return {"ok": false, "error": "SAVE_CONFLICT"}
-    var next_actions := _actions.duplicate(true)
+    # 기존 행동은 수정하지 않고 한 개만 추가한다. 소유권 분리는 _write_actions에서 한다.
+    var next_actions := _actions.duplicate()
     if expected_revision >= 0:
         if _staged.is_empty() or _staged.get("event_id", "") != str(expected_revision+1):
             return {"ok": false, "error": "ACTION_NOT_STAGED"}

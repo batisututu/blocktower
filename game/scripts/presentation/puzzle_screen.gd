@@ -12,10 +12,8 @@ const BACKGROUND = preload("res://assets/visual_bible/backgrounds/architecture_b
 const Effects = preload("res://scripts/presentation/board_effects.gd")
 const Session = preload("res://scripts/core/game_session.gd")
 const TOWER_PATH := "res://assets/visual_bible/tower/"
-const COLORS := [Color("8bab80"), Color("d78c60"), Color("dec9a5"), Color("bd7959"), Color("d5a650"), Color("7d9e87"), Color("aa93b7"), Color("83aabc"), Color("b4bc93"), Color("c89076"), Color("c9b280"), Color("92aca7"), Color("a9947d")]
 const INK := Color("f8ead2")
 const MUTED := Color("d8c5a6")
-const PANEL := Color("342b22")
 const GOLD := Color("efc06b")
 const READY := Color("d2e8b1")
 const INVALID := Color("f4a591")
@@ -80,6 +78,9 @@ var growth_glow := 0.0
 var growth_motion: Tween
 var tray_notes: Array[Label] = []
 var slot_fits: Array[bool] = [true,true,true]
+var tray_pieces: Array[Dictionary] = [{},{},{}]
+var _tray_session: RefCounted
+var _tray_revision := -1
 var preview_rows: Array[int] = []
 var preview_columns: Array[int] = []
 var compact_layout := false
@@ -111,7 +112,6 @@ var segment_jump_input: LineEdit
 var segment_jump_status: Label
 var segment_copy_input: LineEdit
 var segment_copy_preview: Label
-var capture_path := ""
 var regular: FontVariation
 var strong: FontVariation
 var touch_until := 0
@@ -761,11 +761,16 @@ func _redraw() -> void:
     if is_instance_valid(drag_layer): drag_layer.queue_redraw()
 
 func _refresh_fits() -> void:
-    # 현재 보드에서 합법 위치가 하나도 없는 조각을 찾는다. 미리보기 검증기만 사용한다.
+    # 보드/조각은 커밋에서만 바뀐다. 레이아웃 재생성에는 확정 결과를 재사용한다.
+    if controller.session == _tray_session and int(state.get("revision", -1)) == _tray_revision: return
+    _tray_session = controller.session
+    _tray_revision = int(state.get("revision", -1))
     slot_fits.assign([true,true,true])
+    tray_pieces.assign([{},{},{}])
     if controller.session == null: return
     for slot_index in range(3):
         var piece: Dictionary = controller.session.piece_for_slot(slot_index)
+        tray_pieces[slot_index] = piece
         if piece.is_empty(): continue
         var found := false
         for y in range(9-piece.height):
@@ -779,7 +784,7 @@ func _refresh_fits() -> void:
 func _lane_note_visible(slot_index: int) -> bool:
     if slot_index >= tray_rects.size() or tray_rects[slot_index].size.y < LANE_NOTE_MIN_HEIGHT: return false
     if controller.phase == "dragging" and slot_index == controller.slot: return false
-    return not slot_fits[slot_index] and not controller.session.piece_for_slot(slot_index).is_empty()
+    return not slot_fits[slot_index] and not tray_pieces[slot_index].is_empty()
 
 func _refresh_tray_notes() -> void:
     for slot_index in range(tray_notes.size()):
@@ -790,7 +795,7 @@ func _refresh_tray_scale() -> void:
     if tray_rects.is_empty(): return
     var largest := Vector2.ONE
     for slot_index in range(3):
-        var piece: Dictionary = controller.session.piece_for_slot(slot_index)
+        var piece: Dictionary = tray_pieces[slot_index]
         if not piece.is_empty(): largest = largest.max(Vector2(piece.width,piece.height))
     var note_room := 12.0 if tray_rects[0].size.y >= LANE_NOTE_MIN_HEIGHT else 0.0
     tray_cell_size = minf(28,minf((tray_rects[0].size.x-20)/largest.x,(tray_rects[0].size.y-16-note_room)/largest.y))
@@ -891,7 +896,7 @@ func _draw_board(canvas: Control) -> void:
         var x: float = shelf_rect.position.x+shelf_rect.size.x*divider/3.0
         canvas.draw_line(Vector2(x,shelf_rect.position.y+16),Vector2(x,shelf_rect.end.y-16),LANE_LINE,1)
     for s in range(3):
-        var piece: Dictionary = controller.session.piece_for_slot(s)
+        var piece: Dictionary = tray_pieces[s]
         if piece.is_empty(): continue
         var dragging_this: bool = controller.phase == "dragging" and s == controller.slot
         var fits: bool = slot_fits[s]
